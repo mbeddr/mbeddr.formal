@@ -12,6 +12,22 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Editor tests: typing a qualified name (segment chain) and constructor-created default children (2026-11-08)
+
+- A behavior `constructor` that pre-creates a child (e.g. `this.types.add new(X)`) silently blocks
+  typing into a slot whose child now needs its own sub-structure: the typed text never reaches the
+  new child's segment, and the test fails with `Different children count in role: <role> [was: 0,
+  expected: 1]` on the pre-created node. Remove the pre-created child and let the empty list's
+  `<default>` cell + the substitute menu create it.
+- `EditorTestCase` harness differs from interactive typing for `a::b`. Working sequence for a
+  two-segment name: `type "part x : pack"`, Enter (commits the segment), `type " "`, `type "::"`
+  (creates the next segment via the `section(after)` action), `type "Name"`, `invoke action
+  Complete` (`MPSActionReference` to `jetbrains.mps.ide.editor.actions` Complete), Enter. Any key
+  after a trailing space but before the committing Enter removes the uncommitted segment. The test
+  solution needs a dependency on `jetbrains.mps.ide.editor` for the Complete action.
+- `type "name"` of a keyword without a trailing space (`type "metadata"`) leaves an `EmptyLine`; the
+  concept is only substituted once a space follows.
+
 ## Paste post-processors and plain-text paste (2026-11-07)
 
 - MPS has no hook for pasting plain *text*; text pasted into a cell just becomes that cell's property

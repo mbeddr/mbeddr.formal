@@ -39,10 +39,7 @@
       <concept id="6353433212885159976" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseDefinition" flags="ng" index="66VRK" />
       <concept id="6353433212885159982" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseDefinition" flags="ng" index="66VRQ" />
       <concept id="6353433212885159970" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseDefinition" flags="ng" index="66VRU" />
-      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
-        <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
-        <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
-      </concept>
+      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <property id="7270937307953554917" name="isDefaultValue" index="4kQGg" />
         <child id="8930763252717678424" name="content" index="8EhU4" />
@@ -106,10 +103,7 @@
       <concept id="3997211576372409960" name="com.symo.sysmlv2.baselan.structure.ISysMLv2IdentifierNameConcept" flags="ngI" index="iIkiC">
         <property id="9028721269218146631" name="declaredShortName" index="6zCXJ" />
       </concept>
-      <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC">
-        <property id="717440187291777383" name="connectionDefinitionName" index="2uUmlF" />
-        <reference id="717440187291777384" name="connectionDefinition" index="2uUml$" />
-      </concept>
+      <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC" />
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
         <child id="9009971474184697793" name="multiplicity" index="3u9UUg" />
@@ -211,8 +205,7 @@
         <child id="8400219580107005971" name="subject" index="3v7bcw" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
-        <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
-        <reference id="7140692429574298132" name="definition" index="3w00ZU" />
+        <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="8930763252716192330" name="content" index="8GFem" />
@@ -1479,8 +1472,11 @@
         <property role="2uUmlw" value="true" />
         <property role="TrG5h" value="multicausations" />
         <node concept="2uUmlC" id="4QEfSMD5vq4" role="3w00ZT">
-          <property role="2uUmlF" value="Multicausation" />
-          <ref role="2uUml$" node="4QEfSMD5vpB" resolve="Multicausation" />
+          <node concept="AsIwX" id="4dRTMKM7dcR" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcS" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vpB" resolve="Multicausation" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vq5" role="8GFem">
           <property role="3HG_t5" value="multicausations is the base feature for Multicausation ConnectionUsages." />
@@ -1493,8 +1489,11 @@
       <node concept="2uUmlJ" id="4QEfSMD5vq7" role="3Z9vGx">
         <property role="TrG5h" value="Causation" />
         <node concept="2uUmlC" id="4QEfSMD5vq8" role="3w00Zx">
-          <property role="2uUmlF" value="Multicausation" />
-          <ref role="2uUml$" node="4QEfSMD5vpB" resolve="Multicausation" />
+          <node concept="AsIwX" id="4dRTMKM7dcP" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcQ" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vpB" resolve="Multicausation" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vq9" role="3w00ZY">
           <property role="3HG_t5" value="A Causation is a binary Multicausation in which a single cause occurrence&#10;causes a single effect occurrence. (However, a single cause can separately&#10;have multiple effects, and a single effect can have separate Causation&#10;connections with multiple causes.)" />
@@ -1545,8 +1544,11 @@
         <property role="2uUmlw" value="true" />
         <property role="TrG5h" value="causations" />
         <node concept="2uUmlC" id="4QEfSMD5vqn" role="3w00ZT">
-          <property role="2uUmlF" value="Causation" />
-          <ref role="2uUml$" node="4QEfSMD5vq7" resolve="Causation" />
+          <node concept="AsIwX" id="4dRTMKM7dcN" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcO" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vq7" resolve="Causation" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vqo" role="8GFem">
           <property role="3HG_t5" value="causations is the base feature for Causation ConnectionUsages." />
@@ -1597,7 +1599,9 @@
         <property role="6zCXJ" value="cause" />
         <property role="TrG5h" value="CauseMetadata" />
         <node concept="3w00Zy" id="4QEfSMD5vq_" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7dcL" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vqA" role="3w00ZY">
           <property role="3HG_t5" value="CauseMetadata identifies a usage as being a cause occurrence.&#10;It is intended to be used to tag the cause ends of a Multicausation." />
@@ -1623,7 +1627,9 @@
         <property role="6zCXJ" value="effect" />
         <property role="TrG5h" value="EffectMetadata" />
         <node concept="3w00Zy" id="4QEfSMD5vqI" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7dcJ" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vqJ" role="3w00ZY">
           <property role="3HG_t5" value="EffectMetadata identifies a usage as being an effect occurrence.&#10;It is intended to be used to tag the effect ends of a Multicausation." />
@@ -1710,11 +1716,16 @@
         <property role="6zCXJ" value="multicausation" />
         <property role="TrG5h" value="MulticausationSemanticMetadata" />
         <node concept="3w00Zy" id="4QEfSMD5vrb" role="3w00Zx">
-          <property role="3w00ZX" value="CausationMetadata" />
-          <ref role="3w00ZU" node="4QEfSMD5vqQ" resolve="CausationMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7dcH" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcI" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vqQ" resolve="CausationMetadata" />
+            </node>
+          </node>
         </node>
         <node concept="3w00Zy" id="4QEfSMD5vrc" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7dcF" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vrd" role="3w00ZY">
           <property role="3HG_t5" value="MulticausationMetadata is SemanticMetadata for a Multicausation connection." />
@@ -1732,11 +1743,16 @@
         <property role="6zCXJ" value="causation" />
         <property role="TrG5h" value="CausationSemanticMetadadata" />
         <node concept="3w00Zy" id="4QEfSMD5vri" role="3w00Zx">
-          <property role="3w00ZX" value="CausationMetadata" />
-          <ref role="3w00ZU" node="4QEfSMD5vqQ" resolve="CausationMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7dcD" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcE" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vqQ" resolve="CausationMetadata" />
+            </node>
+          </node>
         </node>
         <node concept="3w00Zy" id="4QEfSMD5vrj" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7dcB" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vrk" role="3w00ZY">
           <property role="3HG_t5" value="CausationMetadata is SemanticMetadata for a Causation connection." />
@@ -1883,7 +1899,9 @@
       <node concept="3w00Z_" id="4QEfSMD5vrX" role="3Z9vGx">
         <property role="TrG5h" value="PlanarCurve" />
         <node concept="3w00Zy" id="4QEfSMD5vrY" role="3w00Zx">
-          <property role="3w00ZX" value="Curve" />
+          <node concept="AsIwX" id="4dRTMKM7dc_" role="1MHwYB">
+            <property role="AsIwZ" value="Curve" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vrZ" role="3w00ZY">
           <property role="3HG_t5" value="A PlanarCurve is a Curve with a given length embeddable in a plane." />
@@ -1911,7 +1929,9 @@
       <node concept="3w00Z_" id="4QEfSMD5vs7" role="3Z9vGx">
         <property role="TrG5h" value="PlanarSurface" />
         <node concept="3w00Zy" id="4QEfSMD5vs8" role="3w00Zx">
-          <property role="3w00ZX" value="Surface" />
+          <node concept="AsIwX" id="4dRTMKM7dcz" role="1MHwYB">
+            <property role="AsIwZ" value="Surface" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vs9" role="3w00ZY">
           <property role="3HG_t5" value="A PlanarSurface is a flat Surface with a given area." />
@@ -1938,16 +1958,22 @@
             <property role="3wdj9b" value="shape" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vsi" role="3w00ZT">
-            <property role="3w00ZX" value="PlanarCurve" />
-            <ref role="3w00ZU" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+            <node concept="AsIwX" id="4dRTMKM7dcx" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dcy" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
       <node concept="3w00Z_" id="4QEfSMD5vsj" role="3Z9vGx">
         <property role="TrG5h" value="Line" />
         <node concept="3w00Zy" id="4QEfSMD5vsk" role="3w00Zx">
-          <property role="3w00ZX" value="PlanarCurve" />
-          <ref role="3w00ZU" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+          <node concept="AsIwX" id="4dRTMKM7dcv" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcw" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vsl" role="3w00ZY">
           <property role="3HG_t5" value="A Line is a Curve that is a straight line of a given length." />
@@ -1974,7 +2000,9 @@
         <property role="TrG5h" value="Path" />
         <property role="3eyS6o" value="true" />
         <node concept="3w00Zy" id="4QEfSMD5vst" role="3w00Zx">
-          <property role="3w00ZX" value="StructuredSpaceObject::StructuredCurve" />
+          <node concept="AsIwX" id="4dRTMKM7dct" role="1MHwYB">
+            <property role="AsIwZ" value="StructuredSpaceObject::StructuredCurve" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vsu" role="3w00ZY">
           <property role="3HG_t5" value="Path is the most general structured Curve." />
@@ -2125,12 +2153,18 @@
       <node concept="3w00Z_" id="4QEfSMD5vt8" role="3Z9vGx">
         <property role="TrG5h" value="ConicSection" />
         <node concept="3w00Zy" id="4QEfSMD5vt9" role="3w00Zx">
-          <property role="3w00ZX" value="Path" />
-          <ref role="3w00ZU" node="4QEfSMD5vss" resolve="Path" />
+          <node concept="AsIwX" id="4dRTMKM7dcr" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcs" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vss" resolve="Path" />
+            </node>
+          </node>
         </node>
         <node concept="3w00Zy" id="4QEfSMD5vta" role="3w00Zx">
-          <property role="3w00ZX" value="PlanarCurve" />
-          <ref role="3w00ZU" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+          <node concept="AsIwX" id="4dRTMKM7dcp" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcq" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vtb" role="3w00ZY">
           <property role="3HG_t5" value="A ConicSection is a closed PlanarCurve, possibly disconnected, see Hyperbola." />
@@ -2157,8 +2191,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vti" role="3Z9vGx">
         <property role="TrG5h" value="Ellipse" />
         <node concept="3w00Zy" id="4QEfSMD5vtj" role="3w00Zx">
-          <property role="3w00ZX" value="ConicSection" />
-          <ref role="3w00ZU" node="4QEfSMD5vt8" resolve="ConicSection" />
+          <node concept="AsIwX" id="4dRTMKM7dcn" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dco" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vt8" resolve="ConicSection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vtk" role="3w00ZY">
           <property role="3HG_t5" value="An Ellipse is a ConicSection in the shape of an ellipse of a given semiaxes." />
@@ -2194,8 +2231,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vtu" role="3Z9vGx">
         <property role="TrG5h" value="Circle" />
         <node concept="3w00Zy" id="4QEfSMD5vtv" role="3w00Zx">
-          <property role="3w00ZX" value="Ellipse" />
-          <ref role="3w00ZU" node="4QEfSMD5vti" resolve="Ellipse" />
+          <node concept="AsIwX" id="4dRTMKM7dcl" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcm" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vti" resolve="Ellipse" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vtw" role="3w00ZY">
           <property role="3HG_t5" value="A Circle is an Ellipse with semiaxes equal to its radius." />
@@ -2252,8 +2292,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vtL" role="3Z9vGx">
         <property role="TrG5h" value="Parabola" />
         <node concept="3w00Zy" id="4QEfSMD5vtM" role="3w00Zx">
-          <property role="3w00ZX" value="ConicSection" />
-          <ref role="3w00ZU" node="4QEfSMD5vt8" resolve="ConicSection" />
+          <node concept="AsIwX" id="4dRTMKM7dcj" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dck" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vt8" resolve="ConicSection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vtN" role="3w00ZY">
           <property role="3HG_t5" value="A Parabola is a ConicSection in the shape of a parabola of a given focal length." />
@@ -2285,8 +2328,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vtV" role="3Z9vGx">
         <property role="TrG5h" value="Hyperbola" />
         <node concept="3w00Zy" id="4QEfSMD5vtW" role="3w00Zx">
-          <property role="3w00ZX" value="ConicSection" />
-          <ref role="3w00ZU" node="4QEfSMD5vt8" resolve="ConicSection" />
+          <node concept="AsIwX" id="4dRTMKM7dch" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dci" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vt8" resolve="ConicSection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vtX" role="3w00ZY">
           <property role="3HG_t5" value="A Hyperbola is a ConicSection in the shape of a hyperbola with given axes." />
@@ -2323,12 +2369,18 @@
       <node concept="3w00Z_" id="4QEfSMD5vu6" role="3Z9vGx">
         <property role="TrG5h" value="Polygon" />
         <node concept="3w00Zy" id="4QEfSMD5vu7" role="3w00Zx">
-          <property role="3w00ZX" value="Path" />
-          <ref role="3w00ZU" node="4QEfSMD5vss" resolve="Path" />
+          <node concept="AsIwX" id="4dRTMKM7dcf" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dcg" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vss" resolve="Path" />
+            </node>
+          </node>
         </node>
         <node concept="3w00Zy" id="4QEfSMD5vu8" role="3w00Zx">
-          <property role="3w00ZX" value="PlanarCurve" />
-          <ref role="3w00ZU" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+          <node concept="AsIwX" id="4dRTMKM7dcd" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dce" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vu9" role="3w00ZY">
           <property role="3HG_t5" value="A Polygon is a closed planar Path with straight edges." />
@@ -2338,8 +2390,11 @@
             <property role="3wdj9b" value="edges" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vuc" role="3w00ZT">
-            <property role="3w00ZX" value="Line" />
-            <ref role="3w00ZU" node="4QEfSMD5vsj" resolve="Line" />
+            <node concept="AsIwX" id="4dRTMKM7dcb" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dcc" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vsj" resolve="Line" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5vud" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vue" role="3wdj9d">
@@ -2368,8 +2423,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vul" role="3Z9vGx">
         <property role="TrG5h" value="Triangle" />
         <node concept="3w00Zy" id="4QEfSMD5vum" role="3w00Zx">
-          <property role="3w00ZX" value="Polygon" />
-          <ref role="3w00ZU" node="4QEfSMD5vu6" resolve="Polygon" />
+          <node concept="AsIwX" id="4dRTMKM7dc9" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dca" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vu6" resolve="Polygon" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vun" role="3w00ZY">
           <property role="3HG_t5" value="A Triangle is three-sided Polygon  with given length (base), width (perpendicular distance&#10;from base to apex), and offset of this perpendicular at the base from the center of the base." />
@@ -2486,8 +2544,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vuT" role="3Z9vGx">
         <property role="TrG5h" value="RightTriangle" />
         <node concept="3w00Zy" id="4QEfSMD5vuU" role="3w00Zx">
-          <property role="3w00ZX" value="Triangle" />
-          <ref role="3w00ZU" node="4QEfSMD5vul" resolve="Triangle" />
+          <node concept="AsIwX" id="4dRTMKM7dc7" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dc8" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vul" resolve="Triangle" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vuV" role="3w00ZY">
           <property role="3HG_t5" value="A RightTriangle is a Triangle with sides opposite the hypotenuse at right angles." />
@@ -2533,8 +2594,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vv9" role="3Z9vGx">
         <property role="TrG5h" value="Quadrilateral" />
         <node concept="3w00Zy" id="4QEfSMD5vva" role="3w00Zx">
-          <property role="3w00ZX" value="Polygon" />
-          <ref role="3w00ZU" node="4QEfSMD5vu6" resolve="Polygon" />
+          <node concept="AsIwX" id="4dRTMKM7dc5" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dc6" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vu6" resolve="Polygon" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vvb" role="3w00ZY">
           <property role="3HG_t5" value="A Quadrilateral is a four-sided Polygon." />
@@ -2636,8 +2700,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vvB" role="3Z9vGx">
         <property role="TrG5h" value="Rectangle" />
         <node concept="3w00Zy" id="4QEfSMD5vvC" role="3w00Zx">
-          <property role="3w00ZX" value="Quadrilateral" />
-          <ref role="3w00ZU" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+          <node concept="AsIwX" id="4dRTMKM7dc3" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dc4" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vvD" role="3w00ZY">
           <property role="3HG_t5" value="A Rectangle is a Quadrilateral four right angles and given length and width." />
@@ -2721,7 +2788,9 @@
         <property role="TrG5h" value="Shell" />
         <property role="3eyS6o" value="true" />
         <node concept="3w00Zy" id="4QEfSMD5vw5" role="3w00Zx">
-          <property role="3w00ZX" value="StructuredSpaceObject::StructuredSurface" />
+          <node concept="AsIwX" id="4dRTMKM7dc1" role="1MHwYB">
+            <property role="AsIwZ" value="StructuredSpaceObject::StructuredSurface" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vw6" role="3w00ZY">
           <property role="3HG_t5" value="Shell is the most general structured Surface." />
@@ -2730,12 +2799,18 @@
       <node concept="3w00Z_" id="4QEfSMD5vw7" role="3Z9vGx">
         <property role="TrG5h" value="Disc" />
         <node concept="3w00Zy" id="4QEfSMD5vw8" role="3w00Zx">
-          <property role="3w00ZX" value="Shell" />
-          <ref role="3w00ZU" node="4QEfSMD5vw4" resolve="Shell" />
+          <node concept="AsIwX" id="4dRTMKM7dbZ" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dc0" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vw4" resolve="Shell" />
+            </node>
+          </node>
         </node>
         <node concept="3w00Zy" id="4QEfSMD5vw9" role="3w00Zx">
-          <property role="3w00ZX" value="PlanarSurface" />
-          <ref role="3w00ZU" node="4QEfSMD5vs7" resolve="PlanarSurface" />
+          <node concept="AsIwX" id="4dRTMKM7dbX" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbY" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vs7" resolve="PlanarSurface" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vwa" role="3w00ZY">
           <property role="3HG_t5" value="A Disc is a Shell bound by an Ellipse." />
@@ -2767,8 +2842,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vwk" role="3w00ZT">
-            <property role="3w00ZX" value="Ellipse" />
-            <ref role="3w00ZU" node="4QEfSMD5vti" resolve="Ellipse" />
+            <node concept="AsIwX" id="4dRTMKM7dbV" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbW" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vti" resolve="Ellipse" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vwl" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vwm" role="3wdj9d">
@@ -2796,8 +2874,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vwu" role="3w00ZT">
-            <property role="3w00ZX" value="PlanarSurface" />
-            <ref role="3w00ZU" node="4QEfSMD5vs7" resolve="PlanarSurface" />
+            <node concept="AsIwX" id="4dRTMKM7dbT" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbU" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vs7" resolve="PlanarSurface" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5vwv" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vww" role="3wdj9d">
@@ -2821,8 +2902,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vwA" role="3w00ZT">
-            <property role="3w00ZX" value="Ellipse" />
-            <ref role="3w00ZU" node="4QEfSMD5vti" resolve="Ellipse" />
+            <node concept="AsIwX" id="4dRTMKM7dbR" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbS" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vti" resolve="Ellipse" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vwB" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vwC" role="3wdj9d">
@@ -2855,8 +2939,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vwK" role="3Z9vGx">
         <property role="TrG5h" value="CircularDisc" />
         <node concept="3w00Zy" id="4QEfSMD5vwL" role="3w00Zx">
-          <property role="3w00ZX" value="Disc" />
-          <ref role="3w00ZU" node="4QEfSMD5vw7" resolve="Disc" />
+          <node concept="AsIwX" id="4dRTMKM7dbP" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbQ" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vw7" resolve="Disc" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vwM" role="3w00ZY">
           <property role="3HG_t5" value="A CircularDisc is a Disc bound by a Circle." />
@@ -2899,8 +2986,11 @@
             <property role="3wdj9b" value="shape" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vx0" role="3w00ZT">
-            <property role="3w00ZX" value="Circle" />
-            <ref role="3w00ZU" node="4QEfSMD5vtu" resolve="Circle" />
+            <node concept="AsIwX" id="4dRTMKM7dbN" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbO" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vtu" resolve="Circle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vx1" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vx2" role="3wdj9d">
@@ -2924,16 +3014,22 @@
             <property role="3wdj9b" value="edges" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vx9" role="3w00ZT">
-            <property role="3w00ZX" value="Circle" />
-            <ref role="3w00ZU" node="4QEfSMD5vtu" resolve="Circle" />
+            <node concept="AsIwX" id="4dRTMKM7dbL" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbM" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vtu" resolve="Circle" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
       <node concept="3w00Z_" id="4QEfSMD5vxa" role="3Z9vGx">
         <property role="TrG5h" value="ConicSurface" />
         <node concept="3w00Zy" id="4QEfSMD5vxb" role="3w00Zx">
-          <property role="3w00ZX" value="Shell" />
-          <ref role="3w00ZU" node="4QEfSMD5vw4" resolve="Shell" />
+          <node concept="AsIwX" id="4dRTMKM7dbJ" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbK" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vw4" resolve="Shell" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vxc" role="3w00ZY">
           <property role="3HG_t5" value="A ConicSurface is a Surface that has ConicSection cross-sections." />
@@ -2977,8 +3073,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vxp" role="3Z9vGx">
         <property role="TrG5h" value="Ellipsoid" />
         <node concept="3w00Zy" id="4QEfSMD5vxq" role="3w00Zx">
-          <property role="3w00ZX" value="ConicSurface" />
-          <ref role="3w00ZU" node="4QEfSMD5vxa" resolve="ConicSurface" />
+          <node concept="AsIwX" id="4dRTMKM7dbH" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbI" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vxa" resolve="ConicSurface" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vxr" role="3w00ZY">
           <property role="3HG_t5" value="An Ellipsoid is a ConicSurface with only elliptical cross-sections." />
@@ -3038,8 +3137,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vxF" role="3Z9vGx">
         <property role="TrG5h" value="Sphere" />
         <node concept="3w00Zy" id="4QEfSMD5vxG" role="3w00Zx">
-          <property role="3w00ZX" value="Ellipsoid" />
-          <ref role="3w00ZU" node="4QEfSMD5vxp" resolve="Ellipsoid" />
+          <node concept="AsIwX" id="4dRTMKM7dbF" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbG" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vxp" resolve="Ellipsoid" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vxH" role="3w00ZY">
           <property role="3HG_t5" value="A Sphere is an Ellipsoid with all the same semiaxes." />
@@ -3096,8 +3198,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vxX" role="3Z9vGx">
         <property role="TrG5h" value="Paraboloid" />
         <node concept="3w00Zy" id="4QEfSMD5vxY" role="3w00Zx">
-          <property role="3w00ZX" value="ConicSurface" />
-          <ref role="3w00ZU" node="4QEfSMD5vxa" resolve="ConicSurface" />
+          <node concept="AsIwX" id="4dRTMKM7dbD" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbE" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vxa" resolve="ConicSurface" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vxZ" role="3w00ZY">
           <property role="3HG_t5" value="A Paraboloid is a ConicSurface with only parabolic cross-sections." />
@@ -3129,8 +3234,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vy7" role="3Z9vGx">
         <property role="TrG5h" value="Hyperboloid" />
         <node concept="3w00Zy" id="4QEfSMD5vy8" role="3w00Zx">
-          <property role="3w00ZX" value="ConicSurface" />
-          <ref role="3w00ZU" node="4QEfSMD5vxa" resolve="ConicSurface" />
+          <node concept="AsIwX" id="4dRTMKM7dbB" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbC" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vxa" resolve="ConicSurface" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vy9" role="3w00ZY">
           <property role="3HG_t5" value="A Hyperboloid is a ConicSurface with only hyperbolic cross-sections." />
@@ -3167,8 +3275,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vyi" role="3Z9vGx">
         <property role="TrG5h" value="Toroid" />
         <node concept="3w00Zy" id="4QEfSMD5vyj" role="3w00Zx">
-          <property role="3w00ZX" value="Shell" />
-          <ref role="3w00ZU" node="4QEfSMD5vw4" resolve="Shell" />
+          <node concept="AsIwX" id="4dRTMKM7db_" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbA" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vw4" resolve="Shell" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vyk" role="3w00ZY">
           <property role="3HG_t5" value="A Toroid is a surface generated from revolving a planar closed curve about an line coplanar&#10;with the curve. It is single sided with one hole." />
@@ -3194,8 +3305,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vyr" role="3w00ZT">
-            <property role="3w00ZX" value="PlanarCurve" />
-            <ref role="3w00ZU" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+            <node concept="AsIwX" id="4dRTMKM7dbz" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7db$" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vrX" resolve="PlanarCurve" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vys" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vyt" role="3wdj9d">
@@ -3245,8 +3359,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vyF" role="3Z9vGx">
         <property role="TrG5h" value="Torus" />
         <node concept="3w00Zy" id="4QEfSMD5vyG" role="3w00Zx">
-          <property role="3w00ZX" value="Toroid" />
-          <ref role="3w00ZU" node="4QEfSMD5vyi" resolve="Toroid" />
+          <node concept="AsIwX" id="4dRTMKM7dbx" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dby" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vyi" resolve="Toroid" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vyH" role="3w00ZY">
           <property role="3HG_t5" value="A Torus is a revolution of a Circle." />
@@ -3282,8 +3399,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vyR" role="3w00ZT">
-            <property role="3w00ZX" value="Circle" />
-            <ref role="3w00ZU" node="4QEfSMD5vtu" resolve="Circle" />
+            <node concept="AsIwX" id="4dRTMKM7dbv" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbw" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vtu" resolve="Circle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vyS" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vyT" role="3wdj9d">
@@ -3298,8 +3418,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vyV" role="3Z9vGx">
         <property role="TrG5h" value="RectangularToroid" />
         <node concept="3w00Zy" id="4QEfSMD5vyW" role="3w00Zx">
-          <property role="3w00ZX" value="Toroid" />
-          <ref role="3w00ZU" node="4QEfSMD5vyi" resolve="Toroid" />
+          <node concept="AsIwX" id="4dRTMKM7dbt" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbu" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vyi" resolve="Toroid" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vyX" role="3w00ZY">
           <property role="3HG_t5" value="A RectangularToroid is a revolution of a Rectangle." />
@@ -3342,8 +3465,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vz9" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7dbr" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbs" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vza" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vzb" role="3wdj9d">
@@ -3374,8 +3500,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vzj" role="3Z9vGx">
         <property role="TrG5h" value="ConeOrCylinder" />
         <node concept="3w00Zy" id="4QEfSMD5vzk" role="3w00Zx">
-          <property role="3w00ZX" value="Shell" />
-          <ref role="3w00ZU" node="4QEfSMD5vw4" resolve="Shell" />
+          <node concept="AsIwX" id="4dRTMKM7dbp" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbq" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vw4" resolve="Shell" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vzl" role="3w00ZY">
           <property role="3HG_t5" value="A ConeOrCylinder is Shell that a Cone or a Cylinder with a given elliptical base,&#10;height, width (perpendicular distance from the base to the center of the top side or vertex),&#10;and offsets of this perpendicular at the base from the center of the base." />
@@ -3444,8 +3573,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vzF" role="3w00ZT">
-            <property role="3w00ZX" value="Disc" />
-            <ref role="3w00ZU" node="4QEfSMD5vw7" resolve="Disc" />
+            <node concept="AsIwX" id="4dRTMKM7dbn" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbo" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vw7" resolve="Disc" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vzG" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vzH" role="3wdj9d">
@@ -3490,8 +3622,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vzV" role="3w00ZT">
-            <property role="3w00ZX" value="Disc" />
-            <ref role="3w00ZU" node="4QEfSMD5vw7" resolve="Disc" />
+            <node concept="AsIwX" id="4dRTMKM7dbl" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dbm" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vw7" resolve="Disc" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vzW" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vzX" role="3wdj9d">
@@ -3536,7 +3671,9 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5v$b" role="3w00ZT">
-            <property role="3w00ZX" value="Surface" />
+            <node concept="AsIwX" id="4dRTMKM7dbj" role="1MHwYB">
+              <property role="AsIwZ" value="Surface" />
+            </node>
           </node>
         </node>
         <node concept="3w00Zz" id="4QEfSMD5v$c" role="3w00ZY">
@@ -3696,7 +3833,9 @@
         <node concept="2uUmlE" id="4QEfSMD5v$Y" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5v$Z" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dbh" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5v_0" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5v_1" role="2uUmlA">
@@ -3731,8 +3870,11 @@
       <node concept="3w00Z_" id="4QEfSMD5v_9" role="3Z9vGx">
         <property role="TrG5h" value="Cone" />
         <node concept="3w00Zy" id="4QEfSMD5v_a" role="3w00Zx">
-          <property role="3w00ZX" value="ConeOrCylinder" />
-          <ref role="3w00ZU" node="4QEfSMD5vzj" resolve="ConeOrCylinder" />
+          <node concept="AsIwX" id="4dRTMKM7dbf" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbg" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vzj" resolve="ConeOrCylinder" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5v_b" role="3w00ZY">
           <property role="3HG_t5" value="A Cone has one elliptical sides joined to a point by a curved side." />
@@ -3790,8 +3932,11 @@
       <node concept="3w00Z_" id="4QEfSMD5v_r" role="3Z9vGx">
         <property role="TrG5h" value="EccentricCone" />
         <node concept="3w00Zy" id="4QEfSMD5v_s" role="3w00Zx">
-          <property role="3w00ZX" value="Cone" />
-          <ref role="3w00ZU" node="4QEfSMD5v_9" resolve="Cone" />
+          <node concept="AsIwX" id="4dRTMKM7dbd" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbe" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5v_9" resolve="Cone" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5v_t" role="3w00ZY">
           <property role="3HG_t5" value="An EccentricCone is a Cone with least one positive offset." />
@@ -3805,8 +3950,11 @@
       <node concept="3w00Z_" id="4QEfSMD5v_w" role="3Z9vGx">
         <property role="TrG5h" value="CircularCone" />
         <node concept="3w00Zy" id="4QEfSMD5v_x" role="3w00Zx">
-          <property role="3w00ZX" value="Cone" />
-          <ref role="3w00ZU" node="4QEfSMD5v_9" resolve="Cone" />
+          <node concept="AsIwX" id="4dRTMKM7dbb" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dbc" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5v_9" resolve="Cone" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5v_y" role="3w00ZY">
           <property role="3HG_t5" value="A CircularCone is a Cone with a circular base." />
@@ -3850,8 +3998,11 @@
             <ref role="3wdj98" node="4QEfSMD5vzC" resolve="base" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5v_K" role="3w00ZT">
-            <property role="3w00ZX" value="CircularDisc" />
-            <ref role="3w00ZU" node="4QEfSMD5vwK" resolve="CircularDisc" />
+            <node concept="AsIwX" id="4dRTMKM7db9" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dba" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vwK" resolve="CircularDisc" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5v_L" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5v_M" role="3wdj9d">
@@ -3866,8 +4017,11 @@
       <node concept="3w00Z_" id="4QEfSMD5v_O" role="3Z9vGx">
         <property role="TrG5h" value="RightCircularCone" />
         <node concept="3w00Zy" id="4QEfSMD5v_P" role="3w00Zx">
-          <property role="3w00ZX" value="CircularCone" />
-          <ref role="3w00ZU" node="4QEfSMD5v_w" resolve="CircularCone" />
+          <node concept="AsIwX" id="4dRTMKM7db7" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7db8" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5v_w" resolve="CircularCone" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5v_Q" role="3w00ZY">
           <property role="3HG_t5" value="A RightCircularCone is a CircularCone with zero offsets." />
@@ -3902,8 +4056,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vA1" role="3Z9vGx">
         <property role="TrG5h" value="Cylinder" />
         <node concept="3w00Zy" id="4QEfSMD5vA2" role="3w00Zx">
-          <property role="3w00ZX" value="ConeOrCylinder" />
-          <ref role="3w00ZU" node="4QEfSMD5vzj" resolve="ConeOrCylinder" />
+          <node concept="AsIwX" id="4dRTMKM7db5" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7db6" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vzj" resolve="ConeOrCylinder" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vA3" role="3w00ZY">
           <property role="3HG_t5" value="A Cylinder has two elliptical sides joined by a curved side." />
@@ -3951,7 +4108,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vAg" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vAh" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7db3" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vAi" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vAj" role="2uUmlA">
@@ -3981,8 +4140,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vAp" role="3Z9vGx">
         <property role="TrG5h" value="EccentricCylinder" />
         <node concept="3w00Zy" id="4QEfSMD5vAq" role="3w00Zx">
-          <property role="3w00ZX" value="Cylinder" />
-          <ref role="3w00ZU" node="4QEfSMD5vA1" resolve="Cylinder" />
+          <node concept="AsIwX" id="4dRTMKM7db1" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7db2" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vA1" resolve="Cylinder" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vAr" role="3w00ZY">
           <property role="3HG_t5" value="An EccentricCylinder is a Cylinder with least one positive offset." />
@@ -3996,8 +4158,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vAu" role="3Z9vGx">
         <property role="TrG5h" value="CircularCylinder" />
         <node concept="3w00Zy" id="4QEfSMD5vAv" role="3w00Zx">
-          <property role="3w00ZX" value="Cylinder" />
-          <ref role="3w00ZU" node="4QEfSMD5vA1" resolve="Cylinder" />
+          <node concept="AsIwX" id="4dRTMKM7daZ" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7db0" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vA1" resolve="Cylinder" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vAw" role="3w00ZY">
           <property role="3HG_t5" value="A CircularCylinder is a Cylinder with two circular sides." />
@@ -4041,8 +4206,11 @@
             <ref role="3wdj98" node="4QEfSMD5vzC" resolve="base" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vAI" role="3w00ZT">
-            <property role="3w00ZX" value="CircularDisc" />
-            <ref role="3w00ZU" node="4QEfSMD5vwK" resolve="CircularDisc" />
+            <node concept="AsIwX" id="4dRTMKM7daX" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daY" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vwK" resolve="CircularDisc" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vAJ" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vAK" role="3wdj9d">
@@ -4059,8 +4227,11 @@
             <ref role="3wdj98" node="4QEfSMD5vzS" resolve="af" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vAO" role="3w00ZT">
-            <property role="3w00ZX" value="CircularDisc" />
-            <ref role="3w00ZU" node="4QEfSMD5vwK" resolve="CircularDisc" />
+            <node concept="AsIwX" id="4dRTMKM7daV" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daW" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vwK" resolve="CircularDisc" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vAP" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vAQ" role="3wdj9d">
@@ -4075,8 +4246,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vAS" role="3Z9vGx">
         <property role="TrG5h" value="RightCircularCylinder" />
         <node concept="3w00Zy" id="4QEfSMD5vAT" role="3w00Zx">
-          <property role="3w00ZX" value="CircularCylinder" />
-          <ref role="3w00ZU" node="4QEfSMD5vAu" resolve="CircularCylinder" />
+          <node concept="AsIwX" id="4dRTMKM7daT" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7daU" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vAu" resolve="CircularCylinder" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vAU" role="3w00ZY">
           <property role="3HG_t5" value="A RightCircularCylinder is a CircularCylinder with zero offsets." />
@@ -4111,8 +4285,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vB5" role="3Z9vGx">
         <property role="TrG5h" value="Polyhedron" />
         <node concept="3w00Zy" id="4QEfSMD5vB6" role="3w00Zx">
-          <property role="3w00ZX" value="Shell" />
-          <ref role="3w00ZU" node="4QEfSMD5vw4" resolve="Shell" />
+          <node concept="AsIwX" id="4dRTMKM7daR" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7daS" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vw4" resolve="Shell" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vB7" role="3w00ZY">
           <property role="3HG_t5" value="A Polyhedron is a closed Shell with polygonal sides." />
@@ -4134,8 +4311,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vBe" role="3w00ZT">
-            <property role="3w00ZX" value="Polygon" />
-            <ref role="3w00ZU" node="4QEfSMD5vu6" resolve="Polygon" />
+            <node concept="AsIwX" id="4dRTMKM7daP" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daQ" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vu6" resolve="Polygon" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vBf" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vBg" role="3wdj9d">
@@ -4190,8 +4370,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vBx" role="3Z9vGx">
         <property role="TrG5h" value="CuboidOrTriangularPrism" />
         <node concept="3w00Zy" id="4QEfSMD5vBy" role="3w00Zx">
-          <property role="3w00ZX" value="Polyhedron" />
-          <ref role="3w00ZU" node="4QEfSMD5vB5" resolve="Polyhedron" />
+          <node concept="AsIwX" id="4dRTMKM7daN" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7daO" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vB5" resolve="Polyhedron" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vBz" role="3w00ZY">
           <property role="3HG_t5" value="A CuboidOrTriangularPrism is a Polyhedron that is either a Cuboid or TriangularPrism." />
@@ -4215,8 +4398,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vBE" role="3w00ZT">
-            <property role="3w00ZX" value="Quadrilateral" />
-            <ref role="3w00ZU" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+            <node concept="AsIwX" id="4dRTMKM7daL" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daM" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vBF" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vBG" role="3wdj9d">
@@ -4245,8 +4431,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vBO" role="3w00ZT">
-            <property role="3w00ZX" value="Quadrilateral" />
-            <ref role="3w00ZU" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+            <node concept="AsIwX" id="4dRTMKM7daJ" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daK" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vBP" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vBQ" role="3wdj9d">
@@ -4275,8 +4464,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vBY" role="3w00ZT">
-            <property role="3w00ZX" value="Polygon" />
-            <ref role="3w00ZU" node="4QEfSMD5vu6" resolve="Polygon" />
+            <node concept="AsIwX" id="4dRTMKM7daH" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daI" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vu6" resolve="Polygon" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5vBZ" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vC0" role="3wdj9d">
@@ -4301,8 +4493,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vC6" role="3w00ZT">
-            <property role="3w00ZX" value="Polygon" />
-            <ref role="3w00ZU" node="4QEfSMD5vu6" resolve="Polygon" />
+            <node concept="AsIwX" id="4dRTMKM7daF" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daG" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vu6" resolve="Polygon" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5vC7" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vC8" role="3wdj9d">
@@ -4327,8 +4522,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vCe" role="3w00ZT">
-            <property role="3w00ZX" value="Quadrilateral" />
-            <ref role="3w00ZU" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+            <node concept="AsIwX" id="4dRTMKM7daD" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daE" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vCf" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vCg" role="3wdj9d">
@@ -4357,8 +4555,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vCo" role="3w00ZT">
-            <property role="3w00ZX" value="Quadrilateral" />
-            <ref role="3w00ZU" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+            <node concept="AsIwX" id="4dRTMKM7daB" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7daC" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vCp" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vCq" role="3wdj9d">
@@ -5492,7 +5693,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vHJ" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vHK" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7da_" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vHL" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vHM" role="2uUmlA">
@@ -5518,7 +5721,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vHR" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vHS" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7daz" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vHT" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vHU" role="2uUmlA">
@@ -5544,7 +5749,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vHZ" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vI0" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dax" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vI1" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vI2" role="2uUmlA">
@@ -5570,7 +5777,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vI7" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vI8" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dav" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vI9" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vIa" role="2uUmlA">
@@ -5596,7 +5805,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vIf" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vIg" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dat" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vIh" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vIi" role="2uUmlA">
@@ -5622,7 +5833,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vIn" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vIo" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dar" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vIp" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vIq" role="2uUmlA">
@@ -5648,7 +5861,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vIv" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vIw" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dap" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vIx" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vIy" role="2uUmlA">
@@ -5674,7 +5889,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vIB" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vIC" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dan" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vID" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vIE" role="2uUmlA">
@@ -5700,7 +5917,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vIJ" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vIK" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dal" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vIL" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vIM" role="2uUmlA">
@@ -5726,7 +5945,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vIR" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vIS" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7daj" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vIT" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vIU" role="2uUmlA">
@@ -5756,7 +5977,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vJ0" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vJ1" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dah" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vJ2" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vJ3" role="2uUmlA">
@@ -5782,7 +6005,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vJ8" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vJ9" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7daf" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vJa" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vJb" role="2uUmlA">
@@ -5808,7 +6033,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vJg" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vJh" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dad" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vJi" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vJj" role="2uUmlA">
@@ -5834,7 +6061,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vJo" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vJp" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7dab" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vJq" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vJr" role="2uUmlA">
@@ -5860,7 +6089,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vJw" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vJx" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7da9" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vJy" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vJz" role="2uUmlA">
@@ -5886,7 +6117,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vJC" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vJD" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7da7" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vJE" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vJF" role="2uUmlA">
@@ -5913,8 +6146,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vJK" role="3Z9vGx">
         <property role="TrG5h" value="TriangularPrism" />
         <node concept="3w00Zy" id="4QEfSMD5vJL" role="3w00Zx">
-          <property role="3w00ZX" value="CuboidOrTriangularPrism" />
-          <ref role="3w00ZU" node="4QEfSMD5vBx" resolve="CuboidOrTriangularPrism" />
+          <node concept="AsIwX" id="4dRTMKM7da5" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7da6" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vBx" resolve="CuboidOrTriangularPrism" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vJM" role="3w00ZY">
           <property role="3HG_t5" value="A TriangularPrism is a Polyhedron with five sides, two triangular and&#10;the others quadrilateral." />
@@ -5934,8 +6170,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBV" resolve="ff" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vJS" role="3w00ZT">
-            <property role="3w00ZX" value="Triangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vul" resolve="Triangle" />
+            <node concept="AsIwX" id="4dRTMKM7da3" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7da4" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vul" resolve="Triangle" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vJT" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vJU" role="3wdj9d">
@@ -5960,8 +6199,11 @@
             <ref role="3wdj98" node="4QEfSMD5vC3" resolve="rf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vK1" role="3w00ZT">
-            <property role="3w00ZX" value="Triangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vul" resolve="Triangle" />
+            <node concept="AsIwX" id="4dRTMKM7da1" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7da2" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vul" resolve="Triangle" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vK2" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vK3" role="3wdj9d">
@@ -6096,8 +6338,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vKE" role="3Z9vGx">
         <property role="TrG5h" value="RightTriangularPrism" />
         <node concept="3w00Zy" id="4QEfSMD5vKF" role="3w00Zx">
-          <property role="3w00ZX" value="TriangularPrism" />
-          <ref role="3w00ZU" node="4QEfSMD5vJK" resolve="TriangularPrism" />
+          <node concept="AsIwX" id="4dRTMKM7d9Z" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7da0" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vJK" resolve="TriangularPrism" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vKG" role="3w00ZY">
           <property role="3HG_t5" value="A RightTriangularPrism  a TriangularPrism with two right triangluar sides,&#10;with given length, width, and height." />
@@ -6135,8 +6380,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBB" resolve="tf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vKS" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9X" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9Y" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3w00Zz" id="4QEfSMD5vKT" role="3w00ZY">
@@ -6145,8 +6393,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBL" resolve="bf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vKV" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9V" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9W" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3w00Zz" id="4QEfSMD5vKW" role="3w00ZY">
@@ -6155,8 +6406,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBV" resolve="ff" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vKY" role="3w00ZT">
-            <property role="3w00ZX" value="RightTriangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vuT" resolve="RightTriangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9T" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9U" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vuT" resolve="RightTriangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vKZ" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vL0" role="3wdj9d">
@@ -6181,8 +6435,11 @@
             <ref role="3wdj98" node="4QEfSMD5vC3" resolve="rf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vL7" role="3w00ZT">
-            <property role="3w00ZX" value="RightTriangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vuT" resolve="RightTriangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9R" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9S" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vuT" resolve="RightTriangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vL8" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vL9" role="3wdj9d">
@@ -6207,8 +6464,11 @@
             <ref role="3wdj98" node="4QEfSMD5vCb" resolve="slf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vLg" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9P" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9Q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3w00Zz" id="4QEfSMD5vLh" role="3w00ZY">
@@ -6217,8 +6477,11 @@
             <ref role="3wdj98" node="4QEfSMD5vCl" resolve="srf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vLj" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9N" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9O" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3w00Zz" id="4QEfSMD5vLk" role="3w00ZY">
@@ -6358,8 +6621,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vM3" role="3Z9vGx">
         <property role="TrG5h" value="Cuboid" />
         <node concept="3w00Zy" id="4QEfSMD5vM4" role="3w00Zx">
-          <property role="3w00ZX" value="CuboidOrTriangularPrism" />
-          <ref role="3w00ZU" node="4QEfSMD5vBx" resolve="CuboidOrTriangularPrism" />
+          <node concept="AsIwX" id="4dRTMKM7d9L" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d9M" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vBx" resolve="CuboidOrTriangularPrism" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vM5" role="3w00ZY">
           <property role="3HG_t5" value="A Cuboid is a Polyhedron with six sides, all quadrilateral." />
@@ -6379,8 +6645,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBV" resolve="ff" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vMb" role="3w00ZT">
-            <property role="3w00ZX" value="Quadrilateral" />
-            <ref role="3w00ZU" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+            <node concept="AsIwX" id="4dRTMKM7d9J" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9K" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vMc" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vMd" role="3wdj9d">
@@ -6405,8 +6674,11 @@
             <ref role="3wdj98" node="4QEfSMD5vC3" resolve="rf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vMk" role="3w00ZT">
-            <property role="3w00ZX" value="Quadrilateral" />
-            <ref role="3w00ZU" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+            <node concept="AsIwX" id="4dRTMKM7d9H" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9I" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vv9" resolve="Quadrilateral" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vMl" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vMm" role="3wdj9d">
@@ -6904,7 +7176,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vOE" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vOF" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7d9F" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vOG" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vOH" role="2uUmlA">
@@ -6930,7 +7204,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vOM" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vON" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7d9D" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vOO" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vOP" role="2uUmlA">
@@ -6956,7 +7232,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vOU" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vOV" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7d9B" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vOW" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vOX" role="2uUmlA">
@@ -6982,7 +7260,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vP2" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vP3" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7d9_" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vP4" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vP5" role="2uUmlA">
@@ -7012,7 +7292,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vPb" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vPc" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7d9z" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vPd" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vPe" role="2uUmlA">
@@ -7038,7 +7320,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vPj" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vPk" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7d9x" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vPl" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vPm" role="2uUmlA">
@@ -7065,8 +7349,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vPr" role="3Z9vGx">
         <property role="TrG5h" value="RectangularCuboid" />
         <node concept="3w00Zy" id="4QEfSMD5vPs" role="3w00Zx">
-          <property role="3w00ZX" value="Cuboid" />
-          <ref role="3w00ZU" node="4QEfSMD5vM3" resolve="Cuboid" />
+          <node concept="AsIwX" id="4dRTMKM7d9v" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d9w" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vM3" resolve="Cuboid" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vPt" role="3w00ZY">
           <property role="3HG_t5" value="A RectangularCuboid is a Cuboid with all Rectangular sides." />
@@ -7104,8 +7391,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBB" resolve="tf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vPD" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9t" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9u" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vPE" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vPF" role="3wdj9d">
@@ -7130,8 +7420,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBL" resolve="bf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vPM" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9r" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9s" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vPN" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vPO" role="3wdj9d">
@@ -7156,8 +7449,11 @@
             <ref role="3wdj98" node="4QEfSMD5vBV" resolve="ff" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vPV" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9p" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vPW" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vPX" role="3wdj9d">
@@ -7182,8 +7478,11 @@
             <ref role="3wdj98" node="4QEfSMD5vC3" resolve="rf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vQ4" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9n" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9o" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vQ5" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vQ6" role="3wdj9d">
@@ -7208,8 +7507,11 @@
             <ref role="3wdj98" node="4QEfSMD5vCb" resolve="slf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vQd" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9l" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9m" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vQe" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vQf" role="3wdj9d">
@@ -7234,8 +7536,11 @@
             <ref role="3wdj98" node="4QEfSMD5vCl" resolve="srf" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vQm" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9j" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9k" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5vQn" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vQo" role="3wdj9d">
@@ -7265,8 +7570,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vQv" role="3Z9vGx">
         <property role="TrG5h" value="Pyramid" />
         <node concept="3w00Zy" id="4QEfSMD5vQw" role="3w00Zx">
-          <property role="3w00ZX" value="Polyhedron" />
-          <ref role="3w00ZU" node="4QEfSMD5vB5" resolve="Polyhedron" />
+          <node concept="AsIwX" id="4dRTMKM7d9h" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d9i" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vB5" resolve="Polyhedron" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vQx" role="3w00ZY">
           <property role="3HG_t5" value="A Pyramid is a Polyhedron with the sides of a polygon (base) forming the bases of triangles&#10;that join at an apex point.&#9;Its height is the perpendicular distance from the base to the apex,&#10;and its offsets are between this perpendicular at the base and the center of the base." />
@@ -7311,8 +7619,11 @@
             <property role="3wdj9b" value="faces" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vQK" role="3w00ZT">
-            <property role="3w00ZX" value="Triangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vul" resolve="Triangle" />
+            <node concept="AsIwX" id="4dRTMKM7d9f" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9g" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vul" resolve="Triangle" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vQL" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vQM" role="3wdj9d">
@@ -7395,7 +7706,9 @@
         <node concept="2uUmlE" id="4QEfSMD5vRd" role="3w00ZY">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5vRe" role="3w00ZT">
-            <property role="2uUmlF" value="MatesWith" />
+            <node concept="AsIwX" id="4dRTMKM7d9d" role="1MHwYB">
+              <property role="AsIwZ" value="MatesWith" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5vRf" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5vRg" role="2uUmlA">
@@ -7422,8 +7735,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vRl" role="3Z9vGx">
         <property role="TrG5h" value="Tetrahedron" />
         <node concept="3w00Zy" id="4QEfSMD5vRm" role="3w00Zx">
-          <property role="3w00ZX" value="Pyramid" />
-          <ref role="3w00ZU" node="4QEfSMD5vQv" resolve="Pyramid" />
+          <node concept="AsIwX" id="4dRTMKM7d9b" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d9c" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vQv" resolve="Pyramid" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vRn" role="3w00ZY">
           <property role="3HG_t5" value="A Tetrahedron is Pyramid with a triangular base." />
@@ -7452,8 +7768,11 @@
             <ref role="3wdj98" node="4QEfSMD5vQF" resolve="base" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vRw" role="3w00ZT">
-            <property role="3w00ZX" value="Triangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vul" resolve="Triangle" />
+            <node concept="AsIwX" id="4dRTMKM7d99" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d9a" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vul" resolve="Triangle" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vRx" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vRy" role="3wdj9d">
@@ -7492,8 +7811,11 @@
       <node concept="3w00Z_" id="4QEfSMD5vRH" role="3Z9vGx">
         <property role="TrG5h" value="RectangularPyramid" />
         <node concept="3w00Zy" id="4QEfSMD5vRI" role="3w00Zx">
-          <property role="3w00ZX" value="Pyramid" />
-          <ref role="3w00ZU" node="4QEfSMD5vQv" resolve="Pyramid" />
+          <node concept="AsIwX" id="4dRTMKM7d97" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d98" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5vQv" resolve="Pyramid" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vRJ" role="3w00ZY">
           <property role="3HG_t5" value="A RectangularPyramid is Pyramid with a rectangular base." />
@@ -7522,8 +7844,11 @@
             <ref role="3wdj98" node="4QEfSMD5vQF" resolve="base" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vRS" role="3w00ZT">
-            <property role="3w00ZX" value="Rectangle" />
-            <ref role="3w00ZU" node="4QEfSMD5vvB" resolve="Rectangle" />
+            <node concept="AsIwX" id="4dRTMKM7d95" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d96" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vvB" resolve="Rectangle" />
+              </node>
+            </node>
           </node>
           <node concept="35c6Nh" id="4QEfSMD5vRT" role="8GFem">
             <node concept="3wdj9f" id="4QEfSMD5vRU" role="3wdj9d">
@@ -7682,7 +8007,9 @@
       <node concept="3w00Z_" id="4QEfSMD5vS$" role="3Z9vGx">
         <property role="TrG5h" value="SpatialItem" />
         <node concept="3w00Zy" id="4QEfSMD5vS_" role="3w00Zx">
-          <property role="3w00ZX" value="SpatialFrame" />
+          <node concept="AsIwX" id="4dRTMKM7d93" role="1MHwYB">
+            <property role="AsIwZ" value="SpatialFrame" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vSA" role="3w00ZY">
           <property role="3HG_t5" value="A SpatialItem is an Item with a three-dimensional spatial extent that also acts as a SpatialFrame of reference." />
@@ -7701,8 +8028,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vSF" role="3w00ZT">
-            <property role="3w00ZX" value="Clock" />
-            <ref role="3w00ZU" node="4QEfSMD5$RB" resolve="Clock" />
+            <node concept="AsIwX" id="4dRTMKM7d91" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d92" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5$RB" resolve="Clock" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5vSG" role="8GFem">
             <property role="3HG_t5" value="A local Clock to be used as the corresponding time reference within this SpatialItem.&#10;By default this is the singleton universalClock." />
@@ -7735,7 +8065,9 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vSP" role="3w00ZT">
-            <property role="3w00ZX" value="Point" />
+            <node concept="AsIwX" id="4dRTMKM7d8Z" role="1MHwYB">
+              <property role="AsIwZ" value="Point" />
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5vSQ" role="8GFem">
             <property role="3HG_t5" value="The Point at the origin of the coordinateFrame of this SpatialItem." />
@@ -7760,8 +8092,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vSX" role="3w00ZT">
-            <property role="3w00ZX" value="SpatialItem" />
-            <ref role="3w00ZU" node="4QEfSMD5vS$" resolve="SpatialItem" />
+            <node concept="AsIwX" id="4dRTMKM7d8X" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d8Y" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vS$" resolve="SpatialItem" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5vSY" role="8GFem">
             <property role="35c6MN" value="true" />
@@ -7786,7 +8121,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5vT5" role="3w00ZT">
-            <property role="8CKM3" value="SpatialItem" />
+            <node concept="AsIwX" id="4dRTMKM7d8V" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d8W" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vS$" resolve="SpatialItem" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5vT6" role="8GFem">
             <property role="35c6MN" value="true" />
@@ -7811,8 +8150,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vTd" role="3w00ZT">
-            <property role="3w00ZX" value="SpatialItem" />
-            <ref role="3w00ZU" node="4QEfSMD5vS$" resolve="SpatialItem" />
+            <node concept="AsIwX" id="4dRTMKM7d8T" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d8U" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vS$" resolve="SpatialItem" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5vTe" role="8GFem">
             <property role="3HG_t5" value="A SpatialItem with componentItems is entirely made up of those items (the SpatialItem occurs only&#10;as a collection of its componentItems).  By default they have the same localClock and equivalent&#10;coordinate frame as the SpatialItem they make up.  A SpatialItem without componentItems occurs&#10;on its own, separately from its subitems." />
@@ -7907,8 +8249,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5vTF" role="3w00ZT">
-              <property role="3w00ZX" value="SpatialItem" />
-              <ref role="3w00ZU" node="4QEfSMD5vS$" resolve="SpatialItem" />
+              <node concept="AsIwX" id="4dRTMKM7d8R" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d8S" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5vS$" resolve="SpatialItem" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -7925,7 +8270,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5vTK" role="3w00ZT">
-            <property role="8CKM3" value="SpatialItem" />
+            <node concept="AsIwX" id="4dRTMKM7d8P" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d8Q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vS$" resolve="SpatialItem" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5vTL" role="8GFem">
             <property role="35c6MN" value="true" />
@@ -8499,8 +8848,11 @@
             <property role="8EhVk" value="1" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5vWD" role="3w00ZT">
-            <property role="3w00ZX" value="Risk" />
-            <ref role="3w00ZU" node="4QEfSMD5vY0" resolve="Risk" />
+            <node concept="AsIwX" id="4dRTMKM7d8N" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d8O" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5vY0" resolve="Risk" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5vWE" role="8GFem">
             <property role="3HG_t5" value="An assessment of risk for the annotated element." />
@@ -8608,7 +8960,9 @@
         <property role="6zCXJ" value="moe" />
         <property role="TrG5h" value="MeasureOfEffectiveness" />
         <node concept="3w00Zy" id="4QEfSMD5vXa" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7d8L" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vXb" role="3w00ZY">
           <property role="3HG_t5" value="MeasureOfEffectiveness is semantic metadata for identifying an attribute as a&#10;measure of effectiveness." />
@@ -8634,7 +8988,9 @@
         <property role="6zCXJ" value="mop" />
         <property role="TrG5h" value="MeasureOfPerformance" />
         <node concept="3w00Zy" id="4QEfSMD5vXj" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7d8J" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5vXk" role="3w00ZY">
           <property role="3HG_t5" value="MeasureOfPerformance is semantic metadata for identifying an attribute as a&#10;measure of performance." />
@@ -75202,8 +75558,11 @@
           <property role="8EhVk" value="1" />
         </node>
         <node concept="8CKM2" id="4QEfSMD5$R_" role="3w00ZT">
-          <property role="8CKM3" value="Clock" />
-          <ref role="8CKMW" node="4QEfSMD5$RB" resolve="Clock" />
+          <node concept="AsIwX" id="4dRTMKM7d8H" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8I" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5$RB" resolve="Clock" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5$RA" role="8GFem">
           <property role="3HG_t5" value="universalClock is a single Clock that can be used as a default universal time reference." />
@@ -75212,7 +75571,9 @@
       <node concept="3ZUotO" id="4QEfSMD5$RB" role="3Z9vGx">
         <property role="TrG5h" value="Clock" />
         <node concept="3w00Zy" id="4QEfSMD5$RC" role="3w00Zx">
-          <property role="3w00ZX" value="Clocks::Clock" />
+          <node concept="AsIwX" id="4dRTMKM7d8F" role="1MHwYB">
+            <property role="AsIwZ" value="Clocks::Clock" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5$RD" role="3w00ZY">
           <property role="3HG_t5" value="A Clock provides a currentTime as a TimeInstantValue that advances monotonically over its lifetime." />
@@ -81065,8 +81426,11 @@
         <property role="2uUmlw" value="true" />
         <property role="TrG5h" value="derivations" />
         <node concept="2uUmlC" id="4QEfSMD5_mo" role="3w00ZT">
-          <property role="2uUmlF" value="Derivation" />
-          <ref role="2uUml$" node="4QEfSMD5_m5" resolve="Derivation" />
+          <node concept="AsIwX" id="4dRTMKM7d8D" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8E" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_m5" resolve="Derivation" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_mp" role="8GFem">
           <property role="3HG_t5" value="derivations is the base feature for Derivation connection usages." />
@@ -81106,7 +81470,9 @@
         <property role="6zCXJ" value="original" />
         <property role="TrG5h" value="OriginalRequirementMetadata" />
         <node concept="3w00Zy" id="4QEfSMD5_mz" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7d8B" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_m$" role="3w00ZY">
           <property role="3HG_t5" value="OriginalRequirementMetadata identifies a usage as an original requirement.&#10;It is intended to be used to tag the original requirement end of a Derivation." />
@@ -81132,7 +81498,9 @@
         <property role="6zCXJ" value="derive" />
         <property role="TrG5h" value="DerivedRequirementMetadata" />
         <node concept="3w00Zy" id="4QEfSMD5_mG" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7d8_" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_mH" role="3w00ZY">
           <property role="3HG_t5" value="DerivedRequirementMetadata identifies a usage as a derived requirement.&#10;It is intended to be used to tag the derived requirement ends of a Derivation." />
@@ -81158,7 +81526,9 @@
         <property role="6zCXJ" value="derivation" />
         <property role="TrG5h" value="DerivationMetadata" />
         <node concept="3w00Zy" id="4QEfSMD5_mP" role="3w00Zx">
-          <property role="3w00ZX" value="SemanticMetadata" />
+          <node concept="AsIwX" id="4dRTMKM7d8z" role="1MHwYB">
+            <property role="AsIwZ" value="SemanticMetadata" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_mQ" role="3w00ZY">
           <property role="3HG_t5" value="DerivationMetadata is SemanticMetadata for a Derivation connection." />
@@ -83128,8 +83498,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5_w4" role="3w00ZT">
-            <property role="8CKM3" value="Part" />
-            <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+            <node concept="AsIwX" id="4dRTMKM7d8x" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d8y" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_w5" role="8GFem">
             <property role="3HG_t5" value="The Parts that fill the role of actors for this Case.&#10;(Note: This is not itself an actor parameter, because specific actor&#10;parameters will be added for specific Cases.)" />
@@ -83352,10 +83725,16 @@
         <property role="TrG5h" value="Connection" />
         <property role="3eyS6o" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5_x2" role="3w00Zx">
-          <property role="2uUmlF" value="LinkObject" />
+          <node concept="AsIwX" id="4dRTMKM7d8v" role="1MHwYB">
+            <property role="AsIwZ" value="LinkObject" />
+          </node>
         </node>
         <node concept="2uUmlC" id="4QEfSMD5_x3" role="3w00Zx">
-          <property role="2uUmlF" value="Part" />
+          <node concept="AsIwX" id="4dRTMKM7d8t" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8u" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_x4" role="3w00ZY">
           <property role="3HG_t5" value="Connection is the most general class of links between things within some&#10;containing structure. Connection is the base type of all ConnectionDefinitions." />
@@ -83365,11 +83744,16 @@
         <property role="TrG5h" value="BinaryConnection" />
         <property role="3eyS6o" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5_x6" role="3w00Zx">
-          <property role="2uUmlF" value="BinaryLinkObject" />
+          <node concept="AsIwX" id="4dRTMKM7d8r" role="1MHwYB">
+            <property role="AsIwZ" value="BinaryLinkObject" />
+          </node>
         </node>
         <node concept="2uUmlC" id="4QEfSMD5_x7" role="3w00Zx">
-          <property role="2uUmlF" value="Connection" />
-          <ref role="2uUml$" node="4QEfSMD5_x1" resolve="Connection" />
+          <node concept="AsIwX" id="4dRTMKM7d8p" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8q" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_x1" resolve="Connection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_x8" role="3w00ZY">
           <property role="3HG_t5" value="BinaryConnection is the most general class of binary links between two things&#10;within some containing structure. BinaryConnection is the base type of all&#10;ConnectionDefinitions with exactly two ends." />
@@ -83401,8 +83785,11 @@
         <property role="TrG5h" value="connections" />
         <property role="4JrGk" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5_xg" role="3w00ZT">
-          <property role="2uUmlF" value="Connection" />
-          <ref role="2uUml$" node="4QEfSMD5_x1" resolve="Connection" />
+          <node concept="AsIwX" id="4dRTMKM7d8n" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8o" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_x1" resolve="Connection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_xh" role="8GFem">
           <property role="3HG_t5" value="connections is the base feature of all ConnectionUsages." />
@@ -83425,8 +83812,11 @@
         <property role="TrG5h" value="binaryConnections" />
         <property role="4JrGk" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5_xm" role="3w00ZT">
-          <property role="2uUmlF" value="Connection" />
-          <ref role="2uUml$" node="4QEfSMD5_x1" resolve="Connection" />
+          <node concept="AsIwX" id="4dRTMKM7d8l" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8m" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_x1" resolve="Connection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_xn" role="8GFem">
           <property role="3HG_t5" value="binaryConnections is the base feature of all binary ConnectionUsages." />
@@ -83731,7 +84121,9 @@
         <node concept="2uUmlE" id="4QEfSMD5_yK" role="2hs9UQ">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5_yL" role="3w00ZT">
-            <property role="2uUmlF" value="HappensDuring" />
+            <node concept="AsIwX" id="4dRTMKM7d8j" role="1MHwYB">
+              <property role="AsIwZ" value="HappensDuring" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5_yM" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5_yN" role="2uUmlA">
@@ -83752,7 +84144,9 @@
         <node concept="2uUmlE" id="4QEfSMD5_yR" role="2hs9UQ">
           <property role="2uUmlw" value="true" />
           <node concept="2uUmlC" id="4QEfSMD5_yS" role="3w00ZT">
-            <property role="2uUmlF" value="HappensDuring" />
+            <node concept="AsIwX" id="4dRTMKM7d8h" role="1MHwYB">
+              <property role="AsIwZ" value="HappensDuring" />
+            </node>
           </node>
           <node concept="2uUmlD" id="4QEfSMD5_yT" role="2uUmly">
             <node concept="3wdj9f" id="4QEfSMD5_yU" role="2uUmlA">
@@ -84222,8 +84616,11 @@
         <property role="TrG5h" value="Interface" />
         <property role="3eyS6o" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5_$Y" role="3w00Zx">
-          <property role="2uUmlF" value="Connection" />
-          <ref role="2uUml$" node="4QEfSMD5_x1" resolve="Connection" />
+          <node concept="AsIwX" id="4dRTMKM7d8f" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8g" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_x1" resolve="Connection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_$Z" role="3w00ZY">
           <property role="3HG_t5" value="Interface is the most general class of links between Ports on Parts&#10;within some containing structure. Interface is the base type of all&#10;InterfaceDefinitions.&#10;&#10;Transfers outgoing from any one of the participant Ports of an Interface&#10;may be targeted to one of the other participant Ports (depending on any&#10;other Interfaces in which the Port is also participating)." />
@@ -84281,12 +84678,18 @@
         <property role="TrG5h" value="BinaryInterface" />
         <property role="3eyS6o" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5__d" role="3w00Zx">
-          <property role="2uUmlF" value="Interface" />
-          <ref role="2uUml$" node="4QEfSMD5_$X" resolve="Interface" />
+          <node concept="AsIwX" id="4dRTMKM7d8d" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8e" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_$X" resolve="Interface" />
+            </node>
+          </node>
         </node>
         <node concept="2uUmlC" id="4QEfSMD5__e" role="3w00Zx">
-          <property role="2uUmlF" value="BinaryConnection" />
-          <ref role="2uUml$" node="4QEfSMD5_x5" resolve="BinaryConnection" />
+          <node concept="AsIwX" id="4dRTMKM7d8b" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8c" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_x5" resolve="BinaryConnection" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5__f" role="3w00ZY">
           <property role="3HG_t5" value="BinaryInterface is the most general class of links between two Ports&#10;on Parts within some containing structure. BinaryInterface is the base&#10;type of all binary InterfaceDefinitions which have exactly two ends.&#10;&#10;Transfers outgoing from each participant Port of a BinaryInterface may be&#10;targeted to the other participant Port (depending on any other Interfaces&#10;in which the Port is also participating)." />
@@ -84334,8 +84737,11 @@
         <property role="4JrGk" value="true" />
         <property role="3eyS6o" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5__r" role="3w00ZT">
-          <property role="2uUmlF" value="Interface" />
-          <ref role="2uUml$" node="4QEfSMD5_$X" resolve="Interface" />
+          <node concept="AsIwX" id="4dRTMKM7d89" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d8a" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_$X" resolve="Interface" />
+            </node>
+          </node>
         </node>
         <node concept="8EhVq" id="4QEfSMD5__s" role="3w00ZS">
           <property role="8EhVr" value="0" />
@@ -84354,8 +84760,11 @@
         <property role="4JrGk" value="true" />
         <property role="3eyS6o" value="true" />
         <node concept="2uUmlC" id="4QEfSMD5__w" role="3w00ZT">
-          <property role="2uUmlF" value="BinaryInterface" />
-          <ref role="2uUml$" node="4QEfSMD5__c" resolve="BinaryInterface" />
+          <node concept="AsIwX" id="4dRTMKM7d87" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d88" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5__c" resolve="BinaryInterface" />
+            </node>
+          </node>
         </node>
         <node concept="8EhVq" id="4QEfSMD5__x" role="3w00ZS">
           <property role="8EhVr" value="0" />
@@ -84498,7 +84907,9 @@
         <property role="TrG5h" value="Item" />
         <property role="3eyS6o" value="true" />
         <node concept="3w00Zy" id="4QEfSMD5_A7" role="3w00Zx">
-          <property role="3w00ZX" value="Object" />
+          <node concept="AsIwX" id="4dRTMKM7d85" role="1MHwYB">
+            <property role="AsIwZ" value="Object" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_A8" role="3w00ZY">
           <property role="3HG_t5" value="Item is the most general class of objects that are part of, exist in or flow through a system.&#10;Item is the base type of all ItemDefinitions." />
@@ -84519,8 +84930,11 @@
             <property role="3wdj9b" value="startShot" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Ae" role="3w00ZT">
-            <property role="3w00ZX" value="Item" />
-            <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+            <node concept="AsIwX" id="4dRTMKM7d83" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d84" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3w00Zz" id="4QEfSMD5_Af" role="3w00ZY">
@@ -84529,8 +84943,11 @@
             <property role="3wdj9b" value="endShot" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Ah" role="3w00ZT">
-            <property role="3w00ZX" value="Item" />
-            <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+            <node concept="AsIwX" id="4dRTMKM7d81" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d82" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3w00Zz" id="4QEfSMD5_Ai" role="3w00ZY">
@@ -84539,8 +84956,11 @@
             <property role="3wdj9b" value="spaceBoundary" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Ak" role="3w00ZT">
-            <property role="3w00ZX" value="Item" />
-            <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+            <node concept="AsIwX" id="4dRTMKM7d7Z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d80" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_Al" role="8GFem">
             <property role="3HG_t5" value="The shape of an Item is its spatial boundary." />
@@ -84553,8 +84973,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Ao" role="3w00ZT">
-            <property role="3w00ZX" value="Item" />
-            <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+            <node concept="AsIwX" id="4dRTMKM7d7X" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7Y" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_Ap" role="8GFem">
             <property role="3HG_t5" value="Each enveloping shape is the shape of an Item that spacially overlaps this Item for its&#10;entire lifetime." />
@@ -84605,7 +85028,9 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_AD" role="3w00ZT">
-            <property role="3w00ZX" value="StructuredSpaceObject" />
+            <node concept="AsIwX" id="4dRTMKM7d7V" role="1MHwYB">
+              <property role="AsIwZ" value="StructuredSpaceObject" />
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_AE" role="8GFem">
             <property role="3HG_t5" value="envelopingShapes that are structured space objects with every face or every edge&#10;intersecting this Item." />
@@ -84617,8 +85042,11 @@
               <property role="3wdj9b" value="self" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_AH" role="3w00ZT">
-              <property role="3w00ZX" value="Item" />
-              <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+              <node concept="AsIwX" id="4dRTMKM7d7T" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d7U" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_AI" role="8GFem">
@@ -84708,8 +85136,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_B9" role="3w00ZT">
-            <property role="3w00ZX" value="Item" />
-            <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+            <node concept="AsIwX" id="4dRTMKM7d7R" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7S" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_Ba" role="8GFem">
             <property role="3HG_t5" value="The Items that are composite subitems of this Item." />
@@ -84738,8 +85169,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5_Bi" role="3w00ZT">
-            <property role="8CKM3" value="Part" />
-            <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+            <node concept="AsIwX" id="4dRTMKM7d7P" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7Q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_Bj" role="8GFem">
             <property role="3HG_t5" value="The subitems of this Item that are Parts." />
@@ -84770,10 +85204,14 @@
       <node concept="2uUmlJ" id="4QEfSMD5_Bq" role="3Z9vGx">
         <property role="TrG5h" value="Touches" />
         <node concept="2uUmlC" id="4QEfSMD5_Br" role="3w00Zx">
-          <property role="2uUmlF" value="JustOutsideOf" />
+          <node concept="AsIwX" id="4dRTMKM7d7N" role="1MHwYB">
+            <property role="AsIwZ" value="JustOutsideOf" />
+          </node>
         </node>
         <node concept="2uUmlC" id="4QEfSMD5_Bs" role="3w00Zx">
-          <property role="2uUmlF" value="HappensWhile" />
+          <node concept="AsIwX" id="4dRTMKM7d7L" role="1MHwYB">
+            <property role="AsIwZ" value="HappensWhile" />
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_Bt" role="3w00ZY">
           <property role="3HG_t5" value="Touching items are just outside each other and happen at the same time." />
@@ -84825,8 +85263,11 @@
           <property role="8EhVk" value="*" />
         </node>
         <node concept="3w00Zy" id="4QEfSMD5_BF" role="3w00ZT">
-          <property role="3w00ZX" value="Item" />
-          <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+          <node concept="AsIwX" id="4dRTMKM7d7J" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d7K" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_BG" role="8GFem">
           <property role="3HG_t5" value="items is the base feature of all ItemUsages." />
@@ -84881,11 +85322,16 @@
         <property role="TrG5h" value="MetadataItem" />
         <property role="3eyS6o" value="true" />
         <node concept="3w00Zy" id="4QEfSMD5_BT" role="3w00Zx">
-          <property role="3w00ZX" value="Metaobject" />
+          <node concept="AsIwX" id="4dRTMKM7d7H" role="1MHwYB">
+            <property role="AsIwZ" value="Metaobject" />
+          </node>
         </node>
         <node concept="3w00Zy" id="4QEfSMD5_BU" role="3w00Zx">
-          <property role="3w00ZX" value="Item" />
-          <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+          <node concept="AsIwX" id="4dRTMKM7d7F" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d7G" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_BV" role="3w00ZY">
           <property role="3HG_t5" value="MetadataItem is the most general class of Items that represent Metaobjects.&#10;MetadataItem is the base type of all MetadataDefinitions." />
@@ -84919,8 +85365,11 @@
           <property role="8EhVk" value="*" />
         </node>
         <node concept="3w00Zy" id="4QEfSMD5_C4" role="3w00ZT">
-          <property role="3w00ZX" value="MetadataItem" />
-          <ref role="3w00ZU" node="4QEfSMD5_BS" resolve="MetadataItem" />
+          <node concept="AsIwX" id="4dRTMKM7d7D" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d7E" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_BS" resolve="MetadataItem" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_C5" role="8GFem">
           <property role="3HG_t5" value="metadataItems is the base feature of all MetadataUsages.&#10;&#10;Note: It is not itself a MetadataUsage, because it is not being used as an&#10;AnnotatingElement here." />
@@ -85041,8 +85490,11 @@
         <property role="TrG5h" value="Part" />
         <property role="3eyS6o" value="true" />
         <node concept="3w00Zy" id="4QEfSMD5_Cu" role="3w00Zx">
-          <property role="3w00ZX" value="Item" />
-          <ref role="3w00ZU" node="4QEfSMD5_A6" resolve="Item" />
+          <node concept="AsIwX" id="4dRTMKM7d7B" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d7C" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_A6" resolve="Item" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_Cv" role="3w00ZY">
           <property role="3HG_t5" value="Part is the most general class of objects that represent all or a part of a system.&#10;Part is the base type of all PartDefinitions." />
@@ -85063,8 +85515,11 @@
             <property role="3wdj9b" value="Item::start" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5_C_" role="3w00ZT">
-            <property role="8CKM3" value="Part" />
-            <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+            <node concept="AsIwX" id="4dRTMKM7d7_" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7A" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8GF0z" id="4QEfSMD5_CA" role="3w00ZY">
@@ -85073,8 +85528,11 @@
             <property role="3wdj9b" value="Item::done" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5_CC" role="3w00ZT">
-            <property role="8CKM3" value="Part" />
-            <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+            <node concept="AsIwX" id="4dRTMKM7d7z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7$" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3xZtmn" id="4QEfSMD5_CD" role="3w00ZY">
@@ -85154,8 +85612,11 @@
               <property role="3wdj9b" value="ownedPerformances::this" />
             </node>
             <node concept="8CKM2" id="4QEfSMD5_CZ" role="3w00ZT">
-              <property role="8CKM3" value="Part" />
-              <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+              <node concept="AsIwX" id="4dRTMKM7d7x" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d7y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+                </node>
+              </node>
             </node>
             <node concept="3HG_t4" id="4QEfSMD5_D0" role="8GFem">
               <property role="3HG_t5" value="The &quot;this&quot; reference of an ownedAction is always its owning Part." />
@@ -85219,8 +85680,11 @@
           <property role="8EhVk" value="*" />
         </node>
         <node concept="8CKM2" id="4QEfSMD5_Dg" role="3w00ZT">
-          <property role="8CKM3" value="Part" />
-          <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+          <node concept="AsIwX" id="4dRTMKM7d7v" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7d7w" role="AsIwY">
+              <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+            </node>
+          </node>
         </node>
         <node concept="3HG_t4" id="4QEfSMD5_Dh" role="8GFem">
           <property role="3HG_t5" value="parts is the base feature of all part properties." />
@@ -85556,8 +86020,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5_ED" role="3w00ZT">
-            <property role="8CKM3" value="Part" />
-            <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+            <node concept="AsIwX" id="4dRTMKM7d7t" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7u" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_EE" role="8GFem">
             <property role="3HG_t5" value="The Parts that fill the role of actors for this RequirementCheck.&#10;(Note: This is not itself an actor parameter, because specific actor&#10;parameters will be added for specific RequirementChecks.)" />
@@ -85571,8 +86038,11 @@
             <property role="8EhVk" value="*" />
           </node>
           <node concept="8CKM2" id="4QEfSMD5_EH" role="3w00ZT">
-            <property role="8CKM3" value="Part" />
-            <ref role="8CKMW" node="4QEfSMD5_Ct" resolve="Part" />
+            <node concept="AsIwX" id="4dRTMKM7d7r" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7s" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ct" resolve="Part" />
+              </node>
+            </node>
           </node>
           <node concept="3HG_t4" id="4QEfSMD5_EI" role="8GFem">
             <property role="3HG_t5" value="The Parts that represent stakeholders interested in the concern being checked.&#10;(Note: This is not itself a stakeholder parameter, because specific stakeholder&#10;parameters will be added for specific RequirementChecks.)" />
@@ -86323,8 +86793,11 @@
         <node concept="1_WVX2" id="4QEfSMD5_I5" role="3Z9vGx">
           <property role="TrG5h" value="AcceptActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_I6" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d7p" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_I7" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86338,7 +86811,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ia" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d7n" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ib" role="3w00ZY">
@@ -86360,8 +86835,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ig" role="3w00ZT">
-              <property role="3w00ZX" value="ReferenceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d7l" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d7m" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ih" role="3w00ZY">
@@ -86376,18 +86854,25 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ik" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d7j" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Il" role="3Z9vGx">
           <property role="TrG5h" value="ActionDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Im" role="3w00Zx">
-            <property role="3w00ZX" value="Behavior" />
+            <node concept="AsIwX" id="4dRTMKM7d7h" role="1MHwYB">
+              <property role="AsIwZ" value="Behavior" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_In" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d7f" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7g" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Io" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86409,19 +86894,27 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_It" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d7d" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d7e" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Iu" role="3Z9vGx">
           <property role="TrG5h" value="ActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Iv" role="3w00Zx">
-            <property role="3w00ZX" value="Step" />
+            <node concept="AsIwX" id="4dRTMKM7d7b" role="1MHwYB">
+              <property role="AsIwZ" value="Step" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Iw" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d79" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d7a" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ix" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86443,14 +86936,18 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_IA" role="3w00ZT">
-              <property role="3w00ZX" value="Behavior" />
+              <node concept="AsIwX" id="4dRTMKM7d77" role="1MHwYB">
+                <property role="AsIwZ" value="Behavior" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_IB" role="3Z9vGx">
           <property role="TrG5h" value="ActorMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_IC" role="3w00Zx">
-            <property role="3w00ZX" value="ParameterMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d75" role="1MHwYB">
+              <property role="AsIwZ" value="ParameterMembership" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_ID" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86466,16 +86963,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_IH" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d73" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d74" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_II" role="3Z9vGx">
           <property role="TrG5h" value="AllocationDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_IJ" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectionDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Lk" resolve="ConnectionDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d71" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d72" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Lk" resolve="ConnectionDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_IK" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86494,16 +86997,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_IO" role="3w00ZT">
-              <property role="3w00ZX" value="AllocationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_IP" resolve="AllocationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d6Z" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d70" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_IP" resolve="AllocationUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_IP" role="3Z9vGx">
           <property role="TrG5h" value="AllocationUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_IQ" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Lw" resolve="ConnectionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d6X" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6Y" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Lw" resolve="ConnectionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_IR" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86522,16 +87031,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_IV" role="3w00ZT">
-              <property role="3w00ZX" value="AllocationDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_II" resolve="AllocationDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d6V" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d6W" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_II" resolve="AllocationDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_IW" role="3Z9vGx">
           <property role="TrG5h" value="AnalysisCaseDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_IX" role="3w00Zx">
-            <property role="3w00ZX" value="CaseDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d6T" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6U" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_IY" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86551,15 +87066,20 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_J3" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d6R" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_J4" role="3Z9vGx">
           <property role="TrG5h" value="AnalysisCaseUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_J5" role="3w00Zx">
-            <property role="3w00ZX" value="CaseUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d6P" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6Q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_J6" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86577,8 +87097,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ja" role="3w00ZT">
-              <property role="3w00ZX" value="AnalysisCaseDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_IW" resolve="AnalysisCaseDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d6N" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d6O" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_IW" resolve="AnalysisCaseDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Jb" role="3w00ZY">
@@ -86596,18 +87119,25 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Jf" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d6L" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Jg" role="3Z9vGx">
           <property role="TrG5h" value="AssertConstraintUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Jh" role="3w00Zx">
-            <property role="3w00ZX" value="ConstraintUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d6J" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6K" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Ji" role="3w00Zx">
-            <property role="3w00ZX" value="Invariant" />
+            <node concept="AsIwX" id="4dRTMKM7d6H" role="1MHwYB">
+              <property role="AsIwZ" value="Invariant" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Jj" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86621,16 +87151,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Jm" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d6F" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d6G" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Jn" role="3Z9vGx">
           <property role="TrG5h" value="AssignmentActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Jo" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d6D" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6E" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Jp" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86644,7 +87180,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Js" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d6B" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Jt" role="3w00ZY">
@@ -86659,7 +87197,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Jw" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d6_" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Jx" role="3w00ZY">
@@ -86677,25 +87217,35 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_J_" role="3w00ZT">
-              <property role="3w00ZX" value="Feature" />
+              <node concept="AsIwX" id="4dRTMKM7d6z" role="1MHwYB">
+                <property role="AsIwZ" value="Feature" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_JA" role="3Z9vGx">
           <property role="TrG5h" value="AttributeDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_JB" role="3w00Zx">
-            <property role="3w00ZX" value="DataType" />
+            <node concept="AsIwX" id="4dRTMKM7d6x" role="1MHwYB">
+              <property role="AsIwZ" value="DataType" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_JC" role="3w00Zx">
-            <property role="3w00ZX" value="Definition" />
-            <ref role="3w00ZU" node="4QEfSMD5_LV" resolve="Definition" />
+            <node concept="AsIwX" id="4dRTMKM7d6v" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6w" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LV" resolve="Definition" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_JD" role="3Z9vGx">
           <property role="TrG5h" value="AttributeUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_JE" role="3w00Zx">
-            <property role="3w00ZX" value="Usage" />
-            <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+            <node concept="AsIwX" id="4dRTMKM7d6t" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6u" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_JF" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86729,28 +87279,40 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_JN" role="3w00ZT">
-              <property role="3w00ZX" value="DataType" />
+              <node concept="AsIwX" id="4dRTMKM7d6r" role="1MHwYB">
+                <property role="AsIwZ" value="DataType" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_JO" role="3Z9vGx">
           <property role="TrG5h" value="BindingConnectorAsUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_JP" role="3w00Zx">
-            <property role="3w00ZX" value="BindingConnector" />
+            <node concept="AsIwX" id="4dRTMKM7d6p" role="1MHwYB">
+              <property role="AsIwZ" value="BindingConnector" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_JQ" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectorAsUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d6n" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6o" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_JR" role="3Z9vGx">
           <property role="TrG5h" value="CalculationDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_JS" role="3w00Zx">
-            <property role="3w00ZX" value="Function" />
+            <node concept="AsIwX" id="4dRTMKM7d6l" role="1MHwYB">
+              <property role="AsIwZ" value="Function" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_JT" role="3w00Zx">
-            <property role="3w00ZX" value="ActionDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Il" resolve="ActionDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d6j" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6k" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Il" resolve="ActionDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_JU" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86772,19 +87334,27 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_JZ" role="3w00ZT">
-              <property role="3w00ZX" value="CalculationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d6h" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d6i" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_K0" role="3Z9vGx">
           <property role="TrG5h" value="CalculationUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_K1" role="3w00Zx">
-            <property role="3w00ZX" value="Expression" />
+            <node concept="AsIwX" id="4dRTMKM7d6f" role="1MHwYB">
+              <property role="AsIwZ" value="Expression" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_K2" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d6d" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6e" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_K3" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86806,15 +87376,20 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_K8" role="3w00ZT">
-              <property role="3w00ZX" value="Function" />
+              <node concept="AsIwX" id="4dRTMKM7d6b" role="1MHwYB">
+                <property role="AsIwZ" value="Function" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_K9" role="3Z9vGx">
           <property role="TrG5h" value="CaseDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Ka" role="3w00Zx">
-            <property role="3w00ZX" value="CalculationDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_JR" resolve="CalculationDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d69" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d6a" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_JR" resolve="CalculationDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Kb" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86833,8 +87408,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Kf" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d67" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d68" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Kg" role="3w00ZY">
@@ -86856,8 +87434,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Kl" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d65" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d66" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Km" role="3w00ZY">
@@ -86880,16 +87461,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Kr" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d63" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d64" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Ks" role="3Z9vGx">
           <property role="TrG5h" value="CaseUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Kt" role="3w00Zx">
-            <property role="3w00ZX" value="CalculationUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d61" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d62" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ku" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -86908,8 +87495,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ky" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d5Z" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d60" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Kz" role="3w00ZY">
@@ -86928,8 +87518,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_KB" role="3w00ZT">
-              <property role="3w00ZX" value="CaseDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d5X" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5Y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_KC" role="3w00ZY">
@@ -86951,8 +87544,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_KH" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d5V" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5W" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_KI" role="3w00ZY">
@@ -86975,23 +87571,32 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_KN" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d5T" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5U" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_KO" role="3Z9vGx">
           <property role="TrG5h" value="ConcernDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_KP" role="3w00Zx">
-            <property role="3w00ZX" value="RequirementDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_SR" resolve="RequirementDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d5R" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5S" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_SR" resolve="RequirementDefinition" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_KQ" role="3Z9vGx">
           <property role="TrG5h" value="ConcernUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_KR" role="3w00Zx">
-            <property role="3w00ZX" value="RequirementUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d5P" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5Q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_KS" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -87009,16 +87614,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_KW" role="3w00ZT">
-              <property role="3w00ZX" value="ConcernDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_KO" resolve="ConcernDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d5N" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5O" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KO" resolve="ConcernDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_KX" role="3Z9vGx">
           <property role="TrG5h" value="ConjugatedPortDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_KY" role="3w00Zx">
-            <property role="3w00ZX" value="PortDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_S0" resolve="PortDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d5L" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5M" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_S0" resolve="PortDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_KZ" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -87035,8 +87646,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_L3" role="3w00ZT">
-              <property role="3w00ZX" value="PortDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_S0" resolve="PortDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d5J" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5K" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_S0" resolve="PortDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_L4" role="3w00ZY">
@@ -87054,15 +87668,20 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_L8" role="3w00ZT">
-              <property role="3w00ZX" value="PortConjugation" />
-              <ref role="3w00ZU" node="4QEfSMD5_RO" resolve="PortConjugation" />
+              <node concept="AsIwX" id="4dRTMKM7d5H" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5I" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_RO" resolve="PortConjugation" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_L9" role="3Z9vGx">
           <property role="TrG5h" value="ConjugatedPortTyping" />
           <node concept="3w00Zy" id="4QEfSMD5_La" role="3w00Zx">
-            <property role="3w00ZX" value="FeatureTyping" />
+            <node concept="AsIwX" id="4dRTMKM7d5F" role="1MHwYB">
+              <property role="AsIwZ" value="FeatureTyping" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Lb" role="3w00ZY">
             <property role="35c6MN" value="true" />
@@ -87078,8 +87697,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Lf" role="3w00ZT">
-              <property role="3w00ZX" value="ConjugatedPortDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_KX" resolve="ConjugatedPortDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d5D" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5E" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KX" resolve="ConjugatedPortDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Lg" role="3w00ZY">
@@ -87094,19 +87716,27 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Lj" role="3w00ZT">
-              <property role="3w00ZX" value="PortDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_S0" resolve="PortDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d5B" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5C" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_S0" resolve="PortDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Lk" role="3Z9vGx">
           <property role="TrG5h" value="ConnectionDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Ll" role="3w00Zx">
-            <property role="3w00ZX" value="AssociationStructure" />
+            <node concept="AsIwX" id="4dRTMKM7d5_" role="1MHwYB">
+              <property role="AsIwZ" value="AssociationStructure" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Lm" role="3w00Zx">
-            <property role="3w00ZX" value="PartDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d5z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5$" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Ln" role="3w00ZY">
             <property role="TrG5h" value="isSufficient" />
@@ -87137,20 +87767,29 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Lv" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d5x" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d5y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Lw" role="3Z9vGx">
           <property role="TrG5h" value="ConnectionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Lx" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectorAsUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d5v" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5w" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Ly" role="3w00Zx">
-            <property role="3w00ZX" value="PartUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d5t" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5u" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Lz" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -87172,7 +87811,9 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_LC" role="3w00ZT">
-              <property role="3w00ZX" value="AssociationStructure" />
+              <node concept="AsIwX" id="4dRTMKM7d5r" role="1MHwYB">
+                <property role="AsIwZ" value="AssociationStructure" />
+              </node>
             </node>
           </node>
         </node>
@@ -87180,31 +87821,46 @@
           <property role="TrG5h" value="ConnectorAsUsage" />
           <property role="3eyS6o" value="true" />
           <node concept="3w00Zy" id="4QEfSMD5_LE" role="3w00Zx">
-            <property role="3w00ZX" value="Usage" />
-            <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+            <node concept="AsIwX" id="4dRTMKM7d5p" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_LF" role="3w00Zx">
-            <property role="3w00ZX" value="Connector" />
+            <node concept="AsIwX" id="4dRTMKM7d5n" role="1MHwYB">
+              <property role="AsIwZ" value="Connector" />
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_LG" role="3Z9vGx">
           <property role="TrG5h" value="ConstraintDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_LH" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d5l" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5m" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_LI" role="3w00Zx">
-            <property role="3w00ZX" value="Predicate" />
+            <node concept="AsIwX" id="4dRTMKM7d5j" role="1MHwYB">
+              <property role="AsIwZ" value="Predicate" />
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_LJ" role="3Z9vGx">
           <property role="TrG5h" value="ConstraintUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_LK" role="3w00Zx">
-            <property role="3w00ZX" value="BooleanExpression" />
+            <node concept="AsIwX" id="4dRTMKM7d5h" role="1MHwYB">
+              <property role="AsIwZ" value="BooleanExpression" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_LL" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d5f" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5g" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_LM" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -87221,7 +87877,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_LQ" role="3w00ZT">
-              <property role="3w00ZX" value="Predicate" />
+              <node concept="AsIwX" id="4dRTMKM7d5d" role="1MHwYB">
+                <property role="AsIwZ" value="Predicate" />
+              </node>
             </node>
           </node>
         </node>
@@ -87229,21 +87887,29 @@
           <property role="TrG5h" value="ControlNode" />
           <property role="3eyS6o" value="true" />
           <node concept="3w00Zy" id="4QEfSMD5_LS" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d5b" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5c" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_LT" role="3Z9vGx">
           <property role="TrG5h" value="DecisionNode" />
           <node concept="3w00Zy" id="4QEfSMD5_LU" role="3w00Zx">
-            <property role="3w00ZX" value="ControlNode" />
-            <ref role="3w00ZU" node="4QEfSMD5_LR" resolve="ControlNode" />
+            <node concept="AsIwX" id="4dRTMKM7d59" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d5a" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LR" resolve="ControlNode" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_LV" role="3Z9vGx">
           <property role="TrG5h" value="Definition" />
           <node concept="3w00Zy" id="4QEfSMD5_LW" role="3w00Zx">
-            <property role="3w00ZX" value="Classifier" />
+            <node concept="AsIwX" id="4dRTMKM7d57" role="1MHwYB">
+              <property role="AsIwZ" value="Classifier" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_LX" role="3w00ZY">
             <property role="TrG5h" value="isVariation" />
@@ -87270,8 +87936,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_M4" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d55" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d56" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_M5" role="3w00ZY">
@@ -87288,8 +87957,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_M9" role="3w00ZT">
-              <property role="3w00ZX" value="VariantMembership" />
-              <ref role="3w00ZU" node="4QEfSMD5A0c" resolve="VariantMembership" />
+              <node concept="AsIwX" id="4dRTMKM7d53" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d54" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A0c" resolve="VariantMembership" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ma" role="3w00ZY">
@@ -87308,8 +87980,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Me" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d51" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d52" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Mf" role="3w00ZY">
@@ -87331,8 +88006,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Mk" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d4Z" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d50" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ml" role="3w00ZY">
@@ -87354,8 +88032,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Mq" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d4X" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4Y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Mr" role="3w00ZY">
@@ -87374,8 +88055,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Mv" role="3w00ZT">
-              <property role="3w00ZX" value="ReferenceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4V" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4W" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Mw" role="3w00ZY">
@@ -87394,8 +88078,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_M$" role="3w00ZT">
-              <property role="3w00ZX" value="AttributeUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_JD" resolve="AttributeUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4T" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4U" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_JD" resolve="AttributeUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_M_" role="3w00ZY">
@@ -87414,8 +88101,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_MD" role="3w00ZT">
-              <property role="3w00ZX" value="EnumerationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_OC" resolve="EnumerationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4R" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4S" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_OC" resolve="EnumerationUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_ME" role="3w00ZY">
@@ -87434,8 +88124,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_MI" role="3w00ZT">
-              <property role="3w00ZX" value="OccurrenceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4P" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4Q" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_MJ" role="3w00ZY">
@@ -87454,8 +88147,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_MN" role="3w00ZT">
-              <property role="3w00ZX" value="ItemUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4N" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4O" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_MO" role="3w00ZY">
@@ -87474,8 +88170,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_MS" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4L" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4M" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_MT" role="3w00ZY">
@@ -87494,8 +88193,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_MX" role="3w00ZT">
-              <property role="3w00ZX" value="PortUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_S8" resolve="PortUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4J" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4K" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_S8" resolve="PortUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_MY" role="3w00ZY">
@@ -87514,8 +88216,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_N2" role="3w00ZT">
-              <property role="3w00ZX" value="ConnectorAsUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4H" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4I" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_N3" role="3w00ZY">
@@ -87533,8 +88238,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_N7" role="3w00ZT">
-              <property role="3w00ZX" value="FlowUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Pj" resolve="FlowUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4F" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4G" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Pj" resolve="FlowUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_N8" role="3w00ZY">
@@ -87553,8 +88261,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Nc" role="3w00ZT">
-              <property role="3w00ZX" value="InterfaceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Qm" resolve="InterfaceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4D" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4E" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Qm" resolve="InterfaceUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Nd" role="3w00ZY">
@@ -87573,8 +88284,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Nh" role="3w00ZT">
-              <property role="3w00ZX" value="AllocationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_IP" resolve="AllocationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4B" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4C" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_IP" resolve="AllocationUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ni" role="3w00ZY">
@@ -87593,8 +88307,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Nm" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4_" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4A" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Nn" role="3w00ZY">
@@ -87613,8 +88330,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Nr" role="3w00ZT">
-              <property role="3w00ZX" value="StateUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_V_" resolve="StateUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4z" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4$" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_V_" resolve="StateUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ns" role="3w00ZY">
@@ -87632,8 +88352,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Nw" role="3w00ZT">
-              <property role="3w00ZX" value="TransitionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Ws" resolve="TransitionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4x" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Ws" resolve="TransitionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Nx" role="3w00ZY">
@@ -87652,8 +88375,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_N_" role="3w00ZT">
-              <property role="3w00ZX" value="CalculationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4v" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4w" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_NA" role="3w00ZY">
@@ -87672,8 +88398,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_NE" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4t" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4u" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_NF" role="3w00ZY">
@@ -87692,8 +88421,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_NJ" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4r" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4s" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_NK" role="3w00ZY">
@@ -87711,8 +88443,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_NO" role="3w00ZT">
-              <property role="3w00ZX" value="ConcernUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4p" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4q" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_NP" role="3w00ZY">
@@ -87731,8 +88466,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_NT" role="3w00ZT">
-              <property role="3w00ZX" value="CaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4n" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4o" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_NU" role="3w00ZY">
@@ -87751,8 +88489,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_NY" role="3w00ZT">
-              <property role="3w00ZX" value="AnalysisCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_J4" resolve="AnalysisCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4l" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4m" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_J4" resolve="AnalysisCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_NZ" role="3w00ZY">
@@ -87771,8 +88512,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_O3" role="3w00ZT">
-              <property role="3w00ZX" value="VerificationCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A0p" resolve="VerificationCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4j" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4k" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A0p" resolve="VerificationCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_O4" role="3w00ZY">
@@ -87791,8 +88535,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_O8" role="3w00ZT">
-              <property role="3w00ZX" value="UseCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4h" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4i" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_O9" role="3w00ZY">
@@ -87811,8 +88558,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Od" role="3w00ZT">
-              <property role="3w00ZX" value="ViewUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A14" resolve="ViewUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4f" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4g" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A14" resolve="ViewUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Oe" role="3w00ZY">
@@ -87831,8 +88581,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Oi" role="3w00ZT">
-              <property role="3w00ZX" value="ViewpointUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4d" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4e" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Oj" role="3w00ZY">
@@ -87851,8 +88604,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_On" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d4b" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4c" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Oo" role="3w00ZY">
@@ -87871,16 +88627,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Os" role="3w00ZT">
-              <property role="3w00ZX" value="MetadataUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_QS" resolve="MetadataUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d49" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d4a" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_QS" resolve="MetadataUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Ot" role="3Z9vGx">
           <property role="TrG5h" value="EnumerationDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Ou" role="3w00Zx">
-            <property role="3w00ZX" value="AttributeDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_JA" resolve="AttributeDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d47" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d48" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_JA" resolve="AttributeDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Ov" role="3w00ZY">
             <property role="TrG5h" value="isVariation" />
@@ -87913,16 +88675,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_OB" role="3w00ZT">
-              <property role="3w00ZX" value="EnumerationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_OC" resolve="EnumerationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d45" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d46" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_OC" resolve="EnumerationUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_OC" role="3Z9vGx">
           <property role="TrG5h" value="EnumerationUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_OD" role="3w00Zx">
-            <property role="3w00ZX" value="AttributeUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_JD" resolve="AttributeUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d43" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d44" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_JD" resolve="AttributeUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_OE" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -87940,16 +88708,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_OI" role="3w00ZT">
-              <property role="3w00ZX" value="EnumerationDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_Ot" resolve="EnumerationDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d41" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d42" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Ot" resolve="EnumerationDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_OJ" role="3Z9vGx">
           <property role="TrG5h" value="EventOccurrenceUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_OK" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3Z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d40" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_OL" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -87978,20 +88752,29 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_OS" role="3w00ZT">
-              <property role="3w00ZX" value="OccurrenceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3X" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3Y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_OT" role="3Z9vGx">
           <property role="TrG5h" value="ExhibitStateUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_OU" role="3w00Zx">
-            <property role="3w00ZX" value="StateUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_V_" resolve="StateUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3V" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3W" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_V_" resolve="StateUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_OV" role="3w00Zx">
-            <property role="3w00ZX" value="PerformActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_RG" resolve="PerformActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3T" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3U" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_RG" resolve="PerformActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_OW" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88009,8 +88792,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_P0" role="3w00ZT">
-              <property role="3w00ZX" value="StateUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_V_" resolve="StateUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3R" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3S" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_V_" resolve="StateUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -88018,7 +88804,9 @@
           <property role="TrG5h" value="Expose" />
           <property role="3eyS6o" value="true" />
           <node concept="3w00Zy" id="4QEfSMD5_P2" role="3w00Zx">
-            <property role="3w00ZX" value="Import" />
+            <node concept="AsIwX" id="4dRTMKM7d3P" role="1MHwYB">
+              <property role="AsIwZ" value="Import" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_P3" role="3w00ZY">
             <property role="TrG5h" value="visibility" />
@@ -88050,11 +88838,16 @@
         <node concept="1_WVX2" id="4QEfSMD5_Pb" role="3Z9vGx">
           <property role="TrG5h" value="FlowDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Pc" role="3w00Zx">
-            <property role="3w00ZX" value="Interaction" />
+            <node concept="AsIwX" id="4dRTMKM7d3N" role="1MHwYB">
+              <property role="AsIwZ" value="Interaction" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Pd" role="3w00Zx">
-            <property role="3w00ZX" value="ActionDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Il" resolve="ActionDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d3L" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3M" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Il" resolve="ActionDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Pe" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88071,23 +88864,34 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Pi" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d3J" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3K" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Pj" role="3Z9vGx">
           <property role="TrG5h" value="FlowUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Pk" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectorAsUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3H" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3I" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Pl" role="3w00Zx">
-            <property role="3w00ZX" value="Flow" />
+            <node concept="AsIwX" id="4dRTMKM7d3F" role="1MHwYB">
+              <property role="AsIwZ" value="Flow" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Pm" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3D" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3E" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Pn" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88109,15 +88913,20 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ps" role="3w00ZT">
-              <property role="3w00ZX" value="Interaction" />
+              <node concept="AsIwX" id="4dRTMKM7d3B" role="1MHwYB">
+                <property role="AsIwZ" value="Interaction" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Pt" role="3Z9vGx">
           <property role="TrG5h" value="ForLoopActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Pu" role="3w00Zx">
-            <property role="3w00ZX" value="LoopActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_QE" resolve="LoopActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3_" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3A" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_QE" resolve="LoopActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Pv" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88131,7 +88940,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Py" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d3z" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Pz" role="3w00ZY">
@@ -88146,23 +88957,32 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_PA" role="3w00ZT">
-              <property role="3w00ZX" value="ReferenceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3x" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_PB" role="3Z9vGx">
           <property role="TrG5h" value="ForkNode" />
           <node concept="3w00Zy" id="4QEfSMD5_PC" role="3w00Zx">
-            <property role="3w00ZX" value="ControlNode" />
-            <ref role="3w00ZU" node="4QEfSMD5_LR" resolve="ControlNode" />
+            <node concept="AsIwX" id="4dRTMKM7d3v" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3w" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LR" resolve="ControlNode" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_PD" role="3Z9vGx">
           <property role="TrG5h" value="FramedConcernMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_PE" role="3w00Zx">
-            <property role="3w00ZX" value="RequirementConstraintMembership" />
-            <ref role="3w00ZU" node="4QEfSMD5_SD" resolve="RequirementConstraintMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d3t" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3u" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_SD" resolve="RequirementConstraintMembership" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_PF" role="3w00ZY">
             <property role="TrG5h" value="kind" />
@@ -88194,8 +89014,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_PN" role="3w00ZT">
-              <property role="3w00ZX" value="ConcernUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3r" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3s" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_PO" role="3w00ZY">
@@ -88214,16 +89037,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_PS" role="3w00ZT">
-              <property role="3w00ZX" value="ConcernUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3p" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3q" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_PT" role="3Z9vGx">
           <property role="TrG5h" value="IfActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_PU" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3n" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3o" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_PV" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88237,8 +89066,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_PY" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3l" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3m" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_PZ" role="3w00ZY">
@@ -88253,8 +89085,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Q2" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3j" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3k" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Q3" role="3w00ZY">
@@ -88269,19 +89104,27 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Q6" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d3h" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Q7" role="3Z9vGx">
           <property role="TrG5h" value="IncludeUseCaseUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Q8" role="3w00Zx">
-            <property role="3w00ZX" value="UseCaseUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3f" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3g" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Q9" role="3w00Zx">
-            <property role="3w00ZX" value="PerformActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_RG" resolve="PerformActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d3d" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3e" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_RG" resolve="PerformActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Qa" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88299,16 +89142,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Qe" role="3w00ZT">
-              <property role="3w00ZX" value="UseCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d3b" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d3c" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Qf" role="3Z9vGx">
           <property role="TrG5h" value="InterfaceDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Qg" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectionDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Lk" resolve="ConnectionDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d39" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d3a" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Lk" resolve="ConnectionDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Qh" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88327,16 +89176,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ql" role="3w00ZT">
-              <property role="3w00ZX" value="PortUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_S8" resolve="PortUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d37" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d38" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_S8" resolve="PortUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Qm" role="3Z9vGx">
           <property role="TrG5h" value="InterfaceUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Qn" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Lw" resolve="ConnectionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d35" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d36" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Lw" resolve="ConnectionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Qo" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88354,26 +89209,37 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Qs" role="3w00ZT">
-              <property role="3w00ZX" value="InterfaceDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_Qf" resolve="InterfaceDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d33" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d34" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Qf" resolve="InterfaceDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Qt" role="3Z9vGx">
           <property role="TrG5h" value="ItemDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Qu" role="3w00Zx">
-            <property role="3w00ZX" value="Structure" />
+            <node concept="AsIwX" id="4dRTMKM7d31" role="1MHwYB">
+              <property role="AsIwZ" value="Structure" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Qv" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d2Z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d30" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Qw" role="3Z9vGx">
           <property role="TrG5h" value="ItemUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Qx" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d2X" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2Y" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Qy" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88395,23 +89261,31 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_QB" role="3w00ZT">
-              <property role="3w00ZX" value="Structure" />
+              <node concept="AsIwX" id="4dRTMKM7d2V" role="1MHwYB">
+                <property role="AsIwZ" value="Structure" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_QC" role="3Z9vGx">
           <property role="TrG5h" value="JoinNode" />
           <node concept="3w00Zy" id="4QEfSMD5_QD" role="3w00Zx">
-            <property role="3w00ZX" value="ControlNode" />
-            <ref role="3w00ZU" node="4QEfSMD5_LR" resolve="ControlNode" />
+            <node concept="AsIwX" id="4dRTMKM7d2T" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2U" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LR" resolve="ControlNode" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_QE" role="3Z9vGx">
           <property role="TrG5h" value="LoopActionUsage" />
           <property role="3eyS6o" value="true" />
           <node concept="3w00Zy" id="4QEfSMD5_QF" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d2R" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2S" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_QG" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88425,46 +89299,67 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_QJ" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d2P" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d2Q" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_QK" role="3Z9vGx">
           <property role="TrG5h" value="MembershipExpose" />
           <node concept="3w00Zy" id="4QEfSMD5_QL" role="3w00Zx">
-            <property role="3w00ZX" value="MembershipImport" />
+            <node concept="AsIwX" id="4dRTMKM7d2N" role="1MHwYB">
+              <property role="AsIwZ" value="MembershipImport" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_QM" role="3w00Zx">
-            <property role="3w00ZX" value="Expose" />
-            <ref role="3w00ZU" node="4QEfSMD5_P1" resolve="Expose" />
+            <node concept="AsIwX" id="4dRTMKM7d2L" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2M" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_P1" resolve="Expose" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_QN" role="3Z9vGx">
           <property role="TrG5h" value="MergeNode" />
           <node concept="3w00Zy" id="4QEfSMD5_QO" role="3w00Zx">
-            <property role="3w00ZX" value="ControlNode" />
-            <ref role="3w00ZU" node="4QEfSMD5_LR" resolve="ControlNode" />
+            <node concept="AsIwX" id="4dRTMKM7d2J" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2K" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LR" resolve="ControlNode" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_QP" role="3Z9vGx">
           <property role="TrG5h" value="MetadataDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_QQ" role="3w00Zx">
-            <property role="3w00ZX" value="ItemDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Qt" resolve="ItemDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d2H" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2I" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Qt" resolve="ItemDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_QR" role="3w00Zx">
-            <property role="3w00ZX" value="Metaclass" />
+            <node concept="AsIwX" id="4dRTMKM7d2F" role="1MHwYB">
+              <property role="AsIwZ" value="Metaclass" />
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_QS" role="3Z9vGx">
           <property role="TrG5h" value="MetadataUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_QT" role="3w00Zx">
-            <property role="3w00ZX" value="ItemUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d2D" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2E" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_QU" role="3w00Zx">
-            <property role="3w00ZX" value="MetadataFeature" />
+            <node concept="AsIwX" id="4dRTMKM7d2B" role="1MHwYB">
+              <property role="AsIwZ" value="MetadataFeature" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_QV" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88485,24 +89380,33 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_R0" role="3w00ZT">
-              <property role="3w00ZX" value="Metaclass" />
+              <node concept="AsIwX" id="4dRTMKM7d2_" role="1MHwYB">
+                <property role="AsIwZ" value="Metaclass" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_R1" role="3Z9vGx">
           <property role="TrG5h" value="NamespaceExpose" />
           <node concept="3w00Zy" id="4QEfSMD5_R2" role="3w00Zx">
-            <property role="3w00ZX" value="Expose" />
-            <ref role="3w00ZU" node="4QEfSMD5_P1" resolve="Expose" />
+            <node concept="AsIwX" id="4dRTMKM7d2z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2$" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_P1" resolve="Expose" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_R3" role="3w00Zx">
-            <property role="3w00ZX" value="NamespaceImport" />
+            <node concept="AsIwX" id="4dRTMKM7d2x" role="1MHwYB">
+              <property role="AsIwZ" value="NamespaceImport" />
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_R4" role="3Z9vGx">
           <property role="TrG5h" value="ObjectiveMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_R5" role="3w00Zx">
-            <property role="3w00ZX" value="FeatureMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d2v" role="1MHwYB">
+              <property role="AsIwZ" value="FeatureMembership" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_R6" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88518,19 +89422,27 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ra" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d2t" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d2u" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Rb" role="3Z9vGx">
           <property role="TrG5h" value="OccurrenceDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Rc" role="3w00Zx">
-            <property role="3w00ZX" value="Definition" />
-            <ref role="3w00ZU" node="4QEfSMD5_LV" resolve="Definition" />
+            <node concept="AsIwX" id="4dRTMKM7d2r" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2s" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LV" resolve="Definition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Rd" role="3w00Zx">
-            <property role="3w00ZX" value="Class" />
+            <node concept="AsIwX" id="4dRTMKM7d2p" role="1MHwYB">
+              <property role="AsIwZ" value="Class" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Re" role="3w00ZY">
             <property role="TrG5h" value="isIndividual" />
@@ -88546,8 +89458,11 @@
         <node concept="1_WVX2" id="4QEfSMD5_Rh" role="3Z9vGx">
           <property role="TrG5h" value="OccurrenceUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Ri" role="3w00Zx">
-            <property role="3w00ZX" value="Usage" />
-            <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+            <node concept="AsIwX" id="4dRTMKM7d2n" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2o" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Rj" role="3w00ZY">
             <property role="TrG5h" value="isIndividual" />
@@ -88587,7 +89502,9 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Rt" role="3w00ZT">
-              <property role="3w00ZX" value="Class" />
+              <node concept="AsIwX" id="4dRTMKM7d2l" role="1MHwYB">
+                <property role="AsIwZ" value="Class" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ru" role="3w00ZY">
@@ -88605,23 +89522,32 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ry" role="3w00ZT">
-              <property role="3w00ZX" value="OccurrenceDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d2j" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d2k" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Rz" role="3Z9vGx">
           <property role="TrG5h" value="PartDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_R$" role="3w00Zx">
-            <property role="3w00ZX" value="ItemDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Qt" resolve="ItemDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d2h" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2i" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Qt" resolve="ItemDefinition" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_R_" role="3Z9vGx">
           <property role="TrG5h" value="PartUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_RA" role="3w00Zx">
-            <property role="3w00ZX" value="ItemUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d2f" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2g" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_RB" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88640,20 +89566,29 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_RF" role="3w00ZT">
-              <property role="3w00ZX" value="PartDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d2d" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d2e" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_RG" role="3Z9vGx">
           <property role="TrG5h" value="PerformActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_RH" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d2b" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2c" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_RI" role="3w00Zx">
-            <property role="3w00ZX" value="EventOccurrenceUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_OJ" resolve="EventOccurrenceUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d29" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d2a" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_OJ" resolve="EventOccurrenceUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_RJ" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88671,15 +89606,20 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_RN" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d27" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d28" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_RO" role="3Z9vGx">
           <property role="TrG5h" value="PortConjugation" />
           <node concept="3w00Zy" id="4QEfSMD5_RP" role="3w00Zx">
-            <property role="3w00ZX" value="Conjugation" />
+            <node concept="AsIwX" id="4dRTMKM7d25" role="1MHwYB">
+              <property role="AsIwZ" value="Conjugation" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_RQ" role="3w00ZY">
             <property role="35c6MN" value="true" />
@@ -88695,8 +89635,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_RU" role="3w00ZT">
-              <property role="3w00ZX" value="PortDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_S0" resolve="PortDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d23" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d24" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_S0" resolve="PortDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_RV" role="3w00ZY">
@@ -88714,19 +89657,27 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_RZ" role="3w00ZT">
-              <property role="3w00ZX" value="ConjugatedPortDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_KX" resolve="ConjugatedPortDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d21" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d22" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KX" resolve="ConjugatedPortDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_S0" role="3Z9vGx">
           <property role="TrG5h" value="PortDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_S1" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d1Z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d20" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rb" resolve="OccurrenceDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_S2" role="3w00Zx">
-            <property role="3w00ZX" value="Structure" />
+            <node concept="AsIwX" id="4dRTMKM7d1X" role="1MHwYB">
+              <property role="AsIwZ" value="Structure" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_S3" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88743,16 +89694,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_S7" role="3w00ZT">
-              <property role="3w00ZX" value="ConjugatedPortDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_KX" resolve="ConjugatedPortDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d1V" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1W" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KX" resolve="ConjugatedPortDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_S8" role="3Z9vGx">
           <property role="TrG5h" value="PortUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_S9" role="3w00Zx">
-            <property role="3w00ZX" value="OccurrenceUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d1T" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d1U" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Sa" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88771,8 +89728,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Se" role="3w00ZT">
-              <property role="3w00ZX" value="PortDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_S0" resolve="PortDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d1R" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1S" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_S0" resolve="PortDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -88788,8 +89748,11 @@
         <node concept="1_WVX2" id="4QEfSMD5_Si" role="3Z9vGx">
           <property role="TrG5h" value="ReferenceUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Sj" role="3w00Zx">
-            <property role="3w00ZX" value="Usage" />
-            <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+            <node concept="AsIwX" id="4dRTMKM7d1P" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d1Q" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Sk" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88810,8 +89773,11 @@
         <node concept="1_WVX2" id="4QEfSMD5_So" role="3Z9vGx">
           <property role="TrG5h" value="RenderingDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_Sp" role="3w00Zx">
-            <property role="3w00ZX" value="PartDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d1N" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d1O" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Sq" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88830,16 +89796,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Su" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1L" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1M" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Sv" role="3Z9vGx">
           <property role="TrG5h" value="RenderingUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Sw" role="3w00Zx">
-            <property role="3w00ZX" value="PartUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d1J" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d1K" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Sx" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -88857,8 +89829,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_S_" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_So" resolve="RenderingDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d1H" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1I" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_So" resolve="RenderingDefinition" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -88874,7 +89849,9 @@
         <node concept="1_WVX2" id="4QEfSMD5_SD" role="3Z9vGx">
           <property role="TrG5h" value="RequirementConstraintMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_SE" role="3w00Zx">
-            <property role="3w00ZX" value="FeatureMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d1F" role="1MHwYB">
+              <property role="AsIwZ" value="FeatureMembership" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_SF" role="3w00ZY">
             <property role="TrG5h" value="kind" />
@@ -88901,8 +89878,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_SM" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1D" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1E" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_SN" role="3w00ZY">
@@ -88917,16 +89897,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_SQ" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1B" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1C" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_SR" role="3Z9vGx">
           <property role="TrG5h" value="RequirementDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_SS" role="3w00Zx">
-            <property role="3w00ZX" value="ConstraintDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_LG" resolve="ConstraintDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d1_" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d1A" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LG" resolve="ConstraintDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_ST" role="3w00ZY">
             <property role="TrG5h" value="reqId" />
@@ -88971,8 +89957,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_T5" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d1z" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1$" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_T6" role="3w00ZY">
@@ -88995,8 +89984,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Tb" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1x" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Tc" role="3w00ZY">
@@ -89019,8 +90011,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Th" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1v" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1w" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ti" role="3w00ZY">
@@ -89039,8 +90034,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Tm" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1t" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1u" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Tn" role="3w00ZY">
@@ -89059,8 +90057,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Tr" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1r" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1s" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ts" role="3w00ZY">
@@ -89079,16 +90080,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Tw" role="3w00ZT">
-              <property role="3w00ZX" value="ConcernUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1p" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1q" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Tx" role="3Z9vGx">
           <property role="TrG5h" value="RequirementUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Ty" role="3w00Zx">
-            <property role="3w00ZX" value="ConstraintUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d1n" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d1o" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Tz" role="3w00ZY">
             <property role="TrG5h" value="reqId" />
@@ -89130,8 +90137,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_TI" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_SR" resolve="RequirementDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7d1l" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1m" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_SR" resolve="RequirementDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_TJ" role="3w00ZY">
@@ -89150,8 +90160,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_TN" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1j" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1k" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_TO" role="3w00ZY">
@@ -89170,8 +90183,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_TS" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1h" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1i" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_TT" role="3w00ZY">
@@ -89193,8 +90209,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_TY" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d1f" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1g" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_TZ" role="3w00ZY">
@@ -89213,8 +90232,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_U3" role="3w00ZT">
-              <property role="3w00ZX" value="ConcernUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1d" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1e" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_U4" role="3w00ZY">
@@ -89237,8 +90259,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_U9" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d1b" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1c" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ua" role="3w00ZY">
@@ -89261,16 +90286,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Uf" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d19" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d1a" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Ug" role="3Z9vGx">
           <property role="TrG5h" value="RequirementVerificationMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_Uh" role="3w00Zx">
-            <property role="3w00ZX" value="RequirementConstraintMembership" />
-            <ref role="3w00ZU" node="4QEfSMD5_SD" resolve="RequirementConstraintMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d17" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d18" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_SD" resolve="RequirementConstraintMembership" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Ui" role="3w00ZY">
             <property role="TrG5h" value="kind" />
@@ -89302,8 +90333,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Uq" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d15" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d16" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ur" role="3w00ZY">
@@ -89322,20 +90356,29 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Uv" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d13" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d14" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Uw" role="3Z9vGx">
           <property role="TrG5h" value="SatisfyRequirementUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Ux" role="3w00Zx">
-            <property role="3w00ZX" value="RequirementUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d11" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d12" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_Uy" role="3w00Zx">
-            <property role="3w00ZX" value="AssertConstraintUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Jg" resolve="AssertConstraintUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d0Z" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d10" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Jg" resolve="AssertConstraintUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Uz" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -89353,8 +90396,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_UB" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0X" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0Y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_UC" role="3w00ZY">
@@ -89369,15 +90415,20 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_UF" role="3w00ZT">
-              <property role="3w00ZX" value="Feature" />
+              <node concept="AsIwX" id="4dRTMKM7d0V" role="1MHwYB">
+                <property role="AsIwZ" value="Feature" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_UG" role="3Z9vGx">
           <property role="TrG5h" value="SendActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_UH" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d0T" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d0U" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_UI" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -89391,7 +90442,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_UL" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d0R" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_UM" role="3w00ZY">
@@ -89406,7 +90459,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_UP" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d0P" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_UQ" role="3w00ZY">
@@ -89421,14 +90476,18 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_UT" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d0N" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_UU" role="3Z9vGx">
           <property role="TrG5h" value="StakeholderMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_UV" role="3w00Zx">
-            <property role="3w00ZX" value="ParameterMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d0L" role="1MHwYB">
+              <property role="AsIwZ" value="ParameterMembership" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_UW" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -89444,16 +90503,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_V0" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0J" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0K" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_V1" role="3Z9vGx">
           <property role="TrG5h" value="StateDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_V2" role="3w00Zx">
-            <property role="3w00ZX" value="ActionDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Il" resolve="ActionDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7d0H" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d0I" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Il" resolve="ActionDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_V3" role="3w00ZY">
             <property role="TrG5h" value="isParallel" />
@@ -89482,8 +90547,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Va" role="3w00ZT">
-              <property role="3w00ZX" value="StateUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_V_" resolve="StateUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0F" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0G" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_V_" resolve="StateUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Vb" role="3w00ZY">
@@ -89498,8 +90566,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ve" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0D" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0E" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Vf" role="3w00ZY">
@@ -89514,8 +90585,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Vi" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0B" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0C" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Vj" role="3w00ZY">
@@ -89530,8 +90604,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Vm" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0_" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0A" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -89550,7 +90627,9 @@
         <node concept="1_WVX2" id="4QEfSMD5_Vr" role="3Z9vGx">
           <property role="TrG5h" value="StateSubactionMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_Vs" role="3w00Zx">
-            <property role="3w00ZX" value="FeatureMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d0z" role="1MHwYB">
+              <property role="AsIwZ" value="FeatureMembership" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Vt" role="3w00ZY">
             <property role="TrG5h" value="kind" />
@@ -89577,16 +90656,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_V$" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0x" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0y" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_V_" role="3Z9vGx">
           <property role="TrG5h" value="StateUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_VA" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d0v" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d0w" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_VB" role="3w00ZY">
             <property role="TrG5h" value="isParallel" />
@@ -89615,7 +90700,9 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_VI" role="3w00ZT">
-              <property role="3w00ZX" value="Behavior" />
+              <node concept="AsIwX" id="4dRTMKM7d0t" role="1MHwYB">
+                <property role="AsIwZ" value="Behavior" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_VJ" role="3w00ZY">
@@ -89630,8 +90717,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_VM" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0r" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0s" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_VN" role="3w00ZY">
@@ -89646,8 +90736,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_VQ" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0p" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0q" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_VR" role="3w00ZY">
@@ -89662,15 +90755,20 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_VU" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7d0n" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0o" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_VV" role="3Z9vGx">
           <property role="TrG5h" value="SubjectMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_VW" role="3w00Zx">
-            <property role="3w00ZX" value="ParameterMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d0l" role="1MHwYB">
+              <property role="AsIwZ" value="ParameterMembership" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_VX" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -89686,36 +90784,52 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_W1" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7d0j" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d0k" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_W2" role="3Z9vGx">
           <property role="TrG5h" value="SuccessionAsUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_W3" role="3w00Zx">
-            <property role="3w00ZX" value="ConnectorAsUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d0h" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d0i" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_W4" role="3w00Zx">
-            <property role="3w00ZX" value="Succession" />
+            <node concept="AsIwX" id="4dRTMKM7d0f" role="1MHwYB">
+              <property role="AsIwZ" value="Succession" />
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_W5" role="3Z9vGx">
           <property role="TrG5h" value="SuccessionFlowUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_W6" role="3w00Zx">
-            <property role="3w00ZX" value="SuccessionFlow" />
+            <node concept="AsIwX" id="4dRTMKM7d0d" role="1MHwYB">
+              <property role="AsIwZ" value="SuccessionFlow" />
+            </node>
           </node>
           <node concept="3w00Zy" id="4QEfSMD5_W7" role="3w00Zx">
-            <property role="3w00ZX" value="FlowUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Pj" resolve="FlowUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d0b" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d0c" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Pj" resolve="FlowUsage" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_W8" role="3Z9vGx">
           <property role="TrG5h" value="TerminateActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_W9" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d09" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d0a" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Wa" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -89729,7 +90843,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Wd" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7d07" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
@@ -89748,7 +90864,9 @@
         <node concept="1_WVX2" id="4QEfSMD5_Wi" role="3Z9vGx">
           <property role="TrG5h" value="TransitionFeatureMembership" />
           <node concept="3w00Zy" id="4QEfSMD5_Wj" role="3w00Zx">
-            <property role="3w00ZX" value="FeatureMembership" />
+            <node concept="AsIwX" id="4dRTMKM7d05" role="1MHwYB">
+              <property role="AsIwZ" value="FeatureMembership" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_Wk" role="3w00ZY">
             <property role="TrG5h" value="kind" />
@@ -89775,15 +90893,20 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Wr" role="3w00ZT">
-              <property role="3w00ZX" value="Step" />
+              <node concept="AsIwX" id="4dRTMKM7d03" role="1MHwYB">
+                <property role="AsIwZ" value="Step" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_Ws" role="3Z9vGx">
           <property role="TrG5h" value="TransitionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5_Wt" role="3w00Zx">
-            <property role="3w00ZX" value="ActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7d01" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7d02" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Wu" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -89797,8 +90920,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Wx" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZZ" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7d00" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Wy" role="3w00ZY">
@@ -89813,8 +90939,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_W_" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZX" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZY" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_WA" role="3w00ZY">
@@ -89832,8 +90961,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_WE" role="3w00ZT">
-              <property role="3w00ZX" value="AcceptActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_I5" resolve="AcceptActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZV" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZW" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_I5" resolve="AcceptActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_WF" role="3w00ZY">
@@ -89851,7 +90983,9 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_WJ" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7cZT" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_WK" role="3w00ZY">
@@ -89869,8 +91003,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_WO" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZR" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZS" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_WP" role="3w00ZY">
@@ -89888,14 +91025,18 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_WT" role="3w00ZT">
-              <property role="3w00ZX" value="Succession" />
+              <node concept="AsIwX" id="4dRTMKM7cZP" role="1MHwYB">
+                <property role="AsIwZ" value="Succession" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_WU" role="3Z9vGx">
           <property role="TrG5h" value="TriggerInvocationExpression" />
           <node concept="3w00Zy" id="4QEfSMD5_WV" role="3w00Zx">
-            <property role="3w00ZX" value="InvocationExpression" />
+            <node concept="AsIwX" id="4dRTMKM7cZN" role="1MHwYB">
+              <property role="AsIwZ" value="InvocationExpression" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_WW" role="3w00ZY">
             <property role="TrG5h" value="kind" />
@@ -89924,7 +91065,9 @@
         <node concept="1_WVX2" id="4QEfSMD5_X3" role="3Z9vGx">
           <property role="TrG5h" value="Usage" />
           <node concept="3w00Zy" id="4QEfSMD5_X4" role="3w00Zx">
-            <property role="3w00ZX" value="Feature" />
+            <node concept="AsIwX" id="4dRTMKM7cZL" role="1MHwYB">
+              <property role="AsIwZ" value="Feature" />
+            </node>
           </node>
           <node concept="8EhU9" id="4QEfSMD5_X5" role="3w00ZY">
             <property role="TrG5h" value="isVariation" />
@@ -89976,8 +91119,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Xj" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7cZJ" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZK" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Xk" role="3w00ZY">
@@ -89994,8 +91140,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Xo" role="3w00ZT">
-              <property role="3w00ZX" value="VariantMembership" />
-              <ref role="3w00ZU" node="4QEfSMD5A0c" resolve="VariantMembership" />
+              <node concept="AsIwX" id="4dRTMKM7cZH" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZI" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A0c" resolve="VariantMembership" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Xp" role="3w00ZY">
@@ -90013,8 +91162,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Xt" role="3w00ZT">
-              <property role="3w00ZX" value="Definition" />
-              <ref role="3w00ZU" node="4QEfSMD5_LV" resolve="Definition" />
+              <node concept="AsIwX" id="4dRTMKM7cZF" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZG" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LV" resolve="Definition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Xu" role="3w00ZY">
@@ -90032,8 +91184,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Xy" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7cZD" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZE" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Xz" role="3w00ZY">
@@ -90052,7 +91207,9 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_XB" role="3w00ZT">
-              <property role="3w00ZX" value="Classifier" />
+              <node concept="AsIwX" id="4dRTMKM7cZB" role="1MHwYB">
+                <property role="AsIwZ" value="Classifier" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_XC" role="3w00ZY">
@@ -90071,8 +91228,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_XG" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7cZ_" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZA" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_XH" role="3w00ZY">
@@ -90094,8 +91254,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_XM" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7cZz" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZ$" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_XN" role="3w00ZY">
@@ -90117,8 +91280,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_XS" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7cZx" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZy" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_XT" role="3w00ZY">
@@ -90137,8 +91303,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_XX" role="3w00ZT">
-              <property role="3w00ZX" value="ReferenceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZv" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZw" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Si" resolve="ReferenceUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_XY" role="3w00ZY">
@@ -90157,8 +91326,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Y2" role="3w00ZT">
-              <property role="3w00ZX" value="AttributeUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_JD" resolve="AttributeUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZt" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZu" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_JD" resolve="AttributeUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Y3" role="3w00ZY">
@@ -90177,8 +91349,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Y7" role="3w00ZT">
-              <property role="3w00ZX" value="EnumerationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_OC" resolve="EnumerationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZr" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZs" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_OC" resolve="EnumerationUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Y8" role="3w00ZY">
@@ -90197,8 +91372,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Yc" role="3w00ZT">
-              <property role="3w00ZX" value="OccurrenceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZp" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZq" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Rh" resolve="OccurrenceUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Yd" role="3w00ZY">
@@ -90217,8 +91395,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Yh" role="3w00ZT">
-              <property role="3w00ZX" value="ItemUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZn" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZo" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Qw" resolve="ItemUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Yi" role="3w00ZY">
@@ -90237,8 +91418,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Ym" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZl" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZm" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Yn" role="3w00ZY">
@@ -90257,8 +91441,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Yr" role="3w00ZT">
-              <property role="3w00ZX" value="PortUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_S8" resolve="PortUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZj" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZk" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_S8" resolve="PortUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ys" role="3w00ZY">
@@ -90277,8 +91464,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Yw" role="3w00ZT">
-              <property role="3w00ZX" value="ConnectorAsUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZh" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZi" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LD" resolve="ConnectorAsUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Yx" role="3w00ZY">
@@ -90296,8 +91486,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Y_" role="3w00ZT">
-              <property role="3w00ZX" value="FlowUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Pj" resolve="FlowUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZf" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZg" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Pj" resolve="FlowUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_YA" role="3w00ZY">
@@ -90316,8 +91509,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_YE" role="3w00ZT">
-              <property role="3w00ZX" value="InterfaceUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Qm" resolve="InterfaceUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZd" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZe" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Qm" resolve="InterfaceUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_YF" role="3w00ZY">
@@ -90336,8 +91532,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_YJ" role="3w00ZT">
-              <property role="3w00ZX" value="AllocationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_IP" resolve="AllocationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZb" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZc" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_IP" resolve="AllocationUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_YK" role="3w00ZY">
@@ -90356,8 +91555,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_YO" role="3w00ZT">
-              <property role="3w00ZX" value="ActionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZ9" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZa" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Iu" resolve="ActionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_YP" role="3w00ZY">
@@ -90376,8 +91578,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_YT" role="3w00ZT">
-              <property role="3w00ZX" value="StateUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_V_" resolve="StateUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZ7" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZ8" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_V_" resolve="StateUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_YU" role="3w00ZY">
@@ -90395,8 +91600,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_YY" role="3w00ZT">
-              <property role="3w00ZX" value="TransitionUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Ws" resolve="TransitionUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZ5" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZ6" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Ws" resolve="TransitionUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_YZ" role="3w00ZY">
@@ -90415,8 +91623,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Z3" role="3w00ZT">
-              <property role="3w00ZX" value="CalculationUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZ3" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZ4" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_K0" resolve="CalculationUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Z4" role="3w00ZY">
@@ -90435,8 +91646,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Z8" role="3w00ZT">
-              <property role="3w00ZX" value="ConstraintUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cZ1" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZ2" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_LJ" resolve="ConstraintUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Z9" role="3w00ZY">
@@ -90455,8 +91669,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Zd" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYZ" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cZ0" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Ze" role="3w00ZY">
@@ -90474,8 +91691,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Zi" role="3w00ZT">
-              <property role="3w00ZX" value="ConcernUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYX" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYY" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_KQ" resolve="ConcernUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Zj" role="3w00ZY">
@@ -90494,8 +91714,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Zn" role="3w00ZT">
-              <property role="3w00ZX" value="CaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYV" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYW" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Zo" role="3w00ZY">
@@ -90514,8 +91737,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Zs" role="3w00ZT">
-              <property role="3w00ZX" value="AnalysisCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_J4" resolve="AnalysisCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYT" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYU" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_J4" resolve="AnalysisCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Zt" role="3w00ZY">
@@ -90534,8 +91760,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_Zx" role="3w00ZT">
-              <property role="3w00ZX" value="VerificationCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A0p" resolve="VerificationCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYR" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYS" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A0p" resolve="VerificationCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_Zy" role="3w00ZY">
@@ -90554,8 +91783,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_ZA" role="3w00ZT">
-              <property role="3w00ZX" value="UseCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYP" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYQ" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_ZB" role="3w00ZY">
@@ -90574,8 +91806,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_ZF" role="3w00ZT">
-              <property role="3w00ZX" value="ViewUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A14" resolve="ViewUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYN" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYO" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A14" resolve="ViewUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_ZG" role="3w00ZY">
@@ -90594,8 +91829,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_ZK" role="3w00ZT">
-              <property role="3w00ZX" value="ViewpointUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYL" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYM" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_ZL" role="3w00ZY">
@@ -90614,8 +91852,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_ZP" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYJ" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYK" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_ZQ" role="3w00ZY">
@@ -90634,16 +91875,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5_ZU" role="3w00ZT">
-              <property role="3w00ZX" value="MetadataUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_QS" resolve="MetadataUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYH" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYI" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_QS" resolve="MetadataUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5_ZV" role="3Z9vGx">
           <property role="TrG5h" value="UseCaseDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5_ZW" role="3w00Zx">
-            <property role="3w00ZX" value="CaseDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7cYF" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cYG" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5_ZX" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90658,16 +91905,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A00" role="3w00ZT">
-              <property role="3w00ZX" value="UseCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYD" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYE" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A01" role="3Z9vGx">
           <property role="TrG5h" value="UseCaseUsage" />
           <node concept="3w00Zy" id="4QEfSMD5A02" role="3w00Zx">
-            <property role="3w00ZX" value="CaseUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+            <node concept="AsIwX" id="4dRTMKM7cYB" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cYC" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A03" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90685,8 +91938,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A07" role="3w00ZT">
-              <property role="3w00ZX" value="UseCaseDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5_ZV" resolve="UseCaseDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7cY_" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYA" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_ZV" resolve="UseCaseDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A08" role="3w00ZY">
@@ -90702,15 +91958,20 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0b" role="3w00ZT">
-              <property role="3w00ZX" value="UseCaseUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYz" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cY$" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A01" resolve="UseCaseUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A0c" role="3Z9vGx">
           <property role="TrG5h" value="VariantMembership" />
           <node concept="3w00Zy" id="4QEfSMD5A0d" role="3w00Zx">
-            <property role="3w00ZX" value="OwningMembership" />
+            <node concept="AsIwX" id="4dRTMKM7cYx" role="1MHwYB">
+              <property role="AsIwZ" value="OwningMembership" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0e" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90726,16 +91987,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0i" role="3w00ZT">
-              <property role="3w00ZX" value="Usage" />
-              <ref role="3w00ZU" node="4QEfSMD5_X3" resolve="Usage" />
+              <node concept="AsIwX" id="4dRTMKM7cYv" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYw" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_X3" resolve="Usage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A0j" role="3Z9vGx">
           <property role="TrG5h" value="VerificationCaseDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5A0k" role="3w00Zx">
-            <property role="3w00ZX" value="CaseDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7cYt" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cYu" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_K9" resolve="CaseDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0l" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90750,16 +92017,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0o" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYr" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYs" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A0p" role="3Z9vGx">
           <property role="TrG5h" value="VerificationCaseUsage" />
           <node concept="3w00Zy" id="4QEfSMD5A0q" role="3w00Zx">
-            <property role="3w00ZX" value="CaseUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+            <node concept="AsIwX" id="4dRTMKM7cYp" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cYq" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Ks" resolve="CaseUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0r" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90777,8 +92050,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0v" role="3w00ZT">
-              <property role="3w00ZX" value="VerificationCaseDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5A0j" resolve="VerificationCaseDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7cYn" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYo" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A0j" resolve="VerificationCaseDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0w" role="3w00ZY">
@@ -90794,16 +92070,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0z" role="3w00ZT">
-              <property role="3w00ZX" value="RequirementUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYl" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYm" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A0$" role="3Z9vGx">
           <property role="TrG5h" value="ViewDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5A0_" role="3w00Zx">
-            <property role="3w00ZX" value="PartDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7cYj" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cYk" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Rz" resolve="PartDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0A" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90822,8 +92104,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0E" role="3w00ZT">
-              <property role="3w00ZX" value="ViewUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A14" resolve="ViewUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYh" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYi" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A14" resolve="ViewUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0F" role="3w00ZY">
@@ -90843,8 +92128,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0J" role="3w00ZT">
-              <property role="3w00ZX" value="ViewpointUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYf" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYg" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0K" role="3w00ZY">
@@ -90859,8 +92147,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0N" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cYd" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cYe" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0O" role="3w00ZY">
@@ -90879,14 +92170,18 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0S" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7cYb" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A0T" role="3Z9vGx">
           <property role="TrG5h" value="ViewRenderingMembership" />
           <node concept="3w00Zy" id="4QEfSMD5A0U" role="3w00Zx">
-            <property role="3w00ZX" value="FeatureMembership" />
+            <node concept="AsIwX" id="4dRTMKM7cY9" role="1MHwYB">
+              <property role="AsIwZ" value="FeatureMembership" />
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A0V" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90902,8 +92197,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A0Z" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cY7" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cY8" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A10" role="3w00ZY">
@@ -90918,16 +92216,22 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A13" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cY5" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cY6" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A14" role="3Z9vGx">
           <property role="TrG5h" value="ViewUsage" />
           <node concept="3w00Zy" id="4QEfSMD5A15" role="3w00Zx">
-            <property role="3w00ZX" value="PartUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+            <node concept="AsIwX" id="4dRTMKM7cY3" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cY4" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A16" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -90945,8 +92249,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1a" role="3w00ZT">
-              <property role="3w00ZX" value="ViewDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5A0$" resolve="ViewDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7cY1" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cY2" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A0$" resolve="ViewDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1b" role="3w00ZY">
@@ -90966,8 +92273,11 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1f" role="3w00ZT">
-              <property role="3w00ZX" value="ViewpointUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cXZ" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cY0" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A1$" resolve="ViewpointUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1g" role="3w00ZY">
@@ -90986,7 +92296,9 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1k" role="3w00ZT">
-              <property role="3w00ZX" value="Element" />
+              <node concept="AsIwX" id="4dRTMKM7cXX" role="1MHwYB">
+                <property role="AsIwZ" value="Element" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1l" role="3w00ZY">
@@ -91001,8 +92313,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1o" role="3w00ZT">
-              <property role="3w00ZX" value="RenderingUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cXV" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cXW" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_Sv" resolve="RenderingUsage" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1p" role="3w00ZY">
@@ -91021,15 +92336,20 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1t" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7cXT" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A1u" role="3Z9vGx">
           <property role="TrG5h" value="ViewpointDefinition" />
           <node concept="3w00Zy" id="4QEfSMD5A1v" role="3w00Zx">
-            <property role="3w00ZX" value="RequirementDefinition" />
-            <ref role="3w00ZU" node="4QEfSMD5_SR" resolve="RequirementDefinition" />
+            <node concept="AsIwX" id="4dRTMKM7cXR" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cXS" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_SR" resolve="RequirementDefinition" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1w" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -91044,16 +92364,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1z" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cXP" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cXQ" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A1$" role="3Z9vGx">
           <property role="TrG5h" value="ViewpointUsage" />
           <node concept="3w00Zy" id="4QEfSMD5A1_" role="3w00Zx">
-            <property role="3w00ZX" value="RequirementUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+            <node concept="AsIwX" id="4dRTMKM7cXN" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cXO" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_Tx" resolve="RequirementUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1A" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -91071,8 +92397,11 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1E" role="3w00ZT">
-              <property role="3w00ZX" value="ViewpointDefinition" />
-              <ref role="3w00ZU" node="4QEfSMD5A1u" resolve="ViewpointDefinition" />
+              <node concept="AsIwX" id="4dRTMKM7cXL" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cXM" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5A1u" resolve="ViewpointDefinition" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1F" role="3w00ZY">
@@ -91088,16 +92417,22 @@
               <property role="8EhVk" value="*" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1I" role="3w00ZT">
-              <property role="3w00ZX" value="PartUsage" />
-              <ref role="3w00ZU" node="4QEfSMD5_R_" resolve="PartUsage" />
+              <node concept="AsIwX" id="4dRTMKM7cXJ" role="1MHwYB">
+                <node concept="AsIwU" id="4dRTMKM7cXK" role="AsIwY">
+                  <ref role="AsIwW" node="4QEfSMD5_R_" resolve="PartUsage" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
         <node concept="1_WVX2" id="4QEfSMD5A1J" role="3Z9vGx">
           <property role="TrG5h" value="WhileLoopActionUsage" />
           <node concept="3w00Zy" id="4QEfSMD5A1K" role="3w00Zx">
-            <property role="3w00ZX" value="LoopActionUsage" />
-            <ref role="3w00ZU" node="4QEfSMD5_QE" resolve="LoopActionUsage" />
+            <node concept="AsIwX" id="4dRTMKM7cXH" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7cXI" role="AsIwY">
+                <ref role="AsIwW" node="4QEfSMD5_QE" resolve="LoopActionUsage" />
+              </node>
+            </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1L" role="3w00ZY">
             <property role="07dpI" value="true" />
@@ -91111,7 +92446,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1O" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7cXF" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
           <node concept="3w00Zz" id="4QEfSMD5A1P" role="3w00ZY">
@@ -91126,7 +92463,9 @@
               <property role="8EhVk" value="1" />
             </node>
             <node concept="3w00Zy" id="4QEfSMD5A1S" role="3w00ZT">
-              <property role="3w00ZX" value="Expression" />
+              <node concept="AsIwX" id="4dRTMKM7cXD" role="1MHwYB">
+                <property role="AsIwZ" value="Expression" />
+              </node>
             </node>
           </node>
         </node>
