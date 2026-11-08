@@ -70,6 +70,9 @@
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
+      <concept id="50764132512836853" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedDefinitionRef" flags="ng" index="2_tBl0">
+        <child id="50764132512836854" name="qualifiedName" index="2_tBl3" />
+      </concept>
       <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
         <reference id="8642959026948349261" name="target" index="AsIwW" />
       </concept>
@@ -109,10 +112,7 @@
       <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
         <property id="7140692429570900105" name="kind" index="3xZtlB" />
       </concept>
-      <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm">
-        <property id="7140692429570900096" name="portDefinitionName" index="3xZtlI" />
-        <reference id="7140692429570900097" name="definition" index="3xZtlJ" />
-      </concept>
+      <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm" />
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
         <child id="7140692429570900101" name="types" index="3xZtlF" />
       </concept>
@@ -150,8 +150,11 @@
             <node concept="3xZtmn" id="3MUZSeG$NYp" role="3w00ZY">
               <property role="TrG5h" value="deep" />
               <node concept="3xZtmm" id="3MUZSeG$NYq" role="3xZtlF">
-                <property role="3xZtlI" value="DP" />
-                <ref role="3xZtlJ" node="3MUZSeG$NYn" resolve="DP" />
+                <node concept="AsIwX" id="2OmrmDWKCN" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCO" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeG$NYn" resolve="DP" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -160,8 +163,11 @@
             <node concept="3xZtmn" id="3MUZSeG$NYs" role="3w00ZY">
               <property role="TrG5h" value="out" />
               <node concept="3xZtmm" id="3MUZSeG$NYt" role="3xZtlF">
-                <property role="3xZtlI" value="DP" />
-                <ref role="3xZtlJ" node="3MUZSeG$NYn" resolve="DP" />
+                <node concept="AsIwX" id="2OmrmDWKCP" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCQ" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeG$NYn" resolve="DP" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeG$NYu" role="3w00ZY">
@@ -181,16 +187,22 @@
               <property role="TrG5h" value="a" />
               <property role="2uUgYw" value="true" />
               <node concept="3xZtmm" id="3MUZSeG$NYy" role="3xZtlF">
-                <property role="3xZtlI" value="DP" />
-                <ref role="3xZtlJ" node="3MUZSeG$NYn" resolve="DP" />
+                <node concept="AsIwX" id="2OmrmDWKCR" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCS" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeG$NYn" resolve="DP" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3xZtmn" id="3MUZSeG$NYz" role="3w00ZY">
               <property role="TrG5h" value="b" />
               <property role="2uUgYw" value="true" />
               <node concept="3xZtmm" id="3MUZSeG$NY$" role="3xZtlF">
-                <property role="3xZtlI" value="DP" />
-                <ref role="3xZtlJ" node="3MUZSeG$NYn" resolve="DP" />
+                <node concept="AsIwX" id="2OmrmDWKCT" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCU" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeG$NYn" resolve="DP" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

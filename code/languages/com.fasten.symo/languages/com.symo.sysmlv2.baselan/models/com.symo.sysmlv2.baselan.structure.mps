@@ -265,24 +265,7 @@
     <property role="EcuMT" value="8930763252717678395" />
     <property role="TrG5h" value="SysMLv2AttributeDefinitionRef" />
     <property role="3GE5qa" value="part.attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="7JKstLNmmWW" role="1TKVEl">
-      <property role="IQ2nx" value="8930763252717678396" />
-      <property role="TrG5h" value="attributeDefinitionName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="7JKstLNmmWX" role="1TKVEi">
-      <property role="IQ2ns" value="8930763252717678397" />
-      <property role="20kJfa" value="definition" />
-      <property role="TrG5h" value="definition" />
-      <ref role="20lvS9" node="7JKstLNmmWw" resolve="SysMLv2AttributeDefinition" />
-    </node>
-    <node concept="PrWs8" id="4N4m7hs7Fm8" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
-    <node concept="RPilO" id="3kx1GVoqlMh" role="lGtFl">
-      <ref role="RPilL" node="7JKstLNmmWX" resolve="definition" />
-    </node>
+    <ref role="1TJDcQ" node="2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
   </node>
   <node concept="1TIwiD" id="7JKstLNmmXl">
     <property role="EcuMT" value="8930763252717678421" />
@@ -439,23 +422,7 @@
     <property role="TrG5h" value="SysMLv2PortDefinitionRef" />
     <property role="R4oN_" value="reference to a port definition, with fallback name" />
     <property role="3GE5qa" value="part.port" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6coPuU2Tg20" role="1TKVEl">
-      <property role="IQ2nx" value="7140692429570900096" />
-      <property role="TrG5h" value="portDefinitionName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="6coPuU2Tg21" role="1TKVEi">
-      <property role="IQ2ns" value="7140692429570900097" />
-      <property role="20kJfa" value="definition" />
-      <ref role="20lvS9" node="6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
-    </node>
-    <node concept="PrWs8" id="4N4m7hs7Fmb" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
-    <node concept="RPilO" id="3kx1GVoqlMk" role="lGtFl">
-      <ref role="RPilL" node="6coPuU2Tg21" resolve="definition" />
-    </node>
+    <ref role="1TJDcQ" node="2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1T">
     <property role="EcuMT" value="7140692429570900089" />
@@ -960,23 +927,7 @@
     <property role="EcuMT" value="6214786105876472908" />
     <property role="TrG5h" value="SysMLv2MetadataDefinitionRef" />
     <property role="3GE5qa" value="metadata" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5oZmK$NNehl" role="1TKVEl">
-      <property role="IQ2nx" value="6214786105876472917" />
-      <property role="TrG5h" value="metadataDefinitionName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="5oZmK$NNehm" role="1TKVEi">
-      <property role="IQ2ns" value="6214786105876472918" />
-      <property role="20kJfa" value="definition" />
-      <ref role="20lvS9" node="5oZmK$NNehb" resolve="SysMLv2MetadataDefinition" />
-    </node>
-    <node concept="PrWs8" id="5oZmK$NNehn" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
-    <node concept="RPilO" id="5oZmK$NNfCH" role="lGtFl">
-      <ref role="RPilL" node="5oZmK$NNehm" resolve="definition" />
-    </node>
+    <ref role="1TJDcQ" node="2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
   </node>
   <node concept="1TIwiD" id="5oZmK$NNehd">
     <property role="EcuMT" value="6214786105876472909" />
@@ -1101,9 +1052,6 @@
     <property role="TrG5h" value="SysMLv2ConnectionDefinitionRef" />
     <property role="3GE5qa" value="connection" />
     <ref role="1TJDcQ" node="7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
-    <node concept="PrWs8" id="BOR0Mn7r_D" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
   </node>
   <node concept="1TIwiD" id="BOR0Mn7r__">
     <property role="EcuMT" value="717440187291777381" />
@@ -1375,24 +1323,7 @@
     <property role="EcuMT" value="4376090928965378315" />
     <property role="TrG5h" value="SysMLv2FlowDefinitionRef" />
     <property role="3GE5qa" value="flow" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3MUZSeHMA4c" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
-    <node concept="1TJgyj" id="3MUZSeHMA4d" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928965378317" />
-      <property role="TrG5h" value="definition" />
-      <property role="20kJfa" value="definition" />
-      <ref role="20lvS9" node="3MUZSeHmu9H" resolve="SysMLv2FlowDefinition" />
-    </node>
-    <node concept="1TJgyi" id="3MUZSeHMA4e" role="1TKVEl">
-      <property role="IQ2nx" value="4376090928965378318" />
-      <property role="TrG5h" value="flowDefinitionName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="RPilO" id="3MUZSeHMA4h" role="lGtFl">
-      <ref role="RPilL" node="3MUZSeHMA4d" resolve="definition" />
-    </node>
+    <ref role="1TJDcQ" node="2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
   </node>
   <node concept="1TIwiD" id="3MUZSeI$44h">
     <property role="EcuMT" value="4376090928978346257" />
@@ -1554,20 +1485,7 @@
     <property role="TrG5h" value="SysMLv2DefinitionRef" />
     <property role="R4oN_" value="reference to any definition (FeatureTyping.type), with fallback name as written" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="fNDJb6KWC$" role="1TKVEl">
-      <property role="IQ2nx" value="284754763101489700" />
-      <property role="TrG5h" value="definitionName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="fNDJb6KWC_" role="1TKVEi">
-      <property role="IQ2ns" value="284754763101489701" />
-      <property role="20kJfa" value="definition" />
-      <ref role="20lvS9" node="3MUZSeI$44h" resolve="SysMLv2Definition" />
-    </node>
-    <node concept="PrWs8" id="fNDJb6KWCA" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
+    <ref role="1TJDcQ" node="2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
   </node>
   <node concept="1TIwiD" id="fNDJb6KWCz">
     <property role="EcuMT" value="284754763101489699" />
@@ -1680,20 +1598,7 @@
     <property role="TrG5h" value="SysMLv2CalculationDefinitionRef" />
     <property role="R4oN_" value="name of a calculation definition (calc def)" />
     <property role="3GE5qa" value="calc" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5wFVtxsPPN$" role="1TKVEl">
-      <property role="IQ2nx" value="6353433212862553316" />
-      <property role="TrG5h" value="calculationDefinitionName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="5wFVtxsPPN_" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212862553317" />
-      <property role="20kJfa" value="definition" />
-      <ref role="20lvS9" node="5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
-    </node>
-    <node concept="PrWs8" id="5wFVtxsUzxO" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
+    <ref role="1TJDcQ" node="2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
   </node>
   <node concept="1TIwiD" id="5wFVtxsPPNy">
     <property role="EcuMT" value="6353433212862553314" />
@@ -2545,6 +2450,21 @@
     </node>
     <node concept="PrWs8" id="7vLXn5hRnX8" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Omrm_KyNP">
+    <property role="EcuMT" value="50764132512836853" />
+    <property role="TrG5h" value="SysMLv2QualifiedDefinitionRef" />
+    <property role="R4oN_" value="reference to a definition by qualified name; subconcepts say which kind of definition is expected (checked, not scoped)" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="references" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2Omrm_KyNQ" role="1TKVEi">
+      <property role="IQ2ns" value="50764132512836854" />
+      <property role="20kJfa" value="qualifiedName" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
   </node>
 </model>

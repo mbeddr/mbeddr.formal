@@ -68,18 +68,13 @@
         <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="4376090928945101101" name="value" index="2gbwqI" />
       </concept>
-      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
-        <reference id="8930763252717678397" name="definition" index="8EhVx" />
-      </concept>
+      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB" />
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
         <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
-      <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
-        <reference id="5531643499102778613" name="namespace" index="gQIM1" />
-      </concept>
       <concept id="4211673189923939179" name="com.symo.sysmlv2.baselan.structure.SysMLv2EmptyLine" flags="ng" index="2h0jOo" />
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
@@ -93,6 +88,9 @@
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE" />
+      <concept id="50764132512836853" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedDefinitionRef" flags="ng" index="2_tBl0">
+        <child id="50764132512836854" name="qualifiedName" index="2_tBl3" />
+      </concept>
       <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
         <reference id="8642959026948349261" name="target" index="AsIwW" />
       </concept>
@@ -123,10 +121,7 @@
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
         <reference id="7140692429575677862" name="usage" index="3wdj98" />
       </concept>
-      <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm">
-        <property id="7140692429570900096" name="portDefinitionName" index="3xZtlI" />
-        <reference id="7140692429570900097" name="definition" index="3xZtlJ" />
-      </concept>
+      <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm" />
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
         <child id="4376090928935961761" name="content" index="2gGRGy" />
         <child id="7140692429570900101" name="types" index="3xZtlF" />
@@ -149,9 +144,7 @@
       </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
       <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
-      <concept id="6214786105876472908" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinitionRef" flags="ng" index="1_WVX5">
-        <reference id="6214786105876472918" name="definition" index="1_WVXv" />
-      </concept>
+      <concept id="6214786105876472908" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinitionRef" flags="ng" index="1_WVX5" />
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
@@ -359,8 +352,14 @@
           <node concept="8EhU9" id="3kx1GVon0AX" role="3w00ZY">
             <property role="TrG5h" value="mass" />
             <node concept="8EhVB" id="3kx1GVon0AY" role="8EhU5">
-              <ref role="gQIM1" node="3kx1GVon0AT" resolve="pack_020_01" />
-              <ref role="8EhVx" node="3kx1GVon0AU" resolve="Mass" />
+              <node concept="AsIwX" id="2OmrmDWKBN" role="2_tBl3">
+                <node concept="AsIwU" id="2OmrmDWKBO" role="AsIwY">
+                  <ref role="AsIwW" node="3kx1GVon0AT" resolve="pack_020_01" />
+                </node>
+                <node concept="AsIwU" id="2OmrmDWKBP" role="AsIwY">
+                  <ref role="AsIwW" node="3kx1GVon0AU" resolve="Mass" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -372,7 +371,21 @@
         <property role="2TTd_B" value="attribute mass: " />
       </node>
       <node concept="2TK7Tu" id="3kx1GVon0B2" role="3cqZAp">
-        <property role="2TTd_B" value="pack_020_01::Mass" />
+        <property role="2TTd_B" value="pack_020_01" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2o" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2p" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2q" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2r" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2s" role="3cqZAp">
+        <property role="2TTd_B" value="Mass" />
       </node>
       <node concept="2HxZob" id="3kx1GVon0B3" role="3cqZAp">
         <node concept="3iKlGA" id="3kx1GVon0B5" role="3iKnsn">
@@ -429,8 +442,14 @@
           <node concept="3xZtmn" id="3kx1GVon0Br" role="3w00ZY">
             <property role="TrG5h" value="fuelIn" />
             <node concept="3xZtmm" id="3kx1GVon0Bs" role="3xZtlF">
-              <ref role="gQIM1" node="3kx1GVon0Bn" resolve="pack_030_01" />
-              <ref role="3xZtlJ" node="3kx1GVon0Bo" resolve="FuelPort" />
+              <node concept="AsIwX" id="2OmrmDWKBQ" role="2_tBl3">
+                <node concept="AsIwU" id="2OmrmDWKBR" role="AsIwY">
+                  <ref role="AsIwW" node="3kx1GVon0Bn" resolve="pack_030_01" />
+                </node>
+                <node concept="AsIwU" id="2OmrmDWKBS" role="AsIwY">
+                  <ref role="AsIwW" node="3kx1GVon0Bo" resolve="FuelPort" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -442,7 +461,21 @@
         <property role="2TTd_B" value="port fuelIn: " />
       </node>
       <node concept="2TK7Tu" id="3kx1GVon0Bw" role="3cqZAp">
-        <property role="2TTd_B" value="pack_030_01::FuelPort" />
+        <property role="2TTd_B" value="pack_030_01" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2t" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2u" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2v" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2w" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2x" role="3cqZAp">
+        <property role="2TTd_B" value="FuelPort" />
       </node>
       <node concept="2HxZob" id="3kx1GVon0Bx" role="3cqZAp">
         <node concept="3iKlGA" id="3kx1GVon0Bz" role="3iKnsn">
@@ -582,7 +615,7 @@
         <node concept="2h0jOo" id="3kx1GVoujON" role="2h0jOs" />
         <node concept="3ZUotO" id="3kx1GVoujOO" role="2h0jOs">
           <property role="TrG5h" value="Car" />
-          <node concept="3w00Zy" id="3kx1GVoujOP" role="3w00Zx">
+          <node concept="8CKM2" id="2OmrmE04PQ" role="3w00Zx">
             <node concept="AsIwX" id="4dRTMKM7dej" role="1MHwYB">
               <node concept="AsIwU" id="4dRTMKM7dek" role="AsIwY">
                 <ref role="AsIwW" node="3kx1GVoujOL" resolve="pack_050_01" />
@@ -755,8 +788,14 @@
         <node concept="8EhVW" id="3kx1GVovGeC" role="2h0jOs">
           <property role="TrG5h" value="Mass" />
           <node concept="8EhVB" id="3kx1GVovGeD" role="3xKGGC">
-            <ref role="gQIM1" node="3kx1GVovGe_" resolve="pack_070_01" />
-            <ref role="8EhVx" node="3kx1GVovGeA" resolve="Quantity" />
+            <node concept="AsIwX" id="2OmrmDWKBT" role="2_tBl3">
+              <node concept="AsIwU" id="2OmrmDWKBU" role="AsIwY">
+                <ref role="AsIwW" node="3kx1GVovGe_" resolve="pack_070_01" />
+              </node>
+              <node concept="AsIwU" id="2OmrmDWKBV" role="AsIwY">
+                <ref role="AsIwW" node="3kx1GVovGeA" resolve="Quantity" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2h0jOo" id="3kx1GVovGeE" role="2h0jOs" />
@@ -767,7 +806,21 @@
         <property role="2TTd_B" value=" :&gt; " />
       </node>
       <node concept="2TK7Tu" id="3kx1GVovGeH" role="3cqZAp">
-        <property role="2TTd_B" value="pack_070_01::Quantity" />
+        <property role="2TTd_B" value="pack_070_01" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2y" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2z" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2$" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2_" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2A" role="3cqZAp">
+        <property role="2TTd_B" value="Quantity" />
       </node>
       <node concept="2HxZob" id="3kx1GVovGeI" role="3cqZAp">
         <node concept="3iKlGA" id="3kx1GVovGeK" role="3iKnsn">
@@ -821,8 +874,14 @@
         <node concept="3xZtmp" id="3kx1GVovGf4" role="2h0jOs">
           <property role="TrG5h" value="FuelPort" />
           <node concept="3xZtmm" id="3kx1GVovGf5" role="3xZtmi">
-            <ref role="gQIM1" node="3kx1GVovGf1" resolve="pack_080_01" />
-            <ref role="3xZtlJ" node="3kx1GVovGf2" resolve="FlowPort" />
+            <node concept="AsIwX" id="2OmrmDWKBW" role="2_tBl3">
+              <node concept="AsIwU" id="2OmrmDWKBX" role="AsIwY">
+                <ref role="AsIwW" node="3kx1GVovGf1" resolve="pack_080_01" />
+              </node>
+              <node concept="AsIwU" id="2OmrmDWKBY" role="AsIwY">
+                <ref role="AsIwW" node="3kx1GVovGf2" resolve="FlowPort" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2h0jOo" id="3kx1GVovGf6" role="2h0jOs" />
@@ -833,7 +892,21 @@
         <property role="2TTd_B" value=" :&gt; " />
       </node>
       <node concept="2TK7Tu" id="3kx1GVovGf9" role="3cqZAp">
-        <property role="2TTd_B" value="pack_080_01::FlowPort" />
+        <property role="2TTd_B" value="pack_080_01" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2B" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2C" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2D" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2E" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2F" role="3cqZAp">
+        <property role="2TTd_B" value="FlowPort" />
       </node>
       <node concept="2HxZob" id="3kx1GVovGfa" role="3cqZAp">
         <node concept="3iKlGA" id="3kx1GVovGfc" role="3iKnsn">
@@ -1359,8 +1432,14 @@
           <node concept="2h0jOo" id="BOR0Mn0ASY" role="3w00ZY" />
           <node concept="1y9Dpe" id="BOR0Mn0ASZ" role="1y9Dp3">
             <node concept="1_WVX5" id="BOR0Mn0AT1" role="1y9Dp0">
-              <ref role="gQIM1" node="BOR0Mn0ASU" resolve="pack_091" />
-              <ref role="1_WVXv" node="BOR0Mn0ASV" resolve="Safety" />
+              <node concept="AsIwX" id="2OmrmDWKBZ" role="2_tBl3">
+                <node concept="AsIwU" id="2OmrmDWKC0" role="AsIwY">
+                  <ref role="AsIwW" node="BOR0Mn0ASU" resolve="pack_091" />
+                </node>
+                <node concept="AsIwU" id="2OmrmDWKC1" role="AsIwY">
+                  <ref role="AsIwW" node="BOR0Mn0ASV" resolve="Safety" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -1376,8 +1455,27 @@
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
       </node>
+      <node concept="yd1bK" id="2OmrmEo_5R" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmEo_5S" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="BOR0Mn0AT5" role="3cqZAp">
-        <property role="2TTd_B" value="pack_091::Safety" />
+        <property role="2TTd_B" value="pack_091" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2G" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2H" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2I" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2J" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2K" role="3cqZAp">
+        <property role="2TTd_B" value="Safety" />
       </node>
       <node concept="2HxZob" id="BOR0Mn0AT6" role="3cqZAp">
         <node concept="3iKlGA" id="BOR0Mn0AT8" role="3iKnsn">
@@ -1407,8 +1505,11 @@
             <node concept="3xZtmn" id="3MUZSeFtiA8" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeFtiA9" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeFtiA6" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKC2" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKC3" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeFtiA6" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1417,8 +1518,11 @@
             <node concept="3xZtmn" id="3MUZSeFtiAb" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeFtiAc" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeFtiA6" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKC4" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKC5" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeFtiA6" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1471,8 +1575,11 @@
             <node concept="3xZtmn" id="3MUZSeFtiAr" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeFtiAs" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeFtiAp" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKC6" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKC7" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeFtiAp" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1481,8 +1588,11 @@
             <node concept="3xZtmn" id="3MUZSeFtiAu" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeFtiAv" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeFtiAp" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKC8" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKC9" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeFtiAp" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1780,8 +1890,14 @@
           <node concept="2uUmlE" id="3MUZSeFZHoj" role="3w00ZY">
             <node concept="1y9Dpe" id="3MUZSeFZHoo" role="1y9Dp3">
               <node concept="1_WVX5" id="3MUZSeFZHoq" role="1y9Dp0">
-                <ref role="gQIM1" node="3MUZSeFZHof" resolve="pack_120" />
-                <ref role="1_WVXv" node="3MUZSeFZHog" resolve="Safety" />
+                <node concept="AsIwX" id="2OmrmDWKCa" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCb" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeFZHof" resolve="pack_120" />
+                  </node>
+                  <node concept="AsIwU" id="2OmrmDWKCc" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeFZHog" resolve="Safety" />
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="2uUmlD" id="3MUZSeFZHor" role="2uUmly">
@@ -1804,8 +1920,27 @@
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
       </node>
+      <node concept="yd1bK" id="2OmrmEo_5T" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmEo_5U" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="3MUZSeFZHoB" role="3cqZAp">
-        <property role="2TTd_B" value="pack_120::Safety" />
+        <property role="2TTd_B" value="pack_120" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2L" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2M" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2N" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2O" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2P" role="3cqZAp">
+        <property role="2TTd_B" value="Safety" />
       </node>
       <node concept="2HxZob" id="3MUZSeFZHoC" role="3cqZAp">
         <node concept="3iKlGA" id="3MUZSeFZHoE" role="3iKnsn">
@@ -1835,8 +1970,11 @@
             <node concept="3xZtmn" id="3MUZSeGygFX" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeGygFY" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeGygFV" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCd" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCe" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeGygFV" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1845,8 +1983,11 @@
             <node concept="3xZtmn" id="3MUZSeGygG0" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeGygG1" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeGygFV" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCf" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCg" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeGygFV" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1900,8 +2041,11 @@
             <node concept="3xZtmn" id="3MUZSeGygGg" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeGygGh" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeGygGe" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCh" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCi" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeGygGe" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1910,8 +2054,11 @@
             <node concept="3xZtmn" id="3MUZSeGygGj" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeGygGk" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeGygGe" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCj" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCk" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeGygGe" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2167,8 +2314,11 @@
             <node concept="3xZtmn" id="3MUZSeHjFuA" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeHjFuB" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeHjFu$" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCl" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCm" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeHjFu$" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2177,8 +2327,11 @@
             <node concept="3xZtmn" id="3MUZSeHjFuD" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeHjFuE" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeHjFu$" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCn" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCo" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeHjFu$" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2232,8 +2385,11 @@
             <node concept="3xZtmn" id="3MUZSeHjFuT" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeHjFuU" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeHjFuR" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCp" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCq" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeHjFuR" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2242,8 +2398,11 @@
             <node concept="3xZtmn" id="3MUZSeHjFuW" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeHjFuX" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeHjFuR" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCr" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCs" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeHjFuR" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2364,8 +2523,11 @@
             <node concept="3xZtmn" id="3MUZSeIlclt" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeIlclu" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeIlclr" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCt" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCu" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeIlclr" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2374,8 +2536,11 @@
             <node concept="3xZtmn" id="3MUZSeIlclw" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeIlclx" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeIlclr" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCv" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCw" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeIlclr" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2429,8 +2594,11 @@
             <node concept="3xZtmn" id="3MUZSeIlclK" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="3MUZSeIlclL" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeIlclI" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCx" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCy" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeIlclI" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2439,8 +2607,11 @@
             <node concept="3xZtmn" id="3MUZSeIlclN" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="3MUZSeIlclO" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="3MUZSeIlclI" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCz" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKC$" role="AsIwY">
+                    <ref role="AsIwW" node="3MUZSeIlclI" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -2830,8 +3001,14 @@
           <node concept="2h0jOo" id="3VmcprRiOo_" role="3w00ZY" />
           <node concept="1y9Dpe" id="3VmcprRiOoN" role="1y9Dp3">
             <node concept="1_WVX5" id="3VmcprRiOoP" role="1y9Dp0">
-              <ref role="gQIM1" node="3VmcprRiOox" resolve="pack_091" />
-              <ref role="1_WVXv" node="3VmcprRiOoy" resolve="Safety" />
+              <node concept="AsIwX" id="2OmrmDWKC_" role="2_tBl3">
+                <node concept="AsIwU" id="2OmrmDWKCA" role="AsIwY">
+                  <ref role="AsIwW" node="3VmcprRiOox" resolve="pack_091" />
+                </node>
+                <node concept="AsIwU" id="2OmrmDWKCB" role="AsIwY">
+                  <ref role="AsIwW" node="3VmcprRiOoy" resolve="Safety" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2847,8 +3024,27 @@
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
       </node>
+      <node concept="yd1bK" id="2OmrmEo_5V" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmEo_5W" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="3VmcprRiOoG" role="3cqZAp">
-        <property role="2TTd_B" value="pack_091::Safety" />
+        <property role="2TTd_B" value="pack_091" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2Q" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2R" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2S" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2T" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2U" role="3cqZAp">
+        <property role="2TTd_B" value="Safety" />
       </node>
       <node concept="2HxZob" id="3VmcprRiOoH" role="3cqZAp">
         <node concept="3iKlGA" id="3VmcprRiOoJ" role="3iKnsn">
@@ -3129,8 +3325,14 @@
           <node concept="2h0jOo" id="fNDJb3km3I" role="3Z9vGx" />
           <node concept="1y9Dpe" id="fNDJb3km3J" role="1y9Dp3">
             <node concept="1_WVX5" id="fNDJb3km3L" role="1y9Dp0">
-              <ref role="gQIM1" node="fNDJb3km3E" resolve="pack_091" />
-              <ref role="1_WVXv" node="fNDJb3km3F" resolve="Safety" />
+              <node concept="AsIwX" id="2OmrmDWKCC" role="2_tBl3">
+                <node concept="AsIwU" id="2OmrmDWKCD" role="AsIwY">
+                  <ref role="AsIwW" node="fNDJb3km3E" resolve="pack_091" />
+                </node>
+                <node concept="AsIwU" id="2OmrmDWKCE" role="AsIwY">
+                  <ref role="AsIwW" node="fNDJb3km3F" resolve="Safety" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -3146,8 +3348,27 @@
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
       </node>
+      <node concept="yd1bK" id="2OmrmEo_5X" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmEo_5Y" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="fNDJb3km3S" role="3cqZAp">
-        <property role="2TTd_B" value="pack_091::Safety" />
+        <property role="2TTd_B" value="pack_091" />
+      </node>
+      <node concept="yd1bK" id="2OmrmDZZ2V" role="3cqZAp">
+        <node concept="pLAjd" id="2OmrmDZZ2W" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2X" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2Y" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="2OmrmDZZ2Z" role="3cqZAp">
+        <property role="2TTd_B" value="Safety" />
       </node>
       <node concept="2HxZob" id="fNDJb3km3T" role="3cqZAp">
         <node concept="3iKlGA" id="fNDJb3km3V" role="3iKnsn">
@@ -3176,8 +3397,11 @@
             <node concept="3xZtmn" id="fNDJbaWpHn" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="fNDJbaWpHo" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="fNDJbaWpHl" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCF" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCG" role="AsIwY">
+                    <ref role="AsIwW" node="fNDJbaWpHl" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -3186,8 +3410,11 @@
             <node concept="3xZtmn" id="fNDJbaWpHq" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="fNDJbaWpHr" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="fNDJbaWpHl" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCH" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCI" role="AsIwY">
+                    <ref role="AsIwW" node="fNDJbaWpHl" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -3256,8 +3483,11 @@
             <node concept="3xZtmn" id="fNDJbaWpHE" role="3w00ZY">
               <property role="TrG5h" value="drive" />
               <node concept="3xZtmm" id="fNDJbaWpHF" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="fNDJbaWpHC" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCJ" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCK" role="AsIwY">
+                    <ref role="AsIwW" node="fNDJbaWpHC" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -3266,8 +3496,11 @@
             <node concept="3xZtmn" id="fNDJbaWpHH" role="3w00ZY">
               <property role="TrG5h" value="input" />
               <node concept="3xZtmm" id="fNDJbaWpHI" role="3xZtlF">
-                <property role="3xZtlI" value="DrivePort" />
-                <ref role="3xZtlJ" node="fNDJbaWpHC" resolve="DrivePort" />
+                <node concept="AsIwX" id="2OmrmDWKCL" role="2_tBl3">
+                  <node concept="AsIwU" id="2OmrmDWKCM" role="AsIwY">
+                    <ref role="AsIwW" node="fNDJbaWpHC" resolve="DrivePort" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

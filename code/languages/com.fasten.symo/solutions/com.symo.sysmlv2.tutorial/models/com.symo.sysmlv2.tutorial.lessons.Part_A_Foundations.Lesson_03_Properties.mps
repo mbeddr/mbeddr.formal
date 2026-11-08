@@ -19,20 +19,17 @@
         <property id="8930763252717678344" name="upper" index="8EhVk" />
         <property id="8930763252717678343" name="lower" index="8EhVr" />
       </concept>
-      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
-        <property id="8930763252717678396" name="attributeDefinitionName" index="8EhVw" />
-        <reference id="8930763252717678397" name="definition" index="8EhVx" />
-      </concept>
+      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB" />
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
         <child id="8930763252717678371" name="content" index="8EhVZ" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
-      <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
-        <reference id="5531643499102778613" name="namespace" index="gQIM1" />
-      </concept>
       <concept id="4211673189923939179" name="com.symo.sysmlv2.baselan.structure.SysMLv2EmptyLine" flags="ng" index="2h0jOo" />
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
+      </concept>
+      <concept id="50764132512836853" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedDefinitionRef" flags="ng" index="2_tBl0">
+        <child id="50764132512836854" name="qualifiedName" index="2_tBl3" />
       </concept>
       <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
         <reference id="8642959026948349261" name="target" index="AsIwW" />
@@ -118,9 +115,14 @@
         <node concept="8EhU9" id="7vLXn5baoTS" role="3w00ZY">
           <property role="TrG5h" value="mass" />
           <node concept="8EhVB" id="7vLXn5baoTT" role="8EhU5">
-            <property role="8EhVw" value="MassValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV2Q" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV2R" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV2S" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoTU" role="2gbwqI">
             <property role="3bnkR9" value="1.5 [kg]" />
@@ -165,25 +167,40 @@
         <node concept="8EhU9" id="7vLXn5baoTj" role="8EhVZ">
           <property role="TrG5h" value="length" />
           <node concept="8EhVB" id="7vLXn5baoTk" role="8EhU5">
-            <property role="8EhVw" value="LengthValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV2T" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV2U" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV2V" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8EhU9" id="7vLXn5baoTl" role="8EhVZ">
           <property role="TrG5h" value="width" />
           <node concept="8EhVB" id="7vLXn5baoTm" role="8EhU5">
-            <property role="8EhVw" value="LengthValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV2W" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV2X" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV2Y" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8EhU9" id="7vLXn5baoTn" role="8EhVZ">
           <property role="TrG5h" value="height" />
           <node concept="8EhVB" id="7vLXn5baoTo" role="8EhU5">
-            <property role="8EhVw" value="LengthValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV2Z" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV30" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV31" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -197,9 +214,14 @@
         <node concept="8EhU9" id="7vLXn5baoTs" role="3w00ZY">
           <property role="TrG5h" value="mass" />
           <node concept="8EhVB" id="7vLXn5baoTt" role="8EhU5">
-            <property role="8EhVw" value="MassValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV32" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV33" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV34" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoTu" role="2gbwqI">
             <property role="3bnkR9" value="0.45 [kg]" />
@@ -208,9 +230,14 @@
         <node concept="8EhU9" id="7vLXn5baoTv" role="3w00ZY">
           <property role="TrG5h" value="length" />
           <node concept="8EhVB" id="7vLXn5baoTw" role="8EhU5">
-            <property role="8EhVw" value="LengthValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV35" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV36" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV37" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoTx" role="2gbwqI">
             <property role="3bnkR9" value="0.12 [m]" />
@@ -227,9 +254,14 @@
         <node concept="8EhU9" id="7vLXn5baoT_" role="3w00ZY">
           <property role="TrG5h" value="mass" />
           <node concept="8EhVB" id="7vLXn5baoTA" role="8EhU5">
-            <property role="8EhVw" value="MassValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV38" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV39" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3a" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoTB" role="2gbwqI">
             <property role="3bnkR9" value="2.5 [kg]" />
@@ -239,9 +271,14 @@
           <property role="TrG5h" value="maxFlightTime" />
           <property role="4kQGg" value="true" />
           <node concept="8EhVB" id="7vLXn5baoTD" role="8EhU5">
-            <property role="8EhVw" value="DurationValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJw" resolve="DurationValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV3b" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV3c" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3d" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJw" resolve="DurationValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoTE" role="2gbwqI">
             <property role="3bnkR9" value="30 [min]" />
@@ -250,9 +287,14 @@
         <node concept="8EhU9" id="7vLXn5baoTF" role="3w00ZY">
           <property role="TrG5h" value="cargoBay" />
           <node concept="8EhVB" id="7vLXn5baoTG" role="8EhU5">
-            <property role="8EhVw" value="CargoBayDimensions" />
-            <ref role="8EhVx" node="7vLXn5baoTh" resolve="CargoBayDimensions" />
-            <ref role="gQIM1" node="7vLXn5baoTb" resolve="DroneProperties" />
+            <node concept="AsIwX" id="3zOS9tKAV3e" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV3f" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn5baoTb" resolve="DroneProperties" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3g" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn5baoTh" resolve="CargoBayDimensions" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8GF0z" id="7vLXn5baoTH" role="3w00ZY">
@@ -337,9 +379,14 @@
         <node concept="8EhU9" id="7vLXn5baoUg" role="3w00ZY">
           <property role="TrG5h" value="diameter" />
           <node concept="8EhVB" id="7vLXn5baoUh" role="8EhU5">
-            <property role="8EhVw" value="LengthValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV3h" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV3i" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3j" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJ1" resolve="LengthValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoUi" role="2gbwqI">
             <property role="3bnkR9" value="0.25 [m]" />
@@ -348,9 +395,14 @@
         <node concept="8EhU9" id="7vLXn5baoUj" role="3w00ZY">
           <property role="TrG5h" value="mass" />
           <node concept="8EhVB" id="7vLXn5baoUk" role="8EhU5">
-            <property role="8EhVw" value="MassValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV3k" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV3l" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3m" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoUl" role="2gbwqI">
             <property role="3bnkR9" value="0.012 [kg]" />
@@ -362,9 +414,14 @@
         <node concept="8EhU9" id="7vLXn5baoUo" role="3w00ZY">
           <property role="TrG5h" value="mass" />
           <node concept="8EhVB" id="7vLXn5baoUp" role="8EhU5">
-            <property role="8EhVw" value="MassValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV3n" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV3o" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3p" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoUq" role="2gbwqI">
             <property role="3bnkR9" value="3.4 [kg]" />
@@ -374,9 +431,14 @@
           <property role="TrG5h" value="maxFlightTime" />
           <property role="4kQGg" value="true" />
           <node concept="8EhVB" id="7vLXn5baoUs" role="8EhU5">
-            <property role="8EhVw" value="DurationValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJw" resolve="DurationValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV3q" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV3r" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3s" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJw" resolve="DurationValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoUt" role="2gbwqI">
             <property role="3bnkR9" value="25 [min]" />
@@ -385,9 +447,14 @@
         <node concept="8EhU9" id="7vLXn5baoUu" role="3w00ZY">
           <property role="TrG5h" value="payloadCapacity" />
           <node concept="8EhVB" id="7vLXn5baoUv" role="8EhU5">
-            <property role="8EhVw" value="MassValue" />
-            <ref role="8EhVx" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
-            <ref role="gQIM1" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+            <node concept="AsIwX" id="3zOS9tKAV3t" role="2_tBl3">
+              <node concept="AsIwU" id="3zOS9tKAV3u" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3zOS9tKAV3v" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
           </node>
           <node concept="3bnkR8" id="7vLXn5baoUw" role="2gbwqI">
             <property role="3bnkR9" value="1.2 [kg]" />
