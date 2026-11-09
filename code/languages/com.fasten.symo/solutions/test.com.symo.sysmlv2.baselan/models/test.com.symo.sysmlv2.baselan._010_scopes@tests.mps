@@ -265,6 +265,7 @@
       <concept id="6353433212932081526" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConcernUsage" flags="ng" index="SPUEI" />
       <concept id="6353433212932081527" name="com.symo.sysmlv2.baselan.structure.SysMLv2CaseUsage" flags="ng" index="SPUEJ" />
       <concept id="3548282586720795162" name="com.symo.sysmlv2.baselan.structure.ISysMLv2BodiedUsage" flags="ngI" index="2T378G">
+        <child id="6353433212932081537" name="types" index="SPUDp" />
         <child id="6353433212932081538" name="content" index="SPUDq" />
       </concept>
       <concept id="3548282586720795161" name="com.symo.sysmlv2.baselan.structure.ISysMLv2BodiedDefinition" flags="ngI" index="2T378J">
@@ -13039,6 +13040,47 @@
               </node>
               <node concept="3bnkR8" id="3Igz0sYDCeU" role="3v7bcw">
                 <property role="3bnkR9" value="d" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3Igz0sZ3C98">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_250_RequirementUsageRedefinitionScope" />
+    <node concept="1qefOq" id="3Igz0sZ3C99" role="1SKRRt">
+      <node concept="2h0jOr" id="3Igz0sZ3C9a" role="1qenE9">
+        <property role="TrG5h" value="_250_RequirementUsageRedefinitionScope_file" />
+        <node concept="3Z9vzX" id="3Igz0sZ3C9b" role="2h0jOs">
+          <property role="TrG5h" value="p" />
+          <node concept="66VRr" id="3Igz0sZ3C9j" role="3Z9vGx">
+            <property role="TrG5h" value="MaxMass" />
+            <node concept="8EhU9" id="3Igz0sZ3C9k" role="66U86">
+              <property role="TrG5h" value="massLimit" />
+            </node>
+          </node>
+          <node concept="SPUEH" id="3Igz0sZ3C9c" role="3Z9vGx">
+            <property role="TrG5h" value="r1" />
+            <node concept="35c6Ng" id="3Igz0sZ3C9l" role="SPUDp">
+              <node concept="AsIwX" id="3Igz0sZ3C9n" role="2_tBl3">
+                <node concept="AsIwU" id="3Igz0sZ3C9o" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0sZ3C9j" resolve="MaxMass" />
+                </node>
+              </node>
+            </node>
+            <node concept="8EhU9" id="3Igz0sZ3C9p" role="SPUDq">
+              <property role="TrG5h" value="massLimit" />
+              <node concept="3wdj9f" id="3Igz0sZ3C9q" role="3wdj9d">
+                <property role="3wdj9b" value="massLimit" />
+                <ref role="3wdj98" node="3Igz0sZ3C9k" resolve="massLimit" />
+                <node concept="2rqxmr" id="3Igz0sZ3C9r" role="lGtFl">
+                  <ref role="1BTHP0" node="3Igz0sZ3C9k" resolve="massLimit" />
+                  <node concept="3KTrbX" id="3Igz0sZ3C9s" role="3KTr4d">
+                    <ref role="3AHY9a" node="3Igz0sZ3C9k" resolve="massLimit" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
