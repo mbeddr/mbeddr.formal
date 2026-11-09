@@ -280,12 +280,18 @@
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
+      <concept id="284754763133676346" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainTextExpression" flags="ng" index="3bnkR8">
+        <property id="284754763133676347" name="expressionText" index="3bnkR9" />
+      </concept>
       <concept id="9009971474163998581" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateActionMember" flags="ng" index="3sYOo$">
         <child id="9009971474163998585" name="action" index="3sYOoC" />
       </concept>
       <concept id="9009971474163998582" name="com.symo.sysmlv2.baselan.structure.SysMLv2EntryActionMember" flags="ng" index="3sYOoB" />
       <concept id="9009971474147082589" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReturnAttributeUsage" flags="ng" index="3tYlwc" />
-      <concept id="8400219580107005964" name="com.symo.sysmlv2.baselan.structure.SysMLv2SatisfyRequirementUsage" flags="ng" index="3v7bcZ" />
+      <concept id="8400219580107005964" name="com.symo.sysmlv2.baselan.structure.SysMLv2SatisfyRequirementUsage" flags="ng" index="3v7bcZ">
+        <child id="8400219580107005971" name="subject" index="3v7bcw" />
+        <child id="8400219580107005970" name="satisfied" index="3v7bcx" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
@@ -13000,6 +13006,39 @@
               </node>
               <node concept="liA8E" id="3Igz0sUV8vK" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3Igz0sYDCeM">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_240_SatisfiedRequirementScope" />
+    <node concept="1qefOq" id="3Igz0sYDCeN" role="1SKRRt">
+      <node concept="2h0jOr" id="3Igz0sYDCeO" role="1qenE9">
+        <property role="TrG5h" value="_240_SatisfiedRequirementScope_file" />
+        <node concept="3Z9vzX" id="3Igz0sYDCeP" role="2h0jOs">
+          <property role="TrG5h" value="p" />
+          <node concept="SPUEH" id="3Igz0sYDCeQ" role="3Z9vGx">
+            <property role="TrG5h" value="r1" />
+          </node>
+          <node concept="8GF0z" id="3Igz0sYDCeR" role="3Z9vGx">
+            <property role="TrG5h" value="d" />
+            <node concept="3v7bcZ" id="3Igz0sYDCeS" role="8GFem">
+              <node concept="3wdj9f" id="3Igz0sYDCeT" role="3v7bcx">
+                <property role="3wdj9b" value="r1" />
+                <ref role="3wdj98" node="3Igz0sYDCeQ" resolve="r1" />
+                <node concept="2rqxmr" id="3Igz0sYDEdV" role="lGtFl">
+                  <ref role="1BTHP0" node="3Igz0sYDCeQ" resolve="r1" />
+                  <node concept="3KTrbX" id="3Igz0sYDEdW" role="3KTr4d">
+                    <ref role="3AHY9a" node="3Igz0sYDCeQ" resolve="r1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3bnkR8" id="3Igz0sYDCeU" role="3v7bcw">
+                <property role="3bnkR9" value="d" />
               </node>
             </node>
           </node>
