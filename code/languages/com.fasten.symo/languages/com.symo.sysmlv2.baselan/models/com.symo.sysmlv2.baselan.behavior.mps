@@ -748,7 +748,7 @@
   </node>
   <node concept="13h7C7" id="6coPuU3kC4i">
     <property role="3GE5qa" value="base" />
-    <ref role="13h7C2" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
+    <ref role="13h7C2" to="5rf1:34Y23q90Hla" resolve="ISysMLv2Usage" />
     <node concept="13hLZK" id="6coPuU3kC4l" role="13h7CW">
       <node concept="3clFbS" id="6coPuU3kC4n" role="2VODD2" />
     </node>
@@ -5117,7 +5117,7 @@
                         <ref role="3cqZAo" node="3MUZSeFtgWH" resolve="owner" />
                       </node>
                       <node concept="chp4Y" id="7O9Ql6BBYn5" role="3oSUPX">
-                        <ref role="cht4Q" to="5rf1:5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+                        <ref role="cht4Q" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="7O9Ql6BBYnH" role="2OqNvi">
@@ -6387,7 +6387,7 @@
   <node concept="13h7C7" id="5wFVtxwZmBT">
     <property role="3GE5qa" value="behavior" />
     <property role="TrG5h" value="SysMLv2BodiedUsage_Behavior" />
-    <ref role="13h7C2" to="5rf1:5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="13h7C2" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
     <node concept="13hLZK" id="5wFVtxwZmBW" role="13h7CW">
       <node concept="3clFbS" id="5wFVtxwZmBY" role="2VODD2" />
     </node>
@@ -6809,7 +6809,7 @@
   <node concept="13h7C7" id="6PmNqjRUjvY">
     <property role="TrG5h" value="SysMLv2BodiedDefinition_Behavior" />
     <property role="3GE5qa" value="definitions" />
-    <ref role="13h7C2" to="5rf1:5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="13h7C2" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
     <node concept="13i0hz" id="6PmNqjRUjvZ" role="13h7CS">
       <property role="TrG5h" value="ownedFeatures" />
       <property role="13i0it" value="true" />

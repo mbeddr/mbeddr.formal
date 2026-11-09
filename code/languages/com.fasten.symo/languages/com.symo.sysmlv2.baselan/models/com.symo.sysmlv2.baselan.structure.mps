@@ -627,20 +627,6 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6coPuU3buuy" role="1TKVEi">
-      <property role="IQ2ns" value="7140692429575677858" />
-      <property role="20kJfa" value="subsets" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
-    </node>
-    <node concept="1TJgyj" id="6coPuU3buuz" role="1TKVEi">
-      <property role="IQ2ns" value="7140692429575677859" />
-      <property role="20kJfa" value="redefines" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
-    </node>
     <node concept="PrWs8" id="6coPuU3buu$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -650,50 +636,17 @@
     <node concept="PrWs8" id="5oZmK$O6ug1" role="PzmwI">
       <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
-    <node concept="1TJgyi" id="BOR0Mn7teG" role="1TKVEl">
-      <property role="IQ2nx" value="717440187291784108" />
-      <property role="TrG5h" value="isEnd" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="PrWs8" id="6jpO12EkB8c" role="PzmwI">
       <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
     </node>
     <node concept="PrWs8" id="6ohPCO1srbL" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
-    <node concept="1TJgyi" id="fNDJb6KWD1" role="1TKVEl">
-      <property role="IQ2nx" value="284754763101489729" />
-      <property role="TrG5h" value="isReference" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="7PctyxTWsOQ" role="1TKVEl">
-      <property role="IQ2nx" value="9028721269187661110" />
-      <property role="TrG5h" value="isOrdered" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="7PctyxTWsOW" role="1TKVEl">
-      <property role="IQ2nx" value="9028721269187661116" />
-      <property role="TrG5h" value="isNonUnique" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="6jBzJl$YPyr" role="1TKVEl">
-      <property role="IQ2nx" value="7270937308025280667" />
-      <property role="TrG5h" value="isDerived" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="6jBzJl$YPyx" role="1TKVEl">
-      <property role="IQ2nx" value="7270937308025280673" />
-      <property role="TrG5h" value="isConstant" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="PrWs8" id="6jBzJlBxw5_" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
     </node>
-    <node concept="1TJgyj" id="7ij$Ne$bej0" role="1TKVEi">
-      <property role="IQ2ns" value="8400219579983127744" />
-      <property role="20kJfa" value="endFeature" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+    <node concept="PrWs8" id="34Y23q90Hlk" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q90Hla" resolve="ISysMLv2Usage" />
     </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
@@ -1121,6 +1074,9 @@
     <property role="TrG5h" value="ISysMLv2Expression" />
     <property role="R4oN_" value="SysML v2 expression (currently only literals)" />
     <property role="3GE5qa" value="expression" />
+    <node concept="PrWs8" id="34Y23q9TWAD" role="PrDN$">
+      <ref role="PrY4T" node="34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeGZXvw">
     <property role="EcuMT" value="4376090928952104928" />
@@ -1652,24 +1608,11 @@
     <node concept="PrWs8" id="5wFVtxuc4Zq" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
-    <node concept="1TJgyj" id="5wFVtxuc4Zt" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212885159901" />
-      <property role="20kJfa" value="specializes" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="TrG5h" value="specializes" />
-      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
-    </node>
-    <node concept="1TJgyj" id="5wFVtxuc4Zu" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212885159902" />
-      <property role="20kJfa" value="content" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="TrG5h" value="content" />
-      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
-    </node>
     <node concept="PrWs8" id="4QEfSMBnOH9" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8z9Hi" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc4ZL">
@@ -1678,7 +1621,10 @@
     <property role="R4oN_" value="action def: an action definition with a plain body (no steps yet)" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2PlainActionDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aJ" resolve="SysMLv2ActionDefinition" />
+    <node concept="PrWs8" id="34Y23q9TWA6" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc4ZR">
     <property role="EcuMT" value="6353433212885159927" />
@@ -1686,7 +1632,10 @@
     <property role="R4oN_" value="state def with a plain body (no states or transitions yet)" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2StateDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aJ" resolve="SysMLv2ActionDefinition" />
+    <node concept="PrWs8" id="34Y23q9TWAa" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc4ZX">
     <property role="EcuMT" value="6353433212885159933" />
@@ -1798,32 +1747,6 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="behavior" />
     <ref role="1TJDcQ" node="3MUZSeHM$aI" resolve="SysMLv2OccurrenceUsage" />
-    <node concept="1TJgyj" id="5wFVtxwZ4tZ" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212932081535" />
-      <property role="20kJfa" value="direction" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="6coPuU2Tg1U" resolve="SysMLv2FeatureDirection" />
-    </node>
-    <node concept="1TJgyj" id="5wFVtxwZ4u0" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212932081536" />
-      <property role="20kJfa" value="multiplicity" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
-    </node>
-    <node concept="1TJgyj" id="5wFVtxwZ4u1" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212932081537" />
-      <property role="20kJfa" value="types" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
-    </node>
-    <node concept="1TJgyj" id="5wFVtxwZ4u2" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212932081538" />
-      <property role="20kJfa" value="content" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
-    </node>
     <node concept="PrWs8" id="5wFVtxwZ4u3" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
     </node>
@@ -1848,6 +1771,9 @@
     <node concept="PrWs8" id="4QEfSMBnOHv" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
     </node>
+    <node concept="PrWs8" id="34Y23q8z9HK" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tN">
     <property role="EcuMT" value="6353433212932081523" />
@@ -1855,7 +1781,10 @@
     <property role="34LRSv" value="action" />
     <property role="R4oN_" value="SysML v2 ActionUsage (8.3.17.3)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
+    <node concept="PrWs8" id="34Y23q9TWAe" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tO">
     <property role="EcuMT" value="6353433212932081524" />
@@ -1863,7 +1792,10 @@
     <property role="34LRSv" value="state" />
     <property role="R4oN_" value="SysML v2 StateUsage (8.3.18)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
+    <node concept="PrWs8" id="34Y23q9TWAi" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tP">
     <property role="EcuMT" value="6353433212932081525" />
@@ -1936,12 +1868,18 @@
     <property role="34LRSv" value="calc" />
     <property role="R4oN_" value="SysML v2 CalculationUsage (8.3.17.5): body items plus optional result expression" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
     <node concept="1TJgyj" id="5wFVtxwZ4u9" role="1TKVEi">
       <property role="IQ2ns" value="6353433212932081545" />
       <property role="20kJfa" value="result" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="PrWs8" id="34Y23q9TWAm" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+    </node>
+    <node concept="PrWs8" id="34Y23q9TWAH" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tX">
@@ -2054,7 +1992,7 @@
       <property role="IQ2ns" value="9009971474163998585" />
       <property role="20kJfa" value="action" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+      <ref role="20lvS9" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
     </node>
     <node concept="PrWs8" id="7O9Ql6xWDXU" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
@@ -2470,6 +2408,197 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="34Y23q8cBCp">
+    <property role="EcuMT" value="3548282586720795161" />
+    <property role="TrG5h" value="ISysMLv2BodiedDefinition" />
+    <property role="R4oN_" value="Shared declaration and body syntax; does not determine semantic inheritance." />
+    <property role="3GE5qa" value="base.syntax" />
+    <node concept="PrWs8" id="34Y23q8cBCs" role="PrDN$">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCt" role="PrDN$">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCu" role="PrDN$">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCv" role="PrDN$">
+      <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCw" role="PrDN$">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxuc4Zt" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212885159901" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="TrG5h" value="specializes" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxuc4Zu" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212885159902" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="TrG5h" value="content" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hls" role="PrDN$">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hlw" role="PrDN$">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="34Y23q8cBCq">
+    <property role="EcuMT" value="3548282586720795162" />
+    <property role="TrG5h" value="ISysMLv2BodiedUsage" />
+    <property role="R4oN_" value="Shared declaration and body syntax; does not determine semantic inheritance." />
+    <property role="3GE5qa" value="base.syntax" />
+    <node concept="PrWs8" id="34Y23q8cBCx" role="PrDN$">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCy" role="PrDN$">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCz" role="PrDN$">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBC$" role="PrDN$">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBC_" role="PrDN$">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCA" role="PrDN$">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCB" role="PrDN$">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCC" role="PrDN$">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCD" role="PrDN$">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCE" role="PrDN$">
+      <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
+    </node>
+    <node concept="PrWs8" id="34Y23q8cBCF" role="PrDN$">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxwZ4tZ" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081535" />
+      <property role="20kJfa" value="direction" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Tg1U" resolve="SysMLv2FeatureDirection" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxwZ4u0" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081536" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxwZ4u1" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081537" />
+      <property role="20kJfa" value="types" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxwZ4u2" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081538" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hlo" role="PrDN$">
+      <ref role="PrY4T" node="34Y23q90Hla" resolve="ISysMLv2Usage" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="34Y23q8cBCr">
+    <property role="EcuMT" value="3548282586720795163" />
+    <property role="TrG5h" value="ISysMLv2SemanticExpression" />
+    <property role="R4oN_" value="Semantic expression category; independent of eligibility in textual expression slots." />
+    <property role="3GE5qa" value="base" />
+  </node>
+  <node concept="PlHQZ" id="34Y23q90Hla">
+    <property role="EcuMT" value="3548282586734449994" />
+    <property role="TrG5h" value="ISysMLv2Usage" />
+    <property role="R4oN_" value="Shared semantic Usage features and behavior, independent of concrete superclass selection." />
+    <property role="3GE5qa" value="base" />
+    <node concept="PrWs8" id="34Y23q90Hlb" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hlc" role="PrDN$">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hld" role="PrDN$">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hle" role="PrDN$">
+      <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hlf" role="PrDN$">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="34Y23q90Hlg" role="PrDN$">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="1TJgyj" id="6coPuU3buuy" role="1TKVEi">
+      <property role="IQ2ns" value="7140692429575677858" />
+      <property role="20kJfa" value="subsets" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="1TJgyj" id="6coPuU3buuz" role="1TKVEi">
+      <property role="IQ2ns" value="7140692429575677859" />
+      <property role="20kJfa" value="redefines" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="1TJgyj" id="7ij$Ne$bej0" role="1TKVEi">
+      <property role="IQ2ns" value="8400219579983127744" />
+      <property role="20kJfa" value="endFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+    </node>
+    <node concept="1TJgyi" id="BOR0Mn7teG" role="1TKVEl">
+      <property role="IQ2nx" value="717440187291784108" />
+      <property role="TrG5h" value="isEnd" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="fNDJb6KWD1" role="1TKVEl">
+      <property role="IQ2nx" value="284754763101489729" />
+      <property role="TrG5h" value="isReference" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7PctyxTWsOQ" role="1TKVEl">
+      <property role="IQ2nx" value="9028721269187661110" />
+      <property role="TrG5h" value="isOrdered" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7PctyxTWsOW" role="1TKVEl">
+      <property role="IQ2nx" value="9028721269187661116" />
+      <property role="TrG5h" value="isNonUnique" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJl$YPyr" role="1TKVEl">
+      <property role="IQ2nx" value="7270937308025280667" />
+      <property role="TrG5h" value="isDerived" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJl$YPyx" role="1TKVEl">
+      <property role="IQ2nx" value="7270937308025280673" />
+      <property role="TrG5h" value="isConstant" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

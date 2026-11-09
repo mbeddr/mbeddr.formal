@@ -9,10 +9,10 @@ concept's distinguishing keywords and additional clauses explicit at the call si
 | `ISysMLv2Member_Visibility` | `ISysMLv2Member` | Member visibility |
 | `ISysMLv2PrefixMetadataOwner_PrefixMetadata` | `ISysMLv2PrefixMetadataOwner` | Prefix metadata |
 | `ISysMLv2IdentifierNameConcept_ShortName` | `ISysMLv2IdentifierNameConcept` | Optional declared short name |
-| `SysMLv2BodiedUsage_Typing` | `SysMLv2BodiedUsage` | Multiplicity, ordering, typing and specialization clauses |
-| `SysMLv2BodiedUsage_Prefix` | `SysMLv2BodiedUsage` | Visibility, end feature, direction, abstract/reference flags and metadata |
-| `SysMLv2BodiedUsage_Body` | `SysMLv2BodiedUsage` | Optional braced content and the semicolon for an empty body |
-| `SysMLv2BodiedDefinition_Body` | `SysMLv2BodiedDefinition` | Ordinary braced definition content |
+| `SysMLv2BodiedUsage_Typing` | `ISysMLv2BodiedUsage` | Multiplicity, ordering, typing and specialization clauses |
+| `SysMLv2BodiedUsage_Prefix` | `ISysMLv2BodiedUsage` | Visibility, end feature, direction, abstract/reference flags and metadata |
+| `SysMLv2BodiedUsage_Body` | `ISysMLv2BodiedUsage` | Optional braced content and the semicolon for an empty body |
+| `SysMLv2BodiedDefinition_Body` | `ISysMLv2BodiedDefinition` | Ordinary braced definition content |
 | `SysMLv2AttributeUsage_Declaration` | `SysMLv2AttributeUsage` | Attribute declaration after visibility; shared by ordinary and return attributes |
 | `SysMLv2ReferenceUsage_DeclarationTail` | `SysMLv2ReferenceUsage` | Name, typing, value and body; shared by reference, subject, actor and stakeholder usages |
 
@@ -20,6 +20,10 @@ concept's distinguishing keywords and additional clauses explicit at the call si
 redefinition together. It is reused by 27 editors. The attribute and reference
 declaration components retain their family-specific links and complete syntax
 sections.
+
+The bodied components bind to syntax interfaces so actions and states can retain
+their semantic action ancestry. Common usage flags and specialization roles live
+on `ISysMLv2Usage`; see [ADR 0003](adr/0003-semantic-inheritance-and-shared-syntax.md).
 
 Keep the ordering and specialization cells inside these surrounding sections.
 Extracting them into smaller nested components caused the nested-port and

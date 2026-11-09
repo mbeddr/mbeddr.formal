@@ -9318,7 +9318,7 @@
                   <ref role="3cqZAo" node="5wFVtxx9mFI" resolve="def" />
                 </node>
                 <node concept="chp4Y" id="5wFVtxx9mG1" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+                  <ref role="cht4Q" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="5wFVtxx9mG2" role="2OqNvi">
@@ -9367,7 +9367,7 @@
                   <ref role="3cqZAo" node="5wFVtxuppwK" resolve="def" />
                 </node>
                 <node concept="chp4Y" id="5wFVtxuppx3" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+                  <ref role="cht4Q" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="5wFVtxuppx4" role="2OqNvi">
@@ -9453,7 +9453,7 @@
                   <ref role="3cqZAo" node="5wFVtxuppvG" resolve="def" />
                 </node>
                 <node concept="chp4Y" id="5wFVtxuppwl" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+                  <ref role="cht4Q" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="5wFVtxuppwm" role="2OqNvi">
@@ -11328,14 +11328,14 @@
           <node concept="3cpWsn" id="5wFVtxx9p58" role="3cpWs9">
             <property role="TrG5h" value="bu" />
             <node concept="3Tqbb2" id="5wFVtxx9p5a" role="1tU5fm">
-              <ref role="ehGHo" to="5rf1:5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+              <ref role="ehGHo" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
             </node>
             <node concept="1PxgMI" id="5wFVtxx9p5b" role="33vP2m">
               <node concept="37vLTw" id="5wFVtxx9p5e" role="1m5AlR">
                 <ref role="3cqZAo" node="5wFVtxx9p4S" resolve="usage" />
               </node>
               <node concept="chp4Y" id="5wFVtxx9p5f" role="3oSUPX">
-                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+                <ref role="cht4Q" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
               </node>
             </node>
           </node>
@@ -36811,7 +36811,7 @@
                 <ref role="3cqZAo" node="7O9Ql6yBnGG" resolve="expr" />
               </node>
               <node concept="chp4Y" id="7O9Ql6yBnGS" role="3oSUPX">
-                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+                <ref role="cht4Q" to="5rf1:3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
               </node>
             </node>
           </node>

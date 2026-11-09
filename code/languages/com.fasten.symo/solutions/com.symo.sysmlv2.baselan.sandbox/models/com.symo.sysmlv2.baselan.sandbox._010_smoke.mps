@@ -2,7 +2,7 @@
 <model ref="r:6b9c9a05-eaf7-4cd4-9058-5bfb06c56127(com.symo.sysmlv2.baselan.sandbox._010_smoke)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="2" />
   </languages>
   <imports />
   <registry>
@@ -34,6 +34,10 @@
         <property id="8642959026948349262" name="text" index="AsIwZ" />
         <child id="8642959026948349263" name="segments" index="AsIwY" />
       </concept>
+      <concept id="3548282586734449994" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Usage" flags="ngI" index="2SfdPW">
+        <child id="7140692429575677858" name="subsets" index="3wdj9c" />
+        <child id="7140692429575677859" name="redefines" index="3wdj9d" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
@@ -45,10 +49,6 @@
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298127" name="specializes" index="3w00Zx" />
         <child id="7140692429574298128" name="content" index="3w00ZY" />
-      </concept>
-      <concept id="7140692429575677856" name="com.symo.sysmlv2.baselan.structure.SysMLv2Usage" flags="ng" index="3wdj9e">
-        <child id="7140692429575677858" name="subsets" index="3wdj9c" />
-        <child id="7140692429575677859" name="redefines" index="3wdj9d" />
       </concept>
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
         <property id="7140692429575677861" name="usageName" index="3wdj9b" />
@@ -446,10 +446,6 @@
       </node>
       <node concept="8GF0z" id="6coPuU3hCay" role="3w00ZY">
         <property role="TrG5h" value="frontWheels" />
-        <node concept="3wdj9f" id="6coPuU3hCaz" role="3wdj9c">
-          <property role="3wdj9b" value="wheels" />
-          <ref role="3wdj98" node="6coPuU3hCan" resolve="wheels" />
-        </node>
         <node concept="8CKM2" id="6coPuU3hCa_" role="3w00ZT">
           <node concept="AsIwX" id="4dRTMKM7dhh" role="1MHwYB">
             <node concept="AsIwU" id="4dRTMKM7dhi" role="AsIwY">
@@ -460,6 +456,10 @@
         <node concept="8EhVq" id="6coPuU3hCa$" role="3w00ZS">
           <property role="8EhVr" value="2" />
           <property role="8EhVk" value="2" />
+        </node>
+        <node concept="3wdj9f" id="6coPuU3hCaz" role="3wdj9c">
+          <property role="3wdj9b" value="wheels" />
+          <ref role="3wdj98" node="6coPuU3hCan" resolve="wheels" />
         </node>
       </node>
       <node concept="8GF0z" id="6coPuU3hCaA" role="3w00ZY">

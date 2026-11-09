@@ -8,7 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="2" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -340,6 +340,11 @@
         <property id="8642959026948349262" name="text" index="AsIwZ" />
         <child id="8642959026948349263" name="segments" index="AsIwY" />
       </concept>
+      <concept id="3548282586734449994" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Usage" flags="ngI" index="2SfdPW">
+        <property id="717440187291784108" name="isEnd" index="2uUgYw" />
+        <child id="7140692429575677858" name="subsets" index="3wdj9c" />
+        <child id="7140692429575677859" name="redefines" index="3wdj9d" />
+      </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
@@ -355,11 +360,6 @@
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298127" name="specializes" index="3w00Zx" />
         <child id="7140692429574298128" name="content" index="3w00ZY" />
-      </concept>
-      <concept id="7140692429575677856" name="com.symo.sysmlv2.baselan.structure.SysMLv2Usage" flags="ng" index="3wdj9e">
-        <property id="717440187291784108" name="isEnd" index="2uUgYw" />
-        <child id="7140692429575677858" name="subsets" index="3wdj9c" />
-        <child id="7140692429575677859" name="redefines" index="3wdj9d" />
       </concept>
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
         <property id="7140692429575677861" name="usageName" index="3wdj9b" />
@@ -10792,10 +10792,6 @@
           </node>
           <node concept="8GF0z" id="6coPuU3hCaU" role="3w00ZY">
             <property role="TrG5h" value="frontWheels" />
-            <node concept="3wdj9f" id="6coPuU3hCaV" role="3wdj9c">
-              <property role="3wdj9b" value="wheels" />
-              <ref role="3wdj98" node="6coPuU3hCaJ" resolve="wheels" />
-            </node>
             <node concept="8CKM2" id="6coPuU3hCaX" role="3w00ZT">
               <node concept="AsIwX" id="4dRTMKM7dgB" role="1MHwYB">
                 <node concept="AsIwU" id="2q56MXSz52F" role="AsIwY">
@@ -10806,6 +10802,10 @@
             <node concept="8EhVq" id="6coPuU3hCaW" role="3w00ZS">
               <property role="8EhVr" value="2" />
               <property role="8EhVk" value="2" />
+            </node>
+            <node concept="3wdj9f" id="6coPuU3hCaV" role="3wdj9c">
+              <property role="3wdj9b" value="wheels" />
+              <ref role="3wdj98" node="6coPuU3hCaJ" resolve="wheels" />
             </node>
           </node>
           <node concept="8GF0z" id="6coPuU3hCaY" role="3w00ZY">
@@ -15640,8 +15640,8 @@
             </node>
             <node concept="3xZtmn" id="3MUZSeGxSVj" role="3w00ZY">
               <property role="TrG5h" value="sink" />
-              <property role="2uUgYw" value="true" />
               <property role="3xZtlG" value="true" />
+              <property role="2uUgYw" value="true" />
               <node concept="3xZtmm" id="3MUZSeGxSVk" role="3xZtlF">
                 <node concept="AsIwX" id="3zOS9tK2$Xc" role="2_tBl3">
                   <node concept="AsIwU" id="3zOS9tK2$Xd" role="AsIwY">
@@ -16565,12 +16565,12 @@
               </node>
             </node>
             <node concept="8EhU9" id="3MUZSeGUzrH" role="3w00ZY">
+              <node concept="1_WVX6" id="3MUZSeGUzrJ" role="2gbwqI">
+                <property role="1_WVXG" value="100" />
+              </node>
               <node concept="3wdj9f" id="3MUZSeGUzrI" role="3wdj9d">
                 <property role="3wdj9b" value="bandwidth" />
                 <ref role="3wdj98" node="3MUZSeGUzrB" resolve="bandwidth" />
-              </node>
-              <node concept="1_WVX6" id="3MUZSeGUzrJ" role="2gbwqI">
-                <property role="1_WVXG" value="100" />
               </node>
             </node>
             <node concept="8EhU9" id="3MUZSeGUzrK" role="3w00ZY">

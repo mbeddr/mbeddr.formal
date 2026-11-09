@@ -7756,7 +7756,7 @@
   <node concept="PKFIW" id="4QEfSMDwg$T">
     <property role="TrG5h" value="SysMLv2BodiedUsage_Typing" />
     <property role="3GE5qa" value="base" />
-    <ref role="1XX52x" to="5rf1:5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1XX52x" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
     <node concept="3EZMnI" id="4QEfSMDwg$U" role="2wV5jI">
       <node concept="l2Vlx" id="4QEfSMDwg$V" role="2iSdaV" />
       <node concept="_tjkj" id="4QEfSMDwg$W" role="3EZMnx">
@@ -8214,7 +8214,7 @@
   <node concept="PKFIW" id="2JnY6EKvy0n">
     <property role="TrG5h" value="SysMLv2BodiedUsage_Body" />
     <property role="3GE5qa" value="base.components" />
-    <ref role="1XX52x" to="5rf1:5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1XX52x" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
     <node concept="3EZMnI" id="2JnY6EKvy0o" role="2wV5jI">
       <node concept="l2Vlx" id="2JnY6EKvy0p" role="2iSdaV" />
       <node concept="_tjkj" id="5wFVtxyolk6" role="3EZMnx">
@@ -8280,7 +8280,7 @@
   <node concept="PKFIW" id="2JnY6EKvy43">
     <property role="TrG5h" value="SysMLv2BodiedDefinition_Body" />
     <property role="3GE5qa" value="base.components" />
-    <ref role="1XX52x" to="5rf1:5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1XX52x" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
     <node concept="3EZMnI" id="2JnY6EKvy44" role="2wV5jI">
       <node concept="l2Vlx" id="2JnY6EKvy45" role="2iSdaV" />
       <node concept="3F0ifn" id="5wFVtxuhhJT" role="3EZMnx">
@@ -8323,7 +8323,7 @@
   <node concept="PKFIW" id="2JnY6EKPw5W">
     <property role="TrG5h" value="SysMLv2BodiedUsage_Prefix" />
     <property role="3GE5qa" value="base.components" />
-    <ref role="1XX52x" to="5rf1:5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1XX52x" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
     <node concept="3EZMnI" id="2JnY6EKPw5X" role="2wV5jI">
       <node concept="l2Vlx" id="2JnY6EKPw5Y" role="2iSdaV" />
       <node concept="PMmxH" id="5wFVtxyoljr" role="3EZMnx">

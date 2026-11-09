@@ -111,9 +111,20 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 - There is no delete in `alter_nodes`/`update_node`; removing a statement means `SET CHILD` without `childJson`, or replacing the whole method.
 - Mind the helper's return type: `extractAbstractFor` returns a boolean and does not set anything, so check what a helper does before using it as a setter.
 
+## Sporadic Wayland clipboard deadlock during in-IDE test setup (2026-11-08)
+
+An observed freeze dump showed the EDT waiting for `WLClipboard` while the test
+thread held that clipboard lock and waited for an EDT-owned lock in
+`WLClipboard.setContentsNative`. The caller was
+`BaseTransformationTest.clearSystemClipboard` during JUnit setup. Inspect the
+freeze dump before attributing an interrupted run to model checking or the DSL.
+After restarting MPS, verify saved state and rerun the interrupted suite. The
+completed editor/importer/scope runs in this investigation used in-IDE testing.
+
 ## Moving a containment link to a super-concept strands persisted children; `children.ofConcept` needs `.toList` (2026-11-04)
 
-- A containment link is identified by (declaring concept, link id). If you move a link declaration from concept `A` up into an abstract super-concept `B` (even keeping the same link id), every persisted `A` instance has its children stored under a role that is no longer `A`'s own link: `print_node` shows `declared:false`, editors and tests fail, and the full suite breaks (14 failures, 116 instances in our case). To share a link across two concepts, do NOT move it. Leave the link where it is and give the second concept its own link, with a common abstract base that carries only behavior (scopes, helpers) reading `this.children.ofConcept<X>`. Moving it back (`alter_nodes MOVE_NODE_TO_PARENT`) restores validity.
+- A containment link is identified by (declaring concept, link id). If you move a link declaration from concept `A` up into an abstract super-concept `B` (even keeping the same link id), every persisted `A` instance has its children stored under a role that is no longer `A`'s own link: `print_node` shows `declared:false`, editors and tests fail, and the full suite breaks (14 failures, 116 instances in our case). Do not move it without a versioned migration. An alternative is to leave the link where it is and give the second concept its own link, with a common abstract base carrying behavior (scopes, helpers) reading `this.children.ofConcept<X>`. Moving it back (`alter_nodes MOVE_NODE_TO_PARENT`) restores validity.
+- Verified migration route (2026-11-08): use native `PureMigrationScript` / `MoveContainmentLink` (and `MoveProperty` for flags), with explicit cached source and target identities. Their ID fields use base-36 strings. Keep temporary old-owner declarations with the original feature IDs while compiling the migration; apply it before removing them. A copied declaration's feature-ID property must be checked explicitly. `ReflectionNodeReference` plus cached source IDs allows the migration to survive removal of the old declaration. Rebuild the language to expose its new version, then use `run_migrations CHECK/APPLY`; APPLY also saves/unloads models, so compare semantic snapshots after reloading to verify preservation. Keeping the moved declaration's node ID does not replace this migration.
 - Narrowing a child role's type (`source: ConnectorEnd` to `FeatureChainEnd`) leaves persisted children of the old type in place ("Incompatible target concept in the child role"). Find the owners with `query_nodes FIND_INSTANCES`, then replace each child with `update_node SET CHILD` (`childNodeRef` plus `childJson`). References of the new child (e.g. `usage`) are set in a second `update_node SET REFERENCE` call; new node ids are consecutive after the parent.
 - In behavior code, `this.children.ofConcept<X>` generates `CollectionSequence.fromCollection(Iterable)`, which does not compile. Insert `.toList` after `children`; when you then call `.get(i)`, add another `.toList` after `ofConcept<X>` (`.last` only needs the first one).
 
