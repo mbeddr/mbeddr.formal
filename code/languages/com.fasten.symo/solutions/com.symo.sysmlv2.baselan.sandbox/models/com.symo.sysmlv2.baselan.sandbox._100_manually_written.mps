@@ -4,7 +4,9 @@
   <languages>
     <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="5" />
   </languages>
-  <imports />
+  <imports>
+    <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
+  </imports>
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
       <concept id="9028721269252997081" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumerationDefinition" flags="ng" index="0AGBL" />
@@ -223,6 +225,7 @@
         <child id="8930763252716192330" name="content" index="8GFem" />
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
         <child id="7140692429574298135" name="types" index="3w00ZT" />
+        <child id="7140692429574298133" name="direction" index="3w00ZV" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298127" name="specializes" index="3w00Zx" />
@@ -277,6 +280,7 @@
       </concept>
       <concept id="7406476705817406956" name="com.symo.sysmlv2.baselan.structure.SysMLv2StakeholderUsage" flags="ng" index="3TIFEY" />
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
+        <property id="7267068243728800121" name="isImportAll" index="3d8W_D" />
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
         <child id="8642959026948349267" name="importedName" index="AsIwy" />
       </concept>
@@ -3493,6 +3497,357 @@
               <node concept="AsIwU" id="3zOS9tKUFNj" role="AsIwY">
                 <ref role="AsIwW" node="6PmNqjPKIpb" resolve="Scale" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="3Igz0sWmdJ_">
+    <property role="TrG5h" value="_300_requirement_definitions_usages_and_satisfy" />
+    <node concept="3Z9vzX" id="3Igz0sWmdJA" role="2h0jOs">
+      <property role="TrG5h" value="DroneRequirements" />
+      <node concept="3Z0THl" id="3Igz0sWmdJB" role="3Z9vGx">
+        <property role="3d8W_D" value="true" />
+        <node concept="AsIwX" id="3Igz0sWmdJC" role="AsIwy">
+          <node concept="AsIwU" id="3Igz0sWmdJD" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Z0THl" id="3Igz0sWmdJE" role="3Z9vGx">
+        <property role="3d8W_D" value="true" />
+        <node concept="AsIwX" id="3Igz0sWmdJF" role="AsIwy">
+          <node concept="AsIwU" id="3Igz0sWmdJG" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5$u6" resolve="SI" />
+          </node>
+        </node>
+      </node>
+      <node concept="3HG_t4" id="3Igz0sWmdJH" role="3Z9vGx">
+        <property role="3HG_t5" value="Part B of the tutorial: requirements for the delivery drone." />
+      </node>
+      <node concept="3ZUotO" id="3Igz0sWmdJI" role="3Z9vGx">
+        <property role="TrG5h" value="Drone" />
+        <node concept="8EhU9" id="3Igz0sWmdJJ" role="3w00ZY">
+          <property role="TrG5h" value="mass" />
+          <node concept="8EhVB" id="3Igz0sWmdJK" role="8EhU5">
+            <node concept="AsIwX" id="3Igz0sWmdJM" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmdJN" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3Igz0sWmdJO" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="8EhU9" id="3Igz0sWmdJP" role="3w00ZY">
+          <property role="TrG5h" value="maxFlightTime" />
+          <node concept="8EhVB" id="3Igz0sWmdJQ" role="8EhU5">
+            <node concept="AsIwX" id="3Igz0sWmdJS" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmdJT" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3Igz0sWmdJU" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJw" resolve="DurationValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="66VRr" id="3Igz0sWmdJV" role="3Z9vGx">
+        <property role="TrG5h" value="MaxTakeOffMass" />
+        <property role="6zCXJ" value="R" />
+        <node concept="3HG_t4" id="3Igz0sWmdJW" role="66U86">
+          <property role="3HG_t5" value="The drone shall not exceed its maximum take-off mass." />
+        </node>
+        <node concept="38pZY" id="3Igz0sWmdJX" role="66U86">
+          <property role="TrG5h" value="drone" />
+          <node concept="35c6Ng" id="3Igz0sWmdJY" role="35c6Nl">
+            <node concept="AsIwX" id="3Igz0sWmdK0" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmdK1" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmdJI" resolve="Drone" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="8EhU9" id="3Igz0sWmdK2" role="66U86">
+          <property role="TrG5h" value="massLimit" />
+          <node concept="8EhVB" id="3Igz0sWmdK3" role="8EhU5">
+            <node concept="AsIwX" id="3Igz0sWmdK5" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmdK6" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3Igz0sWmdK7" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3TIFEV" id="3Igz0sWmdK8" role="66U86">
+          <node concept="3bnkR8" id="3Igz0sWmdK9" role="SPUDi">
+            <property role="3bnkR9" value="drone.mass &lt;= massLimit" />
+          </node>
+        </node>
+      </node>
+      <node concept="66VRr" id="3Igz0sWmdKa" role="3Z9vGx">
+        <property role="TrG5h" value="MinFlightTime" />
+        <node concept="3HG_t4" id="3Igz0sWmdKb" role="66U86">
+          <property role="3HG_t5" value="The drone shall be able to fly at least the required time." />
+        </node>
+        <node concept="38pZY" id="3Igz0sWmdKc" role="66U86">
+          <property role="TrG5h" value="drone" />
+          <node concept="35c6Ng" id="3Igz0sWmdKd" role="35c6Nl">
+            <node concept="AsIwX" id="3Igz0sWmdKf" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmdKg" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmdJI" resolve="Drone" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="8EhU9" id="3Igz0sWmdKh" role="66U86">
+          <property role="TrG5h" value="requiredTime" />
+          <node concept="8EhVB" id="3Igz0sWmdKi" role="8EhU5">
+            <node concept="AsIwX" id="3Igz0sWmdKk" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmdKl" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+              </node>
+              <node concept="AsIwU" id="3Igz0sWmdKm" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5wJw" resolve="DurationValue" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3TIFEV" id="3Igz0sWmdKn" role="66U86">
+          <node concept="3bnkR8" id="3Igz0sWmdKo" role="SPUDi">
+            <property role="3bnkR9" value="drone.maxFlightTime &gt;= requiredTime" />
+          </node>
+        </node>
+      </node>
+      <node concept="SPUEH" id="3Igz0sWmdKp" role="3Z9vGx">
+        <property role="TrG5h" value="takeOffMass" />
+        <property role="6zCXJ" value="R1" />
+        <node concept="35c6Ng" id="3Igz0sWmdKq" role="SPUDr">
+          <node concept="AsIwX" id="3Igz0sWmdKs" role="2_tBl3">
+            <node concept="AsIwU" id="3Igz0sWmdKt" role="AsIwY">
+              <ref role="AsIwW" node="3Igz0sWmdJV" resolve="MaxTakeOffMass" />
+            </node>
+          </node>
+        </node>
+        <node concept="3HG_t4" id="3Igz0sWmdKu" role="SPUDs">
+          <property role="3HG_t5" value="Take-off mass shall not exceed 25 kg." />
+        </node>
+        <node concept="8EhU9" id="3Igz0sWmdKv" role="SPUDs">
+          <property role="TrG5h" value="massLimit" />
+          <node concept="3bnkR8" id="3Igz0sWmdKw" role="2gbwqI">
+            <property role="3bnkR9" value="25 [kg]" />
+          </node>
+          <node concept="3wdj9f" id="3Igz0sWmdKx" role="3wdj9d">
+            <property role="3wdj9b" value="massLimit" />
+          </node>
+        </node>
+      </node>
+      <node concept="SPUEH" id="3Igz0sWmdKy" role="3Z9vGx">
+        <property role="TrG5h" value="deliveryMission" />
+        <property role="6zCXJ" value="R2" />
+        <node concept="3HG_t4" id="3Igz0sWmdKz" role="SPUDs">
+          <property role="3HG_t5" value="The drone shall deliver a parcel within the mission limits." />
+        </node>
+        <node concept="SPUEH" id="3Igz0sWmdK$" role="SPUDs">
+          <property role="TrG5h" value="flightTime" />
+          <property role="6zCXJ" value="R2.1" />
+          <node concept="35c6Ng" id="3Igz0sWmdK_" role="SPUDr">
+            <node concept="AsIwX" id="3Igz0sWmdKB" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmdKC" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmdKa" resolve="MinFlightTime" />
+              </node>
+            </node>
+          </node>
+          <node concept="3HG_t4" id="3Igz0sWmdKD" role="SPUDs">
+            <property role="3HG_t5" value="Flight time shall be at least 30 minutes." />
+          </node>
+        </node>
+        <node concept="SPUEH" id="3Igz0sWmdKE" role="SPUDs">
+          <property role="TrG5h" value="range" />
+          <property role="6zCXJ" value="R2.2" />
+          <node concept="3HG_t4" id="3Igz0sWmdKF" role="SPUDs">
+            <property role="3HG_t5" value="The drone shall fly at least 10 km." />
+          </node>
+        </node>
+      </node>
+      <node concept="8GF0z" id="3Igz0sWmdKG" role="3Z9vGx">
+        <property role="TrG5h" value="droneUnderDesign" />
+        <node concept="3w00Zy" id="3Igz0sWmdKH" role="3w00ZT">
+          <node concept="AsIwX" id="3Igz0sWmdKI" role="1MHwYB">
+            <node concept="AsIwU" id="3Igz0sWmdKJ" role="AsIwY">
+              <ref role="AsIwW" node="3Igz0sWmdJI" resolve="Drone" />
+            </node>
+          </node>
+        </node>
+        <node concept="3v7bcZ" id="3Igz0sWmdKK" role="8GFem">
+          <node concept="3wdj9f" id="3Igz0sWmdKL" role="3v7bcx">
+            <property role="3wdj9b" value="takeOffMass" />
+            <ref role="3wdj98" node="3Igz0sWmdKp" resolve="takeOffMass" />
+          </node>
+          <node concept="3bnkR8" id="3Igz0sWmdKM" role="3v7bcw">
+            <property role="3bnkR9" value="droneUnderDesign" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Z9vzX" id="3Igz0sWmr_2" role="2h0jOs">
+      <property role="TrG5h" value="SatisfyPackageLevelRequirement" />
+      <node concept="3ZUotO" id="3Igz0sWmr_3" role="3Z9vGx">
+        <property role="TrG5h" value="Drone" />
+      </node>
+      <node concept="SPUEH" id="3Igz0sWmr_4" role="3Z9vGx">
+        <property role="TrG5h" value="r1" />
+        <node concept="3HG_t4" id="3Igz0sWmr_5" role="SPUDs">
+          <property role="3HG_t5" value="Package-level requirement." />
+        </node>
+      </node>
+      <node concept="8GF0z" id="3Igz0sWmr_6" role="3Z9vGx">
+        <property role="TrG5h" value="d" />
+        <node concept="3w00Zy" id="3Igz0sWmr_7" role="3w00ZT">
+          <node concept="AsIwX" id="3Igz0sWmr_8" role="1MHwYB">
+            <node concept="AsIwU" id="3Igz0sWmr_9" role="AsIwY">
+              <ref role="AsIwW" node="3Igz0sWmr_3" resolve="Drone" />
+            </node>
+          </node>
+        </node>
+        <node concept="3v7bcZ" id="3Igz0sWmr_a" role="8GFem">
+          <node concept="3wdj9f" id="3Igz0sWmr_b" role="3v7bcx">
+            <property role="3wdj9b" value="r1" />
+            <ref role="3wdj98" node="3Igz0sWmr_4" resolve="r1" />
+          </node>
+          <node concept="3bnkR8" id="3Igz0sWmr_c" role="3v7bcw">
+            <property role="3bnkR9" value="d" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Z9vzX" id="3Igz0sWmr_d" role="2h0jOs">
+      <property role="TrG5h" value="RequirementUsageRedefinition" />
+      <node concept="3ZUotO" id="3Igz0sWmr_e" role="3Z9vGx">
+        <property role="TrG5h" value="Drone" />
+        <node concept="8EhU9" id="3Igz0sWmr_f" role="3w00ZY">
+          <property role="TrG5h" value="mass" />
+        </node>
+      </node>
+      <node concept="66VRr" id="3Igz0sWmr_g" role="3Z9vGx">
+        <property role="TrG5h" value="MaxMass" />
+        <node concept="8EhU9" id="3Igz0sWmr_h" role="66U86">
+          <property role="TrG5h" value="massLimit" />
+        </node>
+      </node>
+      <node concept="SPUEH" id="3Igz0sWmr_i" role="3Z9vGx">
+        <property role="TrG5h" value="r1" />
+        <node concept="35c6Ng" id="3Igz0sWmr_j" role="SPUDr">
+          <node concept="AsIwX" id="3Igz0sWmr_l" role="2_tBl3">
+            <node concept="AsIwU" id="3Igz0sWmr_m" role="AsIwY">
+              <ref role="AsIwW" node="3Igz0sWmr_g" resolve="MaxMass" />
+            </node>
+          </node>
+        </node>
+        <node concept="8EhU9" id="3Igz0sWmr_n" role="SPUDs">
+          <property role="TrG5h" value="massLimit" />
+          <node concept="1_WVX6" id="3Igz0sWmr_o" role="2gbwqI">
+            <property role="1_WVXG" value="25" />
+          </node>
+          <node concept="3wdj9f" id="3Igz0sWmr_p" role="3wdj9d">
+            <property role="3wdj9b" value="massLimit" />
+            <ref role="3wdj98" node="3Igz0sWmr_h" resolve="massLimit" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="3Igz0sWmr_1">
+    <property role="TrG5h" value="_310_unresolved_action_feature_chain" />
+    <node concept="3Z9vzX" id="3Igz0sWmr_q" role="2h0jOs">
+      <property role="TrG5h" value="Gap4_ActionFeatureChain" />
+      <node concept="3w00Z_" id="3Igz0sWmr_r" role="3Z9vGx">
+        <property role="TrG5h" value="Parcel" />
+      </node>
+      <node concept="66U8D" id="3Igz0sWmr_s" role="3Z9vGx">
+        <property role="TrG5h" value="PickUp" />
+        <node concept="3w00Zz" id="3Igz0sWmr_t" role="66U86">
+          <property role="TrG5h" value="parcel" />
+          <node concept="3w00Zy" id="3Igz0sWmr_u" role="3w00ZT">
+            <node concept="AsIwX" id="3Igz0sWmr_v" role="1MHwYB">
+              <node concept="AsIwU" id="3Igz0sWmr_w" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmr_r" resolve="Parcel" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xZtmk" id="3Igz0sWmr_x" role="3w00ZV">
+            <property role="3xZtlB" value="3th7jSwWnJl/out" />
+          </node>
+        </node>
+      </node>
+      <node concept="66U8D" id="3Igz0sWmr_y" role="3Z9vGx">
+        <property role="TrG5h" value="Fly" />
+        <node concept="3w00Zz" id="3Igz0sWmr_z" role="66U86">
+          <property role="TrG5h" value="parcel" />
+          <node concept="3w00Zy" id="3Igz0sWmr_$" role="3w00ZT">
+            <node concept="AsIwX" id="3Igz0sWmr__" role="1MHwYB">
+              <node concept="AsIwU" id="3Igz0sWmr_A" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmr_r" resolve="Parcel" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xZtmk" id="3Igz0sWmr_B" role="3w00ZV" />
+        </node>
+      </node>
+      <node concept="66U8D" id="3Igz0sWmr_C" role="3Z9vGx">
+        <property role="TrG5h" value="Deliver" />
+        <node concept="SPUEF" id="3Igz0sWmr_D" role="66U86">
+          <property role="TrG5h" value="pickUp" />
+          <node concept="35c6Ng" id="3Igz0sWmr_E" role="SPUDr">
+            <node concept="AsIwX" id="3Igz0sWmr_G" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmr_H" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmr_s" resolve="PickUp" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="SPUEF" id="3Igz0sWmr_I" role="66U86">
+          <property role="TrG5h" value="fly" />
+          <node concept="35c6Ng" id="3Igz0sWmr_J" role="SPUDr">
+            <node concept="AsIwX" id="3Igz0sWmr_L" role="2_tBl3">
+              <node concept="AsIwU" id="3Igz0sWmr_M" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmr_y" resolve="Fly" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2hSLRH" id="3Igz0sWmr_N" role="66U86">
+          <property role="TrG5h" value="f1" />
+          <node concept="3w00Zy" id="3Igz0sWmr_S" role="2hSLRG">
+            <node concept="AsIwX" id="3Igz0sWmr_T" role="1MHwYB">
+              <node concept="AsIwU" id="3Igz0sWmr_U" role="AsIwY">
+                <ref role="AsIwW" node="3Igz0sWmr_r" resolve="Parcel" />
+              </node>
+            </node>
+          </node>
+          <node concept="2uUmlD" id="3Igz0sWmr_V" role="2uUmly">
+            <node concept="3wdj9f" id="3Igz0sWmr_W" role="2uUmlA">
+              <property role="3wdj9b" value="pickUp" />
+              <ref role="3wdj98" node="3Igz0sWmr_D" resolve="pickUp" />
+            </node>
+            <node concept="3wdj9f" id="3Igz0sWmr_X" role="2uUmlA">
+              <property role="3wdj9b" value="parcel" />
+              <ref role="3wdj98" node="3Igz0sWmr_t" resolve="parcel" />
+            </node>
+          </node>
+          <node concept="2uUmlD" id="3Igz0sWmr_Y" role="2uUmlz">
+            <node concept="3wdj9f" id="3Igz0sWmr_Z" role="2uUmlA">
+              <property role="3wdj9b" value="fly" />
+              <ref role="3wdj98" node="3Igz0sWmr_I" resolve="fly" />
+            </node>
+            <node concept="3wdj9f" id="3Igz0sWmrA0" role="2uUmlA">
+              <property role="3wdj9b" value="parcel" />
+              <ref role="3wdj98" node="3Igz0sWmr_z" resolve="parcel" />
             </node>
           </node>
         </node>
