@@ -3539,7 +3539,7 @@
                         <node concept="1uHKPH" id="4N4m7hrX9n5" role="2OqNvi" />
                       </node>
                       <node concept="3zqWPK" id="4dRTMKMQvny" role="2OqNvi">
-                        <ref role="37wK5l" to="5wt7:4dRTMKMQuWh" resolve="resolvedDefinition" />
+                        <ref role="37wK5l" to="5wt7:4dRTMKMQuWh" resolve="resolvedTarget" />
                       </node>
                     </node>
                     <node concept="3Tqbb2" id="4dRTMKNKX_N" role="10QFUM">
@@ -3687,24 +3687,19 @@
                     <ref role="3cqZAo" node="4N4m7hsaIpe" resolve="res" />
                   </node>
                   <node concept="2OqwBi" id="4N4m7hsaIq4" role="37vLTx">
-                    <node concept="1PxgMI" id="4N4m7hsaIq7" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4N4m7hsaIqa" role="1m5AlR">
-                        <node concept="2OqwBi" id="4N4m7hsaIqd" role="2Oq$k0">
-                          <node concept="37vLTw" id="4N4m7hsaIqg" role="2Oq$k0">
-                            <ref role="3cqZAo" node="4N4m7hsaIpr" resolve="owner" />
-                          </node>
-                          <node concept="3Tsc0h" id="4N4m7hsaIqh" role="2OqNvi">
-                            <ref role="3TtcxE" to="5rf1:YcUunwD2cH" resolve="specializes" />
-                          </node>
-                        </node>
-                        <node concept="1uHKPH" id="4N4m7hsaIqi" role="2OqNvi" />
-                      </node>
-                      <node concept="chp4Y" id="4N4m7hsaIqj" role="3oSUPX">
-                        <ref role="cht4Q" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
-                      </node>
-                    </node>
                     <node concept="3zqWPK" id="7JYC9rXPwq4" role="2OqNvi">
                       <ref role="37wK5l" to="5wt7:6A0vOaZVJaz" resolve="namespaceText" />
+                    </node>
+                    <node concept="2OqwBi" id="4N4m7hsaIqa" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4N4m7hsaIqd" role="2Oq$k0">
+                        <node concept="37vLTw" id="4N4m7hsaIqg" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4N4m7hsaIpr" resolve="owner" />
+                        </node>
+                        <node concept="3Tsc0h" id="4N4m7hsaIqh" role="2OqNvi">
+                          <ref role="3TtcxE" to="5rf1:YcUunwD2cH" resolve="specializes" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="4N4m7hsaIqi" role="2OqNvi" />
                     </node>
                   </node>
                 </node>
