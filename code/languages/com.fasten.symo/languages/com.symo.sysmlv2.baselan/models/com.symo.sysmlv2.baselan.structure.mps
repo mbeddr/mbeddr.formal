@@ -1554,7 +1554,7 @@
     <property role="TrG5h" value="SysMLv2CalculationDefinitionRef" />
     <property role="R4oN_" value="name of a calculation definition (calc def)" />
     <property role="3GE5qa" value="calc" />
-    <ref role="1TJDcQ" node="2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
+    <ref role="1TJDcQ" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
   </node>
   <node concept="1TIwiD" id="5wFVtxsPPNy">
     <property role="EcuMT" value="6353433212862553314" />
@@ -1563,20 +1563,6 @@
     <property role="R4oN_" value="SysML v2 CalculationDefinition (8.3.17.4): parameters, return parameter and optional result expression" />
     <property role="3GE5qa" value="calc" />
     <ref role="1TJDcQ" node="3MUZSeHM$aJ" resolve="SysMLv2ActionDefinition" />
-    <node concept="1TJgyj" id="5wFVtxsPPNB" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212862553319" />
-      <property role="20kJfa" value="specializes" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5wFVtxsPPNx" resolve="SysMLv2CalculationDefinitionRef" />
-    </node>
-    <node concept="1TJgyj" id="5wFVtxsPPNC" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212862553320" />
-      <property role="20kJfa" value="content" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
-    </node>
     <node concept="1TJgyj" id="5wFVtxsPPND" role="1TKVEi">
       <property role="IQ2ns" value="6353433212862553321" />
       <property role="20kJfa" value="result" />
@@ -1588,6 +1574,9 @@
     </node>
     <node concept="PrWs8" id="4QEfSMD6mln" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMD6mkw" resolve="ISysMLv2ReturnOwner" />
+    </node>
+    <node concept="PrWs8" id="3Igz0sQh4mP" role="PzmwI">
+      <ref role="PrY4T" node="34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxsPPNz">
@@ -1673,10 +1662,10 @@
   <node concept="1TIwiD" id="5wFVtxuc50s">
     <property role="EcuMT" value="6353433212885159964" />
     <property role="34LRSv" value="case def" />
-    <property role="R4oN_" value="case def with a plain body (no objective or subject yet)" />
+    <property role="R4oN_" value="SysML v2 CaseDefinition (8.3.22.2)" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2CaseDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
     <node concept="PrWs8" id="4QEfSMD6mkM" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
     </node>
@@ -1820,9 +1809,9 @@
     <property role="EcuMT" value="6353433212932081527" />
     <property role="TrG5h" value="SysMLv2CaseUsage" />
     <property role="34LRSv" value="case" />
-    <property role="R4oN_" value="SysML v2 CaseUsage (8.3.23)" />
+    <property role="R4oN_" value="SysML v2 CaseUsage (8.3.22.3)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tW" resolve="SysMLv2CalculationUsage" />
     <node concept="PrWs8" id="4QEfSMD6ml3" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
     </node>
@@ -1836,7 +1825,7 @@
     <property role="34LRSv" value="analysis" />
     <property role="R4oN_" value="SysML v2 AnalysisCaseUsage (8.3.24)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tT">
     <property role="EcuMT" value="6353433212932081529" />
@@ -1844,7 +1833,7 @@
     <property role="34LRSv" value="verification" />
     <property role="R4oN_" value="SysML v2 VerificationCaseUsage (8.3.25)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tU">
     <property role="EcuMT" value="6353433212932081530" />
@@ -1852,7 +1841,7 @@
     <property role="34LRSv" value="use case" />
     <property role="R4oN_" value="SysML v2 UseCaseUsage (8.3.26)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tV">
     <property role="EcuMT" value="6353433212932081531" />

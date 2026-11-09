@@ -646,5 +646,86 @@
       </node>
     </node>
   </node>
+  <node concept="Z5qvL" id="3Igz0sQh4nz">
+    <property role="Z5qvQ" value="2" />
+    <property role="TrG5h" value="ShareCalculationDefinitionBody" />
+    <property role="1AQGQl" value="Unify calculation and case definition body and specialization roles while preserving model nodes." />
+    <node concept="Z4OXk" id="3Igz0sQh4nA" role="Z5rET">
+      <node concept="2pBcaW" id="3Igz0sQh4nB" role="Z5P1v">
+        <property role="2pBcow" value="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
+        <property role="2pBcoG" value="6353433212862553320" />
+        <property role="2pBc3U" value="SysMLv2CalculationDefinition.content" />
+      </node>
+      <node concept="Z4PCV" id="3Igz0sQh4nC" role="Z5P1t">
+        <ref role="Z4Ptq" to="5rf1:5wFVtxuc4Zu" resolve="content" />
+      </node>
+      <node concept="7a1rN" id="3Igz0sQh4nD" role="7agGg">
+        <node concept="HUanS" id="3Igz0sQh4nE" role="HTpAE">
+          <property role="HUanQ" value="1c9qg3wi1zr3c" />
+          <property role="HUanP" value="content" />
+          <node concept="2x4n5u" id="3Igz0sQh4nF" role="HUanR">
+            <property role="2x4n5l" value="1c9qg3wi1zr36" />
+            <property role="2x4mPI" value="SysMLv2CalculationDefinition" />
+            <property role="2x4o5l" value="false" />
+            <node concept="2V$Bhx" id="3Igz0sQh4nG" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="3Igz0sQh4nH" role="HTpAD">
+          <property role="HUanQ" value="1c9qg3wifgafy" />
+          <property role="HUanP" value="content" />
+          <node concept="2x4n5u" id="3Igz0sQh4nI" role="HUanR">
+            <property role="2x4n5l" value="qyht794g25uh" />
+            <property role="2x4mPI" value="ISysMLv2BodiedDefinition" />
+            <property role="2x4o5l" value="true" />
+            <node concept="2V$Bhx" id="3Igz0sQh4nJ" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Z4OXk" id="3Igz0sQh4nK" role="Z5rET">
+      <node concept="2pBcaW" id="3Igz0sQh4nL" role="Z5P1v">
+        <property role="2pBcow" value="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
+        <property role="2pBcoG" value="6353433212862553319" />
+        <property role="2pBc3U" value="SysMLv2CalculationDefinition.specializes" />
+      </node>
+      <node concept="Z4PCV" id="3Igz0sQh4nM" role="Z5P1t">
+        <ref role="Z4Ptq" to="5rf1:5wFVtxuc4Zt" resolve="specializes" />
+      </node>
+      <node concept="7a1rN" id="3Igz0sQh4nN" role="7agGg">
+        <node concept="HUanS" id="3Igz0sQh4nO" role="HTpAE">
+          <property role="HUanQ" value="1c9qg3wi1zr3b" />
+          <property role="HUanP" value="specializes" />
+          <node concept="2x4n5u" id="3Igz0sQh4nP" role="HUanR">
+            <property role="2x4n5l" value="1c9qg3wi1zr36" />
+            <property role="2x4mPI" value="SysMLv2CalculationDefinition" />
+            <property role="2x4o5l" value="false" />
+            <node concept="2V$Bhx" id="3Igz0sQh4nQ" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="3Igz0sQh4nR" role="HTpAD">
+          <property role="HUanQ" value="1c9qg3wifgafx" />
+          <property role="HUanP" value="specializes" />
+          <node concept="2x4n5u" id="3Igz0sQh4nS" role="HUanR">
+            <property role="2x4n5l" value="qyht794g25uh" />
+            <property role="2x4mPI" value="ISysMLv2BodiedDefinition" />
+            <property role="2x4o5l" value="true" />
+            <node concept="2V$Bhx" id="3Igz0sQh4nT" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

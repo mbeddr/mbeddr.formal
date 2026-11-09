@@ -30,6 +30,8 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
 
    **Direction:** first repair the calculation/action foundation, then put all specialized case usages under `CaseUsage` and inherit the common ownership contracts. Verify subjects, actors, objectives and results for every case family.
 
+   **Implemented (2026-11-09):** restored the calculation/case ancestry and specialized usage chains, inherited subject/return ownership, shared calculation result editors, and result importing/serialization. Native language-version-3 migration preserves existing calculation body and specialization nodes. All 41 editor, 274 importer and 50 scope/semantic tests pass in the IDE; see [ADR 0004](../adr/0004-case-calculation-hierarchy.md).
+
 3. **Critical — requirements, concerns and viewpoints bypass the constraint hierarchy.**
 
    `RequirementDefinition` extends `BodiedDefinition`, not `ConstraintDefinition`. `RequirementUsage` extends `BodiedUsage`, not `ConstraintUsage`; `ConcernUsage` and `ViewpointUsage` independently extend `BodiedUsage` rather than `RequirementUsage`. The concern/viewpoint definition side does inherit `RequirementDefinition`. `SatisfyRequirementUsage` inherits `RequirementUsage` but lacks the additional assertion ancestry; it duplicates assertion flags locally.

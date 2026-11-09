@@ -13,6 +13,8 @@ concept's distinguishing keywords and additional clauses explicit at the call si
 | `SysMLv2BodiedUsage_Prefix` | `ISysMLv2BodiedUsage` | Visibility, end feature, direction, abstract/reference flags and metadata |
 | `SysMLv2BodiedUsage_Body` | `ISysMLv2BodiedUsage` | Optional braced content and the semicolon for an empty body |
 | `SysMLv2BodiedDefinition_Body` | `ISysMLv2BodiedDefinition` | Ordinary braced definition content |
+| `SysMLv2CalculationDefinition_Body` | `SysMLv2CalculationDefinition` | Braced content and optional result expression; shared by calculations and all case definitions |
+| `SysMLv2CalculationUsage_Body` | `SysMLv2CalculationUsage` | Optional braced content and result expression, or a semicolon; shared by calculations and all case usages, including include |
 | `SysMLv2AttributeUsage_Declaration` | `SysMLv2AttributeUsage` | Attribute declaration after visibility; shared by ordinary and return attributes |
 | `SysMLv2ReferenceUsage_DeclarationTail` | `SysMLv2ReferenceUsage` | Name, typing, value and body; shared by reference, subject, actor and stakeholder usages |
 
@@ -33,7 +35,9 @@ pass again without test changes. Preserve this boundary when adding further reus
 
 For example, a state usage editor composes the shared prefix, its `state` keyword,
 short name and name, the typing component, and the body component. Calculation and
-constraint editors retain their additional result syntax. A return attribute
+case editors share calculation body components, including their result syntax
+([ADR 0004](adr/0004-case-calculation-hierarchy.md)). Constraint editors retain
+their own result syntax. A return attribute
 editor keeps visibility and `return` outside the shared attribute declaration.
 
 ## Preserve the concept-family boundaries

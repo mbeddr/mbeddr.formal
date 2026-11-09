@@ -12,6 +12,16 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Printed string properties are escaped display values (2026-11-09)
+
+`print_node` / `get_project_structure` escapes BaseLanguage `StringLiteral.value`
+for display. Do not pass that displayed value unchanged to `SET PROPERTY` when
+modifying a copied test string: it can double its newline escapes. For example,
+a newline escape is one backslash plus `n` in the setter's actual value
+(JSON `"\\n"`), while a printed snapshot can show it as JSON `"\\\\n"`.
+Copy unchanged statements natively; set changed literals from their intended
+source text, then inspect generated Java or run the roundtrip test.
+
 ## Authoring smodel code through `update_node` (2026-11-08)
 
 - Node references must include the model name: `r:<uuid>(<model name>)/<id>`; without it the call
