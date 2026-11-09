@@ -727,5 +727,86 @@
       </node>
     </node>
   </node>
+  <node concept="Z5qvL" id="3Igz0sRBrWw">
+    <property role="Z5qvQ" value="3" />
+    <property role="TrG5h" value="ShareAssertionNegation" />
+    <property role="1AQGQl" value="Unify assertion negation across assert constraint and satisfy requirement usages, preserving existing flags." />
+    <node concept="Z4OXk" id="3Igz0sRBrWz" role="Z5rET">
+      <node concept="2pBcaW" id="3Igz0sRBrW$" role="Z5P1v">
+        <property role="2pBcow" value="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
+        <property role="2pBcoG" value="4292084407509827331" />
+        <property role="2pBc3U" value="SysMLv2AssertConstraintUsage.isNegated" />
+      </node>
+      <node concept="Z4PCV" id="3Igz0sRBrW_" role="Z5P1t">
+        <ref role="Z4Ptq" to="5rf1:5wFVtxwZ4ub" resolve="isNegated" />
+      </node>
+      <node concept="7a1rK" id="3Igz0sRBrWA" role="7agGg">
+        <node concept="2x5zR_" id="3Igz0sRBrWB" role="HTpAA">
+          <property role="2x5zRo" value="1c9qg3wj7dzez" />
+          <property role="2x5zRA" value="isNegated" />
+          <node concept="2x4n5u" id="3Igz0sRBrWC" role="2x5zRt">
+            <property role="2x4n5l" value="1c9qg3wj7dzem" />
+            <property role="2x4mPI" value="SysMLv2AssertConstraintUsage" />
+            <property role="2x4o5l" value="false" />
+            <node concept="2V$Bhx" id="3Igz0sRBrWD" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+        <node concept="2x5zR_" id="3Igz0sRBrWE" role="HTpA_">
+          <property role="2x5zRo" value="1c9qg3wj7dzez" />
+          <property role="2x5zRA" value="isNegated" />
+          <node concept="2x4n5u" id="3Igz0sRBrWF" role="2x5zRt">
+            <property role="2x4n5l" value="wlxkxwefxtmy" />
+            <property role="2x4mPI" value="ISysMLv2AssertConstraintUsage" />
+            <property role="2x4o5l" value="true" />
+            <node concept="2V$Bhx" id="3Igz0sRBrWG" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="Z4OXk" id="3Igz0sRBrWH" role="Z5rET">
+      <node concept="2pBcaW" id="3Igz0sRBrWI" role="Z5P1v">
+        <property role="2pBcow" value="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
+        <property role="2pBcoG" value="8400219580107005969" />
+        <property role="2pBc3U" value="SysMLv2SatisfyRequirementUsage.isNegated" />
+      </node>
+      <node concept="Z4PCV" id="3Igz0sRBrWJ" role="Z5P1t">
+        <ref role="Z4Ptq" to="5rf1:5wFVtxwZ4ub" resolve="isNegated" />
+      </node>
+      <node concept="7a1rK" id="3Igz0sRBrWK" role="7agGg">
+        <node concept="2x5zR_" id="3Igz0sRBrWL" role="HTpAA">
+          <property role="2x5zRo" value="1rtjxbkw1e1ht" />
+          <property role="2x5zRA" value="isNegated" />
+          <node concept="2x4n5u" id="3Igz0sRBrWM" role="2x5zRt">
+            <property role="2x4n5l" value="1rtjxbkw1e1ho" />
+            <property role="2x4mPI" value="SysMLv2SatisfyRequirementUsage" />
+            <property role="2x4o5l" value="false" />
+            <node concept="2V$Bhx" id="3Igz0sRBrWN" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+        <node concept="2x5zR_" id="3Igz0sRBrWO" role="HTpA_">
+          <property role="2x5zRo" value="1c9qg3wj7dzez" />
+          <property role="2x5zRA" value="isNegated" />
+          <node concept="2x4n5u" id="3Igz0sRBrWP" role="2x5zRt">
+            <property role="2x4n5l" value="wlxkxwefxtmy" />
+            <property role="2x4mPI" value="ISysMLv2AssertConstraintUsage" />
+            <property role="2x4o5l" value="true" />
+            <node concept="2V$Bhx" id="3Igz0sRBrWQ" role="2x4n5j">
+              <property role="2V$B1Q" value="com.symo.sysmlv2.baselan" />
+              <property role="2V$B1T" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

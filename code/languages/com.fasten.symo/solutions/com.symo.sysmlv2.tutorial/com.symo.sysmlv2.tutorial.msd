@@ -14,7 +14,7 @@
     <dependency reexport="false">df90562e-2282-4284-81c0-42a7e5d43d37(com.symo.sysmlv2.baselan)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:df90562e-2282-4284-81c0-42a7e5d43d37:com.symo.sysmlv2.baselan" version="3" />
+    <language slang="l:df90562e-2282-4284-81c0-42a7e5d43d37:com.symo.sysmlv2.baselan" version="4" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>

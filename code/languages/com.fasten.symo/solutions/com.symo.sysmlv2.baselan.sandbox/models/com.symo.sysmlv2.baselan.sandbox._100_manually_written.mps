@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="3" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="4" />
   </languages>
   <imports />
   <registry>
@@ -52,6 +52,9 @@
         <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
+      <concept id="4292084407509826378" name="com.symo.sysmlv2.baselan.structure.ISysMLv2AssertConstraintUsage" flags="ngI" index="c3jtd">
+        <property id="6353433212932081547" name="isNegated" index="SPUDj" />
+      </concept>
       <concept id="4544097993703497188" name="com.symo.sysmlv2.baselan.structure.SysMLv2MessageUsage" flags="ng" index="2cjfNC" />
       <concept id="4544097993703497189" name="com.symo.sysmlv2.baselan.structure.SysMLv2EventOccurrenceUsage" flags="ng" index="2cjfND" />
       <concept id="4544097993703497185" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewUsage" flags="ng" index="2cjfNH" />
@@ -127,9 +130,7 @@
       <concept id="6353433212932081533" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConstraintUsage" flags="ng" index="SPUE_">
         <child id="6353433212932081546" name="result" index="SPUDi" />
       </concept>
-      <concept id="6353433212932081534" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssertConstraintUsage" flags="ng" index="SPUEA">
-        <property id="6353433212932081547" name="isNegated" index="SPUDj" />
-      </concept>
+      <concept id="6353433212932081534" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssertConstraintUsage" flags="ng" index="SPUEA" />
       <concept id="6353433212932081523" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionUsage" flags="ng" index="SPUEF" />
       <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG" />
       <concept id="6353433212932081525" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementUsage" flags="ng" index="SPUEH" />
@@ -211,7 +212,6 @@
         <child id="8400219580107005965" name="performed" index="3v7bcY" />
       </concept>
       <concept id="8400219580107005964" name="com.symo.sysmlv2.baselan.structure.SysMLv2SatisfyRequirementUsage" flags="ng" index="3v7bcZ">
-        <property id="8400219580107005969" name="isNegated" index="3v7bcy" />
         <property id="8400219580107005968" name="isAsserted" index="3v7bcz" />
         <child id="8400219580107005971" name="subject" index="3v7bcw" />
         <child id="8400219580107005970" name="satisfied" index="3v7bcx" />
@@ -3174,7 +3174,7 @@
         <node concept="3v7bcZ" id="6r95PajkRO$" role="3w00ZY">
           <property role="TrG5h" value="noHarm" />
           <property role="3v7bcz" value="true" />
-          <property role="3v7bcy" value="true" />
+          <property role="SPUDj" value="true" />
           <node concept="3bnkR8" id="6r95PajkRO_" role="3v7bcw">
             <property role="3bnkR9" value="vehicle.body" />
           </node>

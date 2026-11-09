@@ -42,6 +42,8 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
 
    **Direction:** restore these chains and represent the assertion capability explicitly. Keep constraint semantics distinct from the mere presence of a body or result cell.
 
+   **Implemented (2026-11-09):** restored requirement/constraint and concern/viewpoint usage ancestry, introduced shared predicate/BooleanExpression and assertion contracts, and migrated assertion negation to a shared property. Requirement-body syntax is preserved using link-identity placement checks. See [ADR 0005](../adr/0005-requirement-constraint-hierarchy.md).
+
 4. **High — views, renderings and allocations have occurrence ancestry where structural ancestry is needed.**
 
    `ViewDefinition`, `RenderingDefinition` and `AllocationDefinition` extend `BodiedDefinition`. Their usage counterparts extend `BodiedUsage`. Thus views/renderings are not parts, and allocations are not connections.

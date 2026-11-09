@@ -14,6 +14,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
@@ -945,6 +946,162 @@
                 <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
                 <node concept="35c_gC" id="3Igz0sQh4M5" role="37wK5m">
                   <ref role="35c_gD" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3Igz0sRZJcm">
+    <property role="TrG5h" value="SysMLv2RequirementDefinition_Constraints" />
+    <ref role="1M2myG" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
+    <node concept="9SLcT" id="3Igz0sRZJcn" role="9SGkU">
+      <node concept="3clFbS" id="3Igz0sRZJco" role="2VODD2">
+        <node concept="3SKdUt" id="3Igz0sRZJcp" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sRZJct" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sRZJcv" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcw" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcx" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcy" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcz" role="1PaTwD">
+              <property role="3oM_SC" value="admits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJc$" role="1PaTwD">
+              <property role="3oM_SC" value="members," />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJc_" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcA" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcB" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcC" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcD" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcE" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJcF" role="1PaTwD">
+              <property role="3oM_SC" value="parameters." />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3Igz0sRZJcG" role="3cqZAp">
+          <node concept="1Wc70l" id="3Igz0sRZJcH" role="3cqZAk">
+            <node concept="3fqX7Q" id="3Igz0sRZJcI" role="3uHU7B">
+              <node concept="2OqwBi" id="3Igz0sRZJcJ" role="3fr31v">
+                <node concept="359W_D" id="3Igz0sRZJcK" role="2Oq$k0">
+                  <ref role="359W_E" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
+                  <ref role="359W_F" to="5rf1:5wFVtxwZa5i" resolve="result" />
+                </node>
+                <node concept="liA8E" id="3Igz0sRZJcL" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                  <node concept="2DA6wF" id="3Igz0sRZJcM" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="3Igz0sRZJcN" role="3uHU7w">
+              <node concept="2OqwBi" id="3Igz0sRZJcO" role="3fr31v">
+                <node concept="2DD5aU" id="3Igz0sRZJcP" role="2Oq$k0" />
+                <node concept="liA8E" id="3Igz0sRZJcQ" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
+                  <node concept="35c_gC" id="3Igz0sRZJcR" role="37wK5m">
+                    <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3Igz0sRZJdj">
+    <property role="TrG5h" value="SysMLv2RequirementUsage_Constraints" />
+    <ref role="1M2myG" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+    <node concept="9SLcT" id="3Igz0sRZJdk" role="9SGkU">
+      <node concept="3clFbS" id="3Igz0sRZJdl" role="2VODD2">
+        <node concept="3SKdUt" id="3Igz0sRZJdm" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sRZJdq" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sRZJds" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdt" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdu" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdv" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdw" role="1PaTwD">
+              <property role="3oM_SC" value="admits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdx" role="1PaTwD">
+              <property role="3oM_SC" value="members," />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdy" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdz" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJd$" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJd_" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdA" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdB" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sRZJdC" role="1PaTwD">
+              <property role="3oM_SC" value="parameters." />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3Igz0sRZJdD" role="3cqZAp">
+          <node concept="1Wc70l" id="3Igz0sRZJdE" role="3cqZAk">
+            <node concept="3fqX7Q" id="3Igz0sRZJdF" role="3uHU7B">
+              <node concept="2OqwBi" id="3Igz0sRZJdG" role="3fr31v">
+                <node concept="359W_D" id="3Igz0sRZJdH" role="2Oq$k0">
+                  <ref role="359W_E" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+                  <ref role="359W_F" to="5rf1:5wFVtxwZ4ua" resolve="result" />
+                </node>
+                <node concept="liA8E" id="3Igz0sRZJdI" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                  <node concept="2DA6wF" id="3Igz0sRZJdJ" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="3Igz0sRZJdK" role="3uHU7w">
+              <node concept="2OqwBi" id="3Igz0sRZJdL" role="3fr31v">
+                <node concept="2DD5aU" id="3Igz0sRZJdM" role="2Oq$k0" />
+                <node concept="liA8E" id="3Igz0sRZJdN" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="isSubConceptOf" />
+                  <node concept="35c_gC" id="3Igz0sRZJdO" role="37wK5m">
+                    <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                  </node>
                 </node>
               </node>
             </node>

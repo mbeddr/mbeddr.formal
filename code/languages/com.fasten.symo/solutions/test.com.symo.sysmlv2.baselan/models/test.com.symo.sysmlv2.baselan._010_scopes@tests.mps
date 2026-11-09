@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="3" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
@@ -30,6 +30,8 @@
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="ykol" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -176,10 +178,13 @@
       <concept id="6353433212862553314" name="com.symo.sysmlv2.baselan.structure.SysMLv2CalculationDefinition" flags="ng" index="4Zb4U">
         <child id="6353433212862553321" name="result" index="4Zb4L" />
       </concept>
+      <concept id="6353433212885159933" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConstraintDefinition" flags="ng" index="66U8_" />
       <concept id="6353433212885159921" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionDefinition" flags="ng" index="66U8D" />
       <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
       <concept id="6353433212885159964" name="com.symo.sysmlv2.baselan.structure.SysMLv2CaseDefinition" flags="ng" index="66VR4" />
+      <concept id="6353433212885159945" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConcernDefinition" flags="ng" index="66VRh" />
       <concept id="6353433212885159939" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementDefinition" flags="ng" index="66VRr" />
+      <concept id="6353433212885159994" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewpointDefinition" flags="ng" index="66VRy" />
       <concept id="6353433212885159988" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewDefinition" flags="ng" index="66VRG" />
       <concept id="6353433212885159976" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseDefinition" flags="ng" index="66VRK" />
       <concept id="6353433212885159982" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseDefinition" flags="ng" index="66VRQ" />
@@ -192,6 +197,9 @@
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB" />
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
+      <concept id="4292084407509826378" name="com.symo.sysmlv2.baselan.structure.ISysMLv2AssertConstraintUsage" flags="ngI" index="c3jtd">
+        <property id="6353433212932081547" name="isNegated" index="SPUDj" />
+      </concept>
       <concept id="4544097993703497185" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewUsage" flags="ng" index="2cjfNH" />
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
@@ -238,12 +246,18 @@
       <concept id="6353433212932081528" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseUsage" flags="ng" index="SPUEw" />
       <concept id="6353433212932081529" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseUsage" flags="ng" index="SPUEx" />
       <concept id="6353433212932081530" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseUsage" flags="ng" index="SPUEy" />
+      <concept id="6353433212932081531" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewpointUsage" flags="ng" index="SPUEz" />
       <concept id="6353433212932081532" name="com.symo.sysmlv2.baselan.structure.SysMLv2CalculationUsage" flags="ng" index="SPUE$">
         <child id="6353433212932081545" name="result" index="SPUDh" />
       </concept>
+      <concept id="6353433212932081533" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConstraintUsage" flags="ng" index="SPUE_">
+        <child id="6353433212932081546" name="result" index="SPUDi" />
+      </concept>
+      <concept id="6353433212932081534" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssertConstraintUsage" flags="ng" index="SPUEA" />
       <concept id="6353433212932081523" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionUsage" flags="ng" index="SPUEF" />
       <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG" />
       <concept id="6353433212932081525" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementUsage" flags="ng" index="SPUEH" />
+      <concept id="6353433212932081526" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConcernUsage" flags="ng" index="SPUEI" />
       <concept id="6353433212932081527" name="com.symo.sysmlv2.baselan.structure.SysMLv2CaseUsage" flags="ng" index="SPUEJ" />
       <concept id="3548282586720795162" name="com.symo.sysmlv2.baselan.structure.ISysMLv2BodiedUsage" flags="ngI" index="2T378G">
         <child id="6353433212932081538" name="content" index="SPUDq" />
@@ -266,6 +280,7 @@
       </concept>
       <concept id="9009971474163998582" name="com.symo.sysmlv2.baselan.structure.SysMLv2EntryActionMember" flags="ng" index="3sYOoB" />
       <concept id="9009971474147082589" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReturnAttributeUsage" flags="ng" index="3tYlwc" />
+      <concept id="8400219580107005964" name="com.symo.sysmlv2.baselan.structure.SysMLv2SatisfyRequirementUsage" flags="ng" index="3v7bcZ" />
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
@@ -310,6 +325,7 @@
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
+      <concept id="7406476705817406953" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementConstraintUsage" flags="ng" index="3TIFEV" />
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
         <child id="8642959026948349267" name="importedName" index="AsIwy" />
@@ -343,10 +359,18 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="383263754642626088" name="jetbrains.mps.lang.smodel.structure.Node_GetUID" flags="ng" index="2F$3pM" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -357,6 +381,7 @@
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -8485,6 +8510,3147 @@
                 <node concept="chp4Y" id="3Igz0sR2Riw" role="cj9EA">
                   <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3Igz0sSogPX">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_220_RequirementSemanticContracts" />
+    <node concept="1qefOq" id="3Igz0sSogPY" role="1SKRRt">
+      <node concept="2h0jOr" id="3Igz0sSogPZ" role="1qenE9">
+        <property role="TrG5h" value="requirementSemanticContracts" />
+        <node concept="66VRr" id="3Igz0sSogQ0" role="2h0jOs">
+          <property role="TrG5h" value="RequirementDefinition" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="38pZY" id="3Igz0sSogQ1" role="66U86">
+            <property role="TrG5h" value="subject" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="38pZT" id="3Igz0sSogQ2" role="66U86">
+            <property role="TrG5h" value="actor" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3TIFEV" id="3Igz0sSogQ3" role="66U86">
+            <property role="TrG5h" value="check" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="1_WVX6" id="3Igz0sSogQ4" role="SPUDi">
+              <property role="1_WVXG" value="true" />
+            </node>
+          </node>
+          <node concept="3xLA65" id="3Igz0sSogQ5" role="lGtFl">
+            <property role="TrG5h" value="RequirementDefinition" />
+          </node>
+        </node>
+        <node concept="SPUEH" id="3Igz0sSogQ6" role="2h0jOs">
+          <property role="TrG5h" value="RequirementUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="38pZY" id="3Igz0sSogQ7" role="SPUDq">
+            <property role="TrG5h" value="subject" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="38pZT" id="3Igz0sSogQ8" role="SPUDq">
+            <property role="TrG5h" value="actor" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3TIFEV" id="3Igz0sSogQ9" role="SPUDq">
+            <property role="TrG5h" value="check" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="1_WVX6" id="3Igz0sSogQa" role="SPUDi">
+              <property role="1_WVXG" value="true" />
+            </node>
+          </node>
+          <node concept="3xLA65" id="3Igz0sSogQb" role="lGtFl">
+            <property role="TrG5h" value="RequirementUsage" />
+          </node>
+        </node>
+        <node concept="66VRh" id="3Igz0sSogQc" role="2h0jOs">
+          <property role="TrG5h" value="ConcernDefinition" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="38pZY" id="3Igz0sSogQd" role="66U86">
+            <property role="TrG5h" value="subject" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="38pZT" id="3Igz0sSogQe" role="66U86">
+            <property role="TrG5h" value="actor" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3TIFEV" id="3Igz0sSogQf" role="66U86">
+            <property role="TrG5h" value="check" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="1_WVX6" id="3Igz0sSogQg" role="SPUDi">
+              <property role="1_WVXG" value="true" />
+            </node>
+          </node>
+          <node concept="3xLA65" id="3Igz0sSogQh" role="lGtFl">
+            <property role="TrG5h" value="ConcernDefinition" />
+          </node>
+        </node>
+        <node concept="SPUEI" id="3Igz0sSogQi" role="2h0jOs">
+          <property role="TrG5h" value="ConcernUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="38pZY" id="3Igz0sSogQj" role="SPUDq">
+            <property role="TrG5h" value="subject" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="38pZT" id="3Igz0sSogQk" role="SPUDq">
+            <property role="TrG5h" value="actor" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3TIFEV" id="3Igz0sSogQl" role="SPUDq">
+            <property role="TrG5h" value="check" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="1_WVX6" id="3Igz0sSogQm" role="SPUDi">
+              <property role="1_WVXG" value="true" />
+            </node>
+          </node>
+          <node concept="3xLA65" id="3Igz0sSogQn" role="lGtFl">
+            <property role="TrG5h" value="ConcernUsage" />
+          </node>
+        </node>
+        <node concept="66VRy" id="3Igz0sSogQo" role="2h0jOs">
+          <property role="TrG5h" value="ViewpointDefinition" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="38pZY" id="3Igz0sSogQp" role="66U86">
+            <property role="TrG5h" value="subject" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="38pZT" id="3Igz0sSogQq" role="66U86">
+            <property role="TrG5h" value="actor" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3TIFEV" id="3Igz0sSogQr" role="66U86">
+            <property role="TrG5h" value="check" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="1_WVX6" id="3Igz0sSogQs" role="SPUDi">
+              <property role="1_WVXG" value="true" />
+            </node>
+          </node>
+          <node concept="3xLA65" id="3Igz0sSogQt" role="lGtFl">
+            <property role="TrG5h" value="ViewpointDefinition" />
+          </node>
+        </node>
+        <node concept="SPUEz" id="3Igz0sSogQu" role="2h0jOs">
+          <property role="TrG5h" value="ViewpointUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="38pZY" id="3Igz0sSogQv" role="SPUDq">
+            <property role="TrG5h" value="subject" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="38pZT" id="3Igz0sSogQw" role="SPUDq">
+            <property role="TrG5h" value="actor" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3TIFEV" id="3Igz0sSogQx" role="SPUDq">
+            <property role="TrG5h" value="check" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="1_WVX6" id="3Igz0sSogQy" role="SPUDi">
+              <property role="1_WVXG" value="true" />
+            </node>
+          </node>
+          <node concept="3xLA65" id="3Igz0sSogQz" role="lGtFl">
+            <property role="TrG5h" value="ViewpointUsage" />
+          </node>
+        </node>
+        <node concept="SPUEA" id="3Igz0sSogQ$" role="2h0jOs">
+          <property role="TrG5h" value="AssertConstraintUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <property role="SPUDj" value="true" />
+          <node concept="3xLA65" id="3Igz0sSogQ_" role="lGtFl">
+            <property role="TrG5h" value="AssertConstraintUsage" />
+          </node>
+        </node>
+        <node concept="3v7bcZ" id="3Igz0sSogQA" role="2h0jOs">
+          <property role="TrG5h" value="SatisfyRequirementUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <property role="SPUDj" value="true" />
+          <node concept="3xLA65" id="3Igz0sSogQB" role="lGtFl">
+            <property role="TrG5h" value="SatisfyRequirementUsage" />
+          </node>
+        </node>
+        <node concept="66U8_" id="3Igz0sSogQC" role="2h0jOs">
+          <property role="TrG5h" value="ConstraintDefinition" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="3xLA65" id="3Igz0sSogQD" role="lGtFl">
+            <property role="TrG5h" value="ConstraintDefinition" />
+          </node>
+        </node>
+        <node concept="SPUE_" id="3Igz0sSogQE" role="2h0jOs">
+          <property role="TrG5h" value="ConstraintUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="3xLA65" id="3Igz0sSogQF" role="lGtFl">
+            <property role="TrG5h" value="ConstraintUsage" />
+          </node>
+        </node>
+        <node concept="SPUE$" id="3Igz0sSogQG" role="2h0jOs">
+          <property role="TrG5h" value="CalculationUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="3xLA65" id="3Igz0sSogQH" role="lGtFl">
+            <property role="TrG5h" value="CalculationUsage" />
+          </node>
+        </node>
+        <node concept="SPUEJ" id="3Igz0sSogQI" role="2h0jOs">
+          <property role="TrG5h" value="CaseUsage" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="3xLA65" id="3Igz0sSogQJ" role="lGtFl">
+            <property role="TrG5h" value="CaseUsage" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3Igz0sSogQK" role="1SL9yI">
+      <property role="TrG5h" value="testRequirementConstraintContracts" />
+      <node concept="3cqZAl" id="3Igz0sSogQM" role="3clF45" />
+      <node concept="3clFbS" id="3Igz0sSogQN" role="3clF47">
+        <node concept="3SKdUt" id="3Igz0sSogQO" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogQS" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogQU" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogQV" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogQW" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.8:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogQX" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogQY" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogQZ" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2RequirementDefinition." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogR0" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogR1" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogR4" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQ5" resolve="RequirementDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogR5" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogR6" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogR7" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogRb" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogRd" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRe" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRf" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.8:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRg" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRh" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRi" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2ConstraintDefinition." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogRj" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogRk" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogRn" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQ5" resolve="RequirementDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogRo" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogRp" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogRq" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogRu" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogRw" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRx" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRy" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.8:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRz" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogR$" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogR_" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SubjectOwner." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogRA" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogRB" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogRE" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQ5" resolve="RequirementDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogRF" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogRG" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogRH" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogRL" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogRN" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRO" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRP" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.3:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRQ" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRR" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogRS" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticPredicate." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogRT" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogRU" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogRX" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQ5" resolve="RequirementDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogRY" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogRZ" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH8" resolve="ISysMLv2SemanticPredicate" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogS0" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogS4" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogS6" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogS7" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogS8" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.9:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogS9" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSa" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSb" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2RequirementUsage." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogSc" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogSd" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogSg" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogSh" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogSi" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogSj" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogSn" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogSp" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSq" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSr" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.9:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSs" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSt" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSu" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2ConstraintUsage." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogSv" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogSw" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogSz" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogS$" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogS_" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogSA" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogSE" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogSG" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSH" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSI" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.9:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSJ" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSK" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogSL" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SubjectOwner." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogSM" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogSN" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogSQ" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogSR" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogSS" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogST" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogSX" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogSZ" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogT0" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogT1" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogT2" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogT3" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogT4" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticBooleanExpression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogT5" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogT6" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogT9" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogTa" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogTb" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogTc" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogTg" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogTi" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTj" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTk" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTl" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTm" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTn" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticExpression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogTo" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogTp" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogTs" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogTt" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogTu" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogTv" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSogTw" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSogTx" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSogTy" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSogTz" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSogT$" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSogT_" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSogTA" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3Igz0sSogTB" role="1SL9yI">
+      <property role="TrG5h" value="testConcernConstraintContracts" />
+      <node concept="3cqZAl" id="3Igz0sSogTD" role="3clF45" />
+      <node concept="3clFbS" id="3Igz0sSogTE" role="3clF47">
+        <node concept="3SKdUt" id="3Igz0sSogTF" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogTJ" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogTL" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTM" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTN" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.3:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTO" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTP" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogTQ" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2RequirementDefinition." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogTR" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogTS" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogTV" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQh" resolve="ConcernDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogTW" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogTX" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogTY" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogU2" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogU4" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogU5" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogU6" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.3:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogU7" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogU8" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogU9" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2ConstraintDefinition." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogUa" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogUb" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogUe" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQh" resolve="ConcernDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogUf" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogUg" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogUh" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogUl" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogUn" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUo" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUp" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.3:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUq" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUr" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUs" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SubjectOwner." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogUt" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogUu" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogUx" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQh" resolve="ConcernDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogUy" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogUz" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogU$" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogUC" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogUE" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUF" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUG" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.3:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUH" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUI" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUJ" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticPredicate." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogUK" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogUL" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogUO" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQh" resolve="ConcernDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogUP" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogUQ" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH8" resolve="ISysMLv2SemanticPredicate" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogUR" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogUV" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogUX" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUY" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogUZ" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogV0" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogV1" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogV2" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2RequirementUsage." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogV3" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogV4" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogV7" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogV8" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogV9" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogVa" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogVe" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogVg" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVh" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVi" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVj" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVk" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVl" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2ConstraintUsage." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogVm" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogVn" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogVq" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogVr" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogVs" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogVt" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogVx" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogVz" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogV$" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogV_" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVA" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVB" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVC" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SubjectOwner." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogVD" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogVE" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogVH" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogVI" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogVJ" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogVK" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogVO" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogVQ" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVR" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVS" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVT" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVU" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogVV" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticBooleanExpression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogVW" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogVX" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogW0" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogW1" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogW2" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogW3" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogW7" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogW9" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWa" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWb" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWc" role="1PaTwD">
+              <property role="3oM_SC" value="ConcernUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWd" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWe" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticExpression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogWf" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogWg" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogWj" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogWk" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogWl" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogWm" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSogWn" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSogWo" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSogWp" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSogWq" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSogWr" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSogWs" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSogWt" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3Igz0sSogWu" role="1SL9yI">
+      <property role="TrG5h" value="testViewpointConstraintContracts" />
+      <node concept="3cqZAl" id="3Igz0sSogWw" role="3clF45" />
+      <node concept="3clFbS" id="3Igz0sSogWx" role="3clF47">
+        <node concept="3SKdUt" id="3Igz0sSogWy" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogWA" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogWC" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWD" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWE" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.26.8:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWF" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWG" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWH" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2RequirementDefinition." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogWI" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogWJ" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogWM" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQt" resolve="ViewpointDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogWN" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogWO" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogWP" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogWT" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogWV" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWW" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWX" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.26.8:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWY" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogWZ" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogX0" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2ConstraintDefinition." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogX1" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogX2" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogX5" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQt" resolve="ViewpointDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogX6" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogX7" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogX8" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogXc" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogXe" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXf" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXg" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.26.8:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXh" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXi" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXj" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SubjectOwner." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogXk" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogXl" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogXo" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQt" resolve="ViewpointDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogXp" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogXq" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogXr" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogXv" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogXx" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXy" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXz" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.3:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogX$" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointDefinition" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogX_" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXA" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticPredicate." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogXB" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogXC" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogXF" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQt" resolve="ViewpointDefinition" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogXG" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogXH" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH8" resolve="ISysMLv2SemanticPredicate" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogXI" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogXM" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogXO" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXP" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXQ" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.26.9:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXR" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXS" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogXT" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2RequirementUsage." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogXU" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogXV" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogXY" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogXZ" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogY0" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogY1" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogY5" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogY7" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogY8" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogY9" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.26.9:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYa" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYb" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYc" role="1PaTwD">
+              <property role="3oM_SC" value="SysMLv2ConstraintUsage." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogYd" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogYe" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogYh" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogYi" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogYj" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogYk" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogYo" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogYq" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYr" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYs" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.26.9:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYt" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYu" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYv" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SubjectOwner." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogYw" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogYx" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogY$" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogY_" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogYA" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogYB" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogYF" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogYH" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYI" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYJ" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYK" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYL" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogYM" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticBooleanExpression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogYN" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogYO" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogYR" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogYS" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogYT" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogYU" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogYY" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogZ0" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZ1" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZ2" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.4:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZ3" role="1PaTwD">
+              <property role="3oM_SC" value="ViewpointUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZ4" role="1PaTwD">
+              <property role="3oM_SC" value="inherits" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZ5" role="1PaTwD">
+              <property role="3oM_SC" value="ISysMLv2SemanticExpression." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogZ6" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogZ7" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogZa" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogZb" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogZc" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogZd" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSogZe" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSogZf" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSogZg" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSogZh" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSogZi" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSogZj" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSogZk" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3Igz0sSogZl" role="1SL9yI">
+      <property role="TrG5h" value="testSatisfactionSharesAssertionSemanticsAndNegation" />
+      <node concept="3cqZAl" id="3Igz0sSogZn" role="3clF45" />
+      <node concept="3clFbS" id="3Igz0sSogZo" role="3clF47">
+        <node concept="3SKdUt" id="3Igz0sSogZp" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogZt" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogZv" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZw" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZx" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.2:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZy" role="1PaTwD">
+              <property role="3oM_SC" value="AssertConstraintUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZz" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZ$" role="1PaTwD">
+              <property role="3oM_SC" value="assertion" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZ_" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZA" role="1PaTwD">
+              <property role="3oM_SC" value="constraint" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZB" role="1PaTwD">
+              <property role="3oM_SC" value="semantics." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogZC" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogZD" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSogZG" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQ_" resolve="AssertConstraintUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSogZH" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSogZI" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSogZJ" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSogZN" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSogZP" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZQ" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZR" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.2:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZS" role="1PaTwD">
+              <property role="3oM_SC" value="AssertConstraintUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZT" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZU" role="1PaTwD">
+              <property role="3oM_SC" value="assertion" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZV" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZW" role="1PaTwD">
+              <property role="3oM_SC" value="constraint" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSogZX" role="1PaTwD">
+              <property role="3oM_SC" value="semantics." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSogZY" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSogZZ" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSoh02" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQ_" resolve="AssertConstraintUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSoh03" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSoh04" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSoh05" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSoh09" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSoh0b" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0c" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0d" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.2:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0e" role="1PaTwD">
+              <property role="3oM_SC" value="AssertConstraintUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0f" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0g" role="1PaTwD">
+              <property role="3oM_SC" value="assertion" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0h" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0i" role="1PaTwD">
+              <property role="3oM_SC" value="constraint" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0j" role="1PaTwD">
+              <property role="3oM_SC" value="semantics." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh0k" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSoh0l" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSoh0o" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQ_" resolve="AssertConstraintUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSoh0p" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSoh0q" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrJb" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrJf" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrJh" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJi" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJj" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJk" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJl" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.10:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJm" role="1PaTwD">
+              <property role="3oM_SC" value="assertions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJn" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJo" role="1PaTwD">
+              <property role="3oM_SC" value="satisfaction" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJp" role="1PaTwD">
+              <property role="3oM_SC" value="share" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJq" role="1PaTwD">
+              <property role="3oM_SC" value="invariant" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJr" role="1PaTwD">
+              <property role="3oM_SC" value="negation." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh0r" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSoh0s" role="1gVkn0">
+            <node concept="1PxgMI" id="3Igz0sSoh0t" role="2Oq$k0">
+              <node concept="3xONca" id="3Igz0sSoh0u" role="1m5AlR">
+                <ref role="3xOPvv" node="3Igz0sSogQ_" resolve="AssertConstraintUsage" />
+              </node>
+              <node concept="chp4Y" id="3Igz0sSoh0v" role="3oSUPX">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="3Igz0sSoh0w" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:5wFVtxwZ4ub" resolve="isNegated" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSoh0x" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSoh0_" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSoh0B" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0C" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0D" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.10:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0E" role="1PaTwD">
+              <property role="3oM_SC" value="SatisfyRequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0F" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0G" role="1PaTwD">
+              <property role="3oM_SC" value="assertion" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0H" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0I" role="1PaTwD">
+              <property role="3oM_SC" value="constraint" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0J" role="1PaTwD">
+              <property role="3oM_SC" value="semantics." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh0K" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSoh0L" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSoh0O" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQB" resolve="SatisfyRequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSoh0P" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSoh0Q" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSoh0R" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSoh0V" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSoh0X" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0Y" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh0Z" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.10:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh10" role="1PaTwD">
+              <property role="3oM_SC" value="SatisfyRequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh11" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh12" role="1PaTwD">
+              <property role="3oM_SC" value="assertion" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh13" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh14" role="1PaTwD">
+              <property role="3oM_SC" value="constraint" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh15" role="1PaTwD">
+              <property role="3oM_SC" value="semantics." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh16" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSoh17" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSoh1a" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQB" resolve="SatisfyRequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSoh1b" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSoh1c" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSoh1d" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSoh1h" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSoh1j" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1k" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1l" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.10:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1m" role="1PaTwD">
+              <property role="3oM_SC" value="SatisfyRequirementUsage" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1n" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1o" role="1PaTwD">
+              <property role="3oM_SC" value="assertion" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1p" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1q" role="1PaTwD">
+              <property role="3oM_SC" value="constraint" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1r" role="1PaTwD">
+              <property role="3oM_SC" value="semantics." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh1s" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSoh1t" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSoh1w" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQB" resolve="SatisfyRequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSoh1x" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSoh1y" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrJs" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrJw" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrJy" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJz" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ$" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.20.2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ_" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJA" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.10:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJB" role="1PaTwD">
+              <property role="3oM_SC" value="assertions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJC" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJD" role="1PaTwD">
+              <property role="3oM_SC" value="satisfaction" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJE" role="1PaTwD">
+              <property role="3oM_SC" value="share" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJF" role="1PaTwD">
+              <property role="3oM_SC" value="invariant" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJG" role="1PaTwD">
+              <property role="3oM_SC" value="negation." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh1z" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSoh1$" role="1gVkn0">
+            <node concept="1PxgMI" id="3Igz0sSoh1_" role="2Oq$k0">
+              <node concept="3xONca" id="3Igz0sSoh1A" role="1m5AlR">
+                <ref role="3xOPvv" node="3Igz0sSogQB" resolve="SatisfyRequirementUsage" />
+              </node>
+              <node concept="chp4Y" id="3Igz0sSoh1B" role="3oSUPX">
+                <ref role="cht4Q" to="5rf1:3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="3Igz0sSoh1C" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:5wFVtxwZ4ub" resolve="isNegated" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSoh1D" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSoh1H" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSoh1J" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1K" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1L" role="1PaTwD">
+              <property role="3oM_SC" value="8.3.21.10:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1M" role="1PaTwD">
+              <property role="3oM_SC" value="satisfaction" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1N" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1O" role="1PaTwD">
+              <property role="3oM_SC" value="also" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1P" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSoh1Q" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementUsage." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh1R" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSoh1S" role="1gVkn0">
+            <node concept="3xONca" id="3Igz0sSoh1V" role="2Oq$k0">
+              <ref role="3xOPvv" node="3Igz0sSogQB" resolve="SatisfyRequirementUsage" />
+            </node>
+            <node concept="1mIQ4w" id="3Igz0sSoh1W" role="2OqNvi">
+              <node concept="chp4Y" id="3Igz0sSoh1X" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3Igz0sSoh7u" role="1SL9yI">
+      <property role="TrG5h" value="testUnrelatedAndUnassertedUsagesKeepTheirClassification" />
+      <node concept="3cqZAl" id="3Igz0sSoh7w" role="3clF45" />
+      <node concept="3clFbS" id="3Igz0sSoh7x" role="3clF47">
+        <node concept="1gVbGN" id="3Igz0sSoh7y" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSoh7z" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSoh7$" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSoh7_" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSoh7A" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSoh7B" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQH" resolve="CalculationUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSoh7C" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSoh7D" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh7E" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSoh7F" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSoh7G" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSoh7H" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSoh7I" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSoh7J" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQJ" resolve="CaseUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSoh7K" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSoh7L" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh7M" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSoh7N" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSoh7O" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSoh7P" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSoh7Q" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSoh7R" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSoh7S" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSoh7T" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh7U" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSoh7V" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSoh7W" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSoh7X" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSoh7Y" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSoh7Z" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSoh80" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSoh81" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSoh82" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSoh83" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSoh84" role="3fr31v">
+              <node concept="10QFUN" id="3Igz0sSoh85" role="2Oq$k0">
+                <node concept="3Tqbb2" id="3Igz0sSoh86" role="10QFUM" />
+                <node concept="3xONca" id="3Igz0sSoh87" role="10QFUP">
+                  <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+                </node>
+              </node>
+              <node concept="1mIQ4w" id="3Igz0sSoh88" role="2OqNvi">
+                <node concept="chp4Y" id="3Igz0sSoh89" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3Igz0sSoh8a" role="1SL9yI">
+      <property role="TrG5h" value="testRequirementBodyKeepsItsTextualSyntax" />
+      <node concept="3cqZAl" id="3Igz0sSoh8c" role="3clF45" />
+      <node concept="3clFbS" id="3Igz0sSLkg5" role="3clF47">
+        <node concept="3SKdUt" id="3Igz0sSMrEF" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrEJ" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrEL" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrEM" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrEN" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrEO" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrEP" role="1PaTwD">
+              <property role="3oM_SC" value="subject" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrEQ" role="1PaTwD">
+              <property role="3oM_SC" value="members" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrER" role="1PaTwD">
+              <property role="3oM_SC" value="remain" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrES" role="1PaTwD">
+              <property role="3oM_SC" value="valid." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkcX" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSLkOW" role="1gVkn0">
+            <node concept="2YIFZM" id="3Igz0sSLkyq" role="2Oq$k0">
+              <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+              <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+              <node concept="2OqwBi" id="3Igz0sSLms4" role="37wK5m">
+                <node concept="2OqwBi" id="3Igz0sSLmdk" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3Igz0sSLm15" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLlQ_" role="2Oq$k0">
+                      <node concept="2ShNRf" id="3Igz0sSLlGZ" role="2Oq$k0">
+                        <node concept="1pGfFk" id="3Igz0sSLlH0" role="2ShVmc">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLlQA" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                        <node concept="3xONca" id="3Igz0sSLtVe" role="37wK5m">
+                          <ref role="3xOPvv" node="3Igz0sSogQ5" resolve="RequirementDefinition" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLm16" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                      <node concept="35c_gC" id="3Igz0sSLtVf" role="37wK5m">
+                        <ref role="35c_gD" to="5rf1:6jBzJlBLx4b" resolve="SysMLv2SubjectUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmdl" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                    <node concept="359W_D" id="3Igz0sSLtVg" role="37wK5m">
+                      <ref role="359W_E" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+                      <ref role="359W_F" to="5rf1:5wFVtxuc4Zu" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3Igz0sSLms5" role="2OqNvi">
+                  <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3Igz0sSLkOX" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrET" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrEX" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrEZ" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF0" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF1" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF2" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF3" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF4" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF5" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF6" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF7" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF8" role="1PaTwD">
+              <property role="3oM_SC" value="textual" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF9" role="1PaTwD">
+              <property role="3oM_SC" value="requirement" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFa" role="1PaTwD">
+              <property role="3oM_SC" value="members." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkd9" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkcY" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLkSd" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLkyF" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmsZ" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLme8" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm1K" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlRa" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlHx" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlHy" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlRb" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVh" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQ5" resolve="RequirementDefinition" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm1L" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVi" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLme9" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVj" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZa5i" resolve="result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmt0" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLkSe" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrFb" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrFf" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrFh" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFi" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFj" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFk" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFl" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFm" role="1PaTwD">
+              <property role="3oM_SC" value="parameters" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFn" role="1PaTwD">
+              <property role="3oM_SC" value="belong" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFo" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFp" role="1PaTwD">
+              <property role="3oM_SC" value="calculation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFq" role="1PaTwD">
+              <property role="3oM_SC" value="bodies." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkdl" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkda" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLkVu" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLkyW" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmtU" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmeW" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm2r" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlRJ" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlI3" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlI4" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlRK" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVk" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQ5" resolve="RequirementDefinition" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm2s" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVl" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmeX" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVm" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+                        <ref role="359W_F" to="5rf1:5wFVtxuc4Zu" resolve="content" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmtV" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLkVv" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrFr" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrFv" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrFx" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFy" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFz" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF$" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrF_" role="1PaTwD">
+              <property role="3oM_SC" value="subject" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFA" role="1PaTwD">
+              <property role="3oM_SC" value="members" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFB" role="1PaTwD">
+              <property role="3oM_SC" value="remain" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFC" role="1PaTwD">
+              <property role="3oM_SC" value="valid." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkdw" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSLkYJ" role="1gVkn0">
+            <node concept="2YIFZM" id="3Igz0sSLkzd" role="2Oq$k0">
+              <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+              <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+              <node concept="2OqwBi" id="3Igz0sSLmuP" role="37wK5m">
+                <node concept="2OqwBi" id="3Igz0sSLmfK" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3Igz0sSLm36" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLlSk" role="2Oq$k0">
+                      <node concept="2ShNRf" id="3Igz0sSLlI_" role="2Oq$k0">
+                        <node concept="1pGfFk" id="3Igz0sSLlIA" role="2ShVmc">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLlSl" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                        <node concept="3xONca" id="3Igz0sSLtVn" role="37wK5m">
+                          <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLm37" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                      <node concept="35c_gC" id="3Igz0sSLtVo" role="37wK5m">
+                        <ref role="35c_gD" to="5rf1:6jBzJlBLx4b" resolve="SysMLv2SubjectUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmfL" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                    <node concept="359W_D" id="3Igz0sSLtVp" role="37wK5m">
+                      <ref role="359W_E" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+                      <ref role="359W_F" to="5rf1:5wFVtxwZ4u2" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3Igz0sSLmuQ" role="2OqNvi">
+                  <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3Igz0sSLkYK" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrFD" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrFH" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrFJ" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFK" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFL" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFM" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFN" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFO" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFP" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFQ" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFR" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFS" role="1PaTwD">
+              <property role="3oM_SC" value="textual" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFT" role="1PaTwD">
+              <property role="3oM_SC" value="requirement" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrFU" role="1PaTwD">
+              <property role="3oM_SC" value="members." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkdG" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkdx" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLl20" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLkzu" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmvK" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmg$" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm3L" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlST" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlJ7" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlJ8" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlSU" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVq" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm3M" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVr" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmg_" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVs" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZ4ua" resolve="result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmvL" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLl21" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrFV" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrFZ" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrG1" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG2" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG3" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG4" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG5" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG6" role="1PaTwD">
+              <property role="3oM_SC" value="parameters" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG7" role="1PaTwD">
+              <property role="3oM_SC" value="belong" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG8" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG9" role="1PaTwD">
+              <property role="3oM_SC" value="calculation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGa" role="1PaTwD">
+              <property role="3oM_SC" value="bodies." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkdS" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkdH" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLl5h" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLkzJ" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmwF" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmho" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm4s" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlTu" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlJD" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlJE" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlTv" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVt" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQb" resolve="RequirementUsage" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm4t" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVu" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmhp" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVv" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZ4u2" resolve="content" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmwG" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLl5i" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrGb" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrGf" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrGh" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGi" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGj" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGk" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGl" role="1PaTwD">
+              <property role="3oM_SC" value="subject" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGm" role="1PaTwD">
+              <property role="3oM_SC" value="members" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGn" role="1PaTwD">
+              <property role="3oM_SC" value="remain" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGo" role="1PaTwD">
+              <property role="3oM_SC" value="valid." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLke3" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSLl8y" role="1gVkn0">
+            <node concept="2YIFZM" id="3Igz0sSLk$0" role="2Oq$k0">
+              <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+              <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+              <node concept="2OqwBi" id="3Igz0sSLmxA" role="37wK5m">
+                <node concept="2OqwBi" id="3Igz0sSLmic" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3Igz0sSLm57" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLlU3" role="2Oq$k0">
+                      <node concept="2ShNRf" id="3Igz0sSLlKb" role="2Oq$k0">
+                        <node concept="1pGfFk" id="3Igz0sSLlKc" role="2ShVmc">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLlU4" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                        <node concept="3xONca" id="3Igz0sSLtVw" role="37wK5m">
+                          <ref role="3xOPvv" node="3Igz0sSogQh" resolve="ConcernDefinition" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLm58" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                      <node concept="35c_gC" id="3Igz0sSLtVx" role="37wK5m">
+                        <ref role="35c_gD" to="5rf1:6jBzJlBLx4b" resolve="SysMLv2SubjectUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmid" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                    <node concept="359W_D" id="3Igz0sSLtVy" role="37wK5m">
+                      <ref role="359W_E" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+                      <ref role="359W_F" to="5rf1:5wFVtxuc4Zu" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3Igz0sSLmxB" role="2OqNvi">
+                  <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3Igz0sSLl8z" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrGp" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrGt" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrGv" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGw" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGx" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGy" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGz" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG$" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrG_" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGA" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGB" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGC" role="1PaTwD">
+              <property role="3oM_SC" value="textual" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGD" role="1PaTwD">
+              <property role="3oM_SC" value="requirement" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGE" role="1PaTwD">
+              <property role="3oM_SC" value="members." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkef" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLke4" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLlbN" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLk$h" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmyx" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmj0" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm5M" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlUC" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlKH" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlKI" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlUD" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVz" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQh" resolve="ConcernDefinition" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm5N" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtV$" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmj1" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtV_" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZa5i" resolve="result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmyy" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLlbO" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrGF" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrGJ" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrGL" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGM" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGN" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGO" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGP" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGQ" role="1PaTwD">
+              <property role="3oM_SC" value="parameters" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGR" role="1PaTwD">
+              <property role="3oM_SC" value="belong" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGS" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGT" role="1PaTwD">
+              <property role="3oM_SC" value="calculation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrGU" role="1PaTwD">
+              <property role="3oM_SC" value="bodies." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLker" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkeg" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLlf4" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLk$y" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmzs" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmjO" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm6t" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlVd" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlLf" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlLg" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlVe" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVA" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQh" resolve="ConcernDefinition" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm6u" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVB" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmjP" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVC" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+                        <ref role="359W_F" to="5rf1:5wFVtxuc4Zu" resolve="content" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmzt" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLlf5" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrGV" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrGZ" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrH1" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH2" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH3" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH4" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH5" role="1PaTwD">
+              <property role="3oM_SC" value="subject" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH6" role="1PaTwD">
+              <property role="3oM_SC" value="members" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH7" role="1PaTwD">
+              <property role="3oM_SC" value="remain" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH8" role="1PaTwD">
+              <property role="3oM_SC" value="valid." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkeA" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSLlil" role="1gVkn0">
+            <node concept="2YIFZM" id="3Igz0sSLk$N" role="2Oq$k0">
+              <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+              <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+              <node concept="2OqwBi" id="3Igz0sSLm$n" role="37wK5m">
+                <node concept="2OqwBi" id="3Igz0sSLmkC" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3Igz0sSLm78" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLlVM" role="2Oq$k0">
+                      <node concept="2ShNRf" id="3Igz0sSLlLL" role="2Oq$k0">
+                        <node concept="1pGfFk" id="3Igz0sSLlLM" role="2ShVmc">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLlVN" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                        <node concept="3xONca" id="3Igz0sSLtVD" role="37wK5m">
+                          <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLm79" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                      <node concept="35c_gC" id="3Igz0sSLtVE" role="37wK5m">
+                        <ref role="35c_gD" to="5rf1:6jBzJlBLx4b" resolve="SysMLv2SubjectUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmkD" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                    <node concept="359W_D" id="3Igz0sSLtVF" role="37wK5m">
+                      <ref role="359W_E" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+                      <ref role="359W_F" to="5rf1:5wFVtxwZ4u2" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3Igz0sSLm$o" role="2OqNvi">
+                  <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3Igz0sSLlim" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrH9" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrHd" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrHf" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHg" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHh" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHi" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHj" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHk" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHl" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHm" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHn" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHo" role="1PaTwD">
+              <property role="3oM_SC" value="textual" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHp" role="1PaTwD">
+              <property role="3oM_SC" value="requirement" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHq" role="1PaTwD">
+              <property role="3oM_SC" value="members." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkeM" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkeB" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLllA" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLk_4" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLm_i" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmls" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm7N" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlWn" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlMj" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlMk" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlWo" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVG" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm7O" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVH" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmlt" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVI" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZ4ua" resolve="result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLm_j" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLllB" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrHr" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrHv" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrHx" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHy" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHz" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH$" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrH_" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHA" role="1PaTwD">
+              <property role="3oM_SC" value="parameters" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHB" role="1PaTwD">
+              <property role="3oM_SC" value="belong" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHC" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHD" role="1PaTwD">
+              <property role="3oM_SC" value="calculation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHE" role="1PaTwD">
+              <property role="3oM_SC" value="bodies." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkeY" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkeN" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLloR" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLk_l" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmAd" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmmg" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm8u" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlWW" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlMP" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlMQ" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlWX" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVJ" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQn" resolve="ConcernUsage" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm8v" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVK" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmmh" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVL" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZ4u2" resolve="content" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmAe" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLloS" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrHF" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrHJ" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrHL" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHM" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHN" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHO" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHP" role="1PaTwD">
+              <property role="3oM_SC" value="subject" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHQ" role="1PaTwD">
+              <property role="3oM_SC" value="members" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHR" role="1PaTwD">
+              <property role="3oM_SC" value="remain" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrHS" role="1PaTwD">
+              <property role="3oM_SC" value="valid." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkf9" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSLls8" role="1gVkn0">
+            <node concept="2YIFZM" id="3Igz0sSLk_A" role="2Oq$k0">
+              <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+              <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+              <node concept="2OqwBi" id="3Igz0sSLmB8" role="37wK5m">
+                <node concept="2OqwBi" id="3Igz0sSLmn4" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3Igz0sSLm99" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLlXx" role="2Oq$k0">
+                      <node concept="2ShNRf" id="3Igz0sSLlNn" role="2Oq$k0">
+                        <node concept="1pGfFk" id="3Igz0sSLlNo" role="2ShVmc">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLlXy" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                        <node concept="3xONca" id="3Igz0sSLtVM" role="37wK5m">
+                          <ref role="3xOPvv" node="3Igz0sSogQt" resolve="ViewpointDefinition" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLm9a" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                      <node concept="35c_gC" id="3Igz0sSLtVN" role="37wK5m">
+                        <ref role="35c_gD" to="5rf1:6jBzJlBLx4b" resolve="SysMLv2SubjectUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmn5" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                    <node concept="359W_D" id="3Igz0sSLtVO" role="37wK5m">
+                      <ref role="359W_E" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+                      <ref role="359W_F" to="5rf1:5wFVtxuc4Zu" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3Igz0sSLmB9" role="2OqNvi">
+                  <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3Igz0sSLls9" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrHT" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrHX" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrHZ" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI0" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI1" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI2" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI3" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI4" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI5" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI6" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI7" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI8" role="1PaTwD">
+              <property role="3oM_SC" value="textual" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI9" role="1PaTwD">
+              <property role="3oM_SC" value="requirement" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIa" role="1PaTwD">
+              <property role="3oM_SC" value="members." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkfl" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkfa" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLlvp" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLk_R" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmC3" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmnS" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLm9O" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlY6" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlNT" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlNU" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlY7" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVP" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQt" resolve="ViewpointDefinition" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLm9P" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVQ" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmnT" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVR" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZa5i" resolve="result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmC4" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLlvq" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrIb" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrIf" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrIh" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIi" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIj" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIk" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIl" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIm" role="1PaTwD">
+              <property role="3oM_SC" value="parameters" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIn" role="1PaTwD">
+              <property role="3oM_SC" value="belong" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIo" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIp" role="1PaTwD">
+              <property role="3oM_SC" value="calculation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIq" role="1PaTwD">
+              <property role="3oM_SC" value="bodies." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkfx" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkfm" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLlyE" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLkA8" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmCY" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmoG" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLmav" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlYF" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlOr" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlOs" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlYG" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVS" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQt" resolve="ViewpointDefinition" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLmaw" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVT" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmoH" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtVU" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
+                        <ref role="359W_F" to="5rf1:5wFVtxuc4Zu" resolve="content" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmCZ" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLlyF" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrIr" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrIv" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrIx" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIy" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIz" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI$" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrI_" role="1PaTwD">
+              <property role="3oM_SC" value="subject" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIA" role="1PaTwD">
+              <property role="3oM_SC" value="members" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIB" role="1PaTwD">
+              <property role="3oM_SC" value="remain" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIC" role="1PaTwD">
+              <property role="3oM_SC" value="valid." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkfG" role="3cqZAp">
+          <node concept="2OqwBi" id="3Igz0sSLl_V" role="1gVkn0">
+            <node concept="2YIFZM" id="3Igz0sSLkAp" role="2Oq$k0">
+              <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+              <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+              <node concept="2OqwBi" id="3Igz0sSLmDT" role="37wK5m">
+                <node concept="2OqwBi" id="3Igz0sSLmpw" role="2Oq$k0">
+                  <node concept="2OqwBi" id="3Igz0sSLmba" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLlZg" role="2Oq$k0">
+                      <node concept="2ShNRf" id="3Igz0sSLlOX" role="2Oq$k0">
+                        <node concept="1pGfFk" id="3Igz0sSLlOY" role="2ShVmc">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLlZh" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                        <node concept="3xONca" id="3Igz0sSLtVV" role="37wK5m">
+                          <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmbb" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                      <node concept="35c_gC" id="3Igz0sSLtVW" role="37wK5m">
+                        <ref role="35c_gD" to="5rf1:6jBzJlBLx4b" resolve="SysMLv2SubjectUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmpx" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                    <node concept="359W_D" id="3Igz0sSLtVX" role="37wK5m">
+                      <ref role="359W_E" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+                      <ref role="359W_F" to="5rf1:5wFVtxwZ4u2" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="3Igz0sSLmDU" role="2OqNvi">
+                  <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3Igz0sSLl_W" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrID" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrIH" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrIJ" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIK" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIL" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIM" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIN" role="1PaTwD">
+              <property role="3oM_SC" value="direct" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIO" role="1PaTwD">
+              <property role="3oM_SC" value="result" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIP" role="1PaTwD">
+              <property role="3oM_SC" value="expressions" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIQ" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIR" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIS" role="1PaTwD">
+              <property role="3oM_SC" value="textual" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIT" role="1PaTwD">
+              <property role="3oM_SC" value="requirement" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrIU" role="1PaTwD">
+              <property role="3oM_SC" value="members." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkfS" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkfH" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLlDc" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLkAE" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmEO" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmqk" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLmbP" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLlZP" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlPv" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlPw" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLlZQ" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtVY" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLmbQ" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtVZ" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmql" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtW0" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZ4ua" resolve="result" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmEP" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLlDd" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="3Igz0sSMrIV" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sSMrIZ" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sSMrJ1" role="1PaTwD">
+              <property role="3oM_SC" value="SysML" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ2" role="1PaTwD">
+              <property role="3oM_SC" value="v2" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ3" role="1PaTwD">
+              <property role="3oM_SC" value="8.2.2.21" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ4" role="1PaTwD">
+              <property role="3oM_SC" value="RequirementBody:" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ5" role="1PaTwD">
+              <property role="3oM_SC" value="return" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ6" role="1PaTwD">
+              <property role="3oM_SC" value="parameters" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ7" role="1PaTwD">
+              <property role="3oM_SC" value="belong" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ8" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJ9" role="1PaTwD">
+              <property role="3oM_SC" value="calculation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sSMrJa" role="1PaTwD">
+              <property role="3oM_SC" value="bodies." />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="3Igz0sSLkg4" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sSLkfT" role="1gVkn0">
+            <node concept="2OqwBi" id="3Igz0sSLlGt" role="3fr31v">
+              <node concept="2YIFZM" id="3Igz0sSLkAV" role="2Oq$k0">
+                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
+                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
+                <node concept="2OqwBi" id="3Igz0sSLmFJ" role="37wK5m">
+                  <node concept="2OqwBi" id="3Igz0sSLmr8" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3Igz0sSLmcw" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Igz0sSLm0q" role="2Oq$k0">
+                        <node concept="2ShNRf" id="3Igz0sSLlQ1" role="2Oq$k0">
+                          <node concept="1pGfFk" id="3Igz0sSLlQ2" role="2ShVmc">
+                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="3Igz0sSLm0r" role="2OqNvi">
+                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
+                          <node concept="3xONca" id="3Igz0sSLtW1" role="37wK5m">
+                            <ref role="3xOPvv" node="3Igz0sSogQz" resolve="ViewpointUsage" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3Igz0sSLmcx" role="2OqNvi">
+                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
+                        <node concept="35c_gC" id="3Igz0sSLtW2" role="37wK5m">
+                          <ref role="35c_gD" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="3Igz0sSLmr9" role="2OqNvi">
+                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
+                      <node concept="359W_D" id="3Igz0sSLtW3" role="37wK5m">
+                        <ref role="359W_E" to="5rf1:34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+                        <ref role="359W_F" to="5rf1:5wFVtxwZ4u2" resolve="content" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3Igz0sSLmFK" role="2OqNvi">
+                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="3Igz0sSLlGu" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
               </node>
             </node>
           </node>

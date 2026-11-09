@@ -15,9 +15,10 @@
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
+    <dependency reexport="false">8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:df90562e-2282-4284-81c0-42a7e5d43d37:com.symo.sysmlv2.baselan" version="3" />
+    <language slang="l:df90562e-2282-4284-81c0-42a7e5d43d37:com.symo.sysmlv2.baselan" version="4" />
     <language slang="l:f47b95d4-5e73-4c04-9204-18076950153b:de.itemis.mps.compare" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -45,6 +46,7 @@
     <module reference="df90562e-2282-4284-81c0-42a7e5d43d37(com.symo.sysmlv2.baselan)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
+    <module reference="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d07e7883-9538-4cc4-92a9-e6123c5c7a68(test.com.symo.sysmlv2.baselan)" version="0" />
   </dependencyVersions>

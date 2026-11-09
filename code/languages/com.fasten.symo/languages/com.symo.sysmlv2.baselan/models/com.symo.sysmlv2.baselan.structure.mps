@@ -1639,6 +1639,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
     </node>
+    <node concept="PrWs8" id="3Igz0sRBrHh" role="PzmwI">
+      <ref role="PrY4T" node="3Igz0sRBrH8" resolve="ISysMLv2SemanticPredicate" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc503">
     <property role="EcuMT" value="6353433212885159939" />
@@ -1646,7 +1649,7 @@
     <property role="R4oN_" value="requirement def with a plain body (no subject or constraints yet)" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2RequirementDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
     <node concept="PrWs8" id="4QEfSMD6ml7" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
     </node>
@@ -1792,7 +1795,7 @@
     <property role="34LRSv" value="requirement" />
     <property role="R4oN_" value="SysML v2 RequirementUsage (8.3.22)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
     <node concept="PrWs8" id="4QEfSMD6mlb" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
     </node>
@@ -1803,7 +1806,7 @@
     <property role="34LRSv" value="concern" />
     <property role="R4oN_" value="SysML v2 ConcernUsage (8.3.22)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tR">
     <property role="EcuMT" value="6353433212932081527" />
@@ -1849,7 +1852,7 @@
     <property role="34LRSv" value="viewpoint" />
     <property role="R4oN_" value="SysML v2 ViewpointUsage (8.3.27)" />
     <property role="3GE5qa" value="behavior" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tW">
     <property role="EcuMT" value="6353433212932081532" />
@@ -1884,6 +1887,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
     </node>
+    <node concept="PrWs8" id="3Igz0sRBrHm" role="PzmwI">
+      <ref role="PrY4T" node="3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tY">
     <property role="EcuMT" value="6353433212932081534" />
@@ -1892,10 +1898,8 @@
     <property role="R4oN_" value="SysML v2 AssertConstraintUsage (8.3.19): assert [not] constraint with its own declaration" />
     <property role="3GE5qa" value="behavior" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
-    <node concept="1TJgyi" id="5wFVtxwZ4ub" role="1TKVEl">
-      <property role="IQ2nx" value="6353433212932081547" />
-      <property role="TrG5h" value="isNegated" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    <node concept="PrWs8" id="3Igz0sRBrVD" role="PzmwI">
+      <ref role="PrY4T" node="3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
     </node>
   </node>
   <node concept="1TIwiD" id="6jBzJlxr2HM">
@@ -2246,11 +2250,6 @@
       <property role="TrG5h" value="isAsserted" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="7ij$NeFzM0h" role="1TKVEl">
-      <property role="IQ2nx" value="8400219580107005969" />
-      <property role="TrG5h" value="isNegated" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="7ij$NeFzM0i" role="1TKVEi">
       <property role="IQ2ns" value="8400219580107005970" />
       <property role="20kJfa" value="satisfied" />
@@ -2262,6 +2261,9 @@
       <property role="20kJfa" value="subject" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="PrWs8" id="3Igz0sRBrVI" role="PzmwI">
+      <ref role="PrY4T" node="3Igz0sRBrHa" resolve="ISysMLv2AssertConstraintUsage" />
     </node>
   </node>
   <node concept="1TIwiD" id="6r95PavsURD">
@@ -2588,6 +2590,38 @@
       <property role="IQ2nx" value="7270937308025280673" />
       <property role="TrG5h" value="isConstant" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3Igz0sRBrH8">
+    <property role="EcuMT" value="4292084407509826376" />
+    <property role="TrG5h" value="ISysMLv2SemanticPredicate" />
+    <property role="R4oN_" value="Semantic predicate classification; independent of concrete textual syntax." />
+    <property role="3GE5qa" value="base" />
+  </node>
+  <node concept="PlHQZ" id="3Igz0sRBrH9">
+    <property role="EcuMT" value="4292084407509826377" />
+    <property role="TrG5h" value="ISysMLv2SemanticBooleanExpression" />
+    <property role="R4oN_" value="Semantic BooleanExpression classification; not expression-syntax eligibility." />
+    <property role="3GE5qa" value="base" />
+    <node concept="PrWs8" id="3Igz0sRBrHb" role="PrDN$">
+      <ref role="PrY4T" node="34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3Igz0sRBrHa">
+    <property role="EcuMT" value="4292084407509826378" />
+    <property role="TrG5h" value="ISysMLv2AssertConstraintUsage" />
+    <property role="R4oN_" value="Shared AssertConstraintUsage semantics for assertions and requirement satisfaction." />
+    <property role="3GE5qa" value="behavior" />
+    <node concept="PrWs8" id="3Igz0sRBrHc" role="PrDN$">
+      <ref role="PrY4T" node="34Y23q90Hla" resolve="ISysMLv2Usage" />
+    </node>
+    <node concept="1TJgyi" id="5wFVtxwZ4ub" role="1TKVEl">
+      <property role="IQ2nx" value="6353433212932081547" />
+      <property role="TrG5h" value="isNegated" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="3Igz0sSogPS" role="PrDN$">
+      <ref role="PrY4T" node="3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
     </node>
   </node>
 </model>
