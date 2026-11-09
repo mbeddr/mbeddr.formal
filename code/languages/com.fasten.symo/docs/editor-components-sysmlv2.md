@@ -15,6 +15,11 @@ concept's distinguishing keywords and additional clauses explicit at the call si
 | `SysMLv2BodiedDefinition_Body` | `ISysMLv2BodiedDefinition` | Ordinary braced definition content |
 | `SysMLv2CalculationDefinition_Body` | `SysMLv2CalculationDefinition` | Braced content and optional result expression; shared by calculations and all case definitions |
 | `SysMLv2CalculationUsage_Body` | `SysMLv2CalculationUsage` | Optional braced content and result expression, or a semicolon; shared by calculations and all case usages, including include |
+| `SysMLv2ItemDefinition_Body` | `SysMLv2ItemDefinition` | Structural definition body; shared by view, rendering and allocation definitions |
+| `SysMLv2ItemUsage_Prefix` | `SysMLv2ItemUsage` | Structural usage flags, direction and metadata |
+| `SysMLv2PartUsage_Typing` | `SysMLv2PartUsage` | Part-family typing and modifiers; shared by views and renderings |
+| `SysMLv2ConnectionUsage_Typing` | `SysMLv2ConnectionUsage` | Connection-family typing and modifiers; used by allocations |
+| `SysMLv2ItemUsage_Body` | `SysMLv2ItemUsage` | Structural usage body and empty-body semicolon |
 | `SysMLv2AttributeUsage_Declaration` | `SysMLv2AttributeUsage` | Attribute declaration after visibility; shared by ordinary and return attributes |
 | `SysMLv2ReferenceUsage_DeclarationTail` | `SysMLv2ReferenceUsage` | Name, typing, value and body; shared by reference, subject, actor and stakeholder usages |
 
@@ -74,3 +79,13 @@ editor cell trees, including feature references, styles, conditions and node
 factories. Component reuse reduced the source editor model from 4,762 to 3,221
 nodes. Generation can inline components, so source reuse alone does not establish
 a rebuild-time improvement.
+
+Views, renderings and allocations use the item-family components because their
+semantic parents own structural roles with different identities from the generic
+bodied interfaces. Do not interchange the two sets based on matching role names;
+see [ADR 0006](adr/0006-view-rendering-allocation-hierarchy.md).
+
+Keep typing components bound to their most-specific link owner. Binding the view
+and allocation typing sections to `ItemUsage` generated item-reference factories,
+which three editor regressions caught. The part/connection variants preserve the
+complete typing clause while creating the correct specialized reference wrappers.

@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="4" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="5" />
   </languages>
   <imports />
   <registry>
@@ -1417,7 +1417,7 @@
       </node>
       <node concept="66VRG" id="5wFVtxwTIGO" role="3Z9vGx">
         <property role="TrG5h" value="VehicleView" />
-        <node concept="3HG_t4" id="5wFVtxwTIGP" role="66U86">
+        <node concept="3HG_t4" id="5wFVtxwTIGP" role="3w00ZY">
           <property role="3HG_t5" value="Shows the vehicle structure" />
         </node>
       </node>
@@ -1432,7 +1432,7 @@
       </node>
       <node concept="66VQu" id="5wFVtxwTIGT" role="3Z9vGx">
         <property role="TrG5h" value="EngineAllocation" />
-        <node concept="3HG_t4" id="5wFVtxwTIGU" role="66U86">
+        <node concept="3HG_t4" id="5wFVtxwTIGU" role="3w00ZY">
           <property role="3HG_t5" value="Allocates functions to hardware" />
         </node>
       </node>
@@ -2739,21 +2739,21 @@
       </node>
       <node concept="2cjfNH" id="7O9Ql6voySr" role="3Z9vGx">
         <property role="TrG5h" value="v" />
-        <node concept="35c6Ng" id="7O9Ql6voySs" role="SPUDr">
-          <node concept="AsIwX" id="3zOS9tKAV5M" role="2_tBl3">
+        <node concept="8GF0z" id="7O9Ql6voySt" role="8GFem">
+          <property role="TrG5h" value="p" />
+        </node>
+        <node concept="8CKM2" id="7O9Ql6voySs" role="3w00ZT">
+          <node concept="AsIwX" id="3zOS9tKAV5M" role="1MHwYB">
             <node concept="AsIwU" id="3zOS9tKAV5N" role="AsIwY">
               <ref role="AsIwW" node="7O9Ql6voySo" resolve="VD" />
             </node>
           </node>
         </node>
-        <node concept="8GF0z" id="7O9Ql6voySt" role="SPUDs">
-          <property role="TrG5h" value="p" />
-        </node>
       </node>
       <node concept="2cjfNI" id="7O9Ql6voySu" role="3Z9vGx">
         <property role="TrG5h" value="r" />
-        <node concept="35c6Ng" id="7O9Ql6voySv" role="SPUDr">
-          <node concept="AsIwX" id="3zOS9tKAV5O" role="2_tBl3">
+        <node concept="8CKM2" id="7O9Ql6voySv" role="3w00ZT">
+          <node concept="AsIwX" id="3zOS9tKAV5O" role="1MHwYB">
             <node concept="AsIwU" id="3zOS9tKAV5P" role="AsIwY">
               <ref role="AsIwW" node="7O9Ql6voySp" resolve="RD" />
             </node>
@@ -2762,15 +2762,15 @@
       </node>
       <node concept="2cjfNJ" id="7O9Ql6voySw" role="3Z9vGx">
         <property role="TrG5h" value="a" />
-        <node concept="35c6Ng" id="7O9Ql6voySx" role="SPUDr">
-          <node concept="AsIwX" id="3zOS9tKAV5Q" role="2_tBl3">
+        <node concept="8GF0z" id="7O9Ql6voySy" role="8GFem">
+          <property role="TrG5h" value="q" />
+        </node>
+        <node concept="2uUmlC" id="7O9Ql6voySx" role="3w00ZT">
+          <node concept="AsIwX" id="3zOS9tKAV5Q" role="1MHwYB">
             <node concept="AsIwU" id="3zOS9tKAV5R" role="AsIwY">
               <ref role="AsIwW" node="7O9Ql6voySq" resolve="AD" />
             </node>
           </node>
-        </node>
-        <node concept="8GF0z" id="7O9Ql6voySy" role="SPUDs">
-          <property role="TrG5h" value="q" />
         </node>
       </node>
       <node concept="2cjfNC" id="7O9Ql6voySz" role="3Z9vGx">

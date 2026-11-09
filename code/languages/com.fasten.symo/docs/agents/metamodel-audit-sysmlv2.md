@@ -54,6 +54,8 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
 
    **Direction:** place these concepts in their structural families; reuse presentation separately. The currently limited declaration forms do not make incorrect semantic ancestry safe.
 
+   **Implemented (2026-11-09):** views/renderings now inherit Part, and allocations inherit Connection. Editor and importer paths use structural role identities; native migration preserves all 59,405 existing nodes and adapts 23 reference wrappers. Allocation endpoint syntax remains explicitly unsupported. See [ADR 0006](../adr/0006-view-rendering-allocation-hierarchy.md).
+
 5. **High — definition-reference roles do not consistently enforce the owner's semantic kind or cardinality.**
 
    `BodiedUsage.types : DefinitionRef[0..n]` and `BodiedDefinition.specializes : DefinitionRef[0..n]` are inherited by many unrelated families. The generic definition-reference checking branch only asks whether the target is a `SysMLv2Definition`; it does not consult the owning concept or role. Thus a reified part definition in a state's typing slot is not rejected by that kind check. `InterfaceUsage` inherits connection typing without requiring an interface definition; its existing dedicated rule checks endpoints only. `MetadataUsage` inherits item typing without enforcing a metaclass or a single definition. Calculation/requirement usages likewise inherit a many-valued slot without their semantic upper bound.

@@ -1110,5 +1110,99 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3Igz0sU9YBi">
+    <property role="TrG5h" value="SysMLv2AllocationUsage_Constraints" />
+    <ref role="1M2myG" to="5rf1:3WfSgMNgLRz" resolve="SysMLv2AllocationUsage" />
+    <node concept="9SLcT" id="3Igz0sU9YBj" role="9SGkU">
+      <node concept="3clFbS" id="3Igz0sU9YBk" role="2VODD2">
+        <node concept="3SKdUt" id="3Igz0sU9YBl" role="3cqZAp">
+          <node concept="1PaTwC" id="3Igz0sU9YBp" role="1aUNEU">
+            <node concept="3oM_SD" id="3Igz0sU9YBr" role="1PaTwD">
+              <property role="3oM_SC" value="Allocation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBs" role="1PaTwD">
+              <property role="3oM_SC" value="connector" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBt" role="1PaTwD">
+              <property role="3oM_SC" value="syntax" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBu" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBv" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBw" role="1PaTwD">
+              <property role="3oM_SC" value="implemented" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBx" role="1PaTwD">
+              <property role="3oM_SC" value="yet;" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBy" role="1PaTwD">
+              <property role="3oM_SC" value="reject" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBz" role="1PaTwD">
+              <property role="3oM_SC" value="explicit" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YB$" role="1PaTwD">
+              <property role="3oM_SC" value="endpoints" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YB_" role="1PaTwD">
+              <property role="3oM_SC" value="until" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBA" role="1PaTwD">
+              <property role="3oM_SC" value="editor," />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBB" role="1PaTwD">
+              <property role="3oM_SC" value="importer" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBC" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBD" role="1PaTwD">
+              <property role="3oM_SC" value="text" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBE" role="1PaTwD">
+              <property role="3oM_SC" value="generation" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBF" role="1PaTwD">
+              <property role="3oM_SC" value="support" />
+            </node>
+            <node concept="3oM_SD" id="3Igz0sU9YBG" role="1PaTwD">
+              <property role="3oM_SC" value="them." />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3Igz0sU9YBH" role="3cqZAp">
+          <node concept="3fqX7Q" id="3Igz0sU9YBI" role="3cqZAk">
+            <node concept="1eOMI4" id="3Igz0sV71Oe" role="3fr31v">
+              <node concept="22lmx$" id="3Igz0sV71Of" role="1eOMHV">
+                <node concept="2OqwBi" id="3Igz0sV71Og" role="3uHU7B">
+                  <node concept="359W_D" id="3Igz0sV71Oh" role="2Oq$k0">
+                    <ref role="359W_E" to="5rf1:3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
+                    <ref role="359W_F" to="5rf1:BOR0Mn7r_I" resolve="source" />
+                  </node>
+                  <node concept="liA8E" id="3Igz0sV71Oi" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                    <node concept="2DA6wF" id="3Igz0sV71Oj" role="37wK5m" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3Igz0sV71Ok" role="3uHU7w">
+                  <node concept="359W_D" id="3Igz0sV71Ol" role="2Oq$k0">
+                    <ref role="359W_E" to="5rf1:3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
+                    <ref role="359W_F" to="5rf1:BOR0Mn7r_J" resolve="target" />
+                  </node>
+                  <node concept="liA8E" id="3Igz0sV71Om" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                    <node concept="2DA6wF" id="3Igz0sV71On" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

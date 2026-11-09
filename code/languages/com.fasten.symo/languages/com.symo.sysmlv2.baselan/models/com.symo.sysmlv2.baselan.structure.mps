@@ -1706,7 +1706,7 @@
     <property role="R4oN_" value="view def with a plain body (no filters or renderings yet)" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2ViewDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxuc50U">
     <property role="EcuMT" value="6353433212885159994" />
@@ -1722,7 +1722,7 @@
     <property role="R4oN_" value="rendering def" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2RenderingDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxuc516">
     <property role="EcuMT" value="6353433212885160006" />
@@ -1730,7 +1730,7 @@
     <property role="R4oN_" value="allocation def" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2AllocationDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tM">
     <property role="EcuMT" value="6353433212932081522" />
@@ -1933,21 +1933,21 @@
     <property role="TrG5h" value="SysMLv2ViewUsage" />
     <property role="R4oN_" value="SysML v2 ViewUsage (8.3.26) with a plain body" />
     <property role="34LRSv" value="view" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
   </node>
   <node concept="1TIwiD" id="3WfSgMNgLRy">
     <property role="EcuMT" value="4544097993703497186" />
     <property role="TrG5h" value="SysMLv2RenderingUsage" />
     <property role="R4oN_" value="SysML v2 RenderingUsage (8.3.26)" />
     <property role="34LRSv" value="rendering" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
   </node>
   <node concept="1TIwiD" id="3WfSgMNgLRz">
     <property role="EcuMT" value="4544097993703497187" />
     <property role="TrG5h" value="SysMLv2AllocationUsage" />
     <property role="R4oN_" value="SysML v2 AllocationUsage (8.3.17), declaration form without allocate part" />
     <property role="34LRSv" value="allocation" />
-    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <ref role="1TJDcQ" node="BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
   </node>
   <node concept="1TIwiD" id="3WfSgMNgLR$">
     <property role="EcuMT" value="4544097993703497188" />

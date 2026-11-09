@@ -9761,5 +9761,35 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="3Igz0sU9XuH">
+    <property role="TrG5h" value="SysMLv2AllocationUsage_Behavior" />
+    <ref role="13h7C2" to="5rf1:3WfSgMNgLRz" resolve="SysMLv2AllocationUsage" />
+    <node concept="13hLZK" id="3Igz0sU9XuI" role="13h7CW">
+      <node concept="3clFbS" id="3Igz0sU9XuJ" role="2VODD2">
+        <node concept="3clFbF" id="3Igz0sU9XuK" role="3cqZAp">
+          <node concept="37vLTI" id="3Igz0sU9XuL" role="3clFbG">
+            <node concept="2OqwBi" id="3Igz0sU9XuM" role="37vLTJ">
+              <node concept="13iPFW" id="3Igz0sU9XuN" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3Igz0sU9XuO" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="3Igz0sU9XuP" role="37vLTx" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3Igz0sU9XuQ" role="3cqZAp">
+          <node concept="37vLTI" id="3Igz0sU9XuR" role="3clFbG">
+            <node concept="2OqwBi" id="3Igz0sU9XuS" role="37vLTJ">
+              <node concept="13iPFW" id="3Igz0sU9XuT" role="2Oq$k0" />
+              <node concept="3TrEf2" id="3Igz0sU9XuU" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="3Igz0sU9XuV" role="37vLTx" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

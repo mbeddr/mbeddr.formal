@@ -12,6 +12,28 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Specialized feature references and native migration helpers (2026-11-09)
+
+- When `Derived.content` specializes `Base.content`, concrete descendant aspects
+  must reference the most-specific declaration. A helper bound to `Base` may use
+  the base declaration. Generated Java can normalize both to the same genuine
+  storage link, so a successful build and runtime tests can coexist with source
+  scope errors. Model-check editor and text-generation aspects after reparenting.
+- Grammar Cells generates an empty-list child factory from the component's bound
+  feature target. A broadly bound base component can therefore create the wrong
+  wrapper in a descendant's specialized slot even though storage access works.
+  Use components bound to the most-specific common owner, with separate variants
+  when the typing targets differ; cover the actual typing action in editor tests.
+- The migration DSL's class scaffolding exposes a source facade rather than every
+  protected runtime method. Put reusable native transform code in an ordinary
+  BaseLanguage helper extending `MigrationScriptBase`, and call it from the DSL
+  script. `BaseScript.execute(SModule)` returns a nullable `SNode`, not `void`.
+  The runtime's `applyTransormMigration` (spelling as in the API) preserves IDs;
+  do not assign IDs manually in a wrapper-concept migration.
+- Keep old roles applicable through compatibility declarations/interfaces until
+  the normal migration pre-check and application complete. Removing those first
+  makes the pre-check reject the exact obsolete roles the migration must move.
+
 ## Printed string properties are escaped display values (2026-11-09)
 
 `print_node` / `get_project_structure` escapes BaseLanguage `StringLiteral.value`

@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="4" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="5" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -63,6 +63,9 @@
       </concept>
     </language>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="6353433212885160000" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingDefinition" flags="ng" index="66VQo" />
+      <concept id="6353433212885160006" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationDefinition" flags="ng" index="66VQu" />
+      <concept id="6353433212885159988" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewDefinition" flags="ng" index="66VRG" />
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="types" index="8EhU5" />
@@ -73,6 +76,9 @@
         <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
+      <concept id="4544097993703497185" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewUsage" flags="ng" index="2cjfNH" />
+      <concept id="4544097993703497186" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingUsage" flags="ng" index="2cjfNI" />
+      <concept id="4544097993703497187" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationUsage" flags="ng" index="2cjfNJ" />
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="4211673189923939179" name="com.symo.sysmlv2.baselan.structure.SysMLv2EmptyLine" flags="ng" index="2h0jOo" />
@@ -84,6 +90,7 @@
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH" />
+      <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC" />
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
@@ -3636,6 +3643,267 @@
     <node concept="3clFbS" id="2hQSMJFsaTH" role="LjaKd">
       <node concept="2TK7Tu" id="2hQSMJFsaTI" role="3cqZAp">
         <property role="2TTd_B" value="Pack2" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3Igz0sVKb4w">
+    <property role="TrG5h" value="_250_Views_EditUsageType" />
+    <property role="3YCmrE" value="checks entering a part usage with a qualified type using the side transform and explicit completion" />
+    <node concept="1qefOq" id="3Igz0sVKb4x" role="25YQCW">
+      <node concept="2h0jOr" id="3Igz0sVKb4y" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3Igz0sVKb4z" role="2h0jOs">
+          <property role="TrG5h" value="pack_010_02" />
+          <node concept="66VRG" id="3Igz0sW9ZiQ" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb4_" role="2h0jOs" />
+        <node concept="3ZUotO" id="3Igz0sVKb4A" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="3Igz0sVKb4B" role="3w00ZY">
+            <node concept="LIFWc" id="3Igz0sVKb4C" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb4D" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3Igz0sVKb4E" role="LjaKd">
+      <node concept="2TK7Tu" id="3Igz0sVKb4F" role="3cqZAp">
+        <property role="2TTd_B" value="view engine2 : pack_010_02" />
+      </node>
+      <node concept="yd1bK" id="3Igz0sVKb4G" role="3cqZAp">
+        <node concept="pLAjd" id="3Igz0sVKb4H" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb4I" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb4J" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb4K" role="3cqZAp">
+        <property role="2TTd_B" value="Engine" />
+      </node>
+      <node concept="2HxZob" id="3Igz0sVKb4L" role="3cqZAp">
+        <node concept="1iFQzN" id="3Igz0sVKb4M" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3Igz0sVKb4N" role="3cqZAp">
+        <node concept="pLAjd" id="3Igz0sVKb4O" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3Igz0sVKb4P" role="25YQFr">
+      <node concept="2h0jOr" id="3Igz0sVKb4Q" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3Igz0sVKb4R" role="2h0jOs">
+          <property role="TrG5h" value="pack_010_02" />
+          <node concept="66VRG" id="3Igz0sW9ZiR" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb4T" role="2h0jOs" />
+        <node concept="3ZUotO" id="3Igz0sVKb4U" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2cjfNH" id="3Igz0sVKb51" role="3w00ZY">
+            <property role="TrG5h" value="engine2" />
+            <node concept="8CKM2" id="3Igz0sVKb52" role="3w00ZT">
+              <node concept="AsIwX" id="3Igz0sVKb53" role="1MHwYB">
+                <node concept="AsIwU" id="3Igz0sVKb54" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0sVKb4R" resolve="pack_010_02" />
+                </node>
+                <node concept="AsIwU" id="3Igz0sVKb55" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0sW9ZiR" resolve="Engine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb50" role="2h0jOs" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3Igz0sVKb56">
+    <property role="TrG5h" value="_251_Renderings_EditUsageType" />
+    <property role="3YCmrE" value="checks entering a part usage with a qualified type using the side transform and explicit completion" />
+    <node concept="1qefOq" id="3Igz0sVKb57" role="25YQCW">
+      <node concept="2h0jOr" id="3Igz0sVKb58" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3Igz0sVKb59" role="2h0jOs">
+          <property role="TrG5h" value="pack_010_02" />
+          <node concept="66VQo" id="3Igz0sW9ZiS" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb5b" role="2h0jOs" />
+        <node concept="3ZUotO" id="3Igz0sVKb5c" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="3Igz0sVKb5d" role="3w00ZY">
+            <node concept="LIFWc" id="3Igz0sVKb5e" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb5f" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3Igz0sVKb5g" role="LjaKd">
+      <node concept="2TK7Tu" id="3Igz0sVKb5h" role="3cqZAp">
+        <property role="2TTd_B" value="rendering engine2 : pack_010_02" />
+      </node>
+      <node concept="yd1bK" id="3Igz0sVKb5i" role="3cqZAp">
+        <node concept="pLAjd" id="3Igz0sVKb5j" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb5k" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb5l" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb5m" role="3cqZAp">
+        <property role="2TTd_B" value="Engine" />
+      </node>
+      <node concept="2HxZob" id="3Igz0sVKb5n" role="3cqZAp">
+        <node concept="1iFQzN" id="3Igz0sVKb5o" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3Igz0sVKb5p" role="3cqZAp">
+        <node concept="pLAjd" id="3Igz0sVKb5q" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3Igz0sVKb5r" role="25YQFr">
+      <node concept="2h0jOr" id="3Igz0sVKb5s" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3Igz0sVKb5t" role="2h0jOs">
+          <property role="TrG5h" value="pack_010_02" />
+          <node concept="66VQo" id="3Igz0sW9ZiT" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb5v" role="2h0jOs" />
+        <node concept="3ZUotO" id="3Igz0sVKb5w" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2cjfNI" id="3Igz0sVKb5B" role="3w00ZY">
+            <property role="TrG5h" value="engine2" />
+            <node concept="8CKM2" id="3Igz0sVKb5C" role="3w00ZT">
+              <node concept="AsIwX" id="3Igz0sVKb5D" role="1MHwYB">
+                <node concept="AsIwU" id="3Igz0sVKb5E" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0sVKb5t" resolve="pack_010_02" />
+                </node>
+                <node concept="AsIwU" id="3Igz0sVKb5F" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0sW9ZiT" resolve="Engine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb5A" role="2h0jOs" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3Igz0sVKb5G">
+    <property role="TrG5h" value="_252_Allocations_EditUsageType" />
+    <property role="3YCmrE" value="checks entering a part usage with a qualified type using the side transform and explicit completion" />
+    <node concept="1qefOq" id="3Igz0sVKb5H" role="25YQCW">
+      <node concept="2h0jOr" id="3Igz0sVKb5I" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3Igz0sVKb5J" role="2h0jOs">
+          <property role="TrG5h" value="pack_010_02" />
+          <node concept="66VQu" id="3Igz0sVKb6d" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb5L" role="2h0jOs" />
+        <node concept="3ZUotO" id="3Igz0sVKb5M" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="3Igz0sVKb5N" role="3w00ZY">
+            <node concept="LIFWc" id="3Igz0sVKb5O" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb5P" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3Igz0sVKb5Q" role="LjaKd">
+      <node concept="2TK7Tu" id="3Igz0sVKb5R" role="3cqZAp">
+        <property role="2TTd_B" value="allocation engine2 : pack_010_02" />
+      </node>
+      <node concept="yd1bK" id="3Igz0sVKb5S" role="3cqZAp">
+        <node concept="pLAjd" id="3Igz0sVKb5T" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb5U" role="3cqZAp">
+        <property role="2TTd_B" value=" " />
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb5V" role="3cqZAp">
+        <property role="2TTd_B" value="::" />
+      </node>
+      <node concept="2TK7Tu" id="3Igz0sVKb5W" role="3cqZAp">
+        <property role="2TTd_B" value="Engine" />
+      </node>
+      <node concept="2HxZob" id="3Igz0sVKb5X" role="3cqZAp">
+        <node concept="1iFQzN" id="3Igz0sVKb5Y" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3Igz0sVKb5Z" role="3cqZAp">
+        <node concept="pLAjd" id="3Igz0sVKb60" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3Igz0sVKb61" role="25YQFr">
+      <node concept="2h0jOr" id="3Igz0sVKb62" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3Igz0sVKb63" role="2h0jOs">
+          <property role="TrG5h" value="pack_010_02" />
+          <node concept="66VQu" id="3Igz0sVKb6e" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb65" role="2h0jOs" />
+        <node concept="3ZUotO" id="3Igz0sVKb66" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2cjfNJ" id="3Igz0sVKb6f" role="3w00ZY">
+            <property role="TrG5h" value="engine2" />
+            <node concept="2uUmlC" id="3Igz0sVKb6k" role="3w00ZT">
+              <node concept="AsIwX" id="3Igz0sVKb6l" role="1MHwYB">
+                <node concept="AsIwU" id="3Igz0sVKb6m" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0sVKb63" resolve="pack_010_02" />
+                </node>
+                <node concept="AsIwU" id="3Igz0sVKb6n" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0sVKb6e" resolve="Engine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3Igz0sVKb6c" role="2h0jOs" />
       </node>
     </node>
   </node>
