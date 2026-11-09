@@ -550,6 +550,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
+    <node concept="PrWs8" id="3Igz0sZP7pu" role="PzmwI">
+      <ref role="PrY4T" node="3Igz0sZP0mV" resolve="ISysMLv2Ref" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU36dCd">
     <property role="EcuMT" value="7140692429574298125" />
@@ -667,6 +670,9 @@
     </node>
     <node concept="RPilO" id="3MUZSeFqYDF" role="lGtFl">
       <ref role="RPilL" node="6coPuU3buuA" resolve="usage" />
+    </node>
+    <node concept="PrWs8" id="3Igz0sZP7py" role="PzmwI">
+      <ref role="PrY4T" node="3Igz0sZP0mV" resolve="ISysMLv2Ref" />
     </node>
   </node>
   <node concept="PlHQZ" id="4N4m7hrYNgN">
@@ -2400,6 +2406,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
+    <node concept="PrWs8" id="3Igz0sZP7lz" role="PzmwI">
+      <ref role="PrY4T" node="3Igz0sZP0mV" resolve="ISysMLv2Ref" />
+    </node>
   </node>
   <node concept="PlHQZ" id="34Y23q8cBCp">
     <property role="EcuMT" value="3548282586720795161" />
@@ -2623,6 +2632,12 @@
     <node concept="PrWs8" id="3Igz0sSogPS" role="PrDN$">
       <ref role="PrY4T" node="3Igz0sRBrH9" resolve="ISysMLv2SemanticBooleanExpression" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3Igz0sZP0mV">
+    <property role="EcuMT" value="4292084407647602107" />
+    <property role="TrG5h" value="ISysMLv2Ref" />
+    <property role="R4oN_" value="common contract of all SysML v2 name references: effective name as written or resolved, and the resolved target element" />
+    <property role="3GE5qa" value="references" />
   </node>
 </model>
 
