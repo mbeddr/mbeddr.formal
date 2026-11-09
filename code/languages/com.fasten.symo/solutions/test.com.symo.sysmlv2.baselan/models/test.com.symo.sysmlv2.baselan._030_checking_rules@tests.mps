@@ -41,8 +41,10 @@
       <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
+        <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="4376090928945101101" name="value" index="2gbwqI" />
       </concept>
+      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB" />
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
         <child id="8930763252717678371" name="content" index="8EhVZ" />
       </concept>
@@ -56,12 +58,16 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="4376090928965378315" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinitionRef" flags="ng" index="2hs9U8" />
       <concept id="4376090928965370545" name="com.symo.sysmlv2.baselan.structure.ISysMLv2ConnectorAsUsage" flags="ngI" index="2hsbOM">
         <child id="717440187291777390" name="source" index="2uUmly" />
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
         <child id="4376090928958005871" name="payload" index="2hSLRG" />
+      </concept>
+      <concept id="4376090928958005869" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinition" flags="ng" index="2hSLRI">
+        <child id="4376090928965378354" name="specializes" index="2hs9UL" />
       </concept>
       <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC" />
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
@@ -890,6 +896,140 @@
               <node concept="2uUmlD" id="7O9Ql6BSRK6" role="3oOLx4">
                 <node concept="3wdj9f" id="7O9Ql6BSRK7" role="2uUmlA">
                   <ref role="3wdj98" node="7O9Ql6BSRJK" resolve="endState" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3Igz0t2yYmn">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_040_DefinitionRefKindCheck" />
+    <node concept="1qefOq" id="3Igz0t2yYmo" role="1SKRRt">
+      <node concept="2h0jOr" id="3Igz0t2yYmp" role="1qenE9">
+        <node concept="3Z9vzX" id="3Igz0t2yYmq" role="2h0jOs">
+          <property role="TrG5h" value="kc" />
+          <node concept="3ZUotO" id="3Igz0t2yYmr" role="3Z9vGx">
+            <property role="TrG5h" value="P" />
+          </node>
+          <node concept="8EhVW" id="3Igz0t2yYms" role="3Z9vGx">
+            <property role="TrG5h" value="A" />
+          </node>
+          <node concept="3xZtmp" id="3Igz0t2yYmt" role="3Z9vGx">
+            <property role="TrG5h" value="Po" />
+          </node>
+          <node concept="2hSLRI" id="3Igz0t2yYmu" role="3Z9vGx">
+            <property role="TrG5h" value="F" />
+          </node>
+          <node concept="2hSLRI" id="3Igz0t2yYmv" role="3Z9vGx">
+            <property role="TrG5h" value="FOk" />
+            <node concept="2hs9U8" id="3Igz0t2yYmw" role="2hs9UL">
+              <node concept="AsIwX" id="3Igz0t2yYmy" role="2_tBl3">
+                <node concept="AsIwU" id="3Igz0t2yYmz" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0t2yYmu" resolve="F" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2hSLRI" id="3Igz0t2yYm$" role="3Z9vGx">
+            <property role="TrG5h" value="FBad" />
+            <node concept="2hs9U8" id="3Igz0t2yYm_" role="2hs9UL">
+              <node concept="AsIwX" id="3Igz0t2yYmB" role="2_tBl3">
+                <node concept="AsIwU" id="3Igz0t2yYmC" role="AsIwY">
+                  <ref role="AsIwW" node="3Igz0t2yYmr" resolve="P" />
+                </node>
+              </node>
+              <node concept="7CXmI" id="3Igz0t2yYmD" role="lGtFl">
+                <node concept="1TM$A" id="3Igz0t2yYmE" role="7EUXB">
+                  <node concept="2PYRI3" id="3Igz0t2yYmF" role="3lydEf">
+                    <ref role="39XzEq" to="6e71:3Igz0t2yZQn" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3Igz0t2yYmG" role="3Z9vGx">
+            <property role="TrG5h" value="Holder" />
+            <node concept="8GF0z" id="3Igz0t2yYmH" role="3w00ZY">
+              <property role="TrG5h" value="okPart" />
+              <node concept="3w00Zy" id="3Igz0t2yYmI" role="3w00ZT">
+                <node concept="AsIwX" id="3Igz0t2yYmJ" role="1MHwYB">
+                  <node concept="AsIwU" id="3Igz0t2yYmK" role="AsIwY">
+                    <ref role="AsIwW" node="3Igz0t2yYmr" resolve="P" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8GF0z" id="3Igz0t2yYmL" role="3w00ZY">
+              <property role="TrG5h" value="badPart" />
+              <node concept="3w00Zy" id="3Igz0t2yYmM" role="3w00ZT">
+                <node concept="AsIwX" id="3Igz0t2yYmN" role="1MHwYB">
+                  <node concept="AsIwU" id="3Igz0t2yYmO" role="AsIwY">
+                    <ref role="AsIwW" node="3Igz0t2yYms" resolve="A" />
+                  </node>
+                </node>
+                <node concept="7CXmI" id="3Igz0t2yYmP" role="lGtFl">
+                  <node concept="1TM$A" id="3Igz0t2yYmQ" role="7EUXB">
+                    <node concept="2PYRI3" id="3Igz0t2yYmR" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:3Igz0t2yZQn" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8EhU9" id="3Igz0t2yYmS" role="3w00ZY">
+              <property role="TrG5h" value="okAttr" />
+              <node concept="8EhVB" id="3Igz0t2yYmT" role="8EhU5">
+                <node concept="AsIwX" id="3Igz0t2yYmV" role="2_tBl3">
+                  <node concept="AsIwU" id="3Igz0t2yYmW" role="AsIwY">
+                    <ref role="AsIwW" node="3Igz0t2yYms" resolve="A" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8EhU9" id="3Igz0t2yYmX" role="3w00ZY">
+              <property role="TrG5h" value="badAttr" />
+              <node concept="8EhVB" id="3Igz0t2yYmY" role="8EhU5">
+                <node concept="AsIwX" id="3Igz0t2yYn0" role="2_tBl3">
+                  <node concept="AsIwU" id="3Igz0t2yYn1" role="AsIwY">
+                    <ref role="AsIwW" node="3Igz0t2yYmr" resolve="P" />
+                  </node>
+                </node>
+                <node concept="7CXmI" id="3Igz0t2yYn2" role="lGtFl">
+                  <node concept="1TM$A" id="3Igz0t2yYn3" role="7EUXB">
+                    <node concept="2PYRI3" id="3Igz0t2yYn4" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:3Igz0t2yZQn" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xZtmn" id="3Igz0t2yYn5" role="3w00ZY">
+              <property role="TrG5h" value="okPort" />
+              <node concept="3xZtmm" id="3Igz0t2yYn6" role="3xZtlF">
+                <node concept="AsIwX" id="3Igz0t2yYn8" role="2_tBl3">
+                  <node concept="AsIwU" id="3Igz0t2yYn9" role="AsIwY">
+                    <ref role="AsIwW" node="3Igz0t2yYmt" resolve="Po" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xZtmn" id="3Igz0t2yYna" role="3w00ZY">
+              <property role="TrG5h" value="badPort" />
+              <node concept="3xZtmm" id="3Igz0t2yYnb" role="3xZtlF">
+                <node concept="AsIwX" id="3Igz0t2yYnd" role="2_tBl3">
+                  <node concept="AsIwU" id="3Igz0t2yYne" role="AsIwY">
+                    <ref role="AsIwW" node="3Igz0t2yYmr" resolve="P" />
+                  </node>
+                </node>
+                <node concept="7CXmI" id="3Igz0t2yYnf" role="lGtFl">
+                  <node concept="1TM$A" id="3Igz0t2yYng" role="7EUXB">
+                    <node concept="2PYRI3" id="3Igz0t2yYnh" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:3Igz0t2yZQn" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
