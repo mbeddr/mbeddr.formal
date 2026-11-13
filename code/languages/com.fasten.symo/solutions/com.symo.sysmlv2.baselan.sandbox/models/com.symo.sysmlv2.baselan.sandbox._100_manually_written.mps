@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="7" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="8" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -148,6 +148,13 @@
         <child id="6353433212885159902" name="content" index="66U86" />
       </concept>
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3" />
+      <concept id="7243625513212498628" name="com.symo.sysmlv2.baselan.structure.SysMLv2AcceptActionUsage" flags="ng" index="34u_n2">
+        <child id="7243625513212498630" name="payload" index="34u_n0" />
+        <child id="7243625513212498631" name="receiver" index="34u_n1" />
+      </concept>
+      <concept id="7243625513212498629" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionTriggerMembership" flags="ng" index="34u_n3">
+        <child id="7243625513212498632" name="action" index="34u_ne" />
+      </concept>
       <concept id="284754763101489698" name="com.symo.sysmlv2.baselan.structure.SysMLv2DefinitionRef" flags="ng" index="35c6Ng" />
       <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
         <property id="7270937307953554935" name="isInitialValue" index="4kQG2" />
@@ -170,15 +177,10 @@
         <property id="8400219579983127726" name="isNonUnique" index="3gJRut" />
         <child id="8400219579983127727" name="multiplicity" index="3gJRus" />
       </concept>
-      <concept id="8400219580008134640" name="com.symo.sysmlv2.baselan.structure.SysMLv2AcceptTrigger" flags="ng" index="3heuj3">
-        <child id="8400219580008134643" name="via" index="3heuj0" />
-        <child id="8400219580008134641" name="types" index="3heuj2" />
-      </concept>
       <concept id="9009971474269510567" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureChainEnd" flags="ng" index="3ldkbQ">
         <child id="8400219579968936546" name="chain" index="3nLW_h" />
       </concept>
       <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
-        <child id="8400219580008135213" name="trigger" index="3heu$u" />
         <child id="8400219580029624693" name="guard" index="3iov96" />
         <child id="9009971474229543189" name="target" index="3oOLx4" />
         <child id="9009971474229543188" name="source" index="3oOLx5" />
@@ -2956,19 +2958,6 @@
               <ref role="3wdj98" node="7O9Ql6AO9zD" resolve="Done" />
             </node>
           </node>
-          <node concept="3heuj3" id="7ij$NeAUHhL" role="3heu$u">
-            <property role="TrG5h" value="signal" />
-            <node concept="35c6Ng" id="7ij$NeAUHhM" role="3heuj2">
-              <node concept="AsIwX" id="3zOS9tKAV66" role="2_tBl3">
-                <node concept="AsIwU" id="3zOS9tLC$ZK" role="AsIwY">
-                  <ref role="AsIwW" node="3zOS9tLisF9" resolve="Signal" />
-                </node>
-              </node>
-            </node>
-            <node concept="3bnkR8" id="7ij$NeAUHhN" role="3heuj0">
-              <property role="3bnkR9" value="receiver" />
-            </node>
-          </node>
           <node concept="3bnkR8" id="7ij$NeBPT9S" role="3iov96">
             <property role="3bnkR9" value="ready" />
           </node>
@@ -2980,6 +2969,29 @@
                   <node concept="AsIwU" id="3zOS9tLC$ZL" role="AsIwY">
                     <ref role="AsIwW" node="3zOS9tLCAud" resolve="Work" />
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="34u_n3" id="6i6xKqxUBqr" role="3QFEA6">
+            <node concept="34u_n2" id="6i6xKqxUBqk" role="34u_ne">
+              <node concept="35c6Nh" id="6i6xKqxUBqm" role="34u_n1">
+                <node concept="3xZtmk" id="6i6xKqxUBqo" role="35c6Nr" />
+                <node concept="3bnkR8" id="7ij$NeAUHhN" role="34b1dU">
+                  <property role="3bnkR9" value="receiver" />
+                </node>
+              </node>
+              <node concept="35c6Nh" id="7ij$NeAUHhL" role="34u_n0">
+                <property role="TrG5h" value="signal" />
+                <node concept="35c6Ng" id="7ij$NeAUHhM" role="35c6Nl">
+                  <node concept="AsIwX" id="3zOS9tKAV66" role="2_tBl3">
+                    <node concept="AsIwU" id="3zOS9tLC$ZK" role="AsIwY">
+                      <ref role="AsIwW" node="3zOS9tLisF9" resolve="Signal" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3xZtmk" id="6i6xKqxUBqq" role="35c6Nr">
+                  <property role="3xZtlB" value="mwptYtLWO0/inout" />
                 </node>
               </node>
             </node>

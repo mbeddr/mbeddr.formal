@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="7" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="8" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -114,8 +114,22 @@
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3">
         <property id="7267068243654035156" name="isStandard" index="31n9r4" />
       </concept>
+      <concept id="7243625513212498628" name="com.symo.sysmlv2.baselan.structure.SysMLv2AcceptActionUsage" flags="ng" index="34u_n2">
+        <child id="7243625513212498630" name="payload" index="34u_n0" />
+        <child id="7243625513212498631" name="receiver" index="34u_n1" />
+      </concept>
+      <concept id="7243625513212498629" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionTriggerMembership" flags="ng" index="34u_n3">
+        <child id="7243625513212498632" name="action" index="34u_ne" />
+      </concept>
+      <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
+        <child id="284754763120096648" name="value" index="34b1dU" />
+        <child id="284754763101489705" name="direction" index="35c6Nr" />
+      </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
+      </concept>
+      <concept id="284754763133676346" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainTextExpression" flags="ng" index="3bnkR8">
+        <property id="284754763133676347" name="expressionText" index="3bnkR9" />
       </concept>
       <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
         <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
@@ -142,6 +156,9 @@
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
         <property id="7140692429575677861" name="usageName" index="3wdj9b" />
         <reference id="7140692429575677862" name="usage" index="3wdj98" />
+      </concept>
+      <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
+        <property id="7140692429570900105" name="kind" index="3xZtlB" />
       </concept>
       <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm" />
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
@@ -3999,6 +4016,199 @@
     <node concept="3clFbS" id="61dxE2nXUbr" role="LjaKd">
       <node concept="2TK7Tu" id="61dxE2nXUbs" role="3cqZAp">
         <property role="2TTd_B" value="execute" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6i6xKqxVvqZ">
+    <property role="TrG5h" value="_270_Transitions_EditTriggerPayload" />
+    <property role="3YCmrE" value="Edit an accept-action parameter through contextual ReferenceUsage presentation; preserve trigger ownership and parameter roles." />
+    <node concept="1qefOq" id="6i6xKqxVvr0" role="25YQCW">
+      <node concept="2h0jOr" id="6i6xKqxVvr1" role="1qenE9">
+        <node concept="66U8J" id="6i6xKqxVvr2" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEG" id="6i6xKqxVvr3" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKqxVvr4" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKqxVvr5" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKqxVvr6" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKqxVvr7" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKqxVvr8" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKqxVvr9" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="34u_n3" id="6i6xKqxVvra" role="3QFEA6">
+              <node concept="34u_n2" id="6i6xKqxVvrg" role="34u_ne">
+                <node concept="35c6Nh" id="6i6xKqxVvrl" role="34u_n0">
+                  <node concept="3xZtmk" id="6i6xKqxVvrm" role="35c6Nr">
+                    <property role="3xZtlB" value="mwptYtLWO0/inout" />
+                  </node>
+                  <node concept="LIFWc" id="6i6xKqxVvrn" role="lGtFl">
+                    <property role="LIFWd" value="property_name" />
+                    <property role="ZRATv" value="true" />
+                    <property role="OXtK3" value="true" />
+                    <property role="p6zMq" value="0" />
+                    <property role="p6zMs" value="0" />
+                  </node>
+                </node>
+                <node concept="35c6Nh" id="6i6xKqxVvro" role="34u_n1">
+                  <node concept="3xZtmk" id="6i6xKqxVvrp" role="35c6Nr" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6i6xKqxVvrq" role="25YQFr">
+      <node concept="2h0jOr" id="6i6xKqxVvrr" role="1qenE9">
+        <node concept="66U8J" id="6i6xKqxVvrs" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEG" id="6i6xKqxVvrt" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKqxVvru" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKqxVvrv" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKqxVvrw" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKqxVvrx" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKqxVvry" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKqxVvrz" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="34u_n3" id="6i6xKqxVvr$" role="3QFEA6">
+              <node concept="34u_n2" id="6i6xKqxVvrE" role="34u_ne">
+                <node concept="35c6Nh" id="6i6xKqxVvrJ" role="34u_n0">
+                  <property role="TrG5h" value="eventPayload" />
+                  <node concept="3xZtmk" id="6i6xKqxVvrK" role="35c6Nr">
+                    <property role="3xZtlB" value="mwptYtLWO0/inout" />
+                  </node>
+                </node>
+                <node concept="35c6Nh" id="6i6xKqxVvrL" role="34u_n1">
+                  <node concept="3xZtmk" id="6i6xKqxVvrM" role="35c6Nr" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6i6xKqxVvrN" role="LjaKd">
+      <node concept="2TK7Tu" id="6i6xKqxVvrO" role="3cqZAp">
+        <property role="2TTd_B" value="eventPayload" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6i6xKqxVvrP">
+    <property role="TrG5h" value="_280_Transitions_EditTriggerReceiver" />
+    <property role="3YCmrE" value="Edit an accept-action parameter through contextual ReferenceUsage presentation; preserve trigger ownership and parameter roles." />
+    <node concept="1qefOq" id="6i6xKqxVvrQ" role="25YQCW">
+      <node concept="2h0jOr" id="6i6xKqxVvrR" role="1qenE9">
+        <node concept="66U8J" id="6i6xKqxVvrS" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEG" id="6i6xKqxVvrT" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKqxVvrU" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKqxVvrV" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKqxVvrW" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKqxVvrX" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKqxVvrY" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKqxVvrZ" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="34u_n3" id="6i6xKqxVvs0" role="3QFEA6">
+              <node concept="34u_n2" id="6i6xKqxVvs6" role="34u_ne">
+                <node concept="35c6Nh" id="6i6xKqxVvsb" role="34u_n0">
+                  <property role="TrG5h" value="eventPayload" />
+                  <node concept="3xZtmk" id="6i6xKqxVvsc" role="35c6Nr">
+                    <property role="3xZtlB" value="mwptYtLWO0/inout" />
+                  </node>
+                </node>
+                <node concept="35c6Nh" id="6i6xKqxVvsd" role="34u_n1">
+                  <node concept="3xZtmk" id="6i6xKqxVvse" role="35c6Nr" />
+                  <node concept="3bnkR8" id="6i6xKqxVvsf" role="34b1dU">
+                    <property role="3bnkR9" value="" />
+                    <node concept="LIFWc" id="6i6xKqxVvsg" role="lGtFl">
+                      <property role="LIFWd" value="property_expressionText" />
+                      <property role="ZRATv" value="true" />
+                      <property role="OXtK3" value="true" />
+                      <property role="p6zMq" value="0" />
+                      <property role="p6zMs" value="0" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6i6xKqxVvsh" role="25YQFr">
+      <node concept="2h0jOr" id="6i6xKqxVvsi" role="1qenE9">
+        <node concept="66U8J" id="6i6xKqxVvsj" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEG" id="6i6xKqxVvsk" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKqxVvsl" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKqxVvsm" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKqxVvsn" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKqxVvso" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKqxVvsp" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKqxVvsq" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="34u_n3" id="6i6xKqxVvsr" role="3QFEA6">
+              <node concept="34u_n2" id="6i6xKqxVvsx" role="34u_ne">
+                <node concept="35c6Nh" id="6i6xKqxVvsA" role="34u_n0">
+                  <property role="TrG5h" value="eventPayload" />
+                  <node concept="3xZtmk" id="6i6xKqxVvsB" role="35c6Nr">
+                    <property role="3xZtlB" value="mwptYtLWO0/inout" />
+                  </node>
+                </node>
+                <node concept="35c6Nh" id="6i6xKqxVvsC" role="34u_n1">
+                  <node concept="3xZtmk" id="6i6xKqxVvsD" role="35c6Nr" />
+                  <node concept="3bnkR8" id="6i6xKqxVvsE" role="34b1dU">
+                    <property role="3bnkR9" value="receiver" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6i6xKqxVvsF" role="LjaKd">
+      <node concept="2TK7Tu" id="6i6xKqxVvsG" role="3cqZAp">
+        <property role="2TTd_B" value="receiver" />
       </node>
     </node>
   </node>

@@ -37500,29 +37500,16 @@
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
       </node>
-      <node concept="3clFbS" id="7ij$Ne_Vgur" role="3clF47">
-        <node concept="3clFbF" id="7ij$Ne_Vgus" role="3cqZAp">
-          <node concept="37vLTI" id="7ij$Ne_Vgut" role="3clFbG">
-            <node concept="2OqwBi" id="7ij$Ne_Vguu" role="37vLTJ">
-              <node concept="1PxgMI" id="7ij$Ne_Vguv" role="2Oq$k0">
-                <node concept="37vLTw" id="7ij$Ne_Vguw" role="1m5AlR">
-                  <ref role="3cqZAo" node="7ij$Ne_Vgun" resolve="transition" />
-                </node>
-                <node concept="chp4Y" id="7ij$Ne_Vgux" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="7ij$Ne_Vguy" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7ij$Ne_EBCH" resolve="trigger" />
-              </node>
+      <node concept="3clFbS" id="6i6xKqwZpei" role="3clF47">
+        <node concept="3clFbF" id="6i6xKqwZpej" role="3cqZAp">
+          <node concept="2YIFZM" id="6i6xKqwZpek" role="3clFbG">
+            <ref role="1Pybhc" to="5wt7:6i6xKqwZjxs" resolve="TransitionTriggers" />
+            <ref role="37wK5l" to="5wt7:6i6xKqwZjyC" resolve="addTrigger" />
+            <node concept="37vLTw" id="6i6xKqwZpel" role="37wK5m">
+              <ref role="3cqZAo" node="7ij$Ne_Vgun" resolve="transition" />
             </node>
-            <node concept="1PxgMI" id="7ij$Ne_Vguz" role="37vLTx">
-              <node concept="37vLTw" id="7ij$Ne_Vgu$" role="1m5AlR">
-                <ref role="3cqZAo" node="7ij$Ne_Vgup" resolve="trigger" />
-              </node>
-              <node concept="chp4Y" id="7ij$Ne_Vgu_" role="3oSUPX">
-                <ref role="cht4Q" to="5rf1:7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
-              </node>
+            <node concept="37vLTw" id="6i6xKqwZpem" role="37wK5m">
+              <ref role="3cqZAo" node="7ij$Ne_Vgup" resolve="trigger" />
             </node>
           </node>
         </node>
@@ -37578,16 +37565,21 @@
         <node concept="3clFbF" id="7ij$Ne_VgtU" role="3cqZAp">
           <node concept="37vLTI" id="7ij$Ne_VgtV" role="3clFbG">
             <node concept="2OqwBi" id="7ij$Ne_VgtW" role="37vLTJ">
-              <node concept="1PxgMI" id="7ij$Ne_VgtX" role="2Oq$k0">
-                <node concept="37vLTw" id="7ij$Ne_VgtY" role="1m5AlR">
-                  <ref role="3cqZAo" node="7ij$Ne_VgtD" resolve="trigger" />
+              <node concept="2OqwBi" id="6i6xKqwZq2s" role="2Oq$k0">
+                <node concept="1PxgMI" id="6i6xKqwZq2t" role="2Oq$k0">
+                  <node concept="37vLTw" id="6i6xKqwZq2u" role="1m5AlR">
+                    <ref role="3cqZAo" node="7ij$Ne_VgtD" resolve="trigger" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqwZq2v" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqwZdb4" resolve="SysMLv2AcceptActionUsage" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="7ij$Ne_VgtZ" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
+                <node concept="3TrEf2" id="6i6xKqwZq2w" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqwZdb7" resolve="receiver" />
                 </node>
               </node>
               <node concept="3TrEf2" id="7ij$Ne_Vgu0" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7ij$Ne_EBvN" resolve="via" />
+                <ref role="3Tt5mk" to="5rf1:fNDJb7RVm8" resolve="value" />
               </node>
             </node>
             <node concept="37vLTw" id="7ij$Ne_Vgu1" role="37vLTx">
@@ -37617,16 +37609,21 @@
         <node concept="3clFbF" id="7ij$Ne_Vgt6" role="3cqZAp">
           <node concept="37vLTI" id="7ij$Ne_Vgt7" role="3clFbG">
             <node concept="2OqwBi" id="7ij$Ne_Vgt8" role="37vLTJ">
-              <node concept="1PxgMI" id="7ij$Ne_Vgt9" role="2Oq$k0">
-                <node concept="37vLTw" id="7ij$Ne_Vgta" role="1m5AlR">
-                  <ref role="3cqZAo" node="7ij$Ne_Vgt1" resolve="trigger" />
+              <node concept="2OqwBi" id="6i6xKqwZq1l" role="2Oq$k0">
+                <node concept="1PxgMI" id="6i6xKqwZq1m" role="2Oq$k0">
+                  <node concept="37vLTw" id="6i6xKqwZq1n" role="1m5AlR">
+                    <ref role="3cqZAo" node="7ij$Ne_Vgt1" resolve="trigger" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqwZq1o" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqwZdb4" resolve="SysMLv2AcceptActionUsage" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="7ij$Ne_Vgtb" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
+                <node concept="3TrEf2" id="6i6xKqwZq1p" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqwZdb6" resolve="payload" />
                 </node>
               </node>
               <node concept="3TrEf2" id="7ij$Ne_Vgtc" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7ij$Ne_EBvM" resolve="multiplicity" />
+                <ref role="3Tt5mk" to="5rf1:fNDJb6KWCC" resolve="multiplicity" />
               </node>
             </node>
             <node concept="1PxgMI" id="7ij$Ne_Vgtd" role="37vLTx">
@@ -37696,16 +37693,21 @@
         <node concept="3clFbF" id="7ij$Ne_Vgsz" role="3cqZAp">
           <node concept="2OqwBi" id="7ij$Ne_Vgs$" role="3clFbG">
             <node concept="2OqwBi" id="7ij$Ne_Vgs_" role="2Oq$k0">
-              <node concept="1PxgMI" id="7ij$Ne_VgsA" role="2Oq$k0">
-                <node concept="37vLTw" id="7ij$Ne_VgsB" role="1m5AlR">
-                  <ref role="3cqZAo" node="7ij$Ne_Vgsi" resolve="trigger" />
+              <node concept="2OqwBi" id="6i6xKqwZq1I" role="2Oq$k0">
+                <node concept="1PxgMI" id="6i6xKqwZq1J" role="2Oq$k0">
+                  <node concept="37vLTw" id="6i6xKqwZq1K" role="1m5AlR">
+                    <ref role="3cqZAo" node="7ij$Ne_Vgsi" resolve="trigger" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqwZq1L" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqwZdb4" resolve="SysMLv2AcceptActionUsage" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="7ij$Ne_VgsC" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
+                <node concept="3TrEf2" id="6i6xKqwZq1M" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqwZdb6" resolve="payload" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="7ij$Ne_VgsD" role="2OqNvi">
-                <ref role="3TtcxE" to="5rf1:7ij$Ne_EBvL" resolve="types" />
+                <ref role="3TtcxE" to="5rf1:fNDJb6KWCB" resolve="types" />
               </node>
             </node>
             <node concept="TSZUe" id="7ij$Ne_VgsE" role="2OqNvi">
@@ -37737,12 +37739,17 @@
         <node concept="3clFbF" id="7ij$Ne_VgrL" role="3cqZAp">
           <node concept="37vLTI" id="7ij$Ne_VgrM" role="3clFbG">
             <node concept="2OqwBi" id="7ij$Ne_VgrN" role="37vLTJ">
-              <node concept="1PxgMI" id="7ij$Ne_VgrO" role="2Oq$k0">
-                <node concept="37vLTw" id="7ij$Ne_VgrP" role="1m5AlR">
-                  <ref role="3cqZAo" node="7ij$Ne_VgrG" resolve="trigger" />
+              <node concept="2OqwBi" id="6i6xKqwZq27" role="2Oq$k0">
+                <node concept="1PxgMI" id="6i6xKqwZq28" role="2Oq$k0">
+                  <node concept="37vLTw" id="6i6xKqwZq29" role="1m5AlR">
+                    <ref role="3cqZAo" node="7ij$Ne_VgrG" resolve="trigger" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqwZq2a" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqwZdb4" resolve="SysMLv2AcceptActionUsage" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="7ij$Ne_VgrQ" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
+                <node concept="3TrEf2" id="6i6xKqwZq2b" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqwZdb6" resolve="payload" />
                 </node>
               </node>
               <node concept="3TrcHB" id="7ij$Ne_VgrR" role="2OqNvi">
@@ -37762,25 +37769,14 @@
       <node concept="3uibUv" id="7ij$Ne_VgiC" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
-      <node concept="3clFbS" id="7ij$Ne_VgiD" role="3clF47">
-        <node concept="3cpWs8" id="7ij$Ne_VgiE" role="3cqZAp">
-          <node concept="3cpWsn" id="7ij$Ne_VgiF" role="3cpWs9">
-            <property role="TrG5h" value="trigger" />
-            <node concept="2ShNRf" id="7ij$Ne_VgiG" role="33vP2m">
-              <node concept="3zrR0B" id="7ij$Ne_VgiH" role="2ShVmc">
-                <node concept="3Tqbb2" id="7ij$Ne_VgiI" role="3zrR0E">
-                  <ref role="ehGHo" to="5rf1:7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
-                </node>
+      <node concept="3clFbS" id="6i6xKqwZped" role="3clF47">
+        <node concept="3cpWs6" id="6i6xKqwZpee" role="3cqZAp">
+          <node concept="2ShNRf" id="6i6xKqwZpef" role="3cqZAk">
+            <node concept="3zrR0B" id="6i6xKqwZpeg" role="2ShVmc">
+              <node concept="3Tqbb2" id="6i6xKqwZpeh" role="3zrR0E">
+                <ref role="ehGHo" to="5rf1:6i6xKqwZdb4" resolve="SysMLv2AcceptActionUsage" />
               </node>
             </node>
-            <node concept="3Tqbb2" id="7ij$Ne_VgiJ" role="1tU5fm">
-              <ref role="ehGHo" to="5rf1:7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="7ij$Ne_VgiK" role="3cqZAp">
-          <node concept="37vLTw" id="7ij$Ne_VgiL" role="3cqZAk">
-            <ref role="3cqZAo" node="7ij$Ne_VgiF" resolve="trigger" />
           </node>
         </node>
       </node>

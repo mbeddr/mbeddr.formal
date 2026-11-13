@@ -1986,5 +1986,39 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="6i6xKqxTxGn">
+    <property role="TrG5h" value="check_SysMLv2TransitionUsage_triggerSyntax" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="6i6xKqxTxGo" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
+    </node>
+    <node concept="3clFbS" id="6i6xKqxTxGp" role="18ibNy">
+      <node concept="3clFbJ" id="6i6xKqxTxGq" role="3cqZAp">
+        <node concept="3fqX7Q" id="6i6xKqxTxGr" role="3clFbw">
+          <node concept="2YIFZM" id="6i6xKqxTxGs" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:6i6xKqwZjxs" resolve="TransitionTriggers" />
+            <ref role="37wK5l" to="5wt7:6i6xKqwZjzq" resolve="singleExplicitTrigger" />
+            <node concept="1YBJjd" id="6i6xKqxTxGt" role="37wK5m">
+              <ref role="1YBMHb" node="6i6xKqxTxGo" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6i6xKqxTxGu" role="3clFbx">
+          <node concept="2MkqsV" id="6i6xKqxTxGv" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqxTxGw" role="2MkJ7o">
+              <property role="Xl_RC" value="The transition textual syntax permits one explicit accept clause." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqxTxGx" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqxTxGo" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="6i6xKqxTxGy" role="lGtFl">
+              <property role="TrG5h" value="transition_trigger_count" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

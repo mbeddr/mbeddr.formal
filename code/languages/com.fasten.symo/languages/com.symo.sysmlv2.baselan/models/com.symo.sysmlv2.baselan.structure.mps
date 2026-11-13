@@ -2127,6 +2127,10 @@
       <property role="20kJfa" value="trigger" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
+      <node concept="asaX9" id="6i6xKqwZjwy" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Use transitionFeatures with SysMLv2TransitionTriggerMembership owning SysMLv2AcceptActionUsage. Payload name, typing and multiplicity belong to its payload ReferenceUsage. Retained only for migration." />
+      </node>
     </node>
     <node concept="1TJgyj" id="7ij$NeAWA5P" role="1TKVEi">
       <property role="IQ2ns" value="8400219580029624693" />
@@ -2211,21 +2215,37 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+      <node concept="asaX9" id="6i6xKqyYNHB" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Use the accept action payload parameter for types/multiplicity, or its receiver value for via. Retained only for legacy trigger migration." />
+      </node>
     </node>
     <node concept="1TJgyj" id="7ij$Ne_EBvM" role="1TKVEi">
       <property role="IQ2ns" value="8400219580008134642" />
       <property role="20kJfa" value="multiplicity" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+      <node concept="asaX9" id="6i6xKqyYNHF" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Use the accept action payload parameter for types/multiplicity, or its receiver value for via. Retained only for legacy trigger migration." />
+      </node>
     </node>
     <node concept="1TJgyj" id="7ij$Ne_EBvN" role="1TKVEi">
       <property role="IQ2ns" value="8400219580008134643" />
       <property role="20kJfa" value="via" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+      <node concept="asaX9" id="6i6xKqyYNHJ" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Use the accept action payload parameter for types/multiplicity, or its receiver value for via. Retained only for legacy trigger migration." />
+      </node>
     </node>
     <node concept="PrWs8" id="7ij$Ne_EBvO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="asaX9" id="6i6xKqwZjwu" role="lGtFl">
+      <property role="YLPcu" value="2026-11-13" />
+      <property role="YLQ7P" value="Use transitionFeatures with SysMLv2TransitionTriggerMembership owning SysMLv2AcceptActionUsage. Payload name, typing and multiplicity belong to its payload ReferenceUsage. Retained only for migration." />
     </node>
   </node>
   <node concept="1TIwiD" id="7ij$NeCRWzV">
@@ -2847,6 +2867,43 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6i6xKqwZdb4">
+    <property role="EcuMT" value="7243625513212498628" />
+    <property role="TrG5h" value="SysMLv2AcceptActionUsage" />
+    <property role="34LRSv" value="accept" />
+    <property role="R4oN_" value="An action accepting a transfer, with distinct payload and receiver reference parameters (SysML 2.0 8.3.17.2)." />
+    <property role="3GE5qa" value="action" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
+    <node concept="1TJgyj" id="6i6xKqwZdb6" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513212498630" />
+      <property role="20kJfa" value="payload" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+    </node>
+    <node concept="1TJgyj" id="6i6xKqwZdb7" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513212498631" />
+      <property role="20kJfa" value="receiver" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6i6xKqwZdb5">
+    <property role="EcuMT" value="7243625513212498629" />
+    <property role="TrG5h" value="SysMLv2TransitionTriggerMembership" />
+    <property role="34LRSv" value="accept" />
+    <property role="R4oN_" value="Owns the accept action that triggers a transition (SysML 2.0 8.3.18.8-.9)." />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" node="61dxE2mSMWv" resolve="SysMLv2TransitionFeatureMembership" />
+    <node concept="1TJgyj" id="6i6xKqwZdb8" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513212498632" />
+      <property role="20kJfa" value="action" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6i6xKqwZdb4" resolve="SysMLv2AcceptActionUsage" />
     </node>
   </node>
 </model>
