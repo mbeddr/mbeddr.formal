@@ -1838,5 +1838,85 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="61dxE2jSMin">
+    <property role="TrG5h" value="check_SysMLv2UsageRef_target" />
+    <property role="3GE5qa" value="references" />
+    <node concept="1YaCAy" id="61dxE2jSMio" role="1YuTPh">
+      <property role="TrG5h" value="ref" />
+      <ref role="1YaFvo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="3clFbS" id="61dxE2jSMip" role="18ibNy">
+      <node concept="3clFbJ" id="61dxE2jSMit" role="3cqZAp">
+        <node concept="3fqX7Q" id="61dxE2jSMiu" role="3clFbw">
+          <node concept="2YIFZM" id="61dxE2jSMiv" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:61dxE2jSwe8" resolve="UsageReferencePolicy" />
+            <ref role="37wK5l" to="5wt7:61dxE2jSwhJ" resolve="isTargetRole" />
+            <node concept="1YBJjd" id="61dxE2jSMiw" role="37wK5m">
+              <ref role="1YBMHb" node="61dxE2jSMio" resolve="ref" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="61dxE2jSMix" role="3clFbx">
+          <node concept="3cpWs6" id="61dxE2jSMiy" role="3cqZAp" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="61dxE2jSMiM" role="3cqZAp">
+        <node concept="17R0WA" id="61dxE2jSMiN" role="3clFbw">
+          <node concept="2OqwBi" id="61dxE2jSMiO" role="3uHU7B">
+            <node concept="1YBJjd" id="61dxE2jSMiP" role="2Oq$k0">
+              <ref role="1YBMHb" node="61dxE2jSMio" resolve="ref" />
+            </node>
+            <node concept="3TrEf2" id="61dxE2jSMiQ" role="2OqNvi">
+              <ref role="3Tt5mk" to="5rf1:6coPuU3buuA" resolve="usage" />
+            </node>
+          </node>
+          <node concept="10Nm6u" id="61dxE2jSMiR" role="3uHU7w" />
+        </node>
+        <node concept="3clFbS" id="61dxE2jSMiS" role="3clFbx">
+          <node concept="a7r0C" id="61dxE2jSMiT" role="3cqZAp">
+            <node concept="Xl_RD" id="61dxE2jSMiU" role="a7wSD">
+              <property role="Xl_RC" value="[usage-reference-unresolved] This usage reference has not been reified" />
+            </node>
+            <node concept="1YBJjd" id="61dxE2jSMiV" role="1urrMF">
+              <ref role="1YBMHb" node="61dxE2jSMio" resolve="ref" />
+            </node>
+          </node>
+          <node concept="3cpWs6" id="61dxE2jSMiW" role="3cqZAp" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="61dxE2jSMj9" role="3cqZAp">
+        <node concept="3fqX7Q" id="61dxE2jSMja" role="3clFbw">
+          <node concept="2YIFZM" id="61dxE2jSMjb" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:61dxE2jSwe8" resolve="UsageReferencePolicy" />
+            <ref role="37wK5l" to="5wt7:61dxE2jSwhU" resolve="accepts" />
+            <node concept="1YBJjd" id="61dxE2jSMjc" role="37wK5m">
+              <ref role="1YBMHb" node="61dxE2jSMio" resolve="ref" />
+            </node>
+            <node concept="2OqwBi" id="61dxE2jSMjd" role="37wK5m">
+              <node concept="1YBJjd" id="61dxE2jSMje" role="2Oq$k0">
+                <ref role="1YBMHb" node="61dxE2jSMio" resolve="ref" />
+              </node>
+              <node concept="3TrEf2" id="61dxE2jSMjf" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6coPuU3buuA" resolve="usage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="61dxE2jSMjg" role="3clFbx">
+          <node concept="2MkqsV" id="61dxE2jSMjh" role="3cqZAp">
+            <node concept="Xl_RD" id="61dxE2jSMji" role="2MkJ7o">
+              <property role="Xl_RC" value="[usage-reference-kind] This target is not the required semantic kind of usage for this role" />
+            </node>
+            <node concept="1YBJjd" id="61dxE2jSMjj" role="1urrMF">
+              <ref role="1YBMHb" node="61dxE2jSMio" resolve="ref" />
+            </node>
+            <node concept="AMVWg" id="61dxE2jSMjk" role="lGtFl">
+              <property role="TrG5h" value="usage_reference_wrong_kind" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

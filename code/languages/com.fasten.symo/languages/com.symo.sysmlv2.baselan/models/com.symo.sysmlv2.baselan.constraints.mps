@@ -391,6 +391,22 @@
       <ref role="1N5Vy1" to="5rf1:6coPuU3buuA" resolve="usage" />
       <node concept="3dgokm" id="3MUZSeFtipZ" role="1N6uqs">
         <node concept="3clFbS" id="3MUZSeFtiq1" role="2VODD2">
+          <node concept="3clFbJ" id="61dxE2jSMi0" role="3cqZAp">
+            <node concept="2YIFZM" id="61dxE2jSMi1" role="3clFbw">
+              <ref role="1Pybhc" to="5wt7:61dxE2jSwe8" resolve="UsageReferencePolicy" />
+              <ref role="37wK5l" to="5wt7:61dxE2jSwhJ" resolve="isTargetRole" />
+              <node concept="3kakTB" id="61dxE2jSMi2" role="37wK5m" />
+            </node>
+            <node concept="3clFbS" id="61dxE2jSMi3" role="3clFbx">
+              <node concept="3cpWs6" id="61dxE2jSMi4" role="3cqZAp">
+                <node concept="2YIFZM" id="61dxE2jSMi5" role="3cqZAk">
+                  <ref role="1Pybhc" to="5wt7:61dxE2jSwe8" resolve="UsageReferencePolicy" />
+                  <ref role="37wK5l" to="5wt7:61dxE2jSwkz" resolve="scope" />
+                  <node concept="3kakTB" id="61dxE2jSMi6" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3cpWs6" id="3MUZSeFtiq2" role="3cqZAp">
             <node concept="3K4zz7" id="3MUZSeHjSfe" role="3cqZAk">
               <node concept="1Wc70l" id="3MUZSeHjSfi" role="3K4Cdx">

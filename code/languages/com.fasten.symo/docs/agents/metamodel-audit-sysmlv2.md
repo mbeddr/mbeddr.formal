@@ -2,7 +2,7 @@
 
 The highest risk is semantic inheritance being replaced by inheritance for sharing declaration/body syntax. This affects assignability, reference checking, containment and the contracts available to extension languages. Textual round trips can remain green while these contracts are wrong.
 
-Follow-up: findings 1–6 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. The findings retain the original audit snapshot; findings 7–10 remain separate work.
+Follow-up: findings 1–7 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. The findings retain the original audit snapshot; findings 8–10 remain separate work.
 
 Scope: live `com.symo.sysmlv2.baselan.structure` at repository commit `d5def769`: 117 concept declarations, 19 interface declarations and 3 enumerations. MPS MCP snapshots covered that model and the inventories of 18 constraints roots, 7 typesystem roots and 35 behavior roots; relevant implementations were traced for the findings below. The live concept-details query supplied the inherited shapes and ancestry. Generated Java was inspected to trace checking, scoping and importer behavior; no serialized MPS XML was read. No implementation models were changed or builds/tests run for this audit.
 
@@ -89,6 +89,12 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
    **Impact:** structurally, a reified attribute can be the performed action or satisfied requirement. Resolution alone does not establish validity. Secondary ancestry is also missing: exhibit/include are not perform usages, and perform is not an event-occurrence usage.
 
    **Direction:** reuse name/reference mechanics while adding a semantic target contract for each role. Check the final feature target, including supported chains/aliases. Repair finding 1 before using action ancestry to restrict these scopes, otherwise ordinary actions would disappear from completion.
+
+   **Implemented (2026-11-13):** seven role-specific target contracts, lexical
+   scoping, alias/static-path reification and secondary EventOccurrence/Perform
+   ancestry are implemented. Unresolved references warn; incompatible bound
+   targets error. No migration is required. See [ADR 0009](../adr/0009-role-specific-usage-references.md)
+   for validation and the remaining path-reference representation boundary.
 
 8. **High — transition effects reference definitions instead of actions.**
 

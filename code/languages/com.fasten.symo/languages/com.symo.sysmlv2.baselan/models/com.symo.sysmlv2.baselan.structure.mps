@@ -1977,6 +1977,9 @@
     <property role="R4oN_" value="SysML v2 EventOccurrenceUsage (8.3.9), declaration form" />
     <property role="34LRSv" value="event occurrence" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="PrWs8" id="61dxE2jvYUQ" role="PzmwI">
+      <ref role="PrY4T" node="61dxE2jvYUJ" resolve="ISysMLv2EventOccurrenceUsage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7O9Ql6wW85t">
     <property role="EcuMT" value="9009971474147082589" />
@@ -2227,6 +2230,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
+    <node concept="PrWs8" id="61dxE2jvYUU" role="PzmwI">
+      <ref role="PrY4T" node="61dxE2jvYUK" resolve="ISysMLv2PerformActionUsage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7ij$NeFzM0a">
     <property role="EcuMT" value="8400219580107005962" />
@@ -2240,6 +2246,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
+    <node concept="PrWs8" id="61dxE2jvYUY" role="PzmwI">
+      <ref role="PrY4T" node="61dxE2jvYUK" resolve="ISysMLv2PerformActionUsage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7ij$NeFzM0b">
     <property role="EcuMT" value="8400219580107005963" />
@@ -2252,6 +2261,9 @@
       <property role="20kJfa" value="included" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="PrWs8" id="61dxE2jvYV2" role="PzmwI">
+      <ref role="PrY4T" node="61dxE2jvYUK" resolve="ISysMLv2PerformActionUsage" />
     </node>
   </node>
   <node concept="1TIwiD" id="7ij$NeFzM0c">
@@ -2736,6 +2748,24 @@
     <property role="3GE5qa" value="membership" />
     <node concept="PrWs8" id="1AVz0_cCfqz" role="PrDN$">
       <ref role="PrY4T" node="1AVz0_cCfqp" resolve="ISysMLv2RequirementConstraintMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="61dxE2jvYUJ">
+    <property role="EcuMT" value="6939350625075326639" />
+    <property role="TrG5h" value="ISysMLv2EventOccurrenceUsage" />
+    <property role="R4oN_" value="Secondary EventOccurrenceUsage ancestry; perform usages denote occurrences of their performed action." />
+    <property role="3GE5qa" value="behavior" />
+    <node concept="PrWs8" id="61dxE2jvYUL" role="PrDN$">
+      <ref role="PrY4T" node="34Y23q90Hla" resolve="ISysMLv2Usage" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="61dxE2jvYUK">
+    <property role="EcuMT" value="6939350625075326640" />
+    <property role="TrG5h" value="ISysMLv2PerformActionUsage" />
+    <property role="R4oN_" value="Secondary perform-action contract shared by perform, exhibit and include usages." />
+    <property role="3GE5qa" value="behavior" />
+    <node concept="PrWs8" id="61dxE2jvYUM" role="PrDN$">
+      <ref role="PrY4T" node="61dxE2jvYUJ" resolve="ISysMLv2EventOccurrenceUsage" />
     </node>
   </node>
 </model>
