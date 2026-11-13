@@ -2,7 +2,7 @@
 
 The highest risk is semantic inheritance being replaced by inheritance for sharing declaration/body syntax. This affects assignability, reference checking, containment and the contracts available to extension languages. Textual round trips can remain green while these contracts are wrong.
 
-Follow-up: finding 1 has been addressed by [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md). The findings below retain the original audit snapshot; the other hierarchy families remain separate work.
+Follow-up: findings 1–5 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. The findings retain the original audit snapshot; findings 6–10 remain separate work.
 
 Scope: live `com.symo.sysmlv2.baselan.structure` at repository commit `d5def769`: 117 concept declarations, 19 interface declarations and 3 enumerations. MPS MCP snapshots covered that model and the inventories of 18 constraints roots, 7 typesystem roots and 35 behavior roots; relevant implementations were traced for the findings below. The live concept-details query supplied the inherited shapes and ancestry. Generated Java was inspected to trace checking, scoping and importer behavior; no serialized MPS XML was read. No implementation models were changed or builds/tests run for this audit.
 
@@ -65,6 +65,8 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
    **Impact:** successful reification and an otherwise clean check can give users false confidence about an incompatible type. Consumers must revalidate each role themselves.
 
    **Direction:** establish an explicit role/owner typing policy, including allowed kernel classifier categories and cardinalities. Use narrowed structural roles where appropriate and semantic checks where syntax needs a broader slot. Do not replace this with a universal test of MPS concept ancestry: modeled specialization, metaclass classification and MPS inheritance are different relationships. Do not impose usage-typing restrictions indiscriminately on definition specialization.
+
+   **Implemented (2026-11-10):** owner/role-specific semantic typing checks and distinct-classifier upper bounds now share `DefinitionTypingPolicy`. Valid Behavior typing for states, structural co-typing, aliases, unresolved-text warnings and the specialization boundary have regression coverage. Stored structure is unchanged; no migration is required. All 471 checking, scope/semantic, editor and importer tests pass in the IDE. See [ADR 0007](../adr/0007-owner-dependent-definition-typing.md) for the supported kernel categories and remaining qualified-name interoperability boundary.
 
 6. **High — membership roles are conflated with usage kinds; actors and stakeholders have the wrong abstraction.**
 

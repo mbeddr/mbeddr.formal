@@ -16,6 +16,7 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
     <dependency reexport="false">8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)</dependency>
+    <dependency reexport="false">d9b9b270-2a43-41e3-8b8d-5dcf532d0435(com.symo.kerml.baselan)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:df90562e-2282-4284-81c0-42a7e5d43d37:com.symo.sysmlv2.baselan" version="5" />
@@ -43,6 +44,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="d9b9b270-2a43-41e3-8b8d-5dcf532d0435(com.symo.kerml.baselan)" version="0" />
     <module reference="df90562e-2282-4284-81c0-42a7e5d43d37(com.symo.sysmlv2.baselan)" version="0" />
     <module reference="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
