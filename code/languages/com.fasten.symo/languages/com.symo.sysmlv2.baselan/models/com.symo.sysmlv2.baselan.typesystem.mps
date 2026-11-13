@@ -1918,5 +1918,73 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="61dxE2nrBYV">
+    <property role="TrG5h" value="check_SysMLv2TransitionUsage_effectSyntax" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="61dxE2nrBYW" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
+    </node>
+    <node concept="3clFbS" id="61dxE2nrBZ1" role="18ibNy">
+      <node concept="3clFbJ" id="61dxE2nrBZ2" role="3cqZAp">
+        <node concept="3fqX7Q" id="61dxE2nrBZ3" role="3clFbw">
+          <node concept="2YIFZM" id="61dxE2nrBZ4" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:61dxE2nhiBP" resolve="TransitionEffects" />
+            <ref role="37wK5l" to="5wt7:61dxE2nr$iF" resolve="singleExplicitEffect" />
+            <node concept="1YBJjd" id="61dxE2nrBZ5" role="37wK5m">
+              <ref role="1YBMHb" node="61dxE2nrBYW" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="61dxE2nrBZ6" role="3clFbx">
+          <node concept="2MkqsV" id="61dxE2nrBZ7" role="3cqZAp">
+            <node concept="Xl_RD" id="61dxE2nrBZ8" role="2MkJ7o">
+              <property role="Xl_RC" value="The transition textual syntax permits one explicit do clause; compose multiple actions inside that effect." />
+            </node>
+            <node concept="1YBJjd" id="61dxE2nrBZ9" role="1urrMF">
+              <ref role="1YBMHb" node="61dxE2nrBYW" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="61dxE2nrBZa" role="lGtFl">
+              <property role="TrG5h" value="transition_effect_count" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="61dxE2nrBZg">
+    <property role="TrG5h" value="check_SysMLv2TransitionEffectMembership_syntax" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="61dxE2nrBZh" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:61dxE2mSMWw" resolve="SysMLv2TransitionEffectMembership" />
+    </node>
+    <node concept="3clFbS" id="61dxE2nrBZm" role="18ibNy">
+      <node concept="3clFbJ" id="61dxE2nrBZn" role="3cqZAp">
+        <node concept="3fqX7Q" id="61dxE2nrBZo" role="3clFbw">
+          <node concept="2YIFZM" id="61dxE2nrBZp" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:61dxE2nhiBP" resolve="TransitionEffects" />
+            <ref role="37wK5l" to="5wt7:61dxE2nrA4E" resolve="supportedActionSyntax" />
+            <node concept="1YBJjd" id="61dxE2nrBZq" role="37wK5m">
+              <ref role="1YBMHb" node="61dxE2nrBZh" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="61dxE2nrBZr" role="3clFbx">
+          <node concept="2MkqsV" id="61dxE2nrBZs" role="3cqZAp">
+            <node concept="Xl_RD" id="61dxE2nrBZt" role="2MkJ7o">
+              <property role="Xl_RC" value="This transition effect syntax supports an inline action declaration or a perform-action reference." />
+            </node>
+            <node concept="1YBJjd" id="61dxE2nrBZu" role="1urrMF">
+              <ref role="1YBMHb" node="61dxE2nrBZh" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="61dxE2nrBZv" role="lGtFl">
+              <property role="TrG5h" value="transition_effect_syntax" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

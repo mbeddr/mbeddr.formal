@@ -2139,6 +2139,17 @@
       <property role="20kJfa" value="effect" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+      <node concept="asaX9" id="61dxE2mSMWE" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Use transitionFeatures with SysMLv2TransitionEffectMembership owning an ActionUsage. Retained only for migration of legacy definition-reference effects." />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="61dxE2mSMWA" role="1TKVEi">
+      <property role="IQ2ns" value="6939350625132162854" />
+      <property role="20kJfa" value="transitionFeatures" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="61dxE2mSMWv" resolve="SysMLv2TransitionFeatureMembership" />
     </node>
   </node>
   <node concept="1TIwiD" id="7O9Ql6Cf9IB">
@@ -2810,6 +2821,32 @@
     <property role="3GE5qa" value="behavior" />
     <node concept="PrWs8" id="61dxE2jvYUM" role="PrDN$">
       <ref role="PrY4T" node="61dxE2jvYUJ" resolve="ISysMLv2EventOccurrenceUsage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="61dxE2mSMWv">
+    <property role="EcuMT" value="6939350625132162847" />
+    <property role="TrG5h" value="SysMLv2TransitionFeatureMembership" />
+    <property role="R4oN_" value="Owned transition feature membership; specialized by trigger, guard and effect roles." />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="61dxE2mSMWx" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfqj" resolve="ISysMLv2FeatureMembership" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="61dxE2mSMWw">
+    <property role="EcuMT" value="6939350625132162848" />
+    <property role="TrG5h" value="SysMLv2TransitionEffectMembership" />
+    <property role="34LRSv" value="do" />
+    <property role="R4oN_" value="Owns the action usage performed as a transition effect." />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" node="61dxE2mSMWv" resolve="SysMLv2TransitionFeatureMembership" />
+    <node concept="1TJgyj" id="61dxE2mSMWy" role="1TKVEi">
+      <property role="IQ2ns" value="6939350625132162850" />
+      <property role="20kJfa" value="action" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
     </node>
   </node>
 </model>

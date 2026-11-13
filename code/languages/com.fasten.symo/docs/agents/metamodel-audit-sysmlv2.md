@@ -2,7 +2,7 @@
 
 The highest risk is semantic inheritance being replaced by inheritance for sharing declaration/body syntax. This affects assignability, reference checking, containment and the contracts available to extension languages. Textual round trips can remain green while these contracts are wrong.
 
-Follow-up: findings 1–7 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. The findings retain the original audit snapshot; findings 8–10 remain separate work.
+Follow-up: findings 1–7 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. Finding 8's first increment implements owned action effects; trigger, guard and endpoint contracts remain. The findings retain the original audit snapshot; findings 9–10 remain separate work.
 
 Scope: live `com.symo.sysmlv2.baselan.structure` at repository commit `d5def769`: 117 concept declarations, 19 interface declarations and 3 enumerations. MPS MCP snapshots covered that model and the inventories of 18 constraints roots, 7 typesystem roots and 35 behavior roots; relevant implementations were traced for the findings below. The live concept-details query supplied the inherited shapes and ancestry. Generated Java was inspected to trace checking, scoping and importer behavior; no serialized MPS XML was read. No implementation models were changed or builds/tests run for this audit.
 
@@ -105,6 +105,13 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
    **Impact:** an effect naming an existing action usage cannot be represented faithfully in the definition-reference slot. Reification either leaves text unresolved or produces a target incompatible with its definition check; accepting a definition instead still denotes the wrong kind of thing. Inline effects, arguments and repeated effects will require a structural replacement rather than an incremental extension.
 
    **Direction:** use action usages/perform-action syntax under an effect membership or equivalent role abstraction, with dedicated trigger/guard/effect contracts. Keep a feature-chain reference distinct from a definition/type reference.
+
+   **First increment implemented (2026-11-13):** transitions own action effects
+   through `SysMLv2TransitionEffectMembership`. Perform-action references reuse
+   usage scoping/reification; inline actions retain typing and bodies. Language
+   version 7 migrates legacy definition-reference effects; the old slot is dated
+   deprecated. Trigger, guard and endpoint changes remain. See
+   [ADR 0010](../adr/0010-transition-effect-actions.md).
 
 9. **High — namespace capability is attached to selected usages rather than the Usage abstraction.**
 

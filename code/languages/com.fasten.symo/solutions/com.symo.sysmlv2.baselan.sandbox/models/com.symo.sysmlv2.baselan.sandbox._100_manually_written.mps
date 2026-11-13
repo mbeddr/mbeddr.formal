@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="6" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="7" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -180,9 +180,9 @@
       <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
         <child id="8400219580008135213" name="trigger" index="3heu$u" />
         <child id="8400219580029624693" name="guard" index="3iov96" />
-        <child id="8400219580029624709" name="effect" index="3iovaQ" />
         <child id="9009971474229543189" name="target" index="3oOLx4" />
         <child id="9009971474229543188" name="source" index="3oOLx5" />
+        <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
       </concept>
       <concept id="9009971474207081768" name="com.symo.sysmlv2.baselan.structure.SysMLv2SuccessionUsage" flags="ng" index="3pztLT">
         <property id="9009971474207081769" name="withKeyword" index="3pztLS" />
@@ -267,6 +267,9 @@
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
+      </concept>
+      <concept id="6939350625132162848" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionEffectMembership" flags="ng" index="3QFEA0">
+        <child id="6939350625132162850" name="action" index="3QFEA2" />
       </concept>
       <concept id="7406476705817406954" name="com.symo.sysmlv2.baselan.structure.SysMLv2FramedConcernUsage" flags="ng" index="3TIFES">
         <child id="7406476705817406959" name="referenced" index="3TIFEX" />
@@ -2969,10 +2972,15 @@
           <node concept="3bnkR8" id="7ij$NeBPT9S" role="3iov96">
             <property role="3bnkR9" value="ready" />
           </node>
-          <node concept="35c6Ng" id="7ij$NeBPT9T" role="3iovaQ">
-            <node concept="AsIwX" id="3zOS9tKAV67" role="2_tBl3">
-              <node concept="AsIwU" id="3zOS9tLC$ZL" role="AsIwY">
-                <ref role="AsIwW" node="3zOS9tLCAud" resolve="Work" />
+          <node concept="3QFEA0" id="61dxE2nXVkF" role="3QFEA6">
+            <node concept="SPUEF" id="61dxE2nXVkH" role="3QFEA2">
+              <property role="TrG5h" value="effectWork" />
+              <node concept="35c6Ng" id="7ij$NeBPT9T" role="SPUDr">
+                <node concept="AsIwX" id="3zOS9tKAV67" role="2_tBl3">
+                  <node concept="AsIwU" id="3zOS9tLC$ZL" role="AsIwY">
+                    <ref role="AsIwW" node="3zOS9tLCAud" resolve="Work" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

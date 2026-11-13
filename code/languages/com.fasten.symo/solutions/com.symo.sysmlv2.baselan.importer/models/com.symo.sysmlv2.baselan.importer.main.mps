@@ -36983,59 +36983,38 @@
           <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
       </node>
-      <node concept="3clFbS" id="7ij$NeBdfca" role="3clF47">
-        <node concept="3cpWs8" id="7ij$NeBdfcb" role="3cqZAp">
-          <node concept="3cpWsn" id="7ij$NeBdfcc" role="3cpWs9">
-            <property role="TrG5h" value="ref" />
-            <node concept="2ShNRf" id="7ij$NeBdfcd" role="33vP2m">
-              <node concept="3zrR0B" id="7ij$NeBdfce" role="2ShVmc">
-                <node concept="3Tqbb2" id="7ij$NeBdfcf" role="3zrR0E">
-                  <ref role="ehGHo" to="5rf1:fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
-                </node>
-              </node>
+      <node concept="3clFbS" id="61dxE2nigck" role="3clF47">
+        <node concept="3cpWs8" id="61dxE2nigc9" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2nigc8" role="3cpWs9">
+            <property role="TrG5h" value="action" />
+            <node concept="3uibUv" id="61dxE2nigca" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
             </node>
-            <node concept="3Tqbb2" id="7ij$NeBdfcg" role="1tU5fm">
-              <ref role="ehGHo" to="5rf1:fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+            <node concept="1rXfSq" id="61dxE2nigcb" role="33vP2m">
+              <ref role="37wK5l" node="7ij$NeFQBLT" resolve="newPerformActionUsage" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7ij$NeBdfch" role="3cqZAp">
-          <node concept="37vLTI" id="7ij$NeBdfci" role="3clFbG">
-            <node concept="2OqwBi" id="7ij$NeBdfcj" role="37vLTJ">
-              <node concept="2OqwBi" id="2OmrmAFtqT" role="2Oq$k0">
-                <node concept="37vLTw" id="2OmrmAFtqU" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7ij$NeBdfcc" resolve="ref" />
-                </node>
-                <node concept="3TrEf2" id="2OmrmAFtqV" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5rf1:2Omrm_KyNQ" resolve="qualifiedName" />
-                </node>
-              </node>
-              <node concept="3TrcHB" id="7ij$NeBdfcl" role="2OqNvi">
-                <ref role="3TsBF5" to="5rf1:7vLXn5hwLPe" resolve="text" />
-              </node>
+        <node concept="3clFbF" id="61dxE2nigcc" role="3cqZAp">
+          <node concept="1rXfSq" id="61dxE2nigcd" role="3clFbG">
+            <ref role="37wK5l" node="7ij$NeFQBMD" resolve="setPerformed" />
+            <node concept="37vLTw" id="61dxE2nigce" role="37wK5m">
+              <ref role="3cqZAo" node="61dxE2nigc8" resolve="action" />
             </node>
-            <node concept="37vLTw" id="7ij$NeBdfcm" role="37vLTx">
+            <node concept="37vLTw" id="61dxE2nigcf" role="37wK5m">
               <ref role="3cqZAo" node="7ij$NeBdfc8" resolve="actionName" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7ij$NeBdfcn" role="3cqZAp">
-          <node concept="37vLTI" id="7ij$NeBdfco" role="3clFbG">
-            <node concept="2OqwBi" id="7ij$NeBdfcp" role="37vLTJ">
-              <node concept="1PxgMI" id="7ij$NeBdfcq" role="2Oq$k0">
-                <node concept="37vLTw" id="7ij$NeBdfcr" role="1m5AlR">
-                  <ref role="3cqZAo" node="7ij$NeBdfc6" resolve="transition" />
-                </node>
-                <node concept="chp4Y" id="7ij$NeBdfcs" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
-                </node>
-              </node>
-              <node concept="3TrEf2" id="7ij$NeBdfct" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7ij$NeAWA65" resolve="effect" />
-              </node>
+        <node concept="3clFbF" id="61dxE2nigcg" role="3cqZAp">
+          <node concept="2YIFZM" id="61dxE2nigcB" role="3clFbG">
+            <ref role="1Pybhc" to="5wt7:61dxE2nhiBP" resolve="TransitionEffects" />
+            <ref role="37wK5l" to="5wt7:61dxE2nhiDk" resolve="addEffect" />
+            <node concept="37vLTw" id="61dxE2nigcC" role="37wK5m">
+              <ref role="3cqZAo" node="7ij$NeBdfc6" resolve="transition" />
             </node>
-            <node concept="37vLTw" id="7ij$NeBdfcu" role="37vLTx">
-              <ref role="3cqZAo" node="7ij$NeBdfcc" resolve="ref" />
+            <node concept="37vLTw" id="61dxE2nigcD" role="37wK5m">
+              <ref role="3cqZAo" node="61dxE2nigc8" resolve="action" />
             </node>
           </node>
         </node>
@@ -40318,43 +40297,43 @@
           <ref role="3uigEE" to="guqe:~SysMLv2Parser$TransitionUsageContext" resolve="SysMLv2Parser.TransitionUsageContext" />
         </node>
       </node>
-      <node concept="3clFbS" id="7ij$NeBdfd4" role="3clF47">
-        <node concept="3clFbJ" id="7ij$NeBdfd5" role="3cqZAp">
-          <node concept="22lmx$" id="7ij$NeBdfd6" role="3clFbw">
-            <node concept="3clFbC" id="7ij$NeBdfd7" role="3uHU7B">
-              <node concept="2OqwBi" id="7ij$NeBdoOj" role="3uHU7B">
-                <node concept="37vLTw" id="7ij$NeBdiEn" role="2Oq$k0">
+      <node concept="3clFbS" id="61dxE2njhmj" role="3clF47">
+        <node concept="3clFbJ" id="61dxE2njhk4" role="3cqZAp">
+          <node concept="22lmx$" id="61dxE2njhk5" role="3clFbw">
+            <node concept="3clFbC" id="61dxE2njhk6" role="3uHU7B">
+              <node concept="2OqwBi" id="61dxE2njhGL" role="3uHU7B">
+                <node concept="37vLTw" id="61dxE2njhnQ" role="2Oq$k0">
                   <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="7ij$NeBdoOk" role="2OqNvi">
+                <node concept="liA8E" id="61dxE2njhGM" role="2OqNvi">
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.FIRST()" resolve="FIRST" />
                 </node>
               </node>
-              <node concept="10Nm6u" id="7ij$NeBdfd9" role="3uHU7w" />
+              <node concept="10Nm6u" id="61dxE2njhk8" role="3uHU7w" />
             </node>
-            <node concept="3clFbC" id="7ij$NeBdfda" role="3uHU7w">
-              <node concept="2OqwBi" id="7ij$NeBdpqr" role="3uHU7B">
-                <node concept="2OqwBi" id="7ij$NeBdoOA" role="2Oq$k0">
-                  <node concept="37vLTw" id="7ij$NeBdiSU" role="2Oq$k0">
+            <node concept="3clFbC" id="61dxE2njhk9" role="3uHU7w">
+              <node concept="2OqwBi" id="61dxE2njhNb" role="3uHU7B">
+                <node concept="2OqwBi" id="61dxE2njhH4" role="2Oq$k0">
+                  <node concept="37vLTw" id="61dxE2njho2" role="2Oq$k0">
                     <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
                   </node>
-                  <node concept="liA8E" id="7ij$NeBdoOB" role="2OqNvi">
+                  <node concept="liA8E" id="61dxE2njhH5" role="2OqNvi">
                     <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.actionBody()" resolve="actionBody" />
                   </node>
                 </node>
-                <node concept="liA8E" id="7ij$NeBdpqs" role="2OqNvi">
+                <node concept="liA8E" id="61dxE2njhNc" role="2OqNvi">
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$ActionBodyContext.SEMI()" resolve="SEMI" />
                 </node>
               </node>
-              <node concept="10Nm6u" id="7ij$NeBdfdd" role="3uHU7w" />
+              <node concept="10Nm6u" id="61dxE2njhkc" role="3uHU7w" />
             </node>
           </node>
-          <node concept="3clFbS" id="7ij$NeBdfdf" role="3clFbx">
-            <node concept="YS8fn" id="7ij$NeBdfdi" role="3cqZAp">
-              <node concept="2ShNRf" id="7ij$NeBdiSW" role="YScLw">
-                <node concept="1pGfFk" id="7ij$NeBdiZ7" role="2ShVmc">
+          <node concept="3clFbS" id="61dxE2njhke" role="3clFbx">
+            <node concept="YS8fn" id="61dxE2njhkh" role="3cqZAp">
+              <node concept="2ShNRf" id="61dxE2njho4" role="YScLw">
+                <node concept="1pGfFk" id="61dxE2njhuf" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="7ij$NeBdiZ8" role="37wK5m">
+                  <node concept="Xl_RD" id="61dxE2njhug" role="37wK5m">
                     <property role="Xl_RC" value="Unsupported SysML v2 construct: transition form" />
                   </node>
                 </node>
@@ -40362,81 +40341,81 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7ij$NeBdfdk" role="3cqZAp">
-          <node concept="3cpWsn" id="7ij$NeBdfdj" role="3cpWs9">
+        <node concept="3cpWs8" id="61dxE2njhkj" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2njhki" role="3cpWs9">
             <property role="TrG5h" value="decl" />
-            <node concept="3uibUv" id="7ij$NeBdfdl" role="1tU5fm">
+            <node concept="3uibUv" id="61dxE2njhkk" role="1tU5fm">
               <ref role="3uigEE" to="guqe:~SysMLv2Parser$UsageDeclarationContext" resolve="SysMLv2Parser.UsageDeclarationContext" />
             </node>
-            <node concept="2OqwBi" id="7ij$NeBdoOL" role="33vP2m">
-              <node concept="37vLTw" id="7ij$NeBdjdy" role="2Oq$k0">
+            <node concept="2OqwBi" id="61dxE2njhHf" role="33vP2m">
+              <node concept="37vLTw" id="61dxE2njhuj" role="2Oq$k0">
                 <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7ij$NeBdoOM" role="2OqNvi">
+              <node concept="liA8E" id="61dxE2njhHg" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.usageDeclaration()" resolve="usageDeclaration" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7ij$NeBdfdn" role="3cqZAp">
-          <node concept="1Wc70l" id="7ij$NeBdfdo" role="3clFbw">
-            <node concept="3y3z36" id="7ij$NeBdfdp" role="3uHU7B">
-              <node concept="37vLTw" id="7ij$NeBdfdq" role="3uHU7B">
-                <ref role="3cqZAo" node="7ij$NeBdfdj" resolve="decl" />
+        <node concept="3clFbJ" id="61dxE2njhkm" role="3cqZAp">
+          <node concept="1Wc70l" id="61dxE2njhkn" role="3clFbw">
+            <node concept="3y3z36" id="61dxE2njhko" role="3uHU7B">
+              <node concept="37vLTw" id="61dxE2njhkp" role="3uHU7B">
+                <ref role="3cqZAo" node="61dxE2njhki" resolve="decl" />
               </node>
-              <node concept="10Nm6u" id="7ij$NeBdfdr" role="3uHU7w" />
+              <node concept="10Nm6u" id="61dxE2njhkq" role="3uHU7w" />
             </node>
-            <node concept="1eOMI4" id="7ij$NeBdfdC" role="3uHU7w">
-              <node concept="22lmx$" id="7ij$NeBdfds" role="1eOMHV">
-                <node concept="22lmx$" id="7ij$NeBdfdt" role="3uHU7B">
-                  <node concept="3y3z36" id="7ij$NeBdfdu" role="3uHU7B">
-                    <node concept="2OqwBi" id="7ij$NeBdoOX" role="3uHU7B">
-                      <node concept="37vLTw" id="7ij$NeBdjrX" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdfdj" resolve="decl" />
+            <node concept="1eOMI4" id="61dxE2njhkB" role="3uHU7w">
+              <node concept="22lmx$" id="61dxE2njhkr" role="1eOMHV">
+                <node concept="22lmx$" id="61dxE2njhks" role="3uHU7B">
+                  <node concept="3y3z36" id="61dxE2njhkt" role="3uHU7B">
+                    <node concept="2OqwBi" id="61dxE2njhHr" role="3uHU7B">
+                      <node concept="37vLTw" id="61dxE2njhun" role="2Oq$k0">
+                        <ref role="3cqZAo" node="61dxE2njhki" resolve="decl" />
                       </node>
-                      <node concept="liA8E" id="7ij$NeBdoOY" role="2OqNvi">
+                      <node concept="liA8E" id="61dxE2njhHs" role="2OqNvi">
                         <ref role="37wK5l" to="guqe:~SysMLv2Parser$UsageDeclarationContext.featureSpecializationPart()" resolve="featureSpecializationPart" />
                       </node>
                     </node>
-                    <node concept="10Nm6u" id="7ij$NeBdfdw" role="3uHU7w" />
+                    <node concept="10Nm6u" id="61dxE2njhkv" role="3uHU7w" />
                   </node>
-                  <node concept="3clFbC" id="7ij$NeBdfdx" role="3uHU7w">
-                    <node concept="2OqwBi" id="7ij$NeBdoP9" role="3uHU7B">
-                      <node concept="37vLTw" id="7ij$NeBdjEo" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdfdj" resolve="decl" />
+                  <node concept="3clFbC" id="61dxE2njhkw" role="3uHU7w">
+                    <node concept="2OqwBi" id="61dxE2njhHB" role="3uHU7B">
+                      <node concept="37vLTw" id="61dxE2njhur" role="2Oq$k0">
+                        <ref role="3cqZAo" node="61dxE2njhki" resolve="decl" />
                       </node>
-                      <node concept="liA8E" id="7ij$NeBdoPa" role="2OqNvi">
+                      <node concept="liA8E" id="61dxE2njhHC" role="2OqNvi">
                         <ref role="37wK5l" to="guqe:~SysMLv2Parser$UsageDeclarationContext.identification()" resolve="identification" />
                       </node>
                     </node>
-                    <node concept="10Nm6u" id="7ij$NeBdfdz" role="3uHU7w" />
+                    <node concept="10Nm6u" id="61dxE2njhky" role="3uHU7w" />
                   </node>
                 </node>
-                <node concept="3y3z36" id="7ij$NeBdfd$" role="3uHU7w">
-                  <node concept="2OqwBi" id="7ij$NeBdpqZ" role="3uHU7B">
-                    <node concept="2OqwBi" id="7ij$NeBdoPt" role="2Oq$k0">
-                      <node concept="37vLTw" id="7ij$NeBdjSV" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdfdj" resolve="decl" />
+                <node concept="3y3z36" id="61dxE2njhkz" role="3uHU7w">
+                  <node concept="2OqwBi" id="61dxE2njhNJ" role="3uHU7B">
+                    <node concept="2OqwBi" id="61dxE2njhHV" role="2Oq$k0">
+                      <node concept="37vLTw" id="61dxE2njhuB" role="2Oq$k0">
+                        <ref role="3cqZAo" node="61dxE2njhki" resolve="decl" />
                       </node>
-                      <node concept="liA8E" id="7ij$NeBdoPu" role="2OqNvi">
+                      <node concept="liA8E" id="61dxE2njhHW" role="2OqNvi">
                         <ref role="37wK5l" to="guqe:~SysMLv2Parser$UsageDeclarationContext.identification()" resolve="identification" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="7ij$NeBdpr0" role="2OqNvi">
+                    <node concept="liA8E" id="61dxE2njhNK" role="2OqNvi">
                       <ref role="37wK5l" to="guqe:~SysMLv2Parser$IdentificationContext.LT()" resolve="LT" />
                     </node>
                   </node>
-                  <node concept="10Nm6u" id="7ij$NeBdfdB" role="3uHU7w" />
+                  <node concept="10Nm6u" id="61dxE2njhkA" role="3uHU7w" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="7ij$NeBdfdE" role="3clFbx">
-            <node concept="YS8fn" id="7ij$NeBdfdH" role="3cqZAp">
-              <node concept="2ShNRf" id="7ij$NeBdjSX" role="YScLw">
-                <node concept="1pGfFk" id="7ij$NeBdjZ8" role="2ShVmc">
+          <node concept="3clFbS" id="61dxE2njhkD" role="3clFbx">
+            <node concept="YS8fn" id="61dxE2njhkG" role="3cqZAp">
+              <node concept="2ShNRf" id="61dxE2njhuD" role="YScLw">
+                <node concept="1pGfFk" id="61dxE2njh$O" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="7ij$NeBdjZ9" role="37wK5m">
+                  <node concept="Xl_RD" id="61dxE2njh$P" role="37wK5m">
                     <property role="Xl_RC" value="Unsupported SysML v2 construct: transition declaration" />
                   </node>
                 </node>
@@ -40444,104 +40423,100 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7ij$NeBdfdJ" role="3cqZAp">
-          <node concept="3cpWsn" id="7ij$NeBdfdI" role="3cpWs9">
+        <node concept="3cpWs8" id="61dxE2njhkI" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2njhkH" role="3cpWs9">
             <property role="TrG5h" value="name" />
-            <node concept="3uibUv" id="7ij$NeBdfdK" role="1tU5fm">
+            <node concept="3uibUv" id="61dxE2njhkJ" role="1tU5fm">
               <ref role="3uigEE" to="wyt6:~String" resolve="String" />
             </node>
-            <node concept="1eOMI4" id="7ij$NeBdfdT" role="33vP2m">
-              <node concept="1eOMI4" id="7ij$NeBdfdS" role="1eOMHV">
-                <node concept="3K4zz7" id="7ij$NeBdfdR" role="1eOMHV">
-                  <node concept="3clFbC" id="7ij$NeBdfdL" role="3K4Cdx">
-                    <node concept="37vLTw" id="7ij$NeBdfdM" role="3uHU7B">
-                      <ref role="3cqZAo" node="7ij$NeBdfdj" resolve="decl" />
-                    </node>
-                    <node concept="10Nm6u" id="7ij$NeBdfdN" role="3uHU7w" />
+            <node concept="3K4zz7" id="61dxE2o40M5" role="33vP2m">
+              <node concept="3clFbC" id="61dxE2o40M6" role="3K4Cdx">
+                <node concept="37vLTw" id="61dxE2o40M7" role="3uHU7B">
+                  <ref role="3cqZAo" node="61dxE2njhki" resolve="decl" />
+                </node>
+                <node concept="10Nm6u" id="61dxE2o40M8" role="3uHU7w" />
+              </node>
+              <node concept="10Nm6u" id="61dxE2o40M9" role="3K4E3e" />
+              <node concept="2YIFZM" id="61dxE2o40Ma" role="3K4GZi">
+                <ref role="1Pybhc" node="2JnY6EHHGNO" resolve="SysMLv2ImportSyntax" />
+                <ref role="37wK5l" node="7PctyxW7pdi" resolve="declaredNameOf" />
+                <node concept="2OqwBi" id="61dxE2o40Mb" role="37wK5m">
+                  <node concept="37vLTw" id="61dxE2o40Mc" role="2Oq$k0">
+                    <ref role="3cqZAo" node="61dxE2njhki" resolve="decl" />
                   </node>
-                  <node concept="10Nm6u" id="7ij$NeBdfdO" role="3K4E3e" />
-                  <node concept="2YIFZM" id="7ij$NeBdfdP" role="3K4GZi">
-                    <ref role="37wK5l" node="7PctyxW7pdi" resolve="declaredNameOf" />
-                    <ref role="1Pybhc" node="2JnY6EHHGNO" resolve="SysMLv2ImportSyntax" />
-                    <node concept="2OqwBi" id="7ij$NeBdoPD" role="37wK5m">
-                      <node concept="37vLTw" id="7ij$NeBdkdz" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdfdj" resolve="decl" />
-                      </node>
-                      <node concept="liA8E" id="7ij$NeBdoPE" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$UsageDeclarationContext.identification()" resolve="identification" />
-                      </node>
-                    </node>
+                  <node concept="liA8E" id="61dxE2o40Md" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$UsageDeclarationContext.identification()" resolve="identification" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7ij$NeBdfdV" role="3cqZAp">
-          <node concept="3cpWsn" id="7ij$NeBdfdU" role="3cpWs9">
+        <node concept="3cpWs8" id="61dxE2njhkV" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2njhkU" role="3cpWs9">
             <property role="TrG5h" value="source" />
-            <node concept="3uibUv" id="7ij$NeBdfdW" role="1tU5fm">
+            <node concept="3uibUv" id="61dxE2njhkW" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="7ij$NeBdfdX" role="11_B2D">
+              <node concept="3uibUv" id="61dxE2njhkX" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~String" resolve="String" />
               </node>
             </node>
-            <node concept="2ShNRf" id="7ij$NeBdkd_" role="33vP2m">
-              <node concept="1pGfFk" id="7ij$NeBdkdE" role="2ShVmc">
+            <node concept="2ShNRf" id="61dxE2njh$U" role="33vP2m">
+              <node concept="1pGfFk" id="61dxE2njh$Z" role="2ShVmc">
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
-                <node concept="3uibUv" id="7ij$NeBdkdF" role="1pMfVU">
+                <node concept="3uibUv" id="61dxE2njh_0" role="1pMfVU">
                   <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="1DcWWT" id="7ij$NeBdfe0" role="3cqZAp">
-          <node concept="2OqwBi" id="7ij$NeBdprk" role="1DdaDG">
-            <node concept="2OqwBi" id="7ij$NeBdoPW" role="2Oq$k0">
-              <node concept="37vLTw" id="7ij$NeBdksd" role="2Oq$k0">
+        <node concept="1DcWWT" id="61dxE2njhl0" role="3cqZAp">
+          <node concept="2OqwBi" id="61dxE2njhOg" role="1DdaDG">
+            <node concept="2OqwBi" id="61dxE2njhIi" role="2Oq$k0">
+              <node concept="37vLTw" id="61dxE2njh_b" role="2Oq$k0">
                 <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7ij$NeBdoPX" role="2OqNvi">
+              <node concept="liA8E" id="61dxE2njhIj" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.featureChainMember()" resolve="featureChainMember" />
               </node>
             </node>
-            <node concept="liA8E" id="7ij$NeBdprl" role="2OqNvi">
+            <node concept="liA8E" id="61dxE2njhOh" role="2OqNvi">
               <ref role="37wK5l" to="guqe:~SysMLv2Parser$FeatureChainMemberContext.qualifiedName()" resolve="qualifiedName" />
             </node>
           </node>
-          <node concept="3cpWsn" id="7ij$NeBdfeg" role="1Duv9x">
+          <node concept="3cpWsn" id="61dxE2njhlg" role="1Duv9x">
             <property role="TrG5h" value="step" />
-            <node concept="3uibUv" id="7ij$NeBdfei" role="1tU5fm">
+            <node concept="3uibUv" id="61dxE2njhli" role="1tU5fm">
               <ref role="3uigEE" to="guqe:~SysMLv2Parser$QualifiedNameContext" resolve="SysMLv2Parser.QualifiedNameContext" />
             </node>
           </node>
-          <node concept="3clFbS" id="7ij$NeBdfe2" role="2LFqv$">
-            <node concept="3clFbJ" id="7ij$NeBdfe3" role="3cqZAp">
-              <node concept="3fqX7Q" id="7ij$NeBdfe4" role="3clFbw">
-                <node concept="1eOMI4" id="7ij$NeBdfe7" role="3fr31v">
-                  <node concept="2OqwBi" id="7ij$NeBdptR" role="1eOMHV">
-                    <node concept="2OqwBi" id="7ij$NeBdoQf" role="2Oq$k0">
-                      <node concept="37vLTw" id="7ij$NeBdkEK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdfeg" resolve="step" />
+          <node concept="3clFbS" id="61dxE2njhl2" role="2LFqv$">
+            <node concept="3clFbJ" id="61dxE2njhl3" role="3cqZAp">
+              <node concept="3fqX7Q" id="61dxE2njhl4" role="3clFbw">
+                <node concept="1eOMI4" id="61dxE2njhl7" role="3fr31v">
+                  <node concept="2OqwBi" id="61dxE2njhQN" role="1eOMHV">
+                    <node concept="2OqwBi" id="61dxE2njhI_" role="2Oq$k0">
+                      <node concept="37vLTw" id="61dxE2njh_n" role="2Oq$k0">
+                        <ref role="3cqZAo" node="61dxE2njhlg" resolve="step" />
                       </node>
-                      <node concept="liA8E" id="7ij$NeBdoQg" role="2OqNvi">
+                      <node concept="liA8E" id="61dxE2njhIA" role="2OqNvi">
                         <ref role="37wK5l" to="guqe:~SysMLv2Parser$QualifiedNameContext.COLON_COLON()" resolve="COLON_COLON" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="7ij$NeBdptS" role="2OqNvi">
+                    <node concept="liA8E" id="61dxE2njhQO" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbS" id="7ij$NeBdfe9" role="3clFbx">
-                <node concept="YS8fn" id="7ij$NeBdfec" role="3cqZAp">
-                  <node concept="2ShNRf" id="7ij$NeBdkEM" role="YScLw">
-                    <node concept="1pGfFk" id="7ij$NeBdkKX" role="2ShVmc">
+              <node concept="3clFbS" id="61dxE2njhl9" role="3clFbx">
+                <node concept="YS8fn" id="61dxE2njhlc" role="3cqZAp">
+                  <node concept="2ShNRf" id="61dxE2njh_p" role="YScLw">
+                    <node concept="1pGfFk" id="61dxE2njhF$" role="2ShVmc">
                       <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="7ij$NeBdkKY" role="37wK5m">
+                      <node concept="Xl_RD" id="61dxE2njhF_" role="37wK5m">
                         <property role="Xl_RC" value="Unsupported SysML v2 construct: qualified name in feature chain" />
                       </node>
                     </node>
@@ -40549,18 +40524,18 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7ij$NeBdfed" role="3cqZAp">
-              <node concept="2OqwBi" id="7ij$NeBdoSz" role="3clFbG">
-                <node concept="37vLTw" id="7ij$NeBdkZo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7ij$NeBdfdU" resolve="source" />
+            <node concept="3clFbF" id="61dxE2njhld" role="3cqZAp">
+              <node concept="2OqwBi" id="61dxE2njhKT" role="3clFbG">
+                <node concept="37vLTw" id="61dxE2njhFC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="61dxE2njhkU" resolve="source" />
                 </node>
-                <node concept="liA8E" id="7ij$NeBdoS$" role="2OqNvi">
+                <node concept="liA8E" id="61dxE2njhKU" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
-                  <node concept="2OqwBi" id="7ij$NeBdpKw" role="37wK5m">
-                    <node concept="37vLTw" id="7ij$NeBdpGi" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7ij$NeBdfeg" resolve="step" />
+                  <node concept="2OqwBi" id="61dxE2njhSV" role="37wK5m">
+                    <node concept="37vLTw" id="61dxE2njhQR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="61dxE2njhlg" resolve="step" />
                     </node>
-                    <node concept="liA8E" id="7ij$NeBdpKx" role="2OqNvi">
+                    <node concept="liA8E" id="61dxE2njhSW" role="2OqNvi">
                       <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
                     </node>
                   </node>
@@ -40569,94 +40544,94 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7ij$NeBdfem" role="3cqZAp">
-          <node concept="3cpWsn" id="7ij$NeBdfel" role="3cpWs9">
+        <node concept="3cpWs8" id="61dxE2njhlm" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2njhll" role="3cpWs9">
             <property role="TrG5h" value="target" />
-            <node concept="3uibUv" id="7ij$NeBdfen" role="1tU5fm">
+            <node concept="3uibUv" id="61dxE2njhln" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="7ij$NeBdfeo" role="11_B2D">
+              <node concept="3uibUv" id="61dxE2njhlo" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~String" resolve="String" />
               </node>
             </node>
-            <node concept="2YIFZM" id="7ij$NeBdfep" role="33vP2m">
-              <ref role="37wK5l" node="7O9Ql6zAFCt" resolve="extractConnectorEndChain" />
+            <node concept="2YIFZM" id="61dxE2njhFH" role="33vP2m">
               <ref role="1Pybhc" node="2JnY6EHHGNO" resolve="SysMLv2ImportSyntax" />
-              <node concept="2OqwBi" id="7ij$NeBdpN_" role="37wK5m">
-                <node concept="2OqwBi" id="7ij$NeBdpLa" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7ij$NeBdpGR" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7ij$NeBdoT7" role="2Oq$k0">
-                      <node concept="37vLTw" id="7ij$NeBdlec" role="2Oq$k0">
+              <ref role="37wK5l" node="7O9Ql6zAFCt" resolve="extractConnectorEndChain" />
+              <node concept="2OqwBi" id="61dxE2njhXI" role="37wK5m">
+                <node concept="2OqwBi" id="61dxE2njhW5" role="2Oq$k0">
+                  <node concept="2OqwBi" id="61dxE2njhTw" role="2Oq$k0">
+                    <node concept="2OqwBi" id="61dxE2njhRq" role="2Oq$k0">
+                      <node concept="37vLTw" id="61dxE2njhLm" role="2Oq$k0">
                         <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
                       </node>
-                      <node concept="liA8E" id="7ij$NeBdoT8" role="2OqNvi">
+                      <node concept="liA8E" id="61dxE2njhRr" role="2OqNvi">
                         <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.transitionSuccessionMember()" resolve="transitionSuccessionMember" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="7ij$NeBdpGS" role="2OqNvi">
+                    <node concept="liA8E" id="61dxE2njhTx" role="2OqNvi">
                       <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionSuccessionMemberContext.transitionSuccession()" resolve="transitionSuccession" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="7ij$NeBdpLb" role="2OqNvi">
+                  <node concept="liA8E" id="61dxE2njhW6" role="2OqNvi">
                     <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionSuccessionContext.connectorEndMember()" resolve="connectorEndMember" />
                   </node>
                 </node>
-                <node concept="liA8E" id="7ij$NeBdpNA" role="2OqNvi">
+                <node concept="liA8E" id="61dxE2njhXJ" role="2OqNvi">
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConnectorEndMemberContext.connectorEnd()" resolve="connectorEnd" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7ij$NeBdfev" role="3cqZAp">
-          <node concept="3cpWsn" id="7ij$NeBdfeu" role="3cpWs9">
+        <node concept="3cpWs8" id="61dxE2njhlv" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2njhlu" role="3cpWs9">
             <property role="TrG5h" value="transition" />
-            <node concept="3uibUv" id="7ij$NeBdfew" role="1tU5fm">
+            <node concept="3uibUv" id="61dxE2njhlw" role="1tU5fm">
               <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
             </node>
-            <node concept="2YIFZM" id="7ij$NeBdfex" role="33vP2m">
-              <ref role="37wK5l" node="7O9Ql6_QJUB" resolve="newTransitionUsage" />
+            <node concept="2YIFZM" id="61dxE2njhFO" role="33vP2m">
               <ref role="1Pybhc" node="2JnY6EHHHBr" resolve="SysMLv2ImportBehavior" />
-              <node concept="37vLTw" id="7ij$NeBdfey" role="37wK5m">
-                <ref role="3cqZAo" node="7ij$NeBdfdI" resolve="name" />
+              <ref role="37wK5l" node="7O9Ql6_QJUB" resolve="newTransitionUsage" />
+              <node concept="37vLTw" id="61dxE2njhFP" role="37wK5m">
+                <ref role="3cqZAo" node="61dxE2njhkH" resolve="name" />
               </node>
-              <node concept="37vLTw" id="7ij$NeBdfez" role="37wK5m">
-                <ref role="3cqZAo" node="7ij$NeBdfdU" resolve="source" />
+              <node concept="37vLTw" id="61dxE2njhFQ" role="37wK5m">
+                <ref role="3cqZAo" node="61dxE2njhkU" resolve="source" />
               </node>
-              <node concept="37vLTw" id="7ij$NeBdfe$" role="37wK5m">
-                <ref role="3cqZAo" node="7ij$NeBdfel" resolve="target" />
+              <node concept="37vLTw" id="61dxE2njhFR" role="37wK5m">
+                <ref role="3cqZAo" node="61dxE2njhll" resolve="target" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7ij$NeBdfe_" role="3cqZAp">
-          <node concept="3y3z36" id="7ij$NeBdfeA" role="3clFbw">
-            <node concept="2OqwBi" id="7ij$NeBdoTi" role="3uHU7B">
-              <node concept="37vLTw" id="7ij$NeBdlsB" role="2Oq$k0">
+        <node concept="3clFbJ" id="61dxE2njhl_" role="3cqZAp">
+          <node concept="3y3z36" id="61dxE2njhlA" role="3clFbw">
+            <node concept="2OqwBi" id="61dxE2njhLx" role="3uHU7B">
+              <node concept="37vLTw" id="61dxE2njhFU" role="2Oq$k0">
                 <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7ij$NeBdoTj" role="2OqNvi">
+              <node concept="liA8E" id="61dxE2njhLy" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.triggerActionMember()" resolve="triggerActionMember" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7ij$NeBdfeC" role="3uHU7w" />
+            <node concept="10Nm6u" id="61dxE2njhlC" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7ij$NeBdfeE" role="3clFbx">
-            <node concept="3clFbF" id="7ij$NeBdfeF" role="3cqZAp">
-              <node concept="2YIFZM" id="7ij$NeBdfeG" role="3clFbG">
-                <ref role="37wK5l" node="7ij$Ne_Vguj" resolve="setTransitionTrigger" />
+          <node concept="3clFbS" id="61dxE2njhlE" role="3clFbx">
+            <node concept="3clFbF" id="61dxE2njhlF" role="3cqZAp">
+              <node concept="2YIFZM" id="61dxE2njhFY" role="3clFbG">
                 <ref role="1Pybhc" node="2JnY6EHHHBr" resolve="SysMLv2ImportBehavior" />
-                <node concept="37vLTw" id="7ij$NeBdfeH" role="37wK5m">
-                  <ref role="3cqZAo" node="7ij$NeBdfeu" resolve="transition" />
+                <ref role="37wK5l" node="7ij$Ne_Vguj" resolve="setTransitionTrigger" />
+                <node concept="37vLTw" id="61dxE2njhFZ" role="37wK5m">
+                  <ref role="3cqZAo" node="61dxE2njhlu" resolve="transition" />
                 </node>
-                <node concept="2OqwBi" id="2JnY6EJ1Ux3" role="37wK5m">
-                  <node concept="Xjq3P" id="2JnY6EJ1Ux2" role="2Oq$k0" />
-                  <node concept="liA8E" id="7ij$NeBdfeI" role="2OqNvi">
+                <node concept="2OqwBi" id="61dxE2njhLG" role="37wK5m">
+                  <node concept="Xjq3P" id="61dxE2njhG1" role="2Oq$k0" />
+                  <node concept="liA8E" id="61dxE2njhLH" role="2OqNvi">
                     <ref role="37wK5l" node="7ij$Ne_VgIm" resolve="buildAcceptTrigger" />
-                    <node concept="2OqwBi" id="7ij$NeBdoTt" role="37wK5m">
-                      <node concept="37vLTw" id="7ij$NeBdlF2" role="2Oq$k0">
+                    <node concept="2OqwBi" id="61dxE2njhTF" role="37wK5m">
+                      <node concept="37vLTw" id="61dxE2njhRu" role="2Oq$k0">
                         <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
                       </node>
-                      <node concept="liA8E" id="7ij$NeBdoTu" role="2OqNvi">
+                      <node concept="liA8E" id="61dxE2njhTG" role="2OqNvi">
                         <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.triggerActionMember()" resolve="triggerActionMember" />
                       </node>
                     </node>
@@ -40666,89 +40641,89 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7ij$NeBdfeK" role="3cqZAp">
-          <node concept="3y3z36" id="7ij$NeBdfeL" role="3clFbw">
-            <node concept="2OqwBi" id="7ij$NeBdoTC" role="3uHU7B">
-              <node concept="37vLTw" id="7ij$NeBdlTt" role="2Oq$k0">
+        <node concept="3clFbJ" id="61dxE2njhlL" role="3cqZAp">
+          <node concept="3y3z36" id="61dxE2njhlM" role="3clFbw">
+            <node concept="2OqwBi" id="61dxE2njhLS" role="3uHU7B">
+              <node concept="37vLTw" id="61dxE2njhG5" role="2Oq$k0">
                 <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7ij$NeBdoTD" role="2OqNvi">
+              <node concept="liA8E" id="61dxE2njhLT" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.guardExpressionMember()" resolve="guardExpressionMember" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7ij$NeBdfeN" role="3uHU7w" />
+            <node concept="10Nm6u" id="61dxE2njhlO" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7ij$NeBdfeP" role="3clFbx">
-            <node concept="3cpWs8" id="7ij$NeBdfeR" role="3cqZAp">
-              <node concept="3cpWsn" id="7ij$NeBdfeQ" role="3cpWs9">
+          <node concept="3clFbS" id="61dxE2njhlQ" role="3clFbx">
+            <node concept="3cpWs8" id="61dxE2njhlS" role="3cqZAp">
+              <node concept="3cpWsn" id="61dxE2njhlR" role="3cpWs9">
                 <property role="TrG5h" value="guard" />
-                <node concept="3uibUv" id="7ij$NeBdfeS" role="1tU5fm">
+                <node concept="3uibUv" id="61dxE2njhlT" role="1tU5fm">
                   <ref role="3uigEE" to="guqe:~SysMLv2Parser$OwnedExpressionContext" resolve="SysMLv2Parser.OwnedExpressionContext" />
                 </node>
-                <node concept="2OqwBi" id="7ij$NeBdpHc" role="33vP2m">
-                  <node concept="2OqwBi" id="7ij$NeBdoTV" role="2Oq$k0">
-                    <node concept="37vLTw" id="7ij$NeBdm80" role="2Oq$k0">
+                <node concept="2OqwBi" id="61dxE2njhRN" role="33vP2m">
+                  <node concept="2OqwBi" id="61dxE2njhMb" role="2Oq$k0">
+                    <node concept="37vLTw" id="61dxE2njhGh" role="2Oq$k0">
                       <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
                     </node>
-                    <node concept="liA8E" id="7ij$NeBdoTW" role="2OqNvi">
+                    <node concept="liA8E" id="61dxE2njhMc" role="2OqNvi">
                       <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.guardExpressionMember()" resolve="guardExpressionMember" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="7ij$NeBdpHd" role="2OqNvi">
+                  <node concept="liA8E" id="61dxE2njhRO" role="2OqNvi">
                     <ref role="37wK5l" to="guqe:~SysMLv2Parser$GuardExpressionMemberContext.ownedExpression()" resolve="ownedExpression" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="7ij$NeBdfeV" role="3cqZAp">
-              <node concept="2YIFZM" id="7ij$NeBdfeW" role="3clFbG">
-                <ref role="37wK5l" node="7ij$NeBdfbg" resolve="setTransitionGuard" />
+            <node concept="3clFbF" id="61dxE2njhlW" role="3cqZAp">
+              <node concept="2YIFZM" id="61dxE2njhGl" role="3clFbG">
                 <ref role="1Pybhc" node="2JnY6EHHHBr" resolve="SysMLv2ImportBehavior" />
-                <node concept="37vLTw" id="7ij$NeBdfeX" role="37wK5m">
-                  <ref role="3cqZAo" node="7ij$NeBdfeu" resolve="transition" />
+                <ref role="37wK5l" node="7ij$NeBdfbg" resolve="setTransitionGuard" />
+                <node concept="37vLTw" id="61dxE2njhGm" role="37wK5m">
+                  <ref role="3cqZAo" node="61dxE2njhlu" resolve="transition" />
                 </node>
-                <node concept="2OqwBi" id="7ij$NeBdpHM" role="37wK5m">
-                  <node concept="2OqwBi" id="7ij$NeBdoUw" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7ij$NeBdmm$" role="2Oq$k0">
-                      <node concept="37vLTw" id="7ij$NeBdmmz" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdfeQ" resolve="guard" />
+                <node concept="2OqwBi" id="61dxE2njhUE" role="37wK5m">
+                  <node concept="2OqwBi" id="61dxE2njhSo" role="2Oq$k0">
+                    <node concept="2OqwBi" id="61dxE2njhMo" role="2Oq$k0">
+                      <node concept="37vLTw" id="61dxE2njhMn" role="2Oq$k0">
+                        <ref role="3cqZAo" node="61dxE2njhlR" resolve="guard" />
                       </node>
-                      <node concept="2OwXpG" id="7ij$NeBdmm_" role="2OqNvi">
+                      <node concept="2OwXpG" id="61dxE2njhMp" role="2OqNvi">
                         <ref role="2Oxat5" to="p3ir:~ParserRuleContext.start" resolve="start" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="7ij$NeBdoUx" role="2OqNvi">
+                    <node concept="liA8E" id="61dxE2njhSp" role="2OqNvi">
                       <ref role="37wK5l" to="p3ir:~Token.getInputStream()" resolve="getInputStream" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="7ij$NeBdpHN" role="2OqNvi">
+                  <node concept="liA8E" id="61dxE2njhUF" role="2OqNvi">
                     <ref role="37wK5l" to="p3ir:~CharStream.getText(org.antlr.v4.runtime.misc.Interval)" resolve="getText" />
-                    <node concept="2YIFZM" id="7ij$NeBdpHO" role="37wK5m">
+                    <node concept="2YIFZM" id="61dxE2njhUG" role="37wK5m">
                       <ref role="1Pybhc" to="2a5j:~Interval" resolve="Interval" />
                       <ref role="37wK5l" to="2a5j:~Interval.of(int,int)" resolve="of" />
-                      <node concept="2OqwBi" id="7ij$NeBdpLt" role="37wK5m">
-                        <node concept="2OqwBi" id="7ij$NeBdpHQ" role="2Oq$k0">
-                          <node concept="37vLTw" id="7ij$NeBdpHR" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7ij$NeBdfeQ" resolve="guard" />
+                      <node concept="2OqwBi" id="61dxE2njhWo" role="37wK5m">
+                        <node concept="2OqwBi" id="61dxE2njhUI" role="2Oq$k0">
+                          <node concept="37vLTw" id="61dxE2njhUJ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="61dxE2njhlR" resolve="guard" />
                           </node>
-                          <node concept="2OwXpG" id="7ij$NeBdpHS" role="2OqNvi">
+                          <node concept="2OwXpG" id="61dxE2njhUK" role="2OqNvi">
                             <ref role="2Oxat5" to="p3ir:~ParserRuleContext.start" resolve="start" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="7ij$NeBdpLu" role="2OqNvi">
+                        <node concept="liA8E" id="61dxE2njhWp" role="2OqNvi">
                           <ref role="37wK5l" to="p3ir:~Token.getStartIndex()" resolve="getStartIndex" />
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="7ij$NeBdpLK" role="37wK5m">
-                        <node concept="2OqwBi" id="7ij$NeBdpHU" role="2Oq$k0">
-                          <node concept="37vLTw" id="7ij$NeBdpHV" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7ij$NeBdfeQ" resolve="guard" />
+                      <node concept="2OqwBi" id="61dxE2njhWF" role="37wK5m">
+                        <node concept="2OqwBi" id="61dxE2njhUM" role="2Oq$k0">
+                          <node concept="37vLTw" id="61dxE2njhUN" role="2Oq$k0">
+                            <ref role="3cqZAo" node="61dxE2njhlR" resolve="guard" />
                           </node>
-                          <node concept="2OwXpG" id="7ij$NeBdpHW" role="2OqNvi">
+                          <node concept="2OwXpG" id="61dxE2njhUO" role="2OqNvi">
                             <ref role="2Oxat5" to="p3ir:~ParserRuleContext.stop" resolve="stop" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="7ij$NeBdpLL" role="2OqNvi">
+                        <node concept="liA8E" id="61dxE2njhWG" role="2OqNvi">
                           <ref role="37wK5l" to="p3ir:~Token.getStopIndex()" resolve="getStopIndex" />
                         </node>
                       </node>
@@ -40759,213 +40734,52 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7ij$NeBdff3" role="3cqZAp">
-          <node concept="3y3z36" id="7ij$NeBdff4" role="3clFbw">
-            <node concept="2OqwBi" id="7ij$NeBdpn_" role="3uHU7B">
-              <node concept="37vLTw" id="7ij$NeBdmNs" role="2Oq$k0">
+        <node concept="3clFbJ" id="61dxE2njhm4" role="3cqZAp">
+          <node concept="3y3z36" id="61dxE2njhm5" role="3clFbw">
+            <node concept="2OqwBi" id="61dxE2njhMD" role="3uHU7B">
+              <node concept="37vLTw" id="61dxE2njhGu" role="2Oq$k0">
                 <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7ij$NeBdpnA" role="2OqNvi">
+              <node concept="liA8E" id="61dxE2njhME" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.effectBehaviorMember()" resolve="effectBehaviorMember" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7ij$NeBdff6" role="3uHU7w" />
+            <node concept="10Nm6u" id="61dxE2njhm7" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7ij$NeBdff8" role="3clFbx">
-            <node concept="3cpWs8" id="7ij$NeBdffa" role="3cqZAp">
-              <node concept="3cpWsn" id="7ij$NeBdff9" role="3cpWs9">
-                <property role="TrG5h" value="perform" />
-                <node concept="3uibUv" id="7ij$NeBdffb" role="1tU5fm">
-                  <ref role="3uigEE" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext" resolve="SysMLv2Parser.TransitionPerformActionUsageContext" />
+          <node concept="3clFbS" id="61dxE2njhm9" role="3clFbx">
+            <node concept="3clFbF" id="61dxE2njhma" role="3cqZAp">
+              <node concept="2YIFZM" id="61dxE2njhGy" role="3clFbG">
+                <ref role="1Pybhc" to="5wt7:61dxE2nhiBP" resolve="TransitionEffects" />
+                <ref role="37wK5l" to="5wt7:61dxE2nhiDk" resolve="addEffect" />
+                <node concept="37vLTw" id="61dxE2njhGz" role="37wK5m">
+                  <ref role="3cqZAo" node="61dxE2njhlu" resolve="transition" />
                 </node>
-                <node concept="2OqwBi" id="7ij$NeBdpMi" role="33vP2m">
-                  <node concept="2OqwBi" id="7ij$NeBdpIH" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7ij$NeBdpo0" role="2Oq$k0">
-                      <node concept="37vLTw" id="7ij$NeBdn27" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
-                      </node>
-                      <node concept="liA8E" id="7ij$NeBdpo1" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.effectBehaviorMember()" resolve="effectBehaviorMember" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7ij$NeBdpII" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$EffectBehaviorMemberContext.effectBehaviorUsage()" resolve="effectBehaviorUsage" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="7ij$NeBdpMj" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$EffectBehaviorUsageContext.transitionPerformActionUsage()" resolve="transitionPerformActionUsage" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="7ij$NeBdfff" role="3cqZAp">
-              <node concept="22lmx$" id="7ij$NeBdffg" role="3clFbw">
-                <node concept="22lmx$" id="7ij$NeBdffh" role="3uHU7B">
-                  <node concept="22lmx$" id="7ij$NeBdffi" role="3uHU7B">
-                    <node concept="22lmx$" id="7ij$NeBdffj" role="3uHU7B">
-                      <node concept="3clFbC" id="7ij$NeBdffk" role="3uHU7B">
-                        <node concept="37vLTw" id="7ij$NeBdffl" role="3uHU7B">
-                          <ref role="3cqZAo" node="7ij$NeBdff9" resolve="perform" />
+                <node concept="2OqwBi" id="61dxE2njhMO" role="37wK5m">
+                  <node concept="Xjq3P" id="61dxE2njhG_" role="2Oq$k0" />
+                  <node concept="liA8E" id="61dxE2njhMP" role="2OqNvi">
+                    <ref role="37wK5l" node="61dxE2niJoB" resolve="buildTransitionEffect" />
+                    <node concept="2OqwBi" id="61dxE2njhX0" role="37wK5m">
+                      <node concept="2OqwBi" id="61dxE2njhVr" role="2Oq$k0">
+                        <node concept="37vLTw" id="61dxE2njhSK" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7ij$NeBdfd2" resolve="ctx" />
                         </node>
-                        <node concept="10Nm6u" id="7ij$NeBdffm" role="3uHU7w" />
-                      </node>
-                      <node concept="3y3z36" id="7ij$NeBdffn" role="3uHU7w">
-                        <node concept="2OqwBi" id="7ij$NeBdpoc" role="3uHU7B">
-                          <node concept="37vLTw" id="7ij$NeBdngy" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7ij$NeBdff9" resolve="perform" />
-                          </node>
-                          <node concept="liA8E" id="7ij$NeBdpod" role="2OqNvi">
-                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext.LBRACE()" resolve="LBRACE" />
-                          </node>
-                        </node>
-                        <node concept="10Nm6u" id="7ij$NeBdffp" role="3uHU7w" />
-                      </node>
-                    </node>
-                    <node concept="3clFbC" id="7ij$NeBdffq" role="3uHU7w">
-                      <node concept="2OqwBi" id="7ij$NeBdpJ5" role="3uHU7B">
-                        <node concept="2OqwBi" id="7ij$NeBdpow" role="2Oq$k0">
-                          <node concept="37vLTw" id="7ij$NeBdnv5" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7ij$NeBdff9" resolve="perform" />
-                          </node>
-                          <node concept="liA8E" id="7ij$NeBdpox" role="2OqNvi">
-                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext.performActionUsageDeclaration()" resolve="performActionUsageDeclaration" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="7ij$NeBdpJ6" role="2OqNvi">
-                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+                        <node concept="liA8E" id="61dxE2njhVs" role="2OqNvi">
+                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionUsageContext.effectBehaviorMember()" resolve="effectBehaviorMember" />
                         </node>
                       </node>
-                      <node concept="10Nm6u" id="7ij$NeBdfft" role="3uHU7w" />
-                    </node>
-                  </node>
-                  <node concept="3y3z36" id="7ij$NeBdffu" role="3uHU7w">
-                    <node concept="2OqwBi" id="7ij$NeBdpJt" role="3uHU7B">
-                      <node concept="2OqwBi" id="7ij$NeBdpoO" role="2Oq$k0">
-                        <node concept="37vLTw" id="7ij$NeBdnHC" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7ij$NeBdff9" resolve="perform" />
-                        </node>
-                        <node concept="liA8E" id="7ij$NeBdpoP" role="2OqNvi">
-                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext.performActionUsageDeclaration()" resolve="performActionUsageDeclaration" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="7ij$NeBdpJu" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.featureSpecializationPart()" resolve="featureSpecializationPart" />
-                      </node>
-                    </node>
-                    <node concept="10Nm6u" id="7ij$NeBdffx" role="3uHU7w" />
-                  </node>
-                </node>
-                <node concept="3y3z36" id="7ij$NeBdffy" role="3uHU7w">
-                  <node concept="2OqwBi" id="7ij$NeBdpJP" role="3uHU7B">
-                    <node concept="2OqwBi" id="7ij$NeBdpp8" role="2Oq$k0">
-                      <node concept="37vLTw" id="7ij$NeBdnWb" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdff9" resolve="perform" />
-                      </node>
-                      <node concept="liA8E" id="7ij$NeBdpp9" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext.performActionUsageDeclaration()" resolve="performActionUsageDeclaration" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7ij$NeBdpJQ" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.valuePart()" resolve="valuePart" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="7ij$NeBdff_" role="3uHU7w" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="7ij$NeBdffB" role="3clFbx">
-                <node concept="YS8fn" id="7ij$NeBdffE" role="3cqZAp">
-                  <node concept="2ShNRf" id="7ij$NeBdnWd" role="YScLw">
-                    <node concept="1pGfFk" id="7ij$NeBdo2o" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="7ij$NeBdo2p" role="37wK5m">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: transition effect form" />
+                      <node concept="liA8E" id="61dxE2njhX1" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$EffectBehaviorMemberContext.effectBehaviorUsage()" resolve="effectBehaviorUsage" />
                       </node>
                     </node>
                   </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="7ij$NeBdffG" role="3cqZAp">
-              <node concept="3cpWsn" id="7ij$NeBdffF" role="3cpWs9">
-                <property role="TrG5h" value="actionName" />
-                <node concept="3uibUv" id="7ij$NeBdffH" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                </node>
-                <node concept="2OqwBi" id="7ij$NeBdpMR" role="33vP2m">
-                  <node concept="2OqwBi" id="7ij$NeBdpKl" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7ij$NeBdpp$" role="2Oq$k0">
-                      <node concept="37vLTw" id="7ij$NeBdoh3" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7ij$NeBdff9" resolve="perform" />
-                      </node>
-                      <node concept="liA8E" id="7ij$NeBdpp_" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext.performActionUsageDeclaration()" resolve="performActionUsageDeclaration" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7ij$NeBdpKm" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="7ij$NeBdpMS" role="2OqNvi">
-                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="7ij$NeBdffL" role="3cqZAp">
-              <node concept="22lmx$" id="7ij$NeBdffM" role="3clFbw">
-                <node concept="2OqwBi" id="7ij$NeBdppO" role="3uHU7B">
-                  <node concept="37vLTw" id="7ij$NeBdovu" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7ij$NeBdffF" resolve="actionName" />
-                  </node>
-                  <node concept="liA8E" id="7ij$NeBdppP" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
-                    <node concept="Xl_RD" id="7ij$NeBdppQ" role="37wK5m">
-                      <property role="Xl_RC" value="::" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="7ij$NeBdpq5" role="3uHU7w">
-                  <node concept="37vLTw" id="7ij$NeBdoHU" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7ij$NeBdffF" resolve="actionName" />
-                  </node>
-                  <node concept="liA8E" id="7ij$NeBdpq6" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
-                    <node concept="Xl_RD" id="7ij$NeBdpq7" role="37wK5m">
-                      <property role="Xl_RC" value="." />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="7ij$NeBdffS" role="3clFbx">
-                <node concept="YS8fn" id="7ij$NeBdffV" role="3cqZAp">
-                  <node concept="2ShNRf" id="7ij$NeBdoHX" role="YScLw">
-                    <node concept="1pGfFk" id="7ij$NeBdoO8" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="7ij$NeBdoO9" role="37wK5m">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: qualified transition effect" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7ij$NeBdffW" role="3cqZAp">
-              <node concept="2YIFZM" id="7ij$NeBdffX" role="3clFbG">
-                <ref role="37wK5l" node="7ij$NeBdfc2" resolve="setTransitionEffect" />
-                <ref role="1Pybhc" node="2JnY6EHHHBr" resolve="SysMLv2ImportBehavior" />
-                <node concept="37vLTw" id="7ij$NeBdffY" role="37wK5m">
-                  <ref role="3cqZAo" node="7ij$NeBdfeu" resolve="transition" />
-                </node>
-                <node concept="37vLTw" id="7ij$NeBdffZ" role="37wK5m">
-                  <ref role="3cqZAo" node="7ij$NeBdffF" resolve="actionName" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="7ij$NeBdfg0" role="3cqZAp">
-          <node concept="37vLTw" id="7ij$NeBdfg1" role="3cqZAk">
-            <ref role="3cqZAo" node="7ij$NeBdfeu" resolve="transition" />
+        <node concept="3cpWs6" id="61dxE2njhmh" role="3cqZAp">
+          <node concept="37vLTw" id="61dxE2njhmi" role="3cqZAk">
+            <ref role="3cqZAo" node="61dxE2njhlu" resolve="transition" />
           </node>
         </node>
       </node>
@@ -43118,6 +42932,272 @@
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
       <node concept="3Tm1VV" id="2JnY6EJ1Ur4" role="1B3o_S" />
+    </node>
+    <node concept="3clFb_" id="61dxE2niJoB" role="jymVt">
+      <property role="TrG5h" value="buildTransitionEffect" />
+      <node concept="37vLTG" id="61dxE2niJoC" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="61dxE2niJoD" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$EffectBehaviorUsageContext" resolve="SysMLv2Parser.EffectBehaviorUsageContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="61dxE2niJoE" role="3clF47">
+        <node concept="3cpWs8" id="61dxE2niJoG" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2niJoF" role="3cpWs9">
+            <property role="TrG5h" value="perform" />
+            <node concept="3uibUv" id="61dxE2niJoH" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext" resolve="SysMLv2Parser.TransitionPerformActionUsageContext" />
+            </node>
+            <node concept="2OqwBi" id="61dxE2niJLW" role="33vP2m">
+              <node concept="37vLTw" id="61dxE2niJrO" role="2Oq$k0">
+                <ref role="3cqZAo" node="61dxE2niJoC" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="61dxE2niJLX" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$EffectBehaviorUsageContext.transitionPerformActionUsage()" resolve="transitionPerformActionUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="61dxE2niJoJ" role="3cqZAp">
+          <node concept="3clFbC" id="61dxE2niJoK" role="3clFbw">
+            <node concept="37vLTw" id="61dxE2niJoL" role="3uHU7B">
+              <ref role="3cqZAo" node="61dxE2niJoF" resolve="perform" />
+            </node>
+            <node concept="10Nm6u" id="61dxE2niJoM" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="61dxE2niJoQ" role="3clFbx">
+            <node concept="YS8fn" id="61dxE2niJoP" role="3cqZAp">
+              <node concept="2ShNRf" id="61dxE2niJrQ" role="YScLw">
+                <node concept="1pGfFk" id="61dxE2niJy1" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="61dxE2niJy2" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: transition accept, send or assignment effect" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="61dxE2niJoS" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2niJoR" role="3cpWs9">
+            <property role="TrG5h" value="decl" />
+            <node concept="3uibUv" id="61dxE2niJoT" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext" resolve="SysMLv2Parser.PerformActionUsageDeclarationContext" />
+            </node>
+            <node concept="2OqwBi" id="61dxE2niJM8" role="33vP2m">
+              <node concept="37vLTw" id="61dxE2niJy5" role="2Oq$k0">
+                <ref role="3cqZAo" node="61dxE2niJoF" resolve="perform" />
+              </node>
+              <node concept="liA8E" id="61dxE2niJM9" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext.performActionUsageDeclaration()" resolve="performActionUsageDeclaration" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="61dxE2niJoW" role="3cqZAp">
+          <node concept="3cpWsn" id="61dxE2niJoV" role="3cpWs9">
+            <property role="TrG5h" value="usage" />
+            <node concept="3uibUv" id="61dxE2niJoX" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="61dxE2niJoY" role="3cqZAp">
+          <node concept="3y3z36" id="61dxE2niJoZ" role="3clFbw">
+            <node concept="2OqwBi" id="61dxE2niJMk" role="3uHU7B">
+              <node concept="37vLTw" id="61dxE2niJy9" role="2Oq$k0">
+                <ref role="3cqZAo" node="61dxE2niJoR" resolve="decl" />
+              </node>
+              <node concept="liA8E" id="61dxE2niJMl" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="61dxE2niJp1" role="3uHU7w" />
+          </node>
+          <node concept="9aQIb" id="61dxE2niJps" role="9aQIa">
+            <node concept="3clFbS" id="61dxE2niJpt" role="9aQI4">
+              <node concept="3clFbF" id="61dxE2niJpu" role="3cqZAp">
+                <node concept="37vLTI" id="61dxE2niJpv" role="3clFbG">
+                  <node concept="37vLTw" id="61dxE2niJpw" role="37vLTJ">
+                    <ref role="3cqZAo" node="61dxE2niJoV" resolve="usage" />
+                  </node>
+                  <node concept="1rXfSq" id="61dxE2niJpx" role="37vLTx">
+                    <ref role="37wK5l" node="5wFVtxx9uGt" resolve="newPlainActionUsage" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="61dxE2niJpy" role="3cqZAp">
+                <node concept="2OqwBi" id="61dxE2niJMJ" role="3clFbG">
+                  <node concept="2OqwBi" id="61dxE2niJDE" role="2Oq$k0">
+                    <node concept="2OqwBi" id="61dxE2niJp_" role="2Oq$k0">
+                      <node concept="Xjq3P" id="61dxE2niJpA" role="2Oq$k0" />
+                      <node concept="2OwXpG" id="61dxE2niJpB" role="2OqNvi">
+                        <ref role="2Oxat5" node="2JnY6EHHHBt" resolve="context" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="61dxE2niJDF" role="2OqNvi">
+                      <ref role="37wK5l" node="2JnY6EIxVCX" resolve="features" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="61dxE2niJMK" role="2OqNvi">
+                    <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                    <node concept="37vLTw" id="61dxE2niJML" role="37wK5m">
+                      <ref role="3cqZAo" node="61dxE2niJoV" resolve="usage" />
+                    </node>
+                    <node concept="10Nm6u" id="61dxE2niJMM" role="37wK5m" />
+                    <node concept="2OqwBi" id="61dxE2niJOl" role="37wK5m">
+                      <node concept="37vLTw" id="61dxE2niJMO" role="2Oq$k0">
+                        <ref role="3cqZAo" node="61dxE2niJoR" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="61dxE2niJOm" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.usageDeclaration()" resolve="usageDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="61dxE2niJOx" role="37wK5m">
+                      <node concept="37vLTw" id="61dxE2niJMQ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="61dxE2niJoR" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="61dxE2niJOy" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.valuePart()" resolve="valuePart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="61dxE2niJp3" role="3clFbx">
+            <node concept="3clFbF" id="61dxE2niJp4" role="3cqZAp">
+              <node concept="2YIFZM" id="61dxE2niJDQ" role="3clFbG">
+                <ref role="1Pybhc" node="2JnY6EHHH8q" resolve="SysMLv2ImportFeatures" />
+                <ref role="37wK5l" node="7ij$NeFQBQG" resolve="rejectSpecializationAndValue" />
+                <node concept="2OqwBi" id="61dxE2niJOH" role="37wK5m">
+                  <node concept="37vLTw" id="61dxE2niJMT" role="2Oq$k0">
+                    <ref role="3cqZAo" node="61dxE2niJoR" resolve="decl" />
+                  </node>
+                  <node concept="liA8E" id="61dxE2niJOI" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.featureSpecializationPart()" resolve="featureSpecializationPart" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="61dxE2niJOT" role="37wK5m">
+                  <node concept="37vLTw" id="61dxE2niJMX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="61dxE2niJoR" resolve="decl" />
+                  </node>
+                  <node concept="liA8E" id="61dxE2niJOU" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.valuePart()" resolve="valuePart" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="61dxE2niJDT" role="37wK5m">
+                  <property role="Xl_RC" value="transition effect" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="61dxE2niJp9" role="3cqZAp">
+              <node concept="37vLTI" id="61dxE2niJpa" role="3clFbG">
+                <node concept="37vLTw" id="61dxE2niJpb" role="37vLTJ">
+                  <ref role="3cqZAo" node="61dxE2niJoV" resolve="usage" />
+                </node>
+                <node concept="1rXfSq" id="61dxE2niJpc" role="37vLTx">
+                  <ref role="37wK5l" node="7ij$NeFQBLT" resolve="newPerformActionUsage" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="61dxE2niJpd" role="3cqZAp">
+              <node concept="2OqwBi" id="61dxE2niJNo" role="3clFbG">
+                <node concept="2OqwBi" id="61dxE2niJLp" role="2Oq$k0">
+                  <node concept="2OqwBi" id="61dxE2niJpg" role="2Oq$k0">
+                    <node concept="Xjq3P" id="61dxE2niJph" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="61dxE2niJpi" role="2OqNvi">
+                      <ref role="2Oxat5" node="2JnY6EHHHBt" resolve="context" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="61dxE2niJLq" role="2OqNvi">
+                    <ref role="37wK5l" node="2JnY6EIxVCX" resolve="features" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="61dxE2niJNp" role="2OqNvi">
+                  <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                  <node concept="37vLTw" id="61dxE2niJNq" role="37wK5m">
+                    <ref role="3cqZAo" node="61dxE2niJoV" resolve="usage" />
+                  </node>
+                  <node concept="10Nm6u" id="61dxE2niJNr" role="37wK5m" />
+                  <node concept="10Nm6u" id="61dxE2niJNs" role="37wK5m" />
+                  <node concept="10Nm6u" id="61dxE2niJNt" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="61dxE2niJpn" role="3cqZAp">
+              <node concept="1rXfSq" id="61dxE2niJpo" role="3clFbG">
+                <ref role="37wK5l" node="7ij$NeFQBMD" resolve="setPerformed" />
+                <node concept="37vLTw" id="61dxE2niJpp" role="37wK5m">
+                  <ref role="3cqZAo" node="61dxE2niJoV" resolve="usage" />
+                </node>
+                <node concept="2OqwBi" id="61dxE2niJPG" role="37wK5m">
+                  <node concept="2OqwBi" id="61dxE2niJNK" role="2Oq$k0">
+                    <node concept="37vLTw" id="61dxE2niJL_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="61dxE2niJoR" resolve="decl" />
+                    </node>
+                    <node concept="liA8E" id="61dxE2niJNL" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$PerformActionUsageDeclarationContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="61dxE2niJPH" role="2OqNvi">
+                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="61dxE2niJpG" role="3cqZAp">
+          <node concept="2OqwBi" id="61dxE2niJNW" role="1DdaDG">
+            <node concept="37vLTw" id="61dxE2niJLD" role="2Oq$k0">
+              <ref role="3cqZAo" node="61dxE2niJoF" resolve="perform" />
+            </node>
+            <node concept="liA8E" id="61dxE2niJNX" role="2OqNvi">
+              <ref role="37wK5l" to="guqe:~SysMLv2Parser$TransitionPerformActionUsageContext.actionBodyItem()" resolve="actionBodyItem" />
+            </node>
+          </node>
+          <node concept="3cpWsn" id="61dxE2niJpQ" role="1Duv9x">
+            <property role="TrG5h" value="item" />
+            <node concept="3uibUv" id="61dxE2niJpS" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$ActionBodyItemContext" resolve="SysMLv2Parser.ActionBodyItemContext" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="61dxE2niJpI" role="2LFqv$">
+            <node concept="3clFbF" id="61dxE2niJpJ" role="3cqZAp">
+              <node concept="2YIFZM" id="61dxE2niJLH" role="3clFbG">
+                <ref role="1Pybhc" node="2JnY6EHHH8q" resolve="SysMLv2ImportFeatures" />
+                <ref role="37wK5l" node="5wFVtxx9mFD" resolve="addUsageContent" />
+                <node concept="37vLTw" id="61dxE2niJLI" role="37wK5m">
+                  <ref role="3cqZAo" node="61dxE2niJoV" resolve="usage" />
+                </node>
+                <node concept="2OqwBi" id="61dxE2niJO7" role="37wK5m">
+                  <node concept="Xjq3P" id="61dxE2niJLK" role="2Oq$k0" />
+                  <node concept="liA8E" id="61dxE2niJO8" role="2OqNvi">
+                    <ref role="37wK5l" node="7ij$NeE6Xl3" resolve="importActionBodyItemOf" />
+                    <node concept="37vLTw" id="61dxE2niJO9" role="37wK5m">
+                      <ref role="3cqZAo" node="61dxE2niJpQ" resolve="item" />
+                    </node>
+                    <node concept="Xl_RD" id="61dxE2niJOa" role="37wK5m">
+                      <property role="Xl_RC" value="transition effect" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="61dxE2niJpU" role="3cqZAp">
+          <node concept="37vLTw" id="61dxE2niJpV" role="3cqZAk">
+            <ref role="3cqZAo" node="61dxE2niJoV" resolve="usage" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="61dxE2niJpW" role="1B3o_S" />
+      <node concept="3uibUv" id="61dxE2niJpX" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="2JnY6EHHHHC">

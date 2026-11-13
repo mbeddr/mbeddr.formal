@@ -2484,3 +2484,26 @@ it.
 suspect a missing-required-child in a recently added **editor** aspect node (structural checkers won't
 catch it) — bisect by deleting newly added editor roots in groups and rebuilding rather than trying to
 inspect the reported node directly.
+
+## Review model code for MPS idioms, independently of passing tests (2026-11-13)
+
+In model-manipulating behavior and checking code, use native smodel operations:
+`node.isInstanceOf(Concept)`, `node.isInstanceOf(# requiredConcept)`, typed `node<>`
+and `concept<>` values, `.parent`, `.containingLink`, typed role access and native
+node construction/mutations. Use the collections language for model sequences and
+lists. Compare concept/link/property identities through native literals, not names.
+Exact concept checks use `node.concept.isExactly(Concept)` rather than a custom
+predicate or reflective `getConcept().equals(...)` chain.
+
+Do not introduce custom `is(node, concept)` adapters, including as temporary
+project-model scaffolding. Author the smodel operation directly in the AST. Plain
+Java parsing remains useful for ordinary Java algorithms; it is not a substitute
+for native model code. If an existing parsed helper is extended, review the whole
+helper and its callers rather than converting only the newly inserted branches.
+Retain OpenAPI calls where a genuine Java boundary or migration-runtime operation
+requires them, with explicit type bridges where needed.
+
+Before finishing, inspect the changed model code in MPS notation and audit for
+leftover adapters, placeholder constants, avoidable raw node traversal and string
+comparisons of metamodel identities. Then check, rebuild/reload and run relevant
+tests. Passing tests establish behavior, not idiomatic or maintainable source.

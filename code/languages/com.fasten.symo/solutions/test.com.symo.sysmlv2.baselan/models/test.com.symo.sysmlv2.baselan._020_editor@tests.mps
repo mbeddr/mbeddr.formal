@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="6" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="7" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -63,6 +63,7 @@
       </concept>
     </language>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
       <concept id="6353433212885160000" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingDefinition" flags="ng" index="66VQo" />
       <concept id="6353433212885160006" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationDefinition" flags="ng" index="66VQu" />
       <concept id="6353433212885159988" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewDefinition" flags="ng" index="66VRG" />
@@ -105,6 +106,11 @@
         <property id="8642959026948349262" name="text" index="AsIwZ" />
         <child id="8642959026948349263" name="segments" index="AsIwY" />
       </concept>
+      <concept id="6353433212932081523" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionUsage" flags="ng" index="SPUEF" />
+      <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG" />
+      <concept id="3548282586720795161" name="com.symo.sysmlv2.baselan.structure.ISysMLv2BodiedDefinition" flags="ngI" index="2T378J">
+        <child id="6353433212885159902" name="content" index="66U86" />
+      </concept>
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3">
         <property id="7267068243654035156" name="isStandard" index="31n9r4" />
       </concept>
@@ -113,6 +119,14 @@
       </concept>
       <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
         <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
+      </concept>
+      <concept id="9009971474269510567" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureChainEnd" flags="ng" index="3ldkbQ">
+        <child id="8400219579968936546" name="chain" index="3nLW_h" />
+      </concept>
+      <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
+        <child id="9009971474229543189" name="target" index="3oOLx4" />
+        <child id="9009971474229543188" name="source" index="3oOLx5" />
+        <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
@@ -126,6 +140,7 @@
         <child id="7140692429574298128" name="content" index="3w00ZY" />
       </concept>
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
+        <property id="7140692429575677861" name="usageName" index="3wdj9b" />
         <reference id="7140692429575677862" name="usage" index="3wdj98" />
       </concept>
       <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm" />
@@ -157,6 +172,9 @@
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
+      </concept>
+      <concept id="6939350625132162848" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionEffectMembership" flags="ng" index="3QFEA0">
+        <child id="6939350625132162850" name="action" index="3QFEA2" />
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
@@ -3904,6 +3922,83 @@
           </node>
         </node>
         <node concept="2h0jOo" id="3Igz0sVKb6c" role="2h0jOs" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="61dxE2nXUaZ">
+    <property role="TrG5h" value="_260_Transitions_EditInlineEffect" />
+    <property role="3YCmrE" value="Edit an owned inline transition effect through the shared action editor; contextual effect syntax omits the standalone action terminator." />
+    <node concept="1qefOq" id="61dxE2nXUb0" role="25YQCW">
+      <node concept="2h0jOr" id="61dxE2nXUb1" role="1qenE9">
+        <node concept="66U8J" id="61dxE2nXUb2" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEG" id="61dxE2nXUb3" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="61dxE2nXUb4" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="61dxE2nXUb5" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="61dxE2nXUb6" role="3oOLx5">
+              <node concept="3wdj9f" id="61dxE2nXUb7" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="61dxE2nXUb8" role="3oOLx4">
+              <node concept="3wdj9f" id="61dxE2nXUb9" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="3QFEA0" id="61dxE2nXUba" role="3QFEA6">
+              <node concept="SPUEF" id="61dxE2nXUbc" role="3QFEA2">
+                <node concept="LIFWc" id="61dxE2nXUbd" role="lGtFl">
+                  <property role="LIFWd" value="property_name" />
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="61dxE2nXUbe" role="25YQFr">
+      <node concept="2h0jOr" id="61dxE2nXUbf" role="1qenE9">
+        <node concept="66U8J" id="61dxE2nXUbg" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEG" id="61dxE2nXUbh" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="61dxE2nXUbi" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="61dxE2nXUbj" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="61dxE2nXUbk" role="3oOLx5">
+              <node concept="3wdj9f" id="61dxE2nXUbl" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="61dxE2nXUbm" role="3oOLx4">
+              <node concept="3wdj9f" id="61dxE2nXUbn" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="3QFEA0" id="61dxE2nXUbo" role="3QFEA6">
+              <node concept="SPUEF" id="61dxE2nXUbq" role="3QFEA2">
+                <property role="TrG5h" value="execute" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="61dxE2nXUbr" role="LjaKd">
+      <node concept="2TK7Tu" id="61dxE2nXUbs" role="3cqZAp">
+        <property role="2TTd_B" value="execute" />
       </node>
     </node>
   </node>
