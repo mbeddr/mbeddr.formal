@@ -18,6 +18,10 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118929411" name="build" index="YLPcu" />
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -702,6 +706,14 @@
       <property role="IQ2ns" value="5531643499102778613" />
       <property role="20kJfa" value="namespace" />
       <ref role="20lvS9" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+      <node concept="asaX9" id="61dxE2mwkdP" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Use SysMLv2QualifiedName segment chains for new references. Retained for legacy annotation qualification until its remaining consumers are migrated." />
+      </node>
+    </node>
+    <node concept="asaX9" id="61dxE2mwkdL" role="lGtFl">
+      <property role="YLPcu" value="2026-11-13" />
+      <property role="YLQ7P" value="Use SysMLv2QualifiedName segment chains for new references. Retained for legacy annotation qualification until its remaining consumers are migrated." />
     </node>
   </node>
   <node concept="PlHQZ" id="3tSWG0_KrpC">
@@ -766,17 +778,29 @@
       <property role="IQ2nx" value="6214786105868823570" />
       <property role="TrG5h" value="elementName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="61dxE2mwke9" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Legacy annotation reference representation. Migrate qualification to SysMLv2QualifiedName while preserving annotation target semantics; existing comment and metadata about references remain supported." />
+      </node>
     </node>
     <node concept="1TJgyj" id="5oZmK$Nm2Kj" role="1TKVEi">
       <property role="IQ2ns" value="6214786105868823571" />
       <property role="20kJfa" value="element" />
       <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <node concept="asaX9" id="61dxE2mwked" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Legacy annotation reference representation. Migrate qualification to SysMLv2QualifiedName while preserving annotation target semantics; existing comment and metadata about references remain supported." />
+      </node>
     </node>
     <node concept="PrWs8" id="5oZmK$Nm2Kk" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
     <node concept="RPilO" id="5oZmK$Nni8R" role="lGtFl">
       <ref role="RPilL" node="5oZmK$Nm2Kj" resolve="element" />
+    </node>
+    <node concept="asaX9" id="61dxE2mwke5" role="lGtFl">
+      <property role="YLPcu" value="2026-11-13" />
+      <property role="YLQ7P" value="Legacy annotation reference representation. Migrate qualification to SysMLv2QualifiedName while preserving annotation target semantics; existing comment and metadata about references remain supported." />
     </node>
   </node>
   <node concept="1TIwiD" id="5oZmK$Nm2Kh">
@@ -1421,14 +1445,26 @@
       <property role="TrG5h" value="target" />
       <property role="20kJfa" value="target" />
       <ref role="20lvS9" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+      <node concept="asaX9" id="61dxE2mwke1" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Legacy alias-target reference representation. Use SysMLv2QualifiedName for new qualified-reference designs; existing SysMLv2Alias.target consumers require migration before removal." />
+      </node>
     </node>
     <node concept="1TJgyi" id="6ohPCO1McQD" role="1TKVEl">
       <property role="IQ2nx" value="7354895567575683458" />
       <property role="TrG5h" value="targetName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="61dxE2mwkdX" role="lGtFl">
+        <property role="YLPcu" value="2026-11-13" />
+        <property role="YLQ7P" value="Legacy alias-target reference representation. Use SysMLv2QualifiedName for new qualified-reference designs; existing SysMLv2Alias.target consumers require migration before removal." />
+      </node>
     </node>
     <node concept="PrWs8" id="6ohPCO1W$qK" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+    <node concept="asaX9" id="61dxE2mwkdT" role="lGtFl">
+      <property role="YLPcu" value="2026-11-13" />
+      <property role="YLQ7P" value="Legacy alias-target reference representation. Use SysMLv2QualifiedName for new qualified-reference designs; existing SysMLv2Alias.target consumers require migration before removal." />
     </node>
   </node>
   <node concept="PlHQZ" id="3VmcprQOArC">
@@ -1609,6 +1645,10 @@
     <node concept="PrWs8" id="34Y23q8z9Hi" role="PzmwI">
       <ref role="PrY4T" node="34Y23q8cBCp" resolve="ISysMLv2BodiedDefinition" />
     </node>
+    <node concept="asaX9" id="61dxE2mwkeh" role="lGtFl">
+      <property role="YLPcu" value="2026-11-13" />
+      <property role="YLQ7P" value="Do not introduce new semantic inheritance through this syntax-only base. Use the appropriate semantic superclass and the ISysMLv2BodiedDefinition shared syntax interface. Retained for existing descendants pending hierarchy cleanup." />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc4ZL">
     <property role="EcuMT" value="6353433212885159921" />
@@ -1771,6 +1811,10 @@
     </node>
     <node concept="PrWs8" id="34Y23q8z9HK" role="PzmwI">
       <ref role="PrY4T" node="34Y23q8cBCq" resolve="ISysMLv2BodiedUsage" />
+    </node>
+    <node concept="asaX9" id="61dxE2mwkel" role="lGtFl">
+      <property role="YLPcu" value="2026-11-13" />
+      <property role="YLQ7P" value="Do not introduce new semantic inheritance through this syntax-only base. Use the appropriate semantic superclass and the ISysMLv2BodiedUsage shared syntax interface. Retained for existing descendants pending hierarchy cleanup." />
     </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tN">
