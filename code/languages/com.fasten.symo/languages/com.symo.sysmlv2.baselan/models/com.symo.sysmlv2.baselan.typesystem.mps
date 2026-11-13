@@ -1743,5 +1743,100 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="1AVz0_d1wu3">
+    <property role="TrG5h" value="check_SysMLv2FeatureMembership" />
+    <property role="3GE5qa" value="membership" />
+    <node concept="1YaCAy" id="1AVz0_d1wu4" role="1YuTPh">
+      <property role="TrG5h" value="member" />
+      <ref role="1YaFvo" to="5rf1:1AVz0_cCfqj" resolve="ISysMLv2FeatureMembership" />
+    </node>
+    <node concept="3clFbS" id="1AVz0_d1wu5" role="18ibNy">
+      <node concept="3clFbJ" id="1AVz0_d1wu9" role="3cqZAp">
+        <node concept="3fqX7Q" id="1AVz0_d1wua" role="3clFbw">
+          <node concept="2YIFZM" id="1AVz0_d1wub" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:1AVz0_d1hl$" resolve="Memberships" />
+            <ref role="37wK5l" to="5wt7:1AVz0_d1hql" resolve="validFeature" />
+            <node concept="1YBJjd" id="1AVz0_d1wuc" role="37wK5m">
+              <ref role="1YBMHb" node="1AVz0_d1wu4" resolve="member" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="1AVz0_d1wud" role="3clFbx">
+          <node concept="2MkqsV" id="1AVz0_d1wue" role="3cqZAp">
+            <node concept="Xl_RD" id="1AVz0_d1wuf" role="2MkJ7o">
+              <property role="Xl_RC" value="[membership-feature-kind] This membership requires a different semantic usage kind" />
+            </node>
+            <node concept="1YBJjd" id="1AVz0_d1wug" role="1urrMF">
+              <ref role="1YBMHb" node="1AVz0_d1wu4" resolve="member" />
+            </node>
+            <node concept="AMVWg" id="1BbUYD$B6Ne" role="lGtFl">
+              <property role="TrG5h" value="membership_feature_kind_problem" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1AVz0_d1wum" role="3cqZAp">
+        <node concept="3fqX7Q" id="1AVz0_d1wun" role="3clFbw">
+          <node concept="2YIFZM" id="1AVz0_d1wuo" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:1AVz0_d1hl$" resolve="Memberships" />
+            <ref role="37wK5l" to="5wt7:1AVz0_d1hrj" resolve="uniqueRole" />
+            <node concept="1YBJjd" id="1AVz0_d1wup" role="37wK5m">
+              <ref role="1YBMHb" node="1AVz0_d1wu4" resolve="member" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="1AVz0_d1wuq" role="3clFbx">
+          <node concept="2MkqsV" id="1AVz0_d1wur" role="3cqZAp">
+            <node concept="Xl_RD" id="1AVz0_d1wus" role="2MkJ7o">
+              <property role="Xl_RC" value="[membership-uniqueness] The owner permits at most one subject or objective membership of this role" />
+            </node>
+            <node concept="1YBJjd" id="1AVz0_d1wut" role="1urrMF">
+              <ref role="1YBMHb" node="1AVz0_d1wu4" resolve="member" />
+            </node>
+            <node concept="AMVWg" id="1BbUYD$B6Ni" role="lGtFl">
+              <property role="TrG5h" value="membership_uniqueness_problem" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="1AVz0_d1wuz" role="3cqZAp">
+        <node concept="1Wc70l" id="1AVz0_d1wu$" role="3clFbw">
+          <node concept="2YIFZM" id="1AVz0_d1wu_" role="3uHU7B">
+            <ref role="1Pybhc" to="5wt7:1AVz0_d1hl$" resolve="Memberships" />
+            <ref role="37wK5l" to="5wt7:1AVz0_d1hrV" resolve="requiresComposite" />
+            <node concept="1YBJjd" id="1AVz0_d1wuA" role="37wK5m">
+              <ref role="1YBMHb" node="1AVz0_d1wu4" resolve="member" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1AVz0_d1wuB" role="3uHU7w">
+            <node concept="1PxgMI" id="1AVz0_d5DKk" role="2Oq$k0">
+              <node concept="1YBJjd" id="1AVz0_d5DKl" role="1m5AlR">
+                <ref role="1YBMHb" node="1AVz0_d1wu4" resolve="member" />
+              </node>
+              <node concept="chp4Y" id="1AVz0_d5DKm" role="3oSUPX">
+                <ref role="cht4Q" to="5rf1:34Y23q90Hla" resolve="ISysMLv2Usage" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="1AVz0_d1wuD" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:fNDJb6KWD1" resolve="isReference" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="1AVz0_d1wuE" role="3clFbx">
+          <node concept="2MkqsV" id="1AVz0_d1wuF" role="3cqZAp">
+            <node concept="Xl_RD" id="1AVz0_d1wuG" role="2MkJ7o">
+              <property role="Xl_RC" value="[membership-composition] An objective or requirement-constraint member must be composite" />
+            </node>
+            <node concept="1YBJjd" id="1AVz0_d1wuH" role="1urrMF">
+              <ref role="1YBMHb" node="1AVz0_d1wu4" resolve="member" />
+            </node>
+            <node concept="AMVWg" id="1BbUYD$B6Nm" role="lGtFl">
+              <property role="TrG5h" value="membership_composition_problem" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

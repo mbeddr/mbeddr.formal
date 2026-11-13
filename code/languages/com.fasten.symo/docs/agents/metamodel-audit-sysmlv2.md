@@ -2,7 +2,7 @@
 
 The highest risk is semantic inheritance being replaced by inheritance for sharing declaration/body syntax. This affects assignability, reference checking, containment and the contracts available to extension languages. Textual round trips can remain green while these contracts are wrong.
 
-Follow-up: findings 1–5 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. The findings retain the original audit snapshot; findings 6–10 remain separate work.
+Follow-up: findings 1–6 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. The findings retain the original audit snapshot; findings 7–10 remain separate work.
 
 Scope: live `com.symo.sysmlv2.baselan.structure` at repository commit `d5def769`: 117 concept declarations, 19 interface declarations and 3 enumerations. MPS MCP snapshots covered that model and the inventories of 18 constraints roots, 7 typesystem roots and 35 behavior roots; relevant implementations were traced for the findings below. The live concept-details query supplied the inherited shapes and ancestry. Generated Java was inspected to trace checking, scoping and importer behavior; no serialized MPS XML was read. No implementation models were changed or builds/tests run for this audit.
 
@@ -77,6 +77,8 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
    **Impact:** part-oriented behavior misses actors/stakeholders, and their generic typing admits non-part definitions. `StakeholderUsage` inherits file-content eligibility but has no ownership constraint among the inspected constraints roots. Existing subject/objective owner checks also do not enforce uniqueness. Later adding another permitted subject feature kind would collide with the current single-inheritance choice.
 
    **Direction:** model membership/role separately from the underlying feature kind, or provide equivalent explicit semantic contracts. Make actors/stakeholders part-like; retain subject generality. Add owner, multiplicity and role-specific checks. A literal copy of every OMG metaclass is unnecessary, but the distinctions must remain representable.
+
+   **Implemented (2026-11-13):** explicit membership-role contracts, actor/stakeholder PartUsage ancestry, shared ownership/uniqueness/composition checks, importer adaptation and semantic regressions are implemented. Native language-version-6 migration is complete, preserving all 43,438 original consumer nodes and adapting six type wrappers. All 523 checking, scope/semantic, editor and importer regressions pass; manual maintenance utilities are excluded. See [ADR 0008](../adr/0008-membership-role-contracts.md) for representation and inherited-membership boundaries.
 
 7. **High — behavior references accept any usage, losing the distinctions among perform, exhibit, include and satisfy.**
 

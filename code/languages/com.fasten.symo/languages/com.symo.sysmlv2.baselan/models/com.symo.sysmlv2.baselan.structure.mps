@@ -1921,18 +1921,27 @@
     <property role="TrG5h" value="SysMLv2SubjectUsage" />
     <property role="R4oN_" value="SysML v2 subject member: the subject of a case or requirement" />
     <ref role="1TJDcQ" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+    <node concept="PrWs8" id="1AVz0_cCfqB" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfql" resolve="ISysMLv2SubjectMembership" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6jBzJlBLx4c">
     <property role="EcuMT" value="7270937308072120588" />
     <property role="TrG5h" value="SysMLv2ActorUsage" />
     <property role="R4oN_" value="SysML v2 actor member: an actor of a case or requirement" />
-    <ref role="1TJDcQ" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+    <ref role="1TJDcQ" node="7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+    <node concept="PrWs8" id="1AVz0_cCfqF" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfqm" resolve="ISysMLv2ActorMembership" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6jBzJlBLx4d">
     <property role="EcuMT" value="7270937308072120589" />
     <property role="TrG5h" value="SysMLv2ObjectiveUsage" />
     <property role="R4oN_" value="SysML v2 objective member: the objective requirement of a case" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+    <node concept="PrWs8" id="1AVz0_cCfqN" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfqo" resolve="ISysMLv2ObjectiveMembership" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3WfSgMNgLRx">
     <property role="EcuMT" value="4544097993703497185" />
@@ -2288,6 +2297,9 @@
       <property role="TrG5h" value="kind" />
       <ref role="AX2Wp" node="6_caVgmUmNd" resolve="SysMLv2RequirementKind" />
     </node>
+    <node concept="PrWs8" id="1AVz0_cCfqR" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfqp" resolve="ISysMLv2RequirementConstraintMembership" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6r95PavsURE">
     <property role="EcuMT" value="7406476705817406954" />
@@ -2299,6 +2311,9 @@
       <property role="20kJfa" value="referenced" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="PrWs8" id="1AVz0_cCfqV" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfqq" resolve="ISysMLv2FramedConcernMembership" />
     </node>
   </node>
   <node concept="1TIwiD" id="6r95PavsURF">
@@ -2312,12 +2327,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
+    <node concept="PrWs8" id="1AVz0_cCfqZ" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfqr" resolve="ISysMLv2RequirementVerificationMembership" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6r95PavsURG">
     <property role="EcuMT" value="7406476705817406956" />
     <property role="TrG5h" value="SysMLv2StakeholderUsage" />
     <property role="R4oN_" value="SysML v2 stakeholder member: a stakeholder of a requirement" />
-    <ref role="1TJDcQ" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+    <ref role="1TJDcQ" node="7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+    <node concept="PrWs8" id="1AVz0_cCfqJ" role="PzmwI">
+      <ref role="PrY4T" node="1AVz0_cCfqn" resolve="ISysMLv2StakeholderMembership" />
+    </node>
   </node>
   <node concept="25R3W" id="6_caVgmUmNd">
     <property role="3F6X1D" value="7587487524690947277" />
@@ -2638,6 +2659,84 @@
     <property role="TrG5h" value="ISysMLv2Ref" />
     <property role="R4oN_" value="common contract of all SysML v2 name references: effective name as written or resolved, and the resolved target element" />
     <property role="3GE5qa" value="references" />
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqj">
+    <property role="EcuMT" value="1854229643161302675" />
+    <property role="TrG5h" value="ISysMLv2FeatureMembership" />
+    <property role="R4oN_" value="Semantic projection of a feature membership carried by a usage syntax node." />
+    <property role="3GE5qa" value="membership" />
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqk">
+    <property role="EcuMT" value="1854229643161302676" />
+    <property role="TrG5h" value="ISysMLv2ParameterMembership" />
+    <property role="R4oN_" value="Parameter membership role independent of the concrete usage syntax." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqs" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqj" resolve="ISysMLv2FeatureMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfql">
+    <property role="EcuMT" value="1854229643161302677" />
+    <property role="TrG5h" value="ISysMLv2SubjectMembership" />
+    <property role="R4oN_" value="Subject membership; the owned feature may be any Usage." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqt" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqk" resolve="ISysMLv2ParameterMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqm">
+    <property role="EcuMT" value="1854229643161302678" />
+    <property role="TrG5h" value="ISysMLv2ActorMembership" />
+    <property role="R4oN_" value="Actor membership; the owned feature is a PartUsage." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqu" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqk" resolve="ISysMLv2ParameterMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqn">
+    <property role="EcuMT" value="1854229643161302679" />
+    <property role="TrG5h" value="ISysMLv2StakeholderMembership" />
+    <property role="R4oN_" value="Stakeholder membership; the owned feature is a PartUsage." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqv" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqk" resolve="ISysMLv2ParameterMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqo">
+    <property role="EcuMT" value="1854229643161302680" />
+    <property role="TrG5h" value="ISysMLv2ObjectiveMembership" />
+    <property role="R4oN_" value="Objective membership; the owned feature is a RequirementUsage." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqw" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqj" resolve="ISysMLv2FeatureMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqp">
+    <property role="EcuMT" value="1854229643161302681" />
+    <property role="TrG5h" value="ISysMLv2RequirementConstraintMembership" />
+    <property role="R4oN_" value="Assumed or required ConstraintUsage membership." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqx" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqj" resolve="ISysMLv2FeatureMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqq">
+    <property role="EcuMT" value="1854229643161302682" />
+    <property role="TrG5h" value="ISysMLv2FramedConcernMembership" />
+    <property role="R4oN_" value="Required ConcernUsage membership." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqy" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqp" resolve="ISysMLv2RequirementConstraintMembership" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1AVz0_cCfqr">
+    <property role="EcuMT" value="1854229643161302683" />
+    <property role="TrG5h" value="ISysMLv2RequirementVerificationMembership" />
+    <property role="R4oN_" value="Verified RequirementUsage membership within an objective requirement." />
+    <property role="3GE5qa" value="membership" />
+    <node concept="PrWs8" id="1AVz0_cCfqz" role="PrDN$">
+      <ref role="PrY4T" node="1AVz0_cCfqp" resolve="ISysMLv2RequirementConstraintMembership" />
+    </node>
   </node>
 </model>
 

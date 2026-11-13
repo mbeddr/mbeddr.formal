@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="5" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="6" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -2601,8 +2601,8 @@
         </node>
         <node concept="38pZT" id="3WfSgMNf2X4" role="66U86">
           <property role="TrG5h" value="a" />
-          <node concept="35c6Ng" id="3WfSgMNf2X5" role="35c6Nl">
-            <node concept="AsIwX" id="3zOS9tKAV5s" role="2_tBl3">
+          <node concept="8CKM2" id="3WfSgMNf2X5" role="3w00ZT">
+            <node concept="AsIwX" id="3zOS9tKAV5s" role="1MHwYB">
               <node concept="AsIwU" id="3zOS9tKAV5t" role="AsIwY">
                 <ref role="AsIwW" node="3WfSgMNf2X0" resolve="Person" />
               </node>
@@ -2624,8 +2624,8 @@
         </node>
         <node concept="38pZT" id="3WfSgMNf2X9" role="66U86">
           <property role="TrG5h" value="a" />
-          <node concept="35c6Ng" id="3WfSgMNf2Xa" role="35c6Nl">
-            <node concept="AsIwX" id="3zOS9tKAV5w" role="2_tBl3">
+          <node concept="8CKM2" id="3WfSgMNf2Xa" role="3w00ZT">
+            <node concept="AsIwX" id="3zOS9tKAV5w" role="1MHwYB">
               <node concept="AsIwU" id="3zOS9tKAV5x" role="AsIwY">
                 <ref role="AsIwW" node="3WfSgMNf2X0" resolve="Person" />
               </node>
@@ -2704,8 +2704,8 @@
         </node>
         <node concept="38pZT" id="3WfSgMNf2Xq" role="SPUDs">
           <property role="TrG5h" value="a" />
-          <node concept="35c6Ng" id="3WfSgMNf2Xr" role="35c6Nl">
-            <node concept="AsIwX" id="3zOS9tKAV5I" role="2_tBl3">
+          <node concept="8CKM2" id="3WfSgMNf2Xr" role="3w00ZT">
+            <node concept="AsIwX" id="3zOS9tKAV5I" role="1MHwYB">
               <node concept="AsIwU" id="3zOS9tKAV5J" role="AsIwY">
                 <ref role="AsIwW" node="3WfSgMNf2X0" resolve="Person" />
               </node>
@@ -2815,8 +2815,8 @@
         </node>
         <node concept="38pZT" id="7O9Ql6xUGq3" role="66U86">
           <property role="TrG5h" value="a" />
-          <node concept="35c6Ng" id="7O9Ql6xUGq4" role="35c6Nl">
-            <node concept="AsIwX" id="3zOS9tKAV5U" role="2_tBl3">
+          <node concept="8CKM2" id="7O9Ql6xUGq4" role="3w00ZT">
+            <node concept="AsIwX" id="3zOS9tKAV5U" role="1MHwYB">
               <node concept="AsIwU" id="3zOS9tKAV5V" role="AsIwY">
                 <ref role="AsIwW" node="7O9Ql6xUGpU" resolve="Person" />
               </node>
@@ -2858,8 +2858,8 @@
         </node>
         <node concept="38pZT" id="7O9Ql6xUGqk" role="SPUDs">
           <property role="TrG5h" value="a" />
-          <node concept="35c6Ng" id="7O9Ql6xUGql" role="35c6Nl">
-            <node concept="AsIwX" id="3zOS9tKAV62" role="2_tBl3">
+          <node concept="8CKM2" id="7O9Ql6xUGql" role="3w00ZT">
+            <node concept="AsIwX" id="3zOS9tKAV62" role="1MHwYB">
               <node concept="AsIwU" id="3zOS9tKAV63" role="AsIwY">
                 <ref role="AsIwW" node="7O9Ql6xUGpU" resolve="Person" />
               </node>
@@ -3429,21 +3429,29 @@
             <property role="3wdj9b" value="safetyConcern" />
           </node>
         </node>
-        <node concept="3TIFET" id="6_caVgouWuR" role="66U86">
-          <property role="TrG5h" value="brakeTest" />
-        </node>
-        <node concept="3TIFET" id="6_caVgouWuS" role="66U86">
-          <node concept="3wdj9f" id="6_caVgouWuT" role="3TIFEy">
-            <property role="3wdj9b" value="brakeTest" />
-          </node>
-        </node>
         <node concept="3TIFEY" id="6_caVgouWuU" role="66U86">
           <property role="TrG5h" value="driver" />
-          <node concept="35c6Ng" id="6_caVgouWuV" role="35c6Nl">
-            <node concept="AsIwX" id="3zOS9tKAV6a" role="2_tBl3">
+          <node concept="8CKM2" id="6_caVgouWuV" role="3w00ZT">
+            <node concept="AsIwX" id="3zOS9tKAV6a" role="1MHwYB">
               <node concept="AsIwU" id="3zOS9tKUFNg" role="AsIwY">
                 <ref role="AsIwW" node="6_caVgouWuG" resolve="Person" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="66VRK" id="1BbUYD$B6Nq" role="3Z9vGx">
+        <property role="TrG5h" value="BrakingVerification" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <node concept="38pZS" id="1BbUYD$B6Nr" role="66U86">
+          <property role="TrG5h" value="verifiedRequirement" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="3TIFET" id="6_caVgouWuR" role="SPUDs">
+            <property role="TrG5h" value="brakeTest" />
+          </node>
+          <node concept="3TIFET" id="6_caVgouWuS" role="SPUDs">
+            <node concept="3wdj9f" id="6_caVgouWuT" role="3TIFEy">
+              <property role="3wdj9b" value="brakeTest" />
             </node>
           </node>
         </node>

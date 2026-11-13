@@ -12,6 +12,24 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Wayland clipboard deadlock during in-process test setup (2026-11-13)
+
+A captured JVM thread dump from MPS 2026.1.2 / JBR 25.0.4.1 reports a Java-level
+lock cycle between `AWT-EventQueue-0` and an application pooled test thread:
+
+- The EDT holds the Wayland clipboard selection lock in
+  `WLClipboard.handleClipboardOffer` and waits for the `WLClipboard` monitor in
+  `SunClipboard.lostOwnershipNow`.
+- The test thread holds the clipboard monitor in `SunClipboard.setContents` and
+  waits for the selection lock in `WLClipboard.setContentsNative`, called by
+  `BaseTransformationTest.clearSystemClipboard` during `setup`.
+
+This freezes the IDE before the test body executes. A run-configuration timeout
+does not terminate the blocked test. Capture `jcmd <mps-pid> Thread.print -l`,
+check its deadlock section, and cancel pending agent clients before restarting
+MPS. Do not launch a second suite while the first is still blocked. This is
+observed platform/runtime behavior; no runtime workaround has been established.
+
 ## Specialized feature references and native migration helpers (2026-11-09)
 
 - When `Derived.content` specializes `Base.content`, concrete descendant aspects
