@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="9" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="10" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -147,6 +147,12 @@
         <child id="6353433212885159901" name="specializes" index="66U85" />
         <child id="6353433212885159902" name="content" index="66U86" />
       </concept>
+      <concept id="7243625513291015250" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionSourceMembership" flags="ng" index="31b6dk">
+        <child id="7243625513291015253" name="reference" index="31b6dj" />
+      </concept>
+      <concept id="7243625513291015251" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionSuccession" flags="ng" index="31b6dl">
+        <child id="7243625513291015254" name="target" index="31b6dg" />
+      </concept>
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3" />
       <concept id="7243625513212498628" name="com.symo.sysmlv2.baselan.structure.SysMLv2AcceptActionUsage" flags="ng" index="34u_n2">
         <child id="7243625513212498630" name="payload" index="34u_n0" />
@@ -184,8 +190,8 @@
         <child id="8400219579968936546" name="chain" index="3nLW_h" />
       </concept>
       <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
-        <child id="9009971474229543189" name="target" index="3oOLx4" />
-        <child id="9009971474229543188" name="source" index="3oOLx5" />
+        <child id="7243625513291015286" name="sourceMembership" index="31b6dK" />
+        <child id="7243625513291015290" name="succession" index="31b6dW" />
         <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
       </concept>
       <concept id="9009971474207081768" name="com.symo.sysmlv2.baselan.structure.SysMLv2SuccessionUsage" flags="ng" index="3pztLT">
@@ -2950,16 +2956,6 @@
         </node>
         <node concept="3oOLx2" id="7O9Ql6AO9zR" role="66U86">
           <property role="TrG5h" value="advance" />
-          <node concept="3ldkbQ" id="7ij$Ne$88nx" role="3oOLx5">
-            <node concept="3wdj9f" id="7ij$Ne$88ny" role="3nLW_h">
-              <ref role="3wdj98" node="7O9Ql6AO9zC" resolve="Ready" />
-            </node>
-          </node>
-          <node concept="2uUmlD" id="7O9Ql6AO9zU" role="3oOLx4">
-            <node concept="3wdj9f" id="7O9Ql6AO9zV" role="2uUmlA">
-              <ref role="3wdj98" node="7O9Ql6AO9zD" resolve="Done" />
-            </node>
-          </node>
           <node concept="3QFEA0" id="61dxE2nXVkF" role="3QFEA6">
             <node concept="SPUEF" id="61dxE2nXVkH" role="3QFEA2">
               <property role="TrG5h" value="effectWork" />
@@ -2998,6 +2994,20 @@
           <node concept="37YT6C" id="6i6xKq$8dVg" role="3QFEA6">
             <node concept="3bnkR8" id="7ij$NeBPT9S" role="37YT6D">
               <property role="3bnkR9" value="ready" />
+            </node>
+          </node>
+          <node concept="31b6dk" id="6i6xKqAHm6p" role="31b6dK">
+            <node concept="3ldkbQ" id="7ij$Ne$88nx" role="31b6dj">
+              <node concept="3wdj9f" id="7ij$Ne$88ny" role="3nLW_h">
+                <ref role="3wdj98" node="7O9Ql6AO9zC" resolve="Ready" />
+              </node>
+            </node>
+          </node>
+          <node concept="31b6dl" id="6i6xKqAHm6s" role="31b6dW">
+            <node concept="2uUmlD" id="7O9Ql6AO9zU" role="31b6dg">
+              <node concept="3wdj9f" id="7O9Ql6AO9zV" role="2uUmlA">
+                <ref role="3wdj98" node="7O9Ql6AO9zD" resolve="Done" />
+              </node>
             </node>
           </node>
         </node>

@@ -6704,7 +6704,7 @@
         <property role="3F0ifm" value="first" />
       </node>
       <node concept="3F1sOY" id="7ij$Ne_Vf4B" role="3EZMnx">
-        <ref role="1NtTu8" to="5rf1:7O9Ql6_QG4k" resolve="source" />
+        <ref role="1NtTu8" to="5rf1:6i6xKq_EIhQ" resolve="sourceMembership" />
       </node>
       <node concept="3F2HdR" id="6i6xKqx2xQX" role="3EZMnx">
         <ref role="1NtTu8" to="5rf1:61dxE2mSMWA" resolve="transitionFeatures" />
@@ -6817,7 +6817,7 @@
         <property role="3F0ifm" value="then" />
       </node>
       <node concept="3F1sOY" id="7ij$Ne_Vf4F" role="3EZMnx">
-        <ref role="1NtTu8" to="5rf1:7O9Ql6_QG4l" resolve="target" />
+        <ref role="1NtTu8" to="5rf1:6i6xKq_EIhU" resolve="succession" />
       </node>
       <node concept="3F0ifn" id="7ij$Ne_Vf4G" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -9440,6 +9440,22 @@
         <ref role="1NtTu8" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
       </node>
       <node concept="l2Vlx" id="6i6xKqzw0Ku" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6i6xKqA4i2B">
+    <property role="TrG5h" value="SysMLv2TransitionSourceMembership_Editor" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1XX52x" to="5rf1:6i6xKq_EIhi" resolve="SysMLv2TransitionSourceMembership" />
+    <node concept="3F1sOY" id="6i6xKqA4i2C" role="2wV5jI">
+      <ref role="1NtTu8" to="5rf1:6i6xKq_EIhl" resolve="reference" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6i6xKqA4i3i">
+    <property role="TrG5h" value="SysMLv2TransitionSuccession_Editor" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1XX52x" to="5rf1:6i6xKq_EIhj" resolve="SysMLv2TransitionSuccession" />
+    <node concept="3F1sOY" id="6i6xKqA4i3j" role="2wV5jI">
+      <ref role="1NtTu8" to="5rf1:6i6xKq_EIhm" resolve="target" />
     </node>
   </node>
 </model>

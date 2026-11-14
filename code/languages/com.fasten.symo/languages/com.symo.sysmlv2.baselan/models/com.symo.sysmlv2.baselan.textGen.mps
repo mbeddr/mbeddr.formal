@@ -20395,7 +20395,7 @@
             <node concept="2OqwBi" id="7ij$NeBdf7y" role="lb14g">
               <node concept="117lpO" id="7ij$NeBdf7z" role="2Oq$k0" />
               <node concept="3TrEf2" id="7ij$NeBdf7$" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7O9Ql6_QG4k" resolve="source" />
+                <ref role="3Tt5mk" to="5rf1:6i6xKq_EIhQ" resolve="sourceMembership" />
               </node>
             </node>
           </node>
@@ -20480,7 +20480,7 @@
             <node concept="2OqwBi" id="7ij$NeBdf8f" role="lb14g">
               <node concept="117lpO" id="7ij$NeBdf8g" role="2Oq$k0" />
               <node concept="3TrEf2" id="7ij$NeBdf8h" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7O9Ql6_QG4l" resolve="target" />
+                <ref role="3Tt5mk" to="5rf1:6i6xKq_EIhU" resolve="succession" />
               </node>
             </node>
           </node>
@@ -24818,6 +24818,52 @@
               <node concept="117lpO" id="6i6xKqzw0KD" role="2Oq$k0" />
               <node concept="3TrEf2" id="6i6xKqzw0KE" role="2OqNvi">
                 <ref role="3Tt5mk" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6i6xKqA4i2G">
+    <property role="TrG5h" value="SysMLv2TransitionSourceMembership_TextGen" />
+    <ref role="WuzLi" to="5rf1:6i6xKq_EIhi" resolve="SysMLv2TransitionSourceMembership" />
+    <node concept="11bSqf" id="6i6xKqA4i2H" role="11c4hB">
+      <node concept="3clFbS" id="6i6xKqA4i2I" role="2VODD2">
+        <node concept="lc7rE" id="6i6xKqA4i2J" role="3cqZAp">
+          <node concept="l9hG8" id="6i6xKqA4i2K" role="lcghm">
+            <node concept="2OqwBi" id="6i6xKqA4i2L" role="lb14g">
+              <node concept="1PxgMI" id="6i6xKqA4i2M" role="2Oq$k0">
+                <node concept="117lpO" id="6i6xKqA4i2N" role="1m5AlR" />
+                <node concept="chp4Y" id="6i6xKqA4i2O" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6i6xKq_EIhi" resolve="SysMLv2TransitionSourceMembership" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6i6xKqA4i2P" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6i6xKq_EIhl" resolve="reference" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6i6xKqA4i3n">
+    <property role="TrG5h" value="SysMLv2TransitionSuccession_TextGen" />
+    <ref role="WuzLi" to="5rf1:6i6xKq_EIhj" resolve="SysMLv2TransitionSuccession" />
+    <node concept="11bSqf" id="6i6xKqA4i3o" role="11c4hB">
+      <node concept="3clFbS" id="6i6xKqA4i3p" role="2VODD2">
+        <node concept="lc7rE" id="6i6xKqA4i3q" role="3cqZAp">
+          <node concept="l9hG8" id="6i6xKqA4i3r" role="lcghm">
+            <node concept="2OqwBi" id="6i6xKqA4i3s" role="lb14g">
+              <node concept="1PxgMI" id="6i6xKqA4i3t" role="2Oq$k0">
+                <node concept="117lpO" id="6i6xKqA4i3u" role="1m5AlR" />
+                <node concept="chp4Y" id="6i6xKqA4i3v" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6i6xKq_EIhj" resolve="SysMLv2TransitionSuccession" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6i6xKqA4i3w" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6i6xKq_EIhm" resolve="target" />
               </node>
             </node>
           </node>

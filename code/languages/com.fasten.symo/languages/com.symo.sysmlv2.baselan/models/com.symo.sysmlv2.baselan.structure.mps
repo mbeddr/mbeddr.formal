@@ -2096,6 +2096,9 @@
     <node concept="PrWs8" id="7O9Ql6$x0kE" role="PzmwI">
       <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
     </node>
+    <node concept="PrWs8" id="6i6xKq_EIi4" role="PzmwI">
+      <ref role="PrY4T" node="6i6xKq_EIhk" resolve="ISysMLv2SemanticSuccession" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7O9Ql6_QG4j">
     <property role="EcuMT" value="9009971474229543187" />
@@ -2109,15 +2112,21 @@
       <property role="IQ2ns" value="9009971474229543188" />
       <property role="20kJfa" value="source" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7O9Ql6Cf9IB" resolve="SysMLv2FeatureChainEnd" />
+      <node concept="asaX9" id="6i6xKq_EIi8" role="lGtFl">
+        <property role="YLPcu" value="2026-11-14" />
+        <property role="YLQ7P" value="Use sourceMembership.reference or succession.target. Historical endpoint slot retained only for migration; resolved endpoints must identify ActionUsages." />
+      </node>
     </node>
     <node concept="1TJgyj" id="7O9Ql6_QG4l" role="1TKVEi">
       <property role="IQ2ns" value="9009971474229543189" />
       <property role="20kJfa" value="target" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+      <node concept="asaX9" id="6i6xKq_EIic" role="lGtFl">
+        <property role="YLPcu" value="2026-11-14" />
+        <property role="YLQ7P" value="Use sourceMembership.reference or succession.target. Historical endpoint slot retained only for migration; resolved endpoints must identify ActionUsages." />
+      </node>
     </node>
     <node concept="PrWs8" id="7O9Ql6BSUW7" role="PzmwI">
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
@@ -2158,6 +2167,20 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="61dxE2mSMWv" resolve="SysMLv2TransitionFeatureMembership" />
+    </node>
+    <node concept="1TJgyj" id="6i6xKq_EIhQ" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513291015286" />
+      <property role="20kJfa" value="sourceMembership" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6i6xKq_EIhi" resolve="SysMLv2TransitionSourceMembership" />
+    </node>
+    <node concept="1TJgyj" id="6i6xKq_EIhU" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513291015290" />
+      <property role="20kJfa" value="succession" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6i6xKq_EIhj" resolve="SysMLv2TransitionSuccession" />
     </node>
   </node>
   <node concept="1TIwiD" id="7O9Ql6Cf9IB">
@@ -2924,6 +2947,43 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6i6xKq_EIhi">
+    <property role="EcuMT" value="7243625513291015250" />
+    <property role="TrG5h" value="SysMLv2TransitionSourceMembership" />
+    <property role="R4oN_" value="Non-owning transition source membership; owns the reference syntax, not the referenced action." />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6i6xKq_EIhl" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513291015253" />
+      <property role="20kJfa" value="reference" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7O9Ql6Cf9IB" resolve="SysMLv2FeatureChainEnd" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6i6xKq_EIhj">
+    <property role="EcuMT" value="7243625513291015251" />
+    <property role="TrG5h" value="SysMLv2TransitionSuccession" />
+    <property role="R4oN_" value="The succession owned by a transition. Its source derives from that transition; its target end is owned here." />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6i6xKq_EIhm" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513291015254" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="PrWs8" id="6i6xKq_EIhn" role="PzmwI">
+      <ref role="PrY4T" node="6i6xKq_EIhk" resolve="ISysMLv2SemanticSuccession" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6i6xKq_EIhk">
+    <property role="EcuMT" value="7243625513291015252" />
+    <property role="TrG5h" value="ISysMLv2SemanticSuccession" />
+    <property role="R4oN_" value="Semantic succession classification, shared by a succession usage and an owned transition succession." />
+    <property role="3GE5qa" value="connection" />
   </node>
 </model>
 

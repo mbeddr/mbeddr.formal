@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="true" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="9" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="10" />
   </languages>
   <imports />
   <registry>
@@ -141,6 +141,12 @@
         <child id="6353433212885159901" name="specializes" index="66U85" />
         <child id="6353433212885159902" name="content" index="66U86" />
       </concept>
+      <concept id="7243625513291015250" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionSourceMembership" flags="ng" index="31b6dk">
+        <child id="7243625513291015253" name="reference" index="31b6dj" />
+      </concept>
+      <concept id="7243625513291015251" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionSuccession" flags="ng" index="31b6dl">
+        <child id="7243625513291015254" name="target" index="31b6dg" />
+      </concept>
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3">
         <property id="7267068243654035156" name="isStandard" index="31n9r4" />
       </concept>
@@ -176,8 +182,8 @@
         <child id="8400219579968936546" name="chain" index="3nLW_h" />
       </concept>
       <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
-        <child id="9009971474229543189" name="target" index="3oOLx4" />
-        <child id="9009971474229543188" name="source" index="3oOLx5" />
+        <child id="7243625513291015286" name="sourceMembership" index="31b6dK" />
+        <child id="7243625513291015290" name="succession" index="31b6dW" />
         <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
       </concept>
       <concept id="9009971474207081768" name="com.symo.sysmlv2.baselan.structure.SysMLv2SuccessionUsage" flags="ng" index="3pztLT">
@@ -95317,16 +95323,6 @@
           <property role="TrG5h" value="aState" />
           <node concept="3oOLx2" id="4QEfSMD5_qk" role="SPUDs">
             <property role="TrG5h" value="aTransition" />
-            <node concept="3ldkbQ" id="4QEfSMD5_ql" role="3oOLx5">
-              <node concept="3wdj9f" id="4QEfSMD5_qm" role="3nLW_h">
-                <property role="3wdj9b" value="start" />
-              </node>
-            </node>
-            <node concept="2uUmlD" id="4QEfSMD5_qn" role="3oOLx4">
-              <node concept="3wdj9f" id="4QEfSMD5_qo" role="2uUmlA">
-                <property role="3wdj9b" value="done" />
-              </node>
-            </node>
             <node concept="34u_n3" id="6i6xKqxUBqC" role="3QFEA6">
               <node concept="34u_n2" id="6i6xKqxUBqx" role="34u_ne">
                 <node concept="35c6Nh" id="6i6xKqxUBqz" role="34u_n1">
@@ -95345,6 +95341,20 @@
                   <node concept="3xZtmk" id="6i6xKqxUBqB" role="35c6Nr">
                     <property role="3xZtlB" value="mwptYtLWO0/inout" />
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="31b6dk" id="6i6xKqAHm6v" role="31b6dK">
+              <node concept="3ldkbQ" id="4QEfSMD5_ql" role="31b6dj">
+                <node concept="3wdj9f" id="4QEfSMD5_qm" role="3nLW_h">
+                  <property role="3wdj9b" value="start" />
+                </node>
+              </node>
+            </node>
+            <node concept="31b6dl" id="6i6xKqAHm6y" role="31b6dW">
+              <node concept="2uUmlD" id="4QEfSMD5_qn" role="31b6dg">
+                <node concept="3wdj9f" id="4QEfSMD5_qo" role="2uUmlA">
+                  <property role="3wdj9b" value="done" />
                 </node>
               </node>
             </node>

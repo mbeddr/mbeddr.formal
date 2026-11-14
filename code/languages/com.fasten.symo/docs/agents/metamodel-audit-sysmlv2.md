@@ -132,6 +132,17 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
    remain; full structured expression typing and reification remain finding 10.
    See [ADR 0012](../adr/0012-transition-guard-expressions.md).
 
+   **Fourth increment implemented (2026-11-14):** a source membership owns the
+   reference syntax and an owned semantic succession carries the target. Terminal
+   endpoints require ActionUsage; intermediate path features remain general.
+   Triggered transitions require a state source. Language version 10 moves all 31
+   stored transitions' endpoints, preserving all 45,165 original consumer nodes.
+   The importer, transparent editors and serialization use the new roles.
+   All 672 checking, scope/semantic, editor and importer tests pass in the IDE.
+   The endpoint mismatch is addressed; full implicit library bindings and
+   transition parameter semantics remain explicit implementation boundaries.
+   See [ADR 0013](../adr/0013-transition-endpoint-contracts.md).
+
 9. **High — namespace capability is attached to selected usages rather than the Usage abstraction.**
 
    `Usage` implements `ScopeProvider` but not `ISysMLv2Namespace`. Selected subclasses obtain namespace capability through `ISysMLv2FeatureOwner`; `AttributeUsage`, `ReferenceUsage` and `FlowUsage` do not, even though they can contain model elements. `QualifiedName.getScope` requires an intermediate target to implement `ISysMLv2Namespace` and returns an empty scope otherwise.

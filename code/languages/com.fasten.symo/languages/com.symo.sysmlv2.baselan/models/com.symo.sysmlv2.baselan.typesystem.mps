@@ -158,6 +158,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -2234,6 +2235,110 @@
             </node>
             <node concept="AMVWg" id="6i6xKqzBnIM" role="lGtFl">
               <property role="TrG5h" value="transition_guard_syntax" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6i6xKqAb68O">
+    <property role="TrG5h" value="check_SysMLv2TransitionSourceMembership_owner" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="6i6xKqAb68P" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:6i6xKq_EIhi" resolve="SysMLv2TransitionSourceMembership" />
+    </node>
+    <node concept="3clFbS" id="6i6xKqAb696" role="18ibNy">
+      <node concept="3clFbJ" id="6i6xKqAb697" role="3cqZAp">
+        <node concept="2OqwBi" id="6i6xKqAb698" role="3clFbw">
+          <node concept="2YIFZM" id="6i6xKqAb699" role="2Oq$k0">
+            <ref role="1Pybhc" to="5wt7:6i6xKqA3ZtY" resolve="TransitionEndpoints" />
+            <ref role="37wK5l" to="5wt7:6i6xKqA3Zu1" resolve="sourceOwner" />
+            <node concept="1YBJjd" id="6i6xKqAb69a" role="37wK5m">
+              <ref role="1YBMHb" node="6i6xKqAb68P" resolve="node" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="6i6xKqAb69b" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="6i6xKqAb69c" role="3clFbx">
+          <node concept="2MkqsV" id="6i6xKqAb69d" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqAb69e" role="2MkJ7o">
+              <property role="Xl_RC" value="A transition source membership must belong to its immediate transition sourceMembership role." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqAb69f" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqAb68P" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="6i6xKqAb69g" role="lGtFl">
+              <property role="TrG5h" value="transition_source_owner" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6i6xKqAb68U">
+    <property role="TrG5h" value="check_SysMLv2TransitionSuccession_owner" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="6i6xKqAb68V" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:6i6xKq_EIhj" resolve="SysMLv2TransitionSuccession" />
+    </node>
+    <node concept="3clFbS" id="6i6xKqAb69B" role="18ibNy">
+      <node concept="3clFbJ" id="6i6xKqAb69C" role="3cqZAp">
+        <node concept="2OqwBi" id="6i6xKqAb69D" role="3clFbw">
+          <node concept="2YIFZM" id="6i6xKqAb69E" role="2Oq$k0">
+            <ref role="1Pybhc" to="5wt7:6i6xKqA3ZtY" resolve="TransitionEndpoints" />
+            <ref role="37wK5l" to="5wt7:6i6xKqA3Zu9" resolve="successionOwner" />
+            <node concept="1YBJjd" id="6i6xKqAb69F" role="37wK5m">
+              <ref role="1YBMHb" node="6i6xKqAb68V" resolve="node" />
+            </node>
+          </node>
+          <node concept="3w_OXm" id="6i6xKqAb69G" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="6i6xKqAb69H" role="3clFbx">
+          <node concept="2MkqsV" id="6i6xKqAb69I" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqAb69J" role="2MkJ7o">
+              <property role="Xl_RC" value="A transition succession must belong to its immediate transition succession role." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqAb69K" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqAb68V" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="6i6xKqAb69L" role="lGtFl">
+              <property role="TrG5h" value="transition_succession_owner" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6i6xKqAb690">
+    <property role="TrG5h" value="check_SysMLv2TransitionUsage_triggeredSource" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="6i6xKqAb691" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
+    </node>
+    <node concept="3clFbS" id="6i6xKqAb6a8" role="18ibNy">
+      <node concept="3clFbJ" id="6i6xKqAb6a9" role="3cqZAp">
+        <node concept="3fqX7Q" id="6i6xKqAb6aa" role="3clFbw">
+          <node concept="2YIFZM" id="6i6xKqAb6ab" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:6i6xKqA3ZtY" resolve="TransitionEndpoints" />
+            <ref role="37wK5l" to="5wt7:6i6xKqA3Zvy" resolve="validTriggeredSource" />
+            <node concept="1YBJjd" id="6i6xKqAb6ac" role="37wK5m">
+              <ref role="1YBMHb" node="6i6xKqAb691" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6i6xKqAb6ad" role="3clFbx">
+          <node concept="2MkqsV" id="6i6xKqAb6ae" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqAb6af" role="2MkJ7o">
+              <property role="Xl_RC" value="An accept-triggered transition requires a StateUsage as its source action." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqAb6ag" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqAb691" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="6i6xKqAb6ah" role="lGtFl">
+              <property role="TrG5h" value="transition_trigger_source" />
             </node>
           </node>
         </node>
