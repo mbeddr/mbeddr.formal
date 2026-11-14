@@ -67,6 +67,9 @@
       <concept id="6353433212885160000" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingDefinition" flags="ng" index="66VQo" />
       <concept id="6353433212885160006" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationDefinition" flags="ng" index="66VQu" />
       <concept id="6353433212885159988" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewDefinition" flags="ng" index="66VRG" />
+      <concept id="1962132711163231518" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureReferenceExpression" flags="ng" index="8d1xg">
+        <child id="1962132711163231520" name="feature" index="8d1xI" />
+      </concept>
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="types" index="8EhU5" />
@@ -4678,6 +4681,85 @@
     <node concept="3clFbS" id="6i6xKqAJySw" role="LjaKd">
       <node concept="2TK7Tu" id="6i6xKqAJySx" role="3cqZAp">
         <property role="2TTd_B" value="Target" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="1GUTkSjPX6a">
+    <property role="TrG5h" value="_300_Expressions_ReplaceLiteralWithFeatureReference" />
+    <property role="3YCmrE" value="Replace an attribute literal through completion with a feature-reference expression bound to the nearest lexical usage, despite an outer feature having the same name." />
+    <node concept="1qefOq" id="1GUTkSjPX6b" role="25YQCW">
+      <node concept="2h0jOr" id="1GUTkSjPX6c" role="1qenE9">
+        <property role="TrG5h" value="FeatureReferenceCompletion" />
+        <node concept="3Z9vzX" id="1GUTkSjPX6d" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="8EhU9" id="1GUTkSjPX6e" role="3Z9vGx">
+            <property role="TrG5h" value="sourceValue" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3ZUotO" id="1GUTkSjPX6f" role="3Z9vGx">
+            <property role="TrG5h" value="Holder" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="8EhU9" id="1GUTkSjPX6g" role="3w00ZY">
+              <property role="TrG5h" value="sourceValue" />
+              <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            </node>
+            <node concept="8EhU9" id="1GUTkSjPX6h" role="3w00ZY">
+              <property role="TrG5h" value="computed" />
+              <property role="3815tZ" value="6mYk_gjY8wN/public" />
+              <node concept="1_WVX6" id="1GUTkSjQBrx" role="2gbwqI">
+                <property role="1_WVXG" value="42" />
+                <node concept="LIFWc" id="1GUTkSjQBry" role="lGtFl">
+                  <property role="LIFWd" value="property_value" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="2" />
+                  <property role="ZRATv" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="1GUTkSjPX6m" role="25YQFr">
+      <node concept="2h0jOr" id="1GUTkSjPX6n" role="1qenE9">
+        <property role="TrG5h" value="FeatureReferenceCompletion" />
+        <node concept="3Z9vzX" id="1GUTkSjPX6o" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="8EhU9" id="1GUTkSjPX6p" role="3Z9vGx">
+            <property role="TrG5h" value="sourceValue" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="3ZUotO" id="1GUTkSjPX6q" role="3Z9vGx">
+            <property role="TrG5h" value="Holder" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="8EhU9" id="1GUTkSjPX6r" role="3w00ZY">
+              <property role="TrG5h" value="sourceValue" />
+              <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            </node>
+            <node concept="8EhU9" id="1GUTkSjPX6s" role="3w00ZY">
+              <property role="TrG5h" value="computed" />
+              <property role="3815tZ" value="6mYk_gjY8wN/public" />
+              <node concept="8d1xg" id="1GUTkSjPX6t" role="2gbwqI">
+                <node concept="3wdj9f" id="1GUTkSjPX6v" role="8d1xI">
+                  <ref role="3wdj98" node="1GUTkSjPX6r" resolve="sourceValue" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="1GUTkSjPX6w" role="LjaKd">
+      <node concept="2TK7Tu" id="1GUTkSjPX6x" role="3cqZAp">
+        <property role="2TTd_B" value="sourceValue" />
+      </node>
+      <node concept="2HxZob" id="1GUTkSjPX6y" role="3cqZAp">
+        <node concept="1iFQzN" id="1GUTkSjPX6z" role="3iKnsn">
+          <ref role="1iFR8X" to="ekwn:2XByp9s_j7f" resolve="Complete" />
+        </node>
       </node>
     </node>
   </node>

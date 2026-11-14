@@ -2,7 +2,7 @@
 
 The highest risk is semantic inheritance being replaced by inheritance for sharing declaration/body syntax. This affects assignability, reference checking, containment and the contracts available to extension languages. Textual round trips can remain green while these contracts are wrong.
 
-Follow-up: findings 1–7 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. Finding 8 now implements owned action effects, accept-action triggers and guard expressions; endpoint contracts remain. Guard result checking is conservative where expression evidence is incomplete. The findings retain the original audit snapshot; findings 9–10 remain separate work.
+Follow-up: findings 1–9 have been addressed incrementally, with the remaining boundaries documented below. Finding 10 now supports general metadata expression slots and simple feature-reference expressions; compound expression structure, complete expression typing and structured multiplicity bounds remain future work. The findings retain the original audit snapshot, followed by implementation notes and linked ADRs.
 
 Scope: live `com.symo.sysmlv2.baselan.structure` at repository commit `d5def769`: 117 concept declarations, 19 interface declarations and 3 enumerations. MPS MCP snapshots covered that model and the inventories of 18 constraints roots, 7 typesystem roots and 35 behavior roots; relevant implementations were traced for the findings below. The live concept-details query supplied the inherited shapes and ancestry. Generated Java was inspected to trace checking, scoping and importer behavior; no serialized MPS XML was read. No implementation models were changed or builds/tests run for this audit.
 
@@ -208,6 +208,16 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
     text generation delegate to the expression. Structured dependency
     reification and multiplicity-bound expressions remain future work. See
     [ADR 0017](../adr/0017-metadata-value-expressions.md).
+
+    **Second increment implemented (2026-11-14):** simple unqualified names now
+    import as `SysMLv2FeatureReferenceExpression`, containing the existing usage
+    reference. It reuses lexical/inherited/imported lookup, alias handling and
+    reification, and preserves reference identity across target renames. Shared
+    construction covers attribute/reference/occurrence values, calculation and
+    constraint results, metadata and guards. Unresolved/ambiguous names retain
+    unbound references; compound and qualified expressions remain plain text.
+    Existing stored expressions require no migration. See
+    [ADR 0018](../adr/0018-feature-reference-expressions.md).
 
 The first implementation work should repair semantic ancestry and membership contracts, then strengthen reference-kind policies against those corrected contracts. That order avoids turning valid existing actions/cases into out-of-scope targets. Use interfaces/components for syntax reuse, preserve persistent concept/feature identities where possible, and introduce migrations for changed containment or target roles. Add focused positive/negative semantic tests; importer round trips alone cannot establish these invariants. This follows the existing [ADR 0001](../adr/0001-base-languages-mirror-the-source-spec.md).
 

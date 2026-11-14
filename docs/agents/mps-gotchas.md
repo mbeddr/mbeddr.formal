@@ -12,6 +12,21 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Keep embedded DSL test strings readable in MPS (2026-11-14)
+
+`StringLiteral.value` supports literal line breaks for embedded program text.
+Writing the entire fixture with backslash-n escapes makes it display as one long
+line in the MPS editor. Use literal line breaks and normal DSL indentation for
+multiline fixtures, following the existing readable tests. Generation still emits
+valid escaped Java strings; importer and roundtrip regressions verify the content.
+Keep Java quotation-mark and backslash escapes intact when changing newline
+escapes to literal line breaks; unescaping the entire value also removes required
+quote escapes and produces `Incorrect string literal` diagnostics.
+
+`print_node` escapes string properties for display (see the entry below), so do not
+confuse that representation with the property's actual contents or copy it back
+unchanged. This matters particularly when copying or reformatting fixture strings.
+
 ## Root checks and model summaries have different result shapes (2026-11-14)
 
 `check_root_node_problems` with a model and `perRoot: true` returns root summaries
@@ -188,7 +203,7 @@ source text, then inspect generated Java or run the roundtrip test.
 ## Grammar cells, test strings, MCP timeouts (2026-11-05)
 
 - The grammar-cells generator rejects a `CellModel_Component` inside an `OptionalCell` ("Content of optional cell is not supported"); inline the component's optional cell instead.
-- `StringLiteral` values in blueprints must contain backslash-n escapes, not raw newlines, or the test string stores a literal line break.
+- `StringLiteral` values can contain backslash-n escapes or literal line breaks. For readable embedded DSL fixtures, use literal line breaks as described above; do not mistake the escaped display from `print_node` for the stored representation.
 - The MCP server can time out or disconnect under MPS load (MODAL_BLOCKED, ECONNREFUSED). After restarting MPS, reconnect with `/mcp` or restart the session. An insert that timed out may still have landed; check before retrying.
 
 ## MCP mechanics: child-mode method insert, stale callers, top-level triplets, inherited-feature editors, interface on a link target (2026-11-04)

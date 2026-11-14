@@ -3003,5 +3003,25 @@
     <property role="R4oN_" value="Semantic succession classification, shared by a succession usage and an owned transition succession." />
     <property role="3GE5qa" value="connection" />
   </node>
+  <node concept="1TIwiD" id="1GUTkSj3JOu">
+    <property role="EcuMT" value="1962132711163231518" />
+    <property role="TrG5h" value="SysMLv2FeatureReferenceExpression" />
+    <property role="R4oN_" value="Expression referencing a feature, with unresolved-name fallback" />
+    <property role="3GE5qa" value="expressions" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="t5JxF" id="1GUTkSj3JOv" role="lGtFl">
+      <property role="t5JxN" value="An expression that evaluates the referenced usage. Reuses SysMLv2UsageRef scoping and reification. Initial importer support covers one unqualified feature name." />
+    </node>
+    <node concept="1TJgyj" id="1GUTkSj3JOw" role="1TKVEi">
+      <property role="IQ2ns" value="1962132711163231520" />
+      <property role="20kJfa" value="feature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="PrWs8" id="1GUTkSj3JOx" role="PzmwI">
+      <ref role="PrY4T" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
 </model>
 

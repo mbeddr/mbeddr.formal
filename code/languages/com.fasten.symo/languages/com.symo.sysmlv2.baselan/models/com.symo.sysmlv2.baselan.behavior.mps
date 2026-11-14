@@ -12941,6 +12941,39 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="1GUTkSj3Qyo" role="3cqZAp">
+          <node concept="1Wc70l" id="1GUTkSj3Qyp" role="3clFbw">
+            <node concept="2OqwBi" id="1GUTkSj3Qyq" role="3uHU7B">
+              <node concept="37vLTw" id="1GUTkSj3Qyr" role="2Oq$k0">
+                <ref role="3cqZAo" node="61dxE2jSwgm" resolve="owner" />
+              </node>
+              <node concept="1mIQ4w" id="1GUTkSj3Qys" role="2OqNvi">
+                <node concept="chp4Y" id="1GUTkSj3Qyt" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1GUTkSj3Qyu" role="3uHU7w">
+              <node concept="359W_D" id="1GUTkSj3Qyv" role="2Oq$k0">
+                <ref role="359W_E" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                <ref role="359W_F" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+              </node>
+              <node concept="liA8E" id="1GUTkSj3Qyw" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
+                <node concept="37vLTw" id="1GUTkSj3Qyx" role="37wK5m">
+                  <ref role="3cqZAo" node="61dxE2jSwgq" resolve="role" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSj3Qyy" role="3clFbx">
+            <node concept="3cpWs6" id="1GUTkSj3Qyz" role="3cqZAp">
+              <node concept="35c_gC" id="1GUTkSj3Qy$" role="3cqZAk">
+                <ref role="35c_gD" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="61dxE2jSwg_" role="3cqZAp">
           <node concept="1Wc70l" id="61dxE2jSwgA" role="3clFbw">
             <node concept="2OqwBi" id="61dxE2lIk0f" role="3uHU7B">
@@ -25005,6 +25038,32 @@
           <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
           <node concept="3uibUv" id="6i6xKqJPhoY" role="11_B2D">
             <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1GUTkSj3Qmn">
+    <property role="TrG5h" value="SysMLv2FeatureReferenceExpression_Behavior" />
+    <property role="3GE5qa" value="expressions" />
+    <ref role="13h7C2" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+    <node concept="13hLZK" id="1GUTkSj3Qmo" role="13h7CW">
+      <node concept="3clFbS" id="1GUTkSj3Qmp" role="2VODD2">
+        <node concept="3clFbF" id="1GUTkSj3Qmq" role="3cqZAp">
+          <node concept="37vLTI" id="1GUTkSj3Qmr" role="3clFbG">
+            <node concept="2OqwBi" id="1GUTkSj3Qms" role="37vLTJ">
+              <node concept="13iPFW" id="1GUTkSj3Qmt" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1GUTkSj3Qmu" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="1GUTkSj3Qmv" role="37vLTx">
+              <node concept="3zrR0B" id="1GUTkSj3Qmw" role="2ShVmc">
+                <node concept="3Tqbb2" id="1GUTkSj3Qmx" role="3zrR0E">
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

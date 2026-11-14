@@ -24900,5 +24900,24 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="1GUTkSj3QxD">
+    <property role="TrG5h" value="SysMLv2FeatureReferenceExpression_TextGen" />
+    <property role="3GE5qa" value="expressions" />
+    <ref role="WuzLi" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+    <node concept="11bSqf" id="1GUTkSj3QxE" role="11c4hB">
+      <node concept="3clFbS" id="1GUTkSj3QxF" role="2VODD2">
+        <node concept="lc7rE" id="1GUTkSj3QxG" role="3cqZAp">
+          <node concept="l9hG8" id="1GUTkSj3QxH" role="lcghm">
+            <node concept="2OqwBi" id="1GUTkSj3QxI" role="lb14g">
+              <node concept="117lpO" id="1GUTkSj3QxJ" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1GUTkSj3QxK" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
