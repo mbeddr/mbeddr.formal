@@ -6740,15 +6740,43 @@
           </node>
         </node>
       </node>
-      <node concept="_tjkj" id="7ij$NeBdfa8" role="3EZMnx">
-        <node concept="3EZMnI" id="7ij$NeBdfap" role="_tjki">
-          <node concept="3F0ifn" id="7ij$NeBdfaq" role="3EZMnx">
-            <property role="3F0ifm" value="if" />
+      <node concept="3F2HdR" id="6i6xKqzw0K6" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:61dxE2mSMWA" resolve="transitionFeatures" />
+        <node concept="107P5z" id="6i6xKqzw0K8" role="12AuX0">
+          <node concept="3clFbS" id="6i6xKqzw0K9" role="2VODD2">
+            <node concept="3cpWs6" id="6i6xKqzw0Ka" role="3cqZAp">
+              <node concept="2OqwBi" id="6i6xKqzw0Kb" role="3cqZAk">
+                <node concept="12_Ws6" id="6i6xKqzw0Kc" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="6i6xKqzw0Kd" role="2OqNvi">
+                  <node concept="chp4Y" id="6i6xKqzw0Ke" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
-          <node concept="3F1sOY" id="7ij$NeBdfar" role="3EZMnx">
-            <ref role="1NtTu8" to="5rf1:7ij$NeAWA5P" resolve="guard" />
+        </node>
+        <node concept="4$FPG" id="6i6xKqzw0Kf" role="4_6I_">
+          <node concept="3clFbS" id="6i6xKqzw0Kg" role="2VODD2">
+            <node concept="3cpWs6" id="6i6xKqzw0Kh" role="3cqZAp">
+              <node concept="2ShNRf" id="6i6xKqzw0Ki" role="3cqZAk">
+                <node concept="3zrR0B" id="6i6xKqzw0Kj" role="2ShVmc">
+                  <node concept="3Tqbb2" id="6i6xKqzw0Kk" role="3zrR0E">
+                    <ref role="ehGHo" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
-          <node concept="l2Vlx" id="7ij$NeBdfas" role="2iSdaV" />
+        </node>
+        <node concept="3F0ifn" id="6i6xKqzw0Kl" role="2czzBI">
+          <node concept="2SqB2G" id="6i6xKq$D5_Q" role="2SqHTX">
+            <property role="TrG5h" value="transition_guard_empty" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="6i6xKqzw0Km" role="2czzBx" />
+        <node concept="2SqB2G" id="6i6xKq$D5_M" role="2SqHTX">
+          <property role="TrG5h" value="transition_guards" />
         </node>
       </node>
       <node concept="3F2HdR" id="6i6xKqx2xRa" role="3EZMnx">
@@ -9398,6 +9426,20 @@
         <ref role="1NtTu8" to="5rf1:6i6xKqwZdb8" resolve="action" />
       </node>
       <node concept="l2Vlx" id="6i6xKqx2xQT" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6i6xKqzw0Kq">
+    <property role="TrG5h" value="SysMLv2TransitionGuardMembership_Editor" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1XX52x" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+    <node concept="3EZMnI" id="6i6xKqzw0Kr" role="2wV5jI">
+      <node concept="3F0ifn" id="6i6xKqzw0Ks" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+      </node>
+      <node concept="3F1sOY" id="6i6xKqzw0Kt" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+      </node>
+      <node concept="l2Vlx" id="6i6xKqzw0Ku" role="2iSdaV" />
     </node>
   </node>
 </model>

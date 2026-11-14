@@ -465,14 +465,10 @@
       <node concept="QB0g5" id="3MUZSeGXk_k" role="QCWH9">
         <node concept="3clFbS" id="3MUZSeGXk_m" role="2VODD2">
           <node concept="3clFbF" id="3MUZSeGXk_n" role="3cqZAp">
-            <node concept="2OqwBi" id="3MUZSeGXk_p" role="3clFbG">
-              <node concept="1Wqviy" id="3MUZSeGXk_s" role="2Oq$k0" />
-              <node concept="liA8E" id="3MUZSeGXk_t" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="3MUZSeGXk_u" role="37wK5m">
-                  <property role="Xl_RC" value="\&quot;([^\&quot;\\\\]|\\\\.)*\&quot;|true|false|-?[0-9]+(\\.[0-9]+)?([eE][+-]?[0-9]+)?" />
-                </node>
-              </node>
+            <node concept="2YIFZM" id="6i6xKq$8VXA" role="3clFbG">
+              <ref role="1Pybhc" to="5wt7:6i6xKq$8VVC" resolve="LiteralExpressions" />
+              <ref role="37wK5l" to="5wt7:6i6xKq$8VVE" resolve="isSupportedLiteralToken" />
+              <node concept="1Wqviy" id="6i6xKq$8VXB" role="37wK5m" />
             </node>
           </node>
         </node>

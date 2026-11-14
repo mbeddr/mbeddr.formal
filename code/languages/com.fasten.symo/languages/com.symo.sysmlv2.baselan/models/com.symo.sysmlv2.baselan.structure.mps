@@ -2137,6 +2137,10 @@
       <property role="20kJfa" value="guard" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+      <node concept="asaX9" id="6i6xKqzvmsR" role="lGtFl">
+        <property role="YLPcu" value="2026-11-14" />
+        <property role="YLQ7P" value="Use transitionFeatures with SysMLv2TransitionGuardMembership owning a semantic expression. Retained only for migration of the historical direct guard slot." />
+      </node>
     </node>
     <node concept="1TJgyj" id="7ij$NeAWA65" role="1TKVEi">
       <property role="IQ2ns" value="8400219580029624709" />
@@ -2904,6 +2908,21 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6i6xKqwZdb4" resolve="SysMLv2AcceptActionUsage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6i6xKqzvhqI">
+    <property role="EcuMT" value="7243625513254459054" />
+    <property role="TrG5h" value="SysMLv2TransitionGuardMembership" />
+    <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="Owns a transition guard expression whose result must be exactly one Boolean (SysML 2.0 8.3.18.8)." />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" node="61dxE2mSMWv" resolve="SysMLv2TransitionFeatureMembership" />
+    <node concept="1TJgyj" id="6i6xKqzvhqJ" role="1TKVEi">
+      <property role="IQ2ns" value="7243625513254459055" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="34Y23q8cBCr" resolve="ISysMLv2SemanticExpression" />
     </node>
   </node>
 </model>

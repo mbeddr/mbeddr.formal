@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="8" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="9" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -125,6 +125,9 @@
         <child id="284754763120096648" name="value" index="34b1dU" />
         <child id="284754763101489705" name="direction" index="35c6Nr" />
       </concept>
+      <concept id="7243625513254459054" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionGuardMembership" flags="ng" index="37YT6C">
+        <child id="7243625513254459055" name="expression" index="37YT6D" />
+      </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
@@ -141,6 +144,9 @@
         <child id="9009971474229543189" name="target" index="3oOLx4" />
         <child id="9009971474229543188" name="source" index="3oOLx5" />
         <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
+      </concept>
+      <concept id="8400219580107005961" name="com.symo.sysmlv2.baselan.structure.SysMLv2PerformActionUsage" flags="ng" index="3v7bcU">
+        <child id="8400219580107005965" name="performed" index="3v7bcY" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
@@ -4209,6 +4215,291 @@
     <node concept="3clFbS" id="6i6xKqxVvsF" role="LjaKd">
       <node concept="2TK7Tu" id="6i6xKqxVvsG" role="3cqZAp">
         <property role="2TTd_B" value="receiver" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6i6xKq$D5_U">
+    <property role="TrG5h" value="_290_Transitions_EditGuard" />
+    <property role="3YCmrE" value="Insert or edit a guard through its dedicated filtered membership list; trigger and effect storage order may differ from clause order." />
+    <node concept="1qefOq" id="6i6xKq$D5_V" role="25YQCW">
+      <node concept="2h0jOr" id="6i6xKq$D5_W" role="1qenE9">
+        <node concept="66U8J" id="6i6xKq$D5_X" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEF" id="6i6xKq$D5_Y" role="66U86">
+            <property role="TrG5h" value="run" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5_Z" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5A0" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKq$D5A1" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKq$D5A2" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKq$D5A3" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKq$D5A4" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKq$D5A5" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="37YT6C" id="6i6xKq$D5A6" role="3QFEA6">
+              <node concept="3bnkR8" id="6i6xKq$D5A8" role="37YT6D">
+                <node concept="LIFWc" id="6i6xKq$D5A9" role="lGtFl">
+                  <property role="LIFWd" value="property_expressionText" />
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6i6xKq$D5Aa" role="25YQFr">
+      <node concept="2h0jOr" id="6i6xKq$D5Ab" role="1qenE9">
+        <node concept="66U8J" id="6i6xKq$D5Ac" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEF" id="6i6xKq$D5Ad" role="66U86">
+            <property role="TrG5h" value="run" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5Ae" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5Af" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKq$D5Ag" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKq$D5Ah" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKq$D5Ai" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKq$D5Aj" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKq$D5Ak" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="37YT6C" id="6i6xKq$D5Al" role="3QFEA6">
+              <node concept="3bnkR8" id="6i6xKq$D5An" role="37YT6D">
+                <property role="3bnkR9" value="ready" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6i6xKq$D5Ao" role="LjaKd">
+      <node concept="2TK7Tu" id="6i6xKq$D5Ap" role="3cqZAp">
+        <property role="2TTd_B" value="ready" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6i6xKq$D5Aq">
+    <property role="TrG5h" value="_300_Transitions_EditGuardWithTriggerAndEffect" />
+    <property role="3YCmrE" value="Insert or edit a guard through its dedicated filtered membership list; trigger and effect storage order may differ from clause order." />
+    <node concept="1qefOq" id="6i6xKq$D5Ar" role="25YQCW">
+      <node concept="2h0jOr" id="6i6xKq$D5As" role="1qenE9">
+        <node concept="66U8J" id="6i6xKq$D5At" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEF" id="6i6xKq$D5Au" role="66U86">
+            <property role="TrG5h" value="run" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5Av" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5Aw" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKq$D5Ax" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKq$D5Ay" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKq$D5Az" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKq$D5A$" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKq$D5A_" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="3QFEA0" id="6i6xKq$D5AA" role="3QFEA6">
+              <node concept="3v7bcU" id="6i6xKq$D5AC" role="3QFEA2">
+                <node concept="3wdj9f" id="6i6xKq$D5AD" role="3v7bcY">
+                  <property role="3wdj9b" value="run" />
+                </node>
+              </node>
+            </node>
+            <node concept="37YT6C" id="6i6xKq$D5AE" role="3QFEA6">
+              <node concept="3bnkR8" id="6i6xKq$D5AG" role="37YT6D">
+                <node concept="LIFWc" id="6i6xKq$D5AH" role="lGtFl">
+                  <property role="LIFWd" value="property_expressionText" />
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="34u_n3" id="6i6xKq$D5AI" role="3QFEA6">
+              <node concept="34u_n2" id="6i6xKq$D5AO" role="34u_ne">
+                <node concept="35c6Nh" id="6i6xKq$D5AT" role="34u_n0">
+                  <property role="TrG5h" value="eventPayload" />
+                  <node concept="3xZtmk" id="6i6xKq$D5AU" role="35c6Nr">
+                    <property role="3xZtlB" value="mwptYtLWO0/inout" />
+                  </node>
+                </node>
+                <node concept="35c6Nh" id="6i6xKq$D5AV" role="34u_n1">
+                  <node concept="3xZtmk" id="6i6xKq$D5AW" role="35c6Nr" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6i6xKq$D5AX" role="25YQFr">
+      <node concept="2h0jOr" id="6i6xKq$D5AY" role="1qenE9">
+        <node concept="66U8J" id="6i6xKq$D5AZ" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEF" id="6i6xKq$D5B0" role="66U86">
+            <property role="TrG5h" value="run" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5B1" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5B2" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKq$D5B3" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKq$D5B4" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKq$D5B5" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKq$D5B6" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKq$D5B7" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="3QFEA0" id="6i6xKq$D5B8" role="3QFEA6">
+              <node concept="3v7bcU" id="6i6xKq$D5Ba" role="3QFEA2">
+                <node concept="3wdj9f" id="6i6xKq$D5Bb" role="3v7bcY">
+                  <property role="3wdj9b" value="run" />
+                </node>
+              </node>
+            </node>
+            <node concept="37YT6C" id="6i6xKq$D5Bc" role="3QFEA6">
+              <node concept="3bnkR8" id="6i6xKq$D5Be" role="37YT6D">
+                <property role="3bnkR9" value="ready" />
+              </node>
+            </node>
+            <node concept="34u_n3" id="6i6xKq$D5Bf" role="3QFEA6">
+              <node concept="34u_n2" id="6i6xKq$D5Bl" role="34u_ne">
+                <node concept="35c6Nh" id="6i6xKq$D5Bq" role="34u_n0">
+                  <property role="TrG5h" value="eventPayload" />
+                  <node concept="3xZtmk" id="6i6xKq$D5Br" role="35c6Nr">
+                    <property role="3xZtlB" value="mwptYtLWO0/inout" />
+                  </node>
+                </node>
+                <node concept="35c6Nh" id="6i6xKq$D5Bs" role="34u_n1">
+                  <node concept="3xZtmk" id="6i6xKq$D5Bt" role="35c6Nr" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6i6xKq$D5Bu" role="LjaKd">
+      <node concept="2TK7Tu" id="6i6xKq$D5Bv" role="3cqZAp">
+        <property role="2TTd_B" value="ready" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6i6xKq$D5Bw">
+    <property role="TrG5h" value="_310_Transitions_InsertGuard" />
+    <property role="3YCmrE" value="Insert or edit a guard through its dedicated filtered membership list; trigger and effect storage order may differ from clause order." />
+    <node concept="1qefOq" id="6i6xKq$D5Bx" role="25YQCW">
+      <node concept="2h0jOr" id="6i6xKq$D5By" role="1qenE9">
+        <node concept="66U8J" id="6i6xKq$D5Bz" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEF" id="6i6xKq$D5B$" role="66U86">
+            <property role="TrG5h" value="run" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5B_" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5BA" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKq$D5BB" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKq$D5BC" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKq$D5BD" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKq$D5BE" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKq$D5BF" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="LIFWc" id="6i6xKq$D5BG" role="lGtFl">
+              <property role="LIFWd" value="transition_guard_empty" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6i6xKq$D5BH" role="25YQFr">
+      <node concept="2h0jOr" id="6i6xKq$D5BI" role="1qenE9">
+        <node concept="66U8J" id="6i6xKq$D5BJ" role="2h0jOs">
+          <property role="TrG5h" value="Holder" />
+          <node concept="SPUEF" id="6i6xKq$D5BK" role="66U86">
+            <property role="TrG5h" value="run" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5BL" role="66U86">
+            <property role="TrG5h" value="a" />
+          </node>
+          <node concept="SPUEG" id="6i6xKq$D5BM" role="66U86">
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="3oOLx2" id="6i6xKq$D5BN" role="66U86">
+            <property role="TrG5h" value="move" />
+            <node concept="3ldkbQ" id="6i6xKq$D5BO" role="3oOLx5">
+              <node concept="3wdj9f" id="6i6xKq$D5BP" role="3nLW_h">
+                <property role="3wdj9b" value="a" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="6i6xKq$D5BQ" role="3oOLx4">
+              <node concept="3wdj9f" id="6i6xKq$D5BR" role="2uUmlA">
+                <property role="3wdj9b" value="b" />
+              </node>
+            </node>
+            <node concept="37YT6C" id="6i6xKq$D5BS" role="3QFEA6">
+              <node concept="3bnkR8" id="6i6xKq$D5BU" role="37YT6D" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6i6xKq$D5BV" role="LjaKd">
+      <node concept="2HxZob" id="6i6xKq$D5BW" role="3cqZAp">
+        <node concept="3iKlGA" id="6i6xKq$D5BX" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
+        </node>
       </node>
     </node>
   </node>

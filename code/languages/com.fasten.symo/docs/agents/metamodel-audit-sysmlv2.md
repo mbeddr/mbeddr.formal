@@ -2,7 +2,7 @@
 
 The highest risk is semantic inheritance being replaced by inheritance for sharing declaration/body syntax. This affects assignability, reference checking, containment and the contracts available to extension languages. Textual round trips can remain green while these contracts are wrong.
 
-Follow-up: findings 1–7 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. Finding 8 now implements owned action effects and accept-action triggers; guard and endpoint contracts remain. The findings retain the original audit snapshot; findings 9–10 remain separate work.
+Follow-up: findings 1–7 have been addressed; see [ADR 0003](../adr/0003-semantic-inheritance-and-shared-syntax.md) and the implementation notes and linked ADRs below. Finding 8 now implements owned action effects, accept-action triggers and guard expressions; endpoint contracts remain. Guard result checking is conservative where expression evidence is incomplete. The findings retain the original audit snapshot; findings 9–10 remain separate work.
 
 Scope: live `com.symo.sysmlv2.baselan.structure` at repository commit `d5def769`: 117 concept declarations, 19 interface declarations and 3 enumerations. MPS MCP snapshots covered that model and the inventories of 18 constraints roots, 7 typesystem roots and 35 behavior roots; relevant implementations were traced for the findings below. The live concept-details query supplied the inherited shapes and ancestry. Generated Java was inspected to trace checking, scoping and importer behavior; no serialized MPS XML was read. No implementation models were changed or builds/tests run for this audit.
 
@@ -121,6 +121,16 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
    All 602 checking, scope/semantic, editor and importer tests pass in the IDE.
    Guard and endpoint changes remain. See
    [ADR 0011](../adr/0011-transition-trigger-actions.md).
+
+   **Third increment implemented (2026-11-14):** guard memberships own semantic
+   expressions, with a common owned-feature projection distinct from the narrower
+   owned-usage projection. Known incompatible result types or multiplicities
+   error; unverified textual results warn. Language version 9 moves the stored
+   sandbox guard without converting its expression, preserving all 44,327 original
+   nodes across four transition-containing consumer models. All 632 checking,
+   scope/semantic, editor and importer tests pass in the IDE. Endpoint contracts
+   remain; full structured expression typing and reification remain finding 10.
+   See [ADR 0012](../adr/0012-transition-guard-expressions.md).
 
 9. **High — namespace capability is attached to selected usages rather than the Usage abstraction.**
 

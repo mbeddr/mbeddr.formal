@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="8" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="9" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -164,6 +164,9 @@
         <child id="284754763101489703" name="types" index="35c6Nl" />
         <child id="284754763101489705" name="direction" index="35c6Nr" />
       </concept>
+      <concept id="7243625513254459054" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionGuardMembership" flags="ng" index="37YT6C">
+        <child id="7243625513254459055" name="expression" index="37YT6D" />
+      </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
@@ -181,7 +184,6 @@
         <child id="8400219579968936546" name="chain" index="3nLW_h" />
       </concept>
       <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
-        <child id="8400219580029624693" name="guard" index="3iov96" />
         <child id="9009971474229543189" name="target" index="3oOLx4" />
         <child id="9009971474229543188" name="source" index="3oOLx5" />
         <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
@@ -2958,9 +2960,6 @@
               <ref role="3wdj98" node="7O9Ql6AO9zD" resolve="Done" />
             </node>
           </node>
-          <node concept="3bnkR8" id="7ij$NeBPT9S" role="3iov96">
-            <property role="3bnkR9" value="ready" />
-          </node>
           <node concept="3QFEA0" id="61dxE2nXVkF" role="3QFEA6">
             <node concept="SPUEF" id="61dxE2nXVkH" role="3QFEA2">
               <property role="TrG5h" value="effectWork" />
@@ -2994,6 +2993,11 @@
                   <property role="3xZtlB" value="mwptYtLWO0/inout" />
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="37YT6C" id="6i6xKq$8dVg" role="3QFEA6">
+            <node concept="3bnkR8" id="7ij$NeBPT9S" role="37YT6D">
+              <property role="3bnkR9" value="ready" />
             </node>
           </node>
         </node>

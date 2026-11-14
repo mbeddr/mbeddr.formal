@@ -33,6 +33,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -2014,6 +2018,222 @@
             </node>
             <node concept="AMVWg" id="6i6xKqxTxGy" role="lGtFl">
               <property role="TrG5h" value="transition_trigger_count" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6i6xKqzBnEV">
+    <property role="TrG5h" value="check_SysMLv2TransitionUsage_guardSyntax" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="6i6xKqzBnEW" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
+    </node>
+    <node concept="3clFbS" id="6i6xKqzBnEX" role="18ibNy">
+      <node concept="3clFbJ" id="6i6xKqzBnEY" role="3cqZAp">
+        <node concept="3fqX7Q" id="6i6xKqzBnEZ" role="3clFbw">
+          <node concept="2YIFZM" id="6i6xKqzBnF0" role="3fr31v">
+            <ref role="1Pybhc" to="5wt7:6i6xKqzvmzX" resolve="TransitionGuards" />
+            <ref role="37wK5l" to="5wt7:6i6xKqzvmAF" resolve="singleExplicitGuard" />
+            <node concept="1YBJjd" id="6i6xKqzBnF1" role="37wK5m">
+              <ref role="1YBMHb" node="6i6xKqzBnEW" resolve="node" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6i6xKqzBnF2" role="3clFbx">
+          <node concept="2MkqsV" id="6i6xKqzBnF3" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqzBnF4" role="2MkJ7o">
+              <property role="Xl_RC" value="The transition textual syntax permits one explicit if clause." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqzBnF5" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqzBnEW" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="6i6xKqzBnF6" role="lGtFl">
+              <property role="TrG5h" value="transition_guard_count" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6i6xKqzBnFp">
+    <property role="TrG5h" value="check_SysMLv2TransitionGuardMembership_result" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="6i6xKqzBnFq" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+    </node>
+    <node concept="3clFbS" id="6i6xKqzBnF_" role="18ibNy">
+      <node concept="3clFbJ" id="6i6xKqzBnFA" role="3cqZAp">
+        <node concept="3clFbC" id="6i6xKqzBnFB" role="3clFbw">
+          <node concept="2YIFZM" id="6i6xKqzBnFC" role="3uHU7B">
+            <ref role="1Pybhc" to="5wt7:6i6xKqzvmzX" resolve="TransitionGuards" />
+            <ref role="37wK5l" to="5wt7:6i6xKqzvOL9" resolve="resultStatus" />
+            <node concept="2OqwBi" id="6i6xKqzBnFD" role="37wK5m">
+              <node concept="1PxgMI" id="6i6xKqzBnFE" role="2Oq$k0">
+                <node concept="1YBJjd" id="6i6xKqzBnFF" role="1m5AlR">
+                  <ref role="1YBMHb" node="6i6xKqzBnFq" resolve="node" />
+                </node>
+                <node concept="chp4Y" id="6i6xKqzBnFG" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6i6xKqzBnFH" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+              </node>
+            </node>
+          </node>
+          <node concept="Rm8GO" id="6i6xKqzBnFI" role="3uHU7w">
+            <ref role="1Px2BO" to="5wt7:6i6xKqzvmsV" resolve="GuardResultStatus" />
+            <ref role="Rm8GQ" to="5wt7:6i6xKqzvmt0" resolve="INCOMPATIBLE" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="6i6xKqzBnFJ" role="3clFbx">
+          <node concept="2MkqsV" id="6i6xKqzBnFK" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqzBnFL" role="2MkJ7o">
+              <property role="Xl_RC" value="A transition guard must return exactly one Boolean value." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqzBnFM" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqzBnFq" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="6i6xKqzBnFN" role="lGtFl">
+              <property role="TrG5h" value="transition_guard_result" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6i6xKqzBnFO" role="3cqZAp">
+        <node concept="1Wc70l" id="6i6xKqzBnFP" role="3clFbw">
+          <node concept="1Wc70l" id="6i6xKqzBnFQ" role="3uHU7B">
+            <node concept="2OqwBi" id="6i6xKqzBnFR" role="3uHU7B">
+              <node concept="2OqwBi" id="6i6xKqzBnFS" role="2Oq$k0">
+                <node concept="1PxgMI" id="6i6xKqzBnFT" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6i6xKqzBnFU" role="1m5AlR">
+                    <ref role="1YBMHb" node="6i6xKqzBnFq" resolve="node" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqzBnFV" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6i6xKqzBnFW" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+                </node>
+              </node>
+              <node concept="3x8VRR" id="6i6xKqzBnFX" role="2OqNvi" />
+            </node>
+            <node concept="2YIFZM" id="6i6xKqzBnFY" role="3uHU7w">
+              <ref role="1Pybhc" to="5wt7:6i6xKqzvmzX" resolve="TransitionGuards" />
+              <ref role="37wK5l" to="5wt7:6i6xKqzvRXF" resolve="supportedExpressionSyntax" />
+              <node concept="2OqwBi" id="6i6xKqzBnFZ" role="37wK5m">
+                <node concept="1PxgMI" id="6i6xKqzBnG0" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6i6xKqzBnG1" role="1m5AlR">
+                    <ref role="1YBMHb" node="6i6xKqzBnFq" resolve="node" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqzBnG2" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6i6xKqzBnG3" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="6i6xKqzBnG4" role="3uHU7w">
+            <node concept="2YIFZM" id="6i6xKqzBnG5" role="3uHU7B">
+              <ref role="1Pybhc" to="5wt7:6i6xKqzvmzX" resolve="TransitionGuards" />
+              <ref role="37wK5l" to="5wt7:6i6xKqzvOL9" resolve="resultStatus" />
+              <node concept="2OqwBi" id="6i6xKqzBnG6" role="37wK5m">
+                <node concept="1PxgMI" id="6i6xKqzBnG7" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6i6xKqzBnG8" role="1m5AlR">
+                    <ref role="1YBMHb" node="6i6xKqzBnFq" resolve="node" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqzBnG9" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6i6xKqzBnGa" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+                </node>
+              </node>
+            </node>
+            <node concept="Rm8GO" id="6i6xKqzBnGb" role="3uHU7w">
+              <ref role="1Px2BO" to="5wt7:6i6xKqzvmsV" resolve="GuardResultStatus" />
+              <ref role="Rm8GQ" to="5wt7:6i6xKqzvmt2" resolve="UNKNOWN" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6i6xKqzBnGc" role="3clFbx">
+          <node concept="a7r0C" id="6i6xKqzBnGd" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqzBnGe" role="a7wSD">
+              <property role="Xl_RC" value="The guard result type or multiplicity cannot yet be verified; exactly one Boolean value is required." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqzBnGf" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqzBnFq" resolve="node" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="6i6xKqzBnFv">
+    <property role="TrG5h" value="check_SysMLv2TransitionGuardMembership_syntax" />
+    <property role="3GE5qa" value="state" />
+    <node concept="1YaCAy" id="6i6xKqzBnFw" role="1YuTPh">
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+    </node>
+    <node concept="3clFbS" id="6i6xKqzBnIt" role="18ibNy">
+      <node concept="3clFbJ" id="6i6xKqzBnIu" role="3cqZAp">
+        <node concept="1Wc70l" id="6i6xKqzBnIv" role="3clFbw">
+          <node concept="2OqwBi" id="6i6xKqzBnIw" role="3uHU7B">
+            <node concept="2OqwBi" id="6i6xKqzBnIx" role="2Oq$k0">
+              <node concept="1PxgMI" id="6i6xKqzBnIy" role="2Oq$k0">
+                <node concept="1YBJjd" id="6i6xKqzBnIz" role="1m5AlR">
+                  <ref role="1YBMHb" node="6i6xKqzBnFw" resolve="node" />
+                </node>
+                <node concept="chp4Y" id="6i6xKqzBnI$" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6i6xKqzBnI_" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6i6xKqzBnIA" role="2OqNvi" />
+          </node>
+          <node concept="3fqX7Q" id="6i6xKqzBnIB" role="3uHU7w">
+            <node concept="2YIFZM" id="6i6xKqzBnIC" role="3fr31v">
+              <ref role="1Pybhc" to="5wt7:6i6xKqzvmzX" resolve="TransitionGuards" />
+              <ref role="37wK5l" to="5wt7:6i6xKqzvRXF" resolve="supportedExpressionSyntax" />
+              <node concept="2OqwBi" id="6i6xKqzBnID" role="37wK5m">
+                <node concept="1PxgMI" id="6i6xKqzBnIE" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6i6xKqzBnIF" role="1m5AlR">
+                    <ref role="1YBMHb" node="6i6xKqzBnFw" resolve="node" />
+                  </node>
+                  <node concept="chp4Y" id="6i6xKqzBnIG" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:6i6xKqzvhqI" resolve="SysMLv2TransitionGuardMembership" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="6i6xKqzBnIH" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6i6xKqzvhqJ" resolve="expression" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6i6xKqzBnII" role="3clFbx">
+          <node concept="2MkqsV" id="6i6xKqzBnIJ" role="3cqZAp">
+            <node concept="Xl_RD" id="6i6xKqzBnIK" role="2MkJ7o">
+              <property role="Xl_RC" value="This semantic guard expression has no supported transition expression syntax." />
+            </node>
+            <node concept="1YBJjd" id="6i6xKqzBnIL" role="1urrMF">
+              <ref role="1YBMHb" node="6i6xKqzBnFw" resolve="node" />
+            </node>
+            <node concept="AMVWg" id="6i6xKqzBnIM" role="lGtFl">
+              <property role="TrG5h" value="transition_guard_syntax" />
             </node>
           </node>
         </node>
