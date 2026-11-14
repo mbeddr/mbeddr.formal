@@ -12,6 +12,34 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Root checks and model summaries have different result shapes (2026-11-14)
+
+`check_root_node_problems` with a model and `perRoot: true` returns root summaries
+with `errors`, `warnings` and aggregated `messages`. With an individual root
+reference it returns detailed node diagnostics, even when `perRoot: true` was
+supplied. Those rows contain `problems` on nodes and on property/reference/child
+role descriptors; they have no summary `errors` count. Summing missing `errors`
+fields as zero silently misses diagnostics. Aggregate the detailed problem groups
+when checking individual roots, or use model summaries for counts.
+
+## Serialize model checks with test launches (2026-11-14)
+
+Model checks submitted while `execute_run_configuration` was launching/building
+test suites repeatedly returned `MODAL_BLOCKED` after 30 seconds. The test runs
+continued normally; source inspection between runs also succeeded. The same
+timeout can occur during a language make. A timeout here does not by itself
+establish that an IDE dialog is open or MPS is frozen. Finish the active make/test
+launch before submitting consumer or source model checks; do not issue duplicate
+builds to recover from the blocked check. Independent filesystem work can continue
+while the IDE operation runs.
+
+A whole-library check also exceeded this deadline after the test runs finished.
+Checking roots individually allowed progress and identified one slow root. For a
+large consumer model, use retained root references and check each root rather than
+repeatedly submitting the same whole-model check. If an individual root also times
+out, capture a stack dump during that check to locate the work. The `MODAL_BLOCKED`
+label covers a timeout, not just an actual modal dialog.
+
 ## Console replacements and migration identifiers (2026-11-14)
 
 - Console `print_node` results can expose temporary node references prefixed with a

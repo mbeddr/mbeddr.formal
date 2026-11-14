@@ -188,6 +188,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
+    <node concept="PrWs8" id="6i6xKqGJtyL" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6i6xKqGJtyP" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6i6xKqGJtyT" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6i6xKqGJtyX" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2$P9d">
     <property role="EcuMT" value="4430087627526591053" />
@@ -1432,6 +1444,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7PctyxXA185" resolve="ISysMLv2AnnotationContent" />
+    </node>
+    <node concept="PrWs8" id="6i6xKqIdiqW" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ohPCO1sp61">

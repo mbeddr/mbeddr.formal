@@ -177,6 +177,20 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
    empty visibility values and unrelated consumer diagnostics remain.
    See [ADR 0015](../adr/0015-inherited-usage-namespace-members.md).
 
+   **Third increment implemented (2026-11-14):** local, inherited and exported
+   scopes now retain membership visibility relative to the queried namespace.
+   Qualification and wildcard imports expose public memberships; private imports
+   stay local and protected imports can be inherited. Public re-exports, import-all,
+   recursive imports, cycles, owned-name precedence and private namespace
+   completion have contracts. Imports are accepted in definition/usage bodies;
+   aliases reuse the shared visibility contract, editor and textgen prefix. No
+   stored roles or targets migrate, and no KerML implementation dependency is
+   introduced. All 757 permanent tests pass; library, sandbox and tutorial checks
+   have no scoping errors. Implicit library specialization, conjugation, import
+   filters, further distinguishability/root-import validators and the existing
+   nullable-enum representation limitation remain separate work.
+   See [ADR 0016](../adr/0016-namespace-visibility-and-imports.md).
+
 10. **High for extensibility — expressions and multiplicities are opaque strings, so their dependencies cannot be reified.**
 
     `PlainTextExpression.expressionText` and `LiteralExpression.value` are strings; these are the only concrete implementors of `ISysMLv2Expression` in the inspected language. `Multiplicity.lower` and `upper` are also strings. `MetadataValue.value` is restricted to `LiteralExpression`, even though other value-bearing roles accept the expression interface.

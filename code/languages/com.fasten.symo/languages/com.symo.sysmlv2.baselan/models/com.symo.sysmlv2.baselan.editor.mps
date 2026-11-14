@@ -3870,6 +3870,9 @@
     <property role="3GE5qa" value="package" />
     <ref role="1XX52x" to="5rf1:6ohPCO08Ffu" resolve="SysMLv2Alias" />
     <node concept="3EZMnI" id="6ohPCO08Hjw" role="2wV5jI">
+      <node concept="PMmxH" id="6i6xKqIAtbN" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="3F0ifn" id="6ohPCO08Hjx" role="3EZMnx">
         <property role="3F0ifm" value="alias " />
       </node>
