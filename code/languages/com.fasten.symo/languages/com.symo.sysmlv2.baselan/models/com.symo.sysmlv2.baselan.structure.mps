@@ -2735,6 +2735,9 @@
       <property role="TrG5h" value="isConstant" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="PrWs8" id="6i6xKqBSdY8" role="PrDN$">
+      <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3Igz0sRBrH8">
     <property role="EcuMT" value="4292084407509826376" />

@@ -12,6 +12,24 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Console replacements and migration identifiers (2026-11-14)
+
+- Console `print_node` results can expose temporary node references prefixed with a
+  module ID (`<module-id>/r:.../<node-id>`). Using those strings as
+  `VariableReference.variableDeclaration` targets in a replacement subtree left
+  unresolved references. Passing the local variable's lexical name instead
+  (`repository`, `models`) resolved correctly. Check the current command after
+  replacement, before `run_console_command`.
+- A Java-parsed Console call to an MPS-defined helper class in a `@tests` model
+  remained an `UnknownDotCall`. Replacing its initializer with a native
+  `StaticMethodCall` wired to the actual class and method declarations worked and
+  refreshed the Console imports.
+- `run_migrations CHECK` identifies a language migration as
+  `Migration[<language-name>;<from-version>]`, not as the source script node's
+  reference. Match preflight results by owner, script name, kind and version range.
+  After adding a script, synchronize the language version before checking the
+  script; otherwise the expected version mismatch is reported as an error.
+
 ## Wayland clipboard deadlock during in-process test setup (2026-11-13)
 
 A captured JVM thread dump from MPS 2026.1.2 / JBR 25.0.4.1 reports a Java-level

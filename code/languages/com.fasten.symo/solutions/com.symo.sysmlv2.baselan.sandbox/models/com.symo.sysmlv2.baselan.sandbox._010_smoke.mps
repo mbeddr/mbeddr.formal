@@ -2,7 +2,7 @@
 <model ref="r:6b9c9a05-eaf7-4cd4-9058-5bfb06c56127(com.symo.sysmlv2.baselan.sandbox._010_smoke)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="10" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
   </languages>
   <imports />
   <registry>
@@ -459,14 +459,14 @@
         </node>
         <node concept="3wdj9f" id="6coPuU3hCaz" role="3wdj9c">
           <property role="3wdj9b" value="wheels" />
-          <ref role="3wdj98" node="6coPuU3hCan" resolve="wheels" />
+          <ref role="3wdj98" node="6coPuU3hCau" />
         </node>
       </node>
       <node concept="8GF0z" id="6coPuU3hCaA" role="3w00ZY">
         <property role="TrG5h" value="spare" />
         <node concept="3wdj9f" id="6coPuU3hCaB" role="3wdj9c">
           <property role="3wdj9b" value="wheels" />
-          <ref role="3wdj98" node="6coPuU3hCan" resolve="wheels" />
+          <ref role="3wdj98" node="6coPuU3hCau" />
         </node>
         <node concept="3wdj9f" id="6coPuU3hCaC" role="3wdj9c">
           <property role="3wdj9b" value="frontWheels" />

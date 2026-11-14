@@ -153,6 +153,30 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
 
    **Direction:** make namespace/member capability a consistent semantic contract across usages. Give each usage family an appropriate member projection. Keep lexical membership, inherited features and imports distinguishable rather than assuming that every named child is a feature.
 
+   **First increment implemented (2026-11-14):** the shared Usage interface now
+   extends Namespace. Explicit owned-body projections cover attribute, reference,
+   binding and flow usages and reuse existing projections for feature owners.
+   Lexical and qualified nested-definition lookup reifies witnesses; type headers
+   retain enclosing scope. Owned namespace traversal and import expansion share
+   the projection, while existing typed paths and inherited-feature behavior are
+   preserved. All 689 checking, scope/semantic, editor and importer tests pass.
+   No stored roles change and no migration is needed. Complete
+   visibility, specialization and inherited-import semantics remain separate work.
+   See [ADR 0014](../adr/0014-usage-owned-namespace-members.md).
+
+   **Second increment implemented (2026-11-14):** shared inherited namespace
+   lookup now covers usage typing, subsetting and redefinition. It deduplicates
+   diamonds, terminates cycles, excludes represented private memberships,
+   removes redefined alternatives and derives names for unnamed redefinitions.
+   Lexical, qualified and feature-path lookup share this projection. Language
+   version 11 conservatively rebinds 395 existing references to nearer explicit
+   redefinitions; all other node content is verified unchanged. All 710
+   permanent tests pass, and inherited-usage scoping errors in the library and
+   sandbox models are cleared. Implicit specialization, conjugation, complete
+   external visibility and inherited imports remain separate work; existing
+   empty visibility values and unrelated consumer diagnostics remain.
+   See [ADR 0015](../adr/0015-inherited-usage-namespace-members.md).
+
 10. **High for extensibility — expressions and multiplicities are opaque strings, so their dependencies cannot be reified.**
 
     `PlainTextExpression.expressionText` and `LiteralExpression.value` are strings; these are the only concrete implementors of `ISysMLv2Expression` in the inspected language. `Multiplicity.lower` and `upper` are also strings. `MetadataValue.value` is restricted to `LiteralExpression`, even though other value-bearing roles accept the expression interface.

@@ -2,7 +2,7 @@
 <model ref="r:f08f5305-c96a-4794-8ece-3b1aaece3075(com.symo.sysmlv2.tutorial.lessons.Part_A_Foundations.Lesson_02_Several_of_a_Kind)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="10" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
   </languages>
   <imports />
   <registry>
