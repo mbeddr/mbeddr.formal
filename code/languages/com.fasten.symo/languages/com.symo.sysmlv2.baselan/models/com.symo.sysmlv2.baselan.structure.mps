@@ -688,7 +688,7 @@
       <ref role="RPilL" node="6coPuU3buuA" resolve="usage" />
     </node>
     <node concept="PrWs8" id="3Igz0sZP7py" role="PzmwI">
-      <ref role="PrY4T" node="3Igz0sZP0mV" resolve="ISysMLv2Ref" />
+      <ref role="PrY4T" node="1GUTkSkmQBy" resolve="ISysMLv2FeatureRef" />
     </node>
   </node>
   <node concept="PlHQZ" id="4N4m7hrYNgN">
@@ -3017,10 +3017,36 @@
       <property role="20kJfa" value="feature" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+      <ref role="20lvS9" node="1GUTkSkmQBy" resolve="ISysMLv2FeatureRef" />
     </node>
     <node concept="PrWs8" id="1GUTkSj3JOx" role="PzmwI">
       <ref role="PrY4T" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1GUTkSkmQBx">
+    <property role="EcuMT" value="1962132711185017313" />
+    <property role="TrG5h" value="SysMLv2QualifiedUsageRef" />
+    <property role="R4oN_" value="Namespace-qualified usage reference with reified name segments" />
+    <property role="3GE5qa" value="references" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1GUTkSkmQBz" role="1TKVEi">
+      <property role="IQ2ns" value="1962132711185017315" />
+      <property role="20kJfa" value="qualifiedName" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+    </node>
+    <node concept="PrWs8" id="1GUTkSkmQB$" role="PzmwI">
+      <ref role="PrY4T" node="1GUTkSkmQBy" resolve="ISysMLv2FeatureRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1GUTkSkmQBy">
+    <property role="EcuMT" value="1962132711185017314" />
+    <property role="TrG5h" value="ISysMLv2FeatureRef" />
+    <property role="R4oN_" value="Reference syntax whose resolved target is a usage (feature)" />
+    <property role="3GE5qa" value="references" />
+    <node concept="PrWs8" id="1GUTkSkmQB_" role="PrDN$">
+      <ref role="PrY4T" node="3Igz0sZP0mV" resolve="ISysMLv2Ref" />
     </node>
   </node>
 </model>

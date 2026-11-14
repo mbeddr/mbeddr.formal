@@ -24919,5 +24919,24 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="1GUTkSkJCOj">
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="SysMLv2QualifiedUsageRef_TextGen" />
+    <ref role="WuzLi" to="5rf1:1GUTkSkmQBx" resolve="SysMLv2QualifiedUsageRef" />
+    <node concept="11bSqf" id="1GUTkSkJCOk" role="11c4hB">
+      <node concept="3clFbS" id="1GUTkSkJCOl" role="2VODD2">
+        <node concept="lc7rE" id="1GUTkSkJCOm" role="3cqZAp">
+          <node concept="l9hG8" id="1GUTkSkJCOn" role="lcghm">
+            <node concept="2OqwBi" id="1GUTkSkJCOo" role="lb14g">
+              <node concept="117lpO" id="1GUTkSkJCOp" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1GUTkSkJCOq" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3Igz0sZP7pD" resolve="getEffectiveName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

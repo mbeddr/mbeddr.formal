@@ -219,6 +219,17 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
     Existing stored expressions require no migration. See
     [ADR 0018](../adr/0018-feature-reference-expressions.md).
 
+    **Third increment (2026-11-14):** qualified names such as
+    `Values::sourceValue` use the same feature-reference expression through a
+    narrow feature-reference interface. The qualified form owns the existing
+    qualified-name segment references and reuses namespace/member visibility,
+    inheritance, imports and alias resolution. Reified namespace and terminal
+    references preserve identity across renames; the terminal must denote a
+    usage. Quoted separators and Unicode names are supported. Dot feature chains,
+    operators and invocations remain plain text. Existing short references and
+    containment-role identities are preserved without migration. See
+    [ADR 0019](../adr/0019-qualified-feature-reference-expressions.md).
+
 The first implementation work should repair semantic ancestry and membership contracts, then strengthen reference-kind policies against those corrected contracts. That order avoids turning valid existing actions/cases into out-of-scope targets. Use interfaces/components for syntax reuse, preserve persistent concept/feature identities where possible, and introduce migrations for changed containment or target roles. Add focused positive/negative semantic tests; importer round trips alone cannot establish these invariants. This follows the existing [ADR 0001](../adr/0001-base-languages-mirror-the-source-spec.md).
 
 Other confirmed design limits worth tracking, below this top ten: `ISysMLv2ConnectorAsUsage` stores only optional source/target ends, hard-coding a binary shape; the importer explicitly rejects n-ary connections/interfaces. Port conjugation is a usage boolean without a modeled conjugated-definition counterpart, and the inspected checks do not cover port/attribute composition invariants. Variant membership, kernel-classifier interoperability and general specialization relationships need explicit design boundaries. These are substantial future work, but explicit rejection of unsupported syntax is safer than the incorrect semantic contracts above. The absence of direct inheritance from the separate KerML language is not, by itself, classified as a defect here.

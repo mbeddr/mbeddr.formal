@@ -192,6 +192,9 @@
       <concept id="6353433212885159976" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseDefinition" flags="ng" index="66VRK" />
       <concept id="6353433212885159982" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseDefinition" flags="ng" index="66VRQ" />
       <concept id="6353433212885159970" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseDefinition" flags="ng" index="66VRU" />
+      <concept id="1962132711163231518" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureReferenceExpression" flags="ng" index="8d1xg">
+        <child id="1962132711163231520" name="feature" index="8d1xI" />
+      </concept>
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="types" index="8EhU5" />
@@ -206,6 +209,9 @@
       <concept id="4544097993703497185" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewUsage" flags="ng" index="2cjfNH" />
       <concept id="4544097993703497186" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingUsage" flags="ng" index="2cjfNI" />
       <concept id="4544097993703497187" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationUsage" flags="ng" index="2cjfNJ" />
+      <concept id="1962132711185017313" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedUsageRef" flags="ng" index="fooMJ">
+        <child id="1962132711185017315" name="qualifiedName" index="fooMH" />
+      </concept>
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
@@ -15337,6 +15343,70 @@
         <node concept="7CXmI" id="6i6xKqAHzk_" role="lGtFl">
           <node concept="7OXhh" id="6i6xKqAHzkA" role="7EUXB">
             <property role="GvXf4" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1GUTkSlCxwS">
+    <property role="3DII0k" value="2hh8MJdVwqU/read" />
+    <property role="TrG5h" value="_310_QualifiedFeatureReferenceChecking" />
+    <node concept="1qefOq" id="1GUTkSlCxwT" role="1SKRRt">
+      <node concept="2h0jOr" id="1GUTkSlCxwU" role="1qenE9">
+        <property role="TrG5h" value="QualifiedFeatureChecking" />
+        <node concept="3Z9vzX" id="1GUTkSlCxwV" role="2h0jOs">
+          <property role="TrG5h" value="Values" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="8EhU9" id="1GUTkSlCxwW" role="3Z9vGx">
+            <property role="TrG5h" value="sourceValue" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+          <node concept="8EhVW" id="1GUTkSlCxwX" role="3Z9vGx">
+            <property role="TrG5h" value="WrongKind" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          </node>
+        </node>
+        <node concept="3Z9vzX" id="1GUTkSlCxwY" role="2h0jOs">
+          <property role="TrG5h" value="Client" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="8EhU9" id="1GUTkSlCxwZ" role="3Z9vGx">
+            <property role="TrG5h" value="validValue" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="8d1xg" id="1GUTkSlCxx0" role="2gbwqI">
+              <node concept="fooMJ" id="1GUTkSlCxx2" role="8d1xI">
+                <node concept="AsIwX" id="1GUTkSlCxx5" role="fooMH">
+                  <node concept="AsIwU" id="1GUTkSlCxx6" role="AsIwY">
+                    <ref role="AsIwW" node="1GUTkSlCxwV" resolve="Values" />
+                  </node>
+                  <node concept="AsIwU" id="1GUTkSlCxx7" role="AsIwY">
+                    <ref role="AsIwW" node="1GUTkSlCxwW" resolve="sourceValue" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="8EhU9" id="1GUTkSlCxx8" role="3Z9vGx">
+            <property role="TrG5h" value="invalidValue" />
+            <property role="3815tZ" value="6mYk_gjY8wN/public" />
+            <node concept="8d1xg" id="1GUTkSlCxx9" role="2gbwqI">
+              <node concept="fooMJ" id="1GUTkSlCxxb" role="8d1xI">
+                <node concept="AsIwX" id="1GUTkSlCxxe" role="fooMH">
+                  <node concept="AsIwU" id="1GUTkSlCxxf" role="AsIwY">
+                    <ref role="AsIwW" node="1GUTkSlCxwV" resolve="Values" />
+                  </node>
+                  <node concept="AsIwU" id="1GUTkSlCxxg" role="AsIwY">
+                    <ref role="AsIwW" node="1GUTkSlCxwX" resolve="WrongKind" />
+                  </node>
+                </node>
+                <node concept="7CXmI" id="1GUTkSlCxxh" role="lGtFl">
+                  <node concept="1TM$A" id="1GUTkSlCxxi" role="7EUXB">
+                    <node concept="2PYRI3" id="1GUTkSlCxxj" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:1GUTkSkJHO1" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

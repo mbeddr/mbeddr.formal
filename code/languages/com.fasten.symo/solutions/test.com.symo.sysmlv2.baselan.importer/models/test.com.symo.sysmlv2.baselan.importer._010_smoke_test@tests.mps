@@ -81156,37 +81156,32 @@
                 <node concept="3clFbS" id="1GUTkSjCmWm" role="3clFbx">
                   <node concept="1gVbGN" id="1GUTkSjCmWn" role="3cqZAp">
                     <node concept="2OqwBi" id="1GUTkSjCmWo" role="1gVkn0">
-                      <node concept="2OqwBi" id="1GUTkSjCmWp" role="2Oq$k0">
-                        <node concept="1PxgMI" id="1GUTkSjCmWq" role="2Oq$k0">
-                          <node concept="2OqwBi" id="1GUTkSjCmWr" role="1m5AlR">
-                            <node concept="1PxgMI" id="1GUTkSjCmWs" role="2Oq$k0">
-                              <node concept="2OqwBi" id="1GUTkSjCmWt" role="1m5AlR">
-                                <node concept="1PxgMI" id="1GUTkSjCmWu" role="2Oq$k0">
-                                  <node concept="2GrUjf" id="1GUTkSjCmWv" role="1m5AlR">
-                                    <ref role="2Gs0qQ" node="1GUTkSjCmVl" resolve="entry" />
-                                  </node>
-                                  <node concept="chp4Y" id="1GUTkSjCmWw" role="3oSUPX">
-                                    <ref role="cht4Q" to="5rf1:5oZmK$NNehe" resolve="SysMLv2MetadataValue" />
-                                  </node>
+                      <node concept="2OqwBi" id="1GUTkSlCYoy" role="2Oq$k0">
+                        <node concept="2OqwBi" id="1GUTkSlCYoz" role="2Oq$k0">
+                          <node concept="1PxgMI" id="1GUTkSlCYo$" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1GUTkSlCYo_" role="1m5AlR">
+                              <node concept="1PxgMI" id="1GUTkSlCYoA" role="2Oq$k0">
+                                <node concept="2GrUjf" id="1GUTkSlCYoB" role="1m5AlR">
+                                  <ref role="2Gs0qQ" node="1GUTkSjCmVl" resolve="entry" />
                                 </node>
-                                <node concept="3TrEf2" id="1GUTkSjCmWx" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="5rf1:5oZmK$NNehz" resolve="value" />
+                                <node concept="chp4Y" id="1GUTkSlCYoC" role="3oSUPX">
+                                  <ref role="cht4Q" to="5rf1:5oZmK$NNehe" resolve="SysMLv2MetadataValue" />
                                 </node>
                               </node>
-                              <node concept="chp4Y" id="1GUTkSjCmWy" role="3oSUPX">
-                                <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                              <node concept="3TrEf2" id="1GUTkSlCYoD" role="2OqNvi">
+                                <ref role="3Tt5mk" to="5rf1:5oZmK$NNehz" resolve="value" />
                               </node>
                             </node>
-                            <node concept="3TrEf2" id="1GUTkSjCmWz" role="2OqNvi">
-                              <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                            <node concept="chp4Y" id="1GUTkSlCYoE" role="3oSUPX">
+                              <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
                             </node>
                           </node>
-                          <node concept="chp4Y" id="1GUTkSjCmW$" role="3oSUPX">
-                            <ref role="cht4Q" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                          <node concept="3TrEf2" id="1GUTkSlCYoF" role="2OqNvi">
+                            <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
                           </node>
                         </node>
-                        <node concept="3TrEf2" id="1GUTkSjCmW_" role="2OqNvi">
-                          <ref role="3Tt5mk" to="5rf1:6coPuU3buuA" resolve="usage" />
+                        <node concept="3zqWPK" id="1GUTkSlCYoG" role="2OqNvi">
+                          <ref role="37wK5l" to="5wt7:3Igz0sZP7pI" resolve="resolvedTarget" />
                         </node>
                       </node>
                       <node concept="3x8VRR" id="1GUTkSjCmWA" role="2OqNvi" />
@@ -81522,27 +81517,22 @@
           <node concept="3clFbS" id="1GUTkSjv4FA" role="2LFqv$">
             <node concept="3clFbJ" id="1GUTkSjv4FB" role="3cqZAp">
               <node concept="2OqwBi" id="1GUTkSjv4FC" role="3clFbw">
-                <node concept="2OqwBi" id="1GUTkSjv4FD" role="2Oq$k0">
-                  <node concept="1PxgMI" id="1GUTkSjv4FE" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1GUTkSjv4FF" role="1m5AlR">
-                      <node concept="1PxgMI" id="1GUTkSjv4FG" role="2Oq$k0">
-                        <node concept="2GrUjf" id="1GUTkSjv4FH" role="1m5AlR">
-                          <ref role="2Gs0qQ" node="1GUTkSjv4Fu" resolve="expression" />
-                        </node>
-                        <node concept="chp4Y" id="1GUTkSjv4FI" role="3oSUPX">
-                          <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
-                        </node>
+                <node concept="2OqwBi" id="1GUTkSlCP7f" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlCP7g" role="2Oq$k0">
+                    <node concept="1PxgMI" id="1GUTkSlCP7h" role="2Oq$k0">
+                      <node concept="2GrUjf" id="1GUTkSlCP7i" role="1m5AlR">
+                        <ref role="2Gs0qQ" node="1GUTkSjv4Fu" resolve="expression" />
                       </node>
-                      <node concept="3TrEf2" id="1GUTkSjv4FJ" role="2OqNvi">
-                        <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                      <node concept="chp4Y" id="1GUTkSlCP7j" role="3oSUPX">
+                        <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
                       </node>
                     </node>
-                    <node concept="chp4Y" id="1GUTkSjv4FK" role="3oSUPX">
-                      <ref role="cht4Q" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                    <node concept="3TrEf2" id="1GUTkSlCP7k" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="1GUTkSjv4FL" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:6coPuU3buuA" resolve="usage" />
+                  <node concept="3zqWPK" id="1GUTkSlCP7l" role="2OqNvi">
+                    <ref role="37wK5l" to="5wt7:3Igz0sZP7pI" resolve="resolvedTarget" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="1GUTkSjv4FM" role="2OqNvi" />
@@ -81554,27 +81544,22 @@
                       <ref role="3cqZAo" node="1GUTkSjv4EJ" resolve="expected" />
                     </node>
                     <node concept="3JPx81" id="1GUTkSjv4FR" role="2OqNvi">
-                      <node concept="2OqwBi" id="1GUTkSjv4FS" role="25WWJ7">
-                        <node concept="1PxgMI" id="1GUTkSjv4FT" role="2Oq$k0">
-                          <node concept="2OqwBi" id="1GUTkSjv4FU" role="1m5AlR">
-                            <node concept="1PxgMI" id="1GUTkSjv4FV" role="2Oq$k0">
-                              <node concept="2GrUjf" id="1GUTkSjv4FW" role="1m5AlR">
-                                <ref role="2Gs0qQ" node="1GUTkSjv4Fu" resolve="expression" />
-                              </node>
-                              <node concept="chp4Y" id="1GUTkSjv4FX" role="3oSUPX">
-                                <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
-                              </node>
+                      <node concept="2OqwBi" id="1GUTkSlCPbJ" role="25WWJ7">
+                        <node concept="2OqwBi" id="1GUTkSlCPbK" role="2Oq$k0">
+                          <node concept="1PxgMI" id="1GUTkSlCPbL" role="2Oq$k0">
+                            <node concept="2GrUjf" id="1GUTkSlCPbM" role="1m5AlR">
+                              <ref role="2Gs0qQ" node="1GUTkSjv4Fu" resolve="expression" />
                             </node>
-                            <node concept="3TrEf2" id="1GUTkSjv4FY" role="2OqNvi">
-                              <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                            <node concept="chp4Y" id="1GUTkSlCPbN" role="3oSUPX">
+                              <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
                             </node>
                           </node>
-                          <node concept="chp4Y" id="1GUTkSjv4FZ" role="3oSUPX">
-                            <ref role="cht4Q" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                          <node concept="3TrEf2" id="1GUTkSlCPbO" role="2OqNvi">
+                            <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
                           </node>
                         </node>
-                        <node concept="3TrEf2" id="1GUTkSjv4G0" role="2OqNvi">
-                          <ref role="3Tt5mk" to="5rf1:6coPuU3buuA" resolve="usage" />
+                        <node concept="3zqWPK" id="1GUTkSlCPbP" role="2OqNvi">
+                          <ref role="37wK5l" to="5wt7:3Igz0sZP7pI" resolve="resolvedTarget" />
                         </node>
                       </node>
                     </node>
@@ -81594,27 +81579,22 @@
             </node>
             <node concept="3clFbJ" id="1GUTkSjv4G5" role="3cqZAp">
               <node concept="2OqwBi" id="1GUTkSjv4G6" role="3clFbw">
-                <node concept="2OqwBi" id="1GUTkSjv4G7" role="2Oq$k0">
-                  <node concept="1PxgMI" id="1GUTkSjv4G8" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1GUTkSjv4G9" role="1m5AlR">
-                      <node concept="1PxgMI" id="1GUTkSjv4Ga" role="2Oq$k0">
-                        <node concept="2GrUjf" id="1GUTkSjv4Gb" role="1m5AlR">
-                          <ref role="2Gs0qQ" node="1GUTkSjv4Fu" resolve="expression" />
-                        </node>
-                        <node concept="chp4Y" id="1GUTkSjv4Gc" role="3oSUPX">
-                          <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
-                        </node>
+                <node concept="2OqwBi" id="1GUTkSlCPf_" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlCPfA" role="2Oq$k0">
+                    <node concept="1PxgMI" id="1GUTkSlCPfB" role="2Oq$k0">
+                      <node concept="2GrUjf" id="1GUTkSlCPfC" role="1m5AlR">
+                        <ref role="2Gs0qQ" node="1GUTkSjv4Fu" resolve="expression" />
                       </node>
-                      <node concept="3TrEf2" id="1GUTkSjv4Gd" role="2OqNvi">
-                        <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                      <node concept="chp4Y" id="1GUTkSlCPfD" role="3oSUPX">
+                        <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
                       </node>
                     </node>
-                    <node concept="chp4Y" id="1GUTkSjv4Ge" role="3oSUPX">
-                      <ref role="cht4Q" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                    <node concept="3TrEf2" id="1GUTkSlCPfE" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
                     </node>
                   </node>
-                  <node concept="3TrEf2" id="1GUTkSjv4Gf" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:6coPuU3buuA" resolve="usage" />
+                  <node concept="3zqWPK" id="1GUTkSlCPfF" role="2OqNvi">
+                    <ref role="37wK5l" to="5wt7:3Igz0sZP7pI" resolve="resolvedTarget" />
                   </node>
                 </node>
                 <node concept="3w_OXm" id="1GUTkSjv4Gg" role="2OqNvi" />
@@ -84969,7 +84949,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="1GUTkSjv4HG" role="1SL9yI">
-      <property role="TrG5h" value="testQualifiedNameRetainsExistingRepresentation" />
+      <property role="TrG5h" value="testQualifiedNameCreatesSegmentReferences" />
       <node concept="3cqZAl" id="1GUTkSjv4HH" role="3clF45" />
       <node concept="3clFbS" id="1GUTkSjwAsu" role="3clF47">
         <node concept="3cpWs8" id="1GUTkSjwArC" role="3cqZAp">
@@ -85068,14 +85048,14 @@
                             <node concept="Xl_RD" id="1GUTkSjwInj" role="2XxRq1">
                               <property role="Xl_RC" value="P" />
                             </node>
-                            <node concept="3cmrfG" id="1GUTkSjwInk" role="2XxRq1">
-                              <property role="3cmrfH" value="0" />
+                            <node concept="3cmrfG" id="1GUTkSlCPiZ" role="2XxRq1">
+                              <property role="3cmrfH" value="1" />
                             </node>
                             <node concept="3cmrfG" id="1GUTkSjwInl" role="2XxRq1">
                               <property role="3cmrfH" value="0" />
                             </node>
-                            <node concept="3cmrfG" id="1GUTkSjwInm" role="2XxRq1">
-                              <property role="3cmrfH" value="1" />
+                            <node concept="3cmrfG" id="1GUTkSlCPj0" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
                             </node>
                             <node concept="3cmrfG" id="1GUTkSjwInn" role="2XxRq1">
                               <property role="3cmrfH" value="0" />
@@ -85823,6 +85803,4474 @@
             </node>
             <node concept="37vLTw" id="1GUTkSjx7M5" role="37wK5m">
               <ref role="3cqZAo" node="1GUTkSjx7KN" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1GUTkSlz$w5">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_174_QualifiedFeatureReferenceExpressionsTest" />
+    <node concept="2XrIbr" id="1GUTkSlz$w6" role="1qtyYc">
+      <property role="TrG5h" value="checkQualifiedFeatureReference" />
+      <node concept="3Tm6S6" id="1GUTkSlz$w7" role="1B3o_S" />
+      <node concept="3cqZAl" id="1GUTkSlz$w8" role="3clF45" />
+      <node concept="37vLTG" id="1GUTkSlz$w9" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <property role="2Lvdk3" value="model" />
+        <node concept="3uibUv" id="1GUTkSlz$wa" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1GUTkSlz$wb" role="3clF46">
+        <property role="TrG5h" value="expectedName" />
+        <node concept="3uibUv" id="1GUTkSlz$wc" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1GUTkSlz$wd" role="3clF46">
+        <property role="TrG5h" value="expectedOwner" />
+        <node concept="3uibUv" id="1GUTkSlz$we" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1GUTkSlz$wf" role="3clF46">
+        <property role="TrG5h" value="expectedSegments" />
+        <node concept="10Oyi0" id="1GUTkSlz$wg" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="1GUTkSlz$wh" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlz$wi" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlz$wj" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="root" />
+            <property role="2Lvdk3" value="root" />
+            <node concept="2OqwBi" id="1GUTkSlz$wk" role="33vP2m">
+              <node concept="2OqwBi" id="1GUTkSlz$wl" role="2Oq$k0">
+                <node concept="2OqwBi" id="1GUTkSlz$wm" role="2Oq$k0">
+                  <node concept="37vLTw" id="1GUTkSlz$wn" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1GUTkSlz$w9" resolve="model" />
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlz$wo" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getRootNodes()" resolve="getRootNodes" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlz$wp" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Iterable.iterator()" resolve="iterator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="1GUTkSlz$wq" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Iterator.next()" resolve="next" />
+              </node>
+            </node>
+            <node concept="3Tqbb2" id="1GUTkSlz$wr" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="1GUTkSlz$ws" role="3cqZAp">
+          <node concept="3eOVzh" id="1GUTkSlz$wt" role="3clFbw">
+            <node concept="37vLTw" id="1GUTkSlz$wu" role="3uHU7B">
+              <ref role="3cqZAo" node="1GUTkSlz$wf" resolve="expectedSegments" />
+            </node>
+            <node concept="3cmrfG" id="1GUTkSlz$wv" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlz$ww" role="3clFbx">
+            <node concept="1gVbGN" id="1GUTkSlz$wx" role="3cqZAp">
+              <node concept="3clFbC" id="1GUTkSlz$wy" role="1gVkn0">
+                <node concept="2OqwBi" id="1GUTkSlz$wz" role="3uHU7B">
+                  <node concept="2OqwBi" id="1GUTkSlz$w$" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlz$w_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlz$wj" resolve="root" />
+                    </node>
+                    <node concept="2Rf3mk" id="1GUTkSlz$wA" role="2OqNvi">
+                      <node concept="1xMEDy" id="1GUTkSlz$wD" role="1xVPHs">
+                        <node concept="chp4Y" id="1GUTkSlz$wE" role="ri$Ld">
+                          <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="1GUTkSlz$wF" role="2OqNvi" />
+                </node>
+                <node concept="3cmrfG" id="1GUTkSlz$wG" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+            </node>
+            <node concept="1gVbGN" id="1GUTkSlz$wH" role="3cqZAp">
+              <node concept="3clFbC" id="1GUTkSlz$wI" role="1gVkn0">
+                <node concept="2OqwBi" id="1GUTkSlz$wJ" role="3uHU7B">
+                  <node concept="2OqwBi" id="1GUTkSlz$wK" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlz$wL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlz$wj" resolve="root" />
+                    </node>
+                    <node concept="2Rf3mk" id="1GUTkSlz$wM" role="2OqNvi">
+                      <node concept="1xMEDy" id="1GUTkSlz$wP" role="1xVPHs">
+                        <node concept="chp4Y" id="1GUTkSlz$wQ" role="ri$Ld">
+                          <ref role="cht4Q" to="5rf1:fNDJb8FIGU" resolve="SysMLv2PlainTextExpression" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="34oBXx" id="1GUTkSlz$wR" role="2OqNvi" />
+                </node>
+                <node concept="3cmrfG" id="1GUTkSlz$wS" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="1GUTkSlz$wT" role="9aQIa">
+            <node concept="3clFbS" id="1GUTkSlz$wU" role="9aQI4">
+              <node concept="3cpWs8" id="1GUTkSlz$wV" role="3cqZAp">
+                <node concept="3cpWsn" id="1GUTkSlz$wW" role="3cpWs9">
+                  <property role="TrG5h" value="expected" />
+                  <node concept="_YKpA" id="1GUTkSlz$wX" role="1tU5fm">
+                    <node concept="3Tqbb2" id="1GUTkSlz$wY" role="_ZDj9" />
+                  </node>
+                  <node concept="2ShNRf" id="1GUTkSlz$wZ" role="33vP2m">
+                    <node concept="Tc6Ow" id="1GUTkSlz$x0" role="2ShVmc">
+                      <node concept="3Tqbb2" id="1GUTkSlz$x1" role="HW$YZ" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2Gpval" id="1GUTkSlz$x2" role="3cqZAp">
+                <node concept="2GrKxI" id="1GUTkSlz$x3" role="2Gsz3X">
+                  <property role="TrG5h" value="candidate" />
+                  <property role="2Lvdk3" value="candidate" />
+                </node>
+                <node concept="2OqwBi" id="1GUTkSlz$x4" role="2GsD0m">
+                  <node concept="37vLTw" id="1GUTkSlz$x5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1GUTkSlz$wj" resolve="root" />
+                  </node>
+                  <node concept="2Rf3mk" id="1GUTkSlz$x6" role="2OqNvi">
+                    <node concept="1xMEDy" id="1GUTkSlz$x9" role="1xVPHs">
+                      <node concept="chp4Y" id="1GUTkSlz$xa" role="ri$Ld">
+                        <ref role="cht4Q" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="1GUTkSlz$xb" role="2LFqv$">
+                  <node concept="3clFbJ" id="1GUTkSlz$xc" role="3cqZAp">
+                    <node concept="1Wc70l" id="1GUTkSlAepH" role="3clFbw">
+                      <node concept="3y3z36" id="1GUTkSlAepI" role="3uHU7B">
+                        <node concept="37vLTw" id="1GUTkSlAepJ" role="3uHU7B">
+                          <ref role="3cqZAo" node="1GUTkSlz$wb" resolve="expectedName" />
+                        </node>
+                        <node concept="10Nm6u" id="1GUTkSlAepK" role="3uHU7w" />
+                      </node>
+                      <node concept="1eOMI4" id="1GUTkSlAepL" role="3uHU7w">
+                        <node concept="1Wc70l" id="1GUTkSlAepM" role="1eOMHV">
+                          <node concept="2OqwBi" id="1GUTkSlAepN" role="3uHU7B">
+                            <node concept="2OqwBi" id="1GUTkSlAepO" role="2Oq$k0">
+                              <node concept="2GrUjf" id="1GUTkSlAepP" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="1GUTkSlz$x3" resolve="candidate" />
+                              </node>
+                              <node concept="1mfA1w" id="1GUTkSlAepQ" role="2OqNvi" />
+                            </node>
+                            <node concept="1mIQ4w" id="1GUTkSlAepR" role="2OqNvi">
+                              <node concept="chp4Y" id="1GUTkSlAepS" role="cj9EA">
+                                <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1eOMI4" id="1GUTkSlAepT" role="3uHU7w">
+                            <node concept="1Wc70l" id="1GUTkSlAepU" role="1eOMHV">
+                              <node concept="2OqwBi" id="1GUTkSlAepV" role="3uHU7B">
+                                <node concept="37vLTw" id="1GUTkSlAepW" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1GUTkSlz$wb" resolve="expectedName" />
+                                </node>
+                                <node concept="liA8E" id="1GUTkSlAepX" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                                  <node concept="2OqwBi" id="1GUTkSlAepY" role="37wK5m">
+                                    <node concept="2GrUjf" id="1GUTkSlAepZ" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="1GUTkSlz$x3" resolve="candidate" />
+                                    </node>
+                                    <node concept="3TrcHB" id="1GUTkSlAeq0" role="2OqNvi">
+                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="2OqwBi" id="1GUTkSlAeq1" role="3uHU7w">
+                                <node concept="37vLTw" id="1GUTkSlAeq2" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1GUTkSlz$wd" resolve="expectedOwner" />
+                                </node>
+                                <node concept="liA8E" id="1GUTkSlAeq3" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                                  <node concept="2OqwBi" id="1GUTkSlAeq4" role="37wK5m">
+                                    <node concept="1PxgMI" id="1GUTkSlAeq5" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="1GUTkSlAeq6" role="1m5AlR">
+                                        <node concept="2GrUjf" id="1GUTkSlAeq7" role="2Oq$k0">
+                                          <ref role="2Gs0qQ" node="1GUTkSlz$x3" resolve="candidate" />
+                                        </node>
+                                        <node concept="1mfA1w" id="1GUTkSlAeq8" role="2OqNvi" />
+                                      </node>
+                                      <node concept="chp4Y" id="1GUTkSlAeq9" role="3oSUPX">
+                                        <ref role="cht4Q" to="tpck:h0TrEE$" resolve="INamedConcept" />
+                                      </node>
+                                    </node>
+                                    <node concept="3TrcHB" id="1GUTkSlAeqa" role="2OqNvi">
+                                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="1GUTkSlz$xA" role="3clFbx">
+                      <node concept="3clFbF" id="1GUTkSlz$xB" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlz$xC" role="3clFbG">
+                          <node concept="37vLTw" id="1GUTkSlz$xD" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1GUTkSlz$wW" resolve="expected" />
+                          </node>
+                          <node concept="TSZUe" id="1GUTkSlz$xE" role="2OqNvi">
+                            <node concept="2GrUjf" id="1GUTkSlz$xF" role="25WWJ7">
+                              <ref role="2Gs0qQ" node="1GUTkSlz$x3" resolve="candidate" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1gVbGN" id="1GUTkSlz$xG" role="3cqZAp">
+                <node concept="3clFbC" id="1GUTkSlz$xH" role="1gVkn0">
+                  <node concept="2OqwBi" id="1GUTkSlz$xI" role="3uHU7B">
+                    <node concept="2OqwBi" id="1GUTkSlz$xJ" role="2Oq$k0">
+                      <node concept="37vLTw" id="1GUTkSlz$xK" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1GUTkSlz$wj" resolve="root" />
+                      </node>
+                      <node concept="2Rf3mk" id="1GUTkSlz$xL" role="2OqNvi">
+                        <node concept="1xMEDy" id="1GUTkSlz$xO" role="1xVPHs">
+                          <node concept="chp4Y" id="1GUTkSlz$xP" role="ri$Ld">
+                            <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="34oBXx" id="1GUTkSlz$xQ" role="2OqNvi" />
+                  </node>
+                  <node concept="3cmrfG" id="1GUTkSlz$xR" role="3uHU7w">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2Gpval" id="1GUTkSlz$xS" role="3cqZAp">
+                <node concept="2GrKxI" id="1GUTkSlz$xT" role="2Gsz3X">
+                  <property role="TrG5h" value="expression" />
+                  <property role="2Lvdk3" value="expression" />
+                </node>
+                <node concept="2OqwBi" id="1GUTkSlz$xU" role="2GsD0m">
+                  <node concept="37vLTw" id="1GUTkSlz$xV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1GUTkSlz$wj" resolve="root" />
+                  </node>
+                  <node concept="2Rf3mk" id="1GUTkSlz$xW" role="2OqNvi">
+                    <node concept="1xMEDy" id="1GUTkSlz$xZ" role="1xVPHs">
+                      <node concept="chp4Y" id="1GUTkSlz$y0" role="ri$Ld">
+                        <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="1GUTkSlz$y1" role="2LFqv$">
+                  <node concept="1gVbGN" id="1GUTkSlz$y2" role="3cqZAp">
+                    <node concept="2OqwBi" id="1GUTkSlz$y3" role="1gVkn0">
+                      <node concept="2OqwBi" id="1GUTkSlz$y4" role="2Oq$k0">
+                        <node concept="1PxgMI" id="1GUTkSlz$y5" role="2Oq$k0">
+                          <node concept="2GrUjf" id="1GUTkSlz$y6" role="1m5AlR">
+                            <ref role="2Gs0qQ" node="1GUTkSlz$xT" resolve="expression" />
+                          </node>
+                          <node concept="chp4Y" id="1GUTkSlz$y7" role="3oSUPX">
+                            <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="1GUTkSlz$y8" role="2OqNvi">
+                          <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                        </node>
+                      </node>
+                      <node concept="1mIQ4w" id="1GUTkSlz$y9" role="2OqNvi">
+                        <node concept="chp4Y" id="1GUTkSlz$ya" role="cj9EA">
+                          <ref role="cht4Q" to="5rf1:1GUTkSkmQBx" resolve="SysMLv2QualifiedUsageRef" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1gVbGN" id="1GUTkSlz$yb" role="3cqZAp">
+                    <node concept="3clFbC" id="1GUTkSlz$yc" role="1gVkn0">
+                      <node concept="2OqwBi" id="1GUTkSlz$yd" role="3uHU7B">
+                        <node concept="2OqwBi" id="1GUTkSlz$ye" role="2Oq$k0">
+                          <node concept="1PxgMI" id="1GUTkSlz$yf" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1GUTkSlz$yg" role="1m5AlR">
+                              <node concept="1PxgMI" id="1GUTkSlz$yh" role="2Oq$k0">
+                                <node concept="2OqwBi" id="1GUTkSlz$yi" role="1m5AlR">
+                                  <node concept="1PxgMI" id="1GUTkSlz$yj" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="1GUTkSlz$yk" role="1m5AlR">
+                                      <ref role="2Gs0qQ" node="1GUTkSlz$xT" resolve="expression" />
+                                    </node>
+                                    <node concept="chp4Y" id="1GUTkSlz$yl" role="3oSUPX">
+                                      <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                                    </node>
+                                  </node>
+                                  <node concept="3TrEf2" id="1GUTkSlz$ym" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                                  </node>
+                                </node>
+                                <node concept="chp4Y" id="1GUTkSlz$yn" role="3oSUPX">
+                                  <ref role="cht4Q" to="5rf1:1GUTkSkmQBx" resolve="SysMLv2QualifiedUsageRef" />
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="1GUTkSlz$yo" role="2OqNvi">
+                                <ref role="3Tt5mk" to="5rf1:1GUTkSkmQBz" resolve="qualifiedName" />
+                              </node>
+                            </node>
+                            <node concept="chp4Y" id="1GUTkSlz$yp" role="3oSUPX">
+                              <ref role="cht4Q" to="5rf1:7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+                            </node>
+                          </node>
+                          <node concept="3Tsc0h" id="1GUTkSlz$yq" role="2OqNvi">
+                            <ref role="3TtcxE" to="5rf1:7vLXn5hwLPf" resolve="segments" />
+                          </node>
+                        </node>
+                        <node concept="34oBXx" id="1GUTkSlz$yr" role="2OqNvi" />
+                      </node>
+                      <node concept="37vLTw" id="1GUTkSlz$ys" role="3uHU7w">
+                        <ref role="3cqZAo" node="1GUTkSlz$wf" resolve="expectedSegments" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="1GUTkSlz$yt" role="3cqZAp">
+                    <node concept="3y3z36" id="1GUTkSlz$yu" role="3clFbw">
+                      <node concept="37vLTw" id="1GUTkSlz$yv" role="3uHU7B">
+                        <ref role="3cqZAo" node="1GUTkSlz$wb" resolve="expectedName" />
+                      </node>
+                      <node concept="10Nm6u" id="1GUTkSlz$yw" role="3uHU7w" />
+                    </node>
+                    <node concept="3clFbS" id="1GUTkSlz$yx" role="3clFbx">
+                      <node concept="1gVbGN" id="1GUTkSlz$yy" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlz$yz" role="1gVkn0">
+                          <node concept="37vLTw" id="1GUTkSlz$y$" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1GUTkSlz$wW" resolve="expected" />
+                          </node>
+                          <node concept="3JPx81" id="1GUTkSlz$y_" role="2OqNvi">
+                            <node concept="2OqwBi" id="1GUTkSlz$yA" role="25WWJ7">
+                              <node concept="2OqwBi" id="1GUTkSlz$yB" role="2Oq$k0">
+                                <node concept="1PxgMI" id="1GUTkSlz$yC" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="1GUTkSlz$yD" role="1m5AlR">
+                                    <ref role="2Gs0qQ" node="1GUTkSlz$xT" resolve="expression" />
+                                  </node>
+                                  <node concept="chp4Y" id="1GUTkSlz$yE" role="3oSUPX">
+                                    <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="1GUTkSlz$yF" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                                </node>
+                              </node>
+                              <node concept="3zqWPK" id="1GUTkSlz$yG" role="2OqNvi">
+                                <ref role="37wK5l" to="5wt7:3Igz0sZP7pI" resolve="resolvedTarget" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="9aQIb" id="1GUTkSlz$yH" role="9aQIa">
+                      <node concept="3clFbS" id="1GUTkSlz$yI" role="9aQI4">
+                        <node concept="1gVbGN" id="1GUTkSlz$yJ" role="3cqZAp">
+                          <node concept="2OqwBi" id="1GUTkSlz$yK" role="1gVkn0">
+                            <node concept="2OqwBi" id="1GUTkSlz$yL" role="2Oq$k0">
+                              <node concept="2OqwBi" id="1GUTkSlz$yM" role="2Oq$k0">
+                                <node concept="1PxgMI" id="1GUTkSlz$yN" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="1GUTkSlz$yO" role="1m5AlR">
+                                    <ref role="2Gs0qQ" node="1GUTkSlz$xT" resolve="expression" />
+                                  </node>
+                                  <node concept="chp4Y" id="1GUTkSlz$yP" role="3oSUPX">
+                                    <ref role="cht4Q" to="5rf1:1GUTkSj3JOu" resolve="SysMLv2FeatureReferenceExpression" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="1GUTkSlz$yQ" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="5rf1:1GUTkSj3JOw" resolve="feature" />
+                                </node>
+                              </node>
+                              <node concept="3zqWPK" id="1GUTkSlz$yR" role="2OqNvi">
+                                <ref role="37wK5l" to="5wt7:3Igz0sZP7pI" resolve="resolvedTarget" />
+                              </node>
+                            </node>
+                            <node concept="3w_OXm" id="1GUTkSlz$yS" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$yT" role="1SL9yI">
+      <property role="TrG5h" value="testQualifiedAttributeValue" />
+      <node concept="3cqZAl" id="1GUTkSlz$yU" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlz$UI" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlz$TV" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlz$TU" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlz$TW" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlz$TX" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { attribute computed = Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlz$TZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlz$TY" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlz$U0" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSlzBP2" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlz$U3" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlz$U2" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlz$U4" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlz$V7" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlz$V8" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlz$TU" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlz$V9" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlz$Va" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlz$TY" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlz$Ut" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlz$Uu" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlz$Uo" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlz$Up" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlz$Vb" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlz$Vc" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlz$U2" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlz$Vd" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlz$TY" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlz$Ua" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlz$Ub" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlz$Z$" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlz$Z7" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlz$Wb" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlz$Vu" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlz$TY" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlz$Wc" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlz$Z8" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlz$Z_" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlz$ZA" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlz$ZB" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlz$ZC" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlzBP3" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSlzBP4" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSlzBP5" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSlzBP6" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlz$U2" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzBP7" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzBP8" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSlzBP9" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlz$Uw" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlz$Uv" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlz$Ux" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlz$Vw" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlz$Vx" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlz$TU" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlz$Vy" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlz$Vz" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlz$TY" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlz$UH" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlz$YF" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlz$VG" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlz$VH" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlz$TU" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlz$VI" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlz$Uv" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlz$YG" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlz$VJ" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlz$VK" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlz$TU" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlz$VL" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlz$Uv" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$yW" role="1SL9yI">
+      <property role="TrG5h" value="testNestedNamespaces" />
+      <node concept="3cqZAl" id="1GUTkSlz$yX" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlzBQ7" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlzBPk" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzBPj" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlzBPl" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlzBPm" role="33vP2m">
+              <property role="Xl_RC" value="package Values { package Nested { attribute sourceValue; } }&#10;package Client { attribute computed = Values::Nested::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzBPo" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzBPn" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlzBPp" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSlzF0U" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzBPs" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzBPr" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlzBPt" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzBQw" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlzBQx" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzBPj" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzBQy" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzBQz" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzBPn" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlzBPQ" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlzBPR" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlzBPL" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlzBPM" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlzBQ$" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlzBQ_" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzBPr" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlzBQA" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzBPn" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlzBPz" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlzBP$" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlzBUX" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlzBUw" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlzBR$" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlzBQR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlzBPn" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlzBR_" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlzBUx" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlzBUY" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlzBUZ" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlzBV0" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlzBV1" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlzF0V" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSlzF0W" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSlzF0X" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSlzF0Y" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlzBPr" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzF0Z" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzF10" role="2XxRq1">
+                              <property role="Xl_RC" value="Nested" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSlzF11" role="2XxRq1">
+                              <property role="3cmrfH" value="3" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzBPT" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzBPS" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlzBPU" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzBQT" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlzBQU" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzBPj" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzBQV" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzBQW" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzBPn" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlzBQ6" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlzBU4" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlzBR5" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlzBR6" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzBPj" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzBR7" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzBPS" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlzBU5" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlzBR8" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlzBR9" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzBPj" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlzBRa" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzBPS" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$yZ" role="1SL9yI">
+      <property role="TrG5h" value="testNamespaceAlias" />
+      <node concept="3cqZAl" id="1GUTkSlz$z0" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlzF1Z" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlzF1c" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzF1b" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlzF1d" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlzF1e" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client {&#10;  alias Chosen for Values;&#10;  attribute computed = Chosen::sourceValue;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzF1g" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzF1f" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlzF1h" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSlzIu_" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzF1k" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzF1j" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlzF1l" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzF2o" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlzF2p" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzF1b" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzF2q" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzF2r" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzF1f" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlzF1I" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlzF1J" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlzF1D" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlzF1E" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlzF2s" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlzF2t" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzF1j" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlzF2u" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzF1f" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlzF1r" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlzF1s" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlzF6P" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlzF6o" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlzF3s" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlzF2J" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlzF1f" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlzF3t" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlzF6p" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlzF6Q" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlzF6R" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlzF6S" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlzF6T" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlzIuA" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSlzIuB" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSlzIuC" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSlzIuD" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlzF1j" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzIuE" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzIuF" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSlzIuG" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzF1L" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzF1K" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlzF1M" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzF2L" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlzF2M" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzF1b" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzF2N" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzF2O" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzF1f" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlzF1Y" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlzF5W" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlzF2X" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlzF2Y" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzF1b" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzF2Z" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzF1K" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlzF5X" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlzF30" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlzF31" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzF1b" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlzF32" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzF1K" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$z2" role="1SL9yI">
+      <property role="TrG5h" value="testTerminalAlias" />
+      <node concept="3cqZAl" id="1GUTkSlz$z3" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlzIvE" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlzIuR" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzIuQ" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlzIuS" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlzIuT" role="33vP2m">
+              <property role="Xl_RC" value="package Values {&#10;  attribute sourceValue;&#10;  alias Chosen for sourceValue;&#10;}&#10;package Client { attribute computed = Values::Chosen; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzIuV" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzIuU" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlzIuW" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSlzMbA" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzIuZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzIuY" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlzIv0" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzIw3" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlzIw4" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzIuQ" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzIw5" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzIw6" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzIuU" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlzIvp" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlzIvq" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlzIvk" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlzIvl" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlzIw7" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlzIw8" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzIuY" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlzIw9" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzIuU" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlzIv6" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlzIv7" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlzI$w" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlzI$3" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlzIx7" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlzIwq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlzIuU" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlzIx8" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlzI$4" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlzI$x" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlzI$y" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlzI$z" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlzI$$" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlzMbB" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSlzMbC" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSlzMbD" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSlzMbE" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlzIuY" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzMbF" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSlzMbG" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSlzMbH" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzIvs" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzIvr" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlzIvt" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzIws" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlzIwt" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzIuQ" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzIwu" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzIwv" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzIuU" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlzIvD" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlzIzB" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlzIwC" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlzIwD" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzIuQ" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzIwE" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzIvr" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlzIzC" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlzIwF" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlzIwG" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzIuQ" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlzIwH" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzIvr" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$z5" role="1SL9yI">
+      <property role="TrG5h" value="testPrivateFeatureIsHidden" />
+      <node concept="3cqZAl" id="1GUTkSlz$z6" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlzMcF" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlzMbS" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzMbR" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlzMbT" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlzMbU" role="33vP2m">
+              <property role="Xl_RC" value="package Values { private attribute sourceValue; }&#10;package Client { attribute computed = Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzMbW" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzMbV" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlzMbX" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSlzQ8V" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzMc0" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzMbZ" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlzMc1" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzMd4" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlzMd5" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzMbR" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzMd6" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzMd7" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzMbV" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlzMcq" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlzMcr" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlzMcl" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlzMcm" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlzMd8" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlzMd9" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzMbZ" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlzMda" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzMbV" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlzMc7" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlzMc8" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlzMhx" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlzMh4" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlzMe8" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlzMdr" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlzMbV" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlzMe9" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlzMh5" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlzMhy" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlzMhz" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlzMh$" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlzMh_" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlzQ8W" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSlzQ8X" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSlzQ8Y" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSlzQ8Z" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlzMbZ" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSlzQ90" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSlzQ91" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSlzQ92" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzMct" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzMcs" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlzMcu" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzMdt" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlzMdu" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzMbR" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzMdv" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzMdw" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzMbV" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlzMcE" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlzMgC" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlzMdD" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlzMdE" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzMbR" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzMdF" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzMcs" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlzMgD" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlzMdG" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlzMdH" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzMbR" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlzMdI" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzMcs" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$z8" role="1SL9yI">
+      <property role="TrG5h" value="testProtectedFeatureIsHidden" />
+      <node concept="3cqZAl" id="1GUTkSlz$z9" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlzQa0" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlzQ9d" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzQ9c" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlzQ9e" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlzQ9f" role="33vP2m">
+              <property role="Xl_RC" value="package Values { protected attribute sourceValue; }&#10;package Client { attribute computed = Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzQ9h" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzQ9g" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlzQ9i" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSlzUml" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzQ9l" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzQ9k" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlzQ9m" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzQap" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlzQaq" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzQ9c" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzQar" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzQas" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzQ9g" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlzQ9J" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlzQ9K" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlzQ9E" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlzQ9F" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlzQat" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlzQau" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzQ9k" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlzQav" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzQ9g" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlzQ9s" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlzQ9t" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlzQeQ" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlzQep" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlzQbt" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlzQaK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlzQ9g" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlzQbu" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlzQeq" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlzQeR" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlzQeS" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlzQeT" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlzQeU" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlzUmm" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSlzUmn" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSlzUmo" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSlzUmp" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlzQ9k" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSlzUmq" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSlzUmr" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSlzUms" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzQ9M" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzQ9L" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlzQ9N" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzQaM" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlzQaN" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzQ9c" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzQaO" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzQaP" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzQ9g" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlzQ9Z" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlzQdX" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlzQaY" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlzQaZ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzQ9c" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzQb0" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzQ9L" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlzQdY" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlzQb1" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlzQb2" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzQ9c" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlzQb3" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzQ9L" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zb" role="1SL9yI">
+      <property role="TrG5h" value="testPrivateNamespaceIsHidden" />
+      <node concept="3cqZAl" id="1GUTkSlz$zc" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlzUnq" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlzUmB" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzUmA" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlzUmC" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlzUmD" role="33vP2m">
+              <property role="Xl_RC" value="package Outer { private package Values { attribute sourceValue; } }&#10;package Client { attribute computed = Outer::Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzUmF" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzUmE" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlzUmG" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSlzYOn" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzUmJ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzUmI" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlzUmK" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzUnN" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlzUnO" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzUmA" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzUnP" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzUnQ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzUmE" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlzUn9" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlzUna" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlzUn4" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlzUn5" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlzUnR" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlzUnS" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzUmI" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlzUnT" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzUmE" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlzUmQ" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlzUmR" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlzUsg" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlzUrN" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlzUoR" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlzUoa" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlzUmE" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlzUoS" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlzUrO" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlzUsh" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlzUsi" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlzUsj" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlzUsk" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSlzYOo" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSlzYOp" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSlzYOq" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSlzYOr" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlzUmI" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSlzYOs" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSlzYOt" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSlzYOu" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzUnc" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzUnb" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlzUnd" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzUoc" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlzUod" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzUmA" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzUoe" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzUof" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzUmE" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlzUnp" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlzUrn" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlzUoo" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlzUop" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzUmA" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzUoq" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzUnb" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlzUro" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlzUor" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlzUos" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzUmA" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlzUot" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzUnb" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$ze" role="1SL9yI">
+      <property role="TrG5h" value="testPublicReexport" />
+      <node concept="3cqZAl" id="1GUTkSlz$zf" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSlzYPs" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSlzYOD" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzYOC" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSlzYOE" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSlzYOF" role="33vP2m">
+              <property role="Xl_RC" value="package Source { attribute sourceValue; }&#10;package Values { public import Source::*; }&#10;package Client { attribute computed = Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzYOH" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzYOG" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSlzYOI" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$3xR" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzYOL" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzYOK" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSlzYOM" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzYPP" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSlzYPQ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzYOC" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzYPR" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzYPS" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzYOG" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSlzYPb" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSlzYPc" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSlzYP6" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSlzYP7" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSlzYPT" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSlzYPU" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzYOK" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSlzYPV" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSlzYOG" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSlzYOS" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSlzYOT" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSlzYUi" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSlzYTP" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSlzYQT" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSlzYQc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSlzYOG" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSlzYQU" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSlzYTQ" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSlzYUj" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSlzYUk" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSlzYUl" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSlzYUm" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$3xS" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$3xT" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$3xU" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$3xV" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSlzYOK" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$3xW" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$3xX" role="2XxRq1">
+                              <property role="Xl_RC" value="Source" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$3xY" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSlzYPe" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSlzYPd" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSlzYPf" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSlzYQe" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSlzYQf" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzYOC" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSlzYQg" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzYQh" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzYOG" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSlzYPr" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSlzYTp" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSlzYQq" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSlzYQr" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzYOC" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSlzYQs" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSlzYPd" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSlzYTq" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSlzYQt" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSlzYQu" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzYOC" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSlzYQv" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSlzYPd" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zh" role="1SL9yI">
+      <property role="TrG5h" value="testPrivateImportIsNotReexported" />
+      <node concept="3cqZAl" id="1GUTkSlz$zi" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$3yW" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$3y9" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$3y8" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$3ya" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$3yb" role="33vP2m">
+              <property role="Xl_RC" value="package Source { attribute sourceValue; }&#10;package Values { private import Source::*; }&#10;package Client { attribute computed = Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$3yd" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$3yc" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$3ye" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$8ys" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$3yh" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$3yg" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$3yi" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$3zl" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$3zm" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$3y8" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$3zn" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$3zo" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$3yc" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$3yF" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$3yG" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$3yA" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$3yB" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$3zp" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$3zq" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$3yg" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$3zr" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$3yc" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$3yo" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$3yp" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$3BM" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$3Bl" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$3$p" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$3zG" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$3yc" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$3$q" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$3Bm" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$3BN" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$3BO" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$3BP" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$3BQ" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$8yt" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$8yu" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$8yv" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$8yw" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$3yg" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl$8yx" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl$8yy" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$8yz" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$3yI" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$3yH" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$3yJ" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$3zI" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$3zJ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$3y8" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$3zK" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$3zL" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$3yc" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$3yV" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$3AT" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$3zU" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$3zV" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$3y8" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$3zW" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$3yH" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$3AU" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$3zX" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$3zY" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$3y8" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$3zZ" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$3yH" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zk" role="1SL9yI">
+      <property role="TrG5h" value="testInheritedFeature" />
+      <node concept="3cqZAl" id="1GUTkSlz$zl" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$8zx" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$8yI" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$8yH" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$8yJ" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$8yK" role="33vP2m">
+              <property role="Xl_RC" value="part def Base { attribute sourceValue; }&#10;part def Derived :&gt; Base {}&#10;attribute computed = Derived::sourceValue;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$8yM" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$8yL" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$8yN" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$dMc" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$8yQ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$8yP" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$8yR" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$8zU" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$8zV" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$8yH" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$8zW" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$8zX" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$8yL" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$8zg" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$8zh" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$8zb" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$8zc" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$8zY" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$8zZ" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$8yP" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$8$0" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$8yL" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$8yX" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$8yY" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$8Cn" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$8BU" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$8$Y" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$8$h" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$8yL" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$8$Z" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$8BV" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$8Co" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$8Cp" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$8Cq" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$8Cr" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$dMd" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$dMe" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$dMf" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$dMg" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$8yP" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$dMh" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$dMi" role="2XxRq1">
+                              <property role="Xl_RC" value="Base" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$dMj" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$8zj" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$8zi" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$8zk" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$8$j" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$8$k" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$8yH" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$8$l" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$8$m" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$8yL" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$8zw" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$8Bu" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$8$v" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$8$w" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$8yH" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$8$x" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$8zi" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$8Bv" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$8$y" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$8$z" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$8yH" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$8$$" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$8zi" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zn" role="1SL9yI">
+      <property role="TrG5h" value="testAmbiguousImportedMember" />
+      <node concept="3cqZAl" id="1GUTkSlz$zo" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$dNh" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$dMu" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$dMt" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$dMv" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$dMw" role="33vP2m">
+              <property role="Xl_RC" value="package Left { attribute sourceValue; }&#10;package Right { attribute sourceValue; }&#10;package Values {&#10;  public import Left::*;&#10;  public import Right::*;&#10;}&#10;package Client { attribute computed = Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$dMy" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$dMx" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$dMz" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$jii" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$dMA" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$dM_" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$dMB" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$dNE" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$dNF" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$dMt" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$dNG" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$dNH" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$dMx" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$dN0" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$dN1" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$dMV" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$dMW" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$dNI" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$dNJ" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$dM_" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$dNK" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$dMx" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$dMH" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$dMI" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$dS7" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$dRE" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$dOI" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$dO1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$dMx" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$dOJ" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$dRF" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$dS8" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$dS9" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$dSa" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$dSb" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$jij" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$jik" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$jil" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$jim" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$dM_" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl$jin" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl$jio" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$jip" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$dN3" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$dN2" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$dN4" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$dO3" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$dO4" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$dMt" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$dO5" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$dO6" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$dMx" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$dNg" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$dRe" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$dOf" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$dOg" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$dMt" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$dOh" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$dN2" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$dRf" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$dOi" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$dOj" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$dMt" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$dOk" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$dN2" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zq" role="1SL9yI">
+      <property role="TrG5h" value="testDefinitionIsNotAUsage" />
+      <node concept="3cqZAl" id="1GUTkSlz$zr" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$jjn" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$ji$" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$jiz" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$ji_" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$jiA" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute def WrongKind {} }&#10;package Client { attribute computed = Values::WrongKind; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$jiC" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$jiB" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$jiD" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$p3s" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$jiG" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$jiF" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$jiH" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$jjK" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$jjL" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$jiz" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$jjM" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$jjN" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$jiB" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$jj6" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$jj7" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$jj1" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$jj2" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$jjO" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$jjP" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$jiF" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$jjQ" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$jiB" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$jiN" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$jiO" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$jod" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$jnK" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$jkO" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$jk7" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$jiB" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$jkP" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$jnL" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$joe" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$jof" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$jog" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$joh" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$p3t" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$p3u" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$p3v" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$p3w" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$jiF" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl$p3x" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl$p3y" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$p3z" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$jj9" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$jj8" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$jja" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$jk9" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$jka" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$jiz" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$jkb" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$jkc" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$jiB" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$jjm" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$jnk" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$jkl" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$jkm" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$jiz" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$jkn" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$jj8" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$jnl" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$jko" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$jkp" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$jiz" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$jkq" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$jj8" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zt" role="1SL9yI">
+      <property role="TrG5h" value="testUnknownNamespace" />
+      <node concept="3cqZAl" id="1GUTkSlz$zu" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$p4x" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$p3I" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$p3H" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$p3J" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$p3K" role="33vP2m">
+              <property role="Xl_RC" value="package Client { attribute computed = Missing::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$p3M" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$p3L" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$p3N" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$v4o" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$p3Q" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$p3P" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$p3R" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$p4U" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$p4V" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$p3H" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$p4W" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$p4X" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$p3L" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$p4g" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$p4h" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$p4b" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$p4c" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$p4Y" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$p4Z" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$p3P" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$p50" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$p3L" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$p3X" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$p3Y" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$p9n" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$p8U" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$p5Y" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$p5h" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$p3L" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$p5Z" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$p8V" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$p9o" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$p9p" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$p9q" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$p9r" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$v4p" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$v4q" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$v4r" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$v4s" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$p3P" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl$v4t" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl$v4u" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$v4v" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$p4j" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$p4i" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$p4k" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$p5j" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$p5k" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$p3H" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$p5l" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$p5m" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$p3L" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$p4w" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$p8u" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$p5v" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$p5w" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$p3H" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$p5x" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$p4i" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$p8v" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$p5y" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$p5z" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$p3H" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$p5$" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$p4i" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zw" role="1SL9yI">
+      <property role="TrG5h" value="testUnknownMember" />
+      <node concept="3cqZAl" id="1GUTkSlz$zx" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$v5t" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$v4E" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$v4D" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$v4F" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$v4G" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { attribute computed = Values::missing; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$v4I" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$v4H" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$v4J" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$_nD" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$v4M" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$v4L" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$v4N" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$v5Q" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$v5R" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$v4D" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$v5S" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$v5T" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$v4H" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$v5c" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$v5d" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$v57" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$v58" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$v5U" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$v5V" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$v4L" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$v5W" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$v4H" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$v4T" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$v4U" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$vaj" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$v9Q" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$v6U" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$v6d" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$v4H" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$v6V" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$v9R" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$vak" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$val" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$vam" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$van" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$_nE" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$_nF" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$_nG" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$_nH" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$v4L" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl$_nI" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl$_nJ" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$_nK" role="2XxRq1">
+                              <property role="3cmrfH" value="0" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$v5f" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$v5e" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$v5g" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$v6f" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$v6g" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$v4D" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$v6h" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$v6i" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$v4H" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$v5s" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$v9q" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$v6r" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$v6s" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$v4D" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$v6t" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$v5e" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$v9r" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$v6u" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$v6v" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$v4D" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$v6w" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$v5e" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zz" role="1SL9yI">
+      <property role="TrG5h" value="testQuotedSeparators" />
+      <node concept="3cqZAl" id="1GUTkSlz$z$" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$_oI" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$_nV" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$_nU" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$_nW" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$_nX" role="33vP2m">
+              <property role="Xl_RC" value="package 'Val::ues' { attribute 'source::value'; }&#10;package Client { attribute computed = 'Val::ues'::'source::value'; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$_nZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$_nY" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$_o0" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$FTO" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$_o3" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$_o2" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$_o4" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$_p7" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$_p8" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$_nU" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$_p9" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$_pa" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$_nY" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$_ot" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$_ou" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$_oo" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$_op" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$_pb" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$_pc" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$_o2" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$_pd" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$_nY" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$_oa" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$_ob" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$_t$" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$_t7" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$_qb" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$_pu" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$_nY" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$_qc" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$_t8" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$_t_" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$_tA" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$_tB" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$_tC" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$FTP" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$FTQ" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$FTR" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$FTS" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$_o2" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$FTT" role="2XxRq1">
+                              <property role="Xl_RC" value="'source::value'" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$FTU" role="2XxRq1">
+                              <property role="Xl_RC" value="'Val::ues'" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$FTV" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$_ow" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$_ov" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$_ox" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$_pw" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$_px" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$_nU" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$_py" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$_pz" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$_nY" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$_oH" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$_sF" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$_pG" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$_pH" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$_nU" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$_pI" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$_ov" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$_sG" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$_pJ" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$_pK" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$_nU" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$_pL" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$_ov" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zA" role="1SL9yI">
+      <property role="TrG5h" value="testQuotedUnicode" />
+      <node concept="3cqZAl" id="1GUTkSlz$zB" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$FVl" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$FUy" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$FUx" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$FUz" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$FU$" role="33vP2m">
+              <property role="Xl_RC" value="package 'Values 🔧' { attribute 'source 🔧'; }&#10;package Client { attribute computed = 'Values 🔧'::'source 🔧'; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$FUA" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$FU_" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$FUB" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$MGU" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$FUE" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$FUD" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$FUF" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$FVI" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$FVJ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$FUx" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$FVK" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$FVL" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$FU_" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$FV4" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$FV5" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$FUZ" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$FV0" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$FVM" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$FVN" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$FUD" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$FVO" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$FU_" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$FUL" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$FUM" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$G0b" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$FZI" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$FWM" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$FW5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$FU_" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$FWN" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$FZJ" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$G0c" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$G0d" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$G0e" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$G0f" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$MGV" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$MGW" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$MGX" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$MGY" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$FUD" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$MGZ" role="2XxRq1">
+                              <property role="Xl_RC" value="'source 🔧'" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$MH0" role="2XxRq1">
+                              <property role="Xl_RC" value="'Values 🔧'" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$MH1" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$FV7" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$FV6" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$FV8" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$FW7" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$FW8" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$FUx" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$FW9" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$FWa" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$FU_" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$FVk" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$FZi" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$FWj" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$FWk" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$FUx" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$FWl" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$FV6" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$FZj" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$FWm" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$FWn" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$FUx" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$FWo" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$FV6" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zD" role="1SL9yI">
+      <property role="TrG5h" value="testWhitespaceAroundQualification" />
+      <node concept="3cqZAl" id="1GUTkSlz$zE" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$MHZ" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$MHc" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$MHb" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$MHd" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$MHe" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { attribute computed = Values :: sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$MHg" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$MHf" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$MHh" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl$TLC" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$MHk" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$MHj" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$MHl" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$MIo" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$MIp" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$MHb" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$MIq" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$MIr" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$MHf" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$MHI" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$MHJ" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$MHD" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$MHE" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$MIs" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$MIt" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$MHj" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$MIu" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$MHf" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$MHr" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$MHs" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$MMP" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$MMo" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$MJs" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$MIJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$MHf" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$MJt" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$MMp" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$MMQ" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$MMR" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$MMS" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$MMT" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl$TLD" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl$TLE" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl$TLF" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl$TLG" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$MHj" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$TLH" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl$TLI" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl$TLJ" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$MHL" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$MHK" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$MHM" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$MIL" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$MIM" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$MHb" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$MIN" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$MIO" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$MHf" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$MHY" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$MLW" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$MIX" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$MIY" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$MHb" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$MIZ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$MHK" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$MLX" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$MJ0" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$MJ1" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$MHb" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$MJ2" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$MHK" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zG" role="1SL9yI">
+      <property role="TrG5h" value="testQualifiedReferenceUsage" />
+      <node concept="3cqZAl" id="1GUTkSlz$zH" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl$TMH" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl$TLU" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$TLT" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl$TLV" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl$TLW" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { ref computed = Values::sourceValue; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$TLY" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$TLX" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl$TLZ" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_15g" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$TM2" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$TM1" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl$TM3" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$TN6" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl$TN7" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$TLT" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$TN8" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$TN9" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$TLX" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl$TMs" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl$TMt" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl$TMn" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl$TMo" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl$TNa" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl$TNb" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$TM1" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl$TNc" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl$TLX" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl$TM9" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl$TMa" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl$TRz" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl$TR6" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl$TOa" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl$TNt" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl$TLX" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl$TOb" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl$TR7" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl$TR$" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl$TR_" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl$TRA" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl$TRB" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_15h" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_15i" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_15j" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_15k" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl$TM1" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_15l" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_15m" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl_15n" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl$TMv" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl$TMu" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl$TMw" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl$TNv" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl$TNw" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$TLT" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl$TNx" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$TNy" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$TLX" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl$TMG" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl$TQE" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl$TNF" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl$TNG" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$TLT" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl$TNH" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl$TMu" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl$TQF" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl$TNI" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl$TNJ" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$TLT" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl$TNK" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl$TMu" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zJ" role="1SL9yI">
+      <property role="TrG5h" value="testCalculationResult" />
+      <node concept="3cqZAl" id="1GUTkSlz$zK" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl_16l" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl_15y" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_15x" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl_15z" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl_15$" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { calc def Compute { Values::sourceValue } }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_15A" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_15_" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl_15B" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_8FD" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_15E" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_15D" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl_15F" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_16I" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl_16J" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_15x" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_16K" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_16L" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_15_" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl_164" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl_165" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl_15Z" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl_160" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl_16M" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl_16N" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_15D" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl_16O" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_15_" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl_15L" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl_15M" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl_1bb" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl_1aI" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl_17M" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl_175" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl_15_" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl_17N" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl_1aJ" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl_1bc" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl_1bd" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl_1be" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl_1bf" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_8FE" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_8FF" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_8FG" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_8FH" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl_15D" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_8FI" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_8FJ" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl_8FK" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_167" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_166" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl_168" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_177" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl_178" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_15x" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_179" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_17a" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_15_" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl_16k" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl_1ai" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl_17j" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl_17k" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_15x" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_17l" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_166" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl_1aj" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl_17m" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl_17n" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_15x" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl_17o" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_166" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zM" role="1SL9yI">
+      <property role="TrG5h" value="testConstraintResult" />
+      <node concept="3cqZAl" id="1GUTkSlz$zN" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl_8GI" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl_8FV" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_8FU" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl_8FW" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl_8FX" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { constraint def Compute { Values::sourceValue } }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_8FZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_8FY" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl_8G0" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_gvY" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_8G3" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_8G2" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl_8G4" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_8H7" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl_8H8" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_8FU" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_8H9" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_8Ha" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_8FY" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl_8Gt" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl_8Gu" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl_8Go" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl_8Gp" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl_8Hb" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl_8Hc" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_8G2" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl_8Hd" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_8FY" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl_8Ga" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl_8Gb" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl_8L$" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl_8L7" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl_8Ib" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl_8Hu" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl_8FY" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl_8Ic" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl_8L8" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl_8L_" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl_8LA" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl_8LB" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl_8LC" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_gvZ" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_gw0" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_gw1" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_gw2" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl_8G2" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_gw3" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_gw4" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl_gw5" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_8Gw" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_8Gv" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl_8Gx" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_8Hw" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl_8Hx" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_8FU" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_8Hy" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_8Hz" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_8FY" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl_8GH" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl_8KF" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl_8HG" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl_8HH" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_8FU" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_8HI" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_8Gv" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl_8KG" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl_8HJ" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl_8HK" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_8FU" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl_8HL" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_8Gv" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zP" role="1SL9yI">
+      <property role="TrG5h" value="testQualifiedMetadataValue" />
+      <node concept="3cqZAl" id="1GUTkSlz$zQ" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl_gx3" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl_gwg" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_gwf" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl_gwh" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl_gwi" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client {&#10;  metadata def Info { attribute field; }&#10;  metadata info : Info { field = Values::sourceValue; }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_gwk" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_gwj" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl_gwl" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_o_3" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_gwo" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_gwn" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl_gwp" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_gxs" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl_gxt" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_gwf" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_gxu" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_gxv" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_gwj" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl_gwM" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl_gwN" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl_gwH" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl_gwI" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl_gxw" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl_gxx" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_gwn" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl_gxy" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_gwj" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl_gwv" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl_gww" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl_g_T" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl_g_s" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl_gyw" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl_gxN" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl_gwj" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl_gyx" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl_g_t" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl_g_U" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl_g_V" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl_g_W" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl_g_X" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_o_4" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_o_5" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_o_6" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_o_7" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl_gwn" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_o_8" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_o_9" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl_o_a" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_gwP" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_gwO" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl_gwQ" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_gxP" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl_gxQ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_gwf" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_gxR" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_gxS" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_gwj" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl_gx2" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl_g_0" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl_gy1" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl_gy2" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_gwf" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_gy3" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_gwO" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl_g_1" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl_gy4" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl_gy5" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_gwf" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl_gy6" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_gwO" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zS" role="1SL9yI">
+      <property role="TrG5h" value="testQualifiedGuard" />
+      <node concept="3cqZAl" id="1GUTkSlz$zT" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl_oA8" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl_o_l" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_o_k" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl_o_m" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl_o_n" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client {&#10;  state def Holder {&#10;    state a;&#10;    state b;&#10;    transition t first a if Values::sourceValue then b;&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_o_p" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_o_o" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl_o_q" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_wVV" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_o_t" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_o_s" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl_o_u" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_oAx" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl_oAy" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_o_k" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_oAz" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_oA$" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_o_o" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl_o_R" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl_o_S" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl_o_M" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl_o_N" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl_oA_" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl_oAA" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_o_s" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl_oAB" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_o_o" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl_o_$" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl_o__" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl_oEY" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl_oEx" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl_oB_" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl_oAS" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl_o_o" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl_oBA" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl_oEy" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl_oEZ" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl_oF0" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl_oF1" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl_oF2" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_wVW" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_wVX" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_wVY" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_wVZ" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl_o_s" resolve="imported" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_wW0" role="2XxRq1">
+                              <property role="Xl_RC" value="sourceValue" />
+                            </node>
+                            <node concept="Xl_RD" id="1GUTkSl_wW1" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="3cmrfG" id="1GUTkSl_wW2" role="2XxRq1">
+                              <property role="3cmrfH" value="2" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_o_U" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_o_T" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl_o_V" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_oAU" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl_oAV" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_o_k" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_oAW" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_oAX" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_o_o" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl_oA7" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl_oE5" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl_oB6" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl_oB7" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_o_k" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_oB8" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_o_T" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl_oE6" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl_oB9" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl_oBa" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_o_k" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl_oBb" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_o_T" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zV" role="1SL9yI">
+      <property role="TrG5h" value="testFeatureChainRemainsText" />
+      <node concept="3cqZAl" id="1GUTkSlz$zW" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl_wXt" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl_wWD" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_wWC" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl_wWE" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl_wWF" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { attribute computed = Values::sourceValue.mass; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_wWH" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_wWG" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl_wWI" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_DwW" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_wWL" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_wWK" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl_wWM" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_wXQ" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl_wXR" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_wWC" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_wXS" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_wXT" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_wWG" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl_wXc" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl_wXd" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl_wX7" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl_wX8" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl_wXU" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl_wXV" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_wWK" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl_wXW" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_wWG" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl_wWS" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl_wWT" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl_x2j" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl_x1Q" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl_wYU" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl_wYd" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl_wWG" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl_wYV" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl_x1R" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl_x2k" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl_x2l" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl_x2m" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl_x2n" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_DwX" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_DwY" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_DwZ" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_Dx0" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl_wWK" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl_Dx1" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl_Dx2" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="1ZRNhn" id="1GUTkSl_Dx3" role="2XxRq1">
+                              <node concept="3cmrfG" id="1GUTkSl_Dx4" role="2$L3a6">
+                                <property role="3cmrfH" value="1" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_wXf" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_wXe" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl_wXg" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_wYf" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl_wYg" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_wWC" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_wYh" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_wYi" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_wWG" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl_wXs" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl_x1q" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl_wYr" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl_wYs" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_wWC" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_wYt" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_wXe" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl_x1r" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl_wYu" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl_wYv" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_wWC" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl_wYw" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_wXe" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$zY" role="1SL9yI">
+      <property role="TrG5h" value="testOperatorRemainsText" />
+      <node concept="3cqZAl" id="1GUTkSlz$zZ" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl_Dy3" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl_Dxf" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_Dxe" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl_Dxg" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl_Dxh" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { attribute computed = Values::sourceValue + 1; }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_Dxj" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_Dxi" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl_Dxk" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_MnG" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_Dxn" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_Dxm" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl_Dxo" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_Dys" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl_Dyt" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Dxe" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_Dyu" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_Dyv" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Dxi" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl_DxM" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl_DxN" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl_DxH" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl_DxI" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl_Dyw" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl_Dyx" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_Dxm" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl_Dyy" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_Dxi" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl_Dxu" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl_Dxv" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl_DAT" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl_DAs" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl_Dzw" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl_DyN" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl_Dxi" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl_Dzx" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl_DAt" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl_DAU" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl_DAV" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl_DAW" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl_DAX" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_MnH" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_MnI" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_MnJ" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_MnK" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl_Dxm" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl_MnL" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl_MnM" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="1ZRNhn" id="1GUTkSl_MnN" role="2XxRq1">
+                              <node concept="3cmrfG" id="1GUTkSl_MnO" role="2$L3a6">
+                                <property role="3cmrfH" value="1" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_DxP" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_DxO" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl_DxQ" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_DyP" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl_DyQ" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Dxe" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_DyR" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_DyS" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Dxi" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl_Dy2" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl_DA0" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl_Dz1" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl_Dz2" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Dxe" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_Dz3" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_DxO" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl_DA1" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl_Dz4" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl_Dz5" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_Dxe" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl_Dz6" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_DxO" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="1GUTkSlz$$1" role="1SL9yI">
+      <property role="TrG5h" value="testInvocationRemainsText" />
+      <node concept="3cqZAl" id="1GUTkSlz$$2" role="3clF45" />
+      <node concept="3clFbS" id="1GUTkSl_MoN" role="3clF47">
+        <node concept="3cpWs8" id="1GUTkSl_MnZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_MnY" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="1GUTkSl_Mo0" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="1GUTkSl_Mo1" role="33vP2m">
+              <property role="Xl_RC" value="package Values { attribute sourceValue; }&#10;package Client { attribute computed = Values::sourceValue(); }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_Mo3" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_Mo2" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1GUTkSl_Mo4" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="1jxXqW" id="1GUTkSl_Vv0" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_Mo7" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_Mo6" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="imported" />
+            <node concept="3uibUv" id="1GUTkSl_Mo8" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_Mpc" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="1GUTkSl_Mpd" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_MnY" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_Mpe" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReference" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_Mpf" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Mo2" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="1GUTkSl_Moy" role="3cqZAp">
+          <node concept="1wplmZ" id="1GUTkSl_Moz" role="1zxBo6">
+            <node concept="3clFbS" id="1GUTkSl_Mot" role="1wplMD">
+              <node concept="3clFbF" id="1GUTkSl_Mou" role="3cqZAp">
+                <node concept="2YIFZM" id="1GUTkSl_Mpg" role="3clFbG">
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                  <node concept="37vLTw" id="1GUTkSl_Mph" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_Mo6" resolve="imported" />
+                  </node>
+                  <node concept="37vLTw" id="1GUTkSl_Mpi" role="37wK5m">
+                    <ref role="3cqZAo" node="1GUTkSl_Mo2" resolve="project" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1GUTkSl_Moe" role="1zxBo7">
+            <node concept="3clFbF" id="1GUTkSl_Mof" role="3cqZAp">
+              <node concept="2OqwBi" id="1GUTkSl_MtD" role="3clFbG">
+                <node concept="2OqwBi" id="1GUTkSl_Mtc" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1GUTkSl_Mqg" role="2Oq$k0">
+                    <node concept="37vLTw" id="1GUTkSl_Mpz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1GUTkSl_Mo2" resolve="project" />
+                    </node>
+                    <node concept="liA8E" id="1GUTkSl_Mqh" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="1GUTkSl_Mtd" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SRepository.getModelAccess()" resolve="getModelAccess" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="1GUTkSl_MtE" role="2OqNvi">
+                  <ref role="37wK5l" to="lui2:~ModelAccess.runReadAction(java.lang.Runnable)" resolve="runReadAction" />
+                  <node concept="1bVj0M" id="1GUTkSl_MtF" role="37wK5m">
+                    <node concept="3clFbS" id="1GUTkSl_MtG" role="1bW5cS">
+                      <node concept="3clFbF" id="1GUTkSl_MtH" role="3cqZAp">
+                        <node concept="2OqwBi" id="1GUTkSl_Vv1" role="3clFbG">
+                          <node concept="2WthIp" id="1GUTkSl_Vv2" role="2Oq$k0">
+                            <ref role="32nkFo" node="1GUTkSlz$w5" resolve="_174_QualifiedFeatureReferenceExpressionsTest" />
+                          </node>
+                          <node concept="2XshWL" id="1GUTkSl_Vv3" role="2OqNvi">
+                            <ref role="2WH_rO" node="1GUTkSlz$w6" resolve="checkQualifiedFeatureReference" />
+                            <node concept="37vLTw" id="1GUTkSl_Vv4" role="2XxRq1">
+                              <ref role="3cqZAo" node="1GUTkSl_Mo6" resolve="imported" />
+                            </node>
+                            <node concept="10Nm6u" id="1GUTkSl_Vv5" role="2XxRq1" />
+                            <node concept="Xl_RD" id="1GUTkSl_Vv6" role="2XxRq1">
+                              <property role="Xl_RC" value="Values" />
+                            </node>
+                            <node concept="1ZRNhn" id="1GUTkSl_Vv7" role="2XxRq1">
+                              <node concept="3cmrfG" id="1GUTkSl_Vv8" role="2$L3a6">
+                                <property role="3cmrfH" value="1" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="1GUTkSl_Mo_" role="3cqZAp">
+          <node concept="3cpWsn" id="1GUTkSl_Mo$" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="1GUTkSl_MoA" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="1GUTkSl_Mp_" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="1GUTkSl_MpA" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_MnY" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="1GUTkSl_MpB" role="37wK5m">
+                <property role="Xl_RC" value="QualifiedFeatureReferenceRoundtrip" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_MpC" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Mo2" resolve="project" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="1GUTkSl_MoM" role="3cqZAp">
+          <node concept="2OqwBi" id="1GUTkSl_MsK" role="1gVkn0">
+            <node concept="2YIFZM" id="1GUTkSl_MpL" role="2Oq$k0">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="1GUTkSl_MpM" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_MnY" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="1GUTkSl_MpN" role="37wK5m">
+                <ref role="3cqZAo" node="1GUTkSl_Mo$" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="1GUTkSl_MsL" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="1GUTkSl_MpO" role="1gVpfI">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+            <node concept="37vLTw" id="1GUTkSl_MpP" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_MnY" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="1GUTkSl_MpQ" role="37wK5m">
+              <ref role="3cqZAo" node="1GUTkSl_Mo$" resolve="generated" />
             </node>
           </node>
         </node>

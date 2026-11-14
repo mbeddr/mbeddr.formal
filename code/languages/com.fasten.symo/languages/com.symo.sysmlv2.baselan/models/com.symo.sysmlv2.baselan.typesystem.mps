@@ -1141,6 +1141,45 @@
           <node concept="3cpWs6" id="3Igz0t2yZMS" role="3cqZAp" />
         </node>
       </node>
+      <node concept="3clFbJ" id="1GUTkSkJHNO" role="3cqZAp">
+        <node concept="2OqwBi" id="1GUTkSkJHNP" role="3clFbw">
+          <node concept="1YBJjd" id="1GUTkSkJHNQ" role="2Oq$k0">
+            <ref role="1YBMHb" node="3Igz0t2yZQy" resolve="ref" />
+          </node>
+          <node concept="1mIQ4w" id="1GUTkSkJHNR" role="2OqNvi">
+            <node concept="chp4Y" id="1GUTkSkJHNS" role="cj9EA">
+              <ref role="cht4Q" to="5rf1:1GUTkSkmQBy" resolve="ISysMLv2FeatureRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="1GUTkSkJHNT" role="3clFbx">
+          <node concept="3clFbJ" id="1GUTkSkJHNU" role="3cqZAp">
+            <node concept="3fqX7Q" id="1GUTkSkJHNV" role="3clFbw">
+              <node concept="2OqwBi" id="1GUTkSkJHNW" role="3fr31v">
+                <node concept="37vLTw" id="1GUTkSkJHNX" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Igz0t2yZLY" resolve="t" />
+                </node>
+                <node concept="1mIQ4w" id="1GUTkSkJHNY" role="2OqNvi">
+                  <node concept="chp4Y" id="1GUTkSkJHNZ" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="1GUTkSkJHO0" role="3clFbx">
+              <node concept="2MkqsV" id="1GUTkSkJHO1" role="3cqZAp">
+                <node concept="Xl_RD" id="1GUTkSlaI5f" role="2MkJ7o">
+                  <property role="Xl_RC" value="Qualified feature reference must denote a usage" />
+                </node>
+                <node concept="1YBJjd" id="1GUTkSkJHOb" role="1urrMF">
+                  <ref role="1YBMHb" node="3Igz0t2yZQy" resolve="ref" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs6" id="1GUTkSkJHOc" role="3cqZAp" />
+        </node>
+      </node>
       <node concept="3cpWs8" id="3Igz0t2yZMT" role="3cqZAp">
         <node concept="3cpWsn" id="3Igz0t2yZMU" role="3cpWs9">
           <property role="OYnhT" value="local variable" />
