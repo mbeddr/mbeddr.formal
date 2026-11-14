@@ -201,6 +201,14 @@ Ranking weighs existing user consequences, breadth of affected extension contrac
 
     **Direction:** retain an explicit unresolved-text fallback, but introduce structured name, invocation, operator, quantity and bound expressions incrementally. Generalize value roles to an expression contract where allowed. Connect calculation/constraint usages to the semantic expression contracts; do not treat parsing an arbitrary string as reifying its dependencies.
 
+    **First increment implemented (2026-11-14):** metadata values now accept the
+    existing `ISysMLv2Expression` interface, retaining the required containment
+    link and existing literal children. Importing preserves supported literals
+    and retains other expressions as plain text. Existing metadata editors and
+    text generation delegate to the expression. Structured dependency
+    reification and multiplicity-bound expressions remain future work. See
+    [ADR 0017](../adr/0017-metadata-value-expressions.md).
+
 The first implementation work should repair semantic ancestry and membership contracts, then strengthen reference-kind policies against those corrected contracts. That order avoids turning valid existing actions/cases into out-of-scope targets. Use interfaces/components for syntax reuse, preserve persistent concept/feature identities where possible, and introduce migrations for changed containment or target roles. Add focused positive/negative semantic tests; importer round trips alone cannot establish these invariants. This follows the existing [ADR 0001](../adr/0001-base-languages-mirror-the-source-spec.md).
 
 Other confirmed design limits worth tracking, below this top ten: `ISysMLv2ConnectorAsUsage` stores only optional source/target ends, hard-coding a binary shape; the importer explicitly rejects n-ary connections/interfaces. Port conjugation is a usage boolean without a modeled conjugated-definition counterpart, and the inspected checks do not cover port/attribute composition invariants. Variant membership, kernel-classifier interoperability and general specialization relationships need explicit design boundaries. These are substantial future work, but explicit rejection of unsupported syntax is safer than the incorrect semantic contracts above. The absence of direct inheritance from the separate KerML language is not, by itself, classified as a defect here.
