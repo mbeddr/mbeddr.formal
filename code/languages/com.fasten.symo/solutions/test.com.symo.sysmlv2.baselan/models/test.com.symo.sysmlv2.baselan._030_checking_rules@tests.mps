@@ -15746,5 +15746,269 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="dFZSskVUCr">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_031_FlowEndsConjugatedPorts" />
+    <node concept="1qefOq" id="dFZSskVUCs" role="1SKRRt">
+      <node concept="2h0jOr" id="dFZSskVUCt" role="1qenE9">
+        <property role="TrG5h" value="_031_FlowEndsConjugatedPorts_file" />
+        <node concept="3Z9vzX" id="dFZSskVUCu" role="2h0jOs">
+          <property role="TrG5h" value="cf" />
+          <node concept="3w00Z_" id="dFZSskVUCv" role="3Z9vGx">
+            <property role="TrG5h" value="M" />
+            <node concept="3HG_t4" id="dFZSskVUCw" role="3w00ZY">
+              <property role="3HG_t5" value="c" />
+            </node>
+          </node>
+          <node concept="3xZtmp" id="dFZSskVUCx" role="3Z9vGx">
+            <property role="TrG5h" value="TelemetryPort" />
+            <node concept="3HG_t4" id="dFZSskVUCy" role="3xZtmj">
+              <property role="3HG_t5" value="p" />
+            </node>
+            <node concept="3w00Zz" id="dFZSskVUCz" role="3xZtmj">
+              <property role="TrG5h" value="data" />
+              <node concept="3w00Zy" id="dFZSskVUC$" role="3w00ZT">
+                <node concept="AsIwX" id="dFZSskVUC_" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUCA" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCv" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3xZtmk" id="dFZSskVUCB" role="3w00ZV">
+                <property role="3xZtlB" value="3th7jSwWnJl/out" />
+              </node>
+            </node>
+            <node concept="3w00Zz" id="dFZSskVUCC" role="3xZtmj">
+              <property role="TrG5h" value="ack" />
+              <node concept="3w00Zy" id="dFZSskVUCD" role="3w00ZT">
+                <node concept="AsIwX" id="dFZSskVUCE" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUCF" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCv" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3xZtmk" id="dFZSskVUCG" role="3w00ZV" />
+            </node>
+          </node>
+          <node concept="3ZUotO" id="dFZSskVUCH" role="3Z9vGx">
+            <property role="TrG5h" value="Drone" />
+            <node concept="3xZtmn" id="dFZSskVUCI" role="3w00ZY">
+              <property role="TrG5h" value="telemetryOut" />
+              <node concept="3xZtmm" id="dFZSskVUCJ" role="3xZtlF">
+                <node concept="AsIwX" id="dFZSskVUCL" role="2_tBl3">
+                  <node concept="AsIwU" id="dFZSskVUCM" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCx" resolve="TelemetryPort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="dFZSskVUCN" role="3Z9vGx">
+            <property role="TrG5h" value="Station" />
+            <node concept="3xZtmn" id="dFZSskVUCO" role="3w00ZY">
+              <property role="TrG5h" value="telemetryIn" />
+              <property role="3xZtlG" value="true" />
+              <node concept="3xZtmm" id="dFZSskVUCP" role="3xZtlF">
+                <node concept="AsIwX" id="dFZSskVUCR" role="2_tBl3">
+                  <node concept="AsIwU" id="dFZSskVUCS" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCx" resolve="TelemetryPort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="dFZSskVUCT" role="3Z9vGx">
+            <property role="TrG5h" value="Sys" />
+            <node concept="8GF0z" id="dFZSskVUCU" role="3w00ZY">
+              <property role="TrG5h" value="drone" />
+              <node concept="8CKM2" id="dFZSskVUCV" role="3w00ZT">
+                <node concept="AsIwX" id="dFZSskVUCW" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUCX" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCH" resolve="Drone" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8GF0z" id="dFZSskVUCY" role="3w00ZY">
+              <property role="TrG5h" value="station" />
+              <node concept="8CKM2" id="dFZSskVUCZ" role="3w00ZT">
+                <node concept="AsIwX" id="dFZSskVUD0" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUD1" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCN" resolve="Station" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2hSLRH" id="dFZSskVUD2" role="3w00ZY">
+              <property role="TrG5h" value="okPlainToConj" />
+              <node concept="3w00Zy" id="dFZSskVUD7" role="2hSLRG">
+                <node concept="AsIwX" id="dFZSskVUD8" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUD9" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCv" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUDa" role="2uUmly">
+                <node concept="3wdj9f" id="dFZSskVUDb" role="2uUmlA">
+                  <property role="3wdj9b" value="drone" />
+                  <ref role="3wdj98" node="dFZSskVUCU" resolve="drone" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDc" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryOut" />
+                  <ref role="3wdj98" node="dFZSskVUCI" resolve="telemetryOut" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDd" role="2uUmlA">
+                  <property role="3wdj9b" value="data" />
+                  <ref role="3wdj98" node="dFZSskVUCz" resolve="data" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUDe" role="2uUmlz">
+                <node concept="3wdj9f" id="dFZSskVUDf" role="2uUmlA">
+                  <property role="3wdj9b" value="station" />
+                  <ref role="3wdj98" node="dFZSskVUCY" resolve="station" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDg" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryIn" />
+                  <ref role="3wdj98" node="dFZSskVUCO" resolve="telemetryIn" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDh" role="2uUmlA">
+                  <property role="3wdj9b" value="data" />
+                  <ref role="3wdj98" node="dFZSskVUCz" resolve="data" />
+                </node>
+              </node>
+            </node>
+            <node concept="2hSLRH" id="dFZSskVUDi" role="3w00ZY">
+              <property role="TrG5h" value="okConjToPlain" />
+              <node concept="3w00Zy" id="dFZSskVUDn" role="2hSLRG">
+                <node concept="AsIwX" id="dFZSskVUDo" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUDp" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCv" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUDq" role="2uUmly">
+                <node concept="3wdj9f" id="dFZSskVUDr" role="2uUmlA">
+                  <property role="3wdj9b" value="station" />
+                  <ref role="3wdj98" node="dFZSskVUCY" resolve="station" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDs" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryIn" />
+                  <ref role="3wdj98" node="dFZSskVUCO" resolve="telemetryIn" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDt" role="2uUmlA">
+                  <property role="3wdj9b" value="ack" />
+                  <ref role="3wdj98" node="dFZSskVUCC" resolve="ack" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUDu" role="2uUmlz">
+                <node concept="3wdj9f" id="dFZSskVUDv" role="2uUmlA">
+                  <property role="3wdj9b" value="drone" />
+                  <ref role="3wdj98" node="dFZSskVUCU" resolve="drone" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDw" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryOut" />
+                  <ref role="3wdj98" node="dFZSskVUCI" resolve="telemetryOut" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDx" role="2uUmlA">
+                  <property role="3wdj9b" value="ack" />
+                  <ref role="3wdj98" node="dFZSskVUCC" resolve="ack" />
+                </node>
+              </node>
+            </node>
+            <node concept="2hSLRH" id="dFZSskVUDy" role="3w00ZY">
+              <property role="TrG5h" value="badConjSource" />
+              <node concept="3w00Zy" id="dFZSskVUDB" role="2hSLRG">
+                <node concept="AsIwX" id="dFZSskVUDC" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUDD" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCv" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUDE" role="2uUmly">
+                <node concept="3wdj9f" id="dFZSskVUDF" role="2uUmlA">
+                  <property role="3wdj9b" value="station" />
+                  <ref role="3wdj98" node="dFZSskVUCY" resolve="station" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDG" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryIn" />
+                  <ref role="3wdj98" node="dFZSskVUCO" resolve="telemetryIn" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDH" role="2uUmlA">
+                  <property role="3wdj9b" value="data" />
+                  <ref role="3wdj98" node="dFZSskVUCz" resolve="data" />
+                </node>
+                <node concept="7CXmI" id="dFZSskVUDI" role="lGtFl">
+                  <node concept="1TM$A" id="dFZSskVUDJ" role="7EUXB">
+                    <node concept="2PYRI3" id="dFZSskVUDK" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:3MUZSeIlKEG" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUDL" role="2uUmlz">
+                <node concept="3wdj9f" id="dFZSskVUDM" role="2uUmlA">
+                  <property role="3wdj9b" value="drone" />
+                  <ref role="3wdj98" node="dFZSskVUCU" resolve="drone" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDN" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryOut" />
+                  <ref role="3wdj98" node="dFZSskVUCI" resolve="telemetryOut" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDO" role="2uUmlA">
+                  <property role="3wdj9b" value="ack" />
+                  <ref role="3wdj98" node="dFZSskVUCC" resolve="ack" />
+                </node>
+              </node>
+            </node>
+            <node concept="2hSLRH" id="dFZSskVUDP" role="3w00ZY">
+              <property role="TrG5h" value="badConjTarget" />
+              <node concept="3w00Zy" id="dFZSskVUDU" role="2hSLRG">
+                <node concept="AsIwX" id="dFZSskVUDV" role="1MHwYB">
+                  <node concept="AsIwU" id="dFZSskVUDW" role="AsIwY">
+                    <ref role="AsIwW" node="dFZSskVUCv" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUDX" role="2uUmly">
+                <node concept="3wdj9f" id="dFZSskVUDY" role="2uUmlA">
+                  <property role="3wdj9b" value="drone" />
+                  <ref role="3wdj98" node="dFZSskVUCU" resolve="drone" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUDZ" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryOut" />
+                  <ref role="3wdj98" node="dFZSskVUCI" resolve="telemetryOut" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUE0" role="2uUmlA">
+                  <property role="3wdj9b" value="data" />
+                  <ref role="3wdj98" node="dFZSskVUCz" resolve="data" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="dFZSskVUE1" role="2uUmlz">
+                <node concept="3wdj9f" id="dFZSskVUE2" role="2uUmlA">
+                  <property role="3wdj9b" value="station" />
+                  <ref role="3wdj98" node="dFZSskVUCY" resolve="station" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUE3" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryIn" />
+                  <ref role="3wdj98" node="dFZSskVUCO" resolve="telemetryIn" />
+                </node>
+                <node concept="3wdj9f" id="dFZSskVUE4" role="2uUmlA">
+                  <property role="3wdj9b" value="ack" />
+                  <ref role="3wdj98" node="dFZSskVUCC" resolve="ack" />
+                </node>
+                <node concept="7CXmI" id="dFZSskVUE5" role="lGtFl">
+                  <node concept="1TM$A" id="dFZSskVUE6" role="7EUXB">
+                    <node concept="2PYRI3" id="dFZSskVUE7" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:3MUZSeIlKFa" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
