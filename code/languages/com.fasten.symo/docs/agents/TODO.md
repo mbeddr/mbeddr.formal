@@ -1417,3 +1417,50 @@ Open:
 - **Remove the old mechanism.** `ISysMLv2QualifiedRef`, the `namespace` reference and the string-splitting
   helpers are still to be deleted (ADR 0002, last point).
 - **Accepted noise.** "Empty enumeration property: 'visibility'" in the library is accepted (nullable enum).
+
+## SysML v2 baselan: open gaps found while writing the tutorial (2026-11-15)
+
+Found by probing baselan before each tutorial lesson (rule: lessons follow systems-engineer use cases and
+report missing features instead of working around them). Numbers are the ones used in the tutorial
+discussion. Each item says which lesson is blocked or affected.
+
+- **Gap 1: expressions are uninterpreted text** (`SysMLv2PlainTextExpression`, `# m <= 2000 #`). Postponed
+  by decision; lessons use the plain-text form. Affects requirement constraints, guards, triggers,
+  calculations.
+- **Gap 4: feature chains through typed action usages do not resolve.** In `flow from pickUp.parcel to
+  fly.parcel` the second segment stays unresolved; the same chain through part usages works. Affects
+  Part D (interactions).
+- **Gap 5: the flow-direction check ignores port conjugation.** `flow … to station.telemetryIn.telemetry`
+  with `telemetryIn : ~TelemetryPort` is rejected with "target end of a flow must not be an 'out'
+  feature" (false positive). Affects Part C Lesson 4 (flows between ports). Port compatibility on
+  `connect` itself is checked (`dac75075`, `check_SysMLv2ConnectionUsage_portCompatibility`); this is the
+  separate flow check.
+- **Gap 6: `AllocationUsage` cannot hold `allocate … to …`.** A constraint rejects the source and target
+  ends and the editor has no cells for them. Blocks Part E Lesson 1 (allocation).
+- **Gap 7: concepts not found.** Control nodes (fork, join, merge, decision); `if` and `for` actions
+  (only `while` exists); `send` action and standalone `accept`; `dependency`; `expose` and `filter` for
+  views (Part C Lesson 7); variation and variants; `terminate`; requirement derivation; individuals,
+  snapshots and timeslices; time triggers `after`/`at`/`when` (not verified).
+- **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
+  inline. Affects the state-machine lessons.
+- **`alias` keeps its target as plain text** (no name resolution).
+- **No multiplicity check on connector ends.** `connect motors to singlePort` (6 elements to a
+  single-valued port) is not flagged. The standard's route to one element of a multiple feature is a
+  named feature with a value, `ref part wheel2 : Wheel = axle.wheels#(2);`, then
+  `connect wheel2.hub to chassis.mount;`. The tutorial (Part C Lesson 3) teaches this form. `#(n)`
+  directly in a connector end is not in the standard grammar; an attempt to support it was reverted on
+  purpose (ADR 0001: base languages mirror the source spec, and changing the official grammar would leave
+  us maintaining the divergence on every upstream update). An extension language could add an indexed
+  connector-end form later.
+- **Not a gap (checked):** a named connection typed by a `connection def`. `SysMLv2ConnectionDefinitionRef`
+  is a subconcept of `SysMLv2ItemDefinitionRef`, so `connection c : TelemetryLink connect …` works. No
+  check validates the connection usage's ends against the connection def's end types.
+- **Hidden name without keyword.** `SysMLv2ConnectionUsage`, `SysMLv2SuccessionUsage` and
+  `SysMLv2BindingUsage` hide the name (editor and TextGen) when `withKeyword` is false, which matches the
+  grammar (the short form has no declaration part). Intentions `ToggleConnectionLongFormat`,
+  `ToggleSuccessionLongFormat`, `ToggleBindingLongFormat` (`8df721d1`) flip the flag. There is still no
+  check for a name set on a node without the keyword. Possible simplification: derive the keyword from
+  the declaration features instead of keeping the flag (loses only the redundant `connection connect a
+  to b;` spelling).
+- **Orphaned run configurations** `_195_IndexedConnectorEndTest` and `_330_ConnectIndexCheck` (tests were
+  deleted with the reverted index work); remove them in the IDE.

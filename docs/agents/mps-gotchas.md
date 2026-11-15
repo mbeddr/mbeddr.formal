@@ -12,6 +12,62 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## `update_node` has no DELETE; delete a child with SET CHILD and no `childJson` (2026-11-15)
+
+`mps_mcp_update_node` offers ADD and SET only for children. To remove a child, call `SET`/`CHILD` on it
+with `childJson` omitted. `SET`/`CHILD` on a single-valued slot replaces the old child **and its whole
+subtree**, so the old node ids are gone and anything that referenced them is orphaned. Roots are deleted
+with `mps_mcp_update_root_node_from_json` and `operation: DELETE`.
+
+## Replacing a method with `parse_java_and_insert` gives it a new id and orphans its callers (2026-11-15)
+
+Re-inserting a method (to change its body) creates a new node id. Callers that pointed at the old id
+become dangling references. After replacing, repoint every caller (check with `FIND_USAGES` before and
+`check_root_node_problems` after), or edit the method body surgically instead. The same goes for any
+rewrite of a node that others reference, for example an alternation cell that is unwrapped and rebuilt:
+its content can be equal but the node id differs, which shows up as an id-only diff in git.
+
+## `MOVE_NODE_TO_PARENT` refuses an occupied single-valued role (2026-11-15)
+
+Moving a node into a single-valued role that already holds a child fails. Detach or delete the current
+child first, then move.
+
+## `parse_java_and_insert` needs `contextNodeRef` and `role` (2026-11-15)
+
+The tool does not guess where the parsed members go. Pass `contextNodeRef` (the class or method owner)
+and the target `role`; without them the call fails or inserts nothing.
+
+## Parameter names differ per MCP tool; the error text names the right one (2026-11-15)
+
+Easy to get wrong: `query_nodes` takes everything under `parameters` (`conceptRef`, `models`,
+`propertyFilter` as `{"name":..,"value":..}`, `roots`, `detail` of `nodes`|`count`) and needs an
+`operation` such as `FIND_INSTANCES`; `get_concept_details` takes `conceptRefs`;
+`search_root_node_by_name` takes `names`; `search_concepts` takes `searchTexts`;
+`insert_root_node_from_json` takes `modelReference` and `json` (a file path for anything over about 4 KB);
+`alter_nodes MAKE` takes `parameters: {modules: [...], rebuild: true}`. A value sent under a wrong name is
+silently ignored or rejected with an "operation is required" style message. Inline `childJson` is limited
+to about 4 KB, so write bigger blueprints to a file.
+
+## `alter_nodes MAKE` times out on the first call, then reports "Another make session is already active" (2026-11-15)
+
+The first rebuild of a language often returns "The operation timed out" while the make keeps running in
+the IDE. An immediate second call answers `Another make session is already active`. Do not start more
+calls to "fix" it: wait, then call MAKE again; it returns `Make successful` once the first session
+finishes.
+
+## `model_used_language ADD` can time out (2026-11-15)
+
+Adding a used language to a model may time out although it took effect. Re-read the model's used
+languages before repeating the call.
+
+## Building the SysML v2 grammar jar needs the `gpr.*` Gradle properties (2026-11-15)
+
+`:sysmlv2-grammar:copyToMps` fails to configure without the `gpr.*` properties (GitHub packages
+credentials). When no private package has to be fetched, dummy values for them are enough. Put them on
+the command line (`-Pgpr.user=x -Pgpr.key=x`) rather than in a committed file. After a grammar change
+the jar `lib/sysmlv2-grammar.jar` is a build artifact; restoring a grammar means restoring the jar with
+`git checkout` as well.
+
 ## Keep embedded DSL test strings readable in MPS (2026-11-14)
 
 `StringLiteral.value` supports literal line breaks for embedded program text.
