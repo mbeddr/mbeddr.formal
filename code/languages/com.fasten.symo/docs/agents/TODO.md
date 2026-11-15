@@ -1430,11 +1430,14 @@ discussion. Each item says which lesson is blocked or affected.
 - **Gap 4: feature chains through typed action usages do not resolve.** In `flow from pickUp.parcel to
   fly.parcel` the second segment stays unresolved; the same chain through part usages works. Affects
   Part D (interactions).
-- **Gap 5: the flow-direction check ignores port conjugation.** `flow … to station.telemetryIn.telemetry`
-  with `telemetryIn : ~TelemetryPort` is rejected with "target end of a flow must not be an 'out'
-  feature" (false positive). Affects Part C Lesson 4 (flows between ports). Port compatibility on
-  `connect` itself is checked (`dac75075`, `check_SysMLv2ConnectionUsage_portCompatibility`); this is the
-  separate flow check.
+- **Gap 5: the flow-direction check ignored port conjugation — FIXED 2026-11-15** (`01cfd26b`,
+  `effectiveEndDirection()`; test `_031_FlowEndsConjugatedPorts`). Port compatibility on `connect` itself
+  is checked (`dac75075`, `check_SysMLv2ConnectionUsage_portCompatibility`).
+- **Gap 10: interface usage not checked against its definition's ends — FIXED 2026-11-15.**
+  `check_SysMLv2InterfaceUsage_endsMatchDefinition` (helper `InterfaceUsageHelper.endProblem`) reports
+  `[interface-end-type]` and `[interface-end-conjugation]` on the source/target end; test
+  `_321_InterfaceEndsCheck`. Not probed yet: TextGen/importer round trip for flows inside `interface def`,
+  and a payload-only flow in an `interface def`.
 - **Gap 6: `AllocationUsage` cannot hold `allocate … to …`.** A constraint rejects the source and target
   ends and the editor has no cells for them. Blocks Part E Lesson 1 (allocation).
 - **Gap 7: concepts not found.** Control nodes (fork, join, merge, decision); `if` and `for` actions

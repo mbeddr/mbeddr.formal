@@ -233,7 +233,9 @@
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
-      <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE" />
+      <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
+        <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
+      </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
       <concept id="50764132512836853" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedDefinitionRef" flags="ng" index="2_tBl0">
         <child id="50764132512836854" name="qualifiedName" index="2_tBl3" />
@@ -341,6 +343,7 @@
         <child id="7140692429570900101" name="types" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
+        <child id="7140692429570900092" name="specializes" index="3xZtmi" />
         <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
@@ -16002,6 +16005,277 @@
                       <ref role="39XzEq" to="6e71:3MUZSeIlKFa" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6p3MfvnzVEm">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_321_InterfaceEndsCheck" />
+    <node concept="1qefOq" id="6p3MfvnzVEn" role="1SKRRt">
+      <node concept="2h0jOr" id="6p3MfvnzVEo" role="1qenE9">
+        <property role="TrG5h" value="_321_InterfaceEndsCheck_file" />
+        <node concept="3Z9vzX" id="6p3MfvnzVEp" role="2h0jOs">
+          <property role="TrG5h" value="ie" />
+          <node concept="3w00Z_" id="6p3MfvnzVEq" role="3Z9vGx">
+            <property role="TrG5h" value="M" />
+            <node concept="3HG_t4" id="6p3MfvnzVEr" role="3w00ZY">
+              <property role="3HG_t5" value="c" />
+            </node>
+          </node>
+          <node concept="3xZtmp" id="6p3MfvnzVEs" role="3Z9vGx">
+            <property role="TrG5h" value="BasePort" />
+            <node concept="3HG_t4" id="6p3MfvnzVEt" role="3xZtmj">
+              <property role="3HG_t5" value="b" />
+            </node>
+          </node>
+          <node concept="3xZtmp" id="6p3MfvnzVEu" role="3Z9vGx">
+            <property role="TrG5h" value="TelemetryPort" />
+            <node concept="3xZtmm" id="6p3MfvnzVEv" role="3xZtmi">
+              <node concept="AsIwX" id="6p3MfvnzVEx" role="2_tBl3">
+                <node concept="AsIwU" id="6p3MfvnzVEy" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvnzVEs" resolve="BasePort" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w00Zz" id="6p3MfvnzVEz" role="3xZtmj">
+              <property role="TrG5h" value="data" />
+              <node concept="3w00Zy" id="6p3MfvnzVE$" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVE_" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVEA" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEq" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3xZtmk" id="6p3MfvnzVEB" role="3w00ZV">
+                <property role="3xZtlB" value="3th7jSwWnJl/out" />
+              </node>
+            </node>
+            <node concept="3w00Zz" id="6p3MfvnzVEC" role="3xZtmj">
+              <property role="TrG5h" value="ack" />
+              <node concept="3w00Zy" id="6p3MfvnzVED" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVEE" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVEF" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEq" resolve="M" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3xZtmk" id="6p3MfvnzVEG" role="3w00ZV" />
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvnzVEH" role="3Z9vGx">
+            <property role="TrG5h" value="Drone" />
+            <node concept="3xZtmn" id="6p3MfvnzVEI" role="3w00ZY">
+              <property role="TrG5h" value="telemetryOut" />
+              <node concept="3xZtmm" id="6p3MfvnzVEJ" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvnzVEL" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvnzVEM" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEu" resolve="TelemetryPort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvnzVEN" role="3Z9vGx">
+            <property role="TrG5h" value="Station" />
+            <node concept="3xZtmn" id="6p3MfvnzVEO" role="3w00ZY">
+              <property role="TrG5h" value="telemetryIn" />
+              <property role="3xZtlG" value="true" />
+              <node concept="3xZtmm" id="6p3MfvnzVEP" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvnzVER" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvnzVES" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEu" resolve="TelemetryPort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvnzVET" role="3Z9vGx">
+            <property role="TrG5h" value="Generic" />
+            <node concept="3xZtmn" id="6p3MfvnzVEU" role="3w00ZY">
+              <property role="TrG5h" value="basePort" />
+              <node concept="3xZtmm" id="6p3MfvnzVEV" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvnzVEX" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvnzVEY" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEs" resolve="BasePort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2gGTne" id="6p3MfvnzVEZ" role="3Z9vGx">
+            <property role="TrG5h" value="Datalink" />
+            <node concept="3xZtmn" id="6p3MfvnzVF0" role="3w00ZY">
+              <property role="TrG5h" value="src" />
+              <property role="2uUgYw" value="true" />
+              <node concept="3xZtmm" id="6p3MfvnzVF1" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvnzVF3" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvnzVF4" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEu" resolve="TelemetryPort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xZtmn" id="6p3MfvnzVF5" role="3w00ZY">
+              <property role="TrG5h" value="dst" />
+              <property role="3xZtlG" value="true" />
+              <property role="2uUgYw" value="true" />
+              <node concept="3xZtmm" id="6p3MfvnzVF6" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvnzVF8" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvnzVF9" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEu" resolve="TelemetryPort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvnzVFa" role="3Z9vGx">
+            <property role="TrG5h" value="Sys" />
+            <node concept="8GF0z" id="6p3MfvnzVFb" role="3w00ZY">
+              <property role="TrG5h" value="drone" />
+              <node concept="8CKM2" id="6p3MfvnzVFc" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVFd" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVFe" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEH" resolve="Drone" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8GF0z" id="6p3MfvnzVFf" role="3w00ZY">
+              <property role="TrG5h" value="station" />
+              <node concept="8CKM2" id="6p3MfvnzVFg" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVFh" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVFi" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEN" resolve="Station" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8GF0z" id="6p3MfvnzVFj" role="3w00ZY">
+              <property role="TrG5h" value="generic" />
+              <node concept="8CKM2" id="6p3MfvnzVFk" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVFl" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVFm" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVET" resolve="Generic" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2gGTnd" id="6p3MfvnzVFn" role="3w00ZY">
+              <property role="TrG5h" value="okLink" />
+              <property role="2uUmlw" value="true" />
+              <node concept="2uUmlC" id="6p3MfvnzVFs" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVFt" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVFu" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEZ" resolve="Datalink" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="6p3MfvnzVFv" role="2uUmly">
+                <node concept="3wdj9f" id="6p3MfvnzVFw" role="2uUmlA">
+                  <property role="3wdj9b" value="drone" />
+                  <ref role="3wdj98" node="6p3MfvnzVFb" resolve="drone" />
+                </node>
+                <node concept="3wdj9f" id="6p3MfvnzVFx" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryOut" />
+                  <ref role="3wdj98" node="6p3MfvnzVEI" resolve="telemetryOut" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="6p3MfvnzVFy" role="2uUmlz">
+                <node concept="3wdj9f" id="6p3MfvnzVFz" role="2uUmlA">
+                  <property role="3wdj9b" value="station" />
+                  <ref role="3wdj98" node="6p3MfvnzVFf" resolve="station" />
+                </node>
+                <node concept="3wdj9f" id="6p3MfvnzVF$" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryIn" />
+                  <ref role="3wdj98" node="6p3MfvnzVEO" resolve="telemetryIn" />
+                </node>
+              </node>
+            </node>
+            <node concept="2gGTnd" id="6p3MfvnzVF_" role="3w00ZY">
+              <property role="TrG5h" value="badReversed" />
+              <property role="2uUmlw" value="true" />
+              <node concept="2uUmlC" id="6p3MfvnzVFE" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVFF" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVFG" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEZ" resolve="Datalink" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="6p3MfvnzVFH" role="2uUmly">
+                <node concept="3wdj9f" id="6p3MfvnzVFI" role="2uUmlA">
+                  <property role="3wdj9b" value="station" />
+                  <ref role="3wdj98" node="6p3MfvnzVFf" resolve="station" />
+                </node>
+                <node concept="3wdj9f" id="6p3MfvnzVFJ" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryIn" />
+                  <ref role="3wdj98" node="6p3MfvnzVEO" resolve="telemetryIn" />
+                </node>
+                <node concept="7CXmI" id="6p3MfvnzVFK" role="lGtFl">
+                  <node concept="1TM$A" id="6p3MfvnzVFL" role="7EUXB">
+                    <node concept="2PYRI3" id="6p3MfvnzVFM" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:6p3MfvnzVvH" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="6p3MfvnzVFN" role="2uUmlz">
+                <node concept="3wdj9f" id="6p3MfvnzVFO" role="2uUmlA">
+                  <property role="3wdj9b" value="drone" />
+                  <ref role="3wdj98" node="6p3MfvnzVFb" resolve="drone" />
+                </node>
+                <node concept="3wdj9f" id="6p3MfvnzVFP" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryOut" />
+                  <ref role="3wdj98" node="6p3MfvnzVEI" resolve="telemetryOut" />
+                </node>
+                <node concept="7CXmI" id="6p3MfvnzVFQ" role="lGtFl">
+                  <node concept="1TM$A" id="6p3MfvnzVFR" role="7EUXB">
+                    <node concept="2PYRI3" id="6p3MfvnzVFS" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:6p3MfvnzVvY" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2gGTnd" id="6p3MfvnzVFT" role="3w00ZY">
+              <property role="TrG5h" value="badSupertype" />
+              <property role="2uUmlw" value="true" />
+              <node concept="2uUmlC" id="6p3MfvnzVFY" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvnzVFZ" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvnzVG0" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvnzVEZ" resolve="Datalink" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="6p3MfvnzVG1" role="2uUmly">
+                <node concept="3wdj9f" id="6p3MfvnzVG2" role="2uUmlA">
+                  <property role="3wdj9b" value="generic" />
+                  <ref role="3wdj98" node="6p3MfvnzVFj" resolve="generic" />
+                </node>
+                <node concept="3wdj9f" id="6p3MfvnzVG3" role="2uUmlA">
+                  <property role="3wdj9b" value="basePort" />
+                  <ref role="3wdj98" node="6p3MfvnzVEU" resolve="basePort" />
+                </node>
+                <node concept="7CXmI" id="6p3MfvnzVG4" role="lGtFl">
+                  <node concept="1TM$A" id="6p3MfvnzVG5" role="7EUXB">
+                    <node concept="2PYRI3" id="6p3MfvnzVG6" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:6p3MfvnzVvH" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2uUmlD" id="6p3MfvnzVG7" role="2uUmlz">
+                <node concept="3wdj9f" id="6p3MfvnzVG8" role="2uUmlA">
+                  <property role="3wdj9b" value="station" />
+                  <ref role="3wdj98" node="6p3MfvnzVFf" resolve="station" />
+                </node>
+                <node concept="3wdj9f" id="6p3MfvnzVG9" role="2uUmlA">
+                  <property role="3wdj9b" value="telemetryIn" />
+                  <ref role="3wdj98" node="6p3MfvnzVEO" resolve="telemetryIn" />
                 </node>
               </node>
             </node>
