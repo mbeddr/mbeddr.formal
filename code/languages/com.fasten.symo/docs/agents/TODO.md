@@ -1399,7 +1399,8 @@ was fixed (`SysMLv2ConnectionUsage` `multiplicity`), and the cells the grammar h
 
 **Resolved:** `SysMLv2File.localMembers()` now uses `model.rootsIncludingImported(SysMLv2File)`; covered by the
 `_150_LibraryImportScope` test (mutation-checked). Lessons may import earlier lessons and the system library.
-Open follow-up: namespace scope does not follow `public import`, so library types need `ISQBase::` rather than `ISQ::`.
+The former follow-up (namespace scope not following `public import`) no longer holds: `ISQ::MassValue` resolves
+(checked 2026-11-16).
 Original report:
 
 In the tutorial solution (`com.symo.sysmlv2.tutorial`), a model that imports another model of the same
@@ -1462,7 +1463,23 @@ discussion. Each item says which lesson is blocked or affected.
   snapshots and timeslices; time triggers `after`/`at`/`when` (not verified).
 - **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
   inline. Affects the state-machine lessons.
-- **`alias` keeps its target as plain text** (no name resolution).
+- **`alias` keeps its target as plain text** (no name resolution). Its target still uses the deprecated
+  `SysMLv2IdentifierNameConceptRef` (Lesson 7 gap 1, not fixed yet).
+- **Lesson 7 gaps 2–4 — FIXED 2026-11-16 (pending review).**
+  - Gap 2: short names `<FC>` have an editor cell (component `ISysMLv2IdentifierNameConcept_ShortName`) and
+    textgen in part, attribute, port, item, connection, interface, flow, reference and enumeration
+    editors. Still missing: actor/stakeholder/subject and other editors; the importer's `declaredShortName`
+    handling and a short-name round-trip test are not verified.
+  - Gap 3: `check_SysMLv2QualifiedNameSegment_unambiguous` (`NameResolutionHelper.ambiguity`) reports
+    `[ambiguous-name]` when a segment's scope offers another element under the same (short) name.
+    Decision to confirm: a top-level element of the segment's own file takes precedence over top-level
+    elements of other files (strict KerML has one root namespace for all files; without this the
+    sandbox and the separate test files reported false ambiguities). Cost: the check enumerates the whole
+    scope per segment.
+  - Gap 4: `check_ISysMLv2Namespace_distinctMemberNames` (`MemberNamesHelper.duplicate`) reports
+    `[duplicate-name]`; names and short names share one pool. Does not look across files.
+  - Test `_324_NameResolutionChecks` (5 tests, mutation-checked). Cross-file precedence is not covered:
+    a NodesTestCase scope does not see sibling test roots.
 - **No multiplicity check on connector ends.** `connect motors to singlePort` (6 elements to a
   single-valued port) is not flagged. The standard's route to one element of a multiple feature is a
   named feature with a value, `ref part wheel2 : Wheel = axle.wheels#(2);`, then
