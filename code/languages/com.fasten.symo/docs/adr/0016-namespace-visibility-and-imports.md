@@ -129,3 +129,20 @@ work. The remaining consumer errors are the nullable visibility enum diagnostics
 the pre-existing `Wire` definition-kind error in the manually written sandbox.
 The increased visibility diagnostic count reflects aliases now carrying that
 existing optional prefix; no consumer data was rewritten to fill default values.
+
+## Amendment: aliases as import sources (2026-11-16)
+
+The statement above that no alias target representation is replaced no longer
+holds. `SysMLv2Alias.aliasedName` is now a `SysMLv2QualifiedName` (language version
+12; migration `MoveAliasTargetToQualifiedName`), so `alias N for A::B;` resolves
+through the regular qualified-name lookup.
+
+An alias of a namespace can be an import source (SysML 2.0 §7.5.3). For a
+namespace import (`import N::*`) or a recursive import (`import N::**`), the import
+first unaliases its target (`DefinitionTypingPolicy.unalias`). It then expands the
+aliased namespace's memberships under the usual visibility rules. A plain
+membership import (`import A::N;`) still imports the alias membership itself, under
+the alias name. An unresolved or cyclic alias contributes no members to a namespace
+import. Qualified navigation through an alias (`N::Member`) already unaliased the
+previous segment and is unchanged. Projections still keep alias nodes and do not
+canonicalize memberships.
