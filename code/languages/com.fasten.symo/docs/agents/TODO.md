@@ -762,7 +762,11 @@ Sandbox `_090_Specialization`; new `_090_SpecializationTest` (`testImportSpecial
 
 **Still deferred**: constraints-aspect scope for the `definition` reference of both ref concepts
 (manual editing in MPS still gets no completion over candidate defs); the `name;` short-form
-decision for body-less defs; cyclic specialization (`A :> B`, `B :> A`) isn't checked anywhere.
+decision for body-less defs. ~~Cyclic specialization (`A :> B`, `B :> A`) isn't checked anywhere.~~
+Done 2026-11-16: checking rule `check_SysMLv2Definition_noSpecializationCycle` (on `SysMLv2Definition`,
+so all definition kinds) via `SpecializationHelper.reaches`, which follows `directSuperDefinitions()`
+with a visited set; tested by `_322_SpecializationCycleCheck` (two-cycle, self-specialization, port
+def; a def reaching a cycle without being on it, a diamond and a plain chain stay clean).
 
 **Iteration 9 (2026-10-11) — ports (`port def` / `port` usage, direction, conjugation)**: new
 concepts `SysMLv2PortDefinition` (`port def`, `ISysMLv2FileContent`, `specializes:

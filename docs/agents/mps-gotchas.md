@@ -12,6 +12,16 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Make only the changed aspect model, not the whole language (2026-11-16)
+
+A module-level `MAKE` with `rebuild:true` on a language often runs past the MCP timeout and is then
+interrupted ("Interrupted while trying to lock"). When a change touches only one aspect model, for
+example a new checking rule or helper class in the typesystem model, make just that model:
+`mps_mcp_alter_nodes` `MAKE` with `{"models":["<typesystem model ref>"]}`. It finishes in seconds and
+reloads the runtime (`runtimeReady:true`), so tests see the new rule right away. This also makes
+mutation checks cheap: break the rule, make the model, run the test, restore, make again. Structure
+changes still need the module-level rebuild described in the `mps-mcp-workflow` skill.
+
 ## `update_node` has no DELETE; delete a child with SET CHILD and no `childJson` (2026-11-15)
 
 `mps_mcp_update_node` offers ADD and SET only for children. To remove a child, call `SET`/`CHILD` on it
