@@ -1436,8 +1436,8 @@ discussion. Each item says which lesson is blocked or affected.
 - **Gap 10: interface usage not checked against its definition's ends — FIXED 2026-11-15.**
   `check_SysMLv2InterfaceUsage_endsMatchDefinition` (helper `InterfaceUsageHelper.endProblem`) reports
   `[interface-end-type]` and `[interface-end-conjugation]` on the source/target end; test
-  `_321_InterfaceEndsCheck`. Not probed yet: TextGen/importer round trip for flows inside `interface def`,
-  and a payload-only flow in an `interface def`.
+  `_321_InterfaceEndsCheck`. Round trip of named flows inside an `interface def` (end ports, flow each way)
+  is covered by importer test `_220_InterfaceTest.testRoundtripInterfaceFlows` (2026-11-16).
 - **Gap 6: `AllocationUsage` cannot hold `allocate … to …`.** A constraint rejects the source and target
   ends and the editor has no cells for them. Blocks Part E Lesson 1 (allocation).
 - **Gap 7: concepts not found.** Control nodes (fork, join, merge, decision); `if` and `for` actions

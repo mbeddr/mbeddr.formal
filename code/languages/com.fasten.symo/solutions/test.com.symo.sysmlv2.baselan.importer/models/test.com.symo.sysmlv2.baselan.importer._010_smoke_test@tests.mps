@@ -16517,6 +16517,203 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="6p3MfvoKtJO" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripInterfaceFlows" />
+      <node concept="3cqZAl" id="6p3MfvoKtJQ" role="3clF45" />
+      <node concept="3clFbS" id="6p3MfvoKtJR" role="3clF47">
+        <node concept="3cpWs8" id="6p3MfvoKtJS" role="3cqZAp">
+          <node concept="3cpWsn" id="6p3MfvoKtJT" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="6p3MfvoKtJU" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtJV" role="3cqZAp">
+          <node concept="37vLTI" id="6p3MfvoKtJW" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtJX" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtJY" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtJZ" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtK0" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtK1" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtK2" role="37vLTx">
+              <property role="Xl_RC" value="  item def Telemetry {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtK3" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtK4" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtK5" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtK6" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtK7" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtK8" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtK9" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKa" role="37vLTx">
+              <property role="Xl_RC" value="  item def Ack {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKb" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKc" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKd" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKe" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKf" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKg" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKh" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKi" role="37vLTx">
+              <property role="Xl_RC" value="  port def TelemetryPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKj" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKk" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKl" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKm" role="37vLTx">
+              <property role="Xl_RC" value="    out item data : Telemetry;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKn" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKo" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKp" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKq" role="37vLTx">
+              <property role="Xl_RC" value="    in item ack : Ack;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKr" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKs" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKt" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKu" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKv" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKw" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKx" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKy" role="37vLTx">
+              <property role="Xl_RC" value="  interface def Datalink {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKz" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtK$" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtK_" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKA" role="37vLTx">
+              <property role="Xl_RC" value="    end port src : TelemetryPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKB" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKC" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKD" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKE" role="37vLTx">
+              <property role="Xl_RC" value="    end port dst : ~TelemetryPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKF" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKG" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKH" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKI" role="37vLTx">
+              <property role="Xl_RC" value="    flow tm of Telemetry from src.data to dst.data;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKJ" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKK" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKL" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKM" role="37vLTx">
+              <property role="Xl_RC" value="    flow ak of Ack from dst.ack to src.ack;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKN" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKO" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKP" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKQ" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoKtKR" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoKtKS" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoKtKT" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoKtKU" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6p3MfvoKtKV" role="3cqZAp">
+          <node concept="3cpWsn" id="6p3MfvoKtKW" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="6p3MfvoKtKX" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6p3MfvoKtKY" role="37wK5m">
+                <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6p3MfvoKtKZ" role="37wK5m">
+                <property role="Xl_RC" value="IfaceFlowFile" />
+              </node>
+              <node concept="1jxXqW" id="6p3MfvoKtL0" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="6p3MfvoKtL1" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="6p3MfvoKtL2" role="3cqZAp">
+          <node concept="37vLTw" id="6p3MfvoKtL3" role="3tpDZB">
+            <ref role="3cqZAo" node="6p3MfvoKtJT" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6p3MfvoKtL4" role="3tpDZA">
+            <ref role="3cqZAo" node="6p3MfvoKtKW" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="3MUZSeGUzrw">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
