@@ -38,7 +38,7 @@
       <property role="TrG5h" value="part_B" />
     </node>
     <node concept="3HG_t4" id="7vLXn591F3z" role="2h0jOs">
-      <property role="3HG_t5" value="Part C - System architecture&#10;&#10;Lesson 1: Decompose the system into subsystems  [available]&#10;Lesson 2: Give parts ports  [available]&#10;Lesson 3: Connect the ports  [available]&#10;Lesson 4: Define the interface: what flows across&#10;Lesson 5: Make variants: specialization&#10;Lesson 6: Adapt a part: redefinition&#10;Lesson 7: Organize a larger model: packages and libraries" />
+      <property role="3HG_t5" value="Part C - System architecture&#10;&#10;Lesson 1: Decompose the system into subsystems  [available]&#10;Lesson 2: Give parts ports  [available]&#10;Lesson 3: Connect the ports  [available]&#10;Lesson 4: Define the interface: what flows across  [available]&#10;Lesson 5: Make variants: specialization&#10;Lesson 6: Adapt a part: redefinition&#10;Lesson 7: Organize a larger model: packages and libraries" />
       <property role="TrG5h" value="part_C" />
     </node>
     <node concept="3HG_t4" id="7vLXn591F3$" role="2h0jOs">
