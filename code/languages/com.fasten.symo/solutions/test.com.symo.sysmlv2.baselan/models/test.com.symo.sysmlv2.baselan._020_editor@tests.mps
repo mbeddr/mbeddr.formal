@@ -220,6 +220,9 @@
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
+      <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
+        <child id="7368954382145192537" name="aliasedName" index="2Z$kEI" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
@@ -4898,6 +4901,77 @@
           <property role="pLAjf" value="VK_ENTER" />
           <property role="3hacHL" value="5SFo3Mf0QpD/replace_all" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6p3MfvrdNS8">
+    <property role="TrG5h" value="_105_Alias_EditQualifiedTarget" />
+    <property role="3YCmrE" value="typing a name after the :: of an alias target resolves it inside the previous segment" />
+    <node concept="1qefOq" id="6p3MfvrdNS9" role="25YQCW">
+      <node concept="2h0jOr" id="6p3MfvrdNSa" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="6p3MfvrdNSb" role="2h0jOs">
+          <property role="TrG5h" value="EdLib" />
+          <node concept="3Z9vzX" id="6p3MfvrdNSc" role="3Z9vGx">
+            <property role="TrG5h" value="EdSub" />
+            <node concept="3ZUotO" id="6p3MfvrdNSd" role="3Z9vGx">
+              <property role="TrG5h" value="EdCam" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Z9vzX" id="6p3MfvrdNSe" role="2h0jOs">
+          <property role="TrG5h" value="EdUse" />
+          <node concept="1AcQlj" id="6p3MfvrdNSf" role="3Z9vGx">
+            <property role="TrG5h" value="EdSubA" />
+            <node concept="AsIwX" id="6p3MfvrdNSg" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvrdNSh" role="AsIwY">
+                <ref role="AsIwW" node="6p3MfvrdNSb" resolve="EdLib" />
+              </node>
+              <node concept="AsIwU" id="6p3MfvrdNSi" role="AsIwY">
+                <node concept="LIFWc" id="6p3MfvrdNSj" role="lGtFl">
+                  <property role="LIFWd" value="empty_target" />
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6p3MfvrdNSk" role="25YQFr">
+      <node concept="2h0jOr" id="6p3MfvrdNSl" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="6p3MfvrdNSm" role="2h0jOs">
+          <property role="TrG5h" value="EdLib" />
+          <node concept="3Z9vzX" id="6p3MfvrdNSn" role="3Z9vGx">
+            <property role="TrG5h" value="EdSub" />
+            <node concept="3ZUotO" id="6p3MfvrdNSo" role="3Z9vGx">
+              <property role="TrG5h" value="EdCam" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Z9vzX" id="6p3MfvrdNSp" role="2h0jOs">
+          <property role="TrG5h" value="EdUse" />
+          <node concept="1AcQlj" id="6p3MfvrdNSq" role="3Z9vGx">
+            <property role="TrG5h" value="EdSubA" />
+            <node concept="AsIwX" id="6p3MfvrdNSr" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvrdNSs" role="AsIwY">
+                <ref role="AsIwW" node="6p3MfvrdNSm" resolve="EdLib" />
+              </node>
+              <node concept="AsIwU" id="6p3MfvrdNSt" role="AsIwY">
+                <ref role="AsIwW" node="6p3MfvrdNSn" resolve="EdSub" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6p3MfvrdNSu" role="LjaKd">
+      <node concept="2TK7Tu" id="6p3MfvrdNSv" role="3cqZAp">
+        <property role="2TTd_B" value="EdSub" />
       </node>
     </node>
   </node>
