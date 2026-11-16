@@ -12,6 +12,33 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## "Tests in 'baselan'" does not run the importer tests (2026-11-16)
+
+The `Tests in 'baselan'` run configuration covers only the `test.com.symo.sysmlv2.baselan` solution
+(about 400 tests). The importer tests in `test.com.symo.sysmlv2.baselan.importer` (`_010_smoke_test`,
+about 450 tests) are a separate solution, so a green suite run says nothing about them. After a change
+to scoping, behavior or textgen, also run the importer model:
+`create_run_configuration` with `modelReference` (not `nodeReference`, which rejects a model) creates
+`Tests in '_010_smoke_test@tests'`. The importer tests use Java `assert`, which is enabled in these
+runs (checked by a mutation that made one fail).
+
+## `print_node` is shallow unless `deep: true`; unknown parameters are ignored (2026-11-16)
+
+`print_node` with JSON format lists only the direct children's refs by default. Pass `deep: true` for
+the whole subtree, and a small `maxInlineBytes` to get it as a `/tmp/mps-node-*.json` file. Parameters it
+does not know, such as `depth` or `outputFile`, are silently ignored: no error, no file. To duplicate a
+node (e.g. a test method to vary), `alter_nodes COPY_NODE` is quicker than print-and-reinsert: it inserts
+the copy as the next sibling, then change it with `update_node`.
+
+## `insert_root_node_from_json` resolves names in context, after the insert (2026-11-16)
+
+References given only by name (`{"role":"target","target":"Camera"}`) are resolved after the root is
+inserted, through each reference's own scope. So the second segment of `Power::PowerBoard` resolves
+inside `Power`, and of several elements named `Camera` the one visible at that place is taken (checked on
+the Lesson 7 tutorial model, where `Camera` and `Battery` each exist in three packages). Insert the roots in
+dependency order (definitions first). A green model check does not prove a name bound to the intended
+element: map every segment's `targetReference` to the target's qualified path and read the list.
+
 ## A migration that replaces nodes silently deletes the test annotations on them (2026-11-16)
 
 Test assertions in a `@tests` model (`ScopesTest`, `has warning`/`has error` checks) are attributes

@@ -1463,8 +1463,16 @@ discussion. Each item says which lesson is blocked or affected.
   snapshots and timeslices; time triggers `after`/`at`/`when` (not verified).
 - **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
   inline. Affects the state-machine lessons.
-- **`alias` keeps its target as plain text** (no name resolution). Its target still uses the deprecated
-  `SysMLv2IdentifierNameConceptRef` (Lesson 7 gap 1, not fixed yet).
+- **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
+  (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
+  alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
+  `_325_AliasResolution`, importer `_700…testImportThroughAliasedNamespace`, editor
+  `_105_Alias_EditQualifiedTarget` (`ce7660df`, all mutation-checked). Tutorial Part C Lesson 7 teaches
+  aliases and short names in `_050_parts_catalog` / `_051_racing_drone`. Still open (cleanup):
+  - delete the deprecated `SysMLv2IdentifierNameConceptRef` and its editor, behavior, textgen and
+    constraints once no migration needs it; `canonicalTarget` duplicates the last-segment loop.
+  - six `has warning` checks in `_070_UsageTypingCardinality` were lost by the migration (see the
+    gotcha "A migration that replaces nodes…"); restore them if their intent is known, otherwise drop.
 - **Lesson 7 gaps 2–4 — FIXED 2026-11-16 (pending review).**
   - Gap 2: short names `<FC>` have an editor cell (component `ISysMLv2IdentifierNameConcept_ShortName`) and
     textgen in part, attribute, port, item, connection, interface, flow, reference and enumeration
