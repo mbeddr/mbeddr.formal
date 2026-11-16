@@ -11540,6 +11540,193 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="6p3MfvoLsq9" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripAbstractAndMultipleSpecialization" />
+      <node concept="3cqZAl" id="6p3MfvoLsqb" role="3clF45" />
+      <node concept="3clFbS" id="6p3MfvoLsqc" role="3clF47">
+        <node concept="3cpWs8" id="6p3MfvoLsqd" role="3cqZAp">
+          <node concept="3cpWsn" id="6p3MfvoLsqe" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="6p3MfvoLsqf" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqg" role="3cqZAp">
+          <node concept="37vLTI" id="6p3MfvoLsqh" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqi" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqj" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqk" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsql" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqm" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqn" role="37vLTx">
+              <property role="Xl_RC" value="  port def CmdPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqo" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqp" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqq" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqr" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqs" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqt" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqu" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqv" role="37vLTx">
+              <property role="Xl_RC" value="  abstract part def Motor {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqw" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqx" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqy" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqz" role="37vLTx">
+              <property role="Xl_RC" value="    port commandIn : CmdPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsq$" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsq_" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqA" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqB" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqC" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqD" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqE" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqF" role="37vLTx">
+              <property role="Xl_RC" value="  part def DataSource {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqG" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqH" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqI" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqJ" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqK" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqL" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqM" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqN" role="37vLTx">
+              <property role="Xl_RC" value="  part def SmartMotor :&gt; Motor, DataSource {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqO" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqP" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqQ" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqR" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqS" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqT" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqU" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqV" role="37vLTx">
+              <property role="Xl_RC" value="  part def Drone {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsqW" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsqX" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsqY" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsqZ" role="37vLTx">
+              <property role="Xl_RC" value="    part motor1 : SmartMotor;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsr0" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsr1" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsr2" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsr3" role="37vLTx">
+              <property role="Xl_RC" value="    part spare : Motor;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsr4" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsr5" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsr6" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsr7" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3MfvoLsr8" role="3cqZAp">
+          <node concept="d57v9" id="6p3MfvoLsr9" role="3clFbG">
+            <node concept="37vLTw" id="6p3MfvoLsra" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3MfvoLsrb" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6p3MfvoLsrc" role="3cqZAp">
+          <node concept="3cpWsn" id="6p3MfvoLsrd" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="6p3MfvoLsre" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6p3MfvoLsrf" role="37wK5m">
+                <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6p3MfvoLsrg" role="37wK5m">
+                <property role="Xl_RC" value="SpecFile" />
+              </node>
+              <node concept="1jxXqW" id="6p3MfvoLsrh" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="6p3MfvoLsri" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="6p3MfvoLsrj" role="3cqZAp">
+          <node concept="37vLTw" id="6p3MfvoLsrk" role="3tpDZB">
+            <ref role="3cqZAo" node="6p3MfvoLsqe" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6p3MfvoLsrl" role="3tpDZA">
+            <ref role="3cqZAo" node="6p3MfvoLsrd" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="4N4m7hrWHiy">
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
