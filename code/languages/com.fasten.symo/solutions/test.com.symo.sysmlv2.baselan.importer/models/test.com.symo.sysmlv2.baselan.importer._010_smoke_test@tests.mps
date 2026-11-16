@@ -8,7 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -431,10 +431,7 @@
         <child id="6214786105876472930" name="feature" index="1_WVXF" />
       </concept>
       <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
-        <child id="7354895567584118451" name="target" index="1BST0Y" />
-      </concept>
-      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
-        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
+        <child id="7368954382145192537" name="aliasedName" index="2Z$kEI" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="6214786105868823585" name="locale" index="1_pRsC" />
@@ -6559,8 +6556,8 @@
           <property role="TrG5h" value="pack1" />
           <node concept="1AcQlj" id="6ohPCO1Mc9c" role="3Z9vGx">
             <property role="TrG5h" value="AliasName" />
-            <node concept="1Bo4sc" id="6ohPCO1ZiWY" role="1BST0Y">
-              <property role="1Bo4sf" value="A::B" />
+            <node concept="AsIwX" id="6p3MfvqJBhT" role="2Z$kEI">
+              <property role="AsIwZ" value="A::B" />
             </node>
           </node>
         </node>
@@ -7334,8 +7331,8 @@
           <property role="TrG5h" value="Engine" />
           <node concept="1AcQlj" id="6ohPCO11nKo" role="3w00ZY">
             <property role="TrG5h" value="AliasName" />
-            <node concept="1Bo4sc" id="6ohPCO2z7bq" role="1BST0Y">
-              <property role="1Bo4sf" value="A::B" />
+            <node concept="AsIwX" id="6p3MfvqJBhV" role="2Z$kEI">
+              <property role="AsIwZ" value="A::B" />
             </node>
           </node>
         </node>
@@ -8026,8 +8023,8 @@
           <property role="3815tZ" value="6jJ9KHVIUlW/private" />
           <node concept="1AcQlj" id="3VmcprR8fga" role="3w00ZY">
             <property role="TrG5h" value="AliasName" />
-            <node concept="1Bo4sc" id="3VmcprR8fgc" role="1BST0Y">
-              <property role="1Bo4sf" value="A::B" />
+            <node concept="AsIwX" id="6p3MfvqJBhX" role="2Z$kEI">
+              <property role="AsIwZ" value="A::B" />
             </node>
           </node>
         </node>

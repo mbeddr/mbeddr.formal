@@ -2,7 +2,7 @@
 <model ref="r:1a1c8a6d-da0c-4eb7-8aac-11f080110708(com.symo.sysmlv2.tutorial.lessons.Part_C_System_Architecture.Lesson_03_Connect_the_Ports)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
   </languages>
   <imports />
   <registry>

@@ -12,6 +12,16 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A migration that replaces nodes silently deletes the test annotations on them (2026-11-16)
+
+Test assertions in a `@tests` model (`ScopesTest`, `has warning`/`has error` checks) are attributes
+in the annotated node's `smodelAttribute` role. A migration script that builds a new node and removes
+the old one (here: alias `target` → `aliasedName`) drops those attributes with it. The suite then
+stays green, only with fewer tests (405 → 398). Before running such a migration, list the
+test-model nodes of the migrated concept and their attributes, or copy `smodelAttribute` children
+across in the migration. Afterwards, diff the `<START_TEST>` lines of the old and new
+`ij_run_*.log` to spot vanished tests.
+
 ## A NodesTestCase cannot test cross-root scoping; large-model checks time out (2026-11-16)
 
 Each `TestNode` of a NodesTestCase is checked as if alone, so a scope that walks the model's other roots

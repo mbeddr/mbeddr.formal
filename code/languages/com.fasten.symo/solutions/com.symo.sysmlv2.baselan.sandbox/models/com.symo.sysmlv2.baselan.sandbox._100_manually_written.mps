@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -109,6 +109,7 @@
         <reference id="8642959026948349261" name="target" index="AsIwW" />
       </concept>
       <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
+        <property id="8642959026948349262" name="text" index="AsIwZ" />
         <child id="8642959026948349263" name="segments" index="AsIwY" />
       </concept>
       <concept id="3548282586734449994" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Usage" flags="ngI" index="2SfdPW">
@@ -269,11 +270,8 @@
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
       <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
-        <child id="7354895567584118451" name="target" index="1BST0Y" />
+        <child id="7368954382145192537" name="aliasedName" index="2Z$kEI" />
         <child id="9028721269300000001" name="content" index="3XVScD" />
-      </concept>
-      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
-        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -1126,31 +1124,31 @@
       <property role="TrG5h" value="Quantities" />
       <node concept="1AcQlj" id="7PctyxXx$kB" role="3Z9vGx">
         <property role="TrG5h" value="Length" />
-        <node concept="1Bo4sc" id="7PctyxXx$kD" role="1BST0Y">
-          <property role="1Bo4sf" value="LengthValue" />
+        <node concept="AsIwX" id="6p3MfvqJBil" role="2Z$kEI">
+          <property role="AsIwZ" value="LengthValue" />
         </node>
       </node>
       <node concept="1AcQlj" id="7PctyxXx$kE" role="3Z9vGx">
         <property role="TrG5h" value="Mass" />
         <property role="6zCXJ" value="kg" />
-        <node concept="1Bo4sc" id="7PctyxXx$kG" role="1BST0Y">
-          <property role="1Bo4sf" value="MassValue" />
+        <node concept="AsIwX" id="6p3MfvqJBin" role="2Z$kEI">
+          <property role="AsIwZ" value="MassValue" />
         </node>
       </node>
       <node concept="1AcQlj" id="7PctyxXx$kH" role="3Z9vGx">
         <property role="6zCXJ" value="m" />
-        <node concept="1Bo4sc" id="7PctyxXx$kJ" role="1BST0Y">
-          <property role="1Bo4sf" value="MeterValue" />
+        <node concept="AsIwX" id="6p3MfvqJBip" role="2Z$kEI">
+          <property role="AsIwZ" value="MeterValue" />
         </node>
       </node>
       <node concept="1AcQlj" id="7PctyxXx$kK" role="3Z9vGx">
         <property role="TrG5h" value="Duration" />
         <property role="6zCXJ" value="t" />
-        <node concept="1Bo4sc" id="7PctyxXx$kM" role="1BST0Y">
-          <property role="1Bo4sf" value="TimeValue" />
-        </node>
         <node concept="3HG_t4" id="7PctyxXx$kN" role="3XVScD">
           <property role="3HG_t5" value="A duration, given in seconds" />
+        </node>
+        <node concept="AsIwX" id="6p3MfvqJBir" role="2Z$kEI">
+          <property role="AsIwZ" value="TimeValue" />
         </node>
       </node>
     </node>

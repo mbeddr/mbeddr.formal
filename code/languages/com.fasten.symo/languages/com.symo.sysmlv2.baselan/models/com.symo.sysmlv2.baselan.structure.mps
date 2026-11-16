@@ -1435,8 +1435,10 @@
       <property role="IQ2ns" value="7354895567584118451" />
       <property role="20kJfa" value="target" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="6ohPCO1sp61" resolve="SysMLv2IdentifierNameConceptRef" />
+      <node concept="asaX9" id="6p3MfvpOEJ_" role="lGtFl">
+        <property role="YLQ7P" value="use aliasedName (qualified name); migrated by Migration from version 11" />
+      </node>
     </node>
     <node concept="1TJgyj" id="7PctyxXaP_z" role="1TKVEi">
       <property role="IQ2ns" value="9028721269300000001" />
@@ -1447,6 +1449,12 @@
     </node>
     <node concept="PrWs8" id="6i6xKqIdiqW" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="1TJgyj" id="6p3MfvpOC9p" role="1TKVEi">
+      <property role="IQ2ns" value="7368954382145192537" />
+      <property role="20kJfa" value="aliasedName" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ohPCO1sp61">

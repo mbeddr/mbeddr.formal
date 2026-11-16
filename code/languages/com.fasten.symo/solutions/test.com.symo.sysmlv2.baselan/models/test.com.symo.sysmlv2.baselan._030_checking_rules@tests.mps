@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -365,10 +365,7 @@
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
       <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
-        <child id="7354895567584118451" name="target" index="1BST0Y" />
-      </concept>
-      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
-        <reference id="7354895567575683459" name="target" index="1Bo4se" />
+        <child id="7368954382145192537" name="aliasedName" index="2Z$kEI" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -2674,79 +2671,49 @@
           </node>
           <node concept="1AcQlj" id="1AVz0_c9MZj" role="3Z9vGx">
             <property role="TrG5h" value="FunctionAlias" />
-            <node concept="1Bo4sc" id="1AVz0_c9MZk" role="1BST0Y">
-              <ref role="1Bo4se" node="1AVz0_c9MYC" resolve="Function" />
-              <node concept="7CXmI" id="61dxE2o2vzO" role="lGtFl">
-                <node concept="29bkU" id="61dxE2o2vzP" role="7EUXB">
-                  <node concept="1DMPye" id="61dxE2o2vzQ" role="1DMPz9">
-                    <property role="1DMPyf" value="Warning: The node 'SysMLv2IdentifierNameConceptRef' is an instance of deprecated concept" />
-                  </node>
-                </node>
+            <node concept="AsIwX" id="6p3MfvqJBi1" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvqJBi2" role="AsIwY">
+                <ref role="AsIwW" node="1AVz0_c9MYC" resolve="Function" />
               </node>
             </node>
           </node>
           <node concept="1AcQlj" id="1AVz0_c9MZl" role="3Z9vGx">
             <property role="TrG5h" value="SameFunctionAlias" />
-            <node concept="1Bo4sc" id="1AVz0_c9MZm" role="1BST0Y">
-              <ref role="1Bo4se" node="1AVz0_c9MYC" resolve="Function" />
-              <node concept="7CXmI" id="61dxE2o2vzR" role="lGtFl">
-                <node concept="29bkU" id="61dxE2o2vzS" role="7EUXB">
-                  <node concept="1DMPye" id="61dxE2o2vzT" role="1DMPz9">
-                    <property role="1DMPyf" value="Warning: The node 'SysMLv2IdentifierNameConceptRef' is an instance of deprecated concept" />
-                  </node>
-                </node>
+            <node concept="AsIwX" id="6p3MfvqJBi3" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvqJBi4" role="AsIwY">
+                <ref role="AsIwW" node="1AVz0_c9MYC" resolve="Function" />
               </node>
             </node>
           </node>
           <node concept="1AcQlj" id="1AVz0_c9MZn" role="3Z9vGx">
             <property role="TrG5h" value="OtherFunctionAlias" />
-            <node concept="1Bo4sc" id="1AVz0_c9MZo" role="1BST0Y">
-              <ref role="1Bo4se" node="1AVz0_c9MYW" resolve="CalculationTwo" />
-              <node concept="7CXmI" id="61dxE2o2vzU" role="lGtFl">
-                <node concept="29bkU" id="61dxE2o2vzV" role="7EUXB">
-                  <node concept="1DMPye" id="61dxE2o2vzW" role="1DMPz9">
-                    <property role="1DMPyf" value="Warning: The node 'SysMLv2IdentifierNameConceptRef' is an instance of deprecated concept" />
-                  </node>
-                </node>
+            <node concept="AsIwX" id="6p3MfvqJBi5" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvqJBi6" role="AsIwY">
+                <ref role="AsIwW" node="1AVz0_c9MYW" resolve="CalculationTwo" />
               </node>
             </node>
           </node>
           <node concept="1AcQlj" id="1AVz0_c9MZp" role="3Z9vGx">
             <property role="TrG5h" value="PartAlias" />
-            <node concept="1Bo4sc" id="1AVz0_c9MZq" role="1BST0Y">
-              <ref role="1Bo4se" node="1AVz0_c9MYM" resolve="Part" />
-              <node concept="7CXmI" id="61dxE2o2vzX" role="lGtFl">
-                <node concept="29bkU" id="61dxE2o2vzY" role="7EUXB">
-                  <node concept="1DMPye" id="61dxE2o2vzZ" role="1DMPz9">
-                    <property role="1DMPyf" value="Warning: The node 'SysMLv2IdentifierNameConceptRef' is an instance of deprecated concept" />
-                  </node>
-                </node>
+            <node concept="AsIwX" id="6p3MfvqJBi7" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvqJBi8" role="AsIwY">
+                <ref role="AsIwW" node="1AVz0_c9MYM" resolve="Part" />
               </node>
             </node>
           </node>
           <node concept="1AcQlj" id="1AVz0_c9MZr" role="3Z9vGx">
             <property role="TrG5h" value="CyclicAliasA" />
-            <node concept="1Bo4sc" id="1AVz0_c9MZs" role="1BST0Y">
-              <ref role="1Bo4se" node="1AVz0_c9MZt" resolve="CyclicAliasB" />
-              <node concept="7CXmI" id="61dxE2o2v$0" role="lGtFl">
-                <node concept="29bkU" id="61dxE2o2v$1" role="7EUXB">
-                  <node concept="1DMPye" id="61dxE2o2v$2" role="1DMPz9">
-                    <property role="1DMPyf" value="Warning: The node 'SysMLv2IdentifierNameConceptRef' is an instance of deprecated concept" />
-                  </node>
-                </node>
+            <node concept="AsIwX" id="6p3MfvqJBi9" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvqJBia" role="AsIwY">
+                <ref role="AsIwW" node="1AVz0_c9MZt" resolve="CyclicAliasB" />
               </node>
             </node>
           </node>
           <node concept="1AcQlj" id="1AVz0_c9MZt" role="3Z9vGx">
             <property role="TrG5h" value="CyclicAliasB" />
-            <node concept="1Bo4sc" id="1AVz0_c9MZu" role="1BST0Y">
-              <ref role="1Bo4se" node="1AVz0_c9MZr" resolve="CyclicAliasA" />
-              <node concept="7CXmI" id="61dxE2o2v$3" role="lGtFl">
-                <node concept="29bkU" id="61dxE2o2v$4" role="7EUXB">
-                  <node concept="1DMPye" id="61dxE2o2v$5" role="1DMPz9">
-                    <property role="1DMPyf" value="Warning: The node 'SysMLv2IdentifierNameConceptRef' is an instance of deprecated concept" />
-                  </node>
-                </node>
+            <node concept="AsIwX" id="6p3MfvqJBib" role="2Z$kEI">
+              <node concept="AsIwU" id="6p3MfvqJBic" role="AsIwY">
+                <ref role="AsIwW" node="1AVz0_c9MZr" resolve="CyclicAliasA" />
               </node>
             </node>
           </node>

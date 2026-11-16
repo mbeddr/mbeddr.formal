@@ -2,7 +2,7 @@
 <model ref="r:2507e7d0-c7fe-4d02-8875-80f58caa8d3c(com.symo.sysmlv2.tutorial.lessons.Part_B_Requirements.Lesson_01_State_a_Requirement)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
   </languages>
   <imports />
   <registry>

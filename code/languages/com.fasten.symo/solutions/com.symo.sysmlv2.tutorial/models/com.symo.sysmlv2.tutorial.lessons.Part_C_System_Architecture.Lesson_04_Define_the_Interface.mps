@@ -2,7 +2,7 @@
 <model ref="r:63361c71-2acd-427e-a38f-ce38b7415ba0(com.symo.sysmlv2.tutorial.lessons.Part_C_System_Architecture.Lesson_04_Define_the_Interface)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="11" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
   </languages>
   <imports />
   <registry>

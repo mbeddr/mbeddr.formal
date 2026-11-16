@@ -6633,11 +6633,11 @@
               <node concept="2OqwBi" id="6ohPCO24QQt" role="2Oq$k0">
                 <node concept="117lpO" id="6ohPCO24QQw" role="2Oq$k0" />
                 <node concept="3TrEf2" id="6ohPCO24QQx" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5rf1:6ohPCO1W$qN" resolve="target" />
+                  <ref role="3Tt5mk" to="5rf1:6p3MfvpOC9p" resolve="aliasedName" />
                 </node>
               </node>
               <node concept="3zqWPK" id="4QEfSMEAyCv" role="2OqNvi">
-                <ref role="37wK5l" to="5wt7:2YEARL0K0JU" resolve="getEffectiveName" />
+                <ref role="37wK5l" to="5wt7:7vLXn5kZyN5" resolve="qualifiedText" />
               </node>
             </node>
           </node>
