@@ -3923,8 +3923,9 @@
       <node concept="PMmxH" id="6i6xKqIAtbN" role="3EZMnx">
         <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
       </node>
-      <node concept="3F0ifn" id="6ohPCO08Hjx" role="3EZMnx">
-        <property role="3F0ifm" value="alias " />
+      <node concept="3F0ifn" id="6p3MfvrlUrC" role="3EZMnx">
+        <property role="3F0ifm" value="alias" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="PMmxH" id="7PctyxXaPAY" role="3EZMnx">
         <ref role="PMmxG" node="7PctyxVRF3T" resolve="ISysMLv2IdentifierNameConcept_ShortName" />
