@@ -45,6 +45,18 @@ Everything here goes through the MCP tools; node trees larger than 4 KB are pass
   `SET CHILD body` (keeps the method id, which tests reference). Use `x as C` (`SNodeTypeCastExpression`, `asCast=true`), `ofConcept<C>`, `.selectMany({it => ...})`
   (link lists cannot be chained), and the `lang.behavior` `Node_ConceptMethodCall` for calls.
 
+## Recipe: null-safe equality `a :eq: b` (and `a :ne: b`)
+In model code (behavior, typesystem helpers, checking rules, constraints) compare strings and other objects with BaseLanguage's
+null-safe equality `name :eq: otherName`, not `a.equals(b)` or a private `same(a, b)` helper. `:eq:` is true when both sides are
+null or `equals` says so; `:ne:` is its negation.
+- Concepts: `jetbrains.mps.baseLanguage.structure.NPEEqualsExpression` / `NPENotEqualsExpression`, children `leftExpression`
+  and `rightExpression`. `parse_java_and_insert` cannot produce them: insert the plain Java, then replace each `x.equals(y)`
+  `DotExpression` with `SET CHILD` and a blueprint
+  `{"concept":"jetbrains.mps.baseLanguage.structure.NPEEqualsExpression","children":[{"role":"leftExpression","nodes":[<x>]},{"role":"rightExpression","nodes":[<y>]}]}`
+  (copy `<x>`/`<y>` from a deep `print_node` of the old call).
+- Null equals null: `name :eq: otherShortName` is true when both are absent. Guard it when a missing value must not
+  match, e.g. `name != null && (name :eq: otherName || name :eq: otherShortName)`.
+
 ## Recipe: a NodesTestCase / EditorTestCase
 - `NodesTestCase`: fixture nodes as `TestNode`s with `TestNodeAnnotation` labels; assertions in `SimpleNodeTest` bodies (`AssertEquals`, `AssertTrue(x == null)`).
   Constraint/checking-rule tests: `NodeOperationsContainer` attribute with `NodeConstraintsErrorCheckOperation` + `errorRef: UnknownRuleReference`

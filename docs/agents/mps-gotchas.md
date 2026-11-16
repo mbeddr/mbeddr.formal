@@ -12,6 +12,17 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A NodesTestCase cannot test cross-root scoping; large-model checks time out (2026-11-16)
+
+Each `TestNode` of a NodesTestCase is checked as if alone, so a scope that walks the model's other roots
+(e.g. `rootsIncludingImported`) does not see sibling test nodes. A test of "element of another file"
+behavior silently tests nothing; cover such behavior with a sandbox or tutorial model check instead.
+Separately, `mps_mcp_check_root_node_problems` on a whole model with many big roots (the SysML v2
+system library, 58 roots) exceeds the 30 s MCP limit. List the roots with `query_nodes FIND_INSTANCES`
+(`BaseConcept`, `rootsOnly:true`, `models` given as `r:<uuid>(<name>)` — the bare `r:<uuid>` form is
+rejected as unresolved) and check them per root with a small `maxInlineBytes`, then grep the result
+files.
+
 ## Make only the changed aspect model, not the whole language (2026-11-16)
 
 A module-level `MAKE` with `rebuild:true` on a language often runs past the MCP timeout and is then
