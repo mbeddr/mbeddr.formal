@@ -909,8 +909,20 @@ Sandbox `_120_SubsettingRedefinition`; `_120_SubsettingRedefinitionTest` (import
 `_120_test_sysmlv2_subsetting_redefinition`. Full suite 30 tests green.
 
 Not covered yet: keyword-less usages (`:>> mass = 1500;` — SysML's default reference usage), feature
-values (`= expr`), references (`::>`), conjugation of redefined ports, and validating that a
-redefinition actually targets an inherited feature of compatible kind.
+values (`= expr`), references (`::>`), conjugation of redefined ports, and checking that a
+redefinition's multiplicity only narrows the inherited one (left out until checked against the spec).
+
+**Done (2026-11-16): a redefinition only narrows what it inherits.** Checking rule
+`check_SysMLv2Usage_redefinitionNarrows` (typesystem, virtual package `specialization`, helper class
+`RedefinitionHelper`) reports on each `:>>` target: `[redefinition-kind]` when an attribute, port or
+item usage is redefined by a different kind of feature (e.g. a part redefining an attribute), and
+`[redefinition-type]` when the redefining usage declares a type that is neither the inherited type
+nor a specialization of it. Reference usages (keyword-less) on either side and redefinitions of other
+usage kinds are exempt from the kind check (the system model library redefines `start`/`done` with
+use cases and actions); untyped redefinitions are exempt from the type check. A redefinition that
+targets nothing inherited already shows as an unresolved reference via scoping. Test
+`_323_RedefinitionNarrowsCheck` in `_030_checking_rules` (run config `baselan_323_redefinition`),
+mutation-checked.
 
 **Editor convention (2026-10-12, per the user)**: every `<X>Ref` concept that carries both a fallback
 name (filled by the importer, reified later) and a real reference projects the reference in its

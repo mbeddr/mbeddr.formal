@@ -25,6 +25,7 @@
     <import index="c1f6" ref="r:759a6b4a-c288-458e-a4eb-10c372c70335(com.symo.sysmlv2.baselan.migration)" />
     <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -200,6 +201,10 @@
         <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="4376090928945101101" name="value" index="2gbwqI" />
       </concept>
+      <concept id="8930763252717678342" name="com.symo.sysmlv2.baselan.structure.SysMLv2Multiplicity" flags="ng" index="8EhVq">
+        <property id="8930763252717678344" name="upper" index="8EhVk" />
+        <property id="8930763252717678343" name="lower" index="8EhVr" />
+      </concept>
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB" />
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
         <child id="8930763252717678371" name="content" index="8EhVZ" />
@@ -251,6 +256,7 @@
         <property id="717440187291784108" name="isEnd" index="2uUgYw" />
         <property id="284754763101489729" name="isReference" index="35c6MN" />
         <child id="7140692429575677858" name="subsets" index="3wdj9c" />
+        <child id="7140692429575677859" name="redefines" index="3wdj9d" />
       </concept>
       <concept id="6353433212932081528" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseUsage" flags="ng" index="SPUEw" />
       <concept id="6353433212932081529" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseUsage" flags="ng" index="SPUEx" />
@@ -298,6 +304,9 @@
       <concept id="284754763133676346" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainTextExpression" flags="ng" index="3bnkR8">
         <property id="284754763133676347" name="expressionText" index="3bnkR9" />
       </concept>
+      <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
+        <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
+      </concept>
       <concept id="9009971474269510567" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureChainEnd" flags="ng" index="3ldkbQ">
         <child id="8400219579968936546" name="chain" index="3nLW_h" />
       </concept>
@@ -323,6 +332,7 @@
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="8930763252716192330" name="content" index="8GFem" />
+        <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
         <child id="7140692429574298135" name="types" index="3w00ZT" />
         <child id="7140692429574298133" name="direction" index="3w00ZV" />
       </concept>
@@ -374,6 +384,10 @@
         <child id="7406476705817406958" name="referenced" index="3TIFEW" />
       </concept>
       <concept id="7406476705817406956" name="com.symo.sysmlv2.baselan.structure.SysMLv2StakeholderUsage" flags="ng" index="3TIFEY" />
+      <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
+        <property id="7267068243728800121" name="isImportAll" index="3d8W_D" />
+        <child id="8642959026948349267" name="importedName" index="AsIwy" />
+      </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
@@ -16422,6 +16436,368 @@
           </node>
           <node concept="3ZUotO" id="6p3MfvoMfo9" role="3Z9vGx">
             <property role="TrG5h" value="E" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6p3MfvoQmOv">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_323_RedefinitionNarrowsCheck" />
+    <node concept="1qefOq" id="6p3MfvoQmOw" role="1SKRRt">
+      <node concept="2h0jOr" id="6p3MfvoQmOx" role="1qenE9">
+        <property role="TrG5h" value="_323_RedefinitionNarrowsCheck_file" />
+        <node concept="3Z9vzX" id="6p3MfvoQmOy" role="2h0jOs">
+          <property role="TrG5h" value="rn" />
+          <node concept="3Z0THl" id="6p3MfvoQmOz" role="3Z9vGx">
+            <property role="3d8W_D" value="true" />
+            <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+            <node concept="AsIwX" id="6p3MfvoQmO$" role="AsIwy">
+              <node concept="AsIwU" id="6p3MfvoQmO_" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Z0THl" id="6p3MfvoQmOA" role="3Z9vGx">
+            <property role="3d8W_D" value="true" />
+            <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+            <node concept="AsIwX" id="6p3MfvoQmOB" role="AsIwy">
+              <node concept="AsIwU" id="6p3MfvoQmOC" role="AsIwY">
+                <ref role="AsIwW" to="l681:4QEfSMD5$u6" resolve="SI" />
+              </node>
+            </node>
+          </node>
+          <node concept="3w00Z_" id="6p3MfvoQmOD" role="3Z9vGx">
+            <property role="TrG5h" value="Cmd" />
+          </node>
+          <node concept="3xZtmp" id="6p3MfvoQmOE" role="3Z9vGx">
+            <property role="TrG5h" value="CmdPort" />
+            <node concept="3w00Zz" id="6p3MfvoQmOF" role="3xZtmj">
+              <property role="TrG5h" value="cmd" />
+              <node concept="3w00Zy" id="6p3MfvoQmOG" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmOH" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmOI" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOD" resolve="Cmd" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3xZtmk" id="6p3MfvoQmOJ" role="3w00ZV" />
+            </node>
+          </node>
+          <node concept="3xZtmp" id="6p3MfvoQmOK" role="3Z9vGx">
+            <property role="TrG5h" value="FastCmdPort" />
+            <node concept="3xZtmm" id="6p3MfvoQmOL" role="3xZtmi">
+              <node concept="AsIwX" id="6p3MfvoQmON" role="2_tBl3">
+                <node concept="AsIwU" id="6p3MfvoQmOO" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOE" resolve="CmdPort" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3xZtmp" id="6p3MfvoQmOP" role="3Z9vGx">
+            <property role="TrG5h" value="OtherPort" />
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmOQ" role="3Z9vGx">
+            <property role="TrG5h" value="Propeller" />
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmOR" role="3Z9vGx">
+            <property role="TrG5h" value="CarbonPropeller" />
+            <node concept="8CKM2" id="6p3MfvoQmOS" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmOT" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmOU" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOQ" resolve="Propeller" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmOV" role="3Z9vGx">
+            <property role="TrG5h" value="Rotor" />
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmOW" role="3Z9vGx">
+            <property role="TrG5h" value="Motor" />
+            <property role="3eyS6o" value="true" />
+            <node concept="8EhU9" id="6p3MfvoQmOX" role="3w00ZY">
+              <property role="TrG5h" value="mass" />
+              <node concept="8EhVB" id="6p3MfvoQmOY" role="8EhU5">
+                <node concept="AsIwX" id="6p3MfvoQmP0" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvoQmP1" role="AsIwY">
+                    <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+                  </node>
+                  <node concept="AsIwU" id="6p3MfvoQmP2" role="AsIwY">
+                    <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3xZtmn" id="6p3MfvoQmP3" role="3w00ZY">
+              <property role="TrG5h" value="commandIn" />
+              <node concept="3xZtmm" id="6p3MfvoQmP4" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvoQmP6" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvoQmP7" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOE" resolve="CmdPort" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8GF0z" id="6p3MfvoQmP8" role="3w00ZY">
+              <property role="TrG5h" value="prop" />
+              <node concept="8CKM2" id="6p3MfvoQmP9" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmPa" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmPb" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOQ" resolve="Propeller" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmPc" role="3Z9vGx">
+            <property role="TrG5h" value="Quad" />
+            <node concept="8GF0z" id="6p3MfvoQmPd" role="3w00ZY">
+              <property role="TrG5h" value="motors" />
+              <node concept="8CKM2" id="6p3MfvoQmPe" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmPf" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmPg" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOW" resolve="Motor" />
+                  </node>
+                </node>
+              </node>
+              <node concept="8EhVq" id="6p3MfvoQmPh" role="3w00ZS">
+                <property role="8EhVr" value="4" />
+                <property role="8EhVk" value="4" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmPi" role="3Z9vGx">
+            <property role="TrG5h" value="RacingMotor" />
+            <node concept="8EhU9" id="6p3MfvoQmPj" role="3w00ZY">
+              <property role="TrG5h" value="mass" />
+              <node concept="8EhVB" id="6p3MfvoQmPk" role="8EhU5">
+                <node concept="AsIwX" id="6p3MfvoQmPm" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvoQmPn" role="AsIwY">
+                    <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+                  </node>
+                  <node concept="AsIwU" id="6p3MfvoQmPo" role="AsIwY">
+                    <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmPp" role="3wdj9d">
+                <property role="3wdj9b" value="mass" />
+                <ref role="3wdj98" node="6p3MfvoQmOX" resolve="mass" />
+              </node>
+              <node concept="3bnkR8" id="6p3MfvoQmPq" role="2gbwqI">
+                <property role="3bnkR9" value="0.08 [kg]" />
+              </node>
+            </node>
+            <node concept="3xZtmn" id="6p3MfvoQmPr" role="3w00ZY">
+              <property role="TrG5h" value="commandIn" />
+              <node concept="3xZtmm" id="6p3MfvoQmPs" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvoQmPu" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvoQmPv" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOK" resolve="FastCmdPort" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmPw" role="3wdj9d">
+                <property role="3wdj9b" value="commandIn" />
+                <ref role="3wdj98" node="6p3MfvoQmP3" resolve="commandIn" />
+              </node>
+            </node>
+            <node concept="8GF0z" id="6p3MfvoQmPx" role="3w00ZY">
+              <property role="TrG5h" value="prop" />
+              <node concept="8CKM2" id="6p3MfvoQmPy" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmPz" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmP$" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOR" resolve="CarbonPropeller" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmP_" role="3wdj9d">
+                <property role="3wdj9b" value="prop" />
+                <ref role="3wdj98" node="6p3MfvoQmP8" resolve="prop" />
+              </node>
+            </node>
+            <node concept="8CKM2" id="6p3MfvoQmPA" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmPB" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmPC" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOW" resolve="Motor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmPD" role="3Z9vGx">
+            <property role="TrG5h" value="CheapMotor" />
+            <node concept="8EhU9" id="6p3MfvoQmPE" role="3w00ZY">
+              <node concept="8EhVB" id="6p3MfvoQmPF" role="8EhU5">
+                <node concept="AsIwX" id="6p3MfvoQmPH" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvoQmPI" role="AsIwY">
+                    <ref role="AsIwW" to="l681:4QEfSMD5wIS" resolve="ISQBase" />
+                  </node>
+                  <node concept="AsIwU" id="6p3MfvoQmPJ" role="AsIwY">
+                    <ref role="AsIwW" to="l681:4QEfSMD5wJZ" resolve="MassValue" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmPK" role="3wdj9d">
+                <property role="3wdj9b" value="mass" />
+                <ref role="3wdj98" node="6p3MfvoQmOX" resolve="mass" />
+              </node>
+              <node concept="3bnkR8" id="6p3MfvoQmPL" role="2gbwqI">
+                <property role="3bnkR9" value="0.12 [kg]" />
+              </node>
+            </node>
+            <node concept="8CKM2" id="6p3MfvoQmPM" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmPN" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmPO" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOW" resolve="Motor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmPP" role="3Z9vGx">
+            <property role="TrG5h" value="SameMotor" />
+            <node concept="8GF0z" id="6p3MfvoQmPQ" role="3w00ZY">
+              <property role="TrG5h" value="prop" />
+              <node concept="8CKM2" id="6p3MfvoQmPR" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmPS" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmPT" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOQ" resolve="Propeller" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmPU" role="3wdj9d">
+                <property role="3wdj9b" value="prop" />
+                <ref role="3wdj98" node="6p3MfvoQmP8" resolve="prop" />
+              </node>
+            </node>
+            <node concept="8CKM2" id="6p3MfvoQmPV" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmPW" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmPX" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOW" resolve="Motor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmPY" role="3Z9vGx">
+            <property role="TrG5h" value="RacingQuad" />
+            <node concept="8GF0z" id="6p3MfvoQmPZ" role="3w00ZY">
+              <property role="TrG5h" value="motors" />
+              <node concept="8CKM2" id="6p3MfvoQmQ0" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmQ1" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmQ2" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmPi" resolve="RacingMotor" />
+                  </node>
+                </node>
+              </node>
+              <node concept="8EhVq" id="6p3MfvoQmQ3" role="3w00ZS">
+                <property role="8EhVr" value="4" />
+                <property role="8EhVk" value="4" />
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmQ4" role="3wdj9d">
+                <property role="3wdj9b" value="motors" />
+                <ref role="3wdj98" node="6p3MfvoQmPd" resolve="motors" />
+              </node>
+            </node>
+            <node concept="8CKM2" id="6p3MfvoQmQ5" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmQ6" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmQ7" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmPc" resolve="Quad" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmQ8" role="3Z9vGx">
+            <property role="TrG5h" value="BadPort" />
+            <node concept="3xZtmn" id="6p3MfvoQmQ9" role="3w00ZY">
+              <property role="TrG5h" value="commandIn" />
+              <node concept="3xZtmm" id="6p3MfvoQmQa" role="3xZtlF">
+                <node concept="AsIwX" id="6p3MfvoQmQc" role="2_tBl3">
+                  <node concept="AsIwU" id="6p3MfvoQmQd" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOP" resolve="OtherPort" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmQe" role="3wdj9d">
+                <property role="3wdj9b" value="commandIn" />
+                <ref role="3wdj98" node="6p3MfvoQmP3" resolve="commandIn" />
+                <node concept="7CXmI" id="6p3MfvoQmQf" role="lGtFl">
+                  <node concept="1TM$A" id="6p3MfvoQmQg" role="7EUXB">
+                    <node concept="2PYRI3" id="6p3MfvoQmQh" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:6p3MfvoNsV2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8CKM2" id="6p3MfvoQmQi" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmQj" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmQk" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOW" resolve="Motor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmQl" role="3Z9vGx">
+            <property role="TrG5h" value="BadPart" />
+            <node concept="8GF0z" id="6p3MfvoQmQm" role="3w00ZY">
+              <property role="TrG5h" value="prop" />
+              <node concept="8CKM2" id="6p3MfvoQmQn" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmQo" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmQp" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOV" resolve="Rotor" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmQq" role="3wdj9d">
+                <property role="3wdj9b" value="prop" />
+                <ref role="3wdj98" node="6p3MfvoQmP8" resolve="prop" />
+                <node concept="7CXmI" id="6p3MfvoQmQr" role="lGtFl">
+                  <node concept="1TM$A" id="6p3MfvoQmQs" role="7EUXB">
+                    <node concept="2PYRI3" id="6p3MfvoQmQt" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:6p3MfvoNsV2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8CKM2" id="6p3MfvoQmQu" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmQv" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmQw" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOW" resolve="Motor" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="6p3MfvoQmQx" role="3Z9vGx">
+            <property role="TrG5h" value="WrongKind" />
+            <node concept="8GF0z" id="6p3MfvoQmQy" role="3w00ZY">
+              <property role="TrG5h" value="mass" />
+              <node concept="8CKM2" id="6p3MfvoQmQz" role="3w00ZT">
+                <node concept="AsIwX" id="6p3MfvoQmQ$" role="1MHwYB">
+                  <node concept="AsIwU" id="6p3MfvoQmQ_" role="AsIwY">
+                    <ref role="AsIwW" node="6p3MfvoQmOQ" resolve="Propeller" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3wdj9f" id="6p3MfvoQmQA" role="3wdj9d">
+                <property role="3wdj9b" value="mass" />
+                <ref role="3wdj98" node="6p3MfvoQmOX" resolve="mass" />
+                <node concept="7CXmI" id="6p3MfvoQmQB" role="lGtFl">
+                  <node concept="1TM$A" id="6p3MfvoQmQC" role="7EUXB">
+                    <node concept="2PYRI3" id="6p3MfvoQmQD" role="3lydEf">
+                      <ref role="39XzEq" to="6e71:6p3MfvoNsUG" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="8CKM2" id="6p3MfvoQmQE" role="3w00Zx">
+              <node concept="AsIwX" id="6p3MfvoQmQF" role="1MHwYB">
+                <node concept="AsIwU" id="6p3MfvoQmQG" role="AsIwY">
+                  <ref role="AsIwW" node="6p3MfvoQmOW" resolve="Motor" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
