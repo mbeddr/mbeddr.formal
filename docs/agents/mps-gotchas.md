@@ -12,6 +12,20 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Clearing a reference; `SNodeTypeCastExpression` needs `conceptArgument`; a harmless make warning (2026-11-17, later)
+
+- **Clear a reference with `update_node SET REFERENCE` and an explicit `null` target**
+  (`references: [[nodeRef, "role", null]]`). `DELETE` is rejected ("Valid operations: ADD, SET").
+- **A smodel cast `x:Concept` needs a `conceptArgument` child** (`RefConcept_Reference`, reference
+  `conceptDeclaration`). A cast built with the deprecated `concept` *reference* instead fails the check
+  with "No child in the obligatory role 'conceptArgument'" and prints as
+  `x:<no conceptArgument> ( deprecated parts : … )`. Add the child, then clear `concept` (see above).
+- **"Generator language is applied to a model … not from generator module (actual module is …), aborted"**
+  appears as a WARNING on a model-scoped MAKE that includes a `@tests` model. The test model is still
+  regenerated (checked in `source_gen`), so the warning can be ignored. Mutation checks of importer code
+  therefore need no user rebuild: mutate, MAKE `{"models":[<importer model>]}`, run the suite, restore
+  the saved `print_node deep` JSON with `SET CHILD`, then MAKE again.
+
 ## A timed-out MAKE is cancelled; grammar-cell editors live in `_EditorBuilder_a.java`; trace.info spans (2026-11-17)
 
 - **A module MAKE that hits the MCP timeout is now cancelled, not left running.** The IDE log shows
