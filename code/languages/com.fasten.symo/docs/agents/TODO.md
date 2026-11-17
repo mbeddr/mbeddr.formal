@@ -1464,8 +1464,17 @@ discussion. Each item says which lesson is blocked or affected.
   `[interface-end-type]` and `[interface-end-conjugation]` on the source/target end; test
   `_321_InterfaceEndsCheck`. Round trip of named flows inside an `interface def` (end ports, flow each way)
   is covered by importer test `_220_InterfaceTest.testRoundtripInterfaceFlows` (2026-11-16).
-- **Gap 6: `AllocationUsage` cannot hold `allocate … to …`.** A constraint rejects the source and target
-  ends and the editor has no cells for them. Blocks Part E Lesson 1 (allocation).
+- **Gap 6: `AllocationUsage` cannot hold `allocate … to …` — FIXED 2026-11-17.** The constraint that
+  rejected `source`/`target` is deleted (the structure already had them via `ISysMLv2ConnectorAsUsage`).
+  Behavior `hasAllocationKeyword()` decides when `allocation` is shown/printed: `withKeyword`, no
+  `source`, or any declaration part (name, short name, multiplicity, types, subsets, redefines, value,
+  ordered, nonunique) — so `allocate a to b;` stays keyword-free and existing models need no migration.
+  Editor and textgen got an optional `allocate %source% to %target%` part. Importer: shared helper
+  `SysMLv2ImportConnections.applyConnectorPart` (binary ends + `withKeyword`); n-ary
+  `allocate (x, y, z)` is still rejected ("n-ary allocation usage", `_481.testNaryAllocateRejected`).
+  Round trip `_480.testAllocateForms` (mutation-checked: forcing `withKeyword` fails it). The obsolete
+  `_230.testUnsupportedAllocationEndpointsAreRejectedExplicitly` is removed. Unblocks Part E Lesson 1.
+  Not done: n-ary connector parts (also missing for `connect`).
 - **Gap 7: concepts not found.** Control nodes (fork, join, merge, decision); `if` and `for` actions
   (only `while` exists); `send` action and standalone `accept`; `dependency`; `expose` and `filter` for
   views (Part C Lesson 7); variation and variants; `terminate`; requirement derivation; individuals,
