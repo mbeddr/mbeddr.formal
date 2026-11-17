@@ -1468,22 +1468,38 @@ discussion. Each item says which lesson is blocked or affected.
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
   `_325_AliasResolution`, importer `_700…testImportThroughAliasedNamespace`, editor
   `_105_Alias_EditQualifiedTarget` (`ce7660df`, all mutation-checked). Tutorial Part C Lesson 7 teaches
-  aliases and short names in `_050_parts_catalog` / `_051_racing_drone`. Still open (cleanup):
-  - delete the deprecated `SysMLv2IdentifierNameConceptRef` and its editor, behavior, textgen and
-    constraints once no migration needs it; `canonicalTarget` duplicates the last-segment loop.
+  aliases and short names in `_050_parts_catalog` / `_051_racing_drone`. Cleanup done 2026-11-16:
+  the deprecated `SysMLv2IdentifierNameConceptRef` is deleted (its migration now addresses the concept
+  by meta-id, so it survives the deletion) and `canonicalTarget` reuses the last-segment loop. Still open:
   - six `has warning` checks in `_070_UsageTypingCardinality` were lost by the migration (see the
     gotcha "A migration that replaces nodes…"); restore them if their intent is known, otherwise drop.
 - **Lesson 7 gaps 2–4 — FIXED 2026-11-16 (pending review).**
   - Gap 2: short names `<FC>` have an editor cell (component `ISysMLv2IdentifierNameConcept_ShortName`) and
     textgen in part, attribute, port, item, connection, interface, flow, reference and enumeration
-    editors. Still missing: actor/stakeholder/subject and other editors; the importer's `declaredShortName`
-    handling and a short-name round-trip test are not verified.
+    editors. 2026-11-16: textgen added for actor, stakeholder, subject, return, transition, binding,
+    comment, rep, doc and metadata usages; assign and while actions have an inline short-name cell (a
+    component holding an optional cell cannot sit inside another optional cell). Importer:
+    `extractOptionalName`/`extractUsageName` no longer throw on `<…>`, and `applyShortName` is called for
+    part/port/item/ref usages, reference members, connections, bindings, flows, transitions, doc, comment,
+    rep and metadata. The eight older definition importers (part, port, item, attribute, enumeration,
+    connection, interface, flow def) threw "identification alias"; they now take the name via
+    `declaredNameOf(id)` and call `applyShortName` (the `initBodiedDefinition`/`initStructuralDefinition`
+    paths already did). Round-trip test `_310_ShortNameTest.testUsageAndAnnotationShortNames`
+    (mutation-checked on the importer and the textgen side). Not covered
+    by design: connector ends (no short name in the grammar), accept actions (no name yet; Gap 7). Still
+    unsupported: a short name on a flow's `featureIdentification` (importer throws).
   - Gap 3: `check_SysMLv2QualifiedNameSegment_unambiguous` (`NameResolutionHelper.ambiguity`) reports
     `[ambiguous-name]` when a segment's scope offers another element under the same (short) name.
     Decision to confirm: a top-level element of the segment's own file takes precedence over top-level
     elements of other files (strict KerML has one root namespace for all files; without this the
     sandbox and the separate test files reported false ambiguities). Cost: the check enumerates the whole
     scope per segment.
+    What the standard says (KerML 8.2.3.5.2 / 8.2.3.5.4): resolution searches the element's own root
+    namespace first, then the global namespace (all root namespaces of all models plus the libraries);
+    if several global members match, *which one is chosen is not specified* — the standard does not call
+    it an error. Our cross-file `[ambiguous-name]` is therefore a stricter diagnostic than the standard,
+    which is acceptable as a check (it flags what the standard leaves unspecified); keep it. The global
+    qualifier `$::` (KERML_-101, not in the 2024 grammar baseline) is not supported.
   - Gap 4: `check_ISysMLv2Namespace_distinctMemberNames` (`MemberNamesHelper.duplicate`) reports
     `[duplicate-name]`; names and short names share one pool. Does not look across files.
   - Test `_324_NameResolutionChecks` (5 tests, mutation-checked). Cross-file precedence is not covered:
@@ -1507,4 +1523,4 @@ discussion. Each item says which lesson is blocked or affected.
   the declaration features instead of keeping the flag (loses only the redundant `connection connect a
   to b;` spelling).
 - **Orphaned run configurations** `_195_IndexedConnectorEndTest` and `_330_ConnectIndexCheck` (tests were
-  deleted with the reverted index work); remove them in the IDE.
+  deleted with the reverted index work) — removed 2026-11-16.
