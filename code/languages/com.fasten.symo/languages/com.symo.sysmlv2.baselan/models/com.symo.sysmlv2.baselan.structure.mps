@@ -1407,7 +1407,7 @@
     <property role="EcuMT" value="7354895567553737694" />
     <property role="TrG5h" value="SysMLv2Alias" />
     <property role="34LRSv" value="alias" />
-    <property role="R4oN_" value="SysML v2 alias member; target name is retained as text pending name resolution" />
+    <property role="R4oN_" value="SysML v2 alias member: alias &lt;short&gt; Name for Qualified::Target;" />
     <property role="3GE5qa" value="package" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6ohPCO08Ffw" role="PzmwI">
@@ -1431,15 +1431,6 @@
     <node concept="PrWs8" id="6ohPCO1srbI" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
-    <node concept="1TJgyj" id="6ohPCO1W$qN" role="1TKVEi">
-      <property role="IQ2ns" value="7354895567584118451" />
-      <property role="20kJfa" value="target" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="6ohPCO1sp61" resolve="SysMLv2IdentifierNameConceptRef" />
-      <node concept="asaX9" id="6p3MfvpOEJ_" role="lGtFl">
-        <property role="YLQ7P" value="use aliasedName (qualified name); migrated by Migration from version 11" />
-      </node>
-    </node>
     <node concept="1TJgyj" id="7PctyxXaP_z" role="1TKVEi">
       <property role="IQ2ns" value="9028721269300000001" />
       <property role="20kJfa" value="content" />
@@ -1455,39 +1446,6 @@
       <property role="20kJfa" value="aliasedName" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6ohPCO1sp61">
-    <property role="TrG5h" value="SysMLv2IdentifierNameConceptRef" />
-    <property role="R4oN_" value="Qualified smart reference to a SysML v2 identifier-named element, with a text fallback when unresolved." />
-    <property role="EcuMT" value="7354895567575683457" />
-    <property role="3GE5qa" value="references" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6ohPCO1McQC" role="1TKVEi">
-      <property role="IQ2ns" value="7354895567575683459" />
-      <property role="TrG5h" value="target" />
-      <property role="20kJfa" value="target" />
-      <ref role="20lvS9" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-      <node concept="asaX9" id="61dxE2mwke1" role="lGtFl">
-        <property role="YLPcu" value="2026-11-13" />
-        <property role="YLQ7P" value="Legacy alias-target reference representation. Use SysMLv2QualifiedName for new qualified-reference designs; existing SysMLv2Alias.target consumers require migration before removal." />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="6ohPCO1McQD" role="1TKVEl">
-      <property role="IQ2nx" value="7354895567575683458" />
-      <property role="TrG5h" value="targetName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="61dxE2mwkdX" role="lGtFl">
-        <property role="YLPcu" value="2026-11-13" />
-        <property role="YLQ7P" value="Legacy alias-target reference representation. Use SysMLv2QualifiedName for new qualified-reference designs; existing SysMLv2Alias.target consumers require migration before removal." />
-      </node>
-    </node>
-    <node concept="PrWs8" id="6ohPCO1W$qK" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
-    <node concept="asaX9" id="61dxE2mwkdT" role="lGtFl">
-      <property role="YLPcu" value="2026-11-13" />
-      <property role="YLQ7P" value="Legacy alias-target reference representation. Use SysMLv2QualifiedName for new qualified-reference designs; existing SysMLv2Alias.target consumers require migration before removal." />
     </node>
   </node>
   <node concept="PlHQZ" id="3VmcprQOArC">
