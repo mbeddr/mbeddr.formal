@@ -103,9 +103,6 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
-        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
-      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -12914,110 +12911,6 @@
               </node>
               <node concept="liA8E" id="3Igz0sUV5PM" role="2OqNvi">
                 <ref role="37wK5l" to="33ny:~Iterator.hasNext()" resolve="hasNext" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1LZb2c" id="6p3MfvyPLMP" role="1SL9yI">
-      <property role="TrG5h" value="testUnsupportedAllocationEndpointsAreRejectedExplicitly" />
-      <node concept="3cqZAl" id="6p3MfvyPLMR" role="3clF45" />
-      <node concept="3clFbS" id="6p3MfvyPLMS" role="3clF47">
-        <node concept="1gVbGN" id="6p3MfvyPLMT" role="3cqZAp">
-          <node concept="3fqX7Q" id="6p3MfvyPLMU" role="1gVkn0">
-            <node concept="2OqwBi" id="6p3MfvyPLMV" role="3fr31v">
-              <node concept="2YIFZM" id="6p3MfvyPLMW" role="2Oq$k0">
-                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
-                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
-                <node concept="2OqwBi" id="6p3MfvyPLMX" role="37wK5m">
-                  <node concept="2OqwBi" id="6p3MfvyPLMY" role="2Oq$k0">
-                    <node concept="2OqwBi" id="6p3MfvyPLMZ" role="2Oq$k0">
-                      <node concept="2OqwBi" id="6p3MfvyPLN0" role="2Oq$k0">
-                        <node concept="2ShNRf" id="6p3MfvyPLN1" role="2Oq$k0">
-                          <node concept="1pGfFk" id="6p3MfvyPLN2" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="6p3MfvyPLN3" role="2OqNvi">
-                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
-                          <node concept="3xONca" id="6p3MfvyPLN4" role="37wK5m">
-                            <ref role="3xOPvv" node="3Igz0sUV5l3" resolve="AllocationUsage" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="6p3MfvyPLN5" role="2OqNvi">
-                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
-                        <node concept="35c_gC" id="6p3MfvyPLN6" role="37wK5m">
-                          <ref role="35c_gD" to="5rf1:BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="6p3MfvyPLN7" role="2OqNvi">
-                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
-                      <node concept="359W_D" id="6p3MfvyPLN8" role="37wK5m">
-                        <ref role="359W_E" to="5rf1:3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
-                        <ref role="359W_F" to="5rf1:BOR0Mn7r_I" resolve="source" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6p3MfvyPLN9" role="2OqNvi">
-                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="6p3MfvyPLNa" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1gVbGN" id="6p3MfvyPLNb" role="3cqZAp">
-          <node concept="3fqX7Q" id="6p3MfvyPLNc" role="1gVkn0">
-            <node concept="2OqwBi" id="6p3MfvyPLNd" role="3fr31v">
-              <node concept="2YIFZM" id="6p3MfvyPLNe" role="2Oq$k0">
-                <ref role="1Pybhc" to="ykol:~ConstraintsCanBeFacade" resolve="ConstraintsCanBeFacade" />
-                <ref role="37wK5l" to="ykol:~ConstraintsCanBeFacade.checkCanBeParent(jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext)" resolve="checkCanBeParent" />
-                <node concept="2OqwBi" id="6p3MfvyPLNf" role="37wK5m">
-                  <node concept="2OqwBi" id="6p3MfvyPLNg" role="2Oq$k0">
-                    <node concept="2OqwBi" id="6p3MfvyPLNh" role="2Oq$k0">
-                      <node concept="2OqwBi" id="6p3MfvyPLNi" role="2Oq$k0">
-                        <node concept="2ShNRf" id="6p3MfvyPLNj" role="2Oq$k0">
-                          <node concept="1pGfFk" id="6p3MfvyPLNk" role="2ShVmc">
-                            <property role="373rjd" value="true" />
-                            <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.&lt;init&gt;()" resolve="ContainmentContext.Builder" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="6p3MfvyPLNl" role="2OqNvi">
-                          <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.parentNode(org.jetbrains.mps.openapi.model.SNode)" resolve="parentNode" />
-                          <node concept="3xONca" id="6p3MfvyPLNm" role="37wK5m">
-                            <ref role="3xOPvv" node="3Igz0sUV5l3" resolve="AllocationUsage" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="6p3MfvyPLNn" role="2OqNvi">
-                        <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.childConcept(org.jetbrains.mps.openapi.language.SAbstractConcept)" resolve="childConcept" />
-                        <node concept="35c_gC" id="6p3MfvyPLNo" role="37wK5m">
-                          <ref role="35c_gD" to="5rf1:BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="6p3MfvyPLNp" role="2OqNvi">
-                      <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.link(org.jetbrains.mps.openapi.language.SContainmentLink)" resolve="link" />
-                      <node concept="359W_D" id="6p3MfvyPLNq" role="37wK5m">
-                        <ref role="359W_E" to="5rf1:3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
-                        <ref role="359W_F" to="5rf1:BOR0Mn7r_J" resolve="target" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6p3MfvyPLNr" role="2OqNvi">
-                    <ref role="37wK5l" to="pdwk:~ContainmentContext$Builder.build()" resolve="build" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="6p3MfvyPLNs" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
               </node>
             </node>
           </node>

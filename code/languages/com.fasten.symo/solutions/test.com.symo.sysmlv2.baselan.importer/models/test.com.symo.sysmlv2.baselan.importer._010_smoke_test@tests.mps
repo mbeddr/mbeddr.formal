@@ -30319,6 +30319,131 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="6p3Mfvz27qP" role="1SL9yI">
+      <property role="TrG5h" value="testAllocateForms" />
+      <node concept="3cqZAl" id="6p3Mfvz27qR" role="3clF45" />
+      <node concept="3clFbS" id="6p3Mfvz27qS" role="3clF47">
+        <node concept="3cpWs8" id="6p3Mfvz27qT" role="3cqZAp">
+          <node concept="3cpWsn" id="6p3Mfvz27qU" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="3uibUv" id="6p3Mfvz27qV" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27qW" role="3cqZAp">
+          <node concept="37vLTI" id="6p3Mfvz27qX" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27qY" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27qZ" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27r0" role="3cqZAp">
+          <node concept="d57v9" id="6p3Mfvz27r1" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27r2" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27r3" role="37vLTx">
+              <property role="Xl_RC" value="  part a;\n  part b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27r4" role="3cqZAp">
+          <node concept="d57v9" id="6p3Mfvz27r5" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27r6" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27r7" role="37vLTx">
+              <property role="Xl_RC" value="  allocate a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27r8" role="3cqZAp">
+          <node concept="d57v9" id="6p3Mfvz27r9" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27ra" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27rb" role="37vLTx">
+              <property role="Xl_RC" value="  allocation x : AD allocate a.p to b.q;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27rc" role="3cqZAp">
+          <node concept="d57v9" id="6p3Mfvz27rd" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27re" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27rf" role="37vLTx">
+              <property role="Xl_RC" value="  allocation allocate a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27rg" role="3cqZAp">
+          <node concept="d57v9" id="6p3Mfvz27rh" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27ri" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27rj" role="37vLTx">
+              <property role="Xl_RC" value="  allocation y[0..*] :&gt; x allocate a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27rk" role="3cqZAp">
+          <node concept="d57v9" id="6p3Mfvz27rl" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27rm" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27rn" role="37vLTx">
+              <property role="Xl_RC" value="  allocate a to b {\n    part q;\n  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6p3Mfvz27ro" role="3cqZAp">
+          <node concept="d57v9" id="6p3Mfvz27rp" role="3clFbG">
+            <node concept="37vLTw" id="6p3Mfvz27rq" role="37vLTJ">
+              <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6p3Mfvz27rr" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6p3Mfvz27rs" role="3cqZAp">
+          <node concept="3cpWsn" id="6p3Mfvz27rt" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="6p3Mfvz27ru" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6p3Mfvz27rv" role="37wK5m">
+                <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6p3Mfvz27rw" role="37wK5m">
+                <property role="Xl_RC" value="AllocateForms" />
+              </node>
+              <node concept="1jxXqW" id="6p3Mfvz27rx" role="37wK5m" />
+            </node>
+            <node concept="3uibUv" id="6p3Mfvz27ry" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6p3Mfvz27rz" role="3cqZAp">
+          <node concept="37vLTw" id="6p3Mfvz27r$" role="3tpDZB">
+            <ref role="3cqZAo" node="6p3Mfvz27qU" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6p3Mfvz27r_" role="3tpDZA">
+            <ref role="3cqZAo" node="6p3Mfvz27rt" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="7O9Ql6vnrOP">
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
@@ -30397,7 +30522,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="3WfSgMOamoQ" role="1SL9yI">
-      <property role="TrG5h" value="testAllocateRejected" />
+      <property role="TrG5h" value="testNaryAllocateRejected" />
       <node concept="3cqZAl" id="3WfSgMOamoS" role="3clF45" />
       <node concept="3clFbS" id="3WfSgMOamoT" role="3clF47">
         <node concept="3J1_TO" id="3WfSgMOamoU" role="3cqZAp">
@@ -30411,10 +30536,10 @@
                   <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
                   <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
                   <node concept="Xl_RD" id="3WfSgMOamoZ" role="37wK5m">
-                    <property role="Xl_RC" value="package P { allocation a allocate x to y; }" />
+                    <property role="Xl_RC" value="package P { allocation a allocate (x, y, z); }" />
                   </node>
                   <node concept="Xl_RD" id="3WfSgMOamp0" role="37wK5m">
-                    <property role="Xl_RC" value="AllocateUsage" />
+                    <property role="Xl_RC" value="NaryAllocateUsage" />
                   </node>
                   <node concept="1jxXqW" id="3WfSgMOamp1" role="37wK5m" />
                 </node>
@@ -30424,7 +30549,7 @@
             <node concept="3xETmq" id="3WfSgMOamp3" role="3cqZAp">
               <node concept="3_1$Yv" id="3WfSgMOamp4" role="3_9lra">
                 <node concept="Xl_RD" id="3WfSgMOamp5" role="3_1BAH">
-                  <property role="Xl_RC" value="AllocateUsage expected rejection" />
+                  <property role="Xl_RC" value="NaryAllocateUsage expected rejection" />
                 </node>
               </node>
             </node>
@@ -30453,7 +30578,7 @@
             <node concept="3clFbS" id="3WfSgMOampf" role="1zc67A">
               <node concept="3vlDli" id="3WfSgMOampg" role="3cqZAp">
                 <node concept="Xl_RD" id="3WfSgMOamph" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: allocate part on allocation usage" />
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: n-ary allocation usage" />
                 </node>
                 <node concept="2OqwBi" id="3WfSgMOampi" role="3tpDZA">
                   <node concept="37vLTw" id="3WfSgMOampj" role="2Oq$k0">
