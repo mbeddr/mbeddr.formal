@@ -1470,9 +1470,13 @@ discussion. Each item says which lesson is blocked or affected.
   `_105_Alias_EditQualifiedTarget` (`ce7660df`, all mutation-checked). Tutorial Part C Lesson 7 teaches
   aliases and short names in `_050_parts_catalog` / `_051_racing_drone`. Cleanup done 2026-11-16:
   the deprecated `SysMLv2IdentifierNameConceptRef` is deleted (its migration now addresses the concept
-  by meta-id, so it survives the deletion) and `canonicalTarget` reuses the last-segment loop. Still open:
-  - six `has warning` checks in `_070_UsageTypingCardinality` were lost by the migration (see the
-    gotcha "A migration that replaces nodes…"); restore them if their intent is known, otherwise drop.
+  by meta-id, so it survives the deletion) and `canonicalTarget` reuses the last-segment loop. The six
+  `has warning` checks in `_070_UsageTypingCardinality` lost by the migration (`NodeWarningCheck…482101`
+  to `…482116`, one per alias target; see the gotcha "A migration that replaces nodes…") are dropped,
+  not restored (2026-11-17): the six aliases now produce no problem at all (valid targets resolve,
+  `CyclicAliasA`/`B` are each other's valid targets), every problem the root reports is annotated, and
+  the cycle is still asserted at the use site (`cyclicAlias` → `UnresolvedAliasTarget`). Their exact
+  intent was not recoverable; most likely a warning on the old target concept itself.
 - **Lesson 7 gaps 2–4 — FIXED 2026-11-16 (pending review).**
   - Gap 2: short names `<FC>` have an editor cell (component `ISysMLv2IdentifierNameConcept_ShortName`) and
     textgen in part, attribute, port, item, connection, interface, flow, reference and enumeration
@@ -1486,8 +1490,9 @@ discussion. Each item says which lesson is blocked or affected.
     `declaredNameOf(id)` and call `applyShortName` (the `initBodiedDefinition`/`initStructuralDefinition`
     paths already did). Round-trip test `_310_ShortNameTest.testUsageAndAnnotationShortNames`
     (mutation-checked on the importer and the textgen side). Not covered
-    by design: connector ends (no short name in the grammar), accept actions (no name yet; Gap 7). Still
-    unsupported: a short name on a flow's `featureIdentification` (importer throws).
+    by design: connector ends (no short name in the grammar), accept actions (no name yet; Gap 7). A short
+    name on a flow's `featureIdentification` (`flow <fl> fl of T from a to b;`) is imported by
+    `SysMLv2ImportFeatures.applyFeatureShortName` (2026-11-17; covered in the same test, mutation-checked).
   - Gap 3: `check_SysMLv2QualifiedNameSegment_unambiguous` (`NameResolutionHelper.ambiguity`) reports
     `[ambiguous-name]` when a segment's scope offers another element under the same (short) name.
     Decision to confirm: a top-level element of the segment's own file takes precedence over top-level
