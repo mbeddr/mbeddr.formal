@@ -12,6 +12,24 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A timed-out MAKE is cancelled; grammar-cell editors live in `_EditorBuilder_a.java`; trace.info spans (2026-11-17)
+
+- **A module MAKE that hits the MCP timeout is now cancelled, not left running.** The IDE log shows
+  "The make session was still open 10 s after the make was cancelled". For a large language (baselan)
+  the result is `source_gen` regenerated but `classes_gen` stale (the compile step never ran), and the
+  next make warns "Module … from dependencies requires compilation". Workaround: make one small model
+  of the module (`{"models":["<textGen model ref>"]}`). A model-scoped make compiles the *whole*
+  module and finishes within the timeout. Check `classes_gen` timestamps against `source_gen` to
+  confirm. This supersedes the "keeps running in the background" advice below for module makes.
+- **Editors built with grammar cells generate `<Concept>_EditorBuilder_a.java`.** `<Concept>_Editor.java`
+  is only a stub that delegates, so its timestamp and content do not change when the editor changes.
+  Grep (or wait on) the `_EditorBuilder_a.java` file to confirm a regeneration.
+- **Mapping a generated source line back to a statement via `trace.info`:** the statement node on line
+  L is the one whose `at` span *ends* on line L (at a column > 0). A node whose span *starts* on L is
+  the previous statement's trailing whitespace or a statement nested inside a block. Picking by start
+  line replaced an inner `throw` instead of its enclosing `if`. Always `print_node` (`PLAIN TEXT`) the
+  candidate before editing it.
+
 ## "Tests in 'baselan'" does not run the importer tests (2026-11-16)
 
 The `Tests in 'baselan'` run configuration covers only the `test.com.symo.sysmlv2.baselan` solution
@@ -284,7 +302,8 @@ source text, then inspect generated Java or run the roundtrip test.
   JSON blueprint (e.g. `split`) use `baseMethodDeclaration` target
   `6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)/~String.split%28java.lang.String,int%29`
   (harvest the form via `parse_java_and_insert` with `insert.mode: console`, then `print_node`).
-- There is no MCP tool to delete a root node; remove obsolete roots in the MPS UI.
+- Delete an obsolete root with `update_root_node_from_json` `operation: DELETE` (`update_node` and
+  `alter_nodes` cannot delete roots).
 
 ## ScopeProvider child with attributes, multi-valued links, SET/ADD shapes (2026-11-07)
 
@@ -491,7 +510,7 @@ the caret first, so typing into a new node fills the name instead of the next ce
 Intention tests: the harness applies the intention to `myStart.getNode()` (the node carrying the `AnonymousCellAnnotation`, `setCurrentNodeOnly`), not to a typed-in caret, and `invoke intention` has only the `intention` reference, so
 the `before` model must already contain the target with the annotation on it. `update_node` `SET CHILD` on a multi-valued role with valid json empties the whole role (re-add with ADD). Property cells use the reference role `relationDeclaration`, not
 `propertyDeclaration`. Also: after `parse_java_and_insert` in `replace` mode the `SNode` ClassifierTypes sometimes stay unresolved even after `FIX_REFERENCES`; set their `classifier` by hand
-(`update_node` REFERENCE SET to `8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)/~SNode`). No MCP tool deletes a root node. When a shared helper changes its
+(`update_node` REFERENCE SET to `8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)/~SNode`). Delete a root with `update_root_node_from_json` `operation: DELETE`. When a shared helper changes its
 contract (list element 0 = name slot), check every producer of its input: the full suite caught the flow extractor that the targeted tests did not.
 
 ## Importer edits: plain Java goes through `parse_java_and_insert`, BL-dialect code must be cloned; replacing a method needs `FIX_REFERENCES` (2026-10-29)
