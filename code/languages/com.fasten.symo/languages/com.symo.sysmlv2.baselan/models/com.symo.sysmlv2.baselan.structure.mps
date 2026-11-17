@@ -710,24 +710,6 @@
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
   </node>
-  <node concept="PlHQZ" id="4N4m7hs7FjO">
-    <property role="EcuMT" value="5531643499102778612" />
-    <property role="3GE5qa" value="base" />
-    <property role="TrG5h" value="ISysMLv2QualifiedRef" />
-    <node concept="1TJgyj" id="4N4m7hs7FjP" role="1TKVEi">
-      <property role="IQ2ns" value="5531643499102778613" />
-      <property role="20kJfa" value="namespace" />
-      <ref role="20lvS9" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
-      <node concept="asaX9" id="61dxE2mwkdP" role="lGtFl">
-        <property role="YLPcu" value="2026-11-13" />
-        <property role="YLQ7P" value="Use SysMLv2QualifiedName segment chains for new references. Retained for legacy annotation qualification until its remaining consumers are migrated." />
-      </node>
-    </node>
-    <node concept="asaX9" id="61dxE2mwkdL" role="lGtFl">
-      <property role="YLPcu" value="2026-11-13" />
-      <property role="YLQ7P" value="Use SysMLv2QualifiedName segment chains for new references. Retained for legacy annotation qualification until its remaining consumers are migrated." />
-    </node>
-  </node>
   <node concept="PlHQZ" id="3tSWG0_KrpC">
     <property role="EcuMT" value="3997211576372409960" />
     <property role="3GE5qa" value="base" />
@@ -780,41 +762,6 @@
       <ref role="PrY4T" node="7PctyxXA185" resolve="ISysMLv2AnnotationContent" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5oZmK$Nm2Kg">
-    <property role="EcuMT" value="6214786105868823568" />
-    <property role="TrG5h" value="SysMLv2AnnotationRef" />
-    <property role="R4oN_" value="reference to an annotated element (comment about ...)" />
-    <property role="3GE5qa" value="annotation" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5oZmK$Nm2Ki" role="1TKVEl">
-      <property role="IQ2nx" value="6214786105868823570" />
-      <property role="TrG5h" value="elementName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="61dxE2mwke9" role="lGtFl">
-        <property role="YLPcu" value="2026-11-13" />
-        <property role="YLQ7P" value="Legacy annotation reference representation. Migrate qualification to SysMLv2QualifiedName while preserving annotation target semantics; existing comment and metadata about references remain supported." />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="5oZmK$Nm2Kj" role="1TKVEi">
-      <property role="IQ2ns" value="6214786105868823571" />
-      <property role="20kJfa" value="element" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
-      <node concept="asaX9" id="61dxE2mwked" role="lGtFl">
-        <property role="YLPcu" value="2026-11-13" />
-        <property role="YLQ7P" value="Legacy annotation reference representation. Migrate qualification to SysMLv2QualifiedName while preserving annotation target semantics; existing comment and metadata about references remain supported." />
-      </node>
-    </node>
-    <node concept="PrWs8" id="5oZmK$Nm2Kk" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
-    </node>
-    <node concept="RPilO" id="5oZmK$Nni8R" role="lGtFl">
-      <ref role="RPilL" node="5oZmK$Nm2Kj" resolve="element" />
-    </node>
-    <node concept="asaX9" id="61dxE2mwke5" role="lGtFl">
-      <property role="YLPcu" value="2026-11-13" />
-      <property role="YLQ7P" value="Legacy annotation reference representation. Migrate qualification to SysMLv2QualifiedName while preserving annotation target semantics; existing comment and metadata about references remain supported." />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5oZmK$Nm2Kh">
     <property role="EcuMT" value="6214786105868823569" />
     <property role="TrG5h" value="SysMLv2Comment" />
@@ -842,7 +789,7 @@
       <property role="20kJfa" value="about" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5oZmK$Nm2Kg" resolve="SysMLv2AnnotationRef" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
     <node concept="PrWs8" id="5oZmK$Nm2Kp" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
@@ -941,7 +888,7 @@
       <property role="20kJfa" value="about" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5oZmK$Nm2Kg" resolve="SysMLv2AnnotationRef" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
     <node concept="1TJgyj" id="5oZmK$NNehr" role="1TKVEi">
       <property role="IQ2ns" value="6214786105876472923" />

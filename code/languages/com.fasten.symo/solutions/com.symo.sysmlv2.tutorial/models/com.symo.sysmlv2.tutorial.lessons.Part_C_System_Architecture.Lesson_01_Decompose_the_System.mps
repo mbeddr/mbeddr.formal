@@ -2,7 +2,7 @@
 <model ref="r:5eef87de-afbd-4d8e-bab9-8c225ed5715c(com.symo.sysmlv2.tutorial.lessons.Part_C_System_Architecture.Lesson_01_Decompose_the_System)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="13" />
   </languages>
   <imports />
   <registry>

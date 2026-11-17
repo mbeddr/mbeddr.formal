@@ -1,6 +1,6 @@
 # 2. Qualified names are chains of plain-reference segments; scope narrows per segment
 
-* Status: accepted (design); implementation in phases
+* Status: accepted; implemented (last phase, point 9, done 2026-11-17)
 * Date: 2026-11-07
 
 ## Context and Problem Statement
@@ -26,7 +26,9 @@ of thousands of entries (the system library alone has 58 roots with deep content
 4. Kind restriction: intermediate segments must be `ISysMLv2Namespace`. The last segment is filtered by what the
    owner needs (any named member for a membership import, a namespace for `::*`/`::**`, an `ItemDefinition` for
    an item-definition reference), obtained by the owner answering the `kind` that `getScope` passes up.
-   `Comment`, `Documentation` and `TextualRepresentation` stay excluded.
+   `Comment`, `Documentation` and `TextualRepresentation` stay excluded, except for the `about` targets of a
+   comment or a metadata usage: KerML lets `about` name any element, including another comment
+   (`admitsAnnotations()`).
 5. The importer reifies only if **every** segment resolves; otherwise it keeps the plain text. An intention can
    turn text into segments later.
 6. The editor shows segments as a list with a `::` separator, and accepts pasted `A::B::C` by splitting it into
@@ -44,10 +46,15 @@ of thousands of entries (the system library alone has 58 roots with deep content
 9. `SysMLv2QualifiedName` becomes the common building block for **all** named-entity references. `import` is the
    pilot; the other reference kinds migrate in phases. At the end `ISysMLv2QualifiedRef` and its `namespace`
    reference are deleted, together with the string-splitting helpers.
+   Done 2026-11-17: the last users were the `about` targets of comments and metadata usages
+   (`SysMLv2AnnotationRef`). The `about` links now hold `SysMLv2QualifiedName`. Migration
+   `MoveAnnotationTargetsToQualifiedName` (language version 12 → 13) rewrites existing models; it addresses the
+   deleted concept by meta-id. `SysMLv2AnnotationRef`, `ISysMLv2QualifiedRef` and the helpers are gone.
 
 ## Consequences
 
 * Completion lists are the size of one namespace's members (or the lexically visible names at the first segment).
 * One representation of a path; no consistency helpers.
 * A migration is needed for existing models, tutorial lessons and test fixtures that set `namespace`.
-* During the transition both mechanisms coexist; the phases in `docs/agents/TODO.md` track the migration.
+* During the transition both mechanisms coexisted; the phases in `docs/agents/TODO.md` tracked the migration.
+  Since 2026-11-17 only `SysMLv2QualifiedName` remains.

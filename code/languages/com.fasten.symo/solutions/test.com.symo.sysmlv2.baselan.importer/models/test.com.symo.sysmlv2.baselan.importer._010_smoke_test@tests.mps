@@ -8,7 +8,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="13" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
@@ -406,10 +406,6 @@
         <property id="6214786105868823575" name="bare" index="1_pRsu" />
         <property id="6214786105868823574" name="locale" index="1_pRsv" />
         <child id="6214786105868823576" name="about" index="1_pRsh" />
-      </concept>
-      <concept id="6214786105868823568" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnnotationRef" flags="ng" index="1_pRsp">
-        <property id="6214786105868823570" name="elementName" index="1_pRsr" />
-        <reference id="6214786105868823571" name="element" index="1_pRsq" />
       </concept>
       <concept id="6214786105874793928" name="com.symo.sysmlv2.baselan.structure.SysMLv2TextualRepresentation" flags="ng" index="1_z1V1">
         <property id="6214786105874793929" name="body" index="1_z1V0" />
@@ -12982,9 +12978,10 @@
             <node concept="1_pRso" id="5oZmK$NBmFH" role="3w00ZY">
               <property role="1_pRss" value="In part" />
               <property role="1_pRsu" value="false" />
-              <node concept="1_pRsp" id="5oZmK$NBmFI" role="1_pRsh">
-                <property role="1_pRsr" value="B" />
-                <ref role="1_pRsq" node="5oZmK$NBmFJ" resolve="B" />
+              <node concept="AsIwX" id="6p3MfvxsU3t" role="1_pRsh">
+                <node concept="AsIwU" id="6p3MfvxsU3u" role="AsIwY">
+                  <ref role="AsIwW" node="5oZmK$NBmFJ" resolve="B" />
+                </node>
               </node>
             </node>
           </node>
@@ -12997,13 +12994,15 @@
           <node concept="1_pRso" id="5oZmK$NBmFL" role="3Z9vGx">
             <property role="1_pRss" value="About two" />
             <property role="1_pRsu" value="false" />
-            <node concept="1_pRsp" id="5oZmK$NBmFM" role="1_pRsh">
-              <property role="1_pRsr" value="A" />
-              <ref role="1_pRsq" node="5oZmK$NBmFG" resolve="A" />
+            <node concept="AsIwX" id="6p3MfvxsU3v" role="1_pRsh">
+              <node concept="AsIwU" id="6p3MfvxsU3w" role="AsIwY">
+                <ref role="AsIwW" node="5oZmK$NBmFG" resolve="A" />
+              </node>
             </node>
-            <node concept="1_pRsp" id="5oZmK$NBmFN" role="1_pRsh">
-              <property role="1_pRsr" value="B" />
-              <ref role="1_pRsq" node="5oZmK$NBmFJ" resolve="B" />
+            <node concept="AsIwX" id="6p3MfvxsU3x" role="1_pRsh">
+              <node concept="AsIwU" id="6p3MfvxsU3y" role="AsIwY">
+                <ref role="AsIwW" node="5oZmK$NBmFJ" resolve="B" />
+              </node>
             </node>
           </node>
         </node>
@@ -13324,13 +13323,15 @@
                 </node>
               </node>
             </node>
-            <node concept="1_pRsp" id="3MUZSeIY8By" role="1_WVXj">
-              <property role="1_pRsr" value="Brake" />
-              <ref role="1_pRsq" node="3MUZSeIY8Bd" resolve="Brake" />
+            <node concept="AsIwX" id="6p3MfvxsU3z" role="1_WVXj">
+              <node concept="AsIwU" id="6p3MfvxsU3$" role="AsIwY">
+                <ref role="AsIwW" node="3MUZSeIY8Bd" resolve="Brake" />
+              </node>
             </node>
-            <node concept="1_pRsp" id="3MUZSeIY8Bz" role="1_WVXj">
-              <property role="1_pRsr" value="Engine" />
-              <ref role="1_pRsq" node="3MUZSeIY8Br" resolve="Engine" />
+            <node concept="AsIwX" id="6p3MfvxsU3_" role="1_WVXj">
+              <node concept="AsIwU" id="6p3MfvxsU3A" role="AsIwY">
+                <ref role="AsIwW" node="3MUZSeIY8Br" resolve="Engine" />
+              </node>
             </node>
             <node concept="1_WVX7" id="3MUZSeIY8B$" role="1_WVXi">
               <node concept="3wdj9f" id="3MUZSeIY8BB" role="1_WVXF">

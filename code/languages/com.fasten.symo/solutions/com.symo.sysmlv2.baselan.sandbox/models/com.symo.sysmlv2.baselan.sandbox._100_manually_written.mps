@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="12" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="13" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -261,9 +261,6 @@
         <property id="6214786105868823573" name="body" index="1_pRss" />
         <child id="6214786105868823576" name="about" index="1_pRsh" />
       </concept>
-      <concept id="6214786105868823568" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnnotationRef" flags="ng" index="1_pRsp">
-        <reference id="6214786105868823571" name="element" index="1_pRsq" />
-      </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
       <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
@@ -327,11 +324,15 @@
       <node concept="1_pRso" id="5oZmK$NFhxb" role="8EhVZ">
         <property role="1_pRss" value="some multi line&#10;comment referencing &#10;other entities" />
         <property role="TrG5h" value="comm2" />
-        <node concept="1_pRsp" id="5oZmK$NFhxe" role="1_pRsh">
-          <ref role="1_pRsq" node="5oZmK$NFhx8" resolve="comm1" />
+        <node concept="AsIwX" id="6p3MfvxsU3B" role="1_pRsh">
+          <node concept="AsIwU" id="6p3MfvxsU3C" role="AsIwY">
+            <ref role="AsIwW" node="5oZmK$NFhx8" resolve="comm1" />
+          </node>
         </node>
-        <node concept="1_pRsp" id="5oZmK$NFhxf" role="1_pRsh">
-          <ref role="1_pRsq" node="3kx1GVowZzs" resolve="DefinitionsLibrary" />
+        <node concept="AsIwX" id="6p3MfvxsU3D" role="1_pRsh">
+          <node concept="AsIwU" id="6p3MfvxsU3E" role="AsIwY">
+            <ref role="AsIwW" node="3kx1GVowZzs" resolve="DefinitionsLibrary" />
+          </node>
         </node>
       </node>
     </node>

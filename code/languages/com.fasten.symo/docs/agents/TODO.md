@@ -1426,13 +1426,22 @@ Open:
   `StructuredSpaceObject::StructuredCurve`). They come from KerML kernel elements. The two languages stay
   disjoint, so these stay plain text. Optional: add SysML-side stubs for the kernel types if the warnings
   are a problem.
-- **Short name in completion.** Picking a short name from the completion menu does not set `useShortName`
-  (constraints and transformation menu are untouched). Decide whether completion should offer short names
-  and set the flag.
+- **Short name in completion — DEFERRED (decision 2026-11-17).** Picking a short name from the completion
+  menu does not set `useShortName` (constraints and transformation menu are untouched). Decide later whether
+  completion should offer short names and set the flag. Short names written in text (importer, pasted
+  `A::<m>`) already work.
 - **Editor test for the flag.** No editor test shows a short-name segment (`SI::m`). Add one with a user
   action, not a cell-exists check.
-- **Remove the old mechanism.** `ISysMLv2QualifiedRef`, the `namespace` reference and the string-splitting
-  helpers are still to be deleted (ADR 0002, last point).
+- **Remove the old mechanism — DONE 2026-11-17.** The last users were the `about` targets of comments and
+  metadata usages. `SysMLv2Comment.about` and `SysMLv2MetadataUsage.about` now hold `SysMLv2QualifiedName`
+  (same link ids). `visibleOnlyForKind` admits comments, docs and reps as `about` targets
+  (`admitsAnnotations()`; sandbox `about comm1`). The importer creates qualified names, and textgen goes
+  through the new `SysMLv2QualifiedName_TextGen`. Migration `MoveAnnotationTargetsToQualifiedName` (v12 → v13,
+  `AnnotationTargetMigrationSupport`, meta-id based) is applied to all modules.
+  `SysMLv2AnnotationRef` and `ISysMLv2QualifiedRef` are deleted with their editor, constraints and behavior,
+  together with the `namespace` link and the string-splitting helpers. `ISysMLv2Ref.namespaceText()` stays
+  (it is a different, live API). `SysMLv2TypeReifier.reifyAnnotationRefs` now only delegates to
+  `reifyQualifiedNames` (kept for `TestUtils`).
 - **Accepted noise.** "Empty enumeration property: 'visibility'" in the library is accepted (nullable enum).
 
 ## SysML v2 baselan: open gaps found while writing the tutorial (2026-11-15)
@@ -1477,7 +1486,7 @@ discussion. Each item says which lesson is blocked or affected.
   `CyclicAliasA`/`B` are each other's valid targets), every problem the root reports is annotated, and
   the cycle is still asserted at the use site (`cyclicAlias` → `UnresolvedAliasTarget`). Their exact
   intent was not recoverable; most likely a warning on the old target concept itself.
-- **Lesson 7 gaps 2–4 — FIXED 2026-11-16 (pending review).**
+- **Lesson 7 gaps 2–4 — FIXED 2026-11-16, reviewed 2026-11-17.**
   - Gap 2: short names `<FC>` have an editor cell (component `ISysMLv2IdentifierNameConcept_ShortName`) and
     textgen in part, attribute, port, item, connection, interface, flow, reference and enumeration
     editors. 2026-11-16: textgen added for actor, stakeholder, subject, return, transition, binding,
@@ -1495,7 +1504,8 @@ discussion. Each item says which lesson is blocked or affected.
     `SysMLv2ImportFeatures.applyFeatureShortName` (2026-11-17; covered in the same test, mutation-checked).
   - Gap 3: `check_SysMLv2QualifiedNameSegment_unambiguous` (`NameResolutionHelper.ambiguity`) reports
     `[ambiguous-name]` when a segment's scope offers another element under the same (short) name.
-    Decision to confirm: a top-level element of the segment's own file takes precedence over top-level
+    Decided 2026-11-17: cross-file ambiguity stays reported as `[ambiguous-name]` (no change).
+    Precedence rule: a top-level element of the segment's own file takes precedence over top-level
     elements of other files (strict KerML has one root namespace for all files; without this the
     sandbox and the separate test files reported false ambiguities). Cost: the check enumerates the whole
     scope per segment.
