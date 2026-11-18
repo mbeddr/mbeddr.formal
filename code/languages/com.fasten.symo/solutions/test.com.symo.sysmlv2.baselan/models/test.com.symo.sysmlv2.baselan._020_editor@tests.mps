@@ -4,7 +4,7 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="13" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="14" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -5078,6 +5078,52 @@
     <node concept="3clFbS" id="7TWXuyhfWhD" role="LjaKd">
       <node concept="1MFPAf" id="7TWXuyhfWhE" role="3cqZAp">
         <ref role="1MFYO6" to="pw9y:7TWXuyhfO3K" resolve="AddWhileLoopName" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6wXJlapQUs9">
+    <property role="TrG5h" value="_430_Actions_ExtendPerformChain" />
+    <property role="3YCmrE" value="typing the chain separator after a perform target segment adds the next segment of the dotted path (Gap 15)" />
+    <node concept="1qefOq" id="6wXJlapQUt8" role="25YQCW">
+      <node concept="2h0jOr" id="6wXJlapQUt9" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="6wXJlapQUta" role="2h0jOs">
+          <property role="TrG5h" value="H" />
+          <node concept="8GF0z" id="6wXJlapQUtb" role="3w00ZY">
+            <property role="TrG5h" value="local" />
+          </node>
+          <node concept="3v7bcU" id="6wXJlapQUtc" role="3w00ZY">
+            <node concept="3wdj9f" id="6wXJlapQUtd" role="3v7bcY">
+              <property role="3wdj9b" value="local" />
+              <node concept="LIFWc" id="6wXJlapQUte" role="lGtFl">
+                <property role="LIFWd" value="property_usageName" />
+                <property role="ZRATv" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6wXJlapQUtf" role="25YQFr">
+      <node concept="2h0jOr" id="6wXJlapQUtg" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="6wXJlapQUth" role="2h0jOs">
+          <property role="TrG5h" value="H" />
+          <node concept="8GF0z" id="6wXJlapQUti" role="3w00ZY">
+            <property role="TrG5h" value="local" />
+          </node>
+          <node concept="3v7bcU" id="6wXJlapQUtj" role="3w00ZY">
+            <node concept="3wdj9f" id="6wXJlapQUtk" role="3v7bcY">
+              <property role="3wdj9b" value="local" />
+            </node>
+            <node concept="3wdj9f" id="6wXJlapQUtl" role="3v7bcY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6wXJlapQUtm" role="LjaKd">
+      <node concept="2TK7Tu" id="6wXJlapQUtn" role="3cqZAp">
+        <property role="2TTd_B" value="." />
       </node>
     </node>
   </node>
