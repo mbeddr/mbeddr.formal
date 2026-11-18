@@ -2,7 +2,7 @@
 <model ref="r:a1f9689b-c876-4199-b55d-ec3e97a5383c(com.symo.sysmlv2.baselan.sandbox._100_manually_written)">
   <persistence version="9" />
   <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="13" />
+    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="14" />
   </languages>
   <imports>
     <import index="l681" ref="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
@@ -3185,8 +3185,11 @@
           </node>
         </node>
         <node concept="3v7bcT" id="6r95PajkROr" role="3w00ZY">
+          <node concept="3wdj9f" id="6wXJlapK4uW" role="3v7bcX">
+            <property role="3wdj9b" value="Machine" />
+          </node>
           <node concept="3wdj9f" id="6r95PajkROs" role="3v7bcX">
-            <property role="3wdj9b" value="Machine.running" />
+            <property role="3wdj9b" value="running" />
           </node>
         </node>
         <node concept="3v7bcT" id="6r95PajkROt" role="3w00ZY">
