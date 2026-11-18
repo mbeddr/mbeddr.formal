@@ -12,6 +12,52 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Rebuilding a big language over MCP after its MAKE timed out (2026-11-17, evening)
+
+Generated behavior method names carry the node id (`hasAllocationKeyword_id6p3Mfvy3Gw9`), and Java
+compiles a whole module at once. So after a behavior method is re-created (new id), a MAKE of only
+the behavior model fails: the editor/textGen classes generated earlier still call the old name.
+Making behavior + editor + textGen together is correct but times out on the MCP side for a big
+editor model (e.g. `com.symo.sysmlv2.baselan`). The timeout cancels the make only after generation
+has written `source_gen`: the log says "No input. Skipping optional target ... reloadClasses", so
+nothing was compiled. A second, small MAKE (here: only the behavior model) then compiles the whole
+module against the already regenerated sources and succeeds within the MCP time limit. No UI
+rebuild needed.
+
+## Large editor TextGen can be dominated by anonymous-class names for debug information (2026-11-17)
+
+A JFR recording of a successful SysML editor rebuild (about 50 s) found
+`AnonymousClass.getJavaName/getIndexInContainingClass` in about 94% of sampled
+TextGen stacks and 56% of all execution samples. `AnonymousClass_TextGen` calls
+`getUnitName` when `TextGenSupport.needPositions()` is true; this is part of
+building debug/source positions. The index implementation repeatedly collects
+anonymous-class descendants of the enclosing classifier and filters by nearest
+classifier ancestor, including repeated work for enclosing anonymous classes.
+Removing tuple lowering alone does not address this cost. Investigate scoped
+index caching or traversal that prunes nested classifiers, and/or reduce the
+anonymous classes emitted by grammar-cells. Keep source-position/debug mapping
+semantics when optimizing. Detailed generation tracing was also enabled at level
+3 during these measurements; compare normal builds with tracing off before
+claiming an end-user rebuild speedup. Debug information and performance tracing
+are separate settings.
+
+## A short-name component inside an outer grammar.optional passes checks but fails generation (2026-11-17)
+
+Replacing the inline `< declaredShortName >` optional section with
+`ISysMLv2IdentifierNameConcept_ShortName` works at the model-checking level, but
+fails generation when that section is inside another grammar `OptionalCell`.
+Confirmed in the nine AssignActionUsage, WhileLoopUsage, SatisfyRequirementUsage,
+PerformActionUsage, ExhibitStateUsage, IncludeUseCaseUsage,
+RequirementVerificationUsage, FramedConcernUsage, and RequirementConstraintUsage
+editors. Generation reports `Content of optional cell is not supported` on the
+outer optional cells. The generation plan puts `mc02_inlineComponents` before
+optional-cell preprocessing and reduction, so this is not explained by simply
+running inlining too late. `template_inlineEditorComponent` emits a custom-factory
+wrapper; optional-content inference through that wrapper needs investigation.
+Do not assume component inlining makes this nesting supported. Keep these
+sections inline until the grammar-cells generator supports
+the case, and verify component refactorings with MAKE, not only root checks.
+
 ## Clearing a reference; `SNodeTypeCastExpression` needs `conceptArgument`; a harmless make warning (2026-11-17, later)
 
 - **Clear a reference with `update_node SET REFERENCE` and an explicit `null` target**
