@@ -1490,6 +1490,35 @@ discussion. Each item says which lesson is blocked or affected.
   deliver.release;` (a part on the `end action function`, an action on the `end part component`) reports
   nothing. Interface usages have this check (Gap 10, `check_SysMLv2InterfaceUsage_endsMatchDefinition`);
   connection usages do not either (see "Not a gap (checked)" below). The lesson does not claim a check.
+- **Gap 13: the `include` editor hides the name** (found 2026-11-18, planning Part D Lesson 2).
+  `include use case approve : ApproveFlight;` imports with name `approve`, but the editor shows
+  `include : ApproveFlight ;` (no name, no `use case` keyword). Blocks the `include` root of Part D Lesson 2.
+  **Cause (2026-11-18):** systemic, nine editors. Grammar cells infer an `OptionalCell`'s show condition
+  from the first non-constant cell of its option (`OptionalCell.getFirstNonConst`). In
+  `optional[- use case optional[<short>] {name} -]` that is the nested short-name optional, so the outer
+  optional shows only when a short name is set; the name alone never shows.
+  **FIXED 2026-11-18:** mirror textgen.
+  - Seven reference-form editors (include, perform, exhibit, satisfy, require constraint, verify,
+    frame concern): `[keyword optional[<short>]]` is a plain collection gated on
+    `node.<reference child>.isNull`, and `{name}` follows it unconditionally (empty text when unset).
+  - Assign and While: `[action optional[<short>] {name}]` is a plain collection gated on
+    `name != null || declaredShortName != null`. An unnamed assign/while has no name cell, so the
+    Alt+Enter intentions `AddAssignActionName` / `AddWhileLoopName` ("Add Action Name", set name to
+    `name`) are the way in, as with `AddConnectorEndName`. Editor tests `_410_Actions_AddAssignName`,
+    `_420_Actions_AddWhileName` (green, mutation-checked: an `execute` setting `xname` fails both).
+  - Reachability of the other changes: the reference-form name is always shown, the short name opens
+    with `<`, and the calc usage `%result%` optional is offered by the generated side transform. No
+    intention needed there.
+  - Editor test `_400_UseCases_EditIncludeName` (type into the name of a named include): green. Not
+    mutation-checked: the mutation would be re-hiding `{name}`, an editor-model change whose
+    language MAKE times out (see gotchas).
+- **Gap 14: use case editors show an empty result and miss a space** (found 2026-11-18). A use case
+  usage without a result shows a `<no result>` placeholder before `}`; `use case def X{` and
+  `use case x : X{` have no space before `{`. Cosmetic, but visible in every use case lesson.
+  **Partly done (2026-11-18):** `%result%` in `SysMLv2CalculationUsage_Body` is wrapped in
+  an optional (as in the definition body), and `punctuation-left` is removed from `{` in both calc
+  bodies. After the rebuild, a use case def still renders `DeliverParcel{`, so use case editors take
+  their `{` from another cell. Still to find.
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests

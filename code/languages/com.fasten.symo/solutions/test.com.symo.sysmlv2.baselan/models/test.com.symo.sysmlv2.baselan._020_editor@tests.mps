@@ -78,10 +78,12 @@
       </concept>
     </language>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="6353433212885159921" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionDefinition" flags="ng" index="66U8D" />
       <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
       <concept id="6353433212885160000" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingDefinition" flags="ng" index="66VQo" />
       <concept id="6353433212885160006" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationDefinition" flags="ng" index="66VQu" />
       <concept id="6353433212885159988" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewDefinition" flags="ng" index="66VRG" />
+      <concept id="6353433212885159982" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseDefinition" flags="ng" index="66VRQ" />
       <concept id="1962132711163231518" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureReferenceExpression" flags="ng" index="8d1xg">
         <child id="1962132711163231520" name="feature" index="8d1xI" />
       </concept>
@@ -172,6 +174,9 @@
         <child id="7243625513291015290" name="succession" index="31b6dW" />
         <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
       </concept>
+      <concept id="8400219580061960445" name="com.symo.sysmlv2.baselan.structure.SysMLv2WhileLoopUsage" flags="ng" index="3sj5Je" />
+      <concept id="8400219580061960444" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssignActionUsage" flags="ng" index="3sj5Jf" />
+      <concept id="8400219580107005963" name="com.symo.sysmlv2.baselan.structure.SysMLv2IncludeUseCaseUsage" flags="ng" index="3v7bcS" />
       <concept id="8400219580107005961" name="com.symo.sysmlv2.baselan.structure.SysMLv2PerformActionUsage" flags="ng" index="3v7bcU">
         <child id="8400219580107005965" name="performed" index="3v7bcY" />
       </concept>
@@ -4972,6 +4977,107 @@
     <node concept="3clFbS" id="6p3MfvrdNSu" role="LjaKd">
       <node concept="2TK7Tu" id="6p3MfvrdNSv" role="3cqZAp">
         <property role="2TTd_B" value="EdSub" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5Y_BWoX5BAy">
+    <property role="TrG5h" value="_400_UseCases_EditIncludeName" />
+    <property role="3YCmrE" value="checks that the name of an include use case usage without a referenced target can be edited (Gap 13)" />
+    <node concept="1qefOq" id="5Y_BWoX5BAz" role="25YQCW">
+      <node concept="2h0jOr" id="5Y_BWoX5BA$" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="66VRQ" id="5Y_BWoX5BA_" role="2h0jOs">
+          <property role="TrG5h" value="DeliverParcel" />
+          <node concept="3v7bcS" id="5Y_BWoX5BAA" role="66U86">
+            <property role="TrG5h" value="approv" />
+            <node concept="LIFWc" id="5Y_BWoX5BAB" role="lGtFl">
+              <property role="LIFWd" value="property_name" />
+              <property role="ZRATv" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5Y_BWoX5BAC" role="25YQFr">
+      <node concept="2h0jOr" id="5Y_BWoX5BAD" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="66VRQ" id="5Y_BWoX5BAE" role="2h0jOs">
+          <property role="TrG5h" value="DeliverParcel" />
+          <node concept="3v7bcS" id="5Y_BWoX5BAF" role="66U86">
+            <property role="TrG5h" value="approve" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5Y_BWoX5BAH" role="LjaKd">
+      <node concept="2TK7Tu" id="5Y_BWoX5BAI" role="3cqZAp">
+        <property role="2TTd_B" value="e" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7TWXuyhfSjD">
+    <property role="TrG5h" value="_410_Actions_AddAssignName" />
+    <property role="3YCmrE" value="checks that an unnamed assign action, whose editor hides the action name cells, gets a name through the intention (Gap 13)" />
+    <node concept="1qefOq" id="7TWXuyhfSjE" role="25YQCW">
+      <node concept="2h0jOr" id="7TWXuyhfSjF" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="66U8D" id="7TWXuyhfSjG" role="2h0jOs">
+          <property role="TrG5h" value="Fly" />
+          <node concept="3sj5Jf" id="7TWXuyhfSjH" role="66U86">
+            <node concept="LIFWc" id="7TWXuyhfSjI" role="lGtFl">
+              <property role="LIFWd" value="Constant_la88m4_d0a" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7TWXuyhfSjJ" role="25YQFr">
+      <node concept="2h0jOr" id="7TWXuyhfSjK" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="66U8D" id="7TWXuyhfSjL" role="2h0jOs">
+          <property role="TrG5h" value="Fly" />
+          <node concept="3sj5Jf" id="7TWXuyhfSjM" role="66U86">
+            <property role="TrG5h" value="name" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7TWXuyhfSjN" role="LjaKd">
+      <node concept="1MFPAf" id="7TWXuyhfSjO" role="3cqZAp">
+        <ref role="1MFYO6" to="pw9y:7TWXuyhfO2U" resolve="AddAssignActionName" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7TWXuyhfWhv">
+    <property role="TrG5h" value="_420_Actions_AddWhileName" />
+    <property role="3YCmrE" value="checks that an unnamed while loop, whose editor hides the action name cells, gets a name through the intention (Gap 13)" />
+    <node concept="1qefOq" id="7TWXuyhfWhw" role="25YQCW">
+      <node concept="2h0jOr" id="7TWXuyhfWhx" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="66U8D" id="7TWXuyhfWhy" role="2h0jOs">
+          <property role="TrG5h" value="Fly" />
+          <node concept="3sj5Je" id="7TWXuyhfWhz" role="66U86">
+            <node concept="LIFWc" id="7TWXuyhfWh$" role="lGtFl">
+              <property role="LIFWd" value="Constant_hp7zfw_d0a" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7TWXuyhfWh_" role="25YQFr">
+      <node concept="2h0jOr" id="7TWXuyhfWhA" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="66U8D" id="7TWXuyhfWhB" role="2h0jOs">
+          <property role="TrG5h" value="Fly" />
+          <node concept="3sj5Je" id="7TWXuyhfWhC" role="66U86">
+            <property role="TrG5h" value="name" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7TWXuyhfWhD" role="LjaKd">
+      <node concept="1MFPAf" id="7TWXuyhfWhE" role="3cqZAp">
+        <ref role="1MFYO6" to="pw9y:7TWXuyhfO3K" resolve="AddWhileLoopName" />
       </node>
     </node>
   </node>
