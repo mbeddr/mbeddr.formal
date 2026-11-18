@@ -1517,8 +1517,9 @@ discussion. Each item says which lesson is blocked or affected.
   `use case x : X{` have no space before `{`. Cosmetic, but visible in every use case lesson.
   **Partly done (2026-11-18):** `%result%` in `SysMLv2CalculationUsage_Body` is wrapped in
   an optional (as in the definition body), and `punctuation-left` is removed from `{` in both calc
-  bodies. After the rebuild, a use case def still renders `DeliverParcel{`, so use case editors take
-  their `{` from another cell. Still to find.
+  bodies. Use case defs render `use case def X {` since the space fix of 2026-11-18 (by hand, in the
+  editor). Still open: use case usages render `use case x : X{` (seen in Part D Lesson 2,
+  `_050_use_cases_in_context`), so the usage takes its `{` from yet another cell.
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
