@@ -1477,7 +1477,7 @@ discussion. Each item says which lesson is blocked or affected.
   Not done: n-ary connector parts (also missing for `connect`).
 - **Gap 7: concepts not found.** Control nodes (fork, join, merge, decision); `if` and `for` actions
   (only `while` exists); `send` action and standalone `accept`; `dependency`; `expose` and `filter` for
-  views (Part C Lesson 7); variation and variants; `terminate`; requirement derivation; individuals,
+  views (Part G Lesson 3); variation and variants; `terminate`; requirement derivation; individuals,
   snapshots and timeslices; time triggers `after`/`at`/`when` (not verified).
 - **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
   inline. Affects the state-machine lessons.
