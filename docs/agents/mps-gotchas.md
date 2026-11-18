@@ -12,6 +12,26 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Utility methods for a NodesTestCase via a real class; tests run a stale importer (2026-11-18)
+
+- `parse_java_and_insert` with `featureKind: METHOD` rejects a `NodesTestCase` as `contextNodeRef`
+  (it is not a Classifier), and the test's `methods` role expects
+  `DefaultClassifierMethodDeclaration`, not the `InstanceMethodDeclaration` the parser makes. What
+  worked: parse the method into any real class root (FQN types, e.g.
+  `org.jetbrains.mps.openapi.model.SNode`), `print_node` it deep, change the root `concept` to
+  `jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration`, drop the
+  `resolveInfo` entries, `ADD CHILD` it into the test's `methods` role, then delete the temporary
+  method. References inside the copied body were repointed automatically.
+- When cloning a test blueprint, keep each node's `concept` as the FQN from its
+  `conceptReference`: a short name such as `AssertStatement` can resolve to another language's
+  concept and fail with "Unknown child role".
+- Importer tests run the importer solution's compiled classes. After a behavior change in the
+  language, MAKE the importer solution and the test module too, or the test runs the old code (here:
+  3 targets found instead of 5, with nothing pointing at a stale build).
+- A test that mutates an imported model (e.g. to run a migration helper on it) must wrap the
+  mutation in `ApplicationManager.getApplication().invokeAndWait(closure { command with
+  project.getRepository() { ... } })`, as `TestUtils.parseFileIntoModel` does.
+
 ## Rebuilding a big language over MCP after its MAKE timed out (2026-11-17, evening)
 
 Generated behavior method names carry the node id (`hasAllocationKeyword_id6p3Mfvy3Gw9`), and Java

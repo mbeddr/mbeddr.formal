@@ -78,3 +78,35 @@ All fixed concept tests use native MPS `isInstanceOf` expressions; the dynamic
 target test uses `target.isInstanceOf(# required)`. The former `is` helper has
 been removed. The subsequent language build and focused checking/importer
 contracts pass. No problems are reported for UsageReferencePolicy.
+
+## Amendment 2026-11-18: structured feature chains (Gap 15)
+
+The "terminal usage reference plus its text fallback" storage above is replaced
+for the seven roles in the table. A dotted target such as `perform drone.deliver;`
+is now a list of UsageRefs, one segment per feature (`drone`, `deliver`); the
+role links are `0..n`.
+
+* **Scoping.** The first segment uses the lexical scope described above. Segment
+  i uses the nested scope of segment i-1's bound usage (its features, including
+  inherited ones).
+* **Kind contract.** Only the last segment must have the role's kind from the
+  table. A non-final segment only has to be a `SysMLv2Usage`
+  (`UsageReferencePolicy.requiredKind` looks for a next sibling in the same role).
+  `perform local.wheel;` with `wheel` a part is therefore one wrong-kind error on
+  `wheel`, not on `local`.
+* **Spelling.** `::` qualification stays inside a segment; only unquoted dots
+  split (`UsageReferencePolicy.chainTexts`, used by importer and textgen through
+  `appendChain`). Each segment keeps its own text fallback while unresolved.
+* **Migration.** `SplitDottedTargetPaths` (language version 13 → 14) splits a
+  legacy dotted `usageName`. The leading segments are inserted before the legacy
+  node, which stays as the terminal segment, so its id and incoming references
+  survive; each leading segment is reified.
+
+Rejected alternative: reuse `SysMLv2FeatureChainEnd` (the connector-end chain) as
+a child. It would put a second wrapper concept between the role and its
+UsageRefs and duplicate the existing UsageRef scoping and reification.
+
+Tests: importer `_630_UsageReferenceContracts` (`testStaticFeatureAndNamespacePaths`,
+`testWrongKindChainTerminal`, `testLegacyDottedPathMigration`) and editor
+`_430_Actions_ExtendPerformChain`, all mutation-checked; the full `baselan` and
+`_010_smoke_test` suites pass after the migration.

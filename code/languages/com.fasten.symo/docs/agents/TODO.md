@@ -1520,6 +1520,28 @@ discussion. Each item says which lesson is blocked or affected.
   bodies. Use case defs render `use case def X {` since the space fix of 2026-11-18 (by hand, in the
   editor). Still open: use case usages render `use case x : X{` (seen in Part D Lesson 2,
   `_050_use_cases_in_context`), so the usage takes its `{` from yet another cell.
+- **Gap 15: dotted target paths are stored as one text** (found 2026-11-18, planning Part D Lesson 3).
+  `perform drone.deliver;` kept `drone.deliver` as a single `SysMLv2UsageRef.usageName`; only the
+  last feature was bound, so the path was not navigable or renamable and the editor could not build
+  it segment by segment. Affects the seven target roles of ADR 0009 (perform, exhibit, include,
+  satisfy, require constraint, frame concern, verify).
+  **FIXED 2026-11-18:** structured chain (ADR 0009 amendment).
+  - The seven roles are `0..n` lists of `SysMLv2UsageRef`, one segment per feature. Segment i is
+    scoped by the nested scope of segment i-1's usage; only the last segment carries the role's
+    kind contract (`UsageReferencePolicy.requiredKind` gives `SysMLv2Usage` to non-final segments).
+  - Importer and textgen: `UsageReferencePolicy.appendChain` / `chainTexts` split on unquoted dots
+    (`::` stays inside a segment). Editor: RefNodeList with separator `.`, so typing `.` after a
+    segment adds the next one.
+  - Migration `SplitDottedTargetPaths` (language version 13 → 14, `UsageChainMigrationSupport.split`)
+    splits legacy dotted texts; the legacy node stays as the terminal segment (id and target kept).
+    Applied to all modules; the only real split was `exhibit Machine.running` in the sandbox
+    `_100_manually_written` (`_260_perform_exhibit_include_satisfy`), the rest are version stamps.
+  - Tests (all mutation-checked): importer `_630_UsageReferenceContracts`
+    `testStaticFeatureAndNamespacePaths`, `testWrongKindChainTerminal`, `testLegacyDottedPathMigration`
+    (collapses imported chains back into the legacy shape, migrates, compares targets and identity);
+    editor `_430_Actions_ExtendPerformChain` (type `.` after a segment).
+  - Known overlap: `chainTexts` and the importer's `splitReferenceText` both split references on
+    dots; merging them is cleanup, not a gap.
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
