@@ -46,7 +46,7 @@
       <property role="TrG5h" value="part_D" />
     </node>
     <node concept="3HG_t4" id="7vLXn591F3_" role="2h0jOs">
-      <property role="3HG_t5" value="Part E - Linking the model&#10;&#10;Lesson 1: Assign functions to parts: allocation&#10;Lesson 2: Show that a part satisfies a requirement" />
+      <property role="3HG_t5" value="Part E - Linking the model&#10;&#10;Lesson 1: Assign functions to parts: allocation  [available]&#10;Lesson 2: Show that a part satisfies a requirement" />
       <property role="TrG5h" value="part_E" />
     </node>
     <node concept="3HG_t4" id="7vLXn591F3A" role="2h0jOs">
