@@ -42,7 +42,7 @@
       <property role="TrG5h" value="part_C" />
     </node>
     <node concept="3HG_t4" id="7vLXn591F3$" role="2h0jOs">
-      <property role="3HG_t5" value="Part D - System interactions&#10;&#10;Lesson 1: The system boundary: context and actors  [available]&#10;Lesson 2: What the system is used for: use cases&#10;Lesson 3: Describe the mission as actions&#10;Lesson 4: Order the actions: control flow&#10;Lesson 5: Pass things between actions: item flow&#10;Lesson 6: Operating modes: states and transitions&#10;Lesson 7: Reacting to events: triggers and effects" />
+      <property role="3HG_t5" value="Part D - System interactions&#10;&#10;Lesson 1: The system boundary: context and actors  [available]&#10;Lesson 2: What the system is used for: use cases  [available]&#10;Lesson 3: Describe the mission as actions&#10;Lesson 4: Order the actions: control flow&#10;Lesson 5: Pass things between actions: item flow&#10;Lesson 6: Operating modes: states and transitions&#10;Lesson 7: Reacting to events: triggers and effects" />
       <property role="TrG5h" value="part_D" />
     </node>
     <node concept="3HG_t4" id="7vLXn591F3_" role="2h0jOs">
