@@ -1481,6 +1481,15 @@ discussion. Each item says which lesson is blocked or affected.
   snapshots and timeslices; time triggers `after`/`at`/`when` (not verified).
 - **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
   inline. Affects the state-machine lessons.
+- **Gap 11: the importer rejects a bare end feature** (found 2026-11-18, Part E Lesson 1).
+  `allocation def X { end logical; end physical; }` fails with "Unsupported SysML v2 construct: end
+  feature usage form"; `end action logical;` / `end part physical;` import fine (the lesson uses them).
+  Only the importer was probed, not the editor.
+- **Gap 12: allocation usage ends are not checked against the allocation def's ends** (found
+  2026-11-18, Part E Lesson 1). `allocation a : FunctionToComponent allocate drone.gripper to
+  deliver.release;` (a part on the `end action function`, an action on the `end part component`) reports
+  nothing. Interface usages have this check (Gap 10, `check_SysMLv2InterfaceUsage_endsMatchDefinition`);
+  connection usages do not either (see "Not a gap (checked)" below). The lesson does not claim a check.
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
