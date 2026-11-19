@@ -236,7 +236,7 @@
   </node>
   <node concept="1lH9Xt" id="j1yGxNPwCY">
     <property role="TrG5h" value="_020_MetadataGapsTest" />
-    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <node concept="1LZb2c" id="j1yGxNQC47" role="1SL9yI">
       <property role="TrG5h" value="testMetadataBodyRedefinition" />
       <node concept="3cqZAl" id="j1yGxNQC49" role="3clF45" />
@@ -369,8 +369,19 @@
             <node concept="2YIFZM" id="j1yGxNQC4Z" role="2Oq$k0">
               <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
               <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
-              <node concept="37vLTw" id="j1yGxNQC50" role="37wK5m">
-                <ref role="3cqZAo" node="j1yGxNQC4c" resolve="content" />
+              <node concept="2OqwBi" id="7Zovf$uyYss" role="37wK5m">
+                <node concept="37vLTw" id="7Zovf$uyYsa" role="2Oq$k0">
+                  <ref role="3cqZAo" node="j1yGxNQC4c" resolve="content" />
+                </node>
+                <node concept="liA8E" id="7Zovf$uyYst" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                  <node concept="Xl_RD" id="7Zovf$uyYsu" role="37wK5m">
+                    <property role="Xl_RC" value=":&gt;&gt; " />
+                  </node>
+                  <node concept="Xl_RD" id="7Zovf$uyYsv" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
               </node>
               <node concept="37vLTw" id="j1yGxNQC51" role="37wK5m">
                 <ref role="3cqZAo" node="j1yGxNQC4R" resolve="generated" />
@@ -383,8 +394,19 @@
           <node concept="2YIFZM" id="j1yGxNQC53" role="1gVpfI">
             <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
             <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
-            <node concept="37vLTw" id="j1yGxNQC54" role="37wK5m">
-              <ref role="3cqZAo" node="j1yGxNQC4c" resolve="content" />
+            <node concept="2OqwBi" id="7Zovf$uyZSA" role="37wK5m">
+              <node concept="37vLTw" id="7Zovf$uyZSk" role="2Oq$k0">
+                <ref role="3cqZAo" node="j1yGxNQC4c" resolve="content" />
+              </node>
+              <node concept="liA8E" id="7Zovf$uyZSB" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                <node concept="Xl_RD" id="7Zovf$uyZSC" role="37wK5m">
+                  <property role="Xl_RC" value=":&gt;&gt; " />
+                </node>
+                <node concept="Xl_RD" id="7Zovf$uyZSD" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
             </node>
             <node concept="37vLTw" id="j1yGxNQC55" role="37wK5m">
               <ref role="3cqZAo" node="j1yGxNQC4R" resolve="generated" />
@@ -525,8 +547,19 @@
             <node concept="2YIFZM" id="j1yGxNQC5Y" role="2Oq$k0">
               <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
               <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
-              <node concept="37vLTw" id="j1yGxNQC5Z" role="37wK5m">
-                <ref role="3cqZAo" node="j1yGxNQC5b" resolve="content" />
+              <node concept="2OqwBi" id="7Zovf$uz1mo" role="37wK5m">
+                <node concept="37vLTw" id="7Zovf$uz1m6" role="2Oq$k0">
+                  <ref role="3cqZAo" node="j1yGxNQC5b" resolve="content" />
+                </node>
+                <node concept="liA8E" id="7Zovf$uz1mp" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                  <node concept="Xl_RD" id="7Zovf$uz1mq" role="37wK5m">
+                    <property role="Xl_RC" value=":&gt;&gt; " />
+                  </node>
+                  <node concept="Xl_RD" id="7Zovf$uz1mr" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
               </node>
               <node concept="37vLTw" id="j1yGxNQC60" role="37wK5m">
                 <ref role="3cqZAo" node="j1yGxNQC5Q" resolve="generated" />
@@ -539,8 +572,19 @@
           <node concept="2YIFZM" id="j1yGxNQC62" role="1gVpfI">
             <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
             <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
-            <node concept="37vLTw" id="j1yGxNQC63" role="37wK5m">
-              <ref role="3cqZAo" node="j1yGxNQC5b" resolve="content" />
+            <node concept="2OqwBi" id="7Zovf$uz2Qb" role="37wK5m">
+              <node concept="37vLTw" id="7Zovf$uz2PT" role="2Oq$k0">
+                <ref role="3cqZAo" node="j1yGxNQC5b" resolve="content" />
+              </node>
+              <node concept="liA8E" id="7Zovf$uz2Qc" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                <node concept="Xl_RD" id="7Zovf$uz2Qd" role="37wK5m">
+                  <property role="Xl_RC" value=":&gt;&gt; " />
+                </node>
+                <node concept="Xl_RD" id="7Zovf$uz2Qe" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
             </node>
             <node concept="37vLTw" id="j1yGxNQC64" role="37wK5m">
               <ref role="3cqZAo" node="j1yGxNQC5Q" resolve="generated" />
@@ -585,7 +629,7 @@
               <ref role="3cqZAo" node="j1yGxNQC6a" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC6n" role="37vLTx">
-              <property role="Xl_RC" value="    attribute inner;\n" />
+              <property role="Xl_RC" value="    attribute inner { attribute level; }\n" />
             </node>
           </node>
         </node>
@@ -701,8 +745,19 @@
             <node concept="2YIFZM" id="j1yGxNQC75" role="2Oq$k0">
               <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
               <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
-              <node concept="37vLTw" id="j1yGxNQC76" role="37wK5m">
-                <ref role="3cqZAo" node="j1yGxNQC6a" resolve="content" />
+              <node concept="2OqwBi" id="7Zovf$uz4nA" role="37wK5m">
+                <node concept="37vLTw" id="7Zovf$uz4nk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="j1yGxNQC6a" resolve="content" />
+                </node>
+                <node concept="liA8E" id="7Zovf$uz4nB" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                  <node concept="Xl_RD" id="7Zovf$uz4nC" role="37wK5m">
+                    <property role="Xl_RC" value=":&gt;&gt; " />
+                  </node>
+                  <node concept="Xl_RD" id="7Zovf$uz4nD" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
               </node>
               <node concept="37vLTw" id="j1yGxNQC77" role="37wK5m">
                 <ref role="3cqZAo" node="j1yGxNQC6X" resolve="generated" />
@@ -715,8 +770,19 @@
           <node concept="2YIFZM" id="j1yGxNQC79" role="1gVpfI">
             <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
             <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
-            <node concept="37vLTw" id="j1yGxNQC7a" role="37wK5m">
-              <ref role="3cqZAo" node="j1yGxNQC6a" resolve="content" />
+            <node concept="2OqwBi" id="7Zovf$uz5V2" role="37wK5m">
+              <node concept="37vLTw" id="7Zovf$uz5UK" role="2Oq$k0">
+                <ref role="3cqZAo" node="j1yGxNQC6a" resolve="content" />
+              </node>
+              <node concept="liA8E" id="7Zovf$uz5V3" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                <node concept="Xl_RD" id="7Zovf$uz5V4" role="37wK5m">
+                  <property role="Xl_RC" value=":&gt;&gt; " />
+                </node>
+                <node concept="Xl_RD" id="7Zovf$uz5V5" role="37wK5m">
+                  <property role="Xl_RC" value="" />
+                </node>
+              </node>
             </node>
             <node concept="37vLTw" id="j1yGxNQC7b" role="37wK5m">
               <ref role="3cqZAo" node="j1yGxNQC6X" resolve="generated" />
@@ -751,7 +817,7 @@
               <ref role="3cqZAo" node="j1yGxNQC7h" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC7q" role="37vLTx">
-              <property role="Xl_RC" value="  metadata def Tag;\n" />
+              <property role="Xl_RC" value="  metadata def Tag {}\n" />
             </node>
           </node>
         </node>
@@ -761,7 +827,7 @@
               <ref role="3cqZAo" node="j1yGxNQC7h" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC7u" role="37vLTx">
-              <property role="Xl_RC" value="  part def Unit;\n" />
+              <property role="Xl_RC" value="  part def Unit {}\n" />
             </node>
           </node>
         </node>
@@ -857,7 +923,7 @@
               <ref role="3cqZAo" node="j1yGxNQC7W" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC85" role="37vLTx">
-              <property role="Xl_RC" value="  metadata def Tag;\n" />
+              <property role="Xl_RC" value="  metadata def Tag {}\n" />
             </node>
           </node>
         </node>
@@ -867,7 +933,7 @@
               <ref role="3cqZAo" node="j1yGxNQC7W" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC89" role="37vLTx">
-              <property role="Xl_RC" value="  #Tag action def Start;\n" />
+              <property role="Xl_RC" value="  #Tag action def Start {}\n" />
             </node>
           </node>
         </node>
@@ -877,7 +943,7 @@
               <ref role="3cqZAo" node="j1yGxNQC7W" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC8d" role="37vLTx">
-              <property role="Xl_RC" value="  #Tag state def Idle;\n" />
+              <property role="Xl_RC" value="  #Tag state def Idle {}\n" />
             </node>
           </node>
         </node>
@@ -887,7 +953,7 @@
               <ref role="3cqZAo" node="j1yGxNQC7W" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC8h" role="37vLTx">
-              <property role="Xl_RC" value="  #Tag requirement def Limit;\n" />
+              <property role="Xl_RC" value="  #Tag requirement def Limit {}\n" />
             </node>
           </node>
         </node>
@@ -973,7 +1039,7 @@
               <ref role="3cqZAo" node="j1yGxNQC8F" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC8O" role="37vLTx">
-              <property role="Xl_RC" value="  metadata def Tag;\n" />
+              <property role="Xl_RC" value="  metadata def Tag {}\n" />
             </node>
           </node>
         </node>
@@ -983,7 +1049,7 @@
               <ref role="3cqZAo" node="j1yGxNQC8F" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC8S" role="37vLTx">
-              <property role="Xl_RC" value="  part def Unit;\n" />
+              <property role="Xl_RC" value="  part def Unit {}\n" />
             </node>
           </node>
         </node>
@@ -1003,7 +1069,7 @@
               <ref role="3cqZAo" node="j1yGxNQC8F" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC90" role="37vLTx">
-              <property role="Xl_RC" value="    #Tag subject target : Unit;\n" />
+              <property role="Xl_RC" value="    subject #Tag &lt;t&gt; target : Unit;\n" />
             </node>
           </node>
         </node>
@@ -1013,7 +1079,7 @@
               <ref role="3cqZAo" node="j1yGxNQC8F" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQC94" role="37vLTx">
-              <property role="Xl_RC" value="    #Tag objective goal;\n" />
+              <property role="Xl_RC" value="    objective #Tag &lt;g&gt; goal;\n" />
             </node>
           </node>
         </node>

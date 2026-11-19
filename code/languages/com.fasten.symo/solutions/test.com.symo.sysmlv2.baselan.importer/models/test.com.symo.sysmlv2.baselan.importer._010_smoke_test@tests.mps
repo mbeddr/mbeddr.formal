@@ -2329,7 +2329,7 @@
                               <node concept="3clFbF" id="3PUPjB2nanV" role="3cqZAp">
                                 <node concept="2YIFZM" id="3PUPjB2nanX" role="3clFbG">
                                   <ref role="1Pybhc" to="uj5z:5PDtixSTyh2" resolve="SysMLv2Importer" />
-                                  <ref role="37wK5l" to="uj5z:5PDtixSTyh4" resolve="importText" />
+                                  <ref role="37wK5l" to="uj5z:5PDtixSTyh4" resolve="importTextAndAddRootToModel" />
                                   <node concept="37vLTw" id="3PUPjB2q8tT" role="37wK5m">
                                     <ref role="3cqZAo" node="3PUPjB2n9Iz" resolve="content" />
                                   </node>
@@ -3283,7 +3283,7 @@
                               <node concept="3clFbF" id="6coPuU3$F35" role="3cqZAp">
                                 <node concept="2YIFZM" id="6coPuU3$F37" role="3clFbG">
                                   <ref role="1Pybhc" to="uj5z:5PDtixSTyh2" resolve="SysMLv2Importer" />
-                                  <ref role="37wK5l" to="uj5z:5PDtixSTyh4" resolve="importText" />
+                                  <ref role="37wK5l" to="uj5z:5PDtixSTyh4" resolve="importTextAndAddRootToModel" />
                                   <node concept="37vLTw" id="6coPuU3$F38" role="37wK5m">
                                     <ref role="3cqZAo" node="6coPuU3$F2x" resolve="content" />
                                   </node>
@@ -84843,7 +84843,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="6i6xKqM0Njv" role="1SL9yI">
-      <property role="TrG5h" value="testMissingMetadataValueRejected" />
+      <property role="TrG5h" value="testMetadataEntryWithoutValueRoundtrip" />
       <node concept="3cqZAl" id="6i6xKqM0Njw" role="3clF45" />
       <node concept="3clFbS" id="6i6xKqM0Nk3" role="3clF47">
         <node concept="3cpWs8" id="6i6xKqM0Nj$" role="3cqZAp">
@@ -84856,126 +84856,67 @@
             <node concept="1jxXqW" id="6i6xKqM0Q36" role="33vP2m" />
           </node>
         </node>
-        <node concept="3J1_TO" id="6i6xKqM0Nk1" role="3cqZAp">
-          <node concept="3uVAMA" id="6i6xKqM0Nk2" role="1zxBo5">
-            <node concept="3clFbS" id="6i6xKqM26gS" role="1zc67A">
-              <node concept="3cpWs8" id="6i6xKqM26gA" role="3cqZAp">
-                <node concept="3cpWsn" id="6i6xKqM26g_" role="3cpWs9">
-                  <property role="TrG5h" value="cause" />
-                  <node concept="3uibUv" id="6i6xKqM26gB" role="1tU5fm">
-                    <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
-                  </node>
-                  <node concept="37vLTw" id="6i6xKqM26gC" role="33vP2m">
-                    <ref role="3cqZAo" node="6i6xKqM0NjR" resolve="ex" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2$JKZl" id="6i6xKqM26gM" role="3cqZAp">
-                <node concept="3y3z36" id="6i6xKqM26gD" role="2$JKZa">
-                  <node concept="2OqwBi" id="6i6xKqM26hx" role="3uHU7B">
-                    <node concept="37vLTw" id="6i6xKqM26h1" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6i6xKqM26g_" resolve="cause" />
-                    </node>
-                    <node concept="liA8E" id="6i6xKqM26hy" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Throwable.getCause()" resolve="getCause" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="6i6xKqM26gF" role="3uHU7w" />
-                </node>
-                <node concept="3clFbS" id="6i6xKqM26gH" role="2LFqv$">
-                  <node concept="3clFbF" id="6i6xKqM26gI" role="3cqZAp">
-                    <node concept="37vLTI" id="6i6xKqM26gJ" role="3clFbG">
-                      <node concept="37vLTw" id="6i6xKqM26gK" role="37vLTJ">
-                        <ref role="3cqZAo" node="6i6xKqM26g_" resolve="cause" />
-                      </node>
-                      <node concept="2OqwBi" id="6i6xKqM26hG" role="37vLTx">
-                        <node concept="37vLTw" id="6i6xKqM26h3" role="2Oq$k0">
-                          <ref role="3cqZAo" node="6i6xKqM26g_" resolve="cause" />
-                        </node>
-                        <node concept="liA8E" id="6i6xKqM26hH" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.getCause()" resolve="getCause" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="1gVbGN" id="6i6xKqM26gR" role="3cqZAp">
-                <node concept="2OqwBi" id="6i6xKqM26hj" role="1gVkn0">
-                  <node concept="Xl_RD" id="6i6xKqM26gO" role="2Oq$k0">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: metadata body feature without value" />
-                  </node>
-                  <node concept="liA8E" id="6i6xKqM26hk" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-                    <node concept="2OqwBi" id="6i6xKqM26i4" role="37wK5m">
-                      <node concept="37vLTw" id="6i6xKqM26hI" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6i6xKqM26g_" resolve="cause" />
-                      </node>
-                      <node concept="liA8E" id="6i6xKqM26i5" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6i6xKqM26hT" role="1gVpfI">
-                  <node concept="37vLTw" id="6i6xKqM26hm" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6i6xKqM26g_" resolve="cause" />
-                  </node>
-                  <node concept="liA8E" id="6i6xKqM26hU" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                  </node>
-                </node>
-              </node>
+        <node concept="3cpWs8" id="7Zovf$uzMAd" role="3cqZAp">
+          <node concept="3cpWsn" id="7Zovf$uzMAc" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="7Zovf$uzMAe" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
             </node>
-            <node concept="XOnhg" id="6i6xKqM0NjR" role="1zc67B">
-              <property role="TrG5h" value="ex" />
-              <node concept="nSUau" id="6i6xKqM0NjT" role="1tU5fm">
-                <node concept="3uibUv" id="6i6xKqM0NjS" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
-                </node>
+            <node concept="Xl_RD" id="7Zovf$uzMAf" role="33vP2m">
+              <property role="Xl_RC" value="package P {\n  metadata def Info {\n    attribute value;\n  }\n  metadata info : Info {\n    value;\n  }\n}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7Zovf$uzMAh" role="3cqZAp">
+          <node concept="3cpWsn" id="7Zovf$uzMAg" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="3uibUv" id="7Zovf$uzMAi" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="7Zovf$uzMAw" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="7Zovf$uzMAx" role="37wK5m">
+                <ref role="3cqZAo" node="7Zovf$uzMAc" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="7Zovf$uzMAy" role="37wK5m">
+                <property role="Xl_RC" value="MissingMetadataValue" />
+              </node>
+              <node concept="37vLTw" id="7Zovf$uzMAz" role="37wK5m">
+                <ref role="3cqZAo" node="6i6xKqM0Njz" resolve="project" />
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="6i6xKqM0NjC" role="1zxBo7">
-            <node concept="3cpWs8" id="6i6xKqM0NjE" role="3cqZAp">
-              <node concept="3cpWsn" id="6i6xKqM0NjD" role="3cpWs9">
-                <property role="TrG5h" value="imported" />
-                <node concept="3uibUv" id="6i6xKqM0NjF" role="1tU5fm">
-                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-                </node>
-                <node concept="2YIFZM" id="6i6xKqM0Nkv" role="33vP2m">
-                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
-                  <node concept="Xl_RD" id="6i6xKqM0Nkw" role="37wK5m">
-                    <property role="Xl_RC" value="package P {&#10;  metadata def Info {&#10;    attribute value;&#10;  }&#10;  metadata info : Info {&#10;    value;&#10;  }&#10;}&#10;" />
-                  </node>
-                  <node concept="Xl_RD" id="6i6xKqM0Nkx" role="37wK5m">
-                    <property role="Xl_RC" value="MissingMetadataValue" />
-                  </node>
-                  <node concept="37vLTw" id="6i6xKqM0Nky" role="37wK5m">
-                    <ref role="3cqZAo" node="6i6xKqM0Njz" resolve="project" />
-                  </node>
-                </node>
+        </node>
+        <node concept="3cpWs8" id="7Zovf$uzMAo" role="3cqZAp">
+          <node concept="3cpWsn" id="7Zovf$uzMAn" role="3cpWs9">
+            <property role="TrG5h" value="difference" />
+            <node concept="3uibUv" id="7Zovf$uzMAp" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="7Zovf$uzMA$" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="6PmNqjRPlGY" resolve="tokenDifference" />
+              <node concept="37vLTw" id="7Zovf$uzMA_" role="37wK5m">
+                <ref role="3cqZAo" node="7Zovf$uzMAc" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="7Zovf$uzMAA" role="37wK5m">
+                <ref role="3cqZAo" node="7Zovf$uzMAg" resolve="generated" />
               </node>
             </node>
-            <node concept="3clFbF" id="6i6xKqM0NjK" role="3cqZAp">
-              <node concept="2YIFZM" id="6i6xKqM0Nkz" role="3clFbG">
-                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
-                <node concept="37vLTw" id="6i6xKqM0Nk$" role="37wK5m">
-                  <ref role="3cqZAo" node="6i6xKqM0NjD" resolve="imported" />
-                </node>
-                <node concept="37vLTw" id="6i6xKqM0Nk_" role="37wK5m">
-                  <ref role="3cqZAo" node="6i6xKqM0Njz" resolve="project" />
-                </node>
-              </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="7Zovf$uzMAv" role="3cqZAp">
+          <node concept="2OqwBi" id="7Zovf$uzMAR" role="1gVkn0">
+            <node concept="37vLTw" id="7Zovf$uzMAB" role="2Oq$k0">
+              <ref role="3cqZAo" node="7Zovf$uzMAn" resolve="difference" />
             </node>
-            <node concept="1gVbGN" id="6i6xKqM0NjQ" role="3cqZAp">
-              <node concept="3clFbT" id="6i6xKqM0NjO" role="1gVkn0" />
-              <node concept="Xl_RD" id="6i6xKqM0NjP" role="1gVpfI">
-                <property role="Xl_RC" value="Metadata value must be required" />
-              </node>
+            <node concept="liA8E" id="7Zovf$uzMAS" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
             </node>
+          </node>
+          <node concept="37vLTw" id="7Zovf$uzMAu" role="1gVpfI">
+            <ref role="3cqZAo" node="7Zovf$uzMAn" resolve="difference" />
           </node>
         </node>
       </node>

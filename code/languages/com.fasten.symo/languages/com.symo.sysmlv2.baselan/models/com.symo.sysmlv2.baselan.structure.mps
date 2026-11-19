@@ -924,11 +924,17 @@
       <property role="IQ2ns" value="6214786105876472931" />
       <property role="20kJfa" value="value" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
     </node>
     <node concept="PrWs8" id="5oZmK$NNeh$" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="7Zovf$tZJ4h" role="1TKVEi">
+      <property role="IQ2ns" value="9212250447178297617" />
+      <property role="20kJfa" value="entries" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5oZmK$NNehe" resolve="SysMLv2MetadataValue" />
     </node>
   </node>
   <node concept="1TIwiD" id="5oZmK$NNehf">
