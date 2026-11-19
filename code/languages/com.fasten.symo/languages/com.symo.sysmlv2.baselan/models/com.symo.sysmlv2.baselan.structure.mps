@@ -2969,5 +2969,92 @@
       <ref role="PrY4T" node="3Igz0sZP0mV" resolve="ISysMLv2Ref" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6wXJlaqEpfm">
+    <property role="EcuMT" value="7511367916003627990" />
+    <property role="TrG5h" value="SysMLv2ControlNode" />
+    <property role="R4oN_" value="control node of an action body: merge, decide, join or fork; the concept alias is the keyword (spec: ControlNode, 8.3.17)" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+  </node>
+  <node concept="1TIwiD" id="6wXJlaqEpfn">
+    <property role="EcuMT" value="7511367916003627991" />
+    <property role="TrG5h" value="SysMLv2MergeNode" />
+    <property role="34LRSv" value="merge" />
+    <property role="R4oN_" value="merge [name]; or merge [name] { ... } (spec: MergeNode)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="6wXJlaqEpfm" resolve="SysMLv2ControlNode" />
+  </node>
+  <node concept="1TIwiD" id="6wXJlaqEpfo">
+    <property role="EcuMT" value="7511367916003627992" />
+    <property role="TrG5h" value="SysMLv2DecisionNode" />
+    <property role="34LRSv" value="decide" />
+    <property role="R4oN_" value="decide [name]; or decide [name] { ... } (spec: DecisionNode)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="6wXJlaqEpfm" resolve="SysMLv2ControlNode" />
+  </node>
+  <node concept="1TIwiD" id="6wXJlaqEpfp">
+    <property role="EcuMT" value="7511367916003627993" />
+    <property role="TrG5h" value="SysMLv2JoinNode" />
+    <property role="34LRSv" value="join" />
+    <property role="R4oN_" value="join [name]; or join [name] { ... } (spec: JoinNode)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="6wXJlaqEpfm" resolve="SysMLv2ControlNode" />
+  </node>
+  <node concept="1TIwiD" id="6wXJlaqEpfq">
+    <property role="EcuMT" value="7511367916003627994" />
+    <property role="TrG5h" value="SysMLv2ForkNode" />
+    <property role="34LRSv" value="fork" />
+    <property role="R4oN_" value="fork [name]; or fork [name] { ... } (spec: ForkNode)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="6wXJlaqEpfm" resolve="SysMLv2ControlNode" />
+  </node>
+  <node concept="1TIwiD" id="6wXJlaqEpfr">
+    <property role="EcuMT" value="7511367916003627995" />
+    <property role="TrG5h" value="SysMLv2IfActionUsage" />
+    <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="[action name] if condition { then body } [else { ... } | else if ...]; the then body is the inherited content (spec: IfActionUsage)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+    <node concept="1TJgyj" id="6wXJlaqEpfu" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916003627998" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="1TJgyj" id="6wXJlaqEpfv" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916003627999" />
+      <property role="20kJfa" value="elseBranch" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6wXJlaqEpft" resolve="ISysMLv2IfElseBranch" />
+    </node>
+    <node concept="PrWs8" id="6wXJlaqEpfw" role="PzmwI">
+      <ref role="PrY4T" node="6wXJlaqEpft" resolve="ISysMLv2IfElseBranch" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wXJlaqEpfs">
+    <property role="EcuMT" value="7511367916003627996" />
+    <property role="TrG5h" value="SysMLv2ElseBody" />
+    <property role="34LRSv" value="{" />
+    <property role="R4oN_" value="else { ... }: the else action body of an if action (spec: the elseAction parameter)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wXJlaqEpfx" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916003628001" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6wXJlaqEpfy" role="PzmwI">
+      <ref role="PrY4T" node="6wXJlaqEpft" resolve="ISysMLv2IfElseBranch" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6wXJlaqEpft">
+    <property role="EcuMT" value="7511367916003627997" />
+    <property role="TrG5h" value="ISysMLv2IfElseBranch" />
+    <property role="R4oN_" value="what may follow else in an if action: an else body or a nested if action (spec: IfActionUsage.elseAction)" />
+    <property role="3GE5qa" value="behavior" />
+  </node>
 </model>
 
