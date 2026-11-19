@@ -1496,8 +1496,8 @@ discussion. Each item says which lesson is blocked or affected.
   - Tests: `_550_ActionBodySequencingTest.testControlNodes` and `testIfActionUsage` (round trips). The
     rejection case in `_130` is now `testTerminateNodeInActionDefinitionRejected`. Mutation-checked: the
     `fork` keyword and the `else` text in textgen; the importer's rejection message.
-  - Limitation: the importer still rejects target successions (`fork f; then a;`, Gap 18), so control
-    nodes need explicit `first f then a;` successions for now.
+  - Target successions after control nodes (`fork f; then a;`) are supported since Gap 18, and the guarded
+    forms after `decide` (`if g then x;`, `else x;`) since Gap 19.
   - No editor test: these editors have no hand-written logic.
 - **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
   inline. Affects the state-machine lessons.
@@ -1562,15 +1562,32 @@ discussion. Each item says which lesson is blocked or affected.
     editor `_430_Actions_ExtendPerformChain` (type `.` after a segment).
   - Known overlap: `chainTexts` and the importer's `splitReferenceText` both split references on
     dots; merging them is cleanup, not a gap.
-- **Gap 17: `start` and `done` do not resolve** (found 2026-11-19, planning Part D Lesson 4). They are
-  features every action inherits from `Actions::Action` in the standard library, but the scope does not
-  reach them. Unbound succession ends also produce no warning, while unbound perform targets do.
-- **Gap 18: the importer rejects the succession shorthands** (found 2026-11-19). `first start;` and
-  `then done;`, and a target succession after an action node (`fork f; then a;`, an
-  `actionTargetSuccessionMember` in the grammar) are rejected.
-- **Gap 19: the importer rejects guarded successions** (found 2026-11-19). `first a if g then b;` and
-  the guarded forms after a decision node (`if g then x;`, `else x;`) are rejected. The guard would be
-  stored as text, like other non-literal expressions.
+- **Gap 17: `start` and `done` do not resolve — FIXED 2026-11-19** (found while planning Part D Lesson 4).
+  [ADR 0020](../adr/0020-implicit-library-specialization-for-actions.md): `NamespaceInheritance.directSupertypes`
+  falls back to `ImplicitLibrarySpecialization.implicitSupertype` when an owner has no explicit supertype.
+  An action def gets `Actions::Action`; an untyped action usage gets `Action::subactions` (when owned by an
+  action) or `Actions::actions`. New warning `check_SysMLv2SuccessionEnd_segment`
+  (`[succession-end-unresolved]`) on unbound succession-end segments. Test
+  `_330_SuccessionEndLibraryResolution`, mutation-checked. Still open:
+  - implicit specialization for other kinds (parts, items, states, calculations, …);
+  - the unbound-end warning for connector/flow ends. It waits for the KerML library stubs
+    (`Transfer::source`, `Occurrence::startShot`, …), which would otherwise be flagged.
+- **Gap 18: the importer rejects the succession shorthands — FIXED 2026-11-19.**
+  [ADR 0021](../adr/0021-succession-shorthands-in-action-bodies.md): new concepts
+  `SysMLv2InitialNodeMember` (`first start;`) and `SysMLv2TargetSuccession` (`then a;`), with editors
+  and textgen. The implicit source (the item before) is not modelled. The importer's
+  `importActionBodyItemsOf` returns one item per node plus one per following `then`. The
+  `[succession-end-unresolved]` warning also covers `first`. Tests: `_550…testInitialNodeAndTargetSuccessions`,
+  `_330_SuccessionEndLibraryResolution` (4 new items), `_130 testTargetSuccessionBodyInActionDefinitionRejected`.
+  Mutation-checked. Still rejected: prefixes, bodies, qualified `first` and source multiplicity. The
+  guarded/default forms were added later (Gap 19).
+- **Gap 19: the importer rejects guarded successions — FIXED 2026-11-19.**
+  [ADR 0022](../adr/0022-guarded-successions-in-action-bodies.md): new concepts `SysMLv2GuardedSuccession`
+  (`first a if g then b;`), `SysMLv2GuardedTargetSuccession` (`if g then x;`) and
+  `SysMLv2DefaultTargetSuccession` (`else x;`), with editors and textgen. Guards are kept as text
+  (`SysMLv2PlainTextExpression`). Tests: `_550…testGuardedSuccessions`, `_330_SuccessionEndLibraryResolution`
+  (4 new items), `_130 testGuardedSuccessionDeclarationInActionDefinitionRejected`. Mutation-checked. Still
+  rejected: prefixes, bodies, and the `succession s first … if … then …` declaration form.
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
