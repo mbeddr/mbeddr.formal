@@ -10238,5 +10238,116 @@
       <node concept="l2Vlx" id="6wXJlaqEuUE" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6wXJlasYHkG">
+    <property role="TrG5h" value="SysMLv2InitialNodeMember_Editor" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1XX52x" to="5rf1:6wXJlasYBQD" resolve="SysMLv2InitialNodeMember" />
+    <node concept="3EZMnI" id="6wXJlasYHkH" role="2wV5jI">
+      <node concept="3F0ifn" id="6wXJlasYHkI" role="3EZMnx">
+        <property role="3F0ifm" value="first" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlasYHkJ" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlasYBQF" resolve="memberFeature" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlasYHkK" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="l2Vlx" id="6wXJlasYHkL" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6wXJlasYHll">
+    <property role="TrG5h" value="SysMLv2TargetSuccession_Editor" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1XX52x" to="5rf1:6wXJlasYBQE" resolve="SysMLv2TargetSuccession" />
+    <node concept="3EZMnI" id="6wXJlasYHlm" role="2wV5jI">
+      <node concept="3F0ifn" id="6wXJlasYHln" role="3EZMnx">
+        <property role="3F0ifm" value="then" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlasYHlo" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlasYBQI" resolve="target" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlasYHlp" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="l2Vlx" id="6wXJlasYHlq" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6wXJlatG7m_">
+    <property role="TrG5h" value="SysMLv2GuardedSuccession_Editor" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1XX52x" to="5rf1:6wXJlatG1OC" resolve="SysMLv2GuardedSuccession" />
+    <node concept="3EZMnI" id="6wXJlatG7mA" role="2wV5jI">
+      <node concept="3F0ifn" id="6wXJlatG7mB" role="3EZMnx">
+        <property role="3F0ifm" value="first" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlatG7mC" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlatG1OF" resolve="source" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlatG7mD" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlatG7mE" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlatG1OG" resolve="guard" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlatG7mF" role="3EZMnx">
+        <property role="3F0ifm" value="then" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlatG7mG" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlatG1OH" resolve="target" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlatG7mH" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="l2Vlx" id="6wXJlatG7mI" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6wXJlatG7mM">
+    <property role="TrG5h" value="SysMLv2GuardedTargetSuccession_Editor" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1XX52x" to="5rf1:6wXJlatG1OD" resolve="SysMLv2GuardedTargetSuccession" />
+    <node concept="3EZMnI" id="6wXJlatG7mN" role="2wV5jI">
+      <node concept="3F0ifn" id="6wXJlatG7mO" role="3EZMnx">
+        <property role="3F0ifm" value="if" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlatG7mP" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlatG1OL" resolve="guard" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlatG7mQ" role="3EZMnx">
+        <property role="3F0ifm" value="then" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlatG7mR" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlatG1OM" resolve="target" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlatG7mS" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="l2Vlx" id="6wXJlatG7mT" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6wXJlatG7nt">
+    <property role="TrG5h" value="SysMLv2DefaultTargetSuccession_Editor" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1XX52x" to="5rf1:6wXJlatG1OE" resolve="SysMLv2DefaultTargetSuccession" />
+    <node concept="3EZMnI" id="6wXJlatG7nu" role="2wV5jI">
+      <node concept="3F0ifn" id="6wXJlatG7nv" role="3EZMnx">
+        <property role="3F0ifm" value="else" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="6wXJlatG7nw" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6wXJlatG1OQ" resolve="target" />
+      </node>
+      <node concept="3F0ifn" id="6wXJlatG7nx" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+      <node concept="l2Vlx" id="6wXJlatG7ny" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

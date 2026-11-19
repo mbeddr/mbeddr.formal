@@ -6046,5 +6046,97 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="6wXJlasqcrc">
+    <property role="TrG5h" value="check_SysMLv2SuccessionEnd_segment" />
+    <node concept="1YaCAy" id="6wXJlasqcrd" role="1YuTPh">
+      <property role="TrG5h" value="ref" />
+      <ref role="1YaFvo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="3clFbS" id="6wXJlasqcre" role="18ibNy">
+      <node concept="3clFbJ" id="6wXJlasqcrf" role="3cqZAp">
+        <node concept="3fqX7Q" id="6wXJlasqi$u" role="3clFbw">
+          <node concept="1eOMI4" id="6wXJlasqi$v" role="3fr31v">
+            <node concept="1Wc70l" id="6wXJlasqi$w" role="1eOMHV">
+              <node concept="2OqwBi" id="6wXJlasqi$x" role="3uHU7B">
+                <node concept="2OqwBi" id="6wXJlasqi$y" role="2Oq$k0">
+                  <node concept="1YBJjd" id="6wXJlasqi$z" role="2Oq$k0">
+                    <ref role="1YBMHb" node="6wXJlasqcrd" resolve="ref" />
+                  </node>
+                  <node concept="1mfA1w" id="6wXJlasqi$$" role="2OqNvi" />
+                </node>
+                <node concept="1mIQ4w" id="6wXJlasqi$_" role="2OqNvi">
+                  <node concept="chp4Y" id="6wXJlasqi$A" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:7ij$Nezl5Dh" resolve="SysMLv2ChainEnd" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1eOMI4" id="6wXJlat3wq0" role="3uHU7w">
+                <node concept="22lmx$" id="6wXJlat3wq1" role="1eOMHV">
+                  <node concept="2OqwBi" id="6wXJlat3wq2" role="3uHU7B">
+                    <node concept="2OqwBi" id="6wXJlat3wq3" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6wXJlat3wq4" role="2Oq$k0">
+                        <node concept="1YBJjd" id="6wXJlat3wq5" role="2Oq$k0">
+                          <ref role="1YBMHb" node="6wXJlasqcrd" resolve="ref" />
+                        </node>
+                        <node concept="1mfA1w" id="6wXJlat3wq6" role="2OqNvi" />
+                      </node>
+                      <node concept="1mfA1w" id="6wXJlat3wq7" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="6wXJlat3wq8" role="2OqNvi">
+                      <node concept="chp4Y" id="6wXJlat3wq9" role="cj9EA">
+                        <ref role="cht4Q" to="5rf1:6i6xKq_EIhk" resolve="ISysMLv2SemanticSuccession" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="6wXJlat3wqa" role="3uHU7w">
+                    <node concept="2OqwBi" id="6wXJlat3wqb" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6wXJlat3wqc" role="2Oq$k0">
+                        <node concept="1YBJjd" id="6wXJlat3wqd" role="2Oq$k0">
+                          <ref role="1YBMHb" node="6wXJlasqcrd" resolve="ref" />
+                        </node>
+                        <node concept="1mfA1w" id="6wXJlat3wqe" role="2OqNvi" />
+                      </node>
+                      <node concept="1mfA1w" id="6wXJlat3wqf" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="6wXJlat3wqg" role="2OqNvi">
+                      <node concept="chp4Y" id="6wXJlat3wqh" role="cj9EA">
+                        <ref role="cht4Q" to="5rf1:6wXJlasYBQD" resolve="SysMLv2InitialNodeMember" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbS" id="6wXJlasqcrn" role="3clFbx">
+          <node concept="3cpWs6" id="6wXJlasqcro" role="3cqZAp" />
+        </node>
+      </node>
+      <node concept="3clFbJ" id="6wXJlasqcrp" role="3cqZAp">
+        <node concept="17R0WA" id="6wXJlasqcrq" role="3clFbw">
+          <node concept="2OqwBi" id="6wXJlasqcrr" role="3uHU7B">
+            <node concept="1YBJjd" id="6wXJlasqcrs" role="2Oq$k0">
+              <ref role="1YBMHb" node="6wXJlasqcrd" resolve="ref" />
+            </node>
+            <node concept="3TrEf2" id="6wXJlasqcrt" role="2OqNvi">
+              <ref role="3Tt5mk" to="5rf1:6coPuU3buuA" resolve="usage" />
+            </node>
+          </node>
+          <node concept="10Nm6u" id="6wXJlasqcru" role="3uHU7w" />
+        </node>
+        <node concept="3clFbS" id="6wXJlasqcrv" role="3clFbx">
+          <node concept="a7r0C" id="6wXJlasqcrw" role="3cqZAp">
+            <node concept="Xl_RD" id="6wXJlasqcrx" role="a7wSD">
+              <property role="Xl_RC" value="[succession-end-unresolved] This succession end does not resolve to a feature" />
+            </node>
+            <node concept="1YBJjd" id="6wXJlasqcry" role="1urrMF">
+              <ref role="1YBMHb" node="6wXJlasqcrd" resolve="ref" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

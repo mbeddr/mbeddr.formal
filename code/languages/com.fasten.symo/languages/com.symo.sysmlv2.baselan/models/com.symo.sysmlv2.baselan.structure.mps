@@ -3056,5 +3056,143 @@
     <property role="R4oN_" value="what may follow else in an if action: an else body or a nested if action (spec: IfActionUsage.elseAction)" />
     <property role="3GE5qa" value="behavior" />
   </node>
+  <node concept="1TIwiD" id="6wXJlasYBQD">
+    <property role="EcuMT" value="7511367916042485161" />
+    <property role="TrG5h" value="SysMLv2InitialNodeMember" />
+    <property role="34LRSv" value="first" />
+    <property role="R4oN_" value="initial node member: first start; (spec: InitialNodeMember). The referenced feature is the source of the target successions that follow it" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wXJlasYBQF" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916042485163" />
+      <property role="20kJfa" value="memberFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7O9Ql6Cf9IB" resolve="SysMLv2FeatureChainEnd" />
+    </node>
+    <node concept="PrWs8" id="6wXJlasYBQG" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6wXJlasYBQH" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wXJlasYBQE">
+    <property role="EcuMT" value="7511367916042485162" />
+    <property role="TrG5h" value="SysMLv2TargetSuccession" />
+    <property role="34LRSv" value="then" />
+    <property role="R4oN_" value="target succession: then done; (spec: TargetSuccessionMember). Its source is the preceding action member or initial node; its target end is owned here" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wXJlasYBQI" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916042485166" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="PrWs8" id="6wXJlasYBQJ" role="PzmwI">
+      <ref role="PrY4T" node="6i6xKq_EIhk" resolve="ISysMLv2SemanticSuccession" />
+    </node>
+    <node concept="PrWs8" id="6wXJlasYBQK" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6wXJlasYBQL" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wXJlatG1OC">
+    <property role="EcuMT" value="7511367916054388008" />
+    <property role="TrG5h" value="SysMLv2GuardedSuccession" />
+    <property role="34LRSv" value="first if then" />
+    <property role="R4oN_" value="guarded succession: first a if g then b; (spec: GuardedSuccession, a TransitionUsage). The guard is kept as an expression" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wXJlatG1OF" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916054388011" />
+      <property role="20kJfa" value="source" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7O9Ql6Cf9IB" resolve="SysMLv2FeatureChainEnd" />
+    </node>
+    <node concept="1TJgyj" id="6wXJlatG1OG" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916054388012" />
+      <property role="20kJfa" value="guard" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="1TJgyj" id="6wXJlatG1OH" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916054388013" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OI" role="PzmwI">
+      <ref role="PrY4T" node="6i6xKq_EIhk" resolve="ISysMLv2SemanticSuccession" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OJ" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OK" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wXJlatG1OD">
+    <property role="EcuMT" value="7511367916054388009" />
+    <property role="TrG5h" value="SysMLv2GuardedTargetSuccession" />
+    <property role="34LRSv" value="if then" />
+    <property role="R4oN_" value="guarded target succession: if g then x; (spec: GuardedTargetSuccession, a TransitionUsage). Its source is the preceding action member" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wXJlatG1OL" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916054388017" />
+      <property role="20kJfa" value="guard" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="1TJgyj" id="6wXJlatG1OM" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916054388018" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1ON" role="PzmwI">
+      <ref role="PrY4T" node="6i6xKq_EIhk" resolve="ISysMLv2SemanticSuccession" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OO" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OP" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6wXJlatG1OE">
+    <property role="EcuMT" value="7511367916054388010" />
+    <property role="TrG5h" value="SysMLv2DefaultTargetSuccession" />
+    <property role="34LRSv" value="else" />
+    <property role="R4oN_" value="default target succession: else x; (spec: DefaultTargetSuccession, a TransitionUsage). Taken when no guard of the preceding decision holds" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6wXJlatG1OQ" role="1TKVEi">
+      <property role="IQ2ns" value="7511367916054388022" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OR" role="PzmwI">
+      <ref role="PrY4T" node="6i6xKq_EIhk" resolve="ISysMLv2SemanticSuccession" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OS" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6wXJlatG1OT" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
 </model>
 

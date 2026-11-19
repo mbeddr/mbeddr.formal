@@ -26915,5 +26915,163 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6wXJlasYHlu">
+    <property role="TrG5h" value="SysMLv2InitialNodeMember_TextGen" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="WuzLi" to="5rf1:6wXJlasYBQD" resolve="SysMLv2InitialNodeMember" />
+    <node concept="11bSqf" id="6wXJlasYHlv" role="11c4hB">
+      <node concept="3clFbS" id="6wXJlasYHlw" role="2VODD2">
+        <node concept="lc7rE" id="6wXJlasYHlx" role="3cqZAp">
+          <node concept="la8eA" id="6wXJlasYHly" role="lcghm">
+            <property role="lacIc" value="first " />
+          </node>
+          <node concept="l9hG8" id="6wXJlasYHlz" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlasYHl$" role="lb14g">
+              <node concept="117lpO" id="6wXJlasYHl_" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlasYHlA" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlasYBQF" resolve="memberFeature" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlasYHlB" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6wXJlasYHlN">
+    <property role="TrG5h" value="SysMLv2TargetSuccession_TextGen" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="WuzLi" to="5rf1:6wXJlasYBQE" resolve="SysMLv2TargetSuccession" />
+    <node concept="11bSqf" id="6wXJlasYHlO" role="11c4hB">
+      <node concept="3clFbS" id="6wXJlasYHlP" role="2VODD2">
+        <node concept="lc7rE" id="6wXJlasYHlQ" role="3cqZAp">
+          <node concept="la8eA" id="6wXJlasYHlR" role="lcghm">
+            <property role="lacIc" value="then " />
+          </node>
+          <node concept="l9hG8" id="6wXJlasYHlS" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlasYHlT" role="lb14g">
+              <node concept="117lpO" id="6wXJlasYHlU" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlasYHlV" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlasYBQI" resolve="target" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlasYHlW" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6wXJlatG7nA">
+    <property role="TrG5h" value="SysMLv2GuardedSuccession_TextGen" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="WuzLi" to="5rf1:6wXJlatG1OC" resolve="SysMLv2GuardedSuccession" />
+    <node concept="11bSqf" id="6wXJlatG7nB" role="11c4hB">
+      <node concept="3clFbS" id="6wXJlatG7nC" role="2VODD2">
+        <node concept="lc7rE" id="6wXJlatG7nD" role="3cqZAp">
+          <node concept="la8eA" id="6wXJlatG7nE" role="lcghm">
+            <property role="lacIc" value="first " />
+          </node>
+          <node concept="l9hG8" id="6wXJlatG7nF" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlatG7nG" role="lb14g">
+              <node concept="117lpO" id="6wXJlatG7nH" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlatG7nI" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlatG1OF" resolve="source" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlatG7nJ" role="lcghm">
+            <property role="lacIc" value=" if " />
+          </node>
+          <node concept="l9hG8" id="6wXJlatG7nK" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlatG7nL" role="lb14g">
+              <node concept="117lpO" id="6wXJlatG7nM" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlatG7nN" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlatG1OG" resolve="guard" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlatG7nO" role="lcghm">
+            <property role="lacIc" value=" then " />
+          </node>
+          <node concept="l9hG8" id="6wXJlatG7nP" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlatG7nQ" role="lb14g">
+              <node concept="117lpO" id="6wXJlatG7nR" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlatG7nS" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlatG1OH" resolve="target" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlatG7nT" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6wXJlatG7oP">
+    <property role="TrG5h" value="SysMLv2GuardedTargetSuccession_TextGen" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="WuzLi" to="5rf1:6wXJlatG1OD" resolve="SysMLv2GuardedTargetSuccession" />
+    <node concept="11bSqf" id="6wXJlatG7oQ" role="11c4hB">
+      <node concept="3clFbS" id="6wXJlatG7oR" role="2VODD2">
+        <node concept="lc7rE" id="6wXJlatG7oS" role="3cqZAp">
+          <node concept="la8eA" id="6wXJlatG7oT" role="lcghm">
+            <property role="lacIc" value="if " />
+          </node>
+          <node concept="l9hG8" id="6wXJlatG7oU" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlatG7oV" role="lb14g">
+              <node concept="117lpO" id="6wXJlatG7oW" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlatG7oX" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlatG1OL" resolve="guard" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlatG7oY" role="lcghm">
+            <property role="lacIc" value=" then " />
+          </node>
+          <node concept="l9hG8" id="6wXJlatG7oZ" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlatG7p0" role="lb14g">
+              <node concept="117lpO" id="6wXJlatG7p1" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlatG7p2" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlatG1OM" resolve="target" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlatG7p3" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6wXJlatG7pn">
+    <property role="TrG5h" value="SysMLv2DefaultTargetSuccession_TextGen" />
+    <property role="3GE5qa" value="succession" />
+    <ref role="WuzLi" to="5rf1:6wXJlatG1OE" resolve="SysMLv2DefaultTargetSuccession" />
+    <node concept="11bSqf" id="6wXJlatG7po" role="11c4hB">
+      <node concept="3clFbS" id="6wXJlatG7pp" role="2VODD2">
+        <node concept="lc7rE" id="6wXJlatG7pq" role="3cqZAp">
+          <node concept="la8eA" id="6wXJlatG7pr" role="lcghm">
+            <property role="lacIc" value="else " />
+          </node>
+          <node concept="l9hG8" id="6wXJlatG7ps" role="lcghm">
+            <node concept="2OqwBi" id="6wXJlatG7pt" role="lb14g">
+              <node concept="117lpO" id="6wXJlatG7pu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6wXJlatG7pv" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6wXJlatG1OQ" resolve="target" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6wXJlatG7pw" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
