@@ -101,6 +101,9 @@ the case, and verify component refactorings with MAKE, not only root checks.
   of the module (`{"models":["<textGen model ref>"]}`). A model-scoped make compiles the *whole*
   module and finishes within the timeout. Check `classes_gen` timestamps against `source_gen` to
   confirm. This supersedes the "keeps running in the background" advice below for module makes.
+  With several modules in one `modules` list (language + importer + tests), the timeout also drops
+  every module after the one still building: the log shows only "Cycle #1: [<language>]", then a
+  `JobCancellationException`. Make each dependent module in its own call afterwards (2026-11-19).
 - **Editors built with grammar cells generate `<Concept>_EditorBuilder_a.java`.** `<Concept>_Editor.java`
   is only a stub that delegates, so its timestamp and content do not change when the editor changes.
   Grep (or wait on) the `_EditorBuilder_a.java` file to confirm a regeneration.

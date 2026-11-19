@@ -1475,10 +1475,30 @@ discussion. Each item says which lesson is blocked or affected.
   Round trip `_480.testAllocateForms` (mutation-checked: forcing `withKeyword` fails it). The obsolete
   `_230.testUnsupportedAllocationEndpointsAreRejectedExplicitly` is removed. Unblocks Part E Lesson 1.
   Not done: n-ary connector parts (also missing for `connect`).
-- **Gap 7: concepts not found.** Control nodes (fork, join, merge, decision); `if` and `for` actions
-  (only `while` exists); `send` action and standalone `accept`; `dependency`; `expose` and `filter` for
-  views (Part G Lesson 3); variation and variants; `terminate`; requirement derivation; individuals,
-  snapshots and timeslices; time triggers `after`/`at`/`when` (not verified).
+- **Gap 7: concepts not found.** Still open: the `for` action; `send` action and standalone `accept`;
+  `terminate`; `dependency`; `expose` and `filter` for views (Part G Lesson 3); variation and variants;
+  requirement derivation; individuals, snapshots and timeslices; time triggers `after`/`at`/`when` (not
+  verified).
+  **Control nodes and `if` — FIXED 2026-11-19.**
+  - Structure (virtual package `behavior`). The abstract `SysMLv2ControlNode` extends
+    `SysMLv2PlainActionUsage`, like `SysMLv2WhileLoopUsage`. Its subconcepts are `SysMLv2MergeNode`,
+    `SysMLv2DecisionNode`, `SysMLv2JoinNode` and `SysMLv2ForkNode`, and each concrete editor and textgen
+    holds the keyword as a constant.
+  - `SysMLv2IfActionUsage` (also a `PlainActionUsage`):
+    - `condition` (expression, stored as plain text like other non-literal expressions);
+    - the then-body in the inherited `content`;
+    - `elseBranch : ISysMLv2IfElseBranch 0..1`, which is either a `SysMLv2ElseBody` (`{ … }`) or another
+      `SysMLv2IfActionUsage` (`else if`).
+  - Importer: `SysMLv2ImportBehavior.importControlNode` / `importIfNode`, dispatched from
+    `importActionNodeMember`. Explicitly rejected:
+    - a control-node prefix (`individual`, portion kind, `#metadata`) and specialization on a control node;
+    - a named `action x { … }` then-body or else-body.
+  - Tests: `_550_ActionBodySequencingTest.testControlNodes` and `testIfActionUsage` (round trips). The
+    rejection case in `_130` is now `testTerminateNodeInActionDefinitionRejected`. Mutation-checked: the
+    `fork` keyword and the `else` text in textgen; the importer's rejection message.
+  - Limitation: the importer still rejects target successions (`fork f; then a;`, Gap 18), so control
+    nodes need explicit `first f then a;` successions for now.
+  - No editor test: these editors have no hand-written logic.
 - **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
   inline. Affects the state-machine lessons.
 - **Gap 11: the importer rejects a bare end feature** (found 2026-11-18, Part E Lesson 1).
@@ -1542,6 +1562,15 @@ discussion. Each item says which lesson is blocked or affected.
     editor `_430_Actions_ExtendPerformChain` (type `.` after a segment).
   - Known overlap: `chainTexts` and the importer's `splitReferenceText` both split references on
     dots; merging them is cleanup, not a gap.
+- **Gap 17: `start` and `done` do not resolve** (found 2026-11-19, planning Part D Lesson 4). They are
+  features every action inherits from `Actions::Action` in the standard library, but the scope does not
+  reach them. Unbound succession ends also produce no warning, while unbound perform targets do.
+- **Gap 18: the importer rejects the succession shorthands** (found 2026-11-19). `first start;` and
+  `then done;`, and a target succession after an action node (`fork f; then a;`, an
+  `actionTargetSuccessionMember` in the grammar) are rejected.
+- **Gap 19: the importer rejects guarded successions** (found 2026-11-19). `first a if g then b;` and
+  the guarded forms after a decision node (`if g then x;`, `else x;`) are rejected. The guard would be
+  stored as text, like other non-literal expressions.
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
