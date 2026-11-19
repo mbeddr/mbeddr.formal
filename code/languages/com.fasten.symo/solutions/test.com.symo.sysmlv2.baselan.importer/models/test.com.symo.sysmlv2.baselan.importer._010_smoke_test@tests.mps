@@ -12184,7 +12184,7 @@
           <node concept="8CKM2" id="3zOS9tK2T0l" role="3w00Zx">
             <node concept="AsIwX" id="4dRTMKM7dgt" role="1MHwYB">
               <node concept="AsIwU" id="TT6zxCjW0l" role="AsIwY">
-                <ref role="AsIwW" to="s5qy:4N4m7hrWHiQ" resolve="Base" />
+                <ref role="AsIwW" node="44cY$cuAfyv" resolve="Base" />
               </node>
             </node>
           </node>
@@ -19388,75 +19388,6 @@
                     <ref role="3cqZAo" node="6jpO12DnwDz" resolve="e" />
                   </node>
                   <node concept="liA8E" id="6jpO12DnwDL" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1LZb2c" id="6jpO12EfBYI" role="1SL9yI">
-      <property role="TrG5h" value="testMatrixCase30" />
-      <node concept="3cqZAl" id="6jpO12EfBYL" role="3clF45" />
-      <node concept="3clFbS" id="6jpO12EfBYM" role="3clF47">
-        <node concept="3J1_TO" id="6jpO12EfBYN" role="3cqZAp">
-          <node concept="3clFbS" id="6jpO12EfBYP" role="1zxBo7">
-            <node concept="3cpWs8" id="6jpO12EfBYQ" role="3cqZAp">
-              <node concept="3cpWsn" id="6jpO12EfBYT" role="3cpWs9">
-                <property role="TrG5h" value="tmp" />
-                <node concept="2YIFZM" id="6jpO12EfBYV" role="33vP2m">
-                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
-                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                  <node concept="Xl_RD" id="6jpO12EfBYW" role="37wK5m">
-                    <property role="Xl_RC" value="package P { import Base::*[@Metadata]; }" />
-                  </node>
-                  <node concept="Xl_RD" id="6jpO12EfBYX" role="37wK5m">
-                    <property role="Xl_RC" value="MatrixCase30" />
-                  </node>
-                  <node concept="1jxXqW" id="6jpO12EfBYY" role="37wK5m" />
-                </node>
-                <node concept="H_c77" id="6jpO12EfBYZ" role="1tU5fm" />
-              </node>
-            </node>
-            <node concept="3xETmq" id="6jpO12EyaLU" role="3cqZAp">
-              <node concept="3_1$Yv" id="6jpO12EyaLV" role="3_9lra">
-                <node concept="Xl_RD" id="6jpO12EyaLW" role="3_1BAH">
-                  <property role="Xl_RC" value="MatrixCase30 expected rejection" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="6jpO12EfBZ0" role="3cqZAp">
-              <node concept="2YIFZM" id="6jpO12EfBZ2" role="3clFbG">
-                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
-                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                <node concept="37vLTw" id="6jpO12EfBZ3" role="37wK5m">
-                  <ref role="3cqZAo" node="6jpO12EfBYT" resolve="tmp" />
-                </node>
-                <node concept="1jxXqW" id="6jpO12EfBZ4" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-          <node concept="3uVAMA" id="6jpO12EfBZ5" role="1zxBo5">
-            <node concept="XOnhg" id="6jpO12EfBZ9" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="6jpO12EfBZb" role="1tU5fm">
-                <node concept="3uibUv" id="6jpO12EfBZd" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="6jpO12EfBZe" role="1zc67A">
-              <node concept="3vlDli" id="6jpO12EfBZf" role="3cqZAp">
-                <node concept="Xl_RD" id="6jpO12EfBZi" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: filter package" />
-                </node>
-                <node concept="2OqwBi" id="6jpO12EfBZj" role="3tpDZA">
-                  <node concept="37vLTw" id="6jpO12EfBZm" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6jpO12EfBZ9" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="6jpO12EfBZn" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
@@ -30913,79 +30844,6 @@
   <node concept="1lH9Xt" id="7O9Ql6vnrOP">
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="_481_UsageKindRejectionsTest" />
-    <node concept="1LZb2c" id="3WfSgMOamon" role="1SL9yI">
-      <property role="TrG5h" value="testViewFilterRejected" />
-      <node concept="3cqZAl" id="3WfSgMOamop" role="3clF45" />
-      <node concept="3clFbS" id="3WfSgMOamoq" role="3clF47">
-        <node concept="3J1_TO" id="3WfSgMOamor" role="3cqZAp">
-          <node concept="3clFbS" id="3WfSgMOamos" role="1zxBo7">
-            <node concept="3cpWs8" id="3WfSgMOamot" role="3cqZAp">
-              <node concept="3cpWsn" id="3WfSgMOamou" role="3cpWs9">
-                <property role="TrG5h" value="tmp" />
-                <property role="OYnhT" value="local variable" />
-                <property role="2Lvdk3" value="tmp" />
-                <node concept="2YIFZM" id="3WfSgMOamov" role="33vP2m">
-                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
-                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                  <node concept="Xl_RD" id="3WfSgMOamow" role="37wK5m">
-                    <property role="Xl_RC" value="package P { view v { filter @Safety; } }" />
-                  </node>
-                  <node concept="Xl_RD" id="3WfSgMOamox" role="37wK5m">
-                    <property role="Xl_RC" value="ViewFilter" />
-                  </node>
-                  <node concept="1jxXqW" id="3WfSgMOamoy" role="37wK5m" />
-                </node>
-                <node concept="H_c77" id="3WfSgMOamoz" role="1tU5fm" />
-              </node>
-            </node>
-            <node concept="3xETmq" id="3WfSgMOamo$" role="3cqZAp">
-              <node concept="3_1$Yv" id="3WfSgMOamo_" role="3_9lra">
-                <node concept="Xl_RD" id="3WfSgMOamoA" role="3_1BAH">
-                  <property role="Xl_RC" value="ViewFilter expected rejection" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="3WfSgMOamoB" role="3cqZAp">
-              <node concept="2YIFZM" id="3WfSgMOamoC" role="3clFbG">
-                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
-                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                <node concept="37vLTw" id="3WfSgMOamoD" role="37wK5m">
-                  <ref role="3cqZAo" node="3WfSgMOamou" resolve="tmp" />
-                </node>
-                <node concept="1jxXqW" id="3WfSgMOamoE" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-          <node concept="3uVAMA" id="3WfSgMOamoF" role="1zxBo5">
-            <node concept="XOnhg" id="3WfSgMOamoG" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <property role="OYnhT" value="local variable" />
-              <property role="2Lvdk3" value="e" />
-              <node concept="nSUau" id="3WfSgMOamoI" role="1tU5fm">
-                <node concept="3uibUv" id="3WfSgMOamoJ" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="3WfSgMOamoK" role="1zc67A">
-              <node concept="3vlDli" id="3WfSgMOamoL" role="3cqZAp">
-                <node concept="Xl_RD" id="3WfSgMOamoM" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: filter, render or expose member inside view usage body" />
-                </node>
-                <node concept="2OqwBi" id="3WfSgMOamoN" role="3tpDZA">
-                  <node concept="37vLTw" id="3WfSgMOamoO" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3WfSgMOamoG" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="3WfSgMOamoP" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="1LZb2c" id="3WfSgMOamoQ" role="1SL9yI">
       <property role="TrG5h" value="testNaryAllocateRejected" />
       <node concept="3cqZAl" id="3WfSgMOamoS" role="3clF45" />
@@ -94802,6 +94660,12 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="44cY$cuAfyu">
+    <property role="TrG5h" value="_130_CrossFileLibrary" />
+    <node concept="3ZUotO" id="44cY$cuAfyv" role="2h0jOs">
+      <property role="TrG5h" value="Base" />
     </node>
   </node>
 </model>
