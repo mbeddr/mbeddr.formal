@@ -1594,6 +1594,11 @@ discussion. Each item says which lesson is blocked or affected.
   `SysMLv2NamespaceMembers.namedOwnedMembers` unwraps the wrapper for lookup, inheritance and the
   distinct-name check. Test `_330_SuccessionEndLibraryResolution` (`then merge again; then again;`),
   mutation-checked.
+- **Gap 21: `ScalarValues::Boolean` does not resolve — FIXED 2026-11-19** (found while writing Part D
+  Lesson 4). [ADR 0024](../adr/0024-sysml-side-stub-of-kernel-scalarvalues.md): a SysML-side stub of the
+  kernel package `ScalarValues` (virtual package `Kernel Library` in `system_model_library`). Test
+  `_130_NameScopingTest.testKernelScalarValuesResolveForSysML`, mutation-checked. Still open: the other
+  kernel packages (`Base::DataValue`, `Occurrences`, `Transfers`, …).
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests

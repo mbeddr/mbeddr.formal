@@ -107324,5 +107324,122 @@
       </node>
     </node>
   </node>
+  <node concept="2h0jOr" id="44cY$cuHoAf">
+    <property role="TrG5h" value="ScalarValues" />
+    <property role="3GE5qa" value="Kernel Library" />
+    <node concept="31n9r3" id="44cY$cuHoAg" role="2h0jOs">
+      <property role="TrG5h" value="ScalarValues" />
+      <property role="31n9r4" value="true" />
+      <node concept="3HG_t4" id="44cY$cuHoAh" role="3Z9vGx">
+        <property role="3HG_t5" value="SysML-side stub of the KerML kernel library package ScalarValues (KerML 1.0, 9.2.2). Each KerML datatype is an attribute def with the same name and specialization; ScalarValue would specialize Base::DataValue, which is not stubbed yet." />
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAi" role="3Z9vGx">
+        <property role="TrG5h" value="ScalarValue" />
+        <property role="3eyS6o" value="true" />
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAj" role="3Z9vGx">
+        <property role="TrG5h" value="Boolean" />
+        <node concept="8EhVB" id="44cY$cuHoAk" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAl" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAR" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAi" resolve="ScalarValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAm" role="3Z9vGx">
+        <property role="TrG5h" value="String" />
+        <node concept="8EhVB" id="44cY$cuHoAn" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAo" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAS" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAi" resolve="ScalarValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAp" role="3Z9vGx">
+        <property role="TrG5h" value="NumericalValue" />
+        <property role="3eyS6o" value="true" />
+        <node concept="8EhVB" id="44cY$cuHoAq" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAr" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAT" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAi" resolve="ScalarValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAs" role="3Z9vGx">
+        <property role="TrG5h" value="Number" />
+        <property role="3eyS6o" value="true" />
+        <node concept="8EhVB" id="44cY$cuHoAt" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAu" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAU" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAp" resolve="NumericalValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAv" role="3Z9vGx">
+        <property role="TrG5h" value="Complex" />
+        <node concept="8EhVB" id="44cY$cuHoAw" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAx" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAV" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAs" resolve="Number" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAy" role="3Z9vGx">
+        <property role="TrG5h" value="Real" />
+        <node concept="8EhVB" id="44cY$cuHoAz" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoA$" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAW" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAv" resolve="Complex" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoA_" role="3Z9vGx">
+        <property role="TrG5h" value="Rational" />
+        <node concept="8EhVB" id="44cY$cuHoAA" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAB" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAX" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAy" resolve="Real" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAC" role="3Z9vGx">
+        <property role="TrG5h" value="Integer" />
+        <node concept="8EhVB" id="44cY$cuHoAD" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAE" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAY" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoA_" resolve="Rational" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAF" role="3Z9vGx">
+        <property role="TrG5h" value="Natural" />
+        <node concept="8EhVB" id="44cY$cuHoAG" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAH" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoAZ" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAC" resolve="Integer" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="44cY$cuHoAI" role="3Z9vGx">
+        <property role="TrG5h" value="Positive" />
+        <node concept="8EhVB" id="44cY$cuHoAJ" role="3xKGGC">
+          <node concept="AsIwX" id="44cY$cuHoAK" role="2_tBl3">
+            <node concept="AsIwU" id="44cY$cuHoB0" role="AsIwY">
+              <ref role="AsIwW" node="44cY$cuHoAF" resolve="Natural" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -12,6 +12,17 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A temporary model sees no accessory (library) models (2026-11-19)
+
+A model created with `TemporaryModels.getInstance().createEditable(false, TempModuleOptions.forDefaultModule())`
+uses no languages. A language's accessory models are visible only to models that use that language. In a temp
+model, a name that points into a library accessory model (e.g. `ScalarValues::Boolean` from
+`sysmlv2.baselan`'s `system_model_library`) therefore stays unresolved. Nothing reports this: the test just
+sees `null`. Real user models use the language, so they resolve the name. Add the language to the temp model
+before resolving: `new ModelImports(tmp).addUsedLanguage(language/<lang>/)`. In the `sysmlv2.baselan`
+importer tests, use `TestUtils.parseFileIntoSysMLModel` for this. A console probe that imports the same text
+twice, without and then with the used language, shows the difference in one run.
+
 ## Utility methods for a NodesTestCase via a real class; tests run a stale importer (2026-11-18)
 
 - `parse_java_and_insert` with `featureKind: METHOD` rejects a `NodesTestCase` as `contextNodeRef`
