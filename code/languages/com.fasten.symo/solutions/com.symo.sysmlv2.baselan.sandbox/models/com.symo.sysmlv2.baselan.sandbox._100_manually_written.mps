@@ -273,6 +273,10 @@
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
+      <concept id="8910126785829468666" name="com.symo.sysmlv2.baselan.structure.SysMLv2Expose" flags="ng" index="3IEtzw" />
+      <concept id="8910126785829468665" name="com.symo.sysmlv2.baselan.structure.SysMLv2ElementFilter" flags="ng" index="3IEtzz">
+        <child id="8910126785829468667" name="condition" index="3IEtzx" />
+      </concept>
       <concept id="6939350625132162848" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionEffectMembership" flags="ng" index="3QFEA0">
         <child id="6939350625132162850" name="action" index="3QFEA2" />
       </concept>
@@ -291,6 +295,8 @@
         <property id="7267068243728800121" name="isImportAll" index="3d8W_D" />
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
         <child id="8642959026948349267" name="importedName" index="AsIwy" />
+        <child id="8910126785829468675" name="filters" index="3IEtGp" />
+        <child id="8910126785812582963" name="annotations" index="3JEBcD" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -3895,6 +3901,72 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="7IB8hEmItyW">
+    <property role="TrG5h" value="_320_import_filters_expose_and_anonymous_packages" />
+    <node concept="3Z9vzX" id="7IB8hEmItyX" role="2h0jOs">
+      <property role="TrG5h" value="Library" />
+      <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      <node concept="3ZUotO" id="7IB8hEmItyY" role="3Z9vGx">
+        <property role="TrG5h" value="Sensor" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      </node>
+      <node concept="3ZUotO" id="7IB8hEmItyZ" role="3Z9vGx">
+        <property role="TrG5h" value="Controller" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      </node>
+    </node>
+    <node concept="3Z9vzX" id="7IB8hEmItz0" role="2h0jOs">
+      <property role="TrG5h" value="Consumer" />
+      <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      <node concept="3Z0THl" id="7IB8hEmItz1" role="3Z9vGx">
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <property role="3d8W_D" value="false" />
+        <node concept="AsIwX" id="7IB8hEmItz2" role="AsIwy">
+          <property role="AsIwZ" value="Library::Sensor" />
+        </node>
+        <node concept="1_pRso" id="7IB8hEmItz3" role="3JEBcD">
+          <property role="1_pRss" value="Retain this source dependency for traceability." />
+        </node>
+        <node concept="3HG_t4" id="7IB8hEmItz4" role="3JEBcD">
+          <property role="3HG_t5" value="The view exposes selected members from the imported package." />
+        </node>
+      </node>
+      <node concept="3Z0THl" id="7IB8hEmItz5" role="3Z9vGx">
+        <property role="3d8W_D" value="false" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <node concept="AsIwX" id="7IB8hEmItz6" role="AsIwy">
+          <property role="AsIwZ" value="Library::*" />
+        </node>
+        <node concept="1_WVX6" id="7IB8hEmItz7" role="3IEtGp">
+          <property role="1_WVXG" value="true" />
+        </node>
+      </node>
+      <node concept="3IEtzz" id="7IB8hEmItz8" role="3Z9vGx">
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <node concept="1_WVX6" id="7IB8hEmItz9" role="3IEtzx">
+          <property role="1_WVXG" value="true" />
+        </node>
+      </node>
+      <node concept="66VRG" id="7IB8hEmItza" role="3Z9vGx">
+        <property role="TrG5h" value="Overview" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <node concept="3IEtzw" id="7IB8hEmItzb" role="3w00ZY">
+          <property role="3d8W_D" value="false" />
+          <property role="3815tZ" value="6mYk_gjY8wN/public" />
+          <node concept="AsIwX" id="7IB8hEmItzc" role="AsIwy">
+            <property role="AsIwZ" value="Library::*" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Z9vzX" id="7IB8hEmItzd" role="2h0jOs">
+      <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      <node concept="3ZUotO" id="7IB8hEmItze" role="3Z9vGx">
+        <property role="TrG5h" value="Unit" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
       </node>
     </node>
   </node>

@@ -200,6 +200,20 @@
     <node concept="PrWs8" id="6i6xKqGJtyX" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
     </node>
+    <node concept="1TJgyj" id="7IB8hEk3l8N" role="1TKVEi">
+      <property role="IQ2ns" value="8910126785812582963" />
+      <property role="20kJfa" value="annotations" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7PctyxXA185" resolve="ISysMLv2AnnotationContent" />
+    </node>
+    <node concept="1TJgyj" id="7IB8hEl3JC3" role="1TKVEi">
+      <property role="IQ2ns" value="8910126785829468675" />
+      <property role="20kJfa" value="filters" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2$P9d">
     <property role="EcuMT" value="4430087627526591053" />
@@ -3199,6 +3213,41 @@
     <node concept="PrWs8" id="6wXJlatG1OT" role="PzmwI">
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7IB8hEl3JBT">
+    <property role="EcuMT" value="8910126785829468665" />
+    <property role="TrG5h" value="SysMLv2ElementFilter" />
+    <property role="34LRSv" value="filter" />
+    <property role="3GE5qa" value="package" />
+    <property role="R4oN_" value="A Boolean condition on imported package members or view elements (SysML 2.0 7.5.4, 7.26.2)." />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7IB8hEl3JBV" role="1TKVEi">
+      <property role="IQ2ns" value="8910126785829468667" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="PrWs8" id="7IB8hEl3JBW" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="7IB8hEl3JBX" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="7IB8hEl3JBY" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="7IB8hEl3JBZ" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IB8hEl3JBU">
+    <property role="EcuMT" value="8910126785829468666" />
+    <property role="TrG5h" value="SysMLv2Expose" />
+    <property role="34LRSv" value="expose" />
+    <property role="3GE5qa" value="cases" />
+    <property role="R4oN_" value="A view-usage relationship that imports exposed elements with protected visibility and may use import-style filters (SysML 2.0 7.26.2)." />
+    <ref role="1TJDcQ" node="3PUPjB2ukTG" resolve="SysMLv2Import" />
   </node>
 </model>
 
