@@ -1588,6 +1588,12 @@ discussion. Each item says which lesson is blocked or affected.
   (`SysMLv2PlainTextExpression`). Tests: `_550…testGuardedSuccessions`, `_330_SuccessionEndLibraryResolution`
   (4 new items), `_130 testGuardedSuccessionDeclarationInActionDefinitionRejected`. Mutation-checked. Still
   rejected: prefixes, bodies, and the `succession s first … if … then …` declaration form.
+- **Gap 20: nodes declared after `then` cannot be referenced — FIXED 2026-11-19** (found while writing
+  Part D Lesson 4). [ADR 0023](../adr/0023-nodes-declared-after-then-are-owned-members.md):
+  `then merge retry;` wraps `retry` in a `SysMLv2ThenMember`, which `ownedMembers()` dropped. The new
+  `SysMLv2NamespaceMembers.namedOwnedMembers` unwraps the wrapper for lookup, inheritance and the
+  distinct-name check. Test `_330_SuccessionEndLibraryResolution` (`then merge again; then again;`),
+  mutation-checked.
 - **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
   (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
   alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests

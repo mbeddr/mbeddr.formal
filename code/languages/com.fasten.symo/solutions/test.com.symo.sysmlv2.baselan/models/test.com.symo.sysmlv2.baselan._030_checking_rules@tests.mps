@@ -320,6 +320,9 @@
         <child id="6939350625132162854" name="transitionFeatures" index="3QFEA6" />
       </concept>
       <concept id="9009971474207081768" name="com.symo.sysmlv2.baselan.structure.SysMLv2SuccessionUsage" flags="ng" index="3pztLT" />
+      <concept id="8400219580061960443" name="com.symo.sysmlv2.baselan.structure.SysMLv2ThenMember" flags="ng" index="3sj5J8">
+        <child id="8400219580061960446" name="member" index="3sj5Jd" />
+      </concept>
       <concept id="8400219580107005963" name="com.symo.sysmlv2.baselan.structure.SysMLv2IncludeUseCaseUsage" flags="ng" index="3v7bcS">
         <child id="8400219580107005967" name="included" index="3v7bcW" />
       </concept>
@@ -372,6 +375,7 @@
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
+      <concept id="7511367916003627991" name="com.symo.sysmlv2.baselan.structure.SysMLv2MergeNode" flags="ng" index="3M_2U5" />
       <concept id="7511367916042485162" name="com.symo.sysmlv2.baselan.structure.SysMLv2TargetSuccession" flags="ng" index="3OLW3S">
         <child id="7511367916042485166" name="target" index="3OLW3W" />
       </concept>
@@ -17572,6 +17576,18 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3sj5J8" id="44cY$cw6xKH" role="66U86">
+              <node concept="3M_2U5" id="44cY$cw6xKI" role="3sj5Jd">
+                <property role="TrG5h" value="again" />
+              </node>
+            </node>
+            <node concept="3OLW3S" id="44cY$cw6z8y" role="66U86">
+              <node concept="2uUmlD" id="44cY$cw6z8z" role="3OLW3W">
+                <node concept="3wdj9f" id="44cY$cw6z8$" role="2uUmlA">
+                  <ref role="3wdj98" node="44cY$cw6xKI" resolve="again" />
                 </node>
               </node>
             </node>
