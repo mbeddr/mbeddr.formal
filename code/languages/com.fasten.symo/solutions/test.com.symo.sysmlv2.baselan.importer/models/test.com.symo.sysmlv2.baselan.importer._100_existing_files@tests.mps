@@ -7778,7 +7778,7 @@
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <property role="TrG5h" value="_120_ViewsAndFiltersGapsTest" />
     <node concept="1LZb2c" id="3$z5ynY_NIQ" role="1SL9yI">
-      <property role="TrG5h" value="testFilterAsIstype" />
+      <property role="TrG5h" value="testViewWithExposeAndFilter" />
       <node concept="3cqZAl" id="3$z5ynY_NIS" role="3clF45" />
       <node concept="3clFbS" id="3$z5ynY_NIT" role="3clF47">
         <node concept="3cpWs8" id="3$z5ynY_NIU" role="3cqZAp">
@@ -7803,7 +7803,7 @@
               <ref role="3cqZAo" node="3$z5ynY_NIV" resolve="content" />
             </node>
             <node concept="Xl_RD" id="3$z5ynY_NJ4" role="37vLTx">
-              <property role="Xl_RC" value="  view def Reqs {\n" />
+              <property role="Xl_RC" value="  view reqs {\n" />
             </node>
           </node>
         </node>
@@ -7823,7 +7823,7 @@
               <ref role="3cqZAo" node="3$z5ynY_NIV" resolve="content" />
             </node>
             <node concept="Xl_RD" id="3$z5ynY_NJc" role="37vLTx">
-              <property role="Xl_RC" value="    filter as SysML::RequirementDefinition istype SysML::RequirementDefinition;\n" />
+              <property role="Xl_RC" value="    filter @SysML::RequirementUsage;\n" />
             </node>
           </node>
         </node>
@@ -7857,7 +7857,7 @@
                 <ref role="3cqZAo" node="3$z5ynY_NIV" resolve="content" />
               </node>
               <node concept="Xl_RD" id="3$z5ynY_NJp" role="37wK5m">
-                <property role="Xl_RC" value="TestFilterAsIstype" />
+                <property role="Xl_RC" value="TestViewWithExposeAndFilter" />
               </node>
               <node concept="1jxXqW" id="3$z5ynY_NJq" role="37wK5m" />
             </node>
@@ -7888,6 +7888,122 @@
             </node>
             <node concept="37vLTw" id="3$z5ynY_NJ$" role="37wK5m">
               <ref role="3cqZAo" node="3$z5ynY_NJm" resolve="generated" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4K3gUKN810i" role="1SL9yI">
+      <property role="TrG5h" value="testFilterAsIstype" />
+      <node concept="3cqZAl" id="4K3gUKN810j" role="3clF45" />
+      <node concept="3clFbS" id="4K3gUKN810k" role="3clF47">
+        <node concept="3cpWs8" id="4K3gUKN810l" role="3cqZAp">
+          <node concept="3cpWsn" id="4K3gUKN810m" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="4K3gUKN810n" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="4K3gUKN810o" role="3cqZAp">
+          <node concept="37vLTI" id="4K3gUKN810p" role="3clFbG">
+            <node concept="37vLTw" id="4K3gUKN810q" role="37vLTJ">
+              <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="4K3gUKN810r" role="37vLTx">
+              <property role="Xl_RC" value="package Garage {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4K3gUKN810s" role="3cqZAp">
+          <node concept="d57v9" id="4K3gUKN810t" role="3clFbG">
+            <node concept="37vLTw" id="4K3gUKN810u" role="37vLTJ">
+              <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="4K3gUKN810v" role="37vLTx">
+              <property role="Xl_RC" value="  view reqs : TVD::TableView {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4K3gUKN810w" role="3cqZAp">
+          <node concept="d57v9" id="4K3gUKN810x" role="3clFbG">
+            <node concept="37vLTw" id="4K3gUKN810y" role="37vLTJ">
+              <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="4K3gUKN810z" role="37vLTx">
+              <property role="Xl_RC" value="    expose Garage::*;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4K3gUKN810$" role="3cqZAp">
+          <node concept="d57v9" id="4K3gUKN810_" role="3clFbG">
+            <node concept="37vLTw" id="4K3gUKN810A" role="37vLTJ">
+              <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="4K3gUKN810B" role="37vLTx">
+              <property role="Xl_RC" value="    filter as SysML::RequirementDefinition istype SysML::RequirementDefinition;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4K3gUKN810C" role="3cqZAp">
+          <node concept="d57v9" id="4K3gUKN810D" role="3clFbG">
+            <node concept="37vLTw" id="4K3gUKN810E" role="37vLTJ">
+              <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="4K3gUKN810F" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4K3gUKN810G" role="3cqZAp">
+          <node concept="d57v9" id="4K3gUKN810H" role="3clFbG">
+            <node concept="37vLTw" id="4K3gUKN810I" role="37vLTJ">
+              <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="4K3gUKN810J" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4K3gUKN810K" role="3cqZAp">
+          <node concept="3cpWsn" id="4K3gUKN810L" role="3cpWs9">
+            <property role="TrG5h" value="generated" />
+            <node concept="2YIFZM" id="4K3gUKN810M" role="33vP2m">
+              <ref role="37wK5l" to="qhou:2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <ref role="1Pybhc" to="qhou:5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <node concept="37vLTw" id="4K3gUKN810N" role="37wK5m">
+                <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="4K3gUKN810O" role="37wK5m">
+                <property role="Xl_RC" value="TestFilterAsIstype" />
+              </node>
+              <node concept="1jxXqW" id="4K3gUKN810P" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="4K3gUKN810Q" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="1gVbGN" id="4K3gUKN810R" role="3cqZAp">
+          <node concept="2OqwBi" id="4K3gUKN810S" role="1gVkn0">
+            <node concept="2YIFZM" id="4K3gUKN810T" role="2Oq$k0">
+              <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
+              <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="37vLTw" id="4K3gUKN810U" role="37wK5m">
+                <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+              </node>
+              <node concept="37vLTw" id="4K3gUKN810V" role="37wK5m">
+                <ref role="3cqZAo" node="4K3gUKN810L" resolve="generated" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4K3gUKN810W" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
+            </node>
+          </node>
+          <node concept="2YIFZM" id="4K3gUKN810X" role="1gVpfI">
+            <ref role="37wK5l" to="qhou:6PmNqjRPlGY" resolve="tokenDifference" />
+            <ref role="1Pybhc" to="qhou:3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="4K3gUKN810Y" role="37wK5m">
+              <ref role="3cqZAo" node="4K3gUKN810m" resolve="content" />
+            </node>
+            <node concept="37vLTw" id="4K3gUKN810Z" role="37wK5m">
+              <ref role="3cqZAo" node="4K3gUKN810L" resolve="generated" />
             </node>
           </node>
         </node>
