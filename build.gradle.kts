@@ -82,11 +82,36 @@ val docx4JVersion = "11.5.12"
 configurations {
     val mps by creating
     val languageLibs by creating
+    // Libraries already exposed to solutions by MPS.IDEA.Modules (stubs of the jars bundled with MPS)
+    // must not be packaged again, so they are excluded from the configurations below.
+    val mpsProvided = listOf(
+        "commons-io" to "commons-io",
+        "commons-codec" to "commons-codec",
+        "commons-logging" to "commons-logging",
+        "org.apache.commons" to "commons-lang3",
+        "org.apache.commons" to "commons-compress",
+        "com.google.guava" to "guava",
+        "com.google.guava" to "failureaccess",
+        "com.google.guava" to "listenablefuture",
+        "com.google.errorprone" to "error_prone_annotations",
+        "org.jspecify" to "jspecify",
+        "org.codehaus.jettison" to "jettison",
+        "com.fasterxml.jackson.core" to "jackson-core",
+        "com.fasterxml.jackson.core" to "jackson-databind",
+        "com.fasterxml.jackson.core" to "jackson-annotations",
+        "org.eclipse.xtext" to "org.eclipse.xtext.xbase.lib",
+        "org.slf4j" to "jcl-over-slf4j",
+        "org.springframework" to "spring-jcl"
+    )
+    fun Configuration.excludeMpsProvided() = mpsProvided.forEach { (group, module) -> exclude(group, module) }
+
     val docx4j by creating {
         exclude("org.slf4j", "slf4j-api")
+        excludeMpsProvided()
     }
     val langchain4j by creating {
         exclude("org.slf4j")
+        excludeMpsProvided()
     }
     val plantUML by creating {
         isTransitive = false
@@ -105,13 +130,16 @@ configurations {
     }
     val jira by creating {
         exclude("org.slf4j")
+        excludeMpsProvided()
     }
 
     val pdfbox by creating {
         isTransitive = false
     }
 
-    val svgViewer by creating
+    val svgViewer by creating {
+        excludeMpsProvided()
+    }
 
     // includes also junit tasks support
     val antLib by creating {
@@ -131,10 +159,9 @@ configurations {
         languageLibs("com.mbeddr:platform:2026.1.26592.4611389")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
         
-        plantUML("org.apache.xmlgraphics:batik-all:1.18")
+        // batik-all, xmlgraphics-commons and xml-apis-ext come from de.itemis.stubs.batik / de.itemis.stubs.xml
+        // (bundled in com.mbeddr:platform)
         plantUML("net.sourceforge.plantuml:plantuml-epl:1.2024.7")
-        plantUML("xml-apis:xml-apis-ext:1.3.04")
-        plantUML("org.apache.xmlgraphics:xmlgraphics-commons:2.2")
 
         docx4j("org.docx4j:docx4j-core:$docx4JVersion")
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
@@ -172,10 +199,6 @@ configurations {
         svgViewer("org.eclipse.elk:org.eclipse.elk.graph:0.12.0")
         svgViewer("org.eclipse.elk:org.eclipse.elk.alg.layered:0.12.0")
         svgViewer("org.eclipse.elk:org.eclipse.elk.alg.mrtree:0.12.0")
-        // Not a transitive dependency of any of the above per their published POMs, even though
-        // elk.alg.layered's and elk.alg.mrtree's own Xtend-generated static initializers need it
-        // at runtime (an OSGi/Maven metadata gap in those artifacts) - declared explicitly here.
-        svgViewer("org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.43.0")
 
         antLib("org.apache.ant:ant-junit:1.10.6")
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
@@ -283,6 +306,20 @@ fun createSyncTask(taskName: String, configurationName: String, destinationDir: 
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 }
+
+// configurations reported in the SBOM and declared as dependencies in the published POMs
+val bundledLibConfigs = listOf(
+    "languageLibs",
+    "docx4j",
+    "langchain4j",
+    "plantUML",
+    "sat4j",
+    "jfreechart",
+    "nusmv",
+    "z3",
+    "jira",
+    "pdfbox"
+)
 
 val resolvePlantUML = createSyncTask(
     taskName = "resolvePlantUML",
@@ -663,18 +700,7 @@ tasks {
         jsonOutput = layout.buildDirectory.file("reports/sbom.json")
         xmlOutput.unsetConvention()
         includeLicenseText = false
-        includeConfigs = listOf(
-            "languageLibs",
-            "docx4j",
-            "langchain4j",
-            "plantUML",
-            "sat4j",
-            "jfreechart",
-            "nusmv",
-            "z3",
-            "jira",
-            "pdfbox"
-        )
+        includeConfigs = bundledLibConfigs
     }
 
     //clean { dependsOn(cleanMps) }
@@ -752,19 +778,7 @@ fun configurePublication(publication: MavenPublication, group: String, artifactI
         pom.withXml {
             val dependenciesNode = asNode().appendNode("dependencies")
 
-            listOf(
-                "languageLibs",
-                "mps",
-                "docx4j",
-		"langchain4j",
-                "plantUML",
-                "sat4j",
-                "jfreechart",
-                "nusmv",
-                "z3",
-                "jira",
-                "pdfbox"
-            ).forEach { config ->
+            (listOf("mps") + bundledLibConfigs).forEach { config ->
                 addDependencies(dependenciesNode, config)
             }
         }

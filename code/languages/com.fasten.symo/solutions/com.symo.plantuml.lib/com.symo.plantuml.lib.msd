@@ -2,21 +2,19 @@
 <solution name="com.symo.plantuml.lib" uuid="377bf088-4ffc-48ac-910f-fb1c66ffa60e" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="batik-all.jar" />
       <sourceRoot location="plantuml-epl.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/batik-all.jar" />
       <library location="${module}/lib/plantuml-epl.jar" />
-      <library location="${module}/lib/xml-apis-ext.jar" />
-      <library location="${module}/lib/xmlgraphics-commons.jar" />
     </facet>
   </facets>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">563a0770-eb88-4f4f-83ed-f708776fc2fe(de.itemis.stubs.batik)</dependency>
+    <dependency reexport="false">124d077c-270f-42ca-8bf8-bee488dc96dc(de.itemis.stubs.xml)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -28,6 +26,8 @@
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="377bf088-4ffc-48ac-910f-fb1c66ffa60e(com.symo.plantuml.lib)" version="0" />
+    <module reference="563a0770-eb88-4f4f-83ed-f708776fc2fe(de.itemis.stubs.batik)" version="0" />
+    <module reference="124d077c-270f-42ca-8bf8-bee488dc96dc(de.itemis.stubs.xml)" version="0" />
   </dependencyVersions>
 </solution>
 

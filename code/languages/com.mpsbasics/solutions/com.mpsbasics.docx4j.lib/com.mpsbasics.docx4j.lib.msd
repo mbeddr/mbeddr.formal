@@ -18,18 +18,12 @@
       <library location="${module}/lib/antlr.jar" />
       <library location="${module}/lib/antlr-runtime.jar" />
       <library location="${module}/lib/checker-qual.jar" />
-      <library location="${module}/lib/commons-codec.jar" />
       <library location="${module}/lib/commons-collections4.jar" />
-      <library location="${module}/lib/commons-compress.jar" />
-      <library location="${module}/lib/commons-io.jar" />
-      <library location="${module}/lib/commons-lang3.jar" />
-      <library location="${module}/lib/commons-logging.jar" />
       <library location="${module}/lib/docx4j-core.jar" />
       <library location="${module}/lib/docx4j-JAXB-MOXy.jar" />
       <library location="${module}/lib/docx4j-openxml-objects.jar" />
       <library location="${module}/lib/docx4j-openxml-objects-pml.jar" />
       <library location="${module}/lib/docx4j-openxml-objects-sml.jar" />
-      <library location="${module}/lib/error_prone_annotations.jar" />
       <library location="${module}/lib/fontbox.jar" />
       <library location="${module}/lib/jakarta.activation-api.jar" />
       <library location="${module}/lib/jakarta.mail-api.jar" />
@@ -37,7 +31,6 @@
       <library location="${module}/lib/jaxb-core.jar" />
       <library location="${module}/lib/jaxb-svg11.jar" />
       <library location="${module}/lib/jaxb-xjc.jar" />
-      <library location="${module}/lib/jcl-over-slf4j.jar" />
       <library location="${module}/lib/mbassador.jar" />
       <library location="${module}/lib/org.eclipse.persistence.asm.jar" />
       <library location="${module}/lib/org.eclipse.persistence.core.jar" />
@@ -54,6 +47,7 @@
   </facets>
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">b00f36f0-49b7-456c-8405-740447ebb192(MPS.IDEA.Modules)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -64,6 +58,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="b00f36f0-49b7-456c-8405-740447ebb192(MPS.IDEA.Modules)" version="0" />
     <module reference="71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)" version="0" />
   </dependencyVersions>
 </solution>

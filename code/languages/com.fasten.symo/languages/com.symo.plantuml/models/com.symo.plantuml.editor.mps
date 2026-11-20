@@ -29,9 +29,9 @@
     <import index="lc7h" ref="r:9af299a8-c69a-4780-9c99-063ff8f4181a(com.symo.plantuml.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
-    <import index="r3oq" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.transcoder(com.symo.plantuml.lib/)" />
-    <import index="a7yv" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.transcoder.image(com.symo.plantuml.lib/)" />
     <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
+    <import index="a7yv" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.transcoder.image(de.itemis.stubs.batik/)" />
+    <import index="r3oq" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.transcoder(de.itemis.stubs.batik/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">

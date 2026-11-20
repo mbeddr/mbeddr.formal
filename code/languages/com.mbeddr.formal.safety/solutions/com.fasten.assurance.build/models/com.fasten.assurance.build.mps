@@ -936,25 +936,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7a7$evTW_gG" role="3bR37C">
-          <node concept="1BurEX" id="7a7$evTW_gH" role="1SiIV1">
-            <node concept="398BVA" id="7a7$evTW_gv" role="1BurEY">
-              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
-              <node concept="2Ry0Ak" id="7a7$evTW_gw" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7a7$evTW_gx" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
-                  <node concept="2Ry0Ak" id="7a7$evTW_gy" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7a7$evTW_gz" role="2Ry0An">
-                      <property role="2Ry0Am" value="batik-all.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="7a7$evTW_gV" role="3bR37C">
           <node concept="1BurEX" id="7a7$evTW_gW" role="1SiIV1">
             <node concept="398BVA" id="7a7$evTW_gI" role="1BurEY">
@@ -967,44 +948,6 @@
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="7a7$evTW_gM" role="2Ry0An">
                       <property role="2Ry0Am" value="plantuml-epl.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7a7$evTW_ha" role="3bR37C">
-          <node concept="1BurEX" id="7a7$evTW_hb" role="1SiIV1">
-            <node concept="398BVA" id="7a7$evTW_gX" role="1BurEY">
-              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
-              <node concept="2Ry0Ak" id="7a7$evTW_gY" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7a7$evTW_gZ" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
-                  <node concept="2Ry0Ak" id="7a7$evTW_h0" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7a7$evTW_h1" role="2Ry0An">
-                      <property role="2Ry0Am" value="xml-apis-ext.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7a7$evTW_hp" role="3bR37C">
-          <node concept="1BurEX" id="7a7$evTW_hq" role="1SiIV1">
-            <node concept="398BVA" id="7a7$evTW_hc" role="1BurEY">
-              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
-              <node concept="2Ry0Ak" id="7a7$evTW_hd" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7a7$evTW_he" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
-                  <node concept="2Ry0Ak" id="7a7$evTW_hf" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7a7$evTW_hg" role="2Ry0An">
-                      <property role="2Ry0Am" value="xmlgraphics-commons.jar" />
                     </node>
                   </node>
                 </node>
@@ -1026,6 +969,16 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61fD6URbhhZ" role="3bR37C">
+          <node concept="3bR9La" id="61fD6URbhi1" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1iowsuqFo8p" role="3bR37C">
+          <node concept="3bR9La" id="1iowsuqFo8r" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2sSK94l$Dwp" resolve="de.itemis.stubs.xml" />
           </node>
         </node>
       </node>
@@ -1171,6 +1124,11 @@
             <node concept="3qWCbU" id="7a7$evTWApp" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="61fD6URbhnI" role="3bR37C">
+          <node concept="3bR9La" id="61fD6URbhnK" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
           </node>
         </node>
       </node>

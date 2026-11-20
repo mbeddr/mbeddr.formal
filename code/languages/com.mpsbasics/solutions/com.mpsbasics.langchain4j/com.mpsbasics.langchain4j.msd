@@ -5,8 +5,6 @@
       <sourceRoot path="${module}/models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jackson-core.jar" />
-      <sourceRoot location="jackson-databind.jar" />
       <sourceRoot location="langchain4j-core.jar" />
       <sourceRoot location="langchain4j-open-ai.jar" />
       <sourceRoot location="langchain4j.jar" />
@@ -15,10 +13,6 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/jackson-annotations.jar" />
-      <library location="${module}/lib/jackson-core.jar" />
-      <library location="${module}/lib/jackson-databind.jar" />
-      <library location="${module}/lib/jspecify.jar" />
       <library location="${module}/lib/jtokkit.jar" />
       <library location="${module}/lib/langchain4j-core.jar" />
       <library location="${module}/lib/langchain4j-http-client-jdk.jar" />
@@ -40,6 +34,7 @@
     <dependency reexport="false">1f4710e9-f074-4732-a0bd-6fa896d282b7(com.mpsbasics.project.utils)</dependency>
     <dependency reexport="false">9e55166d-c201-49d5-9057-ad6885e819c6(com.mpsbasics.langchain4j.pluginSolution)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
+    <dependency reexport="false">b00f36f0-49b7-456c-8405-740447ebb192(MPS.IDEA.Modules)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
