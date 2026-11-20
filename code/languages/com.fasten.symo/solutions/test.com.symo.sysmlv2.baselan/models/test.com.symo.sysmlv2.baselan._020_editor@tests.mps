@@ -129,6 +129,9 @@
         <property id="8642959026948349262" name="text" index="AsIwZ" />
         <child id="8642959026948349263" name="segments" index="AsIwY" />
       </concept>
+      <concept id="3548282586734449994" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Usage" flags="ngI" index="2SfdPW">
+        <property id="4117158836588424507" name="isVariant" index="3b_rGu" />
+      </concept>
       <concept id="6353433212932081523" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionUsage" flags="ng" index="SPUEF" />
       <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG" />
       <concept id="3548282586720795161" name="com.symo.sysmlv2.baselan.structure.ISysMLv2BodiedDefinition" flags="ngI" index="2T378J">
@@ -164,6 +167,7 @@
         <property id="284754763133676347" name="expressionText" index="3bnkR9" />
       </concept>
       <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
+        <property id="4117158836588424503" name="isVariation" index="3b_rGi" />
         <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
       </concept>
       <concept id="9009971474269510567" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureChainEnd" flags="ng" index="3ldkbQ">
@@ -5124,6 +5128,82 @@
     <node concept="3clFbS" id="6wXJlapQUtm" role="LjaKd">
       <node concept="2TK7Tu" id="6wXJlapQUtn" role="3cqZAp">
         <property role="2TTd_B" value="." />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3$z5ynOkye7">
+    <property role="TrG5h" value="_131_PartDefinition_DeleteVariationFlag" />
+    <property role="3YCmrE" value="deleting the variation flag unsets isVariation" />
+    <node concept="1qefOq" id="3$z5ynOkye8" role="25YQCW">
+      <node concept="2h0jOr" id="3$z5ynOkye9" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="3$z5ynOkyea" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <property role="3b_rGi" value="true" />
+          <node concept="2h0jOo" id="3$z5ynOkyeb" role="3w00ZY" />
+          <node concept="LIFWc" id="3$z5ynOkyec" role="lGtFl">
+            <property role="LIFWd" value="flag_isVariation" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3$z5ynOkyed" role="25YQFr">
+      <node concept="2h0jOr" id="3$z5ynOkyee" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="3$z5ynOkyef" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <node concept="2h0jOo" id="3$z5ynOkyeg" role="3w00ZY" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3$z5ynOkyeh" role="LjaKd">
+      <node concept="2HxZob" id="3$z5ynOkyei" role="3cqZAp">
+        <node concept="3iKlGA" id="3$z5ynOkyej" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3$z5ynOkyek">
+    <property role="TrG5h" value="_132_PartUsage_DeleteVariantFlag" />
+    <property role="3YCmrE" value="deleting the variant flag unsets isVariant" />
+    <node concept="1qefOq" id="3$z5ynOkyel" role="25YQCW">
+      <node concept="2h0jOr" id="3$z5ynOkyem" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="3$z5ynOkyen" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <node concept="8GF0z" id="3$z5ynOkyeo" role="3w00ZY">
+            <property role="TrG5h" value="p" />
+            <property role="3b_rGu" value="true" />
+            <node concept="LIFWc" id="3$z5ynOkyep" role="lGtFl">
+              <property role="LIFWd" value="flag_isVariant" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3$z5ynOkyeq" role="25YQFr">
+      <node concept="2h0jOr" id="3$z5ynOkyer" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="3$z5ynOkyes" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <node concept="8GF0z" id="3$z5ynOkyet" role="3w00ZY">
+            <property role="TrG5h" value="p" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3$z5ynOkyeu" role="LjaKd">
+      <node concept="2HxZob" id="3$z5ynOkyev" role="3cqZAp">
+        <node concept="3iKlGA" id="3$z5ynOkyew" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
+        </node>
       </node>
     </node>
   </node>

@@ -6138,5 +6138,63 @@
       </node>
     </node>
   </node>
+  <node concept="18kY7G" id="3$z5ynOk0_M">
+    <property role="TrG5h" value="check_SysMLv2Usage_portionKind" />
+    <property role="3GE5qa" value="variation" />
+    <node concept="3clFbS" id="3$z5ynOk0_N" role="18ibNy">
+      <node concept="3clFbJ" id="3$z5ynOk0_O" role="3cqZAp">
+        <node concept="2YIFZM" id="3$z5ynOk0_P" role="3clFbw">
+          <ref role="1Pybhc" to="5wt7:3$z5ynOjvaX" resolve="VariationPolicy" />
+          <ref role="37wK5l" to="5wt7:3$z5ynOjvbP" resolve="isInvalidPortionKind" />
+          <node concept="1YBJjd" id="3$z5ynOk0_Q" role="37wK5m">
+            <ref role="1YBMHb" node="3$z5ynOk0_V" resolve="usage" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3$z5ynOk0_R" role="3clFbx">
+          <node concept="2MkqsV" id="3$z5ynOk0_S" role="3cqZAp">
+            <node concept="Xl_RD" id="3$z5ynOk0_T" role="2MkJ7o">
+              <property role="Xl_RC" value="[usage-portion-kind] portionKind must be 'snapshot' or 'timeslice'" />
+            </node>
+            <node concept="1YBJjd" id="3$z5ynOk0_U" role="1urrMF">
+              <ref role="1YBMHb" node="3$z5ynOk0_V" resolve="usage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3$z5ynOk0_V" role="1YuTPh">
+      <property role="TrG5h" value="usage" />
+      <ref role="1YaFvo" to="5rf1:34Y23q90Hla" resolve="ISysMLv2Usage" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3$z5ynOk0A1">
+    <property role="TrG5h" value="check_SysMLv2Usage_variantInVariation" />
+    <property role="3GE5qa" value="variation" />
+    <node concept="3clFbS" id="3$z5ynOk0A2" role="18ibNy">
+      <node concept="3clFbJ" id="3$z5ynOk0A3" role="3cqZAp">
+        <node concept="2YIFZM" id="3$z5ynOk0A4" role="3clFbw">
+          <ref role="1Pybhc" to="5wt7:3$z5ynOjvaX" resolve="VariationPolicy" />
+          <ref role="37wK5l" to="5wt7:3$z5ynOjL5o" resolve="isVariantOutsideVariation" />
+          <node concept="1YBJjd" id="3$z5ynOk0A5" role="37wK5m">
+            <ref role="1YBMHb" node="3$z5ynOk0Aa" resolve="usage" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3$z5ynOk0A6" role="3clFbx">
+          <node concept="a7r0C" id="3$z5ynOk0A7" role="3cqZAp">
+            <node concept="Xl_RD" id="3$z5ynOk0A8" role="a7wSD">
+              <property role="Xl_RC" value="[variant-outside-variation] A variant usage should be owned by a variation definition or usage" />
+            </node>
+            <node concept="1YBJjd" id="3$z5ynOk0A9" role="1urrMF">
+              <ref role="1YBMHb" node="3$z5ynOk0Aa" resolve="usage" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3$z5ynOk0Aa" role="1YuTPh">
+      <property role="TrG5h" value="usage" />
+      <ref role="1YaFvo" to="5rf1:34Y23q90Hla" resolve="ISysMLv2Usage" />
+    </node>
+  </node>
 </model>
 

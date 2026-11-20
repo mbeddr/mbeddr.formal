@@ -565,6 +565,16 @@
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
+      <node concept="1kHk_G" id="3$z5ynNIQiO" role="3EZMnx">
+        <property role="ZjSer" value="variation" />
+        <ref role="1NtTu8" to="5rf1:3$z5ynMHEOR" resolve="isVariation" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="3$z5ynNJ7Ht" role="3EZMnx">
+        <property role="ZjSer" value="individual" />
+        <ref role="1NtTu8" to="5rf1:3$z5ynMHFIh" resolve="isIndividual" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="PMmxH" id="5oZmK$O8rSF" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
@@ -635,9 +645,19 @@
       <node concept="PMmxH" id="fNDJb49jjt" role="3EZMnx">
         <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
       </node>
+      <node concept="1kHk_G" id="3$z5ynNJ7Hp" role="3EZMnx">
+        <property role="ZjSer" value="variant" />
+        <ref role="1NtTu8" to="5rf1:3$z5ynMHEOV" resolve="isVariant" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="1kHk_G" id="4mJZS3mQnvs" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="3$z5ynNJpDN" role="3EZMnx">
+        <property role="ZjSer" value="variation" />
+        <ref role="1NtTu8" to="5rf1:3$z5ynMHEOR" resolve="isVariation" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="_tjkj" id="7ij$Ne$r$wk" role="3EZMnx">
@@ -668,6 +688,15 @@
       </node>
       <node concept="PMmxH" id="5oZmK$O8rSU" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
+      <node concept="1kHk_G" id="3$z5ynNJD5e" role="3EZMnx">
+        <property role="ZjSer" value="individual" />
+        <ref role="1NtTu8" to="5rf1:3$z5ynMHFIh" resolve="isIndividual" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0A7n" id="3$z5ynNOB6F" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <ref role="1NtTu8" to="5rf1:3$z5ynMHEOZ" resolve="portionKind" />
       </node>
       <node concept="3F0ifn" id="7JKstLNgOTO" role="3EZMnx">
         <property role="3F0ifm" value="part" />

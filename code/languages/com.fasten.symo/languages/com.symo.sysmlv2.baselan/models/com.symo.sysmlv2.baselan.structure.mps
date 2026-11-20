@@ -1369,6 +1369,16 @@
       <property role="TrG5h" value="isAbstract" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="3$z5ynMHEOR" role="1TKVEl">
+      <property role="IQ2nx" value="4117158836588424503" />
+      <property role="TrG5h" value="isVariation" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3$z5ynMHFIh" role="1TKVEl">
+      <property role="IQ2nx" value="4117158836588428177" />
+      <property role="TrG5h" value="isIndividual" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6ohPCO08Ffu">
     <property role="EcuMT" value="7354895567553737694" />
@@ -2692,6 +2702,16 @@
     </node>
     <node concept="PrWs8" id="6i6xKqBSdY8" role="PrDN$">
       <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+    </node>
+    <node concept="1TJgyi" id="3$z5ynMHEOV" role="1TKVEl">
+      <property role="IQ2nx" value="4117158836588424507" />
+      <property role="TrG5h" value="isVariant" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3$z5ynMHEOZ" role="1TKVEl">
+      <property role="IQ2nx" value="4117158836588424511" />
+      <property role="TrG5h" value="portionKind" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="PlHQZ" id="3Igz0sRBrH8">

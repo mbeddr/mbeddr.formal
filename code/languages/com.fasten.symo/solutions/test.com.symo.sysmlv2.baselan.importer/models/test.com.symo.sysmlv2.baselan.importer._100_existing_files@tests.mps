@@ -3079,7 +3079,7 @@
               <ref role="3cqZAo" node="j1yGxNQDbc" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQDbl" role="37vLTx">
-              <property role="Xl_RC" value="  individual part def Specimen;\n" />
+              <property role="Xl_RC" value="  individual part def Specimen { }\n" />
             </node>
           </node>
         </node>
@@ -3175,7 +3175,7 @@
               <ref role="3cqZAo" node="j1yGxNQDbJ" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQDbW" role="37vLTx">
-              <property role="Xl_RC" value="    individual part first : Unit;\n" />
+              <property role="Xl_RC" value="    individual part original : Unit;\n" />
             </node>
           </node>
         </node>
@@ -3185,7 +3185,7 @@
               <ref role="3cqZAo" node="j1yGxNQDbJ" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQDc0" role="37vLTx">
-              <property role="Xl_RC" value="    portion part early : Unit;\n" />
+              <property role="Xl_RC" value="    timeslice part early : Unit;\n" />
             </node>
           </node>
         </node>
