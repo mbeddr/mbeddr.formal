@@ -24,7 +24,9 @@
         <child id="6353433212932104530" name="result" index="SPOMa" />
       </concept>
       <concept id="6353433212885159921" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionDefinition" flags="ng" index="66U8D" />
-      <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
+      <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J">
+        <property id="4117158836682288044" name="isParallel" index="31rvQ9" />
+      </concept>
       <concept id="6353433212885160000" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingDefinition" flags="ng" index="66VQo" />
       <concept id="6353433212885160006" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationDefinition" flags="ng" index="66VQu" />
       <concept id="6353433212885159964" name="com.symo.sysmlv2.baselan.structure.SysMLv2CaseDefinition" flags="ng" index="66VR4" />
@@ -137,7 +139,9 @@
       </concept>
       <concept id="6353433212932081534" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssertConstraintUsage" flags="ng" index="SPUEA" />
       <concept id="6353433212932081523" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionUsage" flags="ng" index="SPUEF" />
-      <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG" />
+      <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG">
+        <property id="4117158836682288052" name="isParallel" index="31rvQh" />
+      </concept>
       <concept id="6353433212932081525" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementUsage" flags="ng" index="SPUEH" />
       <concept id="6353433212932081526" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConcernUsage" flags="ng" index="SPUEI" />
       <concept id="6353433212932081527" name="com.symo.sysmlv2.baselan.structure.SysMLv2CaseUsage" flags="ng" index="SPUEJ" />
@@ -157,6 +161,18 @@
         <child id="7243625513291015254" name="target" index="31b6dg" />
       </concept>
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3" />
+      <concept id="4117158836682288061" name="com.symo.sysmlv2.baselan.structure.SysMLv2ForLoopUsage" flags="ng" index="31rvQo">
+        <property id="4117158836682288066" name="variableName" index="31rvRB" />
+        <child id="4117158836682288067" name="iterable" index="31rvRA" />
+      </concept>
+      <concept id="4117158836682288060" name="com.symo.sysmlv2.baselan.structure.SysMLv2SendActionUsage" flags="ng" index="31rvQp">
+        <child id="4117158836682288063" name="payload" index="31rvQq" />
+        <child id="4117158836682288065" name="receiver" index="31rvR$" />
+        <child id="4117158836682288064" name="via" index="31rvR_" />
+      </concept>
+      <concept id="4117158836682288062" name="com.symo.sysmlv2.baselan.structure.SysMLv2TerminateNode" flags="ng" index="31rvQr">
+        <child id="4117158836682288068" name="terminated" index="31rvRx" />
+      </concept>
       <concept id="7243625513212498628" name="com.symo.sysmlv2.baselan.structure.SysMLv2AcceptActionUsage" flags="ng" index="34u_n2">
         <child id="7243625513212498630" name="payload" index="34u_n0" />
         <child id="7243625513212498631" name="receiver" index="34u_n1" />
@@ -206,6 +222,7 @@
         <child id="8400219580061960446" name="member" index="3sj5Jd" />
       </concept>
       <concept id="8400219580061960445" name="com.symo.sysmlv2.baselan.structure.SysMLv2WhileLoopUsage" flags="ng" index="3sj5Je">
+        <child id="4117158836682288056" name="until" index="31rvQt" />
         <child id="8400219580061960450" name="condition" index="3sj5CL" />
       </concept>
       <concept id="8400219580061960444" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssignActionUsage" flags="ng" index="3sj5Jf">
@@ -4009,6 +4026,58 @@
         <property role="TrG5h" value="shot" />
         <property role="3b_rGq" value="snapshot" />
       </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="3$z5ynURvwW">
+    <property role="TrG5h" value="_340_behavior_constructs" />
+    <node concept="66U8J" id="3$z5ynURvwX" role="2h0jOs">
+      <property role="TrG5h" value="Modes" />
+      <property role="31rvQ9" value="true" />
+    </node>
+    <node concept="66U8J" id="3$z5ynURvwY" role="2h0jOs">
+      <property role="TrG5h" value="Lifecycle" />
+      <node concept="SPUEG" id="3$z5ynURvwZ" role="66U86">
+        <property role="TrG5h" value="regions" />
+        <property role="31rvQh" value="true" />
+      </node>
+      <node concept="3v7bcT" id="3$z5ynURvx0" role="66U86">
+        <property role="TrG5h" value="running" />
+        <property role="31rvQh" value="true" />
+      </node>
+    </node>
+    <node concept="66U8D" id="3$z5ynURvx1" role="2h0jOs">
+      <property role="TrG5h" value="Worker" />
+      <node concept="3sj5Je" id="3$z5ynURvx2" role="66U86">
+        <node concept="1_WVX6" id="3$z5ynURvx3" role="3sj5CL">
+          <property role="1_WVXG" value="true" />
+        </node>
+        <node concept="1_WVX6" id="3$z5ynURvx4" role="31rvQt">
+          <property role="1_WVXG" value="false" />
+        </node>
+      </node>
+      <node concept="31rvQo" id="3$z5ynURvx5" role="66U86">
+        <property role="31rvRB" value="elem" />
+        <node concept="1_WVX6" id="3$z5ynURvx6" role="31rvRA">
+          <property role="1_WVXG" value="3" />
+        </node>
+      </node>
+      <node concept="31rvQp" id="3$z5ynURvx7" role="66U86">
+        <node concept="1_WVX6" id="3$z5ynURvx8" role="31rvQq">
+          <property role="1_WVXG" value="1" />
+        </node>
+        <node concept="1_WVX6" id="3$z5ynURvx9" role="31rvR_">
+          <property role="1_WVXG" value="2" />
+        </node>
+        <node concept="1_WVX6" id="3$z5ynURvxa" role="31rvR$">
+          <property role="1_WVXG" value="3" />
+        </node>
+      </node>
+      <node concept="31rvQr" id="3$z5ynURvxb" role="66U86">
+        <node concept="1_WVX6" id="3$z5ynURvxc" role="31rvRx">
+          <property role="1_WVXG" value="4" />
+        </node>
+      </node>
+      <node concept="31rvQr" id="3$z5ynURvxd" role="66U86" />
     </node>
   </node>
 </model>

@@ -468,6 +468,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -10055,6 +10059,10 @@
     <property role="TrG5h" value="_170_UsageReferenceKinds" />
     <property role="3GE5qa" value="usage references" />
     <node concept="1qefOq" id="61dxE2knLiI" role="1SKRRt">
+      <node concept="15s5l7" id="3$z5ynV95Il" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  data (usage) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;usage&quot;;FLAVOUR_RULE_ID=&quot;[r:4326eb3b-e912-4bd0-9f23-3e0eda67ed27(com.symo.sysmlv2.baselan.constraints)/4376090928926238335]&quot;;" />
+        <property role="huDt6" value="The reference  data (usage) is out of search scope" />
+      </node>
       <node concept="2h0jOr" id="61dxE2knLiJ" role="1qenE9">
         <node concept="3Z9vzX" id="61dxE2knLiK" role="2h0jOs">
           <property role="TrG5h" value="P" />
@@ -11179,7 +11187,7 @@
         <node concept="1gVbGN" id="61dxE2nWK8s" role="3cqZAp">
           <node concept="2YIFZM" id="61dxE2nWK8$" role="1gVkn0">
             <ref role="1Pybhc" to="5wt7:61dxE2nhiBP" resolve="TransitionEffects" />
-            <ref role="37wK5l" to="5wt7:61dxE2nrA4E" resolve="supportedActionSyntax" />
+            <ref role="37wK5l" to="5wt7:3$z5ynSM7pI" resolve="supportedActionSyntax" />
             <node concept="37vLTw" id="61dxE2nWK8_" role="37wK5m">
               <ref role="3cqZAo" node="61dxE2nWK87" resolve="member" />
             </node>
@@ -11331,6 +11339,10 @@
     <property role="TrG5h" value="_200_TransitionEffectDiagnostics" />
     <property role="3GE5qa" value="state" />
     <node concept="1qefOq" id="61dxE2nWLcU" role="1SKRRt">
+      <node concept="15s5l7" id="3$z5ynV96T9" role="lGtFl">
+        <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;reference scopes (reference scopes)&quot;;FLAVOUR_MESSAGE=&quot;The reference  data (usage) is out of search scope&quot;;FLAVOUR_NODE_FEATURE=&quot;usage&quot;;FLAVOUR_RULE_ID=&quot;[r:4326eb3b-e912-4bd0-9f23-3e0eda67ed27(com.symo.sysmlv2.baselan.constraints)/4376090928926238335]&quot;;" />
+        <property role="huDt6" value="The reference  data (usage) is out of search scope" />
+      </node>
       <node concept="2h0jOr" id="61dxE2nWLcV" role="1qenE9">
         <node concept="66U8J" id="61dxE2nWLcW" role="2h0jOs">
           <property role="TrG5h" value="Holder" />

@@ -2090,7 +2090,7 @@
         <node concept="3fqX7Q" id="61dxE2nrBZo" role="3clFbw">
           <node concept="2YIFZM" id="61dxE2nrBZp" role="3fr31v">
             <ref role="1Pybhc" to="5wt7:61dxE2nhiBP" resolve="TransitionEffects" />
-            <ref role="37wK5l" to="5wt7:61dxE2nrA4E" resolve="supportedActionSyntax" />
+            <ref role="37wK5l" to="5wt7:3$z5ynSM7pI" resolve="supportedActionSyntax" />
             <node concept="1YBJjd" id="61dxE2nrBZq" role="37wK5m">
               <ref role="1YBMHb" node="61dxE2nrBZh" resolve="node" />
             </node>

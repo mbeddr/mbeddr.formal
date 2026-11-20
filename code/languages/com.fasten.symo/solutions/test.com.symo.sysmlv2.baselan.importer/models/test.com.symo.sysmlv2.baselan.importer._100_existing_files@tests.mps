@@ -4943,7 +4943,7 @@
               <ref role="3cqZAo" node="j1yGxNQB_8" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQB_D" role="37vLTx">
-              <property role="Xl_RC" value="    for item in items {\n" />
+              <property role="Xl_RC" value="    for elem in items {\n" />
             </node>
           </node>
         </node>
@@ -5815,7 +5815,7 @@
               <ref role="3cqZAo" node="j1yGxNQBEX" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQBFa" role="37vLTx">
-              <property role="Xl_RC" value="    exhibit parallel state running {\n" />
+              <property role="Xl_RC" value="    exhibit state running parallel {\n" />
             </node>
           </node>
         </node>
