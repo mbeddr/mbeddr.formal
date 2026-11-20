@@ -3474,5 +3474,58 @@
       <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
     </node>
   </node>
+  <node concept="1TIwiD" id="4K3gUKPg0t2">
+    <property role="EcuMT" value="5477295978719479618" />
+    <property role="TrG5h" value="SysMLv2Dependency" />
+    <property role="34LRSv" value="dependency" />
+    <property role="R4oN_" value="SysML v2 dependency: dependency &lt;short&gt; Name from A, B to C, D;" />
+    <property role="3GE5qa" value="package" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4K3gUKPg0t3" role="1TKVEi">
+      <property role="IQ2ns" value="5477295978719479619" />
+      <property role="20kJfa" value="sources" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+    </node>
+    <node concept="1TJgyj" id="4K3gUKPg0t4" role="1TKVEi">
+      <property role="IQ2ns" value="5477295978719479620" />
+      <property role="20kJfa" value="targets" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+    </node>
+    <node concept="1TJgyj" id="4K3gUKPg0t5" role="1TKVEi">
+      <property role="IQ2ns" value="5477295978719479621" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7PctyxXA185" resolve="ISysMLv2AnnotationContent" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0t6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0t7" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0t8" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0t9" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0ta" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0tb" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0tc" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="4K3gUKPg0td" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+  </node>
 </model>
 

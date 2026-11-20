@@ -9075,7 +9075,7 @@
               <ref role="3cqZAo" node="4K3gUKP1fC9" resolve="content" />
             </node>
             <node concept="Xl_RD" id="4K3gUKP1fCq" role="37vLTx">
-              <property role="Xl_RC" value="    attribute :&gt;&gt; featureRepresentation :&gt; ColRep::declaredName;\n" />
+              <property role="Xl_RC" value="    attribute :&gt; ColRep::declaredName :&gt;&gt; featureRepresentation;\n" />
             </node>
           </node>
         </node>

@@ -330,6 +330,10 @@
       <concept id="6939350625132162848" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionEffectMembership" flags="ng" index="3QFEA0">
         <child id="6939350625132162850" name="action" index="3QFEA2" />
       </concept>
+      <concept id="5477295978719479618" name="com.symo.sysmlv2.baselan.structure.SysMLv2Dependency" flags="ng" index="1TgOjI">
+        <child id="5477295978719479620" name="targets" index="1TgOjC" />
+        <child id="5477295978719479619" name="sources" index="1TgOjJ" />
+      </concept>
       <concept id="7406476705817406954" name="com.symo.sysmlv2.baselan.structure.SysMLv2FramedConcernUsage" flags="ng" index="3TIFES">
         <child id="7406476705817406959" name="referenced" index="3TIFEX" />
       </concept>
@@ -4622,6 +4626,41 @@
               <property role="3bnkR9" value="commandPort" />
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="5PKUUe1tjP1">
+    <property role="TrG5h" value="_990_dependencies" />
+    <node concept="3Z9vzX" id="5PKUUe1tjP2" role="2h0jOs">
+      <property role="TrG5h" value="Layers" />
+      <node concept="3Z9vzX" id="5PKUUe1tjP3" role="3Z9vGx">
+        <property role="TrG5h" value="Application" />
+      </node>
+      <node concept="3Z9vzX" id="5PKUUe1tjP4" role="3Z9vGx">
+        <property role="TrG5h" value="Services" />
+      </node>
+      <node concept="3Z9vzX" id="5PKUUe1tjP5" role="3Z9vGx">
+        <property role="TrG5h" value="Platform" />
+      </node>
+      <node concept="1TgOjI" id="5PKUUe1tjP6" role="3Z9vGx">
+        <node concept="AsIwX" id="5PKUUe1tjP7" role="1TgOjJ">
+          <property role="AsIwZ" value="Application" />
+        </node>
+        <node concept="AsIwX" id="5PKUUe1tjP8" role="1TgOjC">
+          <property role="AsIwZ" value="Services" />
+        </node>
+      </node>
+      <node concept="1TgOjI" id="5PKUUe1tjP9" role="3Z9vGx">
+        <property role="TrG5h" value="usesPlatform" />
+        <node concept="AsIwX" id="5PKUUe1tjPa" role="1TgOjJ">
+          <property role="AsIwZ" value="Application" />
+        </node>
+        <node concept="AsIwX" id="5PKUUe1tjPb" role="1TgOjJ">
+          <property role="AsIwZ" value="Services" />
+        </node>
+        <node concept="AsIwX" id="5PKUUe1tjPc" role="1TgOjC">
+          <property role="AsIwZ" value="Platform" />
         </node>
       </node>
     </node>
