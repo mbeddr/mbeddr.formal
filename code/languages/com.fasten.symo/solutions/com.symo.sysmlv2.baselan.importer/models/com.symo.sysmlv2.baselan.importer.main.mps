@@ -20088,26 +20088,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7JKstLNi71r" role="3cqZAp">
-          <node concept="3clFbC" id="7JKstLNi71s" role="3clFbw">
-            <node concept="37vLTw" id="7JKstLNi71t" role="3uHU7B">
-              <ref role="3cqZAo" node="7JKstLNi71n" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="7JKstLNi71u" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="7JKstLNi71w" role="3clFbx">
-            <node concept="YS8fn" id="7JKstLNi71z" role="3cqZAp">
-              <node concept="2ShNRf" id="7JKstLNi91J" role="YScLw">
-                <node concept="1pGfFk" id="7JKstLNi97U" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="7JKstLNi97V" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous part definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="7JKstLNi71I" role="3cqZAp">
           <node concept="3cpWsn" id="7JKstLNi71H" role="3cpWs9">
             <property role="TrG5h" value="body" />
@@ -22787,27 +22767,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6coPuU2Vj9j" role="3cqZAp">
-          <node concept="3clFbC" id="6coPuU2Vj9m" role="3clFbw">
-            <node concept="37vLTw" id="6coPuU2Vj9p" role="3uHU7B">
-              <ref role="3cqZAo" node="6coPuU2Vj9b" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="6coPuU2Vj9q" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="6coPuU2Vj9r" role="3clFbx">
-            <node concept="YS8fn" id="6coPuU2Vj9s" role="3cqZAp">
-              <node concept="2ShNRf" id="6coPuU2Vj9u" role="YScLw">
-                <node concept="1pGfFk" id="6coPuU2Vj9w" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="6coPuU2Vj9x" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous port definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="6coPuU2Vj9P" role="3cqZAp">
           <node concept="3cpWsn" id="6coPuU2Vj9S" role="3cpWs9">
             <property role="TrG5h" value="body" />
@@ -24091,27 +24050,6 @@
             </node>
             <node concept="3uibUv" id="6coPuU37xoi" role="1tU5fm">
               <ref role="3uigEE" to="guqe:~SysMLv2Parser$IdentificationContext" resolve="SysMLv2Parser.IdentificationContext" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="6coPuU37xoj" role="3cqZAp">
-          <node concept="3clFbC" id="6coPuU37xom" role="3clFbw">
-            <node concept="37vLTw" id="6coPuU37xop" role="3uHU7B">
-              <ref role="3cqZAo" node="6coPuU37xob" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="6coPuU37xoq" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="6coPuU37xor" role="3clFbx">
-            <node concept="YS8fn" id="6coPuU37xos" role="3cqZAp">
-              <node concept="2ShNRf" id="6coPuU37xou" role="YScLw">
-                <node concept="1pGfFk" id="6coPuU37xow" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="6coPuU37xox" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous item definition" />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -28354,26 +28292,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="2d_6cEDG2a8" role="3cqZAp">
-          <node concept="3clFbC" id="2d_6cEDG2a9" role="3clFbw">
-            <node concept="37vLTw" id="2d_6cEDG2aa" role="3uHU7B">
-              <ref role="3cqZAo" node="2d_6cEDG2a4" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="2d_6cEDG2ab" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="2d_6cEDG2ad" role="3clFbx">
-            <node concept="YS8fn" id="2d_6cEDG2ag" role="3cqZAp">
-              <node concept="2ShNRf" id="2d_6cEDG3VF" role="YScLw">
-                <node concept="1pGfFk" id="2d_6cEDG41Q" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="2d_6cEDG41R" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous attribute definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="2d_6cEDG2ar" role="3cqZAp">
           <node concept="3cpWsn" id="2d_6cEDG2aq" role="3cpWs9">
             <property role="TrG5h" value="body" />
@@ -28709,27 +28627,6 @@
             </node>
             <node concept="3uibUv" id="5oZmK$O0VMn" role="1tU5fm">
               <ref role="3uigEE" to="guqe:~SysMLv2Parser$IdentificationContext" resolve="SysMLv2Parser.IdentificationContext" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5oZmK$O0VMo" role="3cqZAp">
-          <node concept="3clFbC" id="5oZmK$O0VMr" role="3clFbw">
-            <node concept="37vLTw" id="5oZmK$O0VMu" role="3uHU7B">
-              <ref role="3cqZAo" node="5oZmK$O0VMg" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="5oZmK$O0VMv" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5oZmK$O0VMw" role="3clFbx">
-            <node concept="YS8fn" id="5oZmK$O0VMx" role="3cqZAp">
-              <node concept="2ShNRf" id="5oZmK$O0VMz" role="YScLw">
-                <node concept="1pGfFk" id="5oZmK$O0VM_" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5oZmK$O0VMA" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous metadata definition" />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
@@ -30045,26 +29942,6 @@
               </node>
               <node concept="liA8E" id="7PctyxXYHNx" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="7PctyxXYERY" role="3cqZAp">
-          <node concept="3clFbC" id="7PctyxXYERZ" role="3clFbw">
-            <node concept="37vLTw" id="7PctyxXYES0" role="3uHU7B">
-              <ref role="3cqZAo" node="7PctyxXYERU" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="7PctyxXYES1" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="7PctyxXYES3" role="3clFbx">
-            <node concept="YS8fn" id="7PctyxXYES6" role="3cqZAp">
-              <node concept="2ShNRf" id="7PctyxXYFmu" role="YScLw">
-                <node concept="1pGfFk" id="7PctyxXYFsD" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="7PctyxXYFsE" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous enumeration definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -33442,27 +33319,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="BOR0Mn$hYk" role="3cqZAp">
-          <node concept="3clFbC" id="BOR0Mn$hYn" role="3clFbw">
-            <node concept="37vLTw" id="BOR0Mn$hYq" role="3uHU7B">
-              <ref role="3cqZAo" node="BOR0Mn$hYc" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="BOR0Mn$hYr" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="BOR0Mn$hYs" role="3clFbx">
-            <node concept="YS8fn" id="BOR0Mn$hYt" role="3cqZAp">
-              <node concept="2ShNRf" id="BOR0Mn$hYv" role="YScLw">
-                <node concept="1pGfFk" id="BOR0Mn$hYx" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="BOR0Mn$hYy" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous connection definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="BOR0Mn$hYQ" role="3cqZAp">
           <node concept="3cpWsn" id="BOR0Mn$hYT" role="3cpWs9">
             <property role="OYnhT" value="local variable" />
@@ -34618,26 +34474,6 @@
               </node>
               <node concept="liA8E" id="3MUZSeGhtjf" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3MUZSeGhcy4" role="3cqZAp">
-          <node concept="3clFbC" id="3MUZSeGhcy5" role="3clFbw">
-            <node concept="37vLTw" id="3MUZSeGhcy6" role="3uHU7B">
-              <ref role="3cqZAo" node="3MUZSeGhcy0" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="3MUZSeGhcy7" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="3MUZSeGhcy9" role="3clFbx">
-            <node concept="YS8fn" id="3MUZSeGhcyc" role="3cqZAp">
-              <node concept="2ShNRf" id="3MUZSeGhdRQ" role="YScLw">
-                <node concept="1pGfFk" id="3MUZSeGhdY1" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="3MUZSeGhdY2" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous interface definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -36832,26 +36668,6 @@
               </node>
               <node concept="liA8E" id="3MUZSeHr$$a" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3MUZSeHrkVu" role="3cqZAp">
-          <node concept="3clFbC" id="3MUZSeHrkVv" role="3clFbw">
-            <node concept="37vLTw" id="3MUZSeHrkVw" role="3uHU7B">
-              <ref role="3cqZAo" node="3MUZSeHrkVq" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="3MUZSeHrkVx" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="3MUZSeHrkVz" role="3clFbx">
-            <node concept="YS8fn" id="3MUZSeHrkVA" role="3cqZAp">
-              <node concept="2ShNRf" id="3MUZSeHrmuS" role="YScLw">
-                <node concept="1pGfFk" id="3MUZSeHrm_3" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="3MUZSeHrm_4" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous flow definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -40671,31 +40487,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5wFVtxv4Dg9" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxv4Dga" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxv4FQc" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxv4F3X" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxv4Dg5" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxv4FQd" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxv4Dgc" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxv4Dge" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxv4Dgh" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxv4F3Z" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxv4Faa" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxv4Fab" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous action definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5wFVtxv4Dgj" role="3cqZAp">
           <node concept="3cpWsn" id="5wFVtxv4Dgi" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -40824,31 +40615,6 @@
               </node>
               <node concept="liA8E" id="5wFVtxvc6jo" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$StateDefinitionContext.definitionDeclaration()" resolve="definitionDeclaration" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5wFVtxvc33R" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxvc33S" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxvc6jz" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxvc4RY" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxvc33N" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxvc6j$" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxvc33U" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxvc33W" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxvc33Z" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxvc4S0" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxvc4Yb" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxvc4Yc" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous state definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -49951,26 +49717,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5wFVtxtpHXP" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxtpHXQ" role="3clFbw">
-            <node concept="37vLTw" id="5wFVtxtpHXR" role="3uHU7B">
-              <ref role="3cqZAo" node="5wFVtxtpHXL" resolve="id" />
-            </node>
-            <node concept="10Nm6u" id="5wFVtxtpHXS" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxtpHXU" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxtpHXX" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxtpNWe" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxtpO2p" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxtpO2q" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous calculation definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5wFVtxtpHXZ" role="3cqZAp">
           <node concept="3cpWsn" id="5wFVtxtpHXY" role="3cpWs9">
             <property role="TrG5h" value="cd" />
@@ -50290,31 +50036,6 @@
               </node>
               <node concept="liA8E" id="5wFVtxvjALb" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConstraintDefinitionContext.definitionDeclaration()" resolve="definitionDeclaration" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5wFVtxvjzjf" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxvjzjg" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxvjALm" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxvj_7v" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxvjzjb" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxvjALn" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxvjzji" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxvjzjk" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxvjzjn" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxvj_7x" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxvj_dG" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxvj_dH" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous constraint definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -53150,31 +52871,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5wFVtxvr8XX" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxvr8XY" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxvraSy" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxvrakO" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxvr8XT" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxvraSz" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxvr8Y0" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxvr8Y2" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxvr8Y5" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxvrakQ" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxvrar1" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxvrar2" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous requirement definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5wFVtxvr8Y7" role="3cqZAp">
           <node concept="3cpWsn" id="5wFVtxvr8Y6" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -53281,31 +52977,6 @@
               </node>
               <node concept="liA8E" id="5wFVtxvyKDH" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConcernDefinitionContext.definitionDeclaration()" resolve="definitionDeclaration" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5wFVtxvyIJj" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxvyIJk" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxvyKDS" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxvyK6a" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxvyIJf" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxvyKDT" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxvyIJm" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxvyIJo" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxvyIJr" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxvyK6c" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxvyKcn" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxvyKco" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous concern definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -53420,31 +53091,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5wFVtxvElX1" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxvElX2" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxvEnRA" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxvEnjS" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxvElWX" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxvEnRB" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxvElX4" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxvElX6" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxvElX9" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxvEnjU" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxvEnq5" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxvEnq6" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous viewpoint definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5wFVtxvElXb" role="3cqZAp">
           <node concept="3cpWsn" id="5wFVtxvElXa" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -53551,31 +53197,6 @@
               </node>
               <node concept="liA8E" id="5wFVtxvM26$" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$CaseDefinitionContext.definitionDeclaration()" resolve="definitionDeclaration" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5wFVtxvM0ca" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxvM0cb" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxvM26J" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxvM1z1" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxvM0c6" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxvM26K" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxvM0cd" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxvM0cf" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxvM0ci" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxvM1z3" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxvM1De" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxvM1Df" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous case definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -53690,31 +53311,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5wFVtxvTH5r" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxvTH5s" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxvTJ00" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxvTIsi" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxvTH5n" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxvTJ01" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxvTH5u" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxvTH5w" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxvTH5z" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxvTIsk" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxvTIyv" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxvTIyw" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous analysis case definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5wFVtxvTH5_" role="3cqZAp">
           <node concept="3cpWsn" id="5wFVtxvTH5$" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -53821,31 +53417,6 @@
               </node>
               <node concept="liA8E" id="5wFVtxw1uqn" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$VerificationCaseDefinitionContext.definitionDeclaration()" resolve="definitionDeclaration" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5wFVtxw1svX" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxw1svY" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxw1uqy" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxw1tQO" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxw1svT" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxw1uqz" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxw1sw0" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxw1sw2" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxw1sw5" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxw1tQQ" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxw1tX1" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxw1tX2" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous verification case definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -53960,31 +53531,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5wFVtxw9dNC" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxw9dND" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxw9fId" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxw9fav" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxw9dN$" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxw9fIe" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxw9dNF" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxw9dNH" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxw9dNK" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxw9fax" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxw9fgG" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxw9fgH" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous use case definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5wFVtxw9dNM" role="3cqZAp">
           <node concept="3cpWsn" id="5wFVtxw9dNL" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -54091,31 +53637,6 @@
               </node>
               <node concept="liA8E" id="5wFVtxwh4Dz" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$ViewDefinitionContext.definitionDeclaration()" resolve="definitionDeclaration" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5wFVtxwh1IX" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxwh1IY" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxwh4DI" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxwh3yT" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxwh1IT" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxwh4DJ" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxwh1J0" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxwh1J2" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxwh1J5" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxwh3yV" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxwh3D6" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxwh3D7" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous view definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -54341,31 +53862,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5wFVtxwoY3G" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxwoY3H" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxwoZYx" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxwoZqF" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxwoY3B" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxwoZYy" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxwoY3J" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxwoY3L" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxwoY3O" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxwoZqH" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxwoZwS" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxwoZwT" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous rendering definition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5wFVtxwoY3Q" role="3cqZAp">
           <node concept="3cpWsn" id="5wFVtxwoY3P" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -54479,31 +53975,6 @@
               </node>
               <node concept="liA8E" id="5wFVtxwwYiB" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionContext.definitionDeclaration()" resolve="definitionDeclaration" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="5wFVtxwwVG4" role="3cqZAp">
-          <node concept="3clFbC" id="5wFVtxwwVG5" role="3clFbw">
-            <node concept="2OqwBi" id="5wFVtxwwXAT" role="3uHU7B">
-              <node concept="37vLTw" id="5wFVtxwwX33" role="2Oq$k0">
-                <ref role="3cqZAo" node="5wFVtxwwVFZ" resolve="decl" />
-              </node>
-              <node concept="liA8E" id="5wFVtxwwXAU" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext.identification()" resolve="identification" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5wFVtxwwVG7" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5wFVtxwwVG9" role="3clFbx">
-            <node concept="YS8fn" id="5wFVtxwwVGc" role="3cqZAp">
-              <node concept="2ShNRf" id="5wFVtxwwX35" role="YScLw">
-                <node concept="1pGfFk" id="5wFVtxwwX9g" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5wFVtxwwX9h" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: anonymous allocation definition" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
