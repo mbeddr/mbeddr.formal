@@ -33,7 +33,6 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="85xj" ref="r:c54e8620-02ce-447b-add3-cc9dc7547dc1(com.symo.plantuml.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2092,8 +2091,7 @@
       <node concept="3EZMnI" id="q$1bLSwbNz" role="AHCbl">
         <node concept="3EZMnI" id="q$1bLSwc5c" role="3EZMnx">
           <node concept="PMmxH" id="q$1bLSwc5d" role="3EZMnx">
-            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-            <ref role="1k5W1q" to="85xj:1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+            <ref role="PMmxG" to="1ks0:1HEyn0wQUUO" resolve="mpsbasicsAlias" />
           </node>
           <node concept="3F0A7n" id="q$1bLSwc5e" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -2664,7 +2662,7 @@
     <ref role="1XX52x" to="oqaz:3IM8gFIC1BL" resolve="MermaidPieStart" />
     <node concept="3F0ifn" id="3IM8gFICemV" role="2wV5jI">
       <property role="3F0ifm" value="pie" />
-      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
   <node concept="24kQdi" id="3IM8gFICemW">
@@ -2674,7 +2672,7 @@
     <node concept="3EZMnI" id="3IM8gFICemY" role="2wV5jI">
       <node concept="3F0ifn" id="3IM8gFICemZ" role="3EZMnx">
         <property role="3F0ifm" value="title" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0A7n" id="3IM8gFICen0" role="3EZMnx">
         <ref role="1NtTu8" to="oqaz:3IM8gFIC1BP" resolve="text" />
@@ -2709,7 +2707,7 @@
     <node concept="3EZMnI" id="3IM8gFIDfsm" role="2wV5jI">
       <node concept="3F0ifn" id="3IM8gFIDfsn" role="3EZMnx">
         <property role="3F0ifm" value="flowchart" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0A7n" id="3IM8gFIDfso" role="3EZMnx">
         <ref role="1NtTu8" to="oqaz:3IM8gFID1YF" resolve="direction" />
@@ -2810,7 +2808,7 @@
       <node concept="3EZMnI" id="3IM8gFIJtCo" role="3EZMnx">
         <node concept="3F0ifn" id="3IM8gFIJtCp" role="3EZMnx">
           <property role="3F0ifm" value="subgraph " />
-          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0A7n" id="3IM8gFIJtCq" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -2837,7 +2835,7 @@
       </node>
       <node concept="3F0ifn" id="3IM8gFIJtC_" role="3EZMnx">
         <property role="3F0ifm" value="end" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="2iRkQZ" id="3IM8gFIJtCA" role="2iSdaV" />
     </node>
@@ -2848,7 +2846,7 @@
     <ref role="1XX52x" to="oqaz:3IM8gFIN6qy" resolve="MermaidClassDiagramStart" />
     <node concept="3F0ifn" id="3IM8gFIO$ed" role="2wV5jI">
       <property role="3F0ifm" value="classDiagram" />
-      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
   <node concept="24kQdi" id="3IM8gFIO$ee">
@@ -2860,7 +2858,7 @@
         <node concept="2iRfu4" id="3IM8gFIQuid" role="2iSdaV" />
         <node concept="3F0ifn" id="3IM8gFIO$eh" role="3EZMnx">
           <property role="3F0ifm" value="class " />
-          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0A7n" id="3IM8gFIO$ei" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -3033,12 +3031,12 @@
     <node concept="3EZMnI" id="3IM8gFJ8L4V" role="2wV5jI">
       <node concept="3F0ifn" id="3IM8gFJ8L4W" role="3EZMnx">
         <property role="3F0ifm" value="note " />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3EZMnI" id="3IM8gFJ8Qsr" role="3EZMnx">
         <node concept="3F0ifn" id="3IM8gFJ8Qss" role="3EZMnx">
           <property role="3F0ifm" value="for " />
-          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="1iCGBv" id="3IM8gFJ8Qst" role="3EZMnx">
           <ref role="1NtTu8" to="oqaz:3IM8gFJ65dH" resolve="for" />
@@ -3084,7 +3082,7 @@
     <ref role="1XX52x" to="oqaz:3IM8gFJagwB" resolve="MermaidSequenceDiagramStart" />
     <node concept="3F0ifn" id="3IM8gFJbEye" role="2wV5jI">
       <property role="3F0ifm" value="sequenceDiagram" />
-      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
   <node concept="24kQdi" id="3IM8gFJbEyf">
@@ -3202,11 +3200,11 @@
       <node concept="2iRfu4" id="3IM8gFJk_Ql" role="2iSdaV" />
       <node concept="3F0ifn" id="3IM8gFJk_Qm" role="3EZMnx">
         <property role="3F0ifm" value="Note " />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0A7n" id="3IM8gFJk_Qn" role="3EZMnx">
         <ref role="1NtTu8" to="oqaz:3IM8gFJkzea" resolve="position" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="3IM8gFJk_Qo" role="3EZMnx">
         <property role="3F0ifm" value=" " />
@@ -3254,7 +3252,7 @@
         <node concept="2iRfu4" id="3IM8gFJpeep" role="2iSdaV" />
         <node concept="3F0A7n" id="3IM8gFJpeeq" role="3EZMnx">
           <ref role="1NtTu8" to="oqaz:3IM8gFJm7Or" resolve="kind" />
-          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="3F0ifn" id="3IM8gFJpeer" role="3EZMnx">
           <property role="3F0ifm" value=" " />
@@ -3280,7 +3278,7 @@
       </node>
       <node concept="3F0ifn" id="3IM8gFJpeev" role="3EZMnx">
         <property role="3F0ifm" value="end" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
     </node>
   </node>
@@ -3291,7 +3289,7 @@
       <node concept="3EZMnI" id="3IM8gFJu6Bh" role="3EZMnx">
         <node concept="2iRfu4" id="3IM8gFJu6Bi" role="2iSdaV" />
         <node concept="1HlG4h" id="3IM8gFJu6Bj" role="3EZMnx">
-          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
           <node concept="1HfYo3" id="3IM8gFJu6Bn" role="1HlULh">
             <node concept="3TQlhw" id="3IM8gFJu6Bq" role="1Hhtcw">
               <node concept="3clFbS" id="3IM8gFJu6Bs" role="2VODD2">
@@ -3480,7 +3478,7 @@
       </node>
       <node concept="3F0ifn" id="3IM8gFJu6E3" role="3EZMnx">
         <property role="3F0ifm" value="end" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
     </node>
   </node>
@@ -3528,7 +3526,7 @@
         <property role="3F0ifm" value=" " />
       </node>
       <node concept="3F1sOY" id="3IM8gFJLvjW" role="3EZMnx">
-        <ref role="1NtTu8" to="oqaz:3IM8gFJJOVU" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFJJOVU" resolve="participant" />
       </node>
     </node>
   </node>

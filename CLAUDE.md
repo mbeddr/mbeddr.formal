@@ -145,3 +145,12 @@ directory. DSL-specific skills (via `mps-dsl-memory`) are the one documented exc
 the root (`.claude/skills/<dsl-name>-dsl/` / `.agents/skills/<dsl-name>-dsl/`) per the existing
 "Project-Local DSL Skills" section above — JetBrains' own tooling discovers them there by name, not
 by directory nesting.
+
+**Project-specific agents.** Per ADR 0005, an agent specific to one project's domain keeps its
+full definition (role, references, method, output format) in that project's own
+`docs/agents/<agent-name>.md`. Claude Code only discovers agents in the root `.claude/agents/`, so
+each one also has a thin registered stub there (frontmatter with the `tools:` allowlist, body = "read
+the project file and follow it"). Edit behavior in the project file, never in the stub. Current:
+`sysmlv2-fidelity-auditor` (definition in `code/languages/com.fasten.symo/docs/agents/`) — audits
+the sysmlv2/KerML baselan against the OMG standard (meta-model, scoping/constraints, editors).
+Invoke explicitly. Generic cross-project agents (e.g. `repo-hygienist`) stay fully in the root file.

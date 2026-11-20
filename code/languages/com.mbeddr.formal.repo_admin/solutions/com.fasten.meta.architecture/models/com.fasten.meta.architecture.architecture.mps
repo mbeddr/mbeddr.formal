@@ -1215,6 +1215,61 @@
           </node>
         </node>
       </node>
+      <node concept="mXAGQ" id="3MUZSeJsNda" role="mXAiC">
+        <property role="TrG5h" value="kerml_lancomp" />
+        <node concept="mXA1B" id="3MUZSeJsNdb" role="mXAiC">
+          <node concept="mXAj4" id="3MUZSeJsNdc" role="mXvOw">
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
+          </node>
+        </node>
+        <node concept="mXxR0" id="3MUZSeJsNdh" role="mXAiC">
+          <property role="Z2I3b" value="kerml.baselan" />
+          <node concept="37shsh" id="3MUZSeJsNdi" role="mXxR3">
+            <node concept="1dCxOk" id="3MUZSeJsNdu" role="37shsm">
+              <property role="1XweGW" value="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" />
+              <property role="1XxBO9" value="com.symo.kerml.baselan" />
+            </node>
+          </node>
+        </node>
+        <node concept="mXxR0" id="3MUZSeJsNdC" role="mXAiC">
+          <property role="Z2I3b" value="kerml.baselan.importer" />
+          <node concept="37shsh" id="3MUZSeJsNdD" role="mXxR3">
+            <node concept="1dCxOk" id="3MUZSeJsNdM" role="37shsm">
+              <property role="1XweGW" value="05437b45-7a02-4019-ad67-5232d810cfba" />
+              <property role="1XxBO9" value="com.symo.kerml.baselan.importer" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="mXAGQ" id="3MUZSeJsNdQ" role="mXAiC">
+        <property role="TrG5h" value="sysmlv2_lancomp" />
+        <node concept="mXA1B" id="3MUZSeJsNdR" role="mXAiC">
+          <node concept="mXAj4" id="3MUZSeJsNdS" role="mXvOw">
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
+          </node>
+          <node concept="mXAj4" id="3MUZSeJsNdT" role="mXvOw">
+            <ref role="mXAj7" node="3MUZSeJsNda" resolve="kerml_lancomp" />
+          </node>
+        </node>
+        <node concept="mXxR0" id="3MUZSeJsNdU" role="mXAiC">
+          <property role="Z2I3b" value="sysmlv2.baselan" />
+          <node concept="37shsh" id="3MUZSeJsNdV" role="mXxR3">
+            <node concept="1dCxOk" id="3MUZSeJsNdW" role="37shsm">
+              <property role="1XweGW" value="df90562e-2282-4284-81c0-42a7e5d43d37" />
+              <property role="1XxBO9" value="com.symo.sysmlv2.baselan" />
+            </node>
+          </node>
+        </node>
+        <node concept="mXxR0" id="3MUZSeJsNdX" role="mXAiC">
+          <property role="Z2I3b" value="sysmlv2.baselan.importer" />
+          <node concept="37shsh" id="3MUZSeJsNdY" role="mXxR3">
+            <node concept="1dCxOk" id="3MUZSeJsNdZ" role="37shsm">
+              <property role="1XweGW" value="e62ef9c8-3912-4804-90f3-0907cb700273" />
+              <property role="1XxBO9" value="com.symo.sysmlv2.baselan.importer" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="mXAGQ" id="7k4FpArLGGj" role="mXAGU">
       <property role="TrG5h" value="fasten_base_languages" />

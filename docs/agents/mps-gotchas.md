@@ -9,6 +9,1797 @@ stays centralized even though project-local `docs/adr/` and `docs/agents/TODO.md
 knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-project-specific-knowledge-in-project-directories.md)
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
+Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
+[mps-mcp-recipes.md](mps-mcp-recipes.md).
+
+## A temporary model sees no accessory (library) models (2026-11-19)
+
+A model created with `TemporaryModels.getInstance().createEditable(false, TempModuleOptions.forDefaultModule())`
+uses no languages. A language's accessory models are visible only to models that use that language. In a temp
+model, a name that points into a library accessory model (e.g. `ScalarValues::Boolean` from
+`sysmlv2.baselan`'s `system_model_library`) therefore stays unresolved. Nothing reports this: the test just
+sees `null`. Real user models use the language, so they resolve the name. Add the language to the temp model
+before resolving: `new ModelImports(tmp).addUsedLanguage(language/<lang>/)`. In the `sysmlv2.baselan`
+importer tests, use `TestUtils.parseFileIntoSysMLModel` for this. A console probe that imports the same text
+twice, without and then with the used language, shows the difference in one run.
+
+## Utility methods for a NodesTestCase via a real class; tests run a stale importer (2026-11-18)
+
+- `parse_java_and_insert` with `featureKind: METHOD` rejects a `NodesTestCase` as `contextNodeRef`
+  (it is not a Classifier), and the test's `methods` role expects
+  `DefaultClassifierMethodDeclaration`, not the `InstanceMethodDeclaration` the parser makes. What
+  worked: parse the method into any real class root (FQN types, e.g.
+  `org.jetbrains.mps.openapi.model.SNode`), `print_node` it deep, change the root `concept` to
+  `jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierMethodDeclaration`, drop the
+  `resolveInfo` entries, `ADD CHILD` it into the test's `methods` role, then delete the temporary
+  method. References inside the copied body were repointed automatically.
+- When cloning a test blueprint, keep each node's `concept` as the FQN from its
+  `conceptReference`: a short name such as `AssertStatement` can resolve to another language's
+  concept and fail with "Unknown child role".
+- Importer tests run the importer solution's compiled classes. After a behavior change in the
+  language, MAKE the importer solution and the test module too, or the test runs the old code (here:
+  3 targets found instead of 5, with nothing pointing at a stale build).
+- A test that mutates an imported model (e.g. to run a migration helper on it) must wrap the
+  mutation in `ApplicationManager.getApplication().invokeAndWait(closure { command with
+  project.getRepository() { ... } })`, as `TestUtils.parseFileIntoModel` does.
+
+## Rebuilding a big language over MCP after its MAKE timed out (2026-11-17, evening)
+
+Generated behavior method names carry the node id (`hasAllocationKeyword_id6p3Mfvy3Gw9`), and Java
+compiles a whole module at once. So after a behavior method is re-created (new id), a MAKE of only
+the behavior model fails: the editor/textGen classes generated earlier still call the old name.
+Making behavior + editor + textGen together is correct but times out on the MCP side for a big
+editor model (e.g. `com.symo.sysmlv2.baselan`). The timeout cancels the make only after generation
+has written `source_gen`: the log says "No input. Skipping optional target ... reloadClasses", so
+nothing was compiled. A second, small MAKE (here: only the behavior model) then compiles the whole
+module against the already regenerated sources and succeeds within the MCP time limit. No UI
+rebuild needed.
+
+## Large editor TextGen can be dominated by anonymous-class names for debug information (2026-11-17)
+
+A JFR recording of a successful SysML editor rebuild (about 50 s) found
+`AnonymousClass.getJavaName/getIndexInContainingClass` in about 94% of sampled
+TextGen stacks and 56% of all execution samples. `AnonymousClass_TextGen` calls
+`getUnitName` when `TextGenSupport.needPositions()` is true; this is part of
+building debug/source positions. The index implementation repeatedly collects
+anonymous-class descendants of the enclosing classifier and filters by nearest
+classifier ancestor, including repeated work for enclosing anonymous classes.
+Removing tuple lowering alone does not address this cost. Investigate scoped
+index caching or traversal that prunes nested classifiers, and/or reduce the
+anonymous classes emitted by grammar-cells. Keep source-position/debug mapping
+semantics when optimizing. Detailed generation tracing was also enabled at level
+3 during these measurements; compare normal builds with tracing off before
+claiming an end-user rebuild speedup. Debug information and performance tracing
+are separate settings.
+
+## A short-name component inside an outer grammar.optional passes checks but fails generation (2026-11-17)
+
+Replacing the inline `< declaredShortName >` optional section with
+`ISysMLv2IdentifierNameConcept_ShortName` works at the model-checking level, but
+fails generation when that section is inside another grammar `OptionalCell`.
+Confirmed in the nine AssignActionUsage, WhileLoopUsage, SatisfyRequirementUsage,
+PerformActionUsage, ExhibitStateUsage, IncludeUseCaseUsage,
+RequirementVerificationUsage, FramedConcernUsage, and RequirementConstraintUsage
+editors. Generation reports `Content of optional cell is not supported` on the
+outer optional cells. The generation plan puts `mc02_inlineComponents` before
+optional-cell preprocessing and reduction, so this is not explained by simply
+running inlining too late. `template_inlineEditorComponent` emits a custom-factory
+wrapper; optional-content inference through that wrapper needs investigation.
+Do not assume component inlining makes this nesting supported. Keep these
+sections inline until the grammar-cells generator supports
+the case, and verify component refactorings with MAKE, not only root checks.
+
+## Clearing a reference; `SNodeTypeCastExpression` needs `conceptArgument`; a harmless make warning (2026-11-17, later)
+
+- **Clear a reference with `update_node SET REFERENCE` and an explicit `null` target**
+  (`references: [[nodeRef, "role", null]]`). `DELETE` is rejected ("Valid operations: ADD, SET").
+- **A smodel cast `x:Concept` needs a `conceptArgument` child** (`RefConcept_Reference`, reference
+  `conceptDeclaration`). A cast built with the deprecated `concept` *reference* instead fails the check
+  with "No child in the obligatory role 'conceptArgument'" and prints as
+  `x:<no conceptArgument> ( deprecated parts : … )`. Add the child, then clear `concept` (see above).
+- **"Generator language is applied to a model … not from generator module (actual module is …), aborted"**
+  appears as a WARNING on a model-scoped MAKE that includes a `@tests` model. The test model is still
+  regenerated (checked in `source_gen`), so the warning can be ignored. Mutation checks of importer code
+  therefore need no user rebuild: mutate, MAKE `{"models":[<importer model>]}`, run the suite, restore
+  the saved `print_node deep` JSON with `SET CHILD`, then MAKE again.
+
+## A timed-out MAKE is cancelled; grammar-cell editors live in `_EditorBuilder_a.java`; trace.info spans (2026-11-17)
+
+- **A module MAKE that hits the MCP timeout is now cancelled, not left running.** The IDE log shows
+  "The make session was still open 10 s after the make was cancelled". For a large language (baselan)
+  the result is `source_gen` regenerated but `classes_gen` stale (the compile step never ran), and the
+  next make warns "Module … from dependencies requires compilation". Workaround: make one small model
+  of the module (`{"models":["<textGen model ref>"]}`). A model-scoped make compiles the *whole*
+  module and finishes within the timeout. Check `classes_gen` timestamps against `source_gen` to
+  confirm. This supersedes the "keeps running in the background" advice below for module makes.
+  With several modules in one `modules` list (language + importer + tests), the timeout also drops
+  every module after the one still building: the log shows only "Cycle #1: [<language>]", then a
+  `JobCancellationException`. Make each dependent module in its own call afterwards (2026-11-19).
+- **Editors built with grammar cells generate `<Concept>_EditorBuilder_a.java`.** `<Concept>_Editor.java`
+  is only a stub that delegates, so its timestamp and content do not change when the editor changes.
+  Grep (or wait on) the `_EditorBuilder_a.java` file to confirm a regeneration.
+- **Mapping a generated source line back to a statement via `trace.info`:** the statement node on line
+  L is the one whose `at` span *ends* on line L (at a column > 0). A node whose span *starts* on L is
+  the previous statement's trailing whitespace or a statement nested inside a block. Picking by start
+  line replaced an inner `throw` instead of its enclosing `if`. Always `print_node` (`PLAIN TEXT`) the
+  candidate before editing it.
+
+## "Tests in 'baselan'" does not run the importer tests (2026-11-16)
+
+The `Tests in 'baselan'` run configuration covers only the `test.com.symo.sysmlv2.baselan` solution
+(about 400 tests). The importer tests in `test.com.symo.sysmlv2.baselan.importer` (`_010_smoke_test`,
+about 450 tests) are a separate solution, so a green suite run says nothing about them. After a change
+to scoping, behavior or textgen, also run the importer model:
+`create_run_configuration` with `modelReference` (not `nodeReference`, which rejects a model) creates
+`Tests in '_010_smoke_test@tests'`. The importer tests use Java `assert`, which is enabled in these
+runs (checked by a mutation that made one fail).
+
+## `print_node` is shallow unless `deep: true`; unknown parameters are ignored (2026-11-16)
+
+`print_node` with JSON format lists only the direct children's refs by default. Pass `deep: true` for
+the whole subtree, and a small `maxInlineBytes` to get it as a `/tmp/mps-node-*.json` file. Parameters it
+does not know, such as `depth` or `outputFile`, are silently ignored: no error, no file. To duplicate a
+node (e.g. a test method to vary), `alter_nodes COPY_NODE` is quicker than print-and-reinsert: it inserts
+the copy as the next sibling, then change it with `update_node`.
+
+## `insert_root_node_from_json` resolves names in context, after the insert (2026-11-16)
+
+References given only by name (`{"role":"target","target":"Camera"}`) are resolved after the root is
+inserted, through each reference's own scope. So the second segment of `Power::PowerBoard` resolves
+inside `Power`, and of several elements named `Camera` the one visible at that place is taken (checked on
+the Lesson 7 tutorial model, where `Camera` and `Battery` each exist in three packages). Insert the roots in
+dependency order (definitions first). A green model check does not prove a name bound to the intended
+element: map every segment's `targetReference` to the target's qualified path and read the list.
+
+## A migration that replaces nodes silently deletes the test annotations on them (2026-11-16)
+
+Test assertions in a `@tests` model (`ScopesTest`, `has warning`/`has error` checks) are attributes
+in the annotated node's `smodelAttribute` role. A migration script that builds a new node and removes
+the old one (here: alias `target` → `aliasedName`) drops those attributes with it. The suite then
+stays green, only with fewer tests (405 → 398). Before running such a migration, list the
+test-model nodes of the migrated concept and their attributes, or copy `smodelAttribute` children
+across in the migration. Afterwards, diff the `<START_TEST>` lines of the old and new
+`ij_run_*.log` to spot vanished tests.
+
+## A NodesTestCase cannot test cross-root scoping; large-model checks time out (2026-11-16)
+
+Each `TestNode` of a NodesTestCase is checked as if alone, so a scope that walks the model's other roots
+(e.g. `rootsIncludingImported`) does not see sibling test nodes. A test of "element of another file"
+behavior silently tests nothing; cover such behavior with a sandbox or tutorial model check instead.
+Separately, `mps_mcp_check_root_node_problems` on a whole model with many big roots (the SysML v2
+system library, 58 roots) exceeds the 30 s MCP limit. List the roots with `query_nodes FIND_INSTANCES`
+(`BaseConcept`, `rootsOnly:true`, `models` given as `r:<uuid>(<name>)` — the bare `r:<uuid>` form is
+rejected as unresolved) and check them per root with a small `maxInlineBytes`, then grep the result
+files.
+
+## Make only the changed aspect model, not the whole language (2026-11-16)
+
+A module-level `MAKE` with `rebuild:true` on a language often runs past the MCP timeout and is then
+interrupted ("Interrupted while trying to lock"). When a change touches only one aspect model, for
+example a new checking rule or helper class in the typesystem model, make just that model:
+`mps_mcp_alter_nodes` `MAKE` with `{"models":["<typesystem model ref>"]}`. It finishes in seconds and
+reloads the runtime (`runtimeReady:true`), so tests see the new rule right away. This also makes
+mutation checks cheap: break the rule, make the model, run the test, restore, make again. Structure
+changes still need the module-level rebuild described in the `mps-mcp-workflow` skill.
+
+## `update_node` has no DELETE; delete a child with SET CHILD and no `childJson` (2026-11-15)
+
+`mps_mcp_update_node` offers ADD and SET only for children. To remove a child, call `SET`/`CHILD` on it
+with `childJson` omitted. `SET`/`CHILD` on a single-valued slot replaces the old child **and its whole
+subtree**, so the old node ids are gone and anything that referenced them is orphaned. Roots are deleted
+with `mps_mcp_update_root_node_from_json` and `operation: DELETE`.
+
+## Replacing a method with `parse_java_and_insert` gives it a new id and orphans its callers (2026-11-15)
+
+Re-inserting a method (to change its body) creates a new node id. Callers that pointed at the old id
+become dangling references. After replacing, repoint every caller (check with `FIND_USAGES` before and
+`check_root_node_problems` after), or edit the method body surgically instead. The same goes for any
+rewrite of a node that others reference, for example an alternation cell that is unwrapped and rebuilt:
+its content can be equal but the node id differs, which shows up as an id-only diff in git.
+
+## `MOVE_NODE_TO_PARENT` refuses an occupied single-valued role (2026-11-15)
+
+Moving a node into a single-valued role that already holds a child fails. Detach or delete the current
+child first, then move.
+
+## `parse_java_and_insert` needs `contextNodeRef` and `role` (2026-11-15)
+
+The tool does not guess where the parsed members go. Pass `contextNodeRef` (the class or method owner)
+and the target `role`; without them the call fails or inserts nothing.
+
+## Parameter names differ per MCP tool; the error text names the right one (2026-11-15)
+
+Easy to get wrong: `query_nodes` takes everything under `parameters` (`conceptRef`, `models`,
+`propertyFilter` as `{"name":..,"value":..}`, `roots`, `detail` of `nodes`|`count`) and needs an
+`operation` such as `FIND_INSTANCES`; `get_concept_details` takes `conceptRefs`;
+`search_root_node_by_name` takes `names`; `search_concepts` takes `searchTexts`;
+`insert_root_node_from_json` takes `modelReference` and `json` (a file path for anything over about 4 KB);
+`alter_nodes MAKE` takes `parameters: {modules: [...], rebuild: true}`. A value sent under a wrong name is
+silently ignored or rejected with an "operation is required" style message. Inline `childJson` is limited
+to about 4 KB, so write bigger blueprints to a file.
+
+## `alter_nodes MAKE` times out on the first call, then reports "Another make session is already active" (2026-11-15)
+
+The first rebuild of a language often returns "The operation timed out" while the make keeps running in
+the IDE. An immediate second call answers `Another make session is already active`. Do not start more
+calls to "fix" it: wait, then call MAKE again; it returns `Make successful` once the first session
+finishes.
+
+## `model_used_language ADD` can time out (2026-11-15)
+
+Adding a used language to a model may time out although it took effect. Re-read the model's used
+languages before repeating the call.
+
+## Building the SysML v2 grammar jar needs the `gpr.*` Gradle properties (2026-11-15)
+
+`:sysmlv2-grammar:copyToMps` fails to configure without the `gpr.*` properties (GitHub packages
+credentials). When no private package has to be fetched, dummy values for them are enough. Put them on
+the command line (`-Pgpr.user=x -Pgpr.key=x`) rather than in a committed file. After a grammar change
+the jar `lib/sysmlv2-grammar.jar` is a build artifact; restoring a grammar means restoring the jar with
+`git checkout` as well.
+
+## Keep embedded DSL test strings readable in MPS (2026-11-14)
+
+`StringLiteral.value` supports literal line breaks for embedded program text.
+Writing the entire fixture with backslash-n escapes makes it display as one long
+line in the MPS editor. Use literal line breaks and normal DSL indentation for
+multiline fixtures, following the existing readable tests. Generation still emits
+valid escaped Java strings; importer and roundtrip regressions verify the content.
+Keep Java quotation-mark and backslash escapes intact when changing newline
+escapes to literal line breaks; unescaping the entire value also removes required
+quote escapes and produces `Incorrect string literal` diagnostics.
+
+`print_node` escapes string properties for display (see the entry below), so do not
+confuse that representation with the property's actual contents or copy it back
+unchanged. This matters particularly when copying or reformatting fixture strings.
+
+## Root checks and model summaries have different result shapes (2026-11-14)
+
+`check_root_node_problems` with a model and `perRoot: true` returns root summaries
+with `errors`, `warnings` and aggregated `messages`. With an individual root
+reference it returns detailed node diagnostics, even when `perRoot: true` was
+supplied. Those rows contain `problems` on nodes and on property/reference/child
+role descriptors; they have no summary `errors` count. Summing missing `errors`
+fields as zero silently misses diagnostics. Aggregate the detailed problem groups
+when checking individual roots, or use model summaries for counts.
+
+## Serialize model checks with test launches (2026-11-14)
+
+Model checks submitted while `execute_run_configuration` was launching/building
+test suites repeatedly returned `MODAL_BLOCKED` after 30 seconds. The test runs
+continued normally; source inspection between runs also succeeded. The same
+timeout can occur during a language make. A timeout here does not by itself
+establish that an IDE dialog is open or MPS is frozen. Finish the active make/test
+launch before submitting consumer or source model checks; do not issue duplicate
+builds to recover from the blocked check. Independent filesystem work can continue
+while the IDE operation runs.
+
+A whole-library check also exceeded this deadline after the test runs finished.
+Checking roots individually allowed progress and identified one slow root. For a
+large consumer model, use retained root references and check each root rather than
+repeatedly submitting the same whole-model check. If an individual root also times
+out, capture a stack dump during that check to locate the work. The `MODAL_BLOCKED`
+label covers a timeout, not just an actual modal dialog.
+
+## Console replacements and migration identifiers (2026-11-14)
+
+- Console `print_node` results can expose temporary node references prefixed with a
+  module ID (`<module-id>/r:.../<node-id>`). Using those strings as
+  `VariableReference.variableDeclaration` targets in a replacement subtree left
+  unresolved references. Passing the local variable's lexical name instead
+  (`repository`, `models`) resolved correctly. Check the current command after
+  replacement, before `run_console_command`.
+- A Java-parsed Console call to an MPS-defined helper class in a `@tests` model
+  remained an `UnknownDotCall`. Replacing its initializer with a native
+  `StaticMethodCall` wired to the actual class and method declarations worked and
+  refreshed the Console imports.
+- `run_migrations CHECK` identifies a language migration as
+  `Migration[<language-name>;<from-version>]`, not as the source script node's
+  reference. Match preflight results by owner, script name, kind and version range.
+  After adding a script, synchronize the language version before checking the
+  script; otherwise the expected version mismatch is reported as an error.
+
+## Wayland clipboard deadlock during in-process test setup (2026-11-13)
+
+A captured JVM thread dump from MPS 2026.1.2 / JBR 25.0.4.1 reports a Java-level
+lock cycle between `AWT-EventQueue-0` and an application pooled test thread:
+
+- The EDT holds the Wayland clipboard selection lock in
+  `WLClipboard.handleClipboardOffer` and waits for the `WLClipboard` monitor in
+  `SunClipboard.lostOwnershipNow`.
+- The test thread holds the clipboard monitor in `SunClipboard.setContents` and
+  waits for the selection lock in `WLClipboard.setContentsNative`, called by
+  `BaseTransformationTest.clearSystemClipboard` during `setup`.
+
+This freezes the IDE before the test body executes. A run-configuration timeout
+does not terminate the blocked test. Capture `jcmd <mps-pid> Thread.print -l`,
+check its deadlock section, and cancel pending agent clients before restarting
+MPS. Do not launch a second suite while the first is still blocked. This is
+observed platform/runtime behavior; no runtime workaround has been established.
+
+## Specialized feature references and native migration helpers (2026-11-09)
+
+- When `Derived.content` specializes `Base.content`, concrete descendant aspects
+  must reference the most-specific declaration. A helper bound to `Base` may use
+  the base declaration. Generated Java can normalize both to the same genuine
+  storage link, so a successful build and runtime tests can coexist with source
+  scope errors. Model-check editor and text-generation aspects after reparenting.
+- Grammar Cells generates an empty-list child factory from the component's bound
+  feature target. A broadly bound base component can therefore create the wrong
+  wrapper in a descendant's specialized slot even though storage access works.
+  Use components bound to the most-specific common owner, with separate variants
+  when the typing targets differ; cover the actual typing action in editor tests.
+- The migration DSL's class scaffolding exposes a source facade rather than every
+  protected runtime method. Put reusable native transform code in an ordinary
+  BaseLanguage helper extending `MigrationScriptBase`, and call it from the DSL
+  script. `BaseScript.execute(SModule)` returns a nullable `SNode`, not `void`.
+  The runtime's `applyTransormMigration` (spelling as in the API) preserves IDs;
+  do not assign IDs manually in a wrapper-concept migration.
+- Keep old roles applicable through compatibility declarations/interfaces until
+  the normal migration pre-check and application complete. Removing those first
+  makes the pre-check reject the exact obsolete roles the migration must move.
+
+## Printed string properties are escaped display values (2026-11-09)
+
+`print_node` / `get_project_structure` escapes BaseLanguage `StringLiteral.value`
+for display. Do not pass that displayed value unchanged to `SET PROPERTY` when
+modifying a copied test string: it can double its newline escapes. For example,
+a newline escape is one backslash plus `n` in the setter's actual value
+(JSON `"\\n"`), while a printed snapshot can show it as JSON `"\\\\n"`.
+Copy unchanged statements natively; set changed literals from their intended
+source text, then inspect generated Java or run the roundtrip test.
+
+## Authoring smodel code through `update_node` (2026-11-08)
+
+- Node references must include the model name: `r:<uuid>(<model name>)/<id>`; without it the call
+  fails with `INVALID_REFERENCE`.
+- `update_node` has only `ADD` and `SET`; deletion is `SET CHILD` with `childNodeRef` and no
+  `childJson`. `alter_nodes` has no `DELETE`. `SET CHILD` with `childNodeRef` + `childJson` (inline JSON
+  or an absolute file path) replaces a subtree in place.
+- Plain Java in a behavior model cannot resolve `SNode` (dozens of type errors); write smodel code.
+- Use `Node_GetSConceptOperation` (`node.concept` is deprecated); `isSuperConceptOf` is on it.
+- JDK method references need the full target reference as printed
+  (`6354ebe7-…/java:java.lang(JDK/)/~String.equals%28java.lang.Object%29`), no `r:` prefix; the
+  parenthesis concept is `ParenthesizedExpression`.
+- A `PlainActionDefinition` is not a sub-concept of `ActionDefinition`; accept both explicitly.
+- A new structure property needs a language MAKE before behavior/editor can reference it.
+
+## Editor tests: typing a qualified name (segment chain) and constructor-created default children (2026-11-08)
+
+- A behavior `constructor` that pre-creates a child (e.g. `this.types.add new(X)`) silently blocks
+  typing into a slot whose child now needs its own sub-structure: the typed text never reaches the
+  new child's segment, and the test fails with `Different children count in role: <role> [was: 0,
+  expected: 1]` on the pre-created node. Remove the pre-created child and let the empty list's
+  `<default>` cell + the substitute menu create it.
+- `EditorTestCase` harness differs from interactive typing for `a::b`. Working sequence for a
+  two-segment name: `type "part x : pack"`, Enter (commits the segment), `type " "`, `type "::"`
+  (creates the next segment via the `section(after)` action), `type "Name"`, `invoke action
+  Complete` (`MPSActionReference` to `jetbrains.mps.ide.editor.actions` Complete), Enter. Any key
+  after a trailing space but before the committing Enter removes the uncommitted segment. The test
+  solution needs a dependency on `jetbrains.mps.ide.editor` for the Complete action.
+- `type "name"` of a keyword without a trailing space (`type "metadata"`) leaves an `EmptyLine`; the
+  concept is only substituted once a space follows.
+
+## Paste post-processors and plain-text paste (2026-11-07)
+
+- MPS has no hook for pasting plain *text*; text pasted into a cell just becomes that cell's property
+  value. A `PastePostProcessor` (actions aspect, `CopyPasteHandlers`) runs on pasted *nodes*, so it
+  can post-process a node that carries the text (e.g. resolve `A::B::C` into segments) but cannot
+  intercept the keystrokes. Back it with an intention for text that is already in the model.
+- The `mps-aspect-actions` / `mps-aspect-editor-menus-and-keymaps` skill docs name the roles wrongly:
+  the real ones are reference `concept` (not `applicableConcept`) and child `postProcessFunction`
+  (a `PastePostProcessFunction` whose `body` StatementList is *absent* until you ADD it; the pasted
+  node is `ConceptFunctionParameter_nodeToPastePostProcess`).
+- Logic shared by a paste handler and an intention belongs in a behavior method on the concept
+  (`node.resolveText()`), called from both via `Node_ConceptMethodCall`. A plain-Java helper class
+  works but forces `MetaAdapterFactory` ids instead of smodel; don't. For `String` JDK methods in a
+  JSON blueprint (e.g. `split`) use `baseMethodDeclaration` target
+  `6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)/~String.split%28java.lang.String,int%29`
+  (harvest the form via `parse_java_and_insert` with `insert.mode: console`, then `print_node`).
+- Delete an obsolete root with `update_root_node_from_json` `operation: DELETE` (`update_node` and
+  `alter_nodes` cannot delete roots).
+
+## ScopeProvider child with attributes, multi-valued links, SET/ADD shapes (2026-11-07)
+
+- `ScopeProvider.getScope(kind, child)` is NOT always handed the direct child. `Scope.parent(n)` treats a node's last `NodeAttribute` (e.g. a test label `TestNodeAnnotation`, a `ScopesTest`) as its parent, so the provider receives the ATTRIBUTE node as `child`. Symptom: the scope computed in a plain test call is right, but the real reference scope (checker "out of search scope", `ScopesTest`) falls back to the enclosing provider's scope. Fix: at the top of `getScope` climb `child` until `child.parent == this` (`while (child != null && child.parent != this) child = child.parent;`) before using siblings/containment roles.
+- A `ScopesTest` annotation tests the REAL reference scope; a `SimpleNodeTest` that calls `getScope` directly does not. Use both.
+- A failed `UPDATE_CONCEPT_CHILD`/reference with an unresolvable target can leave a half-created link stub; inspect afterwards.
+- Multi-valued child links in smodel code need `SLinkListAccess` (not `SLinkAccess`); the ArrayList creator is `ListCreatorWithInit`; a ternary breaks the typesystem of the declaring local — use `if`.
+- `update_node ADD CHILD` ignores `index` (appends). To put a statement first, replace the whole body with `SET CHILD` (`childNodeRef` = the StatementList, `childJson` = the full new body). `SET REFERENCE` takes `references: [[nodeRef, role, targetRef], ...]`; `print_node` takes `nodeReference`, `search_root_node_by_name` takes `names`, `check_root_node_problems` takes one `nodeReference`.
+- Reference-by-name in an inserted blueprint resolves while the structure is still half-built: segments 2..n of a chained name were left unresolved and had to be set by node ref afterwards.
+
+## Scopes over imported models, behavior calls in tests (2026-11-07)
+
+- Deleting a property from a concept (`update_node SET CHILD` without json on the PropertyDeclaration; `alter_structure` has no delete) leaves the old values on every instance as unknown properties: MPS keeps and re-saves them, the registry line `<property id=... name="x" index=...>` stays in each model file, and `update_node SET PROPERTY` refuses the name ("not found in concept"). Migrate data first, then clean the stale values (hundreds of "Property X does not belong to the concept" errors otherwise). What worked: a console `BLCommand` (insert with `insert_console_command_from_json`, run with `run_console_command`) looping `for (SNode n : #instances(TheConcept))`, collecting `n.getProperties()` whose `getName()` equals the old name into a list and calling `n.setProperty(p, null)` on each; the Java part was inserted with `parse_java_and_insert` (featureKind STATEMENTS, `parentRef` = the body StatementList, `role` statement; FQNs `org.jetbrains.mps.openapi.model.SNode` / `...language.SProperty` resolve) and the iterable swapped to `#instances` with `update_node SET CHILD`.
+- A scope that collects roots with `model.roots(C)` sees only the current model. Use `model.rootsIncludingImported(C)` so imported models (and accessory/library models) are visible; adding the model dependency alone does not help ("reference X is out of search scope").
+- A behavior method is called from a `NodesTestCase` with the lang.behavior `Node_ConceptMethodCall`, bound to the method's BASE declaration (e.g. the interface's abstract method). `InstanceMethodCallOperation` is out of scope there; the smodel one is deprecated.
+- `AssertStatement` by name in a test resolves to lang.typesystem's; use the full baseLanguage concept ref.
+- `alter_nodes MAKE` needs `parameters:{modules:[...]}`; top-level `modules`/`rebuild` are dropped.
+
+## Mutation checks and BaseLanguage edits through MCP (2026-11-05)
+
+- `trace.info` node ids and line numbers are unreliable for choosing which node to delete. A mutation check that deleted two nodes picked from `trace.info` removed the `isAbstract` assignments instead of the intended calls. Always `print_node` (PLAIN TEXT) the exact node before `update_node SET CHILD` without `childJson` (that deletes it).
+- `parse_java_and_insert` cannot resolve a bare `SNode` type inside a method body (it yields "Unresolved reference: SNode" and a compile error on make). Use `org.jetbrains.mps.openapi.model.SNode`, or avoid a local of that type. Always MAKE after a restore, as the type error only shows at make time.
+- `parse_java_and_insert` replace mode on a `StatementList` wipes the old list; replace a single statement node, or insert with `mode: child` and `position` to restore one.
+- `print_node` ignores `outputFile`; with a small `maxInlineBytes` it returns a temp-file path instead.
+- `COPY_NODE` of a statement inside a list inserts the copy as the next sibling; edit the copy's `StringLiteral` with `update_node SET PROPERTY` (value with `\\n` escapes) instead of building a new statement.
+- A moved/copied node that was reused in another role keeps references to the old target; repoint them (see the 2026-11-04 entry).
+- SysML test strings cannot use `in` or `out` as feature names (keywords); use `src`/`dst`.
+- `InterfaceUsage` multiplicity comes from the inherited item-usage feature, so only the editor/importer needed wiring; `FlowUsage` needed its own `multiplicity` child link.
+
+## Grammar cells, test strings, MCP timeouts (2026-11-05)
+
+- The grammar-cells generator rejects a `CellModel_Component` inside an `OptionalCell` ("Content of optional cell is not supported"); inline the component's optional cell instead.
+- `StringLiteral` values can contain backslash-n escapes or literal line breaks. For readable embedded DSL fixtures, use literal line breaks as described above; do not mistake the escaped display from `print_node` for the stored representation.
+- The MCP server can time out or disconnect under MPS load (MODAL_BLOCKED, ECONNREFUSED). After restarting MPS, reconnect with `/mcp` or restart the session. An insert that timed out may still have landed; check before retrying.
+
+## MCP mechanics: child-mode method insert, stale callers, top-level triplets, inherited-feature editors, interface on a link target (2026-11-04)
+
+- `parse_java_and_insert` with `insert: {"mode":"child","parentRef":<class root>,"role":"member"}` adds a new method; `append`/`add` are rejected. A call to a method that did not exist at parse time becomes an `UnknownInstanceMethodCall` that `FIX_REFERENCES` does not repair; insert the callee first, then re-insert (replace) the caller.
+- `update_node` takes `properties`/`references` triplets (`[[nodeRef, name, value]]`) at the top level, not inside `parameters`. A `SET REFERENCE` on an `SNodeType` uses role `concept`; a local variable's declared type is a separate `SNodeType` from the creator's, so repoint both.
+- `scaffold_editor` on a subconcept lists every inherited feature. For a thin subconcept (e.g. `assign`/`while` over `PlainActionUsage`) delete it and build the editor from a blueprint of the sibling's editor instead.
+- A child role typed with interface `X` only accepts nodes whose concept implements `X`; the importer casts with `SNodeOperations.cast` and fails at run time ("Can't cast node ... to ISysMLv2ItemBodyContent") although the model checks clean. Add the missing interface with `update_node ADD CHILD` on `implements` (`InterfaceConceptReference`, reference role `intfc`) and rebuild the language.
+- A new child role must not reuse the name of an inherited link (`value` clashed on a usage subconcept); rename it before the editor and textgen reference it.
+
+## `parse_java_and_insert` replace: don't paste generated Java; copy a helper node instead (2026-11-04)
+
+- Pasting code copied from the generated Java (`SNodeOperations.cast(..., CONCEPTS.X$ab)`, `PROPS.*`, `ListSequence.fromList(...)`) parses as plain Java and leaves dozens of unresolved nodes. Write the plain-Java form with calls to existing helper methods instead (`extractUsageName(...)`, `applyFeatureFlag(node, "isAbstract", v)`), and move every smodel operation (`node:Concept.link.add(child:Iface)`) into a small static helper made with `alter_nodes COPY_NODE` of a similar existing helper.
+- After `COPY_NODE`, rename with `update_node SET PROPERTY name`, then repoint the concept and link with `SET REFERENCE` on the copy's `RefConcept_Reference` (role `conceptDeclaration`) and `SLinkListAccess` (role `link`). Child ids of a copy are consecutive from the copy's id (print the copy once with `deep:true` to read them).
+- A replaced method gets a new node id and a fresh set of `SNode` ClassifierTypes that must be repointed (role `classifier`) each time. Edit the code once, not in several replace rounds.
+- There is no delete in `alter_nodes`/`update_node`; removing a statement means `SET CHILD` without `childJson`, or replacing the whole method.
+- Mind the helper's return type: `extractAbstractFor` returns a boolean and does not set anything, so check what a helper does before using it as a setter.
+
+## Sporadic Wayland clipboard deadlock during in-IDE test setup (2026-11-08)
+
+An observed freeze dump showed the EDT waiting for `WLClipboard` while the test
+thread held that clipboard lock and waited for an EDT-owned lock in
+`WLClipboard.setContentsNative`. The caller was
+`BaseTransformationTest.clearSystemClipboard` during JUnit setup. Inspect the
+freeze dump before attributing an interrupted run to model checking or the DSL.
+After restarting MPS, verify saved state and rerun the interrupted suite. The
+completed editor/importer/scope runs in this investigation used in-IDE testing.
+
+## Moving a containment link to a super-concept strands persisted children; `children.ofConcept` needs `.toList` (2026-11-04)
+
+- A containment link is identified by (declaring concept, link id). If you move a link declaration from concept `A` up into an abstract super-concept `B` (even keeping the same link id), every persisted `A` instance has its children stored under a role that is no longer `A`'s own link: `print_node` shows `declared:false`, editors and tests fail, and the full suite breaks (14 failures, 116 instances in our case). Do not move it without a versioned migration. An alternative is to leave the link where it is and give the second concept its own link, with a common abstract base carrying behavior (scopes, helpers) reading `this.children.ofConcept<X>`. Moving it back (`alter_nodes MOVE_NODE_TO_PARENT`) restores validity.
+- Verified migration route (2026-11-08): use native `PureMigrationScript` / `MoveContainmentLink` (and `MoveProperty` for flags), with explicit cached source and target identities. Their ID fields use base-36 strings. Keep temporary old-owner declarations with the original feature IDs while compiling the migration; apply it before removing them. A copied declaration's feature-ID property must be checked explicitly. `ReflectionNodeReference` plus cached source IDs allows the migration to survive removal of the old declaration. Rebuild the language to expose its new version, then use `run_migrations CHECK/APPLY`; APPLY also saves/unloads models, so compare semantic snapshots after reloading to verify preservation. Keeping the moved declaration's node ID does not replace this migration.
+- Narrowing a child role's type (`source: ConnectorEnd` to `FeatureChainEnd`) leaves persisted children of the old type in place ("Incompatible target concept in the child role"). Find the owners with `query_nodes FIND_INSTANCES`, then replace each child with `update_node SET CHILD` (`childNodeRef` plus `childJson`). References of the new child (e.g. `usage`) are set in a second `update_node SET REFERENCE` call; new node ids are consecutive after the parent.
+- In behavior code, `this.children.ofConcept<X>` generates `CollectionSequence.fromCollection(Iterable)`, which does not compile. Insert `.toList` after `children`; when you then call `.get(i)`, add another `.toList` after `ofConcept<X>` (`.last` only needs the first one).
+
+## Importer tests do not see placement constraints; `parse_java_and_insert` leaves `SNode` unresolved (2026-11-03)
+
+- A new concept can round-trip through the importer and still be unusable in the editor: parsing builds the tree without checking `can be child`. Always check a sandbox root (`check_root_node_problems`) for "cannot be child" errors, and add a nested usage to a placement test (`_030_PartUsagePlacement`).
+- `parse_java_and_insert` leaves `SNode` types unresolved; fix them with `update_node SET REFERENCE` on the `classifier` role of each type node.
+- Test-method MCP time-outs are not always memory: see the `accessMode=command` entry above.
+- A new `if (...) { return true; }` guard added to a `can be child` function must be moved to position 0 (`alter_nodes MOVE_CHILD`, `position: 0`), because `ADD CHILD` appends after the final expression statement that carries the function's result.
+
+## NodesTestCase `accessMode=command` deadlocks tests that generate text in-process (2026-11-03)
+
+A `NodesTestCase` with `accessMode=command` runs its body inside a write command on the EDT. A test that calls `RoundtripTestUtils.generateText` (it waits on a background `FutureTask` that needs the model lock) then blocks forever: the UI freezes in 30 s slices, the log shows `Unsafe.park` under `generateText`, and `execute_run_configuration` only reports "The operation timed out" (not memory). Round-trip roots must use `accessMode=none`. Rejection tests that assert on an unwrapped `RuntimeException` message need `command` (otherwise the message is prefixed with `java.lang.RuntimeException:`), so keep them in a separate root. Moving test methods between roots: `alter_nodes MOVE_NODE_TO_PARENT` with `newParentRef` and `role` (`MOVE_CHILD` only reorders within one parent).
+
+## Replaying a printed blueprint gives nodes without a `name` property a bogus `name` (2026-11-02)
+
+`print_node` shows a display name even for nodes that have no `name` property (e.g. a test annotation `NodeConstraintsErrorCheckOperation` prints as `<no name>[has constraints error]`). Feeding that JSON back through `update_node SET CHILD` / `insert_root_node_from_json` stores the display text as a real `name` property. For such nodes the generated test method name then contains `<`, `>` and `[`, and Make fails with a dozen Java syntax errors in the generated `*_Test.java`. Fix: after replaying, `update_node SET PROPERTY` the node's `name` to `null`; rebuild. When cloning or moving subtrees that contain test annotations, strip the `name` property from nodes whose concept is not `INamedConcept` before replaying, or check the generated test class compiles.
+
+Also: a constraint change can turn a test in a different test module red. Here the `can be child` constraint change of step 13 broke `_030_PartUsagePlacement` in `test.com.symo.sysmlv2.baselan`, while the importer tests stayed green. After constraint edits run the `All Tests in Project` configuration, not only the tests next to the change.
+
+## Concept rename = `update_node SET PROPERTY name`; nested `||` needs parentheses; JUnit run configs vanish after Make (2026-11-02)
+
+- `alter_structure` has no rename for concepts. `update_node SET PROPERTY` on the concept's `name` works, and references (stored by node id) follow. The `<Concept>_Constraints` root's own `name` is a separate property and must be renamed too.
+- Replacing the right operand of an `OrExpression` with another `OrExpression` makes the checker report "Bad priority of operations" on the inner node, although the code is fine. Wrap it in a `ParenthesesExpression` (`SET CHILD` with a `childJson` whose `expression` role holds the Or). Model-check the root after every such edit; the error does not surface in tests or in the build.
+- JUnit run configurations created with `create_run_configuration` can disappear after a language/importer Make. Recreate and run immediately; the config name equals the test root's name.
+
+## Cloned test methods keep the template's body; a mutation check that "passes" may be testing nothing (2026-11-02)
+
+- A test method cloned from a template (the `rej_tpl` / `tpl` blueprint technique) keeps every literal of the template until each one is set: the input string, the expected message, the label and the `fail:` message. A new test whose literals were never replaced still passes (it re-tests the template case), and it also still passes under the mutation it is meant to catch. Symptom: the mutation check is green when it should be red.
+- After generating or cloning test methods, `print_node` format `PLAIN TEXT` of each new method (or read the generated test Java, only to inspect) and confirm the input text is the new one. Then run the mutation and expect the new tests, and only those, to fail.
+- `update_node` kind `PROPERTY`, operation `SET` takes `properties` as an array of `[nodeRef, propertyName, value]` triplets, not `{name, value}` objects; several literals can go in one call.
+- `alter_structure UPDATE_CONCEPT_PROPERTY` only updates a property that already exists ("Property 'x' not found" otherwise). To add a property to an existing concept, `update_node` kind `CHILD`, operation `ADD`, role `propertyDeclaration` with a `PropertyDeclaration` blueprint.
+
+## Moving a feature up the inheritance chain: editor and textgen references break; FIX_REFERENCES only fixes properties (2026-11-02)
+
+- `alter_structure` `UPDATE_CONCEPT_PROPERTY`/`UPDATE_CONCEPT_CHILD` on the base concept creates the new member, and omitting `dataType`/`targetConcept` on the subconcept deletes the old one. Every editor cell (`CellModel_RefNode.relationDeclaration`, property cells), textgen `SLinkAccess.link` and `RefConcept_Reference` that pointed at the old declaration is then broken.
+- `alter_nodes FIX_REFERENCES` repoints the property references but leaves the link references broken. Repoint them with `update_node` kind `REFERENCE`, operation `SET`, `references` triplets `[node, role, target]`; find them with a root check after the language make.
+- `/tmp/mps-node-*.json` blueprints are deleted after they were used as `childJson`; copy them to the scratchpad first if you need them again, and re-print after any structure change (a clone keeps references to the original's declarations).
+- `print_node` JSON is shallow by default; to clone a commented or nested block use `deep: true`. A shallow copy of a try statement has an empty body and no catch clause, which fails with "possible broken reference" in textgen.
+
+## Copying baseLanguage code in a model: clone with `print_node deep`, do not parse Java that calls `SNode` members (2026-11-02)
+
+- `parse_java_and_insert` with plain Java that calls members of `SNode` (`n.setProperty(..)`, `n.addChild(..)`) produces `UnknownInstanceMethodCall` nodes that cannot be fixed afterwards. Plain Java is fine for statements that only call static helpers, local methods and parser-context methods (`ctx.foo()`); the `SNode` type itself comes out as an unresolved `ClassifierType` (repoint it to the `~SNode` stub with `update_node` kind `REFERENCE`, operation `SET`).
+- To get smodel code (`node<C>`, `SLinkListAccess`, `add`), clone existing statements: `print_node` with `deep: true` gives a blueprint (`concept`, `nodes` under the children roles) that `update_node` kind `CHILD`, operation `ADD`, `childJson` (file path or inline), `position` accepts. References inside the block are repointed automatically ("repointed N"); a variable reference to a variable of the *source* method is repointed by name to the target method's variable, a foreach loop variable can stay broken after a delete-and-restore, then set it by hand (`update_node` kind `REFERENCE`, `references` triplets `[node, role, target]`).
+- `parse_java_and_insert` takes everything under `parameters`: `featureKind` (`METHOD`, `STATEMENTS`, ...), `contextNodeRef` (required for `METHOD`/`STATEMENTS`) and `insert` with `mode: "child"`, `parentRef`, `role`, `position`.
+- `update_node` kind `CHILD` operation `SET` needs `childNodeRef` even to replace a single-cardinality child with `childJson`; to swap one (a parameter's type) use `ADD` on the role, it replaces the occupant. `SET` without `childJson` deletes the child; there is no `REMOVE` operation.
+
+## A `FlagCell` cannot lead an `OptionalCell`; `update_node ADD CHILD` does honour `position` (2026-10-31)
+
+- Putting `FlagCell`s (`default`, `:=`) as the first children of the collection inside an `OptionalCell` makes the grammarcells generator dismiss it: "Content of optional cell is not supported" (same family as the 2026-10-25 entry: the optional cell must lead with a constant). Rebuild fails with `generation completed with errors` on the editor model only. Fix: move the flag cells out, as siblings in front of the optional cell, with `alter_nodes MOVE_NODE_TO_PARENT` (`nodeReference`, `newParentRef`, `role`, `position`). A flag then renders whenever its property is true, independent of the optional cell's value.
+- Correction to the next entry: `update_node` kind `CHILD` operation `ADD` honours `position` (0-based; the result reports `index`). Only a parameter named `index` is ignored.
+
+## `update_node` ADD ignores `index`; run configurations vanish on a language rebuild; verify component targets by name (2026-10-31)
+
+- `update_node` kind `CHILD` operation `ADD` always appends, an `index`/`position` parameter is silently ignored. To insert in the middle of a cell collection or statement list, patch the blueprint in a script and overwrite the whole root with `update_root_node_from_json` (root id is preserved); stray appended cells otherwise stay at the end.
+- After a language make, `execute_run_configuration` can answer "not found": the JUnit run configurations are dropped. Recreate with `create_run_configuration` (same `nodeReference` and `name`).
+- A blueprint that references an editor component by id (`CellModel_Component.editorComponent`) is only checked for "resolves to something". Taking the id from another component's neighbour gave `ISysMLv2Member_Visibility` instead of the wanted short-name component and nothing failed: the round-trip tests (textGen only) stayed green and only the editor was wrong. After patching editors, run `check_root_node_problems` and read the `target` names of the `CellModel_Component` references, or print the sandbox node (`print_node PLAIN TEXT`) to see the cells.
+
+## A NodesTestCase with `accessMode` = `command` makes every `TextGeneratorEngine` call wait 30 s (2026-10-31)
+
+A test root created through `create_root_node` defaults to `accessMode` `command` (enum value `2hh8MJdVwqX/command`); the working roundtrip tests use `none` (`2hh8MJdVwqT/none`). The test body then runs inside a write command, and `RoundtripTestUtils.generateText` hands the work to a `TextGeneratorEngine` worker that never gets its lock, so each call ends in the 30 s timeout ("the TextGeneratorEngine worker never got its lock"). The library probe looked like a 12-minute slow importer for this reason alone: 25 importable files x 30 s. Measured with `accessMode` `none`, the importer handles a 151 KB file in about 70 ms (parse + build) and 15 ms (text generation). Before optimizing, time the phases; set the root to `none` with `update_node` kind `PROPERTY`, operation `SET`, property `accessMode`, value `2hh8MJdVwqT/none`.
+
+## Heavy MCP runs: timeouts, logs, memory, property triplets (2026-10-31)
+
+- `execute_run_configuration` can return before the run ends or report "The operation timed out" while MPS keeps running; the result carries `fullOutputPath` (a log under `<MPS>/system/tmp/ij_run_*.log`). Poll that log for `FINISH_RUN_TEST` and `TEST_FAILURE_BEGIN` instead of re-running (a second run waits on the first's lock and times out too).
+- When the machine's RAM and swap are full (`free -m`), every MPS call slows to a crawl and runs time out although the CPU is idle. Check `free -m` before blaming MPS; a library-wide probe test needs roughly 12 minutes there.
+- `update_node SET PROPERTY` takes `properties: [[nodeRef, name, value]]` (a triplet; a bare `[name, value]` or an object is rejected), not separate `propertyName`/`propertyValue`.
+- `insert_root_node_from_json` of a cloned test or editor root repoints variable references by name; check the `fixReferences` message ("N repointed") and that two similarly named parameters were not swapped.
+- `parse_java_and_insert` accepts `featureKind` `METHOD` and `STATEMENTS` (not `STATEMENT`); `insert.position` (not `index`) places statements at the start of a `StatementList`.
+
+## A parsed call to a method that does not exist yet stays an `UnknownInstanceMethodCall`; `FIX_REFERENCES` does not repair it (2026-10-31)
+
+Inserting a method with `parse_java_and_insert` whose body calls a *not yet existing* instance method (`this.importEnumeratedValue(x)`) produces an `UnknownInstanceMethodCall` (property `callee`); creating the callee afterwards and running `alter_nodes FIX_REFERENCES` still reports "All references are already correctly resolved". Insert the callee first, or rebuild the call by hand: `DotExpression` (operand `ThisExpression`, operation `InstanceMethodCallOperation` with `baseMethodDeclaration` and `actualArgument`), `ADD CHILD` it at the old position and remove the unknown node with `SET CHILD` + `childNodeRef` (no `childJson`). A parsed call can also bind to the wrong overload by name: `applyMemberVisibility` took `node<ISysMLv2Member>` where `applyBodyVisibility(SNode, ...)` was meant; repoint with `SET REFERENCE baseMethodDeclaration`. `STATEMENTS` snippets can be inserted into a method body with `featureKind: "STATEMENTS"`, `insert: {mode: "child", role: "statement", parentRef: <StatementList>, position}`. `update_node SET PROPERTY` takes `properties` as triplets `[[nodeRef, name, value]]`, not an object.
+
+## update_node / alter_nodes operations, smodel nesting, parsed-method fixes (2026-10-31)
+
+- `update_node` has only ADD and SET. Delete a child with `SET CHILD` giving `childNodeRef` and no `childJson`; `SET CHILD` with both replaces. `SET REFERENCE` takes `references: [[nodeRef, role, targetRef]]`. `alter_nodes` offers MOVE_CHILD, MOVE_NODE_TO_PARENT, MAKE, FIX_REFERENCES only (no DELETE); delete a root with `update_root_node_from_json` `operation: DELETE`.
+- Inline `childJson` above ~3.5KB fails with an EOF / "unbalanced" error: write the JSON to a file and pass its absolute path as `childJson`.
+- In textGen and collection code a foreach variable is read with `jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference` (role `variable`); a plain `VariableReference` is rejected ("expected VariableDeclaration").
+- Adding to a child list in smodel: `Dot(Dot(x, SLinkListAccess), AddElementOperation)` (role `argument`). `SNodeTypeCastExpression` has `leftExpression` + `conceptArgument` (`RefConcept_Reference`), property `asCast`.
+- A Java-parsed method gets an unresolved `SNode` ClassifierType: set `classifier` to `8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)/~SNode`; `setProperty`/`addChild` calls stay unresolved, rewrite them as smodel property assignment / link-list add. Uncaught `IOException` in parsed statements needs a try/catch.
+- `print_node` with `deep: true` nests children under `nodes`, not `children`.
+
+## Adding a property, blueprint shapes, test-case access mode, deleting roots (2026-10-30)
+
+- `alter_structure UPDATE_CONCEPT_PROPERTY` only updates existing properties. To add a property use `update_node ADD CHILD` with `childRole: propertyDeclaration`; its datatype reference id `…/1082983657062` is `integer` (boolean is `…063`), so set the datatype afterwards with `update_node SET REFERENCE` (target name `string`).
+- Blueprint children must be `{"role": ..., "nodes": [...]}`; a child written directly as `{"role", "concept"}` under `children` is silently dropped. Use fully qualified concept names for nested nodes.
+- `update_node ADD CHILD` ignores `index` (appends): use `alter_nodes MOVE_CHILD` (`nodeReference`, `childRole`, `childNodeRef`, `position`). `SET PROPERTY` takes `properties: [[nodeRef, name, value]]`.
+- `parse_java_and_insert` and `query_nodes` take their arguments inside a `parameters` object. The parser does not resolve the test-language `project`: replace the unresolved `VariableReference` with a `ProjectExpression` child. It also picks wrong overloads (`Paths.get(String)`, `InputStream.read(byte[])`); `alter_nodes FIX_REFERENCES` repoints them.
+- A new `NodesTestCase` defaults to a read access mode, so a text-generation round trip times out ("never got its lock"): set `accessMode` to `2hh8MJdVwqT/none`.
+- A plain `assert a.equals(b)` hides the actual text; use `AssertEquals` (expected/actual `VariableReference`s) to see the diff.
+- Delete a root node with `update_root_node_from_json` `operation: DELETE`.
+
+## Adding a link to an existing concept, deleting one list child, and mutation-checking a conditional (2026-10-30)
+
+- `alter_structure UPDATE_CONCEPT_CHILD` only updates existing children. To add a child link to an existing concept, `update_node ADD CHILD` a `LinkDeclaration` into the concept's `linkDeclaration` role (properties `role`, `metaClass` = aggregation, `sourceCardinality`, `linkId`, `name`; reference `target`), then rebuild the language.
+- Delete one child of a multi-valued role: `update_node SET CHILD` with only `childNodeRef` (the child itself), no `childJson`, no parent. `ADD CHILD` needs `childRole`; `SET CHILD` needs `childNodeRef` even when `childJson` is given (it names the node being replaced, which then gets a new id).
+- `alter_nodes` has no DELETE; `update_node` only knows `ADD`/`SET`. `model_used_language DELETE` needs `kind: "language"`; `execute_run_configuration` takes `configurationName` and the name of a root-created JUnit config is the root's name, not the `name` passed to `create_run_configuration`.
+- Mutation-checking a textGen `if` by forcing the condition to `false` only detects the else-branch if the test input hits the branch with the *empty* case: a nested body keeps the parent non-empty, so add an empty sibling (`ref other;`).
+
+## Showing a property cell and a child cell together leaves a stray placeholder; blueprint name references stay unresolved; small MCP shape traps (2026-10-30)
+
+- A property cell next to a child `RefNode` cell for the same slot shows `<no prop>` beside the reference. Use one `CellModel_Alternation` (condition picks the child cell or the property cell).
+- `ScopesTest`/`ScopesExpectedNode` name references inserted through a root blueprint stay unresolved: fix with `update_node SET REFERENCE` triplets on the TestNode.
+- `IfStatement.ifFalseStatement` takes a `Statement`: wrap a `StatementList` in a `BlockStatement` (child role `statements`). `new node<C>()` is a `GenericNewExpression` (role `creator`) holding an `SNodeCreator`, not an `Expression` itself.
+- `parse_java_and_insert` needs `insert: {mode:"child", role:"member", parentRef}` and, for methods, `contextNodeRef`; `SModel` is unresolved in a test model, use the smodel `SModelType` (`model`).
+- `sourceCardinality` of a new `LinkDeclaration` created by blueprint can come out `1` (mandatory); verify, and reset to `0..1` (property removed = default) if the link is optional.
+
+## A default-true boolean needs inverted storage; unset booleans read false (2026-10-30)
+
+A spec property with default `true` (SysML `isUnique`) cannot be stored as a boolean property: an unset MPS boolean reads false, so every existing node would change meaning (and render `nonunique`). Store the inverse
+(`isNonUnique`, default false) and let the editor/textGen show the spec keyword; a `FlagCell` on the inverted property keeps the editor natural. The alternative is a migration that sets the new property on all existing nodes.
+
+## Adding a member to an interface-typed role is an interface change: nested definitions and editor completion (2026-10-30)
+
+A containment role typed by an interface (`content : ISysMLv2ItemBodyContent`) accepts exactly the concepts that implement it, so allowing a new kind of child is one `implements` entry on the concept (`update_node ADD CHILD` role `implements`, child
+`InterfaceConceptReference`, reference role `intfc`), not a structure change on every container. The grammar-cells substitute menus are generated per interface, so the new child also competes in completion: typing a prefix such as `connect` or
+`metadata` is now ambiguous with `connection def` / `metadata def`. Editor tests that type such a prefix must add a trailing space to commit the keyword.
+
+## Generated editor cell ids shift when cells are added; editor tests that name a cell id break (2026-10-30)
+
+Adding a cell to an editor (a new `FlagCell`, an extra constant) renumbers the generated cell ids of the cells after it. Editor tests whose `AnonymousCellAnnotation`/caret uses a generated id (`_120_Connections_PrefixMetadata` after the
+multiple-typing change) fail with a missing-cell error although nothing is wrong; re-read the id from the editor and update the test. Prefer explicit `EditorCellId`s on cells that tests address.
+
+## `update_node` is ADD/SET only: positions, deletion and references (2026-10-30)
+
+- `ADD CHILD` appends unless you pass `position` (0-based; the parameter is `position`, an `index` argument is silently ignored); check `data.index` in the result. `alter_nodes` `MOVE_CHILD` (`parameters {"nodeReference", "childRole", "childNodeRef", "position"}`) repositions an existing child.
+- `SET CHILD` without `childJson` (null) deletes the child; with valid json on a multi-valued role it replaces the node in place.
+- `SET REFERENCE` takes the key `references` (triplets `[node, role, target]`), `SET PROPERTY` takes `properties`; using the wrong key fails with "references is required".
+- `childJson` longer than ~4 KB must be an absolute file path. `parse_java_and_insert` cannot produce smodel types (see the 2026-10-29 importer entry). `print_node` with `deep: true` writes JSON to a `/tmp/mps-node-*.json` file;
+  blueprint local references by name may stay unresolved when inserted into a method, check with `SET REFERENCE` or `FIX_REFERENCES`.
+- `UPDATE_CONCEPT_CHILD` deletes the link instead of changing it; use `update_node`/`alter_structure` for child changes.
+
+## An optional string that *precedes* its keyword (`name ::> chain`) cannot use OptionalCell; gate the cells and offer an Alt+Enter intention to set it (2026-10-29)
+
+`OptionalCell` needs a leading constant (see the 2026-10-25 entry), so `[name] ::>` fails with "Content of optional cell is not supported". An always-visible leading property cell works but takes
+the caret first, so typing into a new node fills the name instead of the next cell (five editor tests failed). Working shape: property cell `name` and the `::>` constant both with
+`renderingCondition node.name != null`, and an intention (`isAvailableInChildNodes`, applicable while the property is null) to set it; an `inspectedCellModel` collection (`end name:`) was not usable in practice.
+Intention tests: the harness applies the intention to `myStart.getNode()` (the node carrying the `AnonymousCellAnnotation`, `setCurrentNodeOnly`), not to a typed-in caret, and `invoke intention` has only the `intention` reference, so
+the `before` model must already contain the target with the annotation on it. `update_node` `SET CHILD` on a multi-valued role with valid json empties the whole role (re-add with ADD). Property cells use the reference role `relationDeclaration`, not
+`propertyDeclaration`. Also: after `parse_java_and_insert` in `replace` mode the `SNode` ClassifierTypes sometimes stay unresolved even after `FIX_REFERENCES`; set their `classifier` by hand
+(`update_node` REFERENCE SET to `8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)/~SNode`). Delete a root with `update_root_node_from_json` `operation: DELETE`. When a shared helper changes its
+contract (list element 0 = name slot), check every producer of its input: the full suite caught the flow extractor that the targeted tests did not.
+
+## Importer edits: plain Java goes through `parse_java_and_insert`, BL-dialect code must be cloned; replacing a method needs `FIX_REFERENCES` (2026-10-29)
+
+`parse_java_and_insert` (parameters is one JSON string) parses real Java only: `string`, `node<X>`, `enum/…/` and property/link assignments come out as unresolved ClassifierType/FieldReferenceOperation
+(dozens of errors). Methods written in plain Java types (`String`, `SNode`, `ParserRuleContext`, `Interval`, the generated parser classes) insert clean, so keep new importer helpers plain
+Java and delegate the node building to existing BL-dialect methods; for code that must create nodes, clone existing AST (print `deep: true`, edit, `update_node ADD CHILD` with the file path).
+`insert.mode: replace` of a method creates a new node id, so callers keep dangling references until `alter_nodes FIX_REFERENCES` (parameter `nodeReference` = the class root; it reported "6 broken
+reference(s) resolved"). Other `update_node` facts: `kind` is a required parameter, `position` (not `index`) is the 0-based insert index, `SET×PROPERTY` takes `properties` and `SET×REFERENCE`
+`references` as triplets. A printed test method (`deep: true`, saved envelope) can be edited in Python (new name, new string literals, drop `reference` keys) and added with ADD CHILD; the
+variable references are repointed automatically ("repointed 3"). A reload (`reload_all`) deletes the run configurations; recreate them. After changing the importer (or any generated-Java solution) run MAKE **and** `reload_all`, otherwise tests keep running the stale class. When deleting a statement from a method body, find it by content, not by list position (an off-by-one deleted the wrong `if`).
+
+## The model checker flags out-of-scope references only when the scope is non-empty; an empty scope hides a broken scope function (2026-10-29)
+
+`check_root_node_problems` reports "The reference X (usage) is out of search scope" when the scope function returns a scope that lacks the target, but stays silent when the scope is
+*empty* (and a textgen round trip prints names, so it cannot see scoping either). Package- and file-level connector/binding/flow/interface ends had an empty scope
+(`scopeOwnerAt` looked only for an `ISysMLv2FeatureOwner` ancestor) and passed every round-trip test and the checker until the
+sandbox check (16 errors, seen once other scopes were fixed) and a `ScopesTest` exposed it. Prove scoping with a `ScopesTest`/`ScopesExpectedNode` test, and mutation-check it (revert the
+scope fix: the test fails with `but was:<[]>`). Separately, textgen prints `subsets` as `:>` and `redefines` as `:>>`, so round-trip expected text must use the symbols, not the keywords.
+
+## A language MAKE does not regenerate the importer solution; make `com.symo.sysmlv2.baselan.importer.main` itself (2026-10-28)
+
+After editing the importer model, `SysMLv2ImporterVisitor.java` under `source_gen` stayed old and a test failed on the missing behavior. A MAKE of the
+importer main model with `rebuild: true` regenerated it. Removing a property from a concept also leaves a stale property entry on existing nodes in test
+models ("Property X does not belong to the concept"); setting the value does not clear it, replace the node.
+
+## A blueprint cloned from printed JSON keeps its old reference targets; `parse_java_and_insert` cannot name generated `CONCEPTS` (2026-10-28)
+
+A blueprint copied from a printed node keeps the reference targets of the source. A variable reference cloned from another method still points at that
+method's variable, and the copy fails with "Variable must be final" or "might not have been initialized". Fix each with `SET REFERENCE` to the local
+declaration. In `parse_java_and_insert`, a snippet that names a generated `CONCEPTS.<Concept>$F_` field does not resolve, and the parse fails. Build
+the membership test as model nodes instead: `Node_IsInstanceOfOperation` with a `RefConcept_Reference`. A `SET CHILD` that replaces an expression needs
+both `childNodeRef` (the old child) and `childJson` (the new blueprint); without `childNodeRef` the tool refuses.
+
+## A missing component name in a generated builder is not a stale builder; a package-like editor needs a front holder (2026-10-28)
+
+Editor components are inlined by the generator: `SysMLv2PartDefinition_EditorBuilder_a.java` contains the inlined `property_visibility` cell and
+no mention of `ISysMLv2Member_Visibility`, and that is correct. Do not conclude "stale builder" from a grep for the component name; compare the
+inlined cells. Separately, an editor whose first real cell is a keyword constant (package) has no host for `before` menu items or typing in front;
+add a `SideTransformationSectionCell` (with a `section` child, location `before`, else the model check reports "No child in the obligatory role
+'section'") at index 0. It shifts the generated ids of later cells (`Constant_*`), so re-point test anchors.
+
+## `parse_java_and_insert` cannot parse `project`; insert a `ProjectExpression` by hand (2026-10-28)
+
+The parser inserts an unresolved `VariableReference` named `project`. Fix: `mps_mcp_update_node` SET CHILD with a `ProjectExpression` blueprint.
+
+## A superconcept's menu applies to subconcepts, and a subconcept's own menu does not hide it; editors and TextGen are not inherited (2026-10-28)
+
+Symptom: a subconcept offers the superconcept's menu actions (for example the interface visibility menu reaches
+`ConnectionDefinition`, `InterfaceDefinition`, `MetadataDefinition`, `FlowDefinition`) even when the subconcept has its own menu, and
+the subconcept's own menu does not hide them. Editors and TextGen declarations are not inherited: a subconcept with no own editor
+shows no cell, and one with no own TextGen prints no prefix, so check both per concept.
+
+## Run one `execute_run_configuration` at a time; `waitForExit:false` plus a log monitor (2026-10-28)
+
+Two runs started close together time out (the second waits on the first's test lock) and report no result. Start one run with
+`waitForExit:false`, then poll its `fullOutputPath` log for `<FINISH_TEST>` count (or the summary) before starting the next run.
+
+## Blueprints for editor transformation menus: concept FQNs, `Property_SetOperation` role, and the enum-valued property (2026-10-27)
+
+Building a `TransformationMenuContribution` (a `#`-style or visibility-style menu on a concept's first holder cell) by JSON
+needed three facts the dump does not state:
+
+- The set operation takes its value under the role `value`, not `argument`: `Property_SetOperation` has only the `value` link
+  (`Unknown child role 'argument' ... has no such containment link`).
+- The execute body reaches the menu's node through `QueryFunctionParameter_TransformationMenu_node`, not the cell-level
+  `Parameter_node` that postprocess functions use.
+- The action's label function returns a plain `StringLiteral`; the menu item is matched by that text, so typing the keyword and
+  pressing Complete selects it. A menu item that writes an enum property needs its `EnumMemberReference.decl` pointed at the
+  member declaration (`private` / `protected` / `public` members of `SysMLv2VisibilityKind`), not at the enum.
+
+A test that types the keyword in front of an unset part definition and expects the property set (`_092`) passes with this
+blueprint, and a mutation (the `private` item pointing at `public`) fails with `visibility = public, expected: private`.
+
+## A grammar-cells optional wrapper with an empty leading constant passed tests but failed in the live editor (2026-10-27)
+
+**Rejected; do not reuse this shape.** `OptionalCell` around an enum property, led by an empty `CellModel_Constant`
+(`text ""`), made `_020_editor` tests `_090` and `_091` pass by anchoring their caret on the generated
+`Constant_<hash>_a0a0a0` id. The live editor did not behave (the user's check, 2026-10-27), so the passing tests did not
+prove the editor works. An editor test that anchors on a generated `Constant_*` id proves only that the cell exists.
+
+What the live check settled: a `BEFORE` contribution (`#` → prefix metadata) is reached only through a grammar-cells holder
+cell in front of the caret, and an `OptionalCell` cannot lead with an enum property that has no keyword (see the
+optional-cell gotcha above). Use a cell the user actually types into, and check the behavior in the live editor.
+
+Tooling notes from the same attempt: `mps_mcp_alter_nodes MOVE_CHILD` only reorders within one parent, so a cell cannot
+move into a new wrapper; it has to be recreated (ADD) and the old one deleted (SET CHILD with no `childJson`).
+
+## Short concept names in a blueprint can resolve to another language's concept (2026-10-27)
+
+A textGen blueprint with `concept: "NodeParameter"` resolved to `jetbrains.mps.lang.dataFlow.structure.NodeParameter`,
+not the textGen one. The insert then reported `not applicable in this context`, and the model gained a stray
+`jetbrains.mps.lang.dataFlow` used-language entry in the `.mpl`. Use fully-qualified concept names in blueprints. To drop
+the stray dependency, use `mps_mcp_model_used_language` (kind `language`, operation `DELETE`), not a hand edit.
+
+## Editor cell insert shifts generated cell ids; `AnonymousCellAnnotation.cellId` breaks silently (2026-10-27)
+
+Inserting a new cell in front of existing editor cells renumbers the generated `cellId` suffixes of the cells behind it
+(`Constant_<hash>_c0a` became `Constant_<hash>_d0a` after a property cell was inserted at index 0). An `EditorTestCase`
+that targets a cell by `AnonymousCellAnnotation.cellId` then fails at setup with `No cell with id ... found in <node>`.
+Check the generated `source_gen/.../<Concept>_EditorBuilder_a.java` (`setCellId`) for the new id before editing the test.
+Re-pointing the id is not always enough: a `BEFORE` side transform (`TransformationMenu`) hangs off the first section
+cell, so typing at a shifted caret can silently do nothing (the test then fails on the missing child, not on the cell).
+
+## Run configurations do not survive a language or test MAKE rebuild (2026-10-27)
+
+After `mps_mcp_alter_nodes MAKE` with `rebuild: true`, `get_run_configurations` no longer listed configurations created
+earlier in the session, and `execute_run_configuration` reported "not found". `create_run_configuration` ignores its `name`
+argument and names the config after the root (`_050_PartDefinitionTest`). Re-create right before executing.
+
+## `mps_mcp_update_node` SET CHILD deletes by omitting `childJson`; the string `"null"` is rejected (2026-10-27)
+
+The tool description says `childJson = null` deletes the child, but passing the string `"null"` fails with
+`INVALID_REQUEST: Input is neither a valid JSON object/array nor an existing file path: 'null'`. Omit `childJson`
+entirely (`operation: SET`, `kind: CHILD`, `childNodeRef` set): the child is deleted and the call returns the parent's
+envelope.
+
+## BaseLanguage behavior methods: reuse ASTs when the Java parser fails (2026-10-26)
+
+`mps_mcp_parse_java_and_insert` returned `INTERNAL_ERROR` while inserting a
+`getEffectiveName()` method into a `ConceptBehavior`, including for a minimal
+method body. This does not mean MPS behavior methods have no alternate authoring path.
+
+The alternative that worked was to print the existing `SysMLv2UsageRef_Behavior`
+root with `mps_mcp_print_node` (`format: JSON`, `deep: true`), clone its AST,
+adapt the concept and feature references, and insert the new root with
+`mps_mcp_insert_root_node_from_json`. For `SysMLv2IdentifierNameConceptRef`, this reused
+the method AST and the `qualifiedTextOf` call from the qualified-reference
+family. The root passed `mps_mcp_check_root_node_problems`, and the base-language
+module rebuilt successfully.
+
+When cloning a root, remove persistent `reference` IDs from every copied node so
+MPS allocates fresh IDs. Keep and deliberately update external feature and
+method references (`targetReference`); then check the inserted root before
+building. When implementing an abstract interface behavior method, set its
+`overriddenMethod` reference and `isVirtual` property; the body alone did not
+satisfy the root checker.
+
+
+## Printed/cloned test code can carry the Console `#project` expression into a test model (2026-10-25)
+
+When a test method is copied from a JSON printout, inspect every project expression in the clone. A copied
+`jetbrains.mps.console.base.structure.ProjectExpression` is valid only in the Console; in a test method it may be
+accepted structurally but generate an invalid receiver such as `.getProject()`. Replace it with
+`jetbrains.mps.lang.test.structure.ProjectExpression`, the BaseLanguage expression used by test models, and then run
+`check_root_node_problems` plus an explicit build. This surfaced while cloning round-trip methods: both clones had to
+replace the copied `#project` child before their generated Java compiled.
+
+## smodel property access requires a statically typed node; cast a generic Java `SNode` first (2026-10-25)
+
+`SPropertyAccess` is applicable to `node<X>`, not to a BaseLanguage variable whose static type is the generic Java
+`org.jetbrains.mps.openapi.model.SNode`. If an importer visitor stores a freshly created node in an `SNode` local,
+`n.someProperty = value` therefore produces `operation is not applicable to SNode` in the MPS checker. Wrap the
+operand in a strict `SNodeTypeCastExpression` targeting the concept or interface that declares the property, then use
+that cast as the `SPropertyAccess` operand. A generated Java build alone may miss this language-level checker error.
+
+
+## A try/catch "rejected" test must assert that it throws, or a construct that starts importing passes silently (2026-10-25)
+
+A "this construct is rejected" test written as `try { parse; dispose } catch (RuntimeException e) { Assert.assertEquals(expected, e.getMessage()) }`
+only checks the *message* when an exception **is** thrown. If the construct starts importing (no exception), the `catch` is never
+entered, `assertEquals` never fires, and the case **silently passes** — so it cannot detect "now imports" for a previously-rejected
+construct. Fix: put an `Assert.fail("case N expected rejection")` right after the parse (before dispose) inside the `try`. `Assert.fail`
+throws `AssertionError`, which `catch (RuntimeException e)` does not catch, so the case fails when the construct imports. In
+`jetbrains.mps.baseLanguage.unitTest` the node is `Fail` (child `message` → `Message` → `message` → string expression). Mutation-proof it
+by temporarily pointing a rejected case's input at a construct that imports: the case must fail with the "expected rejection" message.
+
+## grammarcells `FlagCell` type-to-reveal only works when the flag starts a cell collection (2026-10-25)
+
+Typing a `FlagCell`'s `flagText` at a caret cell to reveal a hidden flag (the `TypeKeyStatement` editor-test idiom) fires
+only when the flag is the **first cell of its collection** — e.g. `standard` before `library package` (the 013
+`_110_LibraryPackage_TypeStandard` test). A flag placed **mid-collection** (`import [all] {name}[::*][::**];` — `all`
+after `import`, `::*`/`::**` after the name) does not reveal when you type the flag text at either neighbour; the flag
+stays `false` (`Different property: isImportAll = false, expected: true`). An editor test for a mid-collection flag
+needs a side-transformation action, not `TypeKeyStatement`.
+
+## Enum-property assignment in smodel must be `Property_SetOperation`, not baseLanguage `AssignmentExpression` (2026-10-25)
+
+`imp.enumProp = X` (X an MPS enumeration member) has no textGen if written as `AssignmentExpression` with an
+`EnumMemberReference` RHS — the make fails with `No textgen for jetbrains.mps.lang.smodel.structure.EnumMemberReference`.
+The smodel generator reduces enum assignment only when the RHS lives inside a `Property_SetOperation`, i.e.
+`DotExpression(operand = DotExpression(node, SPropertyAccess(prop)), operation = Property_SetOperation(value =
+EnumMemberReference(decl = <member-node-ref>)))`. `EnumMemberReference`'s reference role is **`decl`** (the skill doc
+says `member`; the concept actually declares `decl`), and it generates to `SPropertyOperations.setEnum(node, prop, id, name)`.
+String/int/boolean assignments keep using `AssignmentExpression`.
+
+## `check_root_node_problems` flags a nullable enum as "Empty enumeration property" — a false positive (2026-10-25)
+
+An enumeration **without** a `defaultMember` is nullable (unset = null), which is valid MPS. The MCP server's
+`check_root_node_problems` nevertheless reports `Empty enumeration property` (severity error) on any instance whose
+enum property is unset — its own heuristic (`PropertyState.isEmptyEnum`), not MPS's typechecking, so it does **not**
+fail the make or the JUnit run. The round-trip and editor tests that use an unset-visibility fixture pass despite the
+diagnostic. Treat it as noise for nullable enums; do not add a default member just to silence it (a default would make
+`import X;` indistinguishable from `public import X;`).
+
+## grammarcells `OptionalCell` requires a leading constant keyword — a bare enum property is not "supported content" (2026-10-25)
+
+`com.mbeddr.mpsutil.grammarcells` `OptionalCell` generates its collapsed/transformation text from the first
+`CellModel_Constant` inside `option`; a wrapper whose only content is a `CellModel_Property` (e.g. an enum that renders
+its own keyword) makes the grammarcells generator dismiss the rule with `Content of optional cell is not supported`.
+For an optional enum/keyword property with no separate keyword constant, use a plain `CellModel_Property` (it still
+accepts typing the enum literal to set the property) rather than `OptionalCell`; a `FlagCell` covers the boolean
+keyword case.
+
+## Property assignment in baseLanguage cannot come from `parse_java_and_insert`: reuse an existing statement as AST (2026-10-24)
+
+`parse_java_and_insert` binds `x.prop = v` to `assignEnum` or makes a dynamic reference, and Java text has no scope for
+test-model references (`myProject`, `TestUtils`, `Assert`). Copy an existing resolved statement or test method (print it
+deep, insert the copy) and change only literals or references with `update_node` (`SET CHILD` / `SET REFERENCE`). Role
+names that bite: `ForeachStatement` has `iterable`/`variable`/`body`, `AssignmentExpression` has `lValue`/`rValue`.
+
+## A node copied from a print gets the printer's display string as `name`; unset with `null`, not `""` (2026-10-24)
+
+A printed-and-reinserted node carries `<no name>[...]` as its `name`. Use `null` in `update_node` to unset it, because
+MPS distinguishes unset from the empty string.
+
+## Mutation-checking a mandatory reference: dropping it leaves a stale descriptor and the test passes for the wrong reason (2026-10-24)
+
+Mutate behavior (rename the flag text) or the expectation instead.
+
+## A subconcept inherits neither editor nor TextGen (2026-10-24)
+
+`SysMLv2LibraryPackage < SysMLv2Package` needed its own editor and its own `TextGenDeclaration`. Reuse the parent's cell
+tree by copying it into the subconcept's editor, and give the textgen the same body.
+
+## `execute_run_configuration` truncates `output` at about 10 KB; the result is in `fullOutputPath` (2026-10-24)
+
+Grep `<START_TEST>` / `TEST_FAILURE_BEGIN` in the log at `fullOutputPath`, not in the returned text.
+
+## `insert_root_node_from_json` plain-name resolution is type-dependent: typed refs resolve by name, untyped `BaseConcept` refs do not (2026-10-24)
+
+When a blueprint uses a plain-name `{"role": …, "target": "<name>"}` for an intra-subtree reference, whether it
+auto-resolves depends on the reference's declared target **type**. Typed references resolve by name inside the same
+inserted blueprint — `VariableReference.variableDeclaration`, `TestNodeReference.declaration` (→ `TestNodeAnnotation`),
+`SysMLv2ItemDefinitionRef.definition`. **Untyped `BaseConcept` references do not**: `ScopesTest.checkingReference` and
+`ScopesExpectedNode.ref` both came back as `Unresolved reference: <name>` in the inserted tree (and `check_root_node_problems`
+then reports the node's own error, e.g. `ScopesTest … should specify reference link to check`). The fix is a second
+`update_node SET REFERENCE` pass pointing those at the freshly allocated node refs (`r:…/<nodeId>`) after the insert.
+This is a sharper rule than the "use plain name for intra-subtree self-references" note above: plain name works only
+for *typed* self-references; for `BaseConcept`-typed roles, plan the post-insert `SET REFERENCE` pass up front.
+
+## baseLanguage try/catch: `MultipleCatchClause`'s body role is `catchBody`, and a single catch type is wrapped in `AlternativeType` (2026-10-24)
+
+Authoring a `try { … } catch (RuntimeException e) { … }` as a blueprint, two shapes are not obvious from a deep
+`print_node`: the `MultipleCatchClause`'s containment role for the handler body is **`catchBody`** (not `body`), and the
+`CatchVariable`'s `type` child must be an **`AlternativeType`** wrapping the `ClassifierType` even for a single
+exception class (it is the `A | B | …` union node). Getting either wrong fails the dry-run with `Unknown child role
+'body'` and `Node 'e' cannot be parent of node '(instance of ClassifierType)'` respectively. JDK classifiers/methods are
+referenced by their stable pointer form, e.g. `6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)/~RuntimeException`
+and `…/~Throwable.getMessage%28%29` (see the JDK-stub note elsewhere in this file).
+
+## `de.itemis.mps.compare` `AssertNodeEquals` ignores `TestNodeAnnotation` smodel attributes and diffs properties (2026-10-24)
+
+`AssertNodeEquals(expected = <label>, actual = <label>)` between two labelled fixtures ignores the `TestNodeAnnotation`
+`smodelAttribute` (so the labels may differ without failing) and diffs the node's properties — which is a clean way to
+"assert state" of a boolean property (e.g. `isStandard`) without any property-access expression or low-level
+`SPropertyOperations`. Evidence: an existing green test compares a *computed* node (no annotation) against a labelled
+fixture, which could only pass if attributes are ignored.
+
+## An `EditorCellId` child sets its id through the `name` property
+A cell model's explicit id is a child `EditorCellId` (role `id`) whose property is `name` (not `cellId`).
+Setting `shortDescription` on it silently does nothing. Check the generated builder for `setCellId` after a
+rebuild: on a `RefCell` with an inline editor component the generator emitted no id at all.
+
+## `NodeConstraintsErrorCheckOperation` is the wrong annotation for a `NonTypesystemRule` (2026-10-24)
+- In `jetbrains.mps.lang.test`, an expected **checking-rule** error is annotated with
+  `NodeErrorCheckOperation` → child `errorRef` → `ReportErrorStatementReference` → reference `declaration` →
+  the rule's **`ReportErrorStatement` node** (not the rule root, and not the rule's `ConceptReference`).
+  `NodeConstraintsErrorCheckOperation` (→ `UnknownRuleReference` → `declaration`) is the variant for
+  **constraints** validators — e.g. property validators declared in the `constraints` aspect — and does not
+  match a `NonTypesystemRule`.
+- Using the constraints variant on a checking rule compiles and runs, but the generated test fails with the
+  rule's **own error message** as the assertion text, i.e. `java.lang.AssertionError: Error: <your message>.
+  Node 'oneStep [<nodeId>]'`. That reads like "the expected error already exists / is in the wrong place".
+  The real cause is that the annotation is of the wrong kind, so the checker found an error it could not match
+  to any expectation. Reproduced in iteration 008 on `_420_ChainLengthCheck`; switching to
+  `NodeErrorCheckOperation` with the rule's `ReportErrorStatement` made it pass with no other change.
+- Worked example to copy: `_410_StandaloneRelationships` (KerML) and `_020_AttributeValueLiteralCheck` (SysML,
+  a *constraints* case, i.e. the other variant). One annotated `has error` node generates **two** runnable
+  tests (the per-node check plus `CheckNodeForErrorMessagesOperation`'s overall check), which matters when
+  budgeting test counts.
+
+## `execute_run_configuration` truncates `output` at ~10 KB, and only large runs write a log file (2026-10-24)
+- The tool's `structuredContent.output` stops mid-line with a literal `<truncated>` marker at about 10 011
+  characters. Counting `<START_TEST>`/`<FINISH_TEST>` in it therefore undercounts any long test class: measured
+  `_080_TokenFidelityTest` (26 real tests, 24 in the truncated text) and `_010_ImportStructureTest` (35 vs 25).
+  It also fabricated a started>finished mismatch and a "2 declared tests never run" conclusion — the two
+  "missing" methods existed in the generated and the compiled class and ran fine.
+- A small run is returned **complete and produces no log file at all**; only a large one spills to
+  `<MPS system dir>/tmp/ij_run__<configName with spaces → _>_<random>.log`, and *every* launch writes a **new**
+  file with a different random suffix. So: use `output` when it is complete (contains `FINISH_RUN_TEST` and no
+  `<truncated>`), else read the newest matching log file
+  (`ls -t <system>/tmp/ij_run__<sanitized>_*.log | head -1`). Counting the log file is authoritative: it had
+  26/26 START/FINISH and the trailing `FINISH_RUN_TEST`. On this machine the dir is
+  `/home/dan/work/MPS_2026_1/.MPS_VERSION_/system/tmp`.
+- Because old log files stay behind, a lookup that matches too loosely (e.g. only a shared prefix) silently
+  reports an *older* run's count. Match the sanitized configuration name.
+- Cross-check a suite total against generated code (`grep -oE "public void test_\w+" <...>_Test.java | sort -u |
+  wc -l`): each test method appears twice in the file, so a raw `grep -c` double-counts. Matching that expected
+  total is what exposed the truncation above (until then 164 looked like a plausible "green" number).
+
+## A model-scoped `check_root_node_problems` does not surface checking-rule errors on its roots (2026-10-24)
+- Passing a **model** reference reported `no problems found` for `test.com.symo.kerml.baselan._010_root@tests`
+  while a **root** reference in that same model reported the (deliberately provoked) error
+  `Feature cannot have exactly one feature chaining…` on node `oneStep`. Passing each root reference is what
+  actually runs the rules, so a clean model-level answer proves nothing about the model's contents.
+- Corollary for "does the new rule flag existing models?": check each root of the sandbox and stdLib models
+  individually (`get_project_structure` with `includeRootNodes`, then one call per root). Done that way, all
+  five roots (`Vehicles`, `Fleet`, `Units`, `Base`, `ScalarValues`) were clean.
+
+## A `RefCell` that hosts an inline editor component has no addressable reference cell (2026-10-24)
+- In an `EditorTestCase`, a caret can only be placed on a cell that has a cell id. For a `CellModel_RefCell` whose
+  child is an `InlineEditorComponent` (the common "reference rendered by a custom presentation" shape), the
+  generator emits ids only for the **enclosing** cell and for the **inner** `CellModel_ReferencePresentation`:
+  e.g. `Collection_9on3w6_a` and `ReferencePresentation_9on3w6_a0a0` for `KerMLFeatureChaining_Editor`. The
+  `RefCell` itself gets only `setSRole(...)` and substitute info — **no `setCellId`**.
+- Adding an explicit `EditorCellId` (child role `id`, property **`name`** — not `cellId`, and my first attempt
+  wrongly set `shortDescription`) is **silently ignored by the editor generator**: the id sits in the model,
+  `grep <id> source_gen/` finds nothing, and a force-save + `rebuild:true` does not change that. So the "just give
+  the cell an id" fix does not work for this cell shape.
+- The inner `ReferencePresentation_*` cell *is* addressable, but on it `type "…"` and `press` do **not** retarget an
+  existing reference: measured on a chain step whose target was `b`, `type "b2"`, `type "b2"`+`press VK_ENTER`, and
+  `press VK_DELETE` all left the model byte-identical (the assertion reported only
+  `Different internal reference of role chainingFeature. One target is b, while other is b2`, i.e. the *expected*
+  side differed and the actual tree was untouched). Every structural comparison of the fixture passed, which is
+  the signature of an acting cell the harness cannot reach — not of a wrong chord.
+- Consequence: a reference cell of this shape cannot be driven by the test harness today. Do not spend attempts on
+  more key sequences or on `EditorCellId`; either the editor must expose an addressable acting cell (a product
+  change, planned with the editor iteration) or the behaviour is covered by a `NodesTestCase` instead.
+
+## A complete `execute_run_configuration` payload can still miss `TEST_FAILURE_BEGIN`; the exit code cannot (2026-10-24)
+- The `output` field truncation (entry below) is not the only unreliability: on a run whose output was
+  **complete** (contained the trailing `FINISH_RUN_TEST`, no `<truncated>`), one `TEST_FAILURE_BEGIN` line for a
+  two-failure run was missing from the captured text. Re-running the same unchanged build sometimes showed both.
+  So `grep -c TEST_FAILURE_BEGIN` can under-report even when the payload looks whole.
+- Trust the configuration **`exitCode`** as the pass/fail signal: it equalled the failure count in every
+  observed case (3 tests failing → 3, 2 → 2, 1 → 1), including the runs where the text was incomplete. Use the
+  log file for *which* tests failed, and the exit code for *how many*.
+- Found while mutation-checking iteration 010's round-trip and 011's step-A tests; both mutations were verified
+  through the exit code plus the pre-mutation green run.
+
+## The IDE terminal tool can wedge while the console and the model tools keep working (2026-10-24)
+- `execute_terminal_command` started timing out on every call (60 s, also with
+  `reuseExistingTerminalWindow: false`) while `mps_mcp_*` model tools and the MPS **console**
+  (`parse_java_and_insert` + `mps_mcp_run_console_command`) continued to work normally. Taskkill/restart of the
+  console was not needed; the wedged terminal only blocked shell-style helpers.
+- Practical consequence: anything that shells out through the terminal (the common trick of copying a host
+  `/tmp` payload into the workspace, or `ls`-ing the MPS `system/tmp` run logs) is unusable while it is wedged,
+  but the force-save recipe is console-based and unaffected. If you need those helpers, restart the IDE terminal
+  or MPS rather than retrying.
+
+## Console code cannot see the IDE platform or `System.out`; `#callAction` only reaches MPS-modelled actions (2026-10-24)
+- In a console command authored as Java text (`parse_java_and_insert`, `insert.mode:"console"`), `com.intellij.openapi.project.ProjectManager`, `…actionSystem.ActionManager`, `jetbrains.mps.ide.project.ProjectHelper` and `System.out` do **not** resolve (`UnknownDotCall`, or "Not a legal statement" for the `println` statement), while `org.jetbrains.mps.openapi.*`, `jetbrains.mps.project.AbstractModule`, `jetbrains.mps.smodel.MPSModuleRepository`, `jetbrains.mps.vfs.IFile` and the JDK do. So reach the project through the repository (`MPSModuleRepository.getInstance()`, deprecated but working) and identify modules by `AbstractModule.getDescriptorFile().getPath()`, instead of through the IntelliJ project.
+- `#callAction` (`CallActionExpression`) has an `action` reference to a `jetbrains.mps.lang.plugin.ActionDeclaration` **node**, so it can invoke only actions modelled in MPS — not a platform action registered in plugin XML, e.g. `ForceSaveAll`.
+- Console-query syntax cannot be mixed into Java text: `#models<project>` inside a `parse_java_and_insert` snippet fails with "Internal error while Parsing Java and inserting nodes". Build such a command as a JSON blueprint, or stay in Java.
+- Verified against MPS 2026.1 while writing the force-save recipe (`mps-mcp-recipes.md`).
+
+
+
+
+## After editing a language aspect model, `MAKE` the language explicitly — a test run does not regenerate a language it considers up to date (2026-10-24)
+- A mutation in `…baselan.textGen` followed by a JUnit test run had **no effect**: the run used the previously generated/compiled aspect, so the mutation looked like a no-op — a mutation check "passed" that should have failed. `mps_mcp_alter_nodes MAKE` on the language module (`parameters={"modules":["<languageRef>"]}`) regenerated it, and the same mutation then failed as expected.
+- For any mutation check: rebuild the module you actually mutated, and confirm the change in `source_gen` (grep the regenerated line) instead of assuming the run picked it up. A green run after an unregenerated change proves nothing.
+
+## `mps_mcp_get_concept_details` crashes on its documented array form — pass one string per call (2026-10-24)
+- `conceptRefs` / `languageRefs` given as a JSON **array** abort with `MCP tool call has been failed: Index -1 out of bounds for length 0`, including a one-element array. The same value as a plain **string** works. Reproduced four ways (arrays of 3, 2 and 1, and a `languageRefs` array) against two successful string-form calls. The same happens with `names` of `mps_mcp_search_root_node_by_name` (iteration 005): a plain string works, an array fails. Moreover that tool returned `[]` for roots that exist (observed twice, a test `BTestCase` root); before a delete confirm a root's existence from a `get_project_structure` dump, not from a name search.
+- The tool description advertises the array form, so this is a tool defect, not misuse. Workaround: one string per call, several calls — so a "harvest every `featureId`" workflow needs one call per concept. Distinct from the 2026-08-28 entry about stale or incomplete descriptors.
+
+## Large tool payloads land in the *MPS host's* `/tmp`, which a sandboxed agent shell cannot read — and `execute_terminal_command` runs without a shell (2026-10-24)
+- Several tools (`get_project_structure`, `print_node`, `check_root_node_problems`, `query_nodes` on large results, `get_concept_details`) answer `{"ok":true,"data":"/tmp/mps-node-….json"}`. That file is written by the MPS process, not by the agent's shell: under a sandbox the agent's `/tmp` is a different mount, and the IDE's `read_file` refuses the path ("outside project, library, and SDK roots"). Either copy it out through `execute_terminal_command` into the workspace, or ask for inline payloads (`deep=false`, `onlyNodesWithProblems`, `sampleOnly`, a `scope`-narrowed query) so no temp file is produced.
+- `execute_terminal_command` starts the string as a **process**, not through a shell, unless `executeInShell: true` is passed: `&&`, `|`, `;` and redirections become arguments of the first binary (`ls -la x | head -20` dies with "unexpected argument '-2'"), and `mkdir -p out && cp a b` silently creates directories literally named `&&` and `cp` — in the terminal's cwd, which may be inside the project. Pass `executeInShell: true` for anything shell-like and remove any strays it created.
+
+## Behavior overriding is explicit (`overriddenMethod`), not inferred from name and signature — an unset reference silently yields a second, unrelated virtual method (2026-10-24)
+- Two `ConceptMethodDeclaration`s with the same name, parameters and return type do **not** override each other unless the subconcept's declaration sets `ConceptMethodDeclaration.overriddenMethod` to the base declaration. Symptom: the generated descriptors carry **different** `baseMethodId`s, and a caller dispatching through the base descriptor runs the base body on a subclass node. In `com.symo.sysmlv2.baselan` that meant a part usage's type was read through `ItemDefinitionRef.getEffectiveName` (link `definition`, property `itemDefinitionName`) and printed as empty, while `PartDefinitionRef.getEffectiveName` (`partDefinition` / `partDefinitionName`) was never reached.
+- Detect it mechanically: group the `SMethodBuilder…name(…).baseMethodId(…)` values across `source_gen/**/behavior/*__BehaviorDescriptor.java`. One `baseMethodId` = one virtual method, however many concept descriptors list it; several ids for one name = the overrides are not wired. See also the 2026-08-28 entry on `overriddenMethod` pointing outside the real supertype chain.
+- After unifying an accessor (one declaration on an interface every variant implements, `overriddenMethod` set on each override), a call through *any* participating concrete descriptor resolves to the shared virtual method. The old, "wrong" call target therefore keeps working and review cannot spot it from the call site: grep `source_gen` for the concrete descriptor (`*DefinitionRef__BehaviorDescriptor.<method>`) instead.
+
+## `parse_java_and_insert` can add a used language to the module descriptor as a side effect (2026-10-24)
+- With `postProcess.importUsedLanguages` on (the default), a `replace` insert added `<language slang="…jetbrains.mps.lang.behavior" version="2" />` to the solution's `.msd` although the inserted code used nothing from that language. Check `git diff` for the `.msd` after any insert; where the language is genuinely unused, revert the line and rebuild — the solution built cleanly without it and MPS did not re-add it (verified once, behavior language, iteration 003).
+
+## Replacing a behavior method with `update_node SET CHILD` gives it a new id; fix callers per root (2026-10-24)
+- `update_node operation=SET kind=CHILD` on a `ConceptMethodDeclaration` (or any referenced node) creates a *new* node, so every caller in other roots dangles ("Unresolved reference: <name>" from
+  `check_root_node_problems`). Edit the body in place instead (SET CHILD on the inner `ReturnStatement.expression` etc.), or run `alter_nodes FIX_REFERENCES` with `parameters={"nodeReference": "<root>"}`
+  on each caller root (typesystem rules, other behaviors, test roots) — it needs a single root per call, not a model list, and only works while the reference still carries its resolve name. A call node you
+  create yourself carries none: point it with `update_node SET REFERENCE` (`references=[[callNode,"baseMethodDeclaration",newMethodRef]]`).
+- When many call sites dangle at once (26 `StaticMethodCall`s after a `parse_java_and_insert` `replace` of a helper method), one batched `update_node SET REFERENCE` with a list of `[callNode,"baseMethodDeclaration",newMethodRef]` triplets fixes all of them in a single call — no per-root `FIX_REFERENCES` sweep needed. `FIND_USAGES` on the *class* that held the old method lists those call nodes; their `concept` is `StaticMethodCall`.
+- The `update_node` mandatory arguments are both `operation` (`ADD`/`SET`/`DELETE`) and `kind` (`CHILD`/`PROPERTY`/`REFERENCE`).
+
+## Writing a Java-API importer through `parse_java_and_insert`: stub-model resolution, short concept names, missing JDK methods (2026-10-22)
+- `mps_mcp_model_dependency ADD` with a plain `pkg@java_stub` name binds to *whichever* module provides that package first — for `org.antlr.v4.runtime` it picked the copy inside another solution
+  (`com.symo.sysmlv2.baselan.importer`), for `com.intellij.openapi.application` the `MPS.IDEA.testFramework` copy, for `jetbrains.mps.smodel` the `MPS.Workbench` one. The parse then reports unresolved classes
+  even though the import "exists". Inspect with `get_project_structure` (`includeDependencies`) and pass the full ref (`<moduleUuid>/java:<pkg>(<module>/)`) to DELETE the wrong and ADD the right one, then `alter_nodes
+  FIX_REFERENCES` on the class.
+- `parse_java_and_insert` in `replace`/`child` mode with a `contextNodeRef` does **not** see the class's imports: write fully qualified type names in the snippet, otherwise the result is full of
+  `UnknownInstanceMethodCall`. Replacing a method gives it a new node id, so every caller dangles until `FIX_REFERENCES` on the class. The call also echoes a detached `Unknown…Call` root for an expression replace;
+  the model itself is fine — print the owning root to confirm.
+- A recipe that reached `problems: []` on the first try (iteration 003, two static methods of a test helper): fully qualify **every** type in the snippet (`org.jetbrains.mps.openapi.model.SModel`, `jetbrains.mps.project.Project`, `java.util.concurrent.Future`, …) and use a JDK holder — `final java.util.concurrent.atomic.AtomicReference<Future<TextGenResult>> pending = new AtomicReference<…>()` — instead of the closures idiom `Wrappers._T<T>`. Unqualified `SModel`/`Wrappers._T` alone produced 20 problems (unresolved class, then cascading `UnknownInstanceMethodCall`/`UnknownNew`). Which of the two changes made `Wrappers._T` resolvable is unverified.
+- The MPS JDK stub misses newer methods (`List.of`): the call becomes an `UnknownDotCall` and generation fails with "No textgen for UnknownDotCall". Use `Arrays.asList`/`ArrayList`.
+- `SAbstractConcept.getName()` is the **short** name; the qualified one is `getQualifiedName()`. Looking concepts up by `endsWith("." + name)` finds nothing. `SLanguage.getConcepts()` works but is deprecated for removal.
+- Never wait for `TextGeneratorEngine.generateText(model)`'s future while holding a read action: a pending write (dispose, save, VCS) makes the engine's worker threads wait for the lock the test thread
+  holds, and `get(30, SECONDS)` runs into the timeout on every other test. Start the generation inside the read action, call `get` outside it.
+- A `NodesTestCase` with `accessMode none` may not read a model outside a read action; do the reading in a helper that wraps `model.getRepository().getModelAccess().runReadAction(...)`.
+
+## An editor `CellModel_Alternation` hides the cells from the grammar-cells substitute menu; give the concept a `conceptAlias` instead
+
+To show one concept in two forms (inline `[1..2]` when it sits in a type's `multiplicity` slot, `multiplicity name [1..2] { }` when it is a namespace member), the editor root became a
+`CellModel_Alternation` over a node-condition (a behavior method like `isOwnedMultiplicity()`). The alternation's second branch is **not** picked up as a substitute entry, so typing its keyword
+in the parent's slot created nothing; setting `conceptAlias = multiplicity` on the concept fixed that. Related findings from the same slice: (1) a mandatory single child (`upperBound [1]`) is
+auto-created as an instance of the declared target type, and if that type is abstract the model checker reports "Abstract concept instance" on the editor test's expected tree — use a node factory
+(actions aspect, `NodeFactory` + `NodeSetupFunction_NewNode`) to create a sensible default; (2) a `create_root_node` call that times out may still execute later, leaving duplicate roots (and the
+make warning "Duplicate unit name ..., output likely corrupt") — `update_node` cannot delete a root, so check the model's roots after a timeout.
+
+## Inherited-member scopes: resolving a redefinition must not depend on redefinitions; ScopesTest cannot tell lexical from qualified; override calls need the base method (2026-10-22)
+- A scope that removes redefined features needs the `general` of the owner's own `Redefinition`s — which are resolved through the very scope being built. Give the scope builders a
+  `removeRedefined` flag and use `false` for the specialization/redefinition references themselves (`:>> power` also has to *see* the redefined feature), `true` everywhere else.
+- A `ScopesTest` checks the available elements, which for a namespace-based scope also contain `Sub::member` entries; so an inherited member that is reachable by qualification from inside the
+  type is in the set even when the lexical (simple-name) lookup is broken. Assert simple-name resolution separately (`type.lexicalScopeR(kind, null, flag).resolve(type, "name")` in a `SimpleNodeTest`).
+- A test (or any other model code) must call the base declaration of an overridden behavior method; a reference to the override reports "out of search scope", and a reference left unresolved by the blueprint
+  inserter (`null/null`) makes dependent expressions fail with unrelated errors (`not available here`). Bind such references by `r:` id after printing.
+- `TestNodeAnnotation`s added in a blueprint are lost when the same node's `children` list is replaced afterwards; build `smodelAttribute` last.
+
+## A concept that is both a `ScopeProvider` (Namespace) and holds a reference needs its own `getScope` — and null-safe overloads (2026-10-22)
+
+The checker/`ScopesTest` resolve an existing reference via the reference node itself first (`getScope(kind, link=null, index)` -> `getScope(kind, null)`), only then via its parents. A
+reference-holding node that is also a Namespace (KerML `FeatureReferenceExpression` is a Feature) therefore answers with *its own* (empty) members unless it overrides `getScope(kind, child)` and
+delegates to its owner's scope. If a superconcept overrides the 3-arg `getScope(kind, link, index)` (`KerMLType`), that override must tolerate `link == null` — otherwise the error shows up only as
+"can't create search scope for link ..." in the model checker, while direct `Scope.getScope(...)` calls in unit tests pass. Also: the platform filters scope elements by the *target concept of the
+reference link*, so mutation-checking a constraint's `kind` by **widening** it changes nothing when the link target is already narrower; **narrow** it instead.
+
+## Structure edits: 0..1 is "no `sourceCardinality`"; `UPDATE_CONCEPT_CHILD` recreates the link (2026-10-22)
+
+- A `LinkDeclaration` blueprint with `sourceCardinality` `fLJekj4/_0__1` is *not* 0..1 — it came out as cardinality `1` (mandatory), so every new node got an auto-created child. The
+  optional single child (0..1) is a link with **no `sourceCardinality` property**; `fLJekj5/_0__n` is 0..n.
+- `mps_mcp_alter_structure UPDATE_CONCEPT_CHILD` deletes and re-creates the link declaration (new node id); editor cells (`CellModel_RefNode`, ...) that referenced the old one are left
+  broken and the next MAKE fails with "broken reference 'link' ... LinkRefQualifier". Re-point them (`SET REFERENCE` on `relationDeclaration`) or avoid the operation and set the
+  property via `update_node`.
+- An enum property cannot be "unset": the checker reports "Empty enumeration property" for every node that leaves it empty (and the enum has no `none` member). For an optional enum
+  attribute use an optional wrapper child (`OptionalCell` over a `CellModel_RefNode`) holding the enum, as sysmlv2.baselan does for `direction`.
+
+## A `CellModel_RefNodeList` creates the link's declared concept — give it a `nodeFactory` to create a subconcept (2026-10-22)
+
+A containment list typed with a concrete concept (KerML `ownedSpecialization : KerMLSpecialization`) adds *that* concept on Enter, even where the owner needs a subconcept
+(`KerMLSubclassification` in a classifier). Do not chase `canBeChild`/substitute menus: the `RefNodeList` cell has its own `nodeFactory` child (`QueryFunction_NodeFactory`, body
+`return new node<Subconcept>();` = `ReturnStatement` → `GenericNewExpression` → `SNodeCreator` → `SNodeType`), which the editor model already supports (no extra used language needed).
+Related: `ScopesTest` on a node inside a *nested* `NodesTestCase` fixture asserts the exact scope of a reference without the root-visibility noise noted above; put the annotation on
+the referencing node, with `checkingReference` and the expected nodes bound by explicit `r:` refs (the inserter leaves them unresolved otherwise).
+
+## Scoping traps found while giving the KerML base language namespace scopes (2026-10-22)
+
+- **Idiom (verified 2026-10-22):** a namespace concept implements `ScopeProvider`; reference constraints are plain `scope inherited for <TargetConcept>` (`kind` = the concept the
+  scope must *yield*, e.g. the referenced namespace concept — NOT the referrer's concept; a wrong kind makes every target "out of search scope"). `overriddenMethod` =
+  `jetbrains.mps.lang.core.behavior` `ScopeProvider.getScope(kind, child)` (ref `r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)/5811245382203252452`).
+- **The model checker validates existing references through the 2-arg `getScope(kind, child)`, not the 3-arg `getScope(kind, link, index)`** (that one is only the first request of
+  completion/creation). Overriding only the 3-arg form therefore leaves nested/qualified targets "out of search scope".
+- **If the provider's scope must differ at the outermost request (e.g. a qualified-name wrapper), do not return the wrapper from a method the `parent scope` chain also uses.** Split:
+  `getScope` returns `wrapper(lexicalScope(...))`, while `lexicalScope` (internal, chain-safe) calls the enclosing provider's `lexicalScope` directly (`this.ancestor<concept = NS>`) instead of
+  `parent scope`; otherwise every level wraps again (descendants in every `getAvailableElements`, wrong name shadowing).
+- **Behavior/smodel: an `||` nested in an `&&` needs an explicit `ParenthesizedExpression`** in the AST (the checker reports "Bad priority of operations" otherwise).
+- **Mutation-checking two properties at once can mask one of them** (flipping a fixture element to public made `import all` irrelevant, so its test could not fail): mutate one cause per
+  rebuild when the tests share a fixture.
+- **A custom `Scope` (anonymous `DelegatingScope`) that changes `resolve`/`getAvailableElements` must also override `contains`.** The model checker's "reference is out of search scope"
+  asks `Scope.contains(target)`, which a delegating scope answers from the *inner* scope only — a qualified target (`A::B::C`) then fails the check although `resolve` finds it.
+  Only the model checker reports it (tests that call `resolve` stay green) — pin it with a test that asserts `scope.contains(...)`.
+- **`parent scope` of a root node is empty** (and a `lexicalScope` chain that ends at a root needs the same fallback). A root namespace needs an explicit outer scope (the named roots of its model and imports) to see sibling roots; fixtures nested in a test case
+  are not roots, so test only relative/imported resolution there.
+- **Behavior methods cannot be called from other aspects with `StaticMethodCall`** (its `classConcept` wants a `Classifier`, not a `ConceptBehavior`). Make the helper an instance method
+  and call it on `contextNode:Concept` (`Node_ConceptMethodCall` from `jetbrains.mps.lang.behavior`, not the deprecated smodel one).
+- **`ScopesTest` asserts the exact scope set**, so it is unusable when the test model also holds other fixtures that are visible (every root of the model is in the default scope); test
+  with a `SimpleNodeTest` calling `scope.resolve(...)` / `scope.contains(...)`.
+- **`CellModel_RefCell` without its `editorComponent` fails at MAKE** (see the 2026-08-23 entry): to show a qualified name instead of the `name` property use an `InlineEditorComponent`
+  with a `ref. presentation` cell (`CellModel_ReferencePresentation`) whose `referentPresentation` child (`QueryFunction_RefPresentation`, parameter `ConceptFunctionParameter_targetNode`) returns the text.
+- Scope helper refs (`jetbrains.mps.scope`): `ListScope` class `.../5455284157994035575`, `forNamedElements` `.../5455284157994035599`, `DelegatingScope` `.../5452980714151229091`
+  (ctor `.../5452980714151232873`), `Scope` class `.../3734116213129862372`, `resolve` `.../3734116213129862467`, `getAvailableElements` `.../3734116213129862471`,
+  `contains` `.../3587601930837971986`; JDK `String` stub methods are referenced as `6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)/~String.indexOf%28java.lang.String%29`.
+  `selectMany` is `TranslateOperation`, `ofConcept` is `jetbrains.mps.lang.smodel.structure.OfConceptOperation`, `union` takes `rightExpression`.
+
+## Testing, tooling and editor traps found while building the KerML base language (2026-10-22)
+
+- **A model reference is not a root.** `check_root_node_problems` on a *model* returns "no problems found" without checking anything — check every root.
+  It also does not report an unresolved *mandatory reference* (e.g. `UnknownRuleReference.declaration`) and it lists nodes carrying `has (constraints) error`
+  as errors, so "tool shows only the expected errors" is the green state for such test roots; check the IDE for anything else.
+- **`UnknownRuleReference.declaration` is mandatory** (cardinality 1, any node): point it at the exact rule expected to be violated — the
+  `ConstraintFunction_CanBeAChild` / `ConstraintFunction_PropertyValidator` node. An empty `errorRef` generates a plain error check instead of
+  `NodeUnknownRuleCheck` + the implicit `ErrorMessagesCheck` (which is what makes unannotated nodes assert "no unexpected errors").
+  Replacing a function node (`SET CHILD` with `childJson`) gives it a new id, so such references must be re-set afterwards.
+- **A test that has never failed proves nothing**: change one expected value (or flip the rule), rebuild, confirm the failure, restore. Done for every new test.
+- **Constraint tests need illegal nodes** and those show up as model-check errors; to keep models green test the *effect* (typed containment links) or
+  keep the illegal nodes annotated with `has constraints error`. Constraint/`canBe*` logic stays in the constraints aspect; only long code moves to behavior.
+- **Run configurations vanish after `rebuild:true`** of a test module, and `create_run_configuration` needs a root node reference.
+- **Editor tests**: cell ids of hand-built editor cells are generated (`<Abbr>_property_<name>`, `Constant_<hash>_a`) — read them from
+  `source_gen/.../<Editor>.java` (`setCellId`), there is no `cellId` property on `CellModel_Property`. Empty list roles use `empty_<role>`.
+  A concept needs a `conceptAlias` to be creatable by typing in a list; the root test case needs `AnonymousCellAnnotation` only on the *before* node.
+- **Editors**: `CellModel_RefNode` is for single cardinality only (`0..n` needs `CellModel_RefNodeList`); a `renderingCondition` (`QueryFunction_NodeCondition`) on a
+  plain cell is fine for "show keyword only when non-default"; compare enum values with `node.prop.name` (`EnumMember_NameOperation`) — building an enum
+  member literal by JSON is awkward. A hidden-by-default keyword needs another way to set it (Inspector cell via `inspectedCellModel`).
+- **Behavior/smodel**: `node.a.b` on a link *list* is not allowed (use `.selectMany({it => it.b})`); `x as C` is `SNodeTypeCastExpression` with `asCast=true` and is
+  null-safe; the smodel `ConceptMethodCall` is deprecated — use `jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall`; there is no `AssertNull`
+  (use `AssertTrue(x == null)`); `GetSizeOperation` is `.size()`.
+- **Moving or deleting structure**: delete every dependent aspect root (tests, editors, constraints, behavior) first, then change the structure, then rebuild the
+  dependents — otherwise dangling references. `UPDATE_CONCEPT_*` without a target deletes the link/property.
+- **MPS can block MCP calls silently**: a modal IDE dialog (e.g. "add files to git") makes `create_module` / `module_dependency` time out; check the IDE before retrying.
+- **Editor tests fail en masse with `UncleanTestExecutionException` / "Container 'ProjectImpl … services' was disposed"** (thrown from the mbeddr documentation plugin) after
+  many rebuilds in one session — restart MPS; it is not a data or model problem.
+- **Grammar cells (`OptionalCell`, `FlagCell`) change editor behaviour**: the generator then inlines the editor components, so cell ids lose the component prefix
+  (`IKMLNMV_property_visibility` becomes `property_visibility`) — re-read ids from `source_gen/.../<Editor>Builder_a.java` and fix `AnonymousCellAnnotation`s of existing
+  tests. An optional cell is a `SideTransformationSectionCell`: it fires only with the caret at the *end* of the preceding constant (`isLastPosition = true`), never from a property cell.
+- **A multiline cell needs the property initialised (`""`) in a behavior constructor**, otherwise the caret is lost after the first typed character; the editor test then presses
+  TAB after the keyword before typing the body (sysmlv2.baselan precedent).
+- **Cloning a printed test root**: the printed JSON carries a top-level `name` (`<no name>[Concept]` for unnamed nodes) that the inserter turns into a real `name` property —
+  strip it from unnamed nodes before inserting.
+- **Behavior bodies via blueprints**: `SingletonSequenceCreator` / `ListCreatorWithInit` (`new singleton<T>(x)`, `new arraylist<T>{}`) must be wrapped in a `GenericNewExpression` (`creator` child);
+  short concept names can resolve to the wrong language, so generate blueprints with fully qualified names (harvest them from a printed method's `conceptReference`). For mutually recursive methods insert
+  stubs first, then `SET CHILD body` with `r:` references to the stubs. Mutation checks of tests sharing one fixture can mask each other (a mutated import made another mutation's effect invisible) — mutate one cause per method.
+- **`check_root_node_problems` caches per root**: after a *language code* change (behavior/constraints) it can return the previous result until a node of the checked root changes —
+  toggle a harmless property (rename a node and back) before trusting a check; the JUnit run configurations always use freshly built classes. (A canary `return null` in a scope method
+  is a quick way to tell which of the two you are looking at.)
+- **Scope for a reference whose lookup must differ from the parent's** (e.g. a Specialization resolves from the *owner's owner*): MPS asks `Scope.getScope(referenceNode, …)`, i.e. the
+  reference node itself first — make that node a `ScopeProvider` instead of branching on `child` inside the parent's `getScope` (the check path passes `child = null` through the default
+  3-arg `getScope(kind, link, index)`). The blueprint inserter resolves reference *names* by nearest match, not by the language scope — bind such references with an explicit `r:` target.
+- **Module folder / registration**: new modules appear in `.mps/modules.xml` and must also be registered by hand in `com.fasten.meta.architecture` (repo_admin project).
+
+## Moving a link declaration orphans stored children — but they stay addressable by node id (2026-10-21)
+
+After `MOVE_NODE_TO_PARENT` of a link declaration to another concept (ids kept), existing nodes' children in that role disappear
+from `print_node` and from editors, yet they still sit in the model: comparisons count them ("Different children count in role"
+mirrored `was 1 / expected 0`) and `reload_all` does not bring them back. They are still found by `query_nodes FIND_INSTANCES`
+of their own concept (which lists them with their old `parentReference`), and `alter_nodes MOVE_NODE_TO_PARENT` with their
+id and the new `role` re-attaches them losslessly (annotations included). Better than re-creating fixtures by hand.
+
+## Link specialization (`specializedLink`) is not a safe way to narrow an inherited slot (2026-10-21)
+
+Making a subconcept's `type` child link a `specializedLink` of the super concept's `type`, with the target concept narrowed to a
+subconcept, looks like the textbook way to align hierarchies without touching data (link ids stay). In practice: (1) specializing
+a *reference* link (`definition` of a subconcept ref) makes its `link {definition}` scope constraint stop applying — scopes fall back
+to the default (all JDK stubs); (2) specializing a *child* link leaves two slots with the same role name, and editor-created
+children and fixtures end up under different link ids ("Different children count in role: type [was 0, expected 1]" mirrored by
+"[was 1, expected 0]"); (3) completion offers every concrete subconcept of the broad slot type.
+
+**What works:** one inherited slot typed by the broad concept, subconcepts of the target for the narrower kinds, a `canBeChild` rule
+on the *broad* target concept that selects the allowed subconcept per parent (`childConcept.isSubConceptOf(...)` — constraints are
+inherited by subconcepts, so the rule must live on the super concept), a scope that narrows by parent where needed, and — for
+existing data — rename the old links, rebuild, `MOVE_NODE_TO_PARENT` each child into the inherited role, delete the old links.
+Also: when concept A becomes a subconcept of B, every `isInstanceOf(B)` branch ahead of the `isInstanceOf(A)` one now captures A
+(`typeDefinition` returned the wrong link until the order was swapped). Moving a link declaration to another concept keeps its id but
+fixtures can still show hidden orphan children afterwards; rebuild the owning fixture node.
+
+## Deleting a child link declaration orphans its children invisibly — they still count in comparisons (2026-10-20)
+
+Removing a `LinkDeclaration` (e.g. when a concept now inherits an equivalent slot from a new super concept) leaves existing
+children in that role as *orphans*: `print_node` and `check_root_node_problems` do not show them and nothing fails, but test
+comparisons (`AssertNodeEquals`, editor test results) still count them as children of a role of the same name ("Different
+children count in role: type [was: 0, expected: 1]" next to its mirror "[was: 1, expected: 0]"). Also models you do not own
+(sandbox) silently lose their content.
+
+**How to migrate:** first switch `extends`, *rename* the old links (`role`/`name` -> `legacyX`) so role names are unambiguous,
+**rebuild the language** (the move resolves roles against the compiled structure; before the rebuild it moved nothing and still
+reported success), then `mps_mcp_alter_nodes MOVE_NODE_TO_PARENT` (`nodeReference`, `newParentRef`, `role`) each child into the
+inherited role; only then delete the old links. For fixtures that cannot be migrated (orphans are not addressable), replace the
+whole owning node with `update_node SET CHILD` (parent, role, `childNodeRef`, `childJson`). When building JSON from a printed
+node, drop the display-only top-level keys (`name`, `doc`, `deprecated`, ...): a leftover `name` is applied as the *property*
+`name`.
+
+## Test `has error` can point at the exact `error` statement — one statement per cause (2026-10-20)
+
+A checking-rule test annotation created as plain `has error` (`NodeUnknownErrorCheckOperation`) accepts *any* error on
+the node, so a reader of the test cannot tell what is expected to fail and a different failure silently satisfies it.
+`NodeErrorCheckOperation` has a child `errorRef : ReportErrorStatementReference` whose `declaration` reference
+targets the `error` statement inside the `NonTypesystemRule`; the generated test then checks that this statement
+produced the error. Consequences: (1) a statement is the unit of identity, so give every distinct cause its *own*
+`error` statement (do not report two causes through one statement fed by a helper that returns different strings);
+(2) put a stable label at the start of each message (`[flow-source-direction] …`) so the message in the editor/problems
+view maps back to the statement; (3) through MCP replace the annotation with `update_node SET CHILD` (parent = the
+`NodeOperationsContainer`, `childRole nodeOperations`, `childNodeRef` = old annotation, `childJson` = new one with
+`errorRef` → `ReportErrorStatementReference` with a `declaration` reference whose `targetReference` is the statement).
+
+Tool traps hit on the way: `update_node SET PROPERTY` takes `properties` as an array of **triplets**
+`[nodeRef, name, value]`; deleting a list element is `SET CHILD` with `childNodeRef` and no `childJson`; when
+generating JSON from a *printed* node, `target` holds the **current** name of a referenced declaration — so after
+renaming a method, a script that matches `target == oldName` silently changes nothing (the call kept pointing at the
+renamed method; found only because a test failed). Always verify the printed rule after a scripted rewrite.
+
+## A position-dependent reference scope must also handle `referenceNode != null` — `ScopesTest` calls it that way (2026-10-20)
+
+A referent scope written only against `(contextNode, containmentLink, position)` — needed for completion of list
+elements, see the "Reference completion for list elements" entry — answers for the wrong element when the reference
+already exists: the declarative `ScopesTest` annotation evaluates it with `referenceNode` set and without a usable
+position, so step 2 of a feature chain `inner.q` reported the scope of step 0 (the owner's members instead of
+`inner`'s type's members). Importer-side resolution (`Scope.getScope(ref.parent, ref, kind)`) was correct, so only the
+test (and presumably re-resolution of an existing unresolved reference) saw it.
+
+**How to apply:** `referenceNode != null && referenceNode.parent != null ? Scope.getScope(referenceNode.parent,
+referenceNode, concept/X/) : Scope.getScope(contextNode, containmentLink, position, concept/X/)`. Keep the positional
+branch for completion, where there is no reference node yet.
+
+## A child slot typed by an *interface* concept creates an instance of the interface itself (2026-10-20)
+
+An optional child (`value : ISysMLv2Expression`) whose type is an interface concept is filled, when the user types
+the grammar-cells `=` option, with a node whose concept is **the interface** (editor test: "Different concepts: was
+`ISysMLv2Expression`, expected `SysMLv2LiteralExpression`"), even though only one concrete concept implements it. No
+checker complains; the node has no editor of its own.
+
+**How to apply:** give the interface a `ConceptConstraints` root (`<I>_Constraints`) whose `defaultConcreteConcept`
+reference points at the concrete concept to instantiate (a single reference on the root, not a child block). Rebuild the
+language; an editor test that types into the slot is the cheap way to see the difference.
+
+## Authoring big ANTLR visitor methods: plain Java through the parser, typed smodel in small cloned helpers (2026-10-20)
+
+`mps_mcp_parse_java_and_insert` (`CLASS_CONTENT`, `insert.mode: child`, `role: member`; `STATEMENTS` into an
+existing method body via `parentRef` = the body `StatementList`) resolves nested stub classes by simple name
+(`SysMLv2Parser.InterfaceUsageContext`, its accessors, `RuntimeException`, `List<String>`) and handles all the
+plain-Java parts of a `visitXxx` method, including calls to the class's own `private static` helpers when they are
+qualified with the class name. It cannot produce `node<C>` creation, `x.prop = v`, `nlist.add(...)` or `x:C` casts.
+
+**How to apply:** (1) insert skeleton helpers through the parser (`static SNode newXxx(String name) { return null; }`,
+`static void addXxxContent(SNode owner, SNode child) { }`); (2) replace each helper's body with a `StatementList`
+JSON built by cloning the matching statements out of an existing, similar method (`print_node deep` → select
+statements by their node-id suffix → swap concept ids → rewrite `variableDeclaration` references to plain names
+with the `targetReference` dropped, see the "local-variable reference" gotcha below; `update_node SET CHILD` on the
+helper's body node); (3) write the `visitXxx` method itself as plain Java through the parser, calling the helpers
+and accessors. Stub-class method accessors never need hand-derived `baseMethodDeclaration` refs this way.
+Before inserting an aspect root for a concept, list the aspect model's roots with `FIND_INSTANCES` of the root
+concept: `search_root_node_by_name` missed an existing `SysMLv2PortUsage_Behavior`, the duplicate root then broke
+the language make with "Duplicate unit name ...BehaviorDescriptor.java" (delete the stray root with
+`update_root_node_from_json DELETE` and merge the methods into the original).
+The parser path also does not catch a wrong *cardinality guess* of a generated ANTLR accessor when the type happens to
+offer the same method: `fd.valuePart().isEmpty()` type-checked (`RuleContext.isEmpty()`) but threw an NPE at runtime because
+the accessor returns a single context, `null` when absent — check the generated rule shape (an element that appears once
+per alternative is a single accessor, even if it occurs in several alternatives) and cover every alternative in a test.
+
+## A cloned `KeyMapKeystroke` (editor-test `press keys`) comes back with an empty `change` enum (2026-10-20)
+
+Cloning an `EditorTestCase` through its `print_node` JSON drops the unset `KeyMapKeystroke.change`; the re-inserted
+node has an *empty* enum value and `check_root_node_problems` reports "Empty enumeration property" (the test still
+runs). Same family as the unset-boolean and unset-style-flag entries below.
+
+**How to apply:** after cloning an editor test, `update_node SET PROPERTY ... change replace_all` on every
+`KeyMapKeystroke` (`replace_all` is the default the original nodes had).
+
+## Reference completion for list elements whose editor is just a ref cell (2026-10-19)
+
+Four traps when a child concept (e.g. `UsageRef` with link `usage`) whose whole editor is a reference
+cell is used as an element of a `RefNodeList` (e.g. a dotted feature chain `a.b.c`):
+
+1. **The list replaces the ref cell's substitute info.** The element's big cell gets an
+   `SChildSubstituteInfo`, so Complete only offers the concept itself ("UsageRef"), never the referents —
+   typed text stays unresolved. Fix: make the concept a **smart reference** (`SmartReferenceAttribute` on the
+   link in the structure); the child substitute menu then lists the referents.
+2. **Smart-reference completion asks for the scope before the node exists.** It goes through
+   `Scope.getScope(contextNode, containmentLink, position, kind)` → `ScopeProvider.getScope(kind, link, index)`
+   (default delegates to `getScope(kind, null)`, i.e. no position info). A referent scope written as
+   `Scope.getScope(referenceNode.parent, referenceNode, ...)` breaks here (the menu silently fell back to all
+   instances in the model). Write the constraint as `Scope.getScope(contextNode, containmentLink, position,
+   concept/X/)` and override `getScope(kind, link, index)` in the scope provider when the scope depends on the
+   position (e.g. chain step N depends on step N-1).
+3. **The inline target-name cell of a ref cell must be `read only`.** Otherwise typing into it (e.g. text
+   meant for the next cell) renames the *referenced* node.
+4. **Editor tests: a Complete after an auto-applied completion leaves the next cell's popup open**, and the
+   popup swallows following keys (TAB does nothing, typed text filters the popup). Typing a unique alias
+   (`connect`) already substitutes — don't Complete again; after `name` + Complete press ESC before TAB.
+
+Diagnosis technique that found all four: a temporary reflection probe in the editor test (`editorComponent`
+→ `getSelectedCell()`, `getSubstituteInfo().getMatchingActions(text, false)`, and the node's references),
+with temporary `java.lang`/`java.lang.reflect` stub imports removed afterwards (also revert the test module's
+`.msd`, which gains a JDK dependency).
+
+## Cloning a node via print_node JSON can flip unset boolean properties to their default (2026-10-19)
+
+`mps_mcp_print_node` omits properties that are *unset* on the source node. When such a printout is
+re-inserted as a blueprint (`insert_root_node_from_json` / `update_node ADD CHILD`), the new node
+gets the property's *default* instead — which is not the same as "unset" for every concept. Seen with
+`PunctuationLeftStyleClassItem`: the original part-def editor's `{` had `flag` unset (no
+punctuation), the clone came back with `flag=true`, so the cloned editor rendered `Shaft{` instead of
+`Shaft {`.
+
+**How to apply:** after cloning editor roots (style items in particular) compare the clone against
+the original with a deep print and explicitly set boolean properties that differ (`update_node SET
+PROPERTY`).
+
+## Transformation menus: interface default menus are not inherited; in grammar-cells editors use `before`, not LEFT side transform as well (2026-10-19)
+
+Two traps when adding a left side transform (e.g. typing `#` in front of a keyword) for several
+concepts that share an interface:
+
+1. A contribution to the **default menu of an interface concept** is not reached from the
+   implementing concepts' default menus (the implicit default menu follows the superconcept chain,
+   not implemented interfaces). Put the items into a **named** menu for the interface and include it
+   from a small contribution to each concrete concept's default menu.
+2. In editors built with grammar cells, `before`/`after` contributions are already folded into the
+   left/right side transform. A section that offers the same action at both the grammar-cells
+   `before` location and the standard `side transform: left` location shows the item twice, so
+   Complete cannot pick it and the typed text stays in the side-transform hint cell
+   (`EditorCell_STHint`, node gets a `SideTransformInfo` attribute). Use only `before` (and put two
+   side-transform locations in one section and the generator even emits a duplicate interface).
+
+**How to apply:** for grammar-cells editors use a single `before` section; if an editor test leaves a
+`SideTransformInfo` attribute behind, the transform matched zero or several items.
+
+## Grammar cells: an editor component whose root is an `OptionalCell` breaks grammar-cell editors (2026-10-19)
+
+Including (`CellModel_Component`) an editor component whose root cell is a grammar-cells `OptionalCell`
+into editors that themselves use grammar cells makes generation fail with "Cell has multiple
+children, but only one is expected" (one error per include, reported against a generated
+`CellModel_CustomFactory`).
+
+**How to apply:** give shared editor components a plain cell as root — e.g. a `CellModel_RefNodeList`
+with a `renderingCondition` such as `node.list.isNotEmpty` — or inline the `OptionalCell` into each
+editor instead of sharing it through a component.
+
+## Editor: after code completion the caret goes to the first editable cell; `attractsFocus` is ignored (2026-10-18)
+
+After a node is created by completion (typing an alias + Complete_Action, for example on an empty
+line), MPS selects the first editable cell of the new node. A `FocusPolicy` / `attractsFocus` set on
+a later cell (for example a multiline `body`) is not honoured in this path. This is easy to miss when
+an optional name cell is added in front of the body: existing editor tests that type the body right
+after completion silently type into the empty name cell instead, and the body stays empty.
+
+**How to apply:** do not rely on `attractsFocus` to place the caret after completion. In editor
+tests, press TAB (`press keys VK_TAB`) to move from the name cell to the next editable cell. To find
+out where the caret actually is, temporarily print `editorComponent.getSelectedCell()` and its
+`getCellId()` from the test (it shows e.g. `property_name`).
+
+## Grammar cells: an `OptionalCell` containing only a bare property cell fails generation (2026-10-18)
+
+An `OptionalCell` whose only content is a `CellModel_Property` (for example an optional `name`) is
+rejected by the grammar-cells generator with "Content of optional cell is not supported". An
+`OptionalCell` with a keyword constant plus the property (`locale "{locale}"`) works.
+
+**How to apply:** for an optional bare property, use a plain property cell with
+`emptyNoTargetText = true` instead of wrapping it in an `OptionalCell`.
+
+## Grammar cells: never put a "show if" (`renderingCondition`) on an `OptionalCell` (2026-10-15)
+
+`com.mbeddr.mpsutil.grammarcells` `OptionalCell` already hides its content when the wrapped child or
+property is absent. When the content is absent, the optional cell also generates the side transform
+that creates it (for example typing `:` after a name to create `: type`). Adding a
+`renderingCondition` such as `node.type != null` looks redundant but breaks the
+transform. The typed text then lands in the neighbouring property cell (a usage's `name` becomes
+`mass: pack::Mass`), or the child is never created. Nothing reports an error.
+
+**How to apply:** leave `renderingCondition` empty on every `OptionalCell`. If typing into an
+optional slot "does nothing" in an editor test, check the optional cells for a show-if first. A
+`renderingCondition` on a plain constant or collection inside the optional cell is fine.
+
+## Editor tests: the `result` oracle is a sibling root of the `before` node — model-wide scopes see it (2026-10-15)
+
+An `EditorTestCase` runs in a `TempModel` holding **both** the `before` node and the `result` node
+as roots, side by side. Any scope that looks beyond the edited root — e.g.
+`model.roots(MyFile).selectMany(...)` for a cross-file / root-namespace lookup — therefore also sees
+the oracle's copy of every declaration. The oracle repeats the fixture's names, so each completion
+item appears twice. A pattern that should match uniquely then matches two items, and completion
+opens a popup instead of applying. The test fails with the reference still unset and no error. The
+item description shows the same `(TempModel_….<root>)` for both copies, which makes this easy to
+misread as a doubled substitute menu.
+
+**How to apply:** if completion in an editor test silently does nothing, dump the cell's
+`getSubstituteInfo().getMatchingActions(pattern, false)` (inside a read action) and the temp model's
+roots before suspecting menus or scopes. Workaround used in `com.fasten.symo`
+(`_010_Edit_PartUsage_02`): after `invoke action Complete_Action`, `press keys ENTER` to accept
+the first popup item. The fixture root comes before the oracle, so its node is listed first. This
+relies on that ordering, so don't use it where the order of equal items matters.
+
+## Editor tests: `press keys ENTER` / `ctrl+SPACE` do nothing in the editor — use `invoke action` (2026-10-14)
+
+`EditorTestCase`'s `press keys` feeds the key event straight into the editor component
+(`KeyEventsDispatcher` → `processKeyEvent` via reflection), bypassing IntelliJ's shortcut dispatch.
+The editor component itself only maps a few keys to cell actions (arrows-with-shift, Tab, Home/End,
+Page Up/Down, F1, typed Space → transforms). **Enter (insert new element) and Ctrl+Space (completion)
+are IDE actions** (`jetbrains.mps.ide.editor.actions.Insert_Action` / `Complete_Action`), so in a test
+they are silent no-ops: no error, the model just doesn't change, and the next `type` lands in the
+same cell. Easy to misread as a broken list handler or a broken scope. Once the completion popup is
+open, though, `press keys DOWN` / `ENTER` do reach the popup and work.
+
+**How to apply:** in editor tests write Enter-as-insert as `invoke action → by id:
+jetbrains.mps.ide.editor.actions.Insert_Action` and Ctrl+Space as `invoke action → by id:
+jetbrains.mps.ide.editor.actions.Complete_Action` (`InvokeActionStatement` +
+`BootstrapActionReference.actionId`). Keep `press keys` for typed text and for keys sent to an
+open popup. Separately: running editor tests in-IDE with mbeddr's `com.mbeddr.doc` plugin loaded logs
+`ProcessCanceledException`s from `DocumentationHandler` on the disposed test project, which turns a
+green assertion into `UncleanTestExecutionException`. That noise is unrelated to the test under work.
+
+## `CompositeScope` detects ambiguity, it does not shadow; and `ScopeProvider.getScope` does not climb to the parent by itself (2026-10-13)
+
+Two facts that together made lexical scoping look right while being wrong:
+
+- The default `ScopeProvider.getScope(kind, child)` returns `null`. `Scope.getScope(...)` climbs only while providers
+  return `null`, so a provider that returns *any* non-null scope (even `CompositeScope(own, super.getScope(...))`, whose
+  `super` is that `null`) ends the climb: names of enclosing packages/files are silently not visible. To continue
+  outward you must call `Scope.getScope(this.parent, this, kind)` yourself.
+- `CompositeScope.resolve` returns `null` when two sub-scopes both resolve the name to *different* nodes
+  ("ambiguity"). It is therefore the wrong tool for nested namespaces: once you do chain the enclosing scope, an inner
+  `Wheel` and an outer `Wheel` make the reference unresolvable instead of the inner one winning.
+
+**How to apply:** for nested/shadowing namespaces build one flat `ListScope.forNamedElements(own ++ outerElements
+whose name is not already in own)` (outer elements via `outer.getAvailableElements(null)`), own first. The kernel here has
+no `HidingByNameScope`. Test it with a reference that must see an enclosing-only name *and* one that is shadowed.
+
+## `Scope.getScope(...)` silently skips every node that doesn't *declare* `ScopeProvider` (2026-10-13)
+
+`BaseConcept` does **not** implement `ScopeProvider`. `Scope.getScope(node, fromChild, kind)` (and the
+`inherited` scope factory) walk up the ancestors and only consult nodes that are `isInstanceOf(ScopeProvider)`.
+A `getScope` method written in a concept's behavior (`overrides ScopeProvider.getScope`) is therefore dead
+code until the concept also lists `ScopeProvider` under `implements`. Symptom: the scope comes back empty or
+`null` (an NPE at `scope.resolve(...)`) only for refs whose chain reaches such a concept, while refs under a
+concept that does implement it work. Seen with a root `SysMLv2File` that had the behavior but not the interface.
+
+**How to apply:** when adding a `getScope` behavior, add `ScopeProvider` to the concept's structure in the same
+step; and null-check the result of `Scope.getScope(...)` when calling it from plain code.
+
+## `node.isInstanceOf(...)` / `concept.isSubConceptOf(...)` accept a *dynamic* concept via `#expr#` (2026-10-13)
+
+The `conceptArgument` of those operations is an `IRefConceptArg`; besides the static `RefConcept_Reference`
+(`<ConceptName>`), `PoundExpression` (`# kind #`) lets a `concept<>` variable such as the `kind` parameter of
+`getScope` be used. That allows one generic `getScope` (`content.where({it => it.isInstanceOf(#kind#)})`)
+instead of one `if (kind.isSubConceptOf(X))` branch per target concept. Not discoverable from
+`get_concept_details` of the operation (it only lists `IRefConceptArg`); found via
+`query_structure GET_SUB_CONCEPTS` on that interface.
+
+## `NodesTestCase` nodes are children of the test root, not model roots; fixture compare matches reference targets by name only (2026-10-13)
+
+- Code that looks at `model.roots(X)` (e.g. a file-level scope that unions the top-level content of all
+  files in the model) sees **nothing** for nodes under a `NodesTestCase`'s `nodesToCheck` — the file is a child
+  of the `TestNode`. Test such logic with a parsed model (`TestUtils.parseFileIntoModel`, where files are roots),
+  and make scope providers include `this` explicitly so a lone file still works.
+- `AssertNodeEquals` (de.itemis.mps.compare) *does* follow references (a wrong target was caught, even in another
+  fixture), but it compares the target node's properties, so two same-named targets (e.g. an inner and an outer
+  `Wheel`) compare equal. To prove *which* one a reference picked, add an explicit assertion
+  (e.g. the target's container name).
+
+## A run configuration created via `mps_mcp_create_run_configuration` can vanish after a clean rebuild of the test module (2026-10-12)
+
+Twice (iterations 9 and 11), a `JUnit Tests` run config created with `mps_mcp_create_run_configuration`
+right after inserting a new `NodesTestCase` root was gone after the next `mps_mcp_alter_nodes MAKE`
+with `rebuild=true` on the test module: `execute_run_configuration` then fails with "Run configuration
+with name '…' not found", and `get_run_configurations` no longer lists it. Re-creating it after the
+rebuild works and it persists from then on.
+
+**How to apply:** create the run config for a new test root *after* the test module's clean rebuild,
+not before; if `execute_run_configuration` reports it missing, just re-create it (the call replaces by
+name, so it's idempotent).
+
+**Not characterised — do not rely on the narrower reading.** Iteration 002 also lost every config after a
+`MAKE` of the *language* module (a plain make, no `rebuild=true`), while several `MAKE`s of the test
+solution in iteration 003 left 26 configs in place. So "may vanish on any rebuild" is the safe rule
+(the language-module case was observed once); recreate after the last rebuild rather than assuming
+survival. Also note the tool can only target a root node — a model/solution-scoped JUnit suite
+(`Tests in '…'`) cannot be created through MCP at all, only per test class.
+
+## No MCP node tool deletes a *root* node — use a console `#instances(...).where(...).forEach(n -> n.delete)` (2026-10-12)
+
+`mps_mcp_update_node` `SET CHILD` without `childJson` deletes a *child*, but on a root it fails with
+"has no parent (it might be a root node)", and no other `mps_mcp_*` node tool deletes roots. Working
+route: insert a console `BLExpression` `#instances(<RootConcept>).where({it => it.name.equals("X")}).forEach({n => n.delete; })`
+via `mps_mcp_insert_console_command_from_json` and run it with `mps_mcp_run_console_command`
+(`forEach`, not `refactor`, so no confirmation dialog stalls it). Afterwards
+`mps_mcp_search_root_node_by_name` may still list the deleted root (stale index) — confirm with
+`mps_mcp_print_node` on its reference, which returns `NOT_FOUND`.
+
+## Retargeting a child/reference link to an incompatible concept leaves existing uses silently invalid — the checkers report nothing (2026-10-12)
+
+After changing `SysMLv2PartDefinition.specializes` from `SysMLv2PartDefinitionRef[0..n]` to
+`SysMLv2ItemDefinitionRef[0..n]` (`mps_mcp_alter_structure UPDATE_CONCEPT_CHILD`, clean rebuild,
+`mps_mcp_reload_all`), `mps_mcp_check_root_node_problems` still reported **no problems** on: existing
+model nodes holding now-unassignable `SysMLv2PartDefinitionRef` children in that role, and
+BaseLanguage code doing `pd.specializes.add(x)` with `x : node<SysMLv2PartDefinitionRef>`.
+Nothing flagged it; it would only have surfaced at runtime/in tests.
+
+**How to apply:** after retargeting a link, don't rely on the checkers — enumerate the affected uses
+yourself (scan `print_node` deep dumps for the old target concept/feature ids in the relevant role, in
+language aspects, importer/solution code, sandbox and test fixtures) and fix each one explicitly; then
+run the tests.
+
+## A grammarcells `FlagCell` inside an `OptionalCell` hijacks the optional's visibility — its `renderingCondition` is ignored (2026-10-11)
+
+Putting a `com.mbeddr.mpsutil.grammarcells` `FlagCell` (e.g. `flag{ conjugated }` rendering `~`) inside an
+`OptionalCell`'s option collection — `optional [> : flag{ conjugated } % type % <]` — makes the whole
+optional render only when the *flag property* is true, even though the optional has an explicit
+`renderingCondition` (`node.type != null`). Nodes with a type but `conjugated == false` silently lose
+the `: Type` segment in the editor projection; `check_root_node_problems` reports nothing and generated
+text is unaffected, so only the projection (`print_node` PLAIN TEXT on a sandbox node) shows it.
+
+**How to apply:** don't nest a `FlagCell` inside an `OptionalCell`. For an optional marker inside an
+optional segment, use a plain `CellModel_Constant` with its own `renderingCondition` on the boolean, and
+expose the boolean for editing in the inspector (or via an intention) instead.
+
+## Re-inserting a `print_node` dump can materialise style-item flags the original didn't store (2026-10-11)
+
+Cloning an editor root by converting its `print_node` JSON into a blueprint and inserting it
+(`mps_mcp_insert_root_node_from_json`) produced a `PunctuationLeftStyleClassItem` with `flag = "true"`
+where the original node had no `flag` property at all — so the clone rendered `Name{` while the original
+rendered `Name {`. The blueprint itself did not contain `flag`; the insert populated it.
+
+**How to apply:** after cloning an editor (or any root carrying style items) via blueprint, diff the
+clone's compact tree against the original's and compare the editor projection of a sample node; clear
+stray properties with `mps_mcp_update_node` `SET PROPERTY` `[ref, "flag", null]`.
+
+## Snapshotting a node as a JSON blueprint (to delete-and-later-reinsert it) must use the plain **name**, not the copied `targetReference`, for any `VariableReference`/`ForEachVariableReference` whose declaration lives in the same snapshot (2026-10-12)
+
+When splitting one git history into several commits by temporarily removing a feature from the live
+model, snapshotting it as a `print_node` dump, and later re-inserting that dump as a fresh blueprint
+(`mps_mcp_insert_root_node_from_json` / `ADD CHILD`), a generic "dump → blueprint" transform that
+copies every reference's `targetReference` verbatim silently breaks any `VariableReference` (or
+`ForEachVariableReference`) whose target declaration (a local variable, parameter, or foreach
+variable) is *itself* part of the same snapshot. A fresh insert always allocates new persistent ids
+for the whole subtree — including that declaration — so the copied old id in the reference goes
+dangling. `check_root_node_problems` does **not** catch this (the tree is structurally well-formed);
+it only surfaces as a visibly blank operand in the generated Java (e.g. `if ( != null)`) or in a
+`mps_mcp_print_node` plain-text dump, since the renderer prints nothing for an unresolved reference
+target rather than erroring.
+
+**How to apply:** when building a generic snapshot-to-blueprint transformer for this purpose, for
+`VariableReference.variableDeclaration` and `ForEachVariableReference.variable` specifically, emit
+`{"role": ..., "target": "<plain name>"}` — the same plain-name auto-resolution the insert tools
+already support for "an unambiguous local ref" — instead of the node-id form, so each reference
+re-resolves by name against whichever sibling node the same insert just (re)created, regardless of
+its new id. Keep using the real persistent id (`targetReference`) for every other reference role
+(concepts, methods, links, interfaces) whose target is *not* being recreated in the same batch — the
+plain-name trick only matters for intra-subtree self-references.
+
+## `mps_mcp_create_root_node`'s `NodesTestCase` default `accessMode` isn't `"none"` — a test calling an async engine (e.g. `TextGeneratorEngine`) deadlocks for exactly 30s and reports the result as `null` (2026-10-12)
+
+A `NodesTestCase` root created via `mps_mcp_create_root_node` (no explicit `accessMode` property set) does **not** default to `accessMode="none"` the way a hand-authored one in the IDE typically does. Left at its actual default, the generated test body runs entirely inside `BaseTestBody.runWithinCommand` — on the EDT, holding the write lock — for the whole method, not just mutating statements. A test that calls a helper wrapping an async engine with its own worker-thread pool (e.g. `jetbrains.mps.text.TextGeneratorEngine.generateText(model)`, returning a `Future<TextGenResult>` that the helper blocks on via `.get(30, TimeUnit.SECONDS)`) then hits the exact deadlock described below ("self-deadlocks ... EDT holds the write lock"): the worker thread can never get the read permit it needs, the EDT is blocked in `.get()` waiting for it, and after exactly 30 seconds `FutureTask.get` throws `TimeoutException` (no message) — which a catch-and-return-`e.getMessage()` helper (as `RoundtripTestUtils.generateText` does) turns into a plain `null`, so the test fails with `expected:<...text...> but was:<null>` and gives no hint that it's a threading/timeout issue rather than a generation bug. The failure is deterministic and reproducible across reruns, and it is not model-content-specific — it is purely a property of the test root's `accessMode`.
+
+**How to apply:** after `mps_mcp_create_root_node` for a `NodesTestCase` that will call a roundtrip/textgen helper (or any other async-engine-backed utility), explicitly `SET PROPERTY accessMode = "none"` on the root before adding test methods — don't assume the tool's default matches what a same-shaped existing test (copied by hand in the IDE) already has. Confirm by comparing `print_node` on your new root against a known-good sibling test root's `accessMode` value rather than assuming parity. Once set to `"none"`, the existing production-utility pattern (mutating calls wrapped in their own `command`+`invokeAndWait`, the async-engine call wrapped only in `read action{}`) runs correctly off-EDT with no further changes needed.
+
+## A `LinkDeclaration`'s `metaClass`/`sourceCardinality` enum properties silently stay at their default when set via a guessed encoded value (2026-10-12)
+
+Writing a JSON blueprint (or `mps_mcp_update_node` `SET PROPERTY`) for `jetbrains.mps.lang.structure.structure.LinkDeclaration`'s `metaClass` or `sourceCardinality` property using a guessed `"<prefix>/<member>"` string (e.g. `"fLJjDmT/aggregation"`, `"fLJekj5/_0__1"` — copying the *shape* of a value seen in a `print_node` dump of a different link) does not error. The insert/update call reports success, but the property silently reverts to its **default** (`aggregation` for `metaClass`, `_0__n` for `sourceCardinality`) instead of taking the intended value — there is no feedback that the write was rejected. This surfaces much later as a confusing editor/constraint error on an unrelated node (e.g. `CellModel_RefCell`/`CellModel_RefNode` reporting "multiple cardinality link is not applicable" or "out of search scope" on a link that looks, from its own `print_node` output, like it should be fine).
+
+**Root cause (partially understood):** these two properties are plain Java enums, not model-level `EnumerationDeclaration`s, so their persistent encoding isn't a freely-composable `<enumId>/<memberName>` pair the way a custom MPS enum's is — guessing the prefix from one member's dump and reusing it for another member of the same enum does not reliably work. `print_node` **omits an enum property from its output entirely when the stored value equals the datatype's default** — so after a failed/reverted write, the property simply vanishes from the dump rather than showing the wrong value, which looks deceptively like "nothing is set, must still need to be added" rather than "this was actively reverted."
+
+**How to apply:** set these two properties via `mps_mcp_update_node` `SET PROPERTY` using the **plain enum member name** as the value — `"reference"` / `"aggregation"` for `metaClass`, `"_0__1"` / `"_1"` / `"_0__n"` / `"_1__n"` for `sourceCardinality` — not a guessed prefixed string, and not through the initial JSON blueprint if avoidable. After writing, don't trust an unchanged `print_node` dump as confirmation — re-run `mps_mcp_check_root_node_problems` on a node that actually *uses* the link (an editor cell, a behavior/textgen access) to confirm the cardinality/kind took effect, since a correctly-defaulted property and a silently-reverted one both read the same way in isolation.
+
+## `command { … }` / `undo-transparent command { … }` statements inside a JUnit-launched `NodesTestCase` body require the EDT and throw off a pooled test thread — wrap the model-mutating call behind a hand-written utility that hops via `invokeAndWait` (2026-10-12)
+
+A `NodesTestCase` test method's body (with `accessMode="none"`, the common case for tests that otherwise self-wrap their own model access) runs on a JUnit worker thread, not the EDT. Writing the mutation directly inline as a DSL `command { ... }` or `undo-transparent command { ... }` block (`jetbrains.mps.lang.access.structure.ExecuteCommandStatement` / `ExecuteTransparentCommandStatement`) fails at runtime with `com.intellij.openapi.diagnostic.RuntimeExceptionWithAttachments: Access is allowed from Event Dispatch Thread (EDT) only` — both statement kinds assume they're invoked already on EDT; neither hops there itself. Setting the **test case's own** `accessMode` property to `"command"` does not fix this either — it does not visibly change the generated test body's threading at all in this MPS version. A plain `read action { ... }` block (`ExecuteLightweightCommandStatement`), by contrast, works fine off-EDT for pure reads (lightweight read locks don't require EDT) — so reads and writes need different handling.
+
+**How to apply:** for a test that must mutate a model (e.g. calling an importer/reifier utility) from a pooled JUnit thread: (1) put the mutating call in a **hand-written static Java utility method** (not inline in the test body) that itself does `ApplicationManager.getApplication().invokeAndWait(new Runnable() { public void run() { command with proj.getRepository() { <the actual mutation>; } } })` — i.e. explicitly hop to EDT via `invokeAndWait` *before* opening the command, mirroring the existing pattern in this repo's own `TestUtils.parseFileIntoModel`; (2) the anonymous `Runnable`'s overridden `run()` method needs explicit `public` visibility or MAKE fails with "Trying to assign weaker privileges"; (3) back in the test body, call that utility method directly (safe off-EDT) and then wrap any subsequent bare navigation/assertions over the model in a `read action` block instead of leaving them unwrapped, since even read-only navigation throws `IllegalModelAccessError: You can read model only inside read actions` outside of one. Key JDK/platform refs for building the `invokeAndWait` call by hand: `498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)/~ApplicationManager.getApplication%28%29`, `~Application.invokeAndWait%28java.lang.Runnable%29`, and the JDK's `~Runnable` / `~Object.<init>%28%29` for the anonymous class shell.
+
+## `mps_mcp_parse_java_and_insert` silently mis-parses `string`/`node<C>`/`x:C` as unresolved plain-Java types instead of erroring (2026-10-12)
+
+Writing MPS-smodel-flavored syntax directly in the `code` string passed to
+`mps_mcp_parse_java_and_insert` — the lowercase `string` primitive keyword, a `node<C>` generic
+local-variable type, or a bare `x:C` strict-cast expression — does **not** fail the call and does
+**not** produce the intended smodel concept. The parser treats all three as plain-Java constructs it
+doesn't recognize and inserts a structurally-valid-looking but semantically broken tree: `string`
+becomes a `ClassifierType` referencing an unresolved class literally named `string`; `node<C>`
+becomes a `ClassifierType` with an unresolved `node` classifier and `C` as a bogus type parameter;
+`x:C` inside an argument list gets swallowed into an `UnknownMethodReference`/`UnknownNew` shell with
+the real operand buried as a child. The call itself reports success with zero or only cosmetic
+"problems" at insert time — the breakage only shows up as a wall of `"Unresolved reference"` /
+`"?no classifier?"` / `"Abstract concept instance detected"` errors from a **subsequent**
+`mps_mcp_check_root_node_problems` call, which makes it easy to misdiagnose as a reference-fixup
+problem rather than a parse problem. This reproduces even in a method body that successfully used
+these exact smodel idioms when inserted via hand-built JSON earlier (e.g. editing an existing
+`node<SysMLv2Package> pkg = new node<SysMLv2Package>();` local is no evidence the *parser* can
+produce that shape — it may have been JSON-authored).
+
+**How to apply:** before calling `mps_mcp_parse_java_and_insert`, mentally split the method into (a)
+pure-Java control flow / `ctx.xxx()` navigation / `throw`/`if` — safe to parse as-is — and (b) any
+line that declares a `node<C>`/`nlist<C>`/`node-ptr<C>` local, assigns an smodel property/link
+(`x.name = ...`), or writes an `x:C`/`x as C` cast. For (b), either use `String`/`Object` as an inert
+placeholder in the parsed skeleton and patch the specific `LocalVariableDeclaration.type` /
+`.initializer` / `DotExpression.operation` children afterward via `mps_mcp_update_node` (`SET
+CHILD`), or skip the parser entirely for that statement and hand-build it as JSON per
+`mps-model-manipulation`'s `references/variable-declarations.md` (`SNodeType`/`SNodeCreator`) and
+`references/property-and-mutation-ops.md` (`SPropertyAccess`, `SLinkListAccess`,
+`AddElementOperation`). After patching, re-run `mps_mcp_check_root_node_problems` — a clean result
+confirms the swap landed on every broken node, not just the first one found.
+
+## `NodesTestCase.accessMode="command"` self-deadlocks a test that blocks on an async engine's `Future.get()` — EDT holds the write lock the async worker needs a read permit for (2026-10-10)
+
+A `SimpleNodeTest` with `accessMode="command"` runs its **entire method body** on the EDT under
+the write lock (`ExecuteCommandStatement`/`command{}` semantics applied to the whole test, not just
+a block inside it). If that body calls into an API that does its own work asynchronously on worker
+threads and then blocks the calling thread waiting for the result — e.g.
+`jetbrains.mps.text.TextGeneratorEngine.generateText(model)` returns a `Future<TextGenResult>` and
+the test does `.get(timeout, unit)` — the test freezes MPS solid: the EDT (holding the write lock)
+blocks on the future; the engine's worker thread (`textgen-thread-N`) can never acquire the read
+permit it needs to do its work, because the write lock it's waiting to be released is held by the
+very EDT thread that's blocked waiting for it. Confirmed via thread-dump analysis (3-thread cycle:
+`AWT-EventQueue-0` → `Future.get` → `textgen-thread-1` → blocked acquiring read permit → never
+released because the EDT never reaches the point of releasing the write lock). Compiles clean,
+`check_root_node_problems` passes, only a live run hangs — so it surfaces late and looks like "MPS
+froze" with no obvious cause.
+
+**How to apply:** for a `NodesTestCase` method that both (a) mutates/creates nodes and (b) calls an
+async engine that does its own locking internally, don't put the whole method under
+`accessMode="command"`. Instead set `accessMode="none"` and wrap each concern in the narrowest
+correct primitive by hand:
+- Mutating statements (anything needing a **write** action, e.g.
+  `TemporaryModels.getInstance().createEditable(...)`, `SysMLv2Importer.importText(...)`,
+  `TemporaryModels.getInstance().dispose(...)`) go inside a plain `command { ... }` block — but
+  `ExecuteCommandStatement` asserts `ThreadingAssertions.assertEventDispatchThread`, so when the
+  surrounding `accessMode="none"` test runs on a background pooled thread (not the EDT), wrap the
+  whole `command{}` block in
+  `ApplicationManager.getApplication().invokeAndWait(new Runnable() { public void run() { command { ... } } });`
+  (plain Java via `mps_mcp_parse_java_and_insert`, needs a model dependency on
+  `498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)` for
+  `ApplicationManager` — find it with `mps_mcp_search_root_node_by_name(scope: "all")`, since
+  `mps_mcp_search_concepts` doesn't search Java stub classes). MPS's generator handles the Java
+  effectively-final-capture requirement automatically — no manual array-holder workaround needed.
+- A call into an async engine that itself only needs a **read** lock (like
+  `TextGeneratorEngine.generateText`, which does synchronous read-access work before dispatching to
+  worker threads that take their own read actions) goes inside `read action { ... }`
+  (`ExecuteLightweightCommandStatement`) instead — this maps to `runReadAction`, which does **not**
+  require the EDT, so it needs no `invokeAndWait` wrapping and can run directly from the
+  `accessMode="none"` test's background thread.
+- Declare the result variable (`string generateText;`) outside the `read action` block with no
+  initializer, then assign it inside — `ExecuteLightweightCommandStatement`'s body is a statement
+  list, not an expression, so it can't be used as an initializer directly.
+
+The general rule: `command{}` (write lock) is EDT-only; `read action{}` (read lock) works from any
+thread; `accessMode="command"` on the whole test method is only safe when nothing in the body ever
+blocks waiting on another thread that itself needs a lock the EDT is holding.
+
+## `de.itemis.mps.compare`'s `assert node equals` crashes with an unrelated `IllegalModelAccessError` when the compared nodes genuinely differ — the crash is a plugin bug, not a clue; go find the real mismatch (2026-10-12)
+
+When `AssertNodeEquals` ("`assert node equals X and Y with options {...}`", surfaced via a shared
+helper like `TestUtils.checkFirstRoot`) finds its two operands **unequal**, it tries to render a
+side-by-side diff view (`DiffView.showNonEditibleDiff` → `cloneNode` → `addToTempModel` →
+`TemporaryModels.createEditable`) to produce a nicer failure message. Under a headless/batch JUnit
+run (not the interactive IDE), that diff-rendering path itself crashes with
+`jetbrains.mps.smodel.IllegalModelAccessError: You can write model only inside write actions` —
+because creating the temp model for the diff view needs a write action, but the comparison runs
+inside a `read action`. This exception **replaces** the real `ComparisonFailure` you'd otherwise
+get, so the stack trace tells you nothing about what actually differs — it only tells you that the
+two nodes are NOT equal (the crash path is only reached on inequality; equal comparisons never hit
+it, confirmed by other tests using the identical helper passing cleanly).
+
+**How to apply:** don't debug the stack trace itself — it's a dead end. Temporarily replace the
+`assert node equals ...` call with manual field-level `assert ... equals ...` statements (resolve
+the actual node via `model.roots(C).first` etc., same as the pre-`de.itemis.mps.compare` style) to
+locate which property/child actually differs, fix the fixture or the importer, then restore the
+`assert node equals ...` form once the real mismatch is fixed — the crash disappears once the nodes
+are actually equal. One common root cause specific to this plugin's idiom (see
+`docs/idioms/structural-node-equality-via-test-fixture.md`): the `TestNodeAnnotation` label was
+attached to the wrong node — e.g. a nested child instead of the root the comparison helper actually
+resolves — so the two sides being compared are different *concepts* entirely, not just different
+property values.
+
+## `node.linkList.add new(C)` (`LinkList_AddNewChildOperation`) rejects an `nlist<...>`-typed parameter even though its runtime type matches — use plain `.add(existingNode)` instead when the list came in as a parameter (2026-10-11)
+
+`LinkList_AddNewChildOperation` (`node.someLink.add new(ConcreteConcept)`) structurally requires its
+*operand* to be a literal `SLinkListAccess`-rooted `DotExpression` (`parentNode.someLink`) — not just
+anything whose MPS type happens to be `nlist<X>`. Passing an `nlist<ISomeInterface>` *parameter*
+(received from a caller, e.g. for a recursive helper that appends into whichever container the
+caller passed down) into `.add new(C)` fails `check_root_node_problems` with "Error: operation is
+not applicable to nlist<ISomeInterface>", even though the parameter's declared type is exactly the
+collection type the operation nominally targets.
+
+**How to apply:** when a list to append into is received as an `nlist<I>` parameter (rather than
+accessed inline via `parentNode.link`), don't try to create-and-attach in one step with `add new`.
+Instead: build the child node by itself (`new node<C>()` — note `SNodeCreator` must be wrapped in a
+`GenericNewExpression`, since it's an `AbstractCreator`, not an `Expression`, despite how the
+`mps-model-manipulation` skill's `property-and-mutation-ops.md` phrases it), set its properties and
+recurse into its own children while it's still detached, then attach it at the end with the plain
+collections `.add(childNode)` (`AddElementOperation`) — which works fine on an `nlist<I>` received as
+a parameter, since it's an ordinary collections append rather than the structurally-constrained
+create-and-attach sugar.
+
+## TextGen's `indent buffer` emits two spaces per depth level, not a tab (2026-10-11)
+
+The `mps-aspect-textgen` skill's `indentation-model.md` mental-model diagram states `indent buffer`
+emits `"\t" × buffer`. In practice (confirmed by a failing round-trip assertion — expected a literal
+`\t`, actual output had two spaces per nesting level) the default indentation unit is **two spaces**,
+not a tab character. The depth-counter semantics (`with indent`/`increase depth`/`decrease depth`
+only move the counter; `indent buffer` is what actually emits whitespace) are otherwise accurate —
+only the specific character(s) emitted per depth level is wrong in that doc.
+
+**How to apply:** when hand-authoring a fixture string that must byte-exact-match generated text
+(e.g. a round-trip test comparing `generateText(parse(fixture))` against `fixture` itself), use two
+spaces per nesting level, not `\t` — or better, generate the fixture once via the importer/textgen
+pipeline and copy the actual output into the test, rather than hand-guessing the whitespace.
+
+## `BTestCase` (plain JUnit) can't create/manipulate live `SNode`s — core platform singletons are null in its run harness; use `NodesTestCase` instead (2026-10-10)
+
+A `BTestCase` test method that creates an actual MPS node at runtime — even a trivially detached
+one via plain `new node<C>()`, or a model-attached one via `model.new root node<C>()` — fails with
+a `NullPointerException` when run via the "JUnit Tests" run configuration, pointing at a `null`
+platform singleton:
+- Detached creation (`SNodeCreator`/`new node<C>()`): `NodeIdentityComponent.getInstance()` returns
+  null inside `SModelOperations.createNewNode`.
+- Model-attached creation (`Model_CreateNewRootNodeOperation`) needs a real `SModel` operand. Even
+  obtaining one via `jetbrains.mps.smodel.MPSModuleRepository.getInstance()` (passed as the `repo`
+  child of a `ModelReferenceExpression` to resolve a model by name/stereotype) doesn't help — the
+  singleton itself resolves to something whose internal repository field is still `null`
+  (`ModuleRepositoryFacade.getModelsByName` NPEs on `this.myRepo`).
+
+Both are symptoms of the same cause: **the "JUnit Tests" harness for a plain `BTestCase` does not
+bootstrap the full MPS platform** (no live module/model repository, no node-identity service) —
+consistent with `BTestCase` being documented for testing *hand-written Java/Kotlin runtime code*,
+not for exercising smodel/node-manipulation logic. Compiling and even `check_root_node_problems`
+pass cleanly; only the actual JUnit run fails, so this surfaces late.
+
+**How to apply:** for any test that creates, inserts, or otherwise manipulates a real `SNode`/
+`SModel` at runtime (e.g. testing an importer, a refactoring, a generator utility invoked
+standalone), use **`NodesTestCase`** (`testMethods` → `SimpleNodeTest`, not `TestMethodList` →
+`TestMethod`) instead of `BTestCase` — its run harness does properly initialize these platform
+services, confirmed by the identical node-creation statements (including the same
+`ModelReferenceExpression`/`MPSModuleRepository.getInstance()` pattern for resolving a model by
+name) succeeding there with no changes beyond the surrounding test-case shape. Reserve `BTestCase`
+for tests that only call plain Java/library code with no MPS model interaction (e.g. an ANTLR
+parser's own `getNumberOfSyntaxErrors()` — ordinary Java objects, no `SNode` involved).
+
+## `mps_mcp_parse_java_and_insert` in `child` mode can silently produce a detached orphan instead of attaching, for an `Expression` role the parser doesn't natively recognize (2026-10-10)
+
+Calling it with `mode: "child"` targeting an optional (`0..1`) `Expression`-typed role that isn't
+plain-Java-shaped (e.g. `ModelReferenceExpression.repo`, which semantically wants an `SRepository`
+expression) can return a success envelope whose own fields already reveal the problem —
+`"isRoot": true` with empty `parentReference`/`modelReference`/`moduleReference` — meaning the
+parsed expression was never actually spliced into the requested slot. `check_root_node_problems`
+on the real root then shows the intended parent's role as still empty, while the "inserted" node
+floats disconnected (and may not even persist — re-querying it by the reference returned in the
+tool's own response can come back `NOT_FOUND`).
+
+**How to apply:** don't trust a `mode: "child"` insert at face value for an uncommon `Expression`
+slot — check the response's own `isRoot`/`parentReference` fields (a real child attachment has
+`isRoot: false` and a non-empty `parentReference`). If it looks orphaned, redo the insert as a
+plain `mps_mcp_update_node ADD CHILD` with a hand-built JSON blueprint instead (reusing the
+same resolved `classConcept`/`baseMethodDeclaration` refs from the orphan's own printout) — that
+path attaches reliably.
+
+**Addendum:** the returned `isRoot: true` node and the node that actually lands in the tree can be
+two *different* nodes entirely — not just "the reported node is a disconnected copy of what you
+wanted." Chaining a `mode: "replace"` on a multi-segment `DotExpression` (e.g. replacing
+`x.getBytes().toString()` with `new String(x.getBytes())`) returned an orphaned `UnknownNew`, yet
+the real parent slot ended up correctly holding a `GenericNewExpression` — yet that real
+`ClassCreator` had an *empty* `actualArgument` list instead of the parsed argument. Retrying with a
+`mode: "child"` insert targeting `actualArgument` again reported another orphaned
+`UnknownInstanceMethodCall`, yet the real slot this time ended up with a **correctly-resolved**
+`DotExpression` argument chain. Net effect: never trust either the reported ref or a single
+before/after diff — after any insert into an ambiguous `Expression` slot, re-print the *actual*
+parent node (not the tool's returned ref) and inspect its real children/references before deciding
+whether to redo anything; what's broken may not be what the response implies is broken (e.g. here
+the real bug ended up being a wrong overload (`String()` instead of `String(byte[])`) picked for
+`ClassCreator.baseMethodDeclaration`, fixed with a plain `SET REFERENCE`, not a redo of the insert).
+
+## A `java_classes` stub model bakes in classifier refs as of its *first* scan — adding a dependency afterward doesn't retroactively fix them (2026-10-10)
+
+Wrapping a third-party jar as a `java_classes` modelRoot (the `docx4j.lib`/`plantuml.lib` pattern:
+`<modelRoot type="java_classes"><sourceRoot location="foo.jar"/></modelRoot>` + a matching facet
+`<library>` entry) only resolves the jar's own cross-references (e.g. a method parameter typed
+`java.lang.String`) against whatever the hosting module already depended on **at the moment the jar
+was first scanned**. Creating the solution, adding the jar, and reloading *before* also adding the
+`JDK` dependency leaves every JDK-typed reference inside the stub model permanently serialized as
+`targetReference: "null/~String"` (`print_node` on the affected member shows a child
+`ClassifierType` named literally `"?no classifier?"` with `targetReference: "null/~String"`). This
+then surfaces downstream as confusing, seemingly-unrelated typesystem errors on code that merely
+*calls* the jar's methods — `"Error: String is not a subtype of ?no classifier?"`,
+`"Error: Incompatible method signature"` — and even further downstream, methods declaring
+`throws SomeRuntimeException` (ANTLR4's generated parser rule methods declare
+`throws RecognitionException`, which genuinely extends `RuntimeException`) get wrongly flagged
+`"Error: uncaught exceptions: ..."`, because the typesystem's checked-exception exemption also
+depends on correctly resolving the exception class's supertype chain — which fails for the same
+reason. Merely adding the missing dependency (e.g. `JDK`) afterward and calling
+`mps_mcp_reload_all` does **not** fix already-baked-in stub references — the stub model isn't
+re-scanned just because the owning module's dependency list changed.
+
+**How to apply:** before wrapping any jar as `java_classes`, add every dependency the jar's own
+*public API surface* needs to resolve (at minimum `JDK`, mirroring existing `*.lib` solutions in
+this repo) to the hosting module **first**, then add the `java_classes` modelRoot + `<library>`
+entry, then `reload_all` once. If you discover the dependency was missing after the fact: remove
+the `java_classes` modelRoot + `<library>` entries entirely, `reload_all` (clears the stale stub
+model), re-add them now that the dependency is present, `reload_all` again. Verify with
+`mps_mcp_print_node(deep=true)` on a representative stub member before trusting it — look for any
+`"?no classifier?"` node or a `targetReference` starting with `"null/"`. This compounds with the
+existing "repeated `java_classes` churn can freeze MPS" gotcha below — converge on the *dependency
+list* first (not just the jar list) before doing this remove/re-add cycle, so it only needs to
+happen once.
+
+## A structural MCP write can pop a confirmation dialog that blocks every project-model MCP call until dismissed — not necessarily a genuine freeze (2026-10-10)
+
+`mps_mcp_create_module`, `mps_mcp_module_dependency` (ADD), and a `java_classes`/`<library>`
+modelRoot hand-edit followed by `mps_mcp_reload_all` can each pop an MPS confirmation dialog (seen:
+after creating a new Solution module; after adding a module dependency) that blocks the IDE's
+single read/write lock — every subsequent MCP call that needs the project model
+(`mps_mcp_get_project_structure`, `mps_mcp_reload_all`, `mps_mcp_print_node`, ...) times out, even
+against modules unrelated to the triggering change, **while** a call that doesn't touch the project
+model (`mps_mcp_list_open_projects`) keeps answering normally. That split — lightweight calls fine,
+project-model calls all timing out — is the signal to check for a dialog rather than assume a
+genuine hang; the existing "repeated `java_classes` churn" gotcha below describes the *other* case
+(a real freeze, confirmed by `get_project_structure` *also* timing out, which it does here too —
+the distinguishing test is whether `list_open_projects` still answers, not whether the heavier call
+times out). Restarting MPS is unnecessary in the dialog case — just ask the user to find and
+dismiss it (it can be behind the main window); the very next call then succeeds immediately.
+
+**Side effect to watch for:** if a `.msd`/`.mpl` hand-edit is made and a subsequent MCP call hits
+this dialog-wait before MPS has re-read the file from disk, MPS can flush its own (pre-edit)
+in-memory descriptor back to disk once the dialog resolves, **silently reverting the hand-edit**
+(observed: a `java_classes` modelRoot + `<library>` addition disappeared from the file, and
+`<languageVersions/>` was reset empty, after exactly this sequence). **How to apply:** after any
+`.msd`/`.mpl` hand-edit, if the following tool call times out and a dialog turns out to be the
+cause, re-read the edited file from disk once the dialog is cleared and the call succeeds — don't
+assume the edit survived; redo it if it didn't, then reload once more without interleaving other
+structural changes.
 
 ## Replacing a bundled lib jar with `MPS.IDEA.Modules` (2026-10-30)
 
@@ -446,6 +2237,13 @@ on the method-call reference itself. Treat that warning as a real, actionable si
 before running it — don't dismiss it and try anyway.
 
 ## A local-variable reference can't target a sibling declared in the same blueprint (2026-08-27)
+
+> **Superseded (2026-10-11):** no longer true with the current MCP tooling. A `VariableReference` /
+> `ForEachVariableReference` given the plain variable **name** as `target` (`{"role": "variableDeclaration",
+> "target": "superRef"}`) resolves by scope against a sibling `LocalVariableDeclaration`, `ForEachVariable`,
+> parameter, or closure parameter created in the same `ADD CHILD` / `SET CHILD` blueprint — verified by
+> inspecting the resulting `targetReference`s, which all pointed at the freshly created declarations. See also
+> the 2026-10-12 snapshot entry above, which relies on the same behavior. The text below is kept for history.
 
 When building a multi-statement method body (or console command) via a single JSON blueprint, there is
 no supported syntax for a `LocalVariableReference`/`ForEachVariableReference` to point at a
@@ -990,3 +2788,26 @@ it.
 suspect a missing-required-child in a recently added **editor** aspect node (structural checkers won't
 catch it) — bisect by deleting newly added editor roots in groups and rebuilding rather than trying to
 inspect the reported node directly.
+
+## Review model code for MPS idioms, independently of passing tests (2026-11-13)
+
+In model-manipulating behavior and checking code, use native smodel operations:
+`node.isInstanceOf(Concept)`, `node.isInstanceOf(# requiredConcept)`, typed `node<>`
+and `concept<>` values, `.parent`, `.containingLink`, typed role access and native
+node construction/mutations. Use the collections language for model sequences and
+lists. Compare concept/link/property identities through native literals, not names.
+Exact concept checks use `node.concept.isExactly(Concept)` rather than a custom
+predicate or reflective `getConcept().equals(...)` chain.
+
+Do not introduce custom `is(node, concept)` adapters, including as temporary
+project-model scaffolding. Author the smodel operation directly in the AST. Plain
+Java parsing remains useful for ordinary Java algorithms; it is not a substitute
+for native model code. If an existing parsed helper is extended, review the whole
+helper and its callers rather than converting only the newly inserted branches.
+Retain OpenAPI calls where a genuine Java boundary or migration-runtime operation
+requires them, with explicit type bridges where needed.
+
+Before finishing, inspect the changed model code in MPS notation and audit for
+leftover adapters, placeholder constants, avoidable raw node traversal and string
+comparisons of metamodel identities. Then check, rebuild/reload and run relevant
+tests. Passing tests establish behavior, not idiomatic or maintainable source.

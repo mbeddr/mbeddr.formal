@@ -5,6 +5,30 @@ per [ADR 0005](../../../../../docs/adr/0005-localize-project-specific-knowledge-
 general MPS/MCP-tool gotchas stay in the root `docs/agents/mps-gotchas.md`; this file is for
 investigations specific to this project's own domain and generator pipeline).
 
+## Current test status (2026-10-24) — read this before trusting a count below
+
+The entries further down are a chronological log; the counts in them are what was observed **at that
+time** and were not re-checked afterwards. Note also that those older counts (e.g. "importer 61/61",
+"baselan 47/47") counted **test methods**, while the numbers below count **test classes**, so the two
+are not comparable. Current state:
+
+- **SysML v2 importer** (`test.com.symo.sysmlv2.baselan.importer`): `_010_smoke_test@tests` holds **27
+  roots** — **25 test classes** (`NodesTestCase`) and 2 helper classes (`TestUtils`,
+  `RoundtripTestUtils`). All 25 green, run per class after the iteration-007 deletion (they were green in
+  iterations 002, 003 and 005 as well). The former `BTestCase` `_010_test_sysmlv2_toolchain_Test` was
+  **removed** in iteration 007: it only asserted that an *empty* input parses without syntax errors, the
+  25 round-trip tests go through the same lexer and parser, and the suite had not been executing it (why it
+  was skipped stayed undetermined — see the audit's F-16).
+- **SysML v2 language** (`test.com.symo.sysmlv2.baselan`): **36 test classes** (7 scope + 26 editor + 3
+  checking-rule roots), green: 36/36 per class in iteration 001, and again 36/36 in iteration 005 (before and after the two
+  renames), i.e. after iteration 002's change to the behavior and textGen aspects.
+- **KerML** (measured per class in iteration 008): 53 test classes, 181 tests, 0 failures
+  (`test.com.symo.kerml.baselan` 102 tests / 45 classes, importer 79 / 8). Known flake: one early run of
+  `_320_Multiplicity_TypeStandalone` failed once, then passed four times; a single red run of that class is not
+  by itself a regression.
+- `Tests in '...'` suite configurations exist only when the user creates them in the IDE; the MCP tools
+  cannot create model-scoped suites (see root `mps-gotchas.md`).
+
 ## Add checking rules for known `com.symo.plantuml` generated-syntax gaps
 
 A model passing all MPS-side checks should generate syntactically correct PlantUML. Two confirmed
@@ -47,3 +71,1598 @@ Still to investigate:
   be made to work without per-jar granularity limitations.
 - Whether heap usage grows further/leaks across repeated make/rebuild or reload cycles within one
   IDE session (not just a one-time baseline snapshot).
+
+## SysML v2 textual importer (`com.symo.sysmlv2.baselan`) — iteration plan (2026-10-10)
+
+Building a SysML v2 textual-syntax importer, iteratively, from the skeleton already in place
+(language `com.symo.sysmlv2.baselan`, solutions `com.symo.sysmlv2.baselan.importer` and
+`.sandbox`, tests `test.com.symo.sysmlv2.baselan[.importer]`).
+
+**Grammar source was corrupted, now fixed.** The committed `grammar/SysMLv2Lexer.g4` /
+`SysMLv2Parser.g4` were saved GitHub HTML pages, not raw grammar text — discovered via the page's
+own `<title>`/`og:url` metadata, which named the real origin:
+[antlr/grammars-v4](https://github.com/antlr/grammars-v4), path `sysml-v2/`, `master` branch, MIT
+license, derived from the OMG SysML v2 KEBNF spec. Replaced both files with the verified raw
+content and added `grammar/README.md` (copied from upstream) recording provenance/license/entry
+point. Upstream entry rule is `rootNamespace : packageBodyElement* EOF` — an empty file is valid
+syntax, making it the true "hello world" fixture. Upstream also ships
+`examples/{camera,toaster-system,vehicle-model}.sysml` as later-iteration milestones (even the
+smallest, `camera.sysml`, already needs imports + `part def` + `perform action`, so it's not an
+early target).
+
+**Lexer discards formatting with no hidden channel**: `WS` and `//` line-comments are `-> skip`
+(not even hidden-channel), so blank-line/`//`-comment round-trip is NOT recoverable from the
+grammar as-is — would require forking the vendored lexer to route those to a hidden channel. The
+existing `EmptyLine` concept (`ISysMLv2FileContent`) is being **kept** as an explicit deferred
+milestone for that lexer fork, not removed. **(Decision 2026-10-24: settled — kept, blocked on the
+lexer fork; do not re-raise it. Root `docs/adr/0001-no-concepts-for-syntax-only-markers.md` forbids
+concepts for syntax-only markers such as `endif`, but a blank line is content the user places and the
+model must round-trip, not a marker whose position is determined by an enclosing construct, so the
+ADR does not apply.)** `/* ... */` block comments (`REGULAR_COMMENT`) are
+real tokens already consumed by `comment`/`doc`/`rep` rules — those map to SysML's first-class
+`Comment`/`Documentation`/`TextualRepresentation` elements, a distinct (non-deferred) later
+iteration.
+
+**Toolchain — iteration 0 done (2026-10-10)**: no ANTLR4 (only ANTLR2 jars, used by docx4j) existed
+in the repo. MPS has no model-root type for compiling plain checked-in `.java` source (confirmed by
+enumerating `ModelRoot` implementations in `mps-persistence.jar`: only `JavaClassStubsModelRoot` /
+`JDKClassStubModelRoot`, both binary-jar stub readers — no source-compiling equivalent), so "keep
+the generated source readable AND have MPS compile it" resolves to: vendor
+`antlr4-runtime-4.13.2.jar` + `sysmlv2-grammar.jar`, both wired directly into
+`com.symo.sysmlv2.baselan.importer` itself (`com.mpsbasics.docx4j.lib`/`com.symo.plantuml.lib`
+third-party-jar pattern — `java_classes` modelRoot + facet `<library>` entries under `lib/` — but
+inlined into this solution rather than a separate `*.lib` solution, by request: fewer modules for a
+single-consumer jar pair). Needs **the `JDK` module dependency to already be present before the
+jar is first scanned** — see the `mps-gotchas.md` entry on stub models baking in classifier refs as
+of first-scan time (hit once when this lived in a separate `.lib` solution created without `JDK`;
+avoided on the second pass by adding `JDK` first).
+
+**Grammar build is now Gradle, not a shell script (2026-10-10, by request)**: the original
+`grammar/regenerate.sh` (hand-rolled `curl`/`java -jar antlr4-complete.jar`/`javac`/`jar`) is gone,
+replaced by a proper Gradle subproject, `:sysmlv2-grammar`
+(`code/languages/com.fasten.symo/solutions/com.symo.sysmlv2.baselan.importer/grammar-build/` —
+briefly moved to the `com.fasten.symo` project root and then moved back, by request: nesting it
+inside the importer solution it builds for was judged to better preserve MPS project structure
+conventions than hoisting it out for hypothetical future reuse — registered in the repo-root
+`settings.gradle`) using Gradle's built-in `antlr` plugin. ANTLR4 is
+now a normal Gradle dependency (`antlr("org.antlr:antlr4:4.13.2")` for the tool,
+`api("org.antlr:antlr4-runtime:4.13.2")` for the runtime, both resolved from Maven Central — no
+more manual jar downloads). The `.g4` grammar files moved to the Gradle-conventional
+`grammar-build/src/main/antlr/` (there is no more separate `grammar/` directory at all — the old
+`grammar/README.md` provenance doc moved to `grammar-build/README.md`). `generateGrammarSource` is
+configured with `-visitor -no-listener -package com.symo.sysmlv2.baselan.importer.antlr`; a custom
+`copyToMps` Sync task vendors the resulting `sysmlv2-grammar.jar` (this subproject's own `jar`
+output) plus `antlr4-runtime-4.13.2.jar` (filtered out of `runtimeClasspath` by name — that
+classpath also resolves the ANTLR4 *tool*'s own transitive deps (ST4, antlr3 runtime, icu4j,
+treelayout) via the plugin's `antlr` configuration, which MPS never needs) straight into
+`com.symo.sysmlv2.baselan.importer/lib/`. Run `./gradlew :sysmlv2-grammar:copyToMps` from the repo
+root whenever the grammar changes, then rebuild `com.symo.sysmlv2.baselan.importer` in MPS. Not
+wired into the root `setup`/`resolveLanguageLibs` task chain (unlike `resolvePlantUML` et al.) —
+left standalone since `com.fasten.symo` is explicitly excluded from the Ant-based
+`build_formal_languages` migration; wiring it in is a reasonable follow-up if wanted. Validated
+three times total: standalone (plain `javac`/`java`, outside MPS, before the Gradle migration —
+zero syntax errors parsing `rootNamespace` on an empty file and all three upstream
+`examples/*.sysml`);
+inside MPS via a throwaway `SysMLv2ToolchainSmokeTest` `ClassConcept` in
+`com.symo.sysmlv2.baselan.importer.main` (zero errors on empty + `camera.sysml`, then deleted once
+the real test below existed — `.main` is reserved for the real importer entry point, not
+scaffolding); and as a proper, permanent `BTestCase` — `test_testParserStart` in
+`test.com.symo.sysmlv2.baselan.importer._010_smoke_test@tests` (`test.com.symo.sysmlv2.baselan.importer`
+solution, wired with dependencies on `.importer` and `JDK` only — no separate lib module to depend
+on anymore) — asserts `parser.getNumberOfSyntaxErrors() == 0` after `rootNamespace()` on an empty
+string. Runs green via a registered `JUnit Tests` config (`_010_test_sysmlv2_toolchain`). This is
+the permanent toolchain-health check iteration 1 builds on top of.
+
+**Note on consolidating a jar-wrapping solution into its sole consumer**: if you later merge a
+separate `*.lib` solution's `java_classes` modelRoot into the module that was its only consumer
+(as done here), any *existing* BaseLanguage references into the old jar-wrapping module's stub
+classes (e.g. `ClassCreator.baseMethodDeclaration`, `StaticMethodCall.classConcept`/
+`baseMethodDeclaration`) go dangling — the classes now live under a different module uuid in the
+persistent ref, even though the package/class/method names are unchanged. `mps_mcp_alter_nodes
+FIX_REFERENCES` (pass `{"nodeReference": "..."}`) fixes the simpler ones (plain classifier `type`
+refs) but not constructor/method refs — those need a manual `mps_mcp_update_node SET REFERENCE`
+batch, swapping the old module-uuid prefix for the new one in each `targetReference` (the package
+path segment also changes from `(old-module-name/)` to `(new-module-name/)`). `MAKE rebuild=true`
+surfaces exactly which refs are still broken via its `textgen error: 'Target node is null ...'`
+output.
+
+**Validation strategy**: each iteration gets a `textGen` aspect alongside `structure`, producing a
+*semantic* round-trip check (import text → model → regenerate text → re-import → compare models),
+not a byte-level diff against arbitrary input formatting — SysML's textual syntax is
+whitespace/style-insensitive, so diffing regenerated text against a hand-authored fixture is only
+valid while the fixture is written in the textgen's own canonical style. Once real upstream
+examples (`camera.sysml` etc., different formatting conventions) are imported, round-tripping
+must compare parsed models, not raw text.
+
+**Per-iteration recipe**: grammar rules → `structure` → importer visitor → minimal `editor` →
+`textGen` (round-trip) → fixture in `.sandbox` → tests in both `test.*` solutions →
+`check_root_node_problems` clean. Planned sequence: (0) toolchain + fixed grammar — **done**; (1)
+empty file — **done**; (2) `package` declarations (recursive `packageBodyElement`); (3) `import`;
+(4) `part def` (empty body); (5) full `camera.sysml`; then
+`toaster-system.sysml`/`vehicle-model.sysml` as later milestones, decided iteration-by-iteration
+rather than front-loaded.
+
+**Iteration 1 done (2026-10-10) — empty file**: `SysMLv2Importer.importText(String text, String
+fileName, model targetModel)` in `com.symo.sysmlv2.baselan.importer.main` parses `text`, throws if
+`parser.getNumberOfSyntaxErrors() > 0`, else creates a `SysMLv2File` root node (named `fileName`)
+in `targetModel` via `model.new root node<SysMLv2File>()` (`Model_CreateNewRootNodeOperation`) and
+returns it. Also added: a minimal scaffolded `editor` for `SysMLv2File` (name + `content` list);
+a `textGen` aspect (`com.symo.sysmlv2.baselan.textGen`, new model) with `SysMLv2File_TextGen`
+(`extension` returns `"sysml"`; body appends `$list{node.content}`, delegating to each content
+item's own textgen — inert for now since `content` is always empty this iteration, but this *is*
+the real serialization logic, not speculative, so it stays rather than being deferred); an example
+`SysMLv2File` named `EmptyFile` inserted directly into `com.symo.sysmlv2.baselan.sandbox._010_smoke`
+(hand-authored to match the import result for this trivial all-empty case, not produced by actually
+running the importer — a real run-the-importer-against-a-fixture pipeline is deferred to whenever a
+later iteration's content is non-trivial enough to make that worthwhile).
+
+**Test placement pitfall hit and resolved**: the obvious place for the import test looked like the
+existing `_010_test_sysmlv2_toolchain_Test` `BTestCase` (same `_010_smoke_test@tests` model as the
+iteration-0 toolchain check, by request) — but a `BTestCase` test method that creates a live
+`SNode` (either detached `new node<C>()` or model-attached `model.new root node<C>()`) NPEs at
+runtime on a null platform singleton (`NodeIdentityComponent`, or an uninitialized
+`MPSModuleRepository`) — see the new `mps-gotchas.md` entry. Fixed by adding a **`NodesTestCase`**
+(`ImportEmptyFileTest`, `SimpleNodeTest` method `testImportEmptyFile`) — still in the same
+`_010_smoke_test@tests` model, just a different root concept — whose run harness does properly
+initialize those services. The test resolves its own containing model at runtime via a
+`ModelReferenceExpression` (by name + `"tests"` stereotype, `repo` =
+`MPSModuleRepository.getInstance()`) and `.detach`es the created node at the end so repeated runs
+stay idempotent (verified: ran twice back to back, model root count unchanged at 2). Registered as
+JUnit config `_020_test_sysmlv2_import_empty_file`, alongside the existing
+`_010_test_sysmlv2_toolchain` — both green.
+
+**Between iteration 1 and 2 (2026-10-10/11)**: the round-trip test deadlocked MPS
+(`accessMode="command"` blocking on `TextGeneratorEngine`'s async `Future.get()` while holding the
+EDT write lock the engine's own worker needed — see the `mps-gotchas.md` entry) and separately hit
+a `byte[].toString()` bug in the round-trip helper. Both fixed; `accessMode` moved to `"none"` with
+explicit `command{}`/`read action{}` wrapping. The user then refactored the test-support code for
+reuse: `TestUtils.parseFileIntoModel(content, fileName, proj): model` /
+`TestUtils.disposeTemporaryModel(model, proj)` hide the `invokeAndWait`+`command` boilerplate, and
+`RoundtripTestUtils.parseTextIntoModelAndGenerateText(content, fileName, proj): string` composes
+import + `read action` + generate + dispose into one call — iteration 2's tests build directly on
+these. (One bug introduced by that refactor was caught and fixed while building on it:
+`parseFileIntoModel` had hardcoded `""`/`"EmptyFile"` instead of using its own `content`/`fileName`
+parameters — innocuous while only the empty-file test existed, since both literals happened to
+match, but would have silently fed the empty-file text into every iteration-2 test otherwise.)
+
+**Iteration 2 done (2026-10-11) — `package` declarations, recursive**: new concept `SysMLv2Package`
+in `com.symo.sysmlv2.baselan.structure` (implements `INamedConcept` + `ISysMLv2FileContent`, has its
+own `content: 0..n ISysMLv2FileContent` link — same shape as `SysMLv2File`, enabling arbitrary
+nesting for free). Importer: `SysMLv2Importer.importPackageBodyElement(PackageBodyElementContext,
+nlist<ISysMLv2FileContent> container)` — a single self-recursive private static method, walking
+`packageMember → definitionElement → package_()` (note the trailing underscore: `package` is a Java
+keyword, so the vendored ANTLR grammar's ANTLR-generated ctx accessor is `package_()`, not
+`package()` — found via `javap` on the vendored jar's `.class` files, since no readable parser
+source is checked in). Builds the `SysMLv2Package` node via plain `SNodeCreator` (wrapped in
+`GenericNewExpression` — it is a *creator*, not an `Expression`, despite the model-manipulation
+skill's `property-and-mutation-ops.md` phrasing; attaches via **plain** `container.add(pkg)`
+(`AddElementOperation`) after the node is fully built (name + recursed content), not
+`container.add new(SysMLv2Package)` (`LinkList_AddNewChildOperation`) — the latter's typesystem
+specifically requires its operand to be a literal `SLinkListAccess`-rooted `DotExpression`, so it
+rejects an `nlist<ISysMLv2FileContent>`-typed *parameter* (passed down from a caller) with
+"operation is not applicable to nlist<...>" even though the runtime type is identical; this is worth
+a `mps-gotchas.md` entry if hit again on a different concept. Scope is deliberately narrow per the
+plan agreed before implementation: only a bare `package <name> { ... }` (plain `name`, not the
+`<short> long` alias form of `identification`; no anonymous packages); everything else a
+`packageBodyElement`/`definitionElement` can produce (visibility prefixes, `elementFilterMember`,
+`aliasMember`, `importRule`, `libraryPackage`, any non-`package` `definitionElement`) throws an
+explicit `RuntimeException("Unsupported SysML v2 construct: ...")` rather than silently dropping
+content — verified by construction (visible directly in the generated Java) rather than by a
+dedicated negative test, since exercising it would require the exception to propagate back out
+through `TestUtils`'s `invokeAndWait`/`command` wrapping, which isn't currently set up for that.
+
+`SysMLv2Package_TextGen` added to the `textGen` model; `SysMLv2File_TextGen` reworked from the
+inert iteration-1 `append $list{node.content}` into an explicit `foreach` with `indent buffer`/`\n`
+per item (collections `ForEachStatement`, not the BaseLanguage one — `node.content` is an
+`SLinkListAccess`-typed sequence) — this establishes the textgen convention going forward: each
+content item's own rule emits no leading/trailing newline, and the *container* (file or package)
+loop supplies `indent buffer` before and `\n` after every item, so nesting composes without a
+stray leading blank line at the top of the file. **`indent buffer` emits two spaces per depth
+level, not a tab** as the `mps-aspect-textgen` skill's `indentation-model.md` states — discovered by
+a failing round-trip assertion (expected `\t`, actual two spaces); recorded in the root
+`mps-gotchas.md` rather than hand-editing the skill file.
+
+Sandbox: `_020_EmptyPackage` (one empty package, `pack1`) was already added by the user directly in
+the editor (noticed mid-implementation — the new `SysMLv2Package` editor was live the moment the
+structure concept + scaffold existed, and they started using it); added `_030_NestedPackage` (two
+levels, `Outer`/`Inner`) to cover recursion. Tests: new `_030_ImportPackageTest` `NodesTestCase`
+(`accessMode="none"`, same pattern as `_020_ImportEmptyFileTest`) in the same `_010_smoke_test@tests`
+model — `testImportPackage`, `testImportNestedPackage`, `testRoundtripPackage`,
+`testRoundtripNestedPackage`. Registered as JUnit config `_030_test_sysmlv2_import_package` — green,
+alongside the still-green `_010_test_sysmlv2_toolchain` and `_020_test_sysmlv2_import_empty_file`.
+
+**Test style refactored by the user (2026-10-11), to be the standard going forward**: the import
+tests originally asserted field-by-field via `tmp.roots(SysMLv2File).first.content.first:SysMLv2Package`
+chains (one `.first` per nesting level — undercounting by one `.first` casts the *list* instead of
+an *element* and fails typechecking with "type node<X> is not comparable with nlist<...>", not a
+runtime error, so it's caught at `check_root_node_problems` time). The user replaced this with:
+declare the expected node directly as a `TestNode` in the test case's `nodesToCheck` section, label
+it via the "Add Test Node Label" intention, then compare with `de.itemis.mps.compare`'s `assert node
+equals <expected> and <actual> with options {...}` (`AssertNodeEquals`) through a shared
+`TestUtils.checkFirstRoot(model, node<>, Project)` helper — one structural-diff assertion instead of
+N per-field ones. Also added a `_990_Witness@tests` model that `parseFileIntoModel` mirrors every
+parsed root into, purely for visual inspection in the editor. Full write-up (idiom, reusable beyond
+this project) at the repo-root `docs/idioms/structural-node-equality-via-test-fixture.md` — use this
+style for all future `NodesTestCase` structural checks, not the manual-chain style. The round-trip
+tests (`testRoundtripPackage`/`testRoundtripNestedPackage`) were left as plain string `assert ...
+equals ...` — comparing generated text has no node tree to diff, so this doesn't apply there.
+
+**Importer refactored from manual AST navigation to an ANTLR visitor (2026-10-11)**: replaced the
+self-recursive `SysMLv2Importer.importPackageBodyElement` (manual `packageMember →
+definitionElement → package_()` navigation, taking a `container` parameter to self-attach) with
+`SysMLv2ImporterVisitor extends SysMLv2ParserBaseVisitor<SNode>` (the grammar's Gradle build already
+generates this via `-visitor`), overriding `visitPackageBodyElement`/`visitPackageMember`/
+`visitDefinitionElement`/`visitPackage` — each a one-construct-per-method dispatcher/builder, per
+the project's own "per-iteration recipe" (which had said "importer visitor" from iteration 0 but
+iteration 2 didn't follow it). Each `visitXxx` **returns** its built node rather than attaching it
+into a passed-down container — `importText` and `visitPackage`'s own loop both just do
+`container.add(visitor.visit(child):ISysMLv2FileContent)` after the fact, which incidentally
+sidesteps the `LinkList_AddNewChildOperation`-rejects-nlist-parameter gotcha above entirely (plain
+`.add` was already the fix, but build-then-return-then-add is the more natural shape once visiting
+returns a value). The `SNode` (plain Java, not smodel `node<C>`) return type is required — ANTLR's
+visitor base class is plain-Java generic, and `node<C>` isn't a reifiable Java type usable as a
+generic argument — but bridging back into smodel needed nothing beyond the ordinary
+`SNodeTypeCastExpression` (`expr:C`) at each point a visit result feeds into an smodel operation;
+see the new `docs/idioms/bridge-plain-java-snode-api-into-smodel.md` write-up. All of `_010`/`_020`/
+`_030` still green after the refactor; `visitDefinitionElement`'s dispatch is still a manual
+null-check on `ctx.package_()` since `definitionElement`'s ~25 alternatives aren't grammar-labeled
+(no `#label` per alt), so the visitor doesn't auto-dispatch more granularly there than manual code
+did — worth remembering when iteration 4+ add more `definitionElement` alternatives.
+
+**Iteration 3 done (2026-10-12) — plain `import` statements**: new concept `SysMLv2Import`
+(implements `ISysMLv2FileContent`, one string property `importedName`) in
+`com.symo.sysmlv2.baselan.structure`. Grammar: `importRule: (visibilityIndicator)? IMPORT (ALL)?
+importDeclaration relationshipBody`, `importDeclaration: membershipImport | namespaceImport`,
+`membershipImport: qualifiedName (COLON_COLON STAR_STAR)?`, `relationshipBody: SEMI | LBRACE ... `.
+Scope is deliberately the single simplest form: bare `import <qualifiedName>;` — no visibility
+prefix on the import, no `all` modifier, no namespace/wildcard (`::*`) imports, no `::**` recursive
+suffix, no filter-package imports (need expressions, which don't exist in this importer at all),
+no brace-bodied `relationshipBody`; everything else throws the same "Unsupported SysML v2
+construct" as iteration 2's out-of-scope cases. The qualified name itself is stored as a **plain
+string** via `ctx.qualifiedName().getText()` (e.g. `"A::B"`) — there's no package-member
+resolution/scoping mechanism yet, so a real cross-reference isn't attempted; matches how
+`SysMLv2Package.name` is just a string today. `SysMLv2ImporterVisitor` extended with
+`visitImportRule`; `visitPackageBodyElement` now also checks `ctx.importRule() != null` and
+dispatches, alongside the existing `ctx.packageMember()` check.
+
+`SysMLv2Import_TextGen` added: `import ${node.importedName};`, no self newline (same leaf
+convention established in iteration 2). Sandbox: `_040_ImportStatement` (one file, one import).
+Tests: new `_040_ImportStatementTest` `NodesTestCase` using the `de.itemis.mps.compare` pattern —
+`testImportImportStatement`, `testRoundtripImportStatement` — registered as
+`_040_test_sysmlv2_import_statement`, green alongside `_010`/`_020`/`_030`.
+
+**Pitfall hit while building the `_040` fixture — wrong label placement, masked by a plugin crash**:
+the `TestNodeAnnotation` label was first attached to the nested `SysMLv2Import` content node instead
+of the `SysMLv2File` root that `TestUtils.checkFirstRoot` actually compares against — a copy-paste
+from iteration 2's pattern that got the attachment point wrong. This didn't surface as a normal
+`ComparisonFailure`; `de.itemis.mps.compare`'s diff-view rendering crashes with an unrelated
+`IllegalModelAccessError` whenever the two compared nodes are unequal (crash is a plugin bug when
+run under batch JUnit, not the IDE), so the real cause (comparing a `SysMLv2File` against a
+`SysMLv2Import` — different concepts entirely) was invisible from the stack trace. Diagnosed by
+temporarily swapping in manual field-level asserts to isolate the real mismatch. Recorded as a
+`mps-gotchas.md` entry ("the crash is a plugin bug, not a clue") and folded into the idiom
+write-up's step 2 (label must sit on the same node the comparison helper resolves on the actual
+side, not a nested child) so this isn't rediscovered next iteration.
+
+**Two fixes requested by the user after reviewing iteration 3 (2026-10-12), now a standing
+convention**: (1) a concept that maps directly to a SysML v2 *keyword* should set that keyword as
+its `conceptAlias` (the `jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration` property
+— shows up as the concept's display name in intentions/palettes/etc.) — set `"package"` on
+`SysMLv2Package` and `"import"` on `SysMLv2Import` (neither had one before; both were showing their
+MPS concept name). (2) a concept's **editor** should mirror the textual notation it was imported
+from, not whatever the scaffolder produced by default. `SysMLv2Package_Editor`'s hand-built cell
+layout — `constant "package" (KeywordStyle)` → `{name}` property cell → `constant "{" (ParensStyle)`
+→ indented `%content%` ref-node-list → `constant "}" (ParensStyle)` — is the reference pattern to
+follow; the scaffolded `SysMLv2Import_Editor` just showed a generic `importedName: <value>` label
+form. Rebuilt it as `constant "import" (KeywordStyle)` → `{importedName}` property cell →
+`constant ";"`, confirmed by rendering the `_040_ImportStatement` sandbox node through the editor:
+`import A::B ;` (one cosmetic nit — a space before the `;` that the package editor's
+`ParensStyle`-wrapped `{`/`}` doesn't have either, since neither cell sets an explicit no-space
+styleItem; not worth chasing down for now). **Apply both going forward**: every new
+keyword-mapped concept gets a `conceptAlias`, and every new concept's editor is hand-built to mirror
+its construct's surface syntax from the start, not left as the scaffolder's generic
+property-label-per-field layout.
+
+**Iteration 4 done (2026-10-12) — `part def` (empty body)**: chosen over the other remaining
+grammar-planned constructs specifically because `part def` is SysML v2's primary structural building
+block (the "most widely used subset" framing the user gave for picking the next increment) — and
+because `partDefinition`/`attributeDefinition`/`occurrenceDefinition`/etc. all share the same
+`definitionPrefix`/`occurrenceDefinitionPrefix` → `DEF` → `definition` grammar shape, so building
+this one first establishes the shared "Definition" pattern once rather than each later definition
+kind redesigning it. New concept `SysMLv2PartDefinition` (implements `INamedConcept` +
+`ISysMLv2FileContent`, `conceptAlias = "part def"`, has the same `content: 0..n ISysMLv2FileContent`
+link pattern as `SysMLv2Package` even though it's always empty this iteration — so the *next*
+iteration, part usages inside the body, needs no structural change here). Grammar:
+`partDefinition: occurrenceDefinitionPrefix PART DEF definition`, `definition:
+definitionDeclaration definitionBody`, `definitionDeclaration: identification?
+subclassificationPart?`, `definitionBody: SEMI | LBRACE definitionBodyItem* RBRACE`. Scope is the
+single simplest form: `part def <name>;` / `part def <name> { }` — no `occurrenceDefinitionPrefix`
+content (`abstract`/`variation`/`individual`/prefix metadata), no `subclassificationPart` (`:>`/
+`specializes` — a whole relationship-resolution feature on its own), no non-empty
+`definitionBodyItem`s; all throw the established "Unsupported SysML v2 construct" error.
+`SysMLv2ImporterVisitor.visitDefinitionElement` extended with a second branch (`ctx.partDefinition()
+!= null`) alongside the existing `package_()` check; new `visitPartDefinition` follows the same
+structure as `visitPackage` (validate every optional grammar slot is absent/empty, extract the name
+via `identification`, build-and-return the node) minus the recursive body-import loop (deferred).
+
+Editor and textgen built by hand from the start this time (per the standing convention above), not
+scaffolded-then-fixed: `SysMLv2PartDefinition_Editor` mirrors `SysMLv2Package_Editor`'s cell layout
+exactly (`constant "part def" (KeywordStyle)` → `{name}` → `constant "{" (ParensStyle)` → indented
+`%content%` → `constant "}" (ParensStyle)`); `SysMLv2PartDefinition_TextGen` mirrors
+`SysMLv2Package_TextGen`'s body exactly (same `foreach`-with-`indent buffer` convention). Sandbox:
+`_050_PartDefinition` (one file, one part def named `Engine`). Tests: new `_050_PartDefinitionTest`
+using the `de.itemis.mps.compare` pattern from the start (label correctly placed on the `SysMLv2File`
+root this time, not a nested child) — `testImportPartDefinition`, `testRoundtripPartDefinition` —
+registered as `_050_test_sysmlv2_import_partdef`, green alongside `_010`–`_040` on the first run, no
+debugging detours this iteration (both prior pitfalls — missing `.first` before a cast, wrong label
+placement — were avoided by applying the lessons already recorded).
+
+**Natural next step (not part of this iteration)**: part *usages* inside a part definition's body
+(`part def Car { part engine : Engine; }`) — this is what actually makes `part def` useful in
+practice; `SysMLv2PartDefinition.content` is already shaped to receive it without further
+structural change.
+
+**Iteration 5 done (2026-10-12) — part usages with optional simple typing**: exactly the natural
+next step flagged above. New concept `SysMLv2PartUsage` (implements `INamedConcept` +
+`ISysMLv2FileContent`, `conceptAlias = "part"`, a `typedBy: string` property — not a real
+reference/link to the typing definition, deliberately; resolving `typedBy` to an actual
+`SysMLv2PartDefinition` node is out of scope until a scoping/typesystem pass is added — and the same
+`content: 0..n ISysMLv2FileContent` link every leaf-usable concept in this language carries, so a
+part usage can itself nest further body items later without another structural change). Grammar
+chain traced via `javap` on the vendored grammar jar (no readable parser source exists):
+`partDefinition → definition → definitionBody → definitionBodyItem → occurrenceUsageElement →
+structureUsageElement → partUsage → usage → usageDeclaration → featureSpecializationPart →
+featureSpecialization → typings → typedBy → featureTyping → ownedFeatureTyping → qualifiedName`.
+Scope is the simplest typed-or-untyped leaf usage: `part <name>;` / `part <name> : <Type>;` — no
+`occurrenceUsagePrefix` content (`ref`/`derived`/`abstract`/`individual`/`snapshot`/prefix
+metadata), no `multiplicityPart`, no more than one `featureSpecialization` (rejects
+`subsettings`/`references`/`crosses`/`redefinitions` and comma-chained multiple types), no
+`conjugatedPortTyping` (`~Type`) or relationship-bodied `TYPING ... { }` form, no dotted
+multi-segment `ownedFeatureTyping` (`A.B` — a different separator from the `::` qualified-name
+package syntax), no value assignment (`= ...`), no non-empty usage body; all throw the established
+"Unsupported SysML v2 construct" error. `visitPartDefinition` updated to actually loop
+`body.definitionBodyItem()` and recurse instead of requiring the body empty (the iteration-4
+placeholder restriction lifted); new `visitDefinitionBodyItem` → `visitOccurrenceUsageElement` →
+`visitStructureUsageElement` → `visitPartUsage` dispatch chain mirrors the grammar chain one
+visitor method per rule, same validate-every-slot-then-extract shape as `visitPartDefinition`.
+
+Editor: `SysMLv2PartUsage_Editor` is the first concept in this language needing a genuinely optional
+syntax fragment (the ` : Type` suffix only renders when `typedBy` is set) rather than an
+always-present property cell. Reached for `com.mbeddr.mpsutil.grammarcells.structure.OptionalCell`
+(`renderingCondition` + wrapped `option` cell) — ran straight into two already-recorded
+`mps-gotchas.md` traps from *other* projects and got through both without new debugging: the
+implicit "node" inside the `OptionalCell`'s `QueryFunction_NodeCondition` is the concept
+`jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node` (not a plain-Java identifier
+`mps_mcp_parse_java_and_insert` can resolve — several same-named `ConceptFunctionParameter_node`
+variants exist across languages; picked the `jetbrains.mps.lang.editor.structure` one matching the
+owning language), and using `OptionalCell` at all in this editor model triggered
+`"missing dependency on jetbrains.mps.lang.core"` from grammarcells' own
+`check_IActionGeneratingCell_NonTypesystemRule` — fixed with the documented `DummyForGrammarCells`
+`EditorComponentDeclaration` workaround (a throwaway root targeting `BaseConcept`), copied verbatim
+from `com.symo.mermaid.editor`'s existing copy of the same pattern. `SysMLv2PartUsage_TextGen`:
+`part ` + `${node.name}` + (`if (node.typedBy != null) { " : " + ${node.typedBy} }`) + `;` — the
+first textgen body in this language needing a conditional append; a plain `if`/`append` inside the
+`textGenBlock` body sufficed, no new textgen idiom needed beyond what `mps-aspect-textgen` already
+documents.
+
+**Pitfall hit while building this iteration's importer method, not previously hit in this
+project**: writing the smodel-flavored parts of `visitPartUsage` (`node<SysMLv2PartUsage> pu = new
+node<SysMLv2PartUsage>();`, `pu.name = ...`, `pu.content.add(...)`) directly as Java text passed to
+`mps_mcp_parse_java_and_insert` produced a method that reported zero problems *at insert time* but
+was structurally broken throughout — `string`/`node<C>` became unresolved plain-Java
+`ClassifierType`s, and the `x:C` cast argument got swallowed into an `UnknownMethodReference`. Fixed
+by keeping the Java-parseable validation/extraction logic (all the `ctx.xxx()` navigation and
+`throw`/`if` guards — zero smodel syntax, parses perfectly) as Java text, and hand-building the
+smodel-bearing tail (the `node<C>` local, its `SNodeCreator` initializer, the two property
+assignments, the conditional, and the `return`) as JSON appended statement-by-statement via
+`mps_mcp_update_node` (`ADD CHILD`/`SET CHILD`). Also hit the **same label-placement mistake**
+iteration 3 already documented and this project had since avoided twice (iterations 3 and 4): the
+`TestNodeAnnotation` for `_060_PartUsageTest` was first attached to the nested `SysMLv2PartUsage`'s
+containing `SysMLv2PartDefinition` rather than the outer `SysMLv2File` root that
+`TestUtils.checkFirstRoot`'s `m.roots(SysMLv2File).first` actually resolves against — caught this
+time by a normal `AssertionError` (not a plugin crash, since this project uses the simpler
+`TestUtils.checkFirstRoot` helper rather than `de.itemis.mps.compare` directly) reporting "Expected
+... SysMLv2PartDefinition, got ... SysMLv2File", which pinpointed the mismatch immediately. Both
+pitfalls are now documented generically in the root `mps-gotchas.md` (the parser one is new this
+iteration) so they transfer to other projects, not just re-reminders here.
+
+Sandbox: `_060_PartUsage` (`part def Engine;` + `part def Car { part engine : Engine; }`). Tests:
+new `_060_PartUsageTest` (`testImportPartUsage`, `testRoundtripPartUsage`), registered as
+`_060_test_sysmlv2_import_partusage`, green alongside `_010`–`_050`.
+
+**Natural next step (not part of this iteration)**: the language currently has no notion of
+*reference* resolution at all — `SysMLv2PartUsage.typedBy` is a bare string, and nothing checks it
+against an actual `SysMLv2PartDefinition` name in scope. The next meaningful increment is either (a)
+turning `typedBy` into a real reference with a constraints-aspect scope (most valuable, but a
+genuinely new kind of work for this language — first scope/typesystem pass), or (b) staying
+structural and adding another widely-used leaf construct (e.g. `attribute usage`/`attribute def`,
+which mirrors `part`/`part def`'s shape closely) before tackling references. Worth explicitly
+deciding with the user rather than defaulting to (b) out of momentum.
+
+**Iteration 6 done (2026-10-12) — `SysMLv2PartDefinitionRef` smart reference + reifier**: took
+option (a) above, but shaped around a specific design the user asked for by name: a "smart
+reference" wrapper node rather than a bare `jetbrains.mps.lang.structure.structure.LinkDeclaration`
+reference directly on `SysMLv2PartUsage`. Rationale (the user's, confirmed during design
+discussion): the importer parses one file in isolation and can't guarantee the referenced
+`SysMLv2PartDefinition` already exists in the model at import time (forward references within the
+same file, or — once cross-file `SysMLv2Import` resolution exists — definitions in another file
+entirely), so the reference needs to degrade gracefully to a raw name instead of being a hard
+unresolved-reference error.
+
+New concept `SysMLv2PartDefinitionRef` (`BaseConcept`, not `INamedConcept` — the ref itself has no
+identity name, just a `partDefinitionName: string` fallback property and a `definition: 0..1 ->
+SysMLv2PartDefinition` reference). `SysMLv2PartUsage.typedBy` (the iteration-5 string property) is
+gone, replaced by a `type: 0..1 -> SysMLv2PartDefinitionRef` **child** (containment, not reference —
+the ref node is owned by the usage). Behavior method `SysMLv2PartDefinitionRef.getEffectiveName():
+string` (`definition != null ? definition.name : partDefinitionName`) is the single source of truth
+for "what name to show/generate" — both the editor and the textgen call it rather than duplicating
+the if/else.
+
+Editor: the first use of `jetbrains.mps.lang.editor.structure.CellModel_Alternation` in this
+language (`alternationCondition` + `ifTrueCellModel`/`ifFalseCellModel`) rather than two
+`OptionalCell`s, since the two renderings (resolved reference vs. raw fallback text) are mutually
+exclusive, not independently togglable. `ifTrueCellModel` is a `CellModel_RefCell` (not
+`CellModel_RefNode` — `definition` is a *reference* link, `RefNode` is for *child* links; mixing
+these up produces "single cardinality expected"/"out of search scope" errors that look unrelated to
+the real mistake) with a mandatory `editorComponent` (`InlineEditorComponent` showing the resolved
+target's `{name}`) per the already-recorded `CellModel_RefCell` gotcha; `ifFalseCellModel` is a
+plain `CellModel_Property` on `partDefinitionName`. Condition: `definition != null ||
+partDefinitionName.isEmpty` (`jetbrains.mps.baseLanguage.structure.IsEmptyOperation` — "string is
+null or empty", so no separate null check needed) — i.e. show the ref cell whenever there's
+something to resolve or editing an empty ref from scratch, and only fall back to the raw-text cell
+when there's leftover unresolved text and no reference.
+
+Importer: `visitPartUsage`'s tail now builds a `SysMLv2PartDefinitionRef` (with `partDefinitionName`
+set to the parsed type name, `definition` left null) instead of setting a property — pass 1 only,
+exactly as scoped. The **reifier** — "a traversal on the model after import into MPS, pure at MPS
+level" per the user's framing, explicitly decoupled from the importer itself — is a new static
+utility `SysMLv2TypeReifier.reifyPartDefinitionRefs(model m)`: walks `m.nodes(SysMLv2PartDefinitionRef)`
+(model-wide, not just top-level roots, since a part def can nest inside another part def's
+`content`), and for each unresolved one with a non-null `partDefinitionName`, looks up
+`m.nodes(SysMLv2PartDefinition).where { it => it.name.equals(ref.partDefinitionName) }.first` and
+sets `definition` if found — first-match on name collision, confirmed with the user as the deliberate
+policy (best-effort reification of possibly-incomplete input, not a strict compiler; checking rules
+to disallow duplicate part-def names in the same scope are flagged as separate future work, not
+blocking this). Being decoupled from the import pipeline, it's also trivially reusable later as a
+user-invokable "re-resolve types" action whenever the model changes, not just once right after
+import.
+
+**Two new gotchas hit and recorded in the root `mps-gotchas.md`** (both general MCP/MPS-platform
+facts, not specific to this project): (1) `LinkDeclaration.metaClass`/`sourceCardinality` enum
+properties silently stay at their *default* when set via a guessed `"<prefix>/<member>"` encoded
+string instead of erroring — `print_node` then omits the property entirely (since it equals the
+default), which reads as "not yet set" rather than "was reverted"; the fix is setting these two
+specific properties via `mps_mcp_update_node` `SET PROPERTY` with the **plain** enum member name
+(`"reference"`, `"_0__1"`, etc.), not a guessed prefixed value. (2) a `command`/`undo-transparent
+command` block written directly inline in a `NodesTestCase` body throws an EDT-only threading error
+when the test runs from a pooled JUnit thread (setting the test case's own `accessMode="command"`
+does *not* fix this) — the working pattern, copied from this project's own pre-existing
+`TestUtils.parseFileIntoModel`, is a hand-written static utility that explicitly hops to EDT via
+`ApplicationManager.getApplication().invokeAndWait(new Runnable() { ... command with
+proj.getRepository() { ... } ... })` *before* opening the command; added a matching
+`TestUtils.reifyPartDefinitionRefs(model, Project)` wrapper for this project's own tests to call
+instead of writing the EDT dance out at each call site. Bare navigation/assertions after the
+mutation still needed a separate `read action` block — only the write needs the EDT hop, reads work
+fine off-EDT inside `read action`.
+
+Sandbox `_060_PartUsage` and the `_060_PartUsageTest` import fixture both updated to carry the new
+`SysMLv2PartDefinitionRef` child instead of the removed `typedBy` property (deleting a structure
+property doesn't error on nodes that still set it — the property value is just silently dropped,
+which could otherwise mask a forgotten migration). New `_070_TypeReificationTest`
+(`testReifyResolvesExistingDefinition`, `testReifyLeavesUnresolvedWhenMissing`), registered as
+`_070_test_sysmlv2_type_reification`, green alongside `_010`–`_060`.
+
+**Intentionally deferred from this iteration**: a constraints-aspect scope for
+`SysMLv2PartDefinitionRef.definition` (so hand-editing the DSL directly in MPS gets real completion
+over candidate part defs, not just an importer-populated reference) — the concrete MPS API for
+building a `jetbrains.mps.scope.Scope` from a plain node sequence inside a
+`ConstraintFunction_ReferentSearchScope_Scope` body wasn't straightforward to find by exploration and
+didn't seem worth the detour given the reifier already delivers the requested behavior
+programmatically. Worth revisiting if/when manual editing of `.sysmlv2` files directly in MPS (rather
+than only via text import) becomes a real usage path.
+
+**Iteration 7a (2026-10-12) — `attribute def`/`attribute usage`**: new `SysMLv2AttributeDefinition`
+and `SysMLv2AttributeUsage` concepts mirroring `SysMLv2PartDefinition`/`SysMLv2PartUsage`'s shape
+exactly, plus a **deliberately duplicated** `SysMLv2AttributeDefinitionRef` (same
+`<name>Ref`-with-fallback-property pattern as `SysMLv2PartDefinitionRef`, not a shared/generalized
+type-ref concept) — chosen over generalizing because the user had explicitly named
+`SysMLv2PartDefinitionRef` in the iteration-6 design discussion, and duplicating a ~4-field concept
+is cheaper than the risk of silently reshaping something the user already signed off on; flagged
+here for the user's cross-check rather than decided unilaterally as final. (Multiplicity on `part
+usage`, built in the same work session, is tracked as its own increment — see further down, committed
+separately.)
+
+**New gotcha hit and recorded in the root `mps-gotchas.md`** (general MCP/MPS-platform fact): a
+`NodesTestCase` root created via `mps_mcp_create_root_node` does **not** default its `accessMode`
+property to `"none"` the way existing hand-authored test roots in this suite (e.g. `_060_PartUsageTest`)
+happen to have — left at the tool's actual default, the whole generated test body runs under an
+EDT-held write lock (`BaseTestBody.runWithinCommand`), which deterministically deadlocks any call
+into `RoundtripTestUtils`'s `TextGeneratorEngine`-backed helper for exactly 30 seconds before the
+`Future.get` timeout gets turned into a bare `null` by the helper's catch block — surfacing as a
+confusing `expected:<...> but was:<null>` with no hint it's a threading issue. Fixed by explicitly
+`SET PROPERTY accessMode = "none"` on the new root right after creating it, before adding test
+methods.
+
+Structure/behavior/editor/textGen/importer all updated for the new attribute concepts; sandbox
+fixture `_080_Attributes` (`attribute def Real {}` / `part def Car { attribute mass: Real; attribute
+count; }`) added; new `_080_AttributesTest` (`testImportAttributes`, `testRoundtripAttributes`),
+registered as `_080_test_sysmlv2_attributes`, green alongside `_020`–`_070` (confirmed via "Tests
+in '_010_smoke_test@tests'", full suite exit code 0). Also discovered while reading the existing
+textgen for defs: an empty-content `part def`/`attribute def` renders as `name {\n}` (braces, no
+special-cased `name;` short form) — the importer/grammar accept the `;`-terminated short form as
+input, but textgen always round-trips it to the brace form; worth a future decision on whether to
+add the short-form-preserving special case or leave brace-only as the canonical generated style.
+
+**Follow-up during cross-check (2026-10-12) — narrowed `content` interfaces, closing a structural
+over-permissiveness the user caught**: the user pointed out that `SysMLv2AttributeDefinition.content`
+being typed `ISysMLv2FileContent` meant the editor would structurally accept a nested `package`
+(or any other file-level construct) inside an attribute def's body, which makes no sense. The same
+flaw turned out to apply three more places, all sharing one root cause (every content-bearing
+concept had been typed against the single flat `ISysMLv2FileContent` interface used for file/package
+top-level content): `SysMLv2PartDefinition.content`, and — discovered while auditing, not something
+either of us had flagged yet — `SysMLv2PartUsage.content` and `SysMLv2AttributeUsage.content` (both
+already structurally present from mirroring the definition shape, though the importer never
+populates them — it rejects any non-empty usage body outright).
+
+Fixed by splitting `ISysMLv2FileContent` into three tiers instead of one flat interface:
+`ISysMLv2FileContent` now stays implemented only by `SysMLv2Package`/`SysMLv2PartDefinition`/
+`SysMLv2AttributeDefinition` (definition-level, valid at file/package top level) — `SysMLv2PartUsage`
+and `SysMLv2AttributeUsage` no longer implement it. Two new interfaces: `ISysMLv2PartBodyContent`
+(implemented by `SysMLv2PartUsage` + `SysMLv2AttributeUsage` — a part's body may contain either kind
+of usage) and `ISysMLv2AttributeBodyContent` (implemented by `SysMLv2AttributeUsage` only — an
+attribute's body may only contain further attribute usages). `SysMLv2PartDefinition.content` and
+`SysMLv2PartUsage.content` are now typed `ISysMLv2PartBodyContent`; `SysMLv2AttributeDefinition.content`
+and `SysMLv2AttributeUsage.content` are now typed `ISysMLv2AttributeBodyContent`. `SysMLv2Package.content`
+is unchanged (still `ISysMLv2FileContent`, correctly).
+
+This broke two hand-built `SNodeTypeCastExpression`s in the importer (`visitPartDefinition` and
+`visitAttributeDefinition`, each doing `pd.content.add(childNode:ISysMLv2FileContent)` /
+`ad.content.add(childNode:ISysMLv2FileContent)`) — `check_root_node_problems` stayed clean (a cast's
+target concept isn't itself a typesystem error) but `_060_PartUsageTest` failed at runtime with a
+`NodeCastException` once rebuilt, since `SysMLv2PartUsage` no longer satisfies `ISysMLv2FileContent`.
+Fixed by retargeting each cast's `RefConcept_Reference.conceptDeclaration` to the matching new
+interface (`ISysMLv2PartBodyContent` / `ISysMLv2AttributeBodyContent`) via `mps_mcp_update_node` `SET
+REFERENCE` — a cast's target type isn't visible to static structural validation the way a link's type
+is, so a check-clean result after a structural retyping doesn't guarantee runtime-safe hand-built
+casts elsewhere; worth a generic note for future interface-narrowing refactors in this repo. Full
+suite (`_020`–`_080`) green again after the fix.
+
+**Second follow-up during cross-check (2026-10-12) — `SysMLv2EmptyLine` implements all three content
+interfaces, editor element factories added for the two new content lists**: the user asked for
+`SysMLv2EmptyLine` to implement `ISysMLv2PartBodyContent` and `ISysMLv2AttributeBodyContent` too (on
+top of its existing `ISysMLv2FileContent`), so a blank line is substitutable in a part/attribute
+definition's body the same way it already is at file level — straightforward, two new `implements`
+entries, no behavior/textgen changes needed (`SysMLv2EmptyLine` has no textgen/behavior of its own
+beyond rendering nothing). The second half of the ask — "the element factory for content shall
+return an empty line, similar to how it is done at file level" — pointed at a specific existing
+mechanism: `SysMLv2File_Editor`'s `content` `CellModel_RefNodeList` has a `nodeFactory`
+(`QueryFunction_NodeFactory` building `new SysMLv2EmptyLine()` via a light quotation) that makes
+pressing Enter on a blank list row create an empty line directly, instead of popping the substitute
+menu. Checked whether `SysMLv2PartDefinition_Editor`/`SysMLv2AttributeDefinition_Editor`'s own
+`content` lists had one — neither did (added at the same time as `SysMLv2PartUsage`/
+`SysMLv2AttributeUsage` support, with no nodeFactory copied over) — so added the identical
+nodeFactory to both. Also checked `SysMLv2PartUsage_Editor`/`SysMLv2AttributeUsage_Editor`: neither
+renders a `content` cell in the editor at all (their `content` link exists structurally, mirroring
+the definition shape, but nothing — not the editor, not the importer, which explicitly rejects a
+non-empty usage body — exercises it yet), so there was nothing to add a node factory to there; left
+as-is, consistent with that link being a known not-yet-wired-up structural placeholder. Full suite
+green after rebuild.
+
+**Third follow-up during cross-check (2026-10-12) — test naming/content cleanup for the attributes
+side of the split**: the user pointed out that the original combined test was testing two unrelated
+things at once, and that multiplicity reads conceptually as an extension of *part usage*
+specifically, not a property of "attributes" as a topic. `_080_MultiplicityAndAttributes` (sandbox)
+and `_080_MultiplicityAndAttributesTest` were renamed to `_080_Attributes` / `_080_AttributesTest`
+(methods `testImportAttributes`/`testRoundtripAttributes`, run config
+`_080_test_sysmlv2_attributes`) and stripped down to attributes only: dropped the `Engine` part
+definition and the `engines`/`wheels` part usages entirely (no part usage at all in this fixture
+now), and dropped `count`'s multiplicity child so it's a plain untyped attribute usage (`attribute
+count;`) sitting alongside the typed one (`attribute mass : Real;`). The import-test source text is
+built the same multi-line way `_030`'s `testImportNestedPackage` does (`string content;` then one
+`content = "...";` plus a `content += "...";` per source line), per the user's request to make this
+test's input easier to read in the editor. Old run config
+`_080_test_sysmlv2_multiplicity_and_attributes` is now a stale duplicate (same underlying test root,
+old name) — `mps_mcp_create_run_configuration` has no companion delete tool reachable from here, so
+it's left for the user to remove by hand in the IDE's Run Configurations dialog if desired; harmless
+either way since it still points at a valid (renamed) test. Multiplicity coverage (including the
+`_060_PartUsageTest` extension) is a separate increment — see further down.
+
+Full suite (`_020`–`_080`) green after rebuild.
+
+**Committed separately, per user request**: this iteration's attribute-def/attribute-usage work and
+its companion multiplicity-on-part-usage work were implemented together in one session but are being
+committed as two separate commits, one per concern — this entry (iteration 7a) covers the attributes
+half; see the multiplicity entry (iteration 7b) immediately below for the other half.
+
+**Iteration 7b (2026-10-12) — multiplicity on `part usage` (and `attribute usage`)**: new shared
+concept `SysMLv2Multiplicity` (`lower`/`upper: string`) referenced by a single `multiplicity: 0..1`
+child link on **both** `SysMLv2PartUsage` and `SysMLv2AttributeUsage` — it carries no usage-specific
+semantics, so one concept covers `part engines[2];` and the (unbounded-range) `part wheels[0..4];`
+forms, and the identical attribute-usage forms. Behavior method `SysMLv2Multiplicity.isSingleValue():
+boolean` (`lower.equals(upper)`) is the single source of truth the editor (`CellModel_Alternation`,
+`[n]` vs `[lo..hi]`) and textgen both call rather than duplicating the check. Dedicated test coverage
+lives in `_060_PartUsageTest` (extended, not replaced, per the user's framing that multiplicity is
+conceptually an extension of part usage): `Car` now has three members — the original `engine :
+Engine` (type only), plus `engines[2] : Engine` (type + single-value multiplicity) and `wheels[0..4]`
+(range multiplicity, no type) — covering all three type/multiplicity combinations. The import-test
+source text is built the multi-line way (`string content;` then `content = "...";` plus one
+`content += "...";` per line), matching `_030`'s `testImportNestedPackage` style per the user's
+request. `SysMLv2AttributeUsage` gets the identical `multiplicity` link/editor/textgen support at
+the same time, for structural symmetry with part usage, though it has no dedicated test of its own —
+`_080_AttributesTest` deliberately stays multiplicity-free, per the attributes commit's test split.
+
+**Latent bug found and fixed while adding multiplicity, predating this iteration**: `visitPartUsage`
+(and the grammar) allow a `featureSpecializationPart` with **zero** `featureSpecialization`s when
+only a `multiplicityPart` is present (e.g. `part wheels[0..4];` — multiplicity but no type) — the
+existing `size() != 1` guard treated that as an error ("more than one type"), which was simply wrong
+for the zero case; it needed to be `if (size() > 1) throw; if (size() == 1) { extract type }`,
+leaving `typedByName` (now the `type` ref) null otherwise. Fixed in both `visitPartUsage` and
+`visitAttributeUsage`. Caught by hand-tracing the grammar while adding multiplicity extraction, not
+by a failing test — no existing fixture before this exercised a usage with multiplicity and no type.
+
+**How the two-commit split was actually carried out**: since MPS models are opaque per-file XML
+blobs and this session's earlier edits (several whole-subtree `SET CHILD` replacements) made the raw
+git diff useless for hunk-level splitting, the split was done at the *live model* level instead —
+snapshot every multiplicity-specific node (concept, two links, behavior/editor/textGen roots, the two
+editor cells, the two textgen `if`s, the importer helper methods and the multiplicity-handling
+statements inside `visitPartUsage`/`visitAttributeUsage`, and the `_060` sandbox/test fixture
+additions) as JSON blueprints, delete them all, verify the resulting "attributes-only" state compiles
+and passes the full suite, commit that as the first commit, then re-insert every snapshot (remapping
+any cross-reference that pointed at a node recreated in this pass — fresh inserts always get new
+persistent ids, so a blueprint's old target ids go stale) to reconstruct multiplicity support for
+this, the second commit. Two mistakes surfaced and were fixed along the way, both now worth knowing
+for next time: (1) a hand-built "snapshot → blueprint" transform that copies `VariableReference`'s
+`targetReference` verbatim breaks the moment the *referenced* declaration is itself part of the same
+re-inserted subtree (new insert = new id = the copied old-id reference goes dangling) — the fix is
+to use the plain variable **name** (`target: "<name>"`, letting MPS re-resolve by name against the
+freshly created sibling) for `VariableReference`/`ForEachVariableReference`, while still using the
+real persistent id for every other reference role (concepts, methods, links — things *not* being
+recreated in the same batch); (2) a manual index-vs-ref mapping mistake (misreading which
+`LocalVariableDeclarationStatement` index corresponded to `multBounds` vs `specPart` in
+`visitAttributeUsage`) deleted the wrong declaration on the first pass, leaving a dangling
+`VariableReference` that rendered as blank (`if ( != null)`) in the generated Java — caught by
+re-reading the method's plain-text form after the "attributes-only" deletions and comparing it
+against the known-good `visitPartUsage` shape, not by `check_root_node_problems` (which stayed clean
+throughout, since a dangling reference inside an otherwise well-formed tree isn't a structural
+error).
+
+Full suite (`_020`–`_080`) green after rebuild and after restoration.
+
+**Iteration 8 (2026-10-11) — definition specialization (`:>` / `specializes`) on `part def` and
+`attribute def`**: new `specializes: 0..n` child link on `SysMLv2PartDefinition`
+(`SysMLv2PartDefinitionRef`) and `SysMLv2AttributeDefinition` (`SysMLv2AttributeDefinitionRef`) —
+reusing the existing `<name>Ref`-with-fallback-name concepts, no new ref concept. A definition only
+specializes definitions of its own kind (part→part, attribute→attribute); the grammar would accept
+`part def X :> SomeAttributeDef`, which imports fine but then stays unresolved (fallback name only),
+pinned by `testReifyDoesNotCrossDefinitionKinds`. Importer: `visitPartDefinition`/
+`visitAttributeDefinition` no longer reject `subclassificationPart`; the check moved below the
+node's creation and now loops over a new plain-Java helper
+`extractSpecializationNames(SubclassificationPartContext): List<String>` (each
+`ownedSubclassification`'s `qualifiedName().getText()` — qualified names like `P::A` are accepted
+as an opaque string, same as part-usage typing already does; they just won't reify). Both keyword
+forms (`:>` and `specializes`) import to the same model; textgen always emits `:>` (canonical form,
+like the always-braces def body). TextGen: two new tiny `SysMLv2PartDefinitionRef_TextGen`/
+`SysMLv2AttributeDefinitionRef_TextGen` components (`append ${node.getEffectiveName()}`) so the def
+textgens can use `$list{node.specializes with , }`; the def textgens' trailing `" {"` constant moved
+into the following newline append so the optional `:> ...` segment can sit between name and brace.
+Editor: grammarcells `optional [> :> % specializes % <]` (horizontal list, `,` separator), same
+pattern as part usage's `optional [> : % type % <]`.
+
+**Gap from iteration 7a closed**: `SysMLv2TypeReifier` only had `reifyPartDefinitionRefs` —
+attribute-usage typing refs (`attribute mass : Real`) were never reified. Added
+`reifyAttributeDefinitionRefs` (same shape) plus the matching EDT-hopping
+`TestUtils.reifyAttributeDefinitionRefs` wrapper. Both reifiers walk *every* ref instance in the
+model, so they cover usage typing and definition specialization alike, including forward references
+(`HybridVehicle :> …, CombustionVehicle` declared before `CombustionVehicle`).
+
+Sandbox `_090_Specialization`; new `_090_SpecializationTest` (`testImportSpecialization` — mixes
+`:>`/`specializes` and `;`/`{}` input forms against one fixture; `testRoundtripSpecialization`;
+`testReifyResolvesSpecializations`; `testReifyDoesNotCrossDefinitionKinds`), run config
+`_090_test_sysmlv2_specialization`. Full suite (`_020`–`_090`, 20 tests) green.
+
+**Still deferred**: constraints-aspect scope for the `definition` reference of both ref concepts
+(manual editing in MPS still gets no completion over candidate defs); the `name;` short-form
+decision for body-less defs. ~~Cyclic specialization (`A :> B`, `B :> A`) isn't checked anywhere.~~
+Done 2026-11-16: checking rule `check_SysMLv2Definition_noSpecializationCycle` (on `SysMLv2Definition`,
+so all definition kinds) via `SpecializationHelper.reaches`, which follows `directSuperDefinitions()`
+with a visited set; tested by `_322_SpecializationCycleCheck` (two-cycle, self-specialization, port
+def; a def reaching a cycle without being on it, a diamond and a plain chain stay clean).
+
+**Iteration 9 (2026-10-11) — ports (`port def` / `port` usage, direction, conjugation)**: new
+concepts `SysMLv2PortDefinition` (`port def`, `ISysMLv2FileContent`, `specializes:
+SysMLv2PortDefinitionRef[0..n]` + `content: ISysMLv2PortBodyContent[0..n]` — same shape as part/attribute
+defs incl. iteration 8's specialization), `SysMLv2PortDefinitionRef` (third copy of the
+`<name>Ref`-with-fallback-name pattern, own behavior/editor/textgen), `SysMLv2PortUsage` (`port`;
+implements `ISysMLv2PartBodyContent` and `ISysMLv2PortBodyContent`; children `direction`,
+`multiplicity`, `type`; boolean `conjugated`), `SysMLv2FeatureDirection` (single enum property `kind`
+of new enum `SysMLv2FeatureDirectionKind` = `in`/`out`/`inout`, held as an optional *child* so "no
+direction" is just an absent child rather than a magic enum member), and interface
+`ISysMLv2PortBodyContent` (implemented by `SysMLv2PortUsage`, `SysMLv2AttributeUsage`,
+`SysMLv2EmptyLine`). No `content` link on `SysMLv2PortUsage` (unlike part/attribute usage's unused
+placeholder) — usage bodies are still rejected by the importer.
+
+**Scope extension, flagged for review**: `SysMLv2AttributeUsage` also gained the optional `direction`
+child (`in attribute voltage : Voltage;`) — directed attributes are the main content of real port
+definitions, so ports without it would have been nearly empty. Part usages still reject a direction
+prefix. Direction parsing is a shared plain-Java helper `extractDirection(BasicUsagePrefixContext)`
+that also rejects `ref`/`derived`/`abstract`/`variation`/`constant` explicitly.
+
+Importer: `visitPortDefinition` (cloned from `visitAttributeDefinition`) rejects any body element that
+isn't an `ISysMLv2PortBodyContent` (e.g. a part usage) with an explicit "Unsupported" error instead of a
+`NodeCastException`; `visitPortUsage` (cloned from `visitPartUsage`) handles `~Type`
+(`conjugatedPortTyping`) by setting `conjugated` — set only when true, so non-conjugated imports match
+editor-created nodes that never touched the property. Dispatch added in `visitDefinitionElement` and
+`visitStructureUsageElement`. Reifier: `reifyPortDefinitionRefs` + `TestUtils` wrapper. Textgen
+canonical forms: `in port p : ~P;`, `port def Q :> P {`. Editor: `optional % direction %` prefix on
+port and attribute usages; `~` is a constant shown only when `conjugated` (toggle it in the
+inspector) — a grammarcells `FlagCell` was tried first but breaks the surrounding optional cell (see
+root `mps-gotchas.md`).
+
+Sandbox `_100_Ports`; `_100_PortsTest` (`testImportPorts` — uses `specializes` and `;` variants;
+`testRoundtripPorts`; `testReifyResolvesPortTypesAndSpecializations` — forward ref + conjugated),
+run config `_100_test_sysmlv2_ports`. Full suite (`_020`–`_100`, 23 tests) green.
+
+**Still deferred**: conjugation is not editable inline (inspector only); `port def` bodies don't accept
+`item` usages yet (common in real models, needs `item def`/`item` first); no test for the
+"part usage inside port def" rejection path (the `parseFileIntoModel` EDT hop makes exception
+assertions awkward); scopes for the ref concepts' `definition` link still missing.
+
+**Iteration 10 (2026-10-11) — items (`item def` / `item` usage)**: new concepts
+`SysMLv2ItemDefinition` (`item def`, `ISysMLv2FileContent`, `specializes:
+SysMLv2ItemDefinitionRef[0..n]`, `content: ISysMLv2ItemBodyContent[0..n]`), `SysMLv2ItemDefinitionRef`
+(fourth copy of the `<name>Ref`-with-fallback-name pattern), `SysMLv2ItemUsage` (`item`; implements
+`ISysMLv2PartBodyContent`, `ISysMLv2PortBodyContent` and `ISysMLv2ItemBodyContent`; children
+`direction`, `multiplicity`, `type` — same shape as port usage minus conjugation), and interface
+`ISysMLv2ItemBodyContent` (implemented by `SysMLv2ItemUsage`, `SysMLv2AttributeUsage`,
+`SysMLv2EmptyLine`). So items can now appear in part defs (`item contents[0..1] : Diesel;`), as
+directed flow features in port defs (`out item fuel : Fuel;`), and nested in item defs. All new
+structure/behavior/editor/textgen roots live in virtual folder `part.item` (interface in `base`),
+following the folder layout the user introduced alongside iteration 9.
+
+Importer: `visitItemDefinition` (cloned from `visitPartDefinition` — same
+`occurrenceDefinitionPrefix` grammar shape — plus the explicit "element not allowed in item
+definition body" check port defs already have), `visitItemUsage` (cloned from `visitPortUsage` with
+the conjugation handling stripped), dispatch in `visitDefinitionElement`/`visitStructureUsageElement`.
+Reifier: `reifyItemDefinitionRefs` + `TestUtils` wrapper. Item refs resolve to item defs only — in
+SysML v2 a part def *is* an item def, so `item x : SomePartDef` is legal but stays unresolved here
+(fallback name only); revisit if/when a shared definition supertype is introduced.
+
+Sandbox `_110_Items`; `_110_ItemsTest` (`testImportItems` — `specializes`/`;` variants;
+`testRoundtripItems`; `testReifyResolvesItemTypesAndSpecializations` — forward ref), run config
+`_110_test_sysmlv2_items`. Full suite (`_020`–`_110`, 26 tests) green. The cloned item-def editor hit
+the already-recorded "re-inserted style item gets `flag=true`" gotcha again (fixed the same way).
+
+**Decision (2026-10-12) on the per-kind duplication — no shared generic `Definition`/`DefinitionRef`
+abstraction.** Discussed with the user after iteration 10: a generic abstraction would buy little
+(every subconcept would still need its own narrowed `content`/`specializes` links, MPS link
+specialization can only narrow, and a generic ref would lose the structural type safety — e.g. a port
+typed by a part def — that per-kind refs give for free), and the small per-kind editors/textgens are
+already diverging (port conjugation keymap). **Guiding principle, per the user: stay close to the
+SysML v2 metamodel** so future use cases aren't blocked by drift — introduce inheritance only where
+SysML itself has it, and centralise *name-resolution logic* (reifier now, constraints scopes later,
+qualified names/imports eventually) in one generic helper the next time it is touched, rather than
+abstracting the concepts.
+
+**Iteration 10b (2026-10-12) — `SysMLv2PartDefinition extends SysMLv2ItemDefinition` (SysML
+metamodel alignment)**: per the user, mirror SysML v2 directly — part def *is an* item def. A first
+attempt via a shared `ISysMLv2ItemDefinition` interface was rejected by the user in favour of real
+concept inheritance, with the wider part body handled by a constraint (see
+`docs/idioms/narrow-inherited-content-with-marker-interface.md`):
+
+- `SysMLv2PartDefinition` now **extends** `SysMLv2ItemDefinition` and inherits its `content :
+  ISysMLv2ItemBodyContent[0..n]` and `specializes : SysMLv2ItemDefinitionRef[0..n]` (its own two links
+  were removed after migrating all sandbox/test instances onto the inherited ones — 30 children moved,
+  ids and order preserved). So a part def may specialize part *or* item defs, `item x : SomePartDef`
+  resolves (`SysMLv2ItemDefinitionRef.definition : SysMLv2ItemDefinition` accepts part defs), and
+  `reifyItemDefinitionRefs` (`m.nodes(SysMLv2ItemDefinition)`) finds part defs too.
+- `SysMLv2PartUsage` and `SysMLv2PortUsage` now also implement `ISysMLv2ItemBodyContent` (to fit the
+  inherited `content` link) plus the new marker interface `ICanBelongOnlyToSysMLv2PartDefinition`,
+  whose `canBeChild` (in the previously empty `constraints` model) reads *"if the parent is an item
+  def, it must be a part def"* — deliberately not the stricter *"parent must be a part def"*, which
+  would also forbid `port` usages nested in `port def`s (used by `_100_Ports`). Verified with a
+  temporary probe: a part usage inside an item def is reported as "cannot be child", an item usage
+  is not. `visitItemDefinition` mirrors this with an explicit "part-specific element in item
+  definition body" error (constraints don't fire on programmatic `.add`).
+- `SysMLv2PartDefinitionRef` stays for part *usage* typing (part usages must be typed by part defs).
+  `ISysMLv2PartBodyContent` now only types `SysMLv2PartUsage.content` (the unused usage-body
+  placeholder).
+- New `_110_ItemsTest.testReifyPartDefinitionIsAnItemDefinition` (part def `:>` item def, item usage
+  typed by part def). Full suite 27 tests green.
+
+Open SysML-fidelity questions, not acted on: whether SysML permits an `item def` specializing a
+`part def` (structurally accepted and resolved now); whether port usages are legal inside item defs
+(currently rejected via the marker interface — revisit if SysML allows ports on items).
+
+**Iteration 11 (2026-10-12) — subsetting (`:>` / `subsets`) and redefinition (`:>>` / `redefines`)
+on usages**: new abstract `SysMLv2Usage` (folder `base`, mirrors SysML's Feature/Usage) is now the
+superconcept of `SysMLv2PartUsage`, `SysMLv2AttributeUsage`, `SysMLv2PortUsage` and `SysMLv2ItemUsage`
+(previously `BaseConcept`; no link migration needed since `SysMLv2Usage` introduced only *new* links).
+It owns `subsets` and `redefines : SysMLv2FeatureRef[0..n]`; `SysMLv2FeatureRef` = fallback
+`featureName` (text as written, incl. `A::b` / `a.b`) + `feature : SysMLv2Usage[0..1]`. Anonymous
+usages are now accepted (SysML's dominant redefinition form `part :>> wheels;`): `name` stays null,
+textgen omits it, editors render it empty (`emptyNoTargetText`). Canonical textgen order:
+`[dir] kw [name][mult] [: [~]Type] [:> a, b] [:>> c];`.
+
+Importer: all four usage visitors now share four plain-Java helpers — `extractUsageName` (null for
+anonymous; rejects `<alias>`), `findTypingSpecialization` (the single typing clause; rejects
+`::>`/references and crosses, and a second typing clause), `extractSubsettingNames`,
+`extractRedefinitionNames` — replacing the old "exactly one featureSpecialization, which must be a
+typing" rule.
+
+Resolution: new `SysMLv2FeatureResolver.reifyFeatureRefs(model)` (+ `TestUtils` wrapper; run *after*
+the definition-ref reifiers, since it walks `specializes`). Follows SysML name lookup: a
+**redefinition** is looked up in the owning definition's supertypes only; a **subsetting** in the
+owning definition first (so a sibling's `:> wheels` finds the owner's own `:>> wheels`
+redefinition, which hides the inherited one), then its supertypes, transitively; an anonymous
+redefining usage is found under the name it redefines. Qualified names / feature chains are left
+unresolved. Written in smodel (a first version used plain Java over the openapi `SNode` API with
+string-based concept/role lookups — replaced at the user's request, see
+`docs/idioms/typed-smodel-access-not-string-lookups.md`): iteration via
+`m.nodes(SysMLv2FeatureRef)`, typed link/property access, and `isInstanceOf(...)` + casts to dispatch
+over the definition kinds (`contentOf` / `superDefinitionsOf` handle item — incl. part — attribute
+and port defs). First instance of the "centralise name resolution in one generic helper" decision.
+If more definition kinds arrive, consider an abstract `SysMLv2Definition` with virtual behavior
+methods (`features()`, `superDefinitions()`) instead of the per-kind `isInstanceOf` dispatch.
+
+Sandbox `_120_SubsettingRedefinition`; `_120_SubsettingRedefinitionTest` (import with
+`redefines`/`subsets` keywords, roundtrip, reification), run config
+`_120_test_sysmlv2_subsetting_redefinition`. Full suite 30 tests green.
+
+Not covered yet: keyword-less usages (`:>> mass = 1500;` — SysML's default reference usage), feature
+values (`= expr`), references (`::>`), conjugation of redefined ports, and checking that a
+redefinition's multiplicity only narrows the inherited one (left out until checked against the spec).
+
+**Done (2026-11-16): a redefinition only narrows what it inherits.** Checking rule
+`check_SysMLv2Usage_redefinitionNarrows` (typesystem, virtual package `specialization`, helper class
+`RedefinitionHelper`) reports on each `:>>` target: `[redefinition-kind]` when an attribute, port or
+item usage is redefined by a different kind of feature (e.g. a part redefining an attribute), and
+`[redefinition-type]` when the redefining usage declares a type that is neither the inherited type
+nor a specialization of it. Reference usages (keyword-less) on either side and redefinitions of other
+usage kinds are exempt from the kind check (the system model library redefines `start`/`done` with
+use cases and actions); untyped redefinitions are exempt from the type check. A redefinition that
+targets nothing inherited already shows as an unresolved reference via scoping. Test
+`_323_RedefinitionNarrowsCheck` in `_030_checking_rules` (run config `baselan_323_redefinition`),
+mutation-checked.
+
+**Editor convention (2026-10-12, per the user)**: every `<X>Ref` concept that carries both a fallback
+name (filled by the importer, reified later) and a real reference projects the reference in its
+**inspector** (`<label>: ( %ref% -> {name} )`, name read-only) so a user can set or fix it by hand
+when reification couldn't. Applied to `SysMLv2ItemDefinitionRef` (by the user), and to
+`SysMLv2PartDefinitionRef`, `SysMLv2AttributeDefinitionRef`, `SysMLv2PortDefinitionRef` and
+`SysMLv2FeatureRef` (same shape, cloned). Any future `<X>Ref` should get the same inspector.
+
+**Sandbox references resolved (2026-10-12)**: all `_0x0`–`_120` sandbox examples now carry real
+references (26 refs: definition typing/specialization and feature subsetting/redefinition), set by
+running the reifiers once over the sandbox model from the MPS console (part/attribute/port/item
+definition refs first, then `SysMLv2FeatureResolver.reifyFeatureRefs`, which needs the resolved
+`specializes`). The fallback names are kept alongside. Doing this surfaced that a `SysMLv2FeatureRef`
+resolved to an *anonymous* redefining usage (`:> wheels` → `Car`'s own `part :>> wheels`) projected
+`<no name>` and would have generated `null`: fixed by a new `SysMLv2Usage.getEffectiveName()`
+behavior (own name, else the redefined feature's effective name — SysML's implicit naming of
+redefinitions), used by `SysMLv2FeatureRef.getEffectiveName()` (falls back to `featureName`), by the
+resolver (its private copy was removed), and the feature-ref editor now shows the reference cell only
+when the target has a name.
+
+**Reification test convention (2026-10-12, set by the user in `_090_SpecializationTest`)**: reify
+tests no longer assert field-by-field. Each parses a source text, runs the reifier(s), and compares
+the *whole* result against an explicit expected fixture — a second labeled `TestNode` named
+`<x>_reified` whose references (`definition` / `feature`) are set by hand to the intended targets —
+via `TestUtils.checkFirstRoot`. The fixture shows at a glance what reification must produce, and the
+comparison catches both a missing reference ("Role definition is not expected") and a wrong target
+(`name (property) is different: expected 'CombustionVehicle' got 'ElectricVehicle'`). Deliberately
+unresolved cases are fixtures with *no* reference (`Ghost`, the cross-kind `Quantity`). Applied to all
+reify tests: `_070` (2), `_090` (2; the user's resolves test fixed — one ref pointed at the wrong
+sibling), `_100`, `_110` (2), `_120`. Any future reifier test should follow it.
+
+**Test-source layout convention (2026-10-12, per the user)**: every test source text is written one
+source line per statement — `string content;` then `content = "line\n";` and one `content += "line\n";`
+per further line (the style of `testImportPorts`) — never as a single long string literal full of `\n`.
+This applies to import, round-trip *and* reify tests, and to compact one-line sources too (e.g.
+`part def Car { part engine : Ghost; }` is written as three lines), so the MPS editor shows the input
+the way a reader would write it. Applied to all 17 affected tests in `_030`–`_120`.
+
+**Feature-ref lookup rule changed (2026-10-12, from the user's `_120` fixture)**: the user edited the
+expected `subsRedefFile_reified` fixture so that `part frontWheels :> wheels` inside `Car` points at the
+*declared* `Vehicle.wheels`, not at `Car`'s own anonymous redefinition `part :>> wheels` — which made
+`testReifyResolvesRedefinedAndSubsettedFeatures` fail (expected `wheels`, got `null` = the unnamed
+usage). Resolved in favour of the fixture: `SysMLv2FeatureResolver.findFeature` now matches the
+usage's *declared* name (`feature.name`) only, so anonymous redefinitions are skipped as lookup targets
+(they stay reachable through their own `redefines` ref). This replaces the "owner first, an anonymous
+redefinition answers to the redefined name" rule from the iteration-11 entry; the
+`SysMLv2Usage.getEffectiveName()` behavior is still used for *presentation* of a feature ref. Sandbox
+`_120` subset refs retargeted accordingly. If SysML's own scoping (implicit naming of redefining
+features, KerML effectiveName) is later needed instead, revisit — then the fixture must change back.
+
+**Qualified names, explicit namespace reference (2026-10-14, not yet committed).** Modeled after BaseLanguage's
+`StaticMethodCall` (`classConcept . method`): every definition ref (`SysMLv2{Part,Item,Attribute,Port}DefinitionRef`)
+implements `ISysMLv2QualifiedRef`, which declares `namespace: 0..1 -> ISysMLv2Namespace` once; `definition` stays the
+last element and the raw fallback name stays for unresolved text. Pieces:
+- `ISysMLv2Namespace.getNestedNameInContext(context)` = BaseLanguage's `getNestedNameInContext`: the name of a
+  namespace relative to the place of the reference (drops leading segments that are ancestors of the ref; files are
+  never part of the path). Used by the editor's `ref. presentation` cell and by `getEffectiveName()` (textgen).
+- `ISysMLv2QualifiedRef.namespaceScope()`: a `DelegatingScope` over the lexical namespace scope, with `resolve`
+  (walks `A::B::C` through `ISysMLv2Namespace.memberScope`), `getAvailableElements` (all lexically visible namespaces
+  and their nested ones, via `collectNamespaces`) and `getReferenceText` (= `getNestedNameInContext`). Backs the
+  `namespace` link constraint. `definitionScope(kind)` = `namespace.memberScope(kind)` if set, else the lexical scope;
+  the four `definition` constraints are imperative and call it.
+- Reifier: `ISysMLv2QualifiedRef.reifyQualified(text, kind)` resolves the prefix, sets `namespace`, returns the member.
+- Editor: main cell `[namespace ::] definition` (namespace + `::` only when set); the inspector has a `namespace:` row
+  with the same presentation cell so a user can pick one with qualified-name completion. Typing a namespace directly in
+  the main cell is NOT supported yet (no optional/side-transform for it).
+Tests: `_130_NameScopingTest.testReifyQualifiedNames` (resolution + `namespace` refs + relative texts `Inner`,
+`Inner`, `Outer::Inner`). Not done: textgen round-trip test for qualified refs, a `ScopesTest` on the `namespace` link,
+quoted names, `$::`, feature chains, `SysMLv2FeatureRef`/`SysMLv2Import` reuse of `ISysMLv2QualifiedRef`, visibility,
+ambiguity checks. Imports plug into `localMembers()`/`memberScope()`.
+
+**Iteration 12 (2026-10-18) — documentation (`doc /* ... */`)**: new concept `SysMLv2Documentation`
+(alias `doc`, one string property `body`, virtual folder `annotation`). It implements the same content
+interfaces as `SysMLv2EmptyLine` (`ISysMLv2FileContent` and the part/attribute/port/item body-content
+interfaces), so it can appear at file level, in packages and in all four definition bodies. Editor
+`doc /* { body } */`, textgen `doc /* ${body} */`. Importer: `visitDefinitionElement` and
+`visitDefinitionBodyItemContent` dispatch `annotatingElement`; `visitAnnotatingElement` accepts only
+`documentation` (comment / `rep` / metadata throw "Unsupported SysML v2 construct"); `visitDocumentation`
+uses `extractDocumentationBody`, which rejects a named doc and a `locale`, and stores the text between
+`/*` (or `//*`) and `*/`, trimmed. Tests: importer `_140_DocumentationTest` (import + roundtrip, doc at
+file, package and the four definition-body levels); editor `_060_Docs_DocInPackage`,
+`_060_Docs_DocInPartDef` (type `doc` then the text). Multi-line (2026-10-18): the editor uses a multiline cell for `body` (laid out on its own lines, `*/` on
+a new line, when `body` contains a newline) and the constructor initializes `body` to "" (needed so the
+caret stays in the multiline cell after the first typed character). Importer: per line, indentation and a
+leading `*` are stripped and empty first/last lines dropped, so `body` holds plain lines; textgen prints a
+multi-line body as `doc /*`, indented lines, `*/`. Tests: `_140` adds testImportMultiLineDocumentation
+(star-decorated input) and testRoundtripMultiLineDocumentation; editor `_060_Docs_DocMultiLine` (newline via
+Insert_Action); the `_060_Docs_*` tests invoke Complete_Action after typing `doc`. Not done: relative
+indentation inside a multi-line body is not preserved; typing `doc ` with a space puts the space into
+`body`; no doc in usage bodies (they are empty in this subset).
+
+**Iteration 13 (2026-10-18) — comments (`comment … /* … */`) and doc name/locale**: follows the
+grammar rules `comment : (COMMENT identification? (ABOUT annotation (COMMA annotation)*)?)? (LOCALE
+DOUBLE_STRING)? REGULAR_COMMENT` and `documentation : DOC identification? (LOCALE DOUBLE_STRING)?
+REGULAR_COMMENT`. New concept `SysMLv2Comment` (alias `comment`, same content interfaces as
+`SysMLv2Documentation`, identifier name, properties `body` / `locale` / `bare`, children `about`
+0..n). `bare` marks the keyword-less `/* … */` form; textgen then prints only the body. New
+`SysMLv2AnnotationRef` (an `ISysMLv2QualifiedRef` to any `INamedConcept`, with an `elementName`
+fallback, a smart reference and scope `definitionScope(INamedConcept)`). `SysMLv2Documentation` gains
+an identifier name and `locale`. Editor: `comment`/`doc` keyword, name cell (plain property cell,
+`emptyNoTargetText`), optional `about` list (comment only), optional `locale "…"`, then the
+multi-line body as for doc. Importer: `visitAnnotatingElement` dispatches `comment` as well as
+`documentation` (`rep` and metadata stay unsupported); `visitComment` / `visitDocumentation` share
+`extractCommentText`, `extractOptionalName` (rejects `<short>` names) and `unquote`; `about` names
+are stored as `elementName` and resolved by `SysMLv2TypeReifier.reifyAnnotationRefs`. Tests:
+importer `_150_CommentTest` (import with about-reification, and roundtrip covering bare, keyword,
+named, locale, about, a named and localized doc, and a multi-line comment); editor
+`_070_Comments_CommentInPackage` / `_070_Comments_CommentInPartDef`. After completing `doc` /
+`comment` the caret is in the (empty) name cell, so the `_060_Docs_*` and `_070_Comments_*` tests
+press TAB before typing the body. Not done: `<short>` names, `rep` (textual representation),
+metadata, and an editor test that types `about` / `locale`.
+
+**Iteration 14 (2026-10-18) — textual representation (`rep … language "…" /* … */`)**: follows
+`textualRepresentation : (REP identification?)? LANGUAGE DOUBLE_STRING REGULAR_COMMENT`. New concept
+`SysMLv2TextualRepresentation` (alias `rep`, same content interfaces as `SysMLv2Comment`, identifier
+name, properties `body` / `language` / `bare`); `bare` marks the short form without `rep` (and so
+without a name). Editor: `rep` keyword (hidden when `bare`), name cell, mandatory
+`language "{language}"`, multi-line body as for doc/comment. Textgen mirrors comment. Importer:
+`visitAnnotatingElement` dispatches `textualRepresentation`; `visitTextualRepresentation` reuses
+`extractCommentText` / `extractOptionalName` / `unquote`; only metadata stays unsupported. The body is
+kept as opaque text — no interpretation of any `language`. Tests: importer
+`_160_TextualRepresentationTest` (import + roundtrip: short form at file and part-def level, named,
+keyword-only, multi-line); editor `_080_Reps_RepInPackage` (type `rep`, Complete, TAB, language, TAB,
+body). Not done: completion for the short form (typing `language` on an empty line), metadata.
+
+**Iteration 15 (2026-10-18) — metadata (first step)**: `metadata def` and metadata usages
+(`metadataFeature : (AT_SIGN | METADATA) metadataFeatureDeclaration (ABOUT annotation (COMMA
+annotation)*)? metadataBody`). New concepts (virtual folder `metadata`):
+`SysMLv2MetadataDefinition` (alias `metadata def`, modelled like `attribute def`: specializes
+`SysMLv2MetadataDefinitionRef`s, content `ISysMLv2AttributeBodyContent`, file-level only);
+`SysMLv2MetadataDefinitionRef` (qualified ref + smart reference, scope
+`definitionScope(SysMLv2MetadataDefinition)`); `SysMLv2MetadataUsage` (alias `metadata`, same content
+interfaces as comment/doc/rep, identifier name, `atSign` for `@` vs `metadata`, children `type`,
+`about`, `values`); `SysMLv2MetadataValue` (`feature = value;`, a `ScopeProvider` whose scope for
+`SysMLv2FeatureRef` is the `localMembers()` of the usage's metadata definition, so `asil = ...`
+resolves to the definition's attribute); `SysMLv2LiteralExpression` (literal kept as source text in
+`value`). Editor: `@`/`metadata` keyword (by `atSign`), name, `:` when named, type, optional `about`,
+then `;` when there are no values or an optional `{ values }` block. Importer: `visitDefinitionElement`
+dispatches `metadataDefinition`; `visitAnnotatingElement` dispatches `metadataFeature`;
+`visitMetadataFeature` uses `collectMetadataValues` / `addMetadataValue`, which accept only
+`name = literal;` entries (string, integer, real, boolean) and reject typed/nested body features,
+`:=`/`default`, non-literal expressions, and definitions/aliases/imports in the body. Reifier:
+`reifyMetadataDefinitionRefs` (run before `reifyFeatureRefs`). Tests: importer `_170_MetadataTest`
+(import with type/feature/about reification + roundtrip); editor `_090_Metadata_MetadataInPartDef`.
+Not done: `#` prefix metadata, `:>>`/`redefines` spelling in value entries (normalized to `name =`),
+empty `{ }` body (printed as `;`), `typed by` spelling (printed as `:`), metadata def prefixes
+(`abstract`, extension keywords), non-literal values, semantic metadata.
+
+**Iteration 16 (2026-10-19) — prefix metadata (`#Type`)**: `prefixMetadataMember : HASH
+prefixMetadataFeature | HASH prefixMetadataUsage` in front of packages (`prefixMetadataMember*`),
+definitions (`definitionExtensionKeyword*`) and usages (`usageExtensionKeyword*`). New concept
+`SysMLv2PrefixMetadata` (child `type : SysMLv2MetadataDefinitionRef`, editor `#` + type, textgen
+`#Type `) and interface `ISysMLv2PrefixMetadataOwner` (child list `prefixMetadata`), implemented by
+`SysMLv2Package`, `SysMLv2ItemDefinition` (so also part def), `SysMLv2AttributeDefinition`,
+`SysMLv2PortDefinition`, `SysMLv2MetadataDefinition` and `SysMLv2Usage` (all four usages). Editors
+include the shared component `ISysMLv2PrefixMetadataOwner_PrefixMetadata` (a list shown only when
+non-empty) before the keyword (after the direction for attribute/port/item usages); textgens emit the
+list at the same place. Importer: `extractPrefixMetadataNames` (works for both extension-keyword
+contexts and `prefixMetadataMember`) + `addPrefixMetadata`; the prefix checks of the ten visit methods
+no longer reject `#` but still reject `abstract`/`variation`/`individual`/portion kinds etc. Prefix
+types are resolved by `reifyMetadataDefinitionRefs`. Tests: importer `_180_PrefixMetadataTest`
+(import with reification + roundtrip covering package, all definition kinds, all usage kinds,
+multiple prefixes, prefix after direction). Not done: adding a `#` prefix from the editor (the list is
+hidden while empty, so there is no place to type it yet — needs an intention or a left side transform
+on the keyword), `#` on metadata usages (`#X @Y`), prefix metadata on comment/doc/rep, `#` on
+enumeration/occurrence elements (not in this subset).
+
+**Iteration 16b (2026-10-19) — adding `#` prefix metadata from the editor**: typing `#` at the left
+edge of an owner's keyword (e.g. `|part def Car`) and completing inserts a new `SysMLv2PrefixMetadata`
+at the front of `prefixMetadata` and puts the caret into its type cell. Implemented as one named
+transformation menu `ISysMLv2PrefixMetadataOwner_PrefixMetadataMenu` (named `PrefixMetadata`, section at
+the grammar-cells `before` location, action text `#`, execute: `addFirst` + `selectWRTFocusPolicy`),
+included from small `<Concept>_PrefixMetadataContribution` contributions to the default menus of the ten
+owner concepts (package, part/item/attribute/port/metadata def, part/attribute/port/item usage). The
+user's legacy cell-menu attempt on the `attribute def` keyword was replaced (and its cell-menu
+component removed). Test: editor `_090_Metadata_PrefixOnPartDef`
+(caret at start of `part def`, type `#`, Complete, type `pack::Safety`, Complete, Enter).
+
+**Iteration 17 (2026-10-19, IN PROGRESS) — feature chains + connections**: done so far (models
+saved, not yet built/tested): structure `SysMLv2ConnectionDefinition` (extends part def, alias
+`connection def`), `SysMLv2ConnectionDefinitionRef` (+ smart ref, behavior/constraints/editor/textgen
+cloned from the part def ref), `SysMLv2ConnectorEnd` (ScopeProvider, child `chain : SysMLv2UsageRef[1..n]`,
+editor `.`-separated list, textgen `a.b.c`), `SysMLv2ConnectionUsage` (extends `SysMLv2Usage`, part/item
+body content, `withKeyword`, `type`, `source`, `target`; constructor creates both ends with one empty
+step; editor `[#..] [connection] [name] [: Type] connect <src> to <tgt> ;`), `isEnd` on `SysMLv2Usage`
+(`end` keyword first in part/port/item usage editors + textgens). Behavior: `SysMLv2Usage.typeDefinition()`
+(definition of the first Part/Port/Item/Attribute/ConnectionDefinitionRef child);
+`SysMLv2ConnectorEnd.scopeOwner(child)`: first step -> nearest `ISysMLv2FeatureOwner`, later steps ->
+`typeDefinition()` of the previous step's feature; `getScope` = owner's `localMembers()` of the kind.
+Language made successfully. Importer: `visitConnectionDefinition` (clone of part def), `visitConnectionUsage`
+(binary only; rejects prefixes, value, multiplicity, subsetting/redefinition, n-ary, named/multiplicity
+connector ends, `::` in chain steps, non-empty body), `extractConnectorEndChain`, `createConnectorEnd`,
+`end` items in `visitDefinitionBodyItem` (set `isEnd`; reject name/multiplicity/nonunique), dispatch in
+`visitDefinitionElement`/`visitStructureUsageElement`. `SysMLv2TypeReifier.reifyConnectionDefinitionRefs`
++ TestUtils wrapper. Chain reification relies on order: reify part/port/connection def refs BEFORE
+`reifyUsageRefs`, and steps are resolved in document order.
+Status after MPS restart (Xmx 4g): everything builds; importer suite 48/48 green incl. new
+`_190_ConnectionTest` (import + reification of def refs and chain steps, roundtrip). Fixes since:
+`connection def` editor `{` had `punctuation-left` flag=true from the JSON clone (original had the
+flag unset) -> set false; connection usage name cell now has renderingCondition `node.withKeyword`
+(empty name left a gap before `connect`).
+Editor test `_100_Connections_EditConnectUsage`: in `part def Car { part engine : Engine; part gearbox :
+Gearbox; }` typing `connect`, `engine` Complete, `.`, `drive` Complete, ESC, TAB, `gearbox` Complete, `.`,
+`input` Complete yields `connect engine.drive to gearbox.input;` with all four chain steps resolved (step 2
+scoped by the type of step 1). Needed for that: `SysMLv2UsageRef.usage` is now a smart reference;
+`SysMLv2UsageRef_Constraints` scopes `usage` via `Scope.getScope(contextNode, containmentLink, position,
+SysMLv2Usage)`; `SysMLv2ConnectorEnd` overrides `getScope(kind, link, index)` and computes the owner by
+position (`scopeOwnerAt`, `membersScope`, unnamed features filtered out); the inline target-name cell in
+`SysMLv2UsageRef_Editor` is read only. See the gotcha "Reference completion for list elements ..." in
+`docs/agents/mps-gotchas.md`.
+After a full language rebuild: importer 48/48, baselan 21/21.
+Possible follow-ups: `interface def`/`interface` (iteration 18), `bind` (19).
+Rename (2026-10-19): `SysMLv2FeatureRef` -> `SysMLv2UsageRef` (link `feature` -> `usage`, property
+`featureName` -> `usageName`, aspect roots renamed accordingly, inspector label `usage:`),
+`SysMLv2TypeReifier.reifyFeatureRefs` / `TestUtils.reifyFeatureRefs` -> `reifyUsageRefs`. Concept/link
+IDs unchanged. Rationale: consistent with the `<X>DefinitionRef.definition` pattern; every feature in this
+language is a usage (widen the target if KerML library features are ever modelled). Older notes above
+still use the former names.
+
+**Iteration 18 (2026-10-20) — connection usage bodies via a part-like abstract base**: SysML v2 says a
+connection usage *is* a part usage (§7.13.1, §8.3.13.4). New abstract `SysMLv2PartLikeUsage` (extends
+`SysMLv2Usage`, implements `ISysMLv2FeatureOwner`); `SysMLv2PartUsage` and `SysMLv2ConnectionUsage` extend it.
+The body link `content : ISysMLv2PartBodyContent[0..n]` moved from part usage to the base (same link id; no
+model had part-usage content because bodies were rejected). `multiplicity` and `type` stay on the concrete
+concepts (multiplicity is used in many fixtures/sandboxes; moving it would have broken them).
+Behavior: `ownedFeatures` = body, `directSuperDefinitions` = `typeDefinition()`, so a part-like usage's
+members are its body features plus its type's features; `getScope` copied from `SysMLv2Usage` (class
+behavior wins over the namespace interface); `getVisibleMatchingText`/`getMatchingText` = plain name (the
+`ISmartReferent` default would qualify, e.g. `Engine::drive`). `SysMLv2ConnectorEnd.scopeOwnerAt`: step 0
+starts from the connection's *parent* (the connection is now a feature owner itself); step N uses the
+previous step's usage directly when it is a feature owner (body features visible), else its type.
+`ICanBelongOnlyToSysMLv2PartDefinition` renamed to `ICanBelongOnlyToSysMLv2PartOwner` (part definitions and
+part-like usages); it now also allows part-like usages as parent (part and port usages in usage bodies).
+Editor: grammar-cells `OptionalCell [ "{" content "}" ]` before `;` in part and connection usage editors;
+`;` has renderingCondition `content.isEmpty`; typing `{` opens the body. TextGen: `;` or ` {` + indented
+body + `}` (same layout as part def). Importer: part and connection usage bodies are visited like part def
+bodies (port/item/attribute usage bodies are still rejected).
+Tests: importer `_200_ConnectionBodyTest` (connection with `attribute bw :>> bandwidth;` resolved against
+the connection def, extra attribute, `doc`; part usage with body; chain `controller.sub` into a part usage
+body; import + reification + roundtrip), editor `_110_Connections_AddBodyAttribute` (type the connection,
+`{`, `attribute latency`). Importer 50/50, baselan 22/22.
+Open: value assignment (`attribute :>> bandwidth = 100;`) is still rejected by the importer (needs a value
+expression on attribute usages; the metadata `LiteralExpression` could be reused); explicit end features in
+usage bodies (`end part hub ::> mainSwitch;`, needs `::>` reference subsetting); bodies on port/item usages.
+
+**Iteration 18b (2026-10-20) — metadata on connections**: `#X` prefix metadata on connection usages already
+worked in text/importer/textgen (a connection usage is a usage → `ISysMLv2PrefixMetadataOwner`); added
+`SysMLv2ConnectionUsage_PrefixMetadataContribution` so `#` typed before `connect`/`connection` works in the
+editor. `connection def` gets `#` via the part definition's default menu (no own menu). `@X` metadata usages
+are part body content, so they work inside connection usage bodies. Tests: importer
+`_210_ConnectionMetadataTest` (`#Safety connection def`, `#Safety connect x to y;`, `@Safety;` in a connection
+body; import + reification + roundtrip), editor `_120_Connections_PrefixMetadata` (`#` before `connect`).
+Importer 52/52, baselan 23/23.
+
+**Iteration 19 (2026-10-20) — interfaces (`interface def` / `interface` usage) and port bodies**: SysML v2 says an
+interface definition is a connection definition and an interface usage is a connection usage, so
+`SysMLv2InterfaceDefinition extends SysMLv2ConnectionDefinition` (alias `interface def`) and
+`SysMLv2InterfaceUsage extends SysMLv2ConnectionUsage` (alias `interface`); both live in virtual package `interface`.
+No dedicated `InterfaceDefinitionRef`: an interface usage's `type` is the existing `SysMLv2ConnectionDefinitionRef`;
+`SysMLv2ConnectionDefinitionRef_Constraints` narrows the `definition` scope to `SysMLv2InterfaceDefinition` when the
+ref's parent is an interface usage (ternary on the concept passed to `definitionScope`). That narrowing only drives
+completion/scoping; a hand-built or imported interface usage typed by a plain connection def is **not** reported
+(the reifier resolves by `SysMLv2ConnectionDefinition`, which includes interface defs and plain connection defs).
+Editors/textgens are clones of the connection ones with a mandatory `interface` keyword (name cell always shown, no
+`withKeyword`); `interface def` is the connection def editor with `interface def`. `#` prefix metadata on
+`interface def`/`interface` works through the inherited default menus (not separately tested).
+Canonical text: `interface def N :> S {` + body, `interface [name] [: T] connect a.p to b.q;` (or ` {` body `}`).
+Port bodies: `SysMLv2PortUsage` gained `content : ISysMLv2PortBodyContent[0..n]` and implements `ISysMLv2FeatureOwner`
+(behavior in the existing `SysMLv2PortUsage_Behavior`: `ownedFeatures` = body, `directSuperDefinitions` = type
+definition, matching text = plain name), so `port bus : Bus { port extra : P; }` works and chains such as
+`a.bus.extra` resolve through the body. Editor/textgen: same `{ content }` grammar-cell option as part and
+connection usages. `ICanBelongOnlyToSysMLv2PartOwner.canBeChild` now also accepts `SysMLv2PortDefinition` and
+`SysMLv2PortUsage` parents (a port nested in a port def/usage was formerly only legal under part owners; the
+`content` link types still keep part usages out of port bodies).
+Importer: `visitInterfaceDefinition`, `visitInterfaceBodyItem` (interface bodies use their own grammar rules:
+`definitionMember`, attribute usages, `end port`/structure usages; rejects imports, aliases, variants, successions,
+default `end x : T;`, visibility), `visitInterfaceUsage` (binary only, `connect` or the bare `a to b` form; rejects
+n-ary, value, multiplicity, subsetting/redefinition, named/multiplicity ends, qualified chain steps),
+`extractInterfaceEndChain`; port usage bodies are now imported (was: "non-empty port usage body" rejection) and may
+only contain `ISysMLv2PortBodyContent`. Dispatch added in `visitDefinitionElement` / `visitStructureUsageElement`.
+New static helpers hold the typed smodel parts (`newInterfaceDefinition`, `newInterfaceUsage`, `addItemSpecialization`,
+`addItemContent`, `addPartContent`, `addPortContent`, `markEnd`); see the 2026-10-20 gotcha on the authoring recipe.
+Tests: importer `_220_InterfaceTest` (import with fixture incl. conjugated end, nested ports and chains through port
+bodies, plus roundtrip; run config `_220_test_sysmlv2_interfaces`), editor `_130_Interfaces_EditInterfaceUsage`
+(`interface`, `link`, TAB, `engine.drive`, `gearbox.input` with completion) and `_140_Ports_AddNestedPort` (`port bus`,
+`{`, `port nested`). Importer 54/54, baselan 25/25.
+Open / not done: connector ends of an interface usage are not restricted to ports (any usage is accepted, as for
+`connect`); no sandbox fixture (the sandbox's `_100_manually_written` model had uncommitted changes of its own);
+`end x : T;` (default interface end), n-ary interface usages, `bind`, `flow`, attribute values and bodies on item
+usages remain for later iterations (planned order: 20 attribute values, 21 `bind`/`::>`, 22 flows).
+
+**Iteration 19b (2026-10-20) — spec checks for interfaces (8.3.14.3 / 8.4.10.2)**: two checks, by two mechanisms.
+(1) *Type of an interface usage must be an interface definition* — already a **scope**: the `definition` scope of
+`SysMLv2ConnectionDefinitionRef` is narrowed to `SysMLv2InterfaceDefinition` when the ref's parent is an interface
+usage (iteration 19). New declarative scope tests `_030_InterfaceTypeScope` (`test.com.symo.sysmlv2.baselan._010_scopes@tests`,
+exact-set `ScopesTest`s): the type ref of `interface i : Link …` offers exactly `{Link, Link2}`; the type ref of
+`connection c : Plain …` offers `{Plain, Link, Link2}` (an interface def is a connection def). A wrong expectation
+makes the test fail (checked), so the narrowing is really exercised.
+(2) *Ends of an interface usage must be ports* — **cannot be a scope**: a chain step `x` in `x.out` is a part and must stay
+visible, and at completion time nobody knows whether a step is the last one (only the last feature must be a port).
+Implemented as a checking rule instead: `check_SysMLv2InterfaceUsage_endsArePorts` (new rule in the
+`com.symo.sysmlv2.baselan.typesystem` model) reports an error on the source/target `SysMLv2ConnectorEnd` when the *last*
+chain step resolves to a usage that is not a `SysMLv2PortUsage`; unresolved steps are not reported (the reference error
+covers them). Helper: `SysMLv2ConnectorEnd.endsAtNonPort()`. Test `_010_InterfaceEndsCheck` (own tests model `test.com.symo.sysmlv2.baselan._030_checking_rules@tests`): `ok1`
+(`x.out`), `ok2` (`x.inner.deep`, port nested in a part) are clean; `bad1` (source = part), `bad2` (target = part),
+`bad3` (both) carry `has error` on exactly the offending ends. Verified separately that the checker reports these four
+errors and none on `ok1`/`ok2` (annotated errors are suppressed in `check_root_node_problems`, so a temporary
+unannotated copy was checked and removed). Run configs `_030_test_scope_interface_type`, `_040_test_check_interface_ends`.
+Still true: attribute/item usages are offered as chain steps in interface ends (completion is not narrowed further);
+the rule does not check the number of ends or `end port` in the definition body.
+
+**Iteration 20 (2026-10-20) — attribute values (`attribute x = 5;`)**: `SysMLv2AttributeUsage` gets an optional
+child `value : ISysMLv2Expression` (new interface, virtual folder `expression`); `SysMLv2LiteralExpression`
+(literal kept as source text in `value`, as for metadata values) implements it, so real expressions can be added later
+without retargeting the link. `ISysMLv2Expression_Constraints` sets `defaultConcreteConcept` to the literal (see the
+gotcha: otherwise the editor instantiates the interface itself). `SysMLv2LiteralExpression_Constraints` adds a property
+validator on `value`: string literal, `true`/`false`, or `-?int[.frac][e±exp]` (same regex as the importer).
+Editor: optional `= <value>` cell before `;`; TextGen: ` = <value>` before `;`. Importer: `extractAttributeValueText`
+(only `=` — `:=` and `default` are rejected —, only literals; `-5` and `-2.5` are accepted because the grammar yields
+a unary minus around the literal and the text is checked as a whole) and `setAttributeValue`; value parts on part,
+port, item and connection usages are still rejected. Reification needs nothing new: `:>> bandwidth = 100` resolves
+the redefined usage like before.
+Tests: importer `_230_AttributeValueTest` (import with fixture incl. `:>>` redefinition with a value, `-2.5`, `true`,
+a string, plus roundtrip; run config `_230_test_sysmlv2_attribute_values`); editor `_150_Attributes_AddValue`
+(`attribute rate`, `=`, `42`); scope test `_050_AttributeRedefineScope` (the redefinition target of
+`attribute :>> bandwidth = 100;` in `Wifi :> Link` offers exactly Link's attributes `{bandwidth, label}`, not the
+sibling `latency`); checking-rules test `_020_AttributeValueLiteralCheck` (`foo bar`, `1.` and `'x'` are rejected;
+`100`, `-2.5`, `"hi"`, `true`, `1e3` are clean — verified on an unannotated temporary copy).
+Importer 56/56, baselan 36/36.
+Not done: a check that the value fits the attribute's declared type — the scalar types (`Real`, `Integer`, `String`
+from `ScalarValues`) belong to the standard library, which this language does not model, so `attribute x : Real = "a"`
+cannot be rejected yet; units (`5 [kg]`); `:=` / `default`; non-literal expressions; values on other usage kinds.
+
+**Iteration 21 (2026-10-20) — binding connectors (`bind a.p = b.q;`)**: `SysMLv2BindingUsage` (alias `bind`, virtual folder
+`binding`) extends `SysMLv2Usage` (so it is named, can carry `#` prefix metadata and is `ISysMLv2PrefixMetadataOwner`), implements
+`ISysMLv2IdentifierNameConcept`, `ISysMLv2PartBodyContent`, `ISysMLv2ItemBodyContent` and `ICanBelongOnlyToSysMLv2PartOwner`
+(binding only in part definitions/usages and their subconcepts: connection and interface bodies). Children `source` / `target`
+(`SysMLv2ConnectorEnd`, same feature chains as `connect`, created by the constructor like for connection usages), boolean
+`withKeyword` for the optional `binding [name]` prefix. Editor: `[#meta] [binding [name]] bind <src> = <tgt> ;`; TextGen: same
+canonical text (`bind p = inner.q;`, `binding d2 bind inner.q = p;`). Behavior/editor/textgen/`#` contribution are clones of the
+connection usage ones without type, body and multiplicity. Importer: `visitBindingConnectorAsUsage` (rejects prefixes, specialization
+on the usage, bodies), dispatched from `visitNonOccurrenceUsageElement` and from `visitInterfaceBodyItem`; helper
+`newBindingUsage`. Chain resolution needs no change: step 0 starts at the nearest feature owner above the binding (the binding is
+not an owner), later steps use the previous step's usage/type.
+Fix found by the new scope test: `SysMLv2UsageRef_Constraints` now uses the node-based lookup when the reference node exists and
+the positional one only for completion (see the gotcha "A position-dependent reference scope must also handle referenceNode != null").
+Tests: importer `_240_BindTest` (import with fixture incl. named `binding` form and reversed direction, reification of a chain
+through a part usage, roundtrip; run config `_240_test_sysmlv2_bind`), editor `_160_Bindings_EditBind` (`bind`, `engine.drive`,
+`gearbox.input`), scope test `_060_BindScope` (first step offers `{p, inner}`, second step offers exactly `inner`'s type's
+ports `{q, r}`). Importer 58/58, baselan 39/39.
+Not done (moved to a later iteration): reference subsetting `::>` / `references`. The only valuable use today is naming the
+participant of an end feature (`end port p ::> engine.out;`, `ref part x ::> y`); it needs a chain-capable reference (not a single
+`UsageRef`), a scope that starts at the *enclosing connection's* owner rather than at the end feature itself, and the `ref`
+keyword for reference usages. Also open: type compatibility of bound features (spec: bound features must be compatible),
+`bind` bodies, `bind` inside port definitions, n-ary connectors.
+
+**Iteration 22 (2026-10-20) — flows (`flow def`, `flow of T from a.p to b.q;`), spec-aligned (see ADR 0001)**: first implemented as a
+subconcept of the connection concepts (wrong: spec 8.3.16.2/3 makes a `FlowUsage` an `ActionUsage` + `ConnectorAsUsage` (+ KerML `Flow`) and a
+`FlowDefinition` an `ActionDefinition` + `Interaction`, neither a part or connection) and reworked the same day. Structure now:
+`SysMLv2FlowUsage extends SysMLv2ActionUsage extends SysMLv2OccurrenceUsage extends SysMLv2Usage` (new abstract placeholders, virtual folder `base`),
+implements the new marker interface `ISysMLv2ConnectorAsUsage` (also implemented by `SysMLv2ConnectionUsage` and `SysMLv2BindingUsage`), with its own
+children `type : SysMLv2FlowDefinitionRef`, `payload : SysMLv2ItemDefinitionRef`, `source`/`target : SysMLv2ConnectorEnd`; it is part/item body content
+like binding (no body of its own: action bodies are not modelled, `{ … }` is rejected). `SysMLv2FlowDefinition extends SysMLv2ActionDefinition extends
+SysMLv2OccurrenceDefinition` (alias `flow def`), children `specializes : SysMLv2FlowDefinitionRef`, `content : ISysMLv2ItemBodyContent`; new
+`SysMLv2FlowDefinitionRef` (clone of the connection definition ref: smart reference, scope, editor, textgen, behavior). Alignment done on the way:
+`ItemDefinition` now extends `OccurrenceDefinition`, `ItemUsage` and `PortUsage` extend `OccurrenceUsage` (non-breaking).
+Canonical text: `flow [name] [: FlowDef] [of Payload] from <src> to <tgt>;`, `flow def N :> S { … }`. Importer: `visitFlowDefinition`, `visitFlowUsage`
+handles all three grammar alternatives of `flowDeclaration` (`featureDeclaration` form `flow n : T of P from a to b`, the bare `flow a to b;`
+normalized to `flow from a to b;`, and the `usageDeclaration` form `flow of P from a to b`); payload must be a plain type name; `all`, value parts,
+bodies, multiplicity, subsetting/redefinition, qualified typing and `succession flow`/`message` are rejected; helpers `newFlowDefinition`,
+`addFlowSpecialization`, `addFlowContent`, `newFlowUsage`, `extractFlowEndChain`, `extractTypingName`, `extractPayloadTypeName`; reifier
+`reifyFlowDefinitionRefs` (+ `TestUtils` wrapper).
+Checks: (1) *scope* — a flow usage's type is a `FlowDefinitionRef`, so only flow definitions are offered (and a connection usage's type no longer
+offers flow definitions); (2) *checking rule* `check_SysMLv2FlowUsage_ends`: the source end must not be an `in` feature, the target end must not be an
+`out` feature, and a given payload must specialize-or-equal the declared type of the end feature (`ISysMLv2FeatureOwner.specializesOrEqualsWithin`,
+depth-limited walk over `directSuperDefinitions`); logic in `SysMLv2FlowUsage.endProblem(isSource)`, helpers `SysMLv2ConnectorEnd.lastUsage /
+endDirection / endTypeDefinition`. Directions and types are only read where present, unresolved or untyped ends are not reported.
+Tests: importer `_250_FlowTest` (import with fixture incl. both declaration forms, roundtrip, normalization of the short form; run config
+`_250_test_sysmlv2_flow`); editor `_170_Flows_EditFlowUsage`; scope `_070_FlowTypeScope` (`FlowDefinitionRef` offers `{F1, F2}`; a connection usage
+in the same file offers `{Plain, Link}`, no flow definitions); checking rules `_030_FlowEndsCheck` (`ok1` incl. payload `Fuel :> Liquid`, `ok2` without
+payload are clean; `in` source, `out` target and a non-conforming payload carry `has error` — verified on an unannotated copy, which reports exactly
+those three). Importer 61/61, Each `error` statement also carries a named label annotation (`ReportErrorStatementAnnotation`): `flow_usage_source_end_direction_problem`, `flow_usage_target_end_direction_problem`, `flow_usage_source_end_payload_problem`, `flow_usage_target_end_payload_problem`, `interface_usage_source_end_not_port_problem`, `interface_usage_target_end_not_port_problem`. Convention: add the label to every new `error` statement.
+baselan 45/45.
+Not done: payload multiplicity and named/typed payload features (`of weight : Mass[1]`), `flow all`, flows whose ends are ports (the checks read
+directions of item/port/attribute usages only, not the items inside a port type), `succession flow`, `message`, flow definition ends, KerML-level
+`Flow`/`Interaction`, and the remaining items of the ADR's list of known deviations.
+
+**Labeled checking-rule messages (2026-10-20)**: every `error` in a baselan `NonTypesystemRule` carries a label prefix
+`[<kind>-<what>]`, and each cause has its own `error` statement, which the checking-rule tests reference explicitly via
+`has error` → `ReportErrorStatementReference` (see gotcha "Test `has error` can point at the exact `error` statement").
+Labels: `[interface-source-not-port]`, `[interface-target-not-port]` (rule `check_SysMLv2InterfaceUsage_endsArePorts`);
+`[flow-source-direction]`, `[flow-target-direction]`, `[flow-payload-type]` (rule `check_SysMLv2FlowUsage_ends`, four statements:
+source/target direction, source/target payload). `SysMLv2FlowUsage.endProblem` was split into `endDirectionProblem(isSource)` and
+`payloadProblem(isSource)`. Convention for new rules: one statement per cause, label first, test annotation references the statement.
+Not covered: `_020_AttributeValueLiteralCheck` uses `has constraints error` (constraint-level, not a checking rule), which has no statement to reference.
+Each `error` statement also carries a named label annotation (`ReportErrorStatementAnnotation`): `flow_usage_source_end_direction_problem`, `flow_usage_target_end_direction_problem`, `flow_usage_source_end_payload_problem`, `flow_usage_target_end_payload_problem`, `interface_usage_source_end_not_port_problem`, `interface_usage_target_end_not_port_problem`. Convention: add the label to every new `error` statement.
+baselan 45/45.
+
+**Checking helpers live in the typesystem aspect (2026-10-20)**: methods that only exist to *report errors* belong with the checking rules, not in
+concept behavior. They are static methods of plain classes in the typesystem model, the node being the first parameter `self`:
+`ConnectorEndHelper.endsAtNonPort` and `FlowUsageHelper.directionProblem / payloadProblem` (rules call e.g. `FlowUsageHelper.directionProblem(flowUsage, true)`).
+Methods that *navigate the model* stay in behavior: `SysMLv2ConnectorEnd.lastUsage / endDirection / endTypeDefinition` and
+`ISysMLv2FeatureOwner.specializesOrEqualsWithin` (the helpers call them). Rule of thumb: navigation/queries -> behavior; error-message construction and
+check predicates -> typesystem helper classes. baselan 45/45, importer 61/61.
+
+**Definition hierarchy aligned (2026-10-20)**: new abstract `SysMLv2Definition` (spec 8.3.6.2, virtual folder `base`) is the base of
+`SysMLv2OccurrenceDefinition` and `SysMLv2AttributeDefinition`; `SysMLv2PortDefinition` now extends `SysMLv2OccurrenceDefinition` (8.3.12.5).
+`PartDefinition` was already an `ItemDefinition`. No aspect needed changes. baselan 45/45, importer 61/61. Open: `PartUsage` -> `ItemUsage`,
+`MetadataDefinition/Usage` -> `ItemDefinition/Usage`, connector ends once on `ConnectorAsUsage`, own ref for `ConnectionDefinition` specializations.
+
+**Metadata aligned with items (2026-10-20, alignment 1 of 4)**: spec 8.3.27 — `MetadataDefinition` is an `ItemDefinition` (+ KerML `Metaclass`) and `MetadataUsage` an
+`ItemUsage` (+ `MetadataFeature`). `SysMLv2MetadataDefinition extends SysMLv2ItemDefinition` and `SysMLv2MetadataUsage extends SysMLv2ItemUsage`; both lost their duplicated
+interfaces and slots and now use the inherited `specializes : ItemDefinitionRef`, `content : ISysMLv2ItemBodyContent` (a metadata definition body is an item body, no longer
+attribute-only) and `type : ItemDefinitionRef`. `SysMLv2MetadataDefinitionRef` remains for `#Prefix` metadata. The `ItemDefinitionRef` scope narrows to metadata definitions when the
+parent is a `MetadataUsage` (same pattern as connection/interface/flow). New `SysMLv2MetadataUsage_Behavior` constructor creates the empty `type` ref (the slot is `[0..1]` now);
+`SysMLv2MetadataDefinition_Behavior` was removed (inherited). Importer: metadata def specializations/types are `ItemDefinitionRef`s (`itemDefinitionName`); test utils reify them with
+`reifyItemDefinitionRefs` (prefix metadata still `reifyMetadataDefinitionRefs`). Tests: new scope test `_080_MetadataTypeScope` (metadata usage type -> `{MD1, MD2}`, item usage
+type also offers metadata defs), importer `_171_MetadataSpecializationTest`; fixtures of `_170`, `_210` and editor `_090_Metadata_MetadataInPartDef` rebuilt. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
+The sandbox's `metadata def SafetyRelevance { attribute ASIL; }` was migrated to the inherited `content` slot (see gotcha on removing child slots).
+
+**PartUsage is an ItemUsage (2026-10-21, alignment 2 of 4)**: spec 8.3.11.3 — `PartUsage` is an `ItemUsage`, `ConnectionUsage` a `PartUsage` (+ `ConnectorAsUsage`).
+`SysMLv2PartLikeUsage` is gone: its `content` link (id kept) moved up to `SysMLv2ItemUsage`, which now implements `ISysMLv2FeatureOwner` and carries the former
+`PartLikeUsage` behavior (`SysMLv2ItemUsage_Behavior`: scope, `ownedFeatures`, `directSuperDefinitions`, matching text). `PartUsage extends ItemUsage`,
+`ConnectionUsage extends PartUsage`; the own `type`/`multiplicity` slots of both were removed — all use the inherited `ItemUsage.type` / `.multiplicity`.
+`SysMLv2PartDefinitionRef extends SysMLv2ItemDefinitionRef` and `SysMLv2ConnectionDefinitionRef extends SysMLv2PartDefinitionRef` (each keeps its own, renamed link
+`partDefinition` / `connectionDefinition` with its own scope constraint). `ItemDefinitionRef_Constraints.canBeChild` picks the ref concept by parent: under
+`ConnectionUsage` (incl. `InterfaceUsage`) only `ConnectionDefinitionRef`, under `PartUsage` only `PartDefinitionRef`, elsewhere plain `ItemDefinitionRef`.
+`Usage.typeDefinition` checks the connection ref before the part ref (subconcept order matters). Migration: 75 refs and 8 multiplicities moved into the inherited
+slots in tests and in both sandbox models (`MOVE_NODE_TO_PARENT`); a few fixtures with orphaned children were rebuilt. Note: `ConnectionUsage` now inherits
+`ICanBelongOnlyToSysMLv2PartOwner` from `PartUsage`. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
+
+**Connector ends declared once (2026-10-21, alignment 3 of 4)**: `source`/`target : SysMLv2ConnectorEnd [0..1]` now live on `ISysMLv2ConnectorAsUsage`
+(spec 8.3.13.5) instead of being repeated on `ConnectionUsage`, `BindingUsage`, `FlowUsage`. The `ConnectionUsage` declarations were moved up keeping
+their ids; the binding/flow copies were removed after repointing editors, textGen, behavior, importer and checking rules to the interface links and moving
+13 binding/flow fixtures' ends (`MOVE_NODE_TO_PARENT`). Moving the ConnectionUsage declarations orphaned the stored ends of several connection/interface
+fixtures (see gotchas); they were recovered by id. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
+
+**Connection definitions specialise via ConnectionDefinitionRef (2026-10-21, alignment 4 of 4)**: `ItemDefinitionRef_Constraints.canBeChild` now returns
+`childConcept.isSubConceptOf(ConnectionDefinitionRef)` when the parent is a `ConnectionDefinition` (covers `InterfaceDefinition`); the importer builds
+`ConnectionDefinitionRef` (`connectionDefinitionName`) for `connection def`/`interface def` subclassification (`addItemSpecialization` became
+`addConnectionSpecialization`) and the existing `reifyConnectionDefinitionRefs` resolves them. Open: no importer test yet covers connection/interface
+definition specialisation; `PartDefinition.specializes` still holds plain `ItemDefinitionRef`. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
+
+**Systems Model Library / KerML (2026-10-21)**: see [system-model-library-plan.md](system-model-library-plan.md) for the prioritized
+plan (SysML-side gaps, `com.symo.kerml.baselan`, KerML importer, kernel library accessory models, re-layering SysML on KerML).
+
+## Audit all base-language editors against structure and textgen (opened 2026-11-02)
+
+The default editor must show every structure feature and read like the textgen output (proposed
+[ADR 0006](../../../../../docs/adr/0006-default-editors-of-base-languages-reflect-the-textgen.md)).
+Editors written before this rule are not checked. Known gaps found while adding `subject`, `actor` and
+`objective` (iteration 2):
+
+- `SysMLv2ObjectiveUsage` (copied from the requirement usage editor) shows `end`, direction, `abstract`
+  and `ref`, which the spec's objective syntax does not have. (The missing value cells were added to
+  requirement and objective usage in step 15.)
+- `isDerived`, `isConstant` and `declaredShortName` have no cell in several usage editors (seen in
+  `SysMLv2ReferenceUsage`, `SysMLv2PartUsage`); check all usages and definitions.
+- `SysMLv2ReturnParameter` has no cell for direction, `isAbstract`, `isEnd`, `isDefaultValue`,
+  `isInitialValue`.
+
+Plan: (1) list for every concept the structure features (`get_concept_details`) and the editor cells,
+and diff them; (2) diff editor keywords and order against the textgen; (3) fix the editors and add
+an editor or round-trip test where a fix changes behavior; (4) decide whether a linter in
+`repo_admin` can keep this checked. Do it after iteration 3, as a separate commit series.
+Iteration 3 (step 16) is done as of 2026-11-03, so this audit is next. Also include the five new usage editors
+(`ViewUsage`, `RenderingUsage`, `AllocationUsage`, `MessageUsage`, `EventOccurrenceUsage`): they were cloned from the
+requirement usage editor and may show cells the spec syntax does not have (`end`, direction, `abstract`, `ref`).
+
+Audit run on 2026-11-03: see [editor-audit-sysmlv2.md](editor-audit-sysmlv2.md). Only what the importer sets
+was fixed (`SysMLv2ConnectionUsage` `multiplicity`), and the cells the grammar has no syntax for were removed from nine usage editors and textgens. The remaining items there are open decisions.
+
+## Cross-model package references in sysmlv2.baselan (found 2026-11-06 while writing the tutorial) — FIXED 2026-11-07
+
+**Resolved:** `SysMLv2File.localMembers()` now uses `model.rootsIncludingImported(SysMLv2File)`; covered by the
+`_150_LibraryImportScope` test (mutation-checked). Lessons may import earlier lessons and the system library.
+The former follow-up (namespace scope not following `public import`) no longer holds: `ISQ::MassValue` resolves
+(checked 2026-11-16).
+Original report:
+
+In the tutorial solution (`com.symo.sysmlv2.tutorial`), a model that imports another model of the same
+module (model import added with `mps_mcp_model_dependency`) could not resolve a package of that model:
+both the `namespace` reference of a `SysMLv2PartDefinitionRef` and the `target` of a
+`SysMLv2IdentifierNameConceptRef` inside `SysMLv2Import.importedElement` were reported "out of search
+scope" (explicit `r:` node references bound them, the checker still rejected them). References
+between roots of the *same* model work. The KerML plan says its scopes look at `rootsIncludingImported`,
+so check whether the SysML v2 scopes (`ISysMLv2Namespace`, `ISysMLv2IdentifierNameConcept`) do the same.
+Workaround used: every tutorial lesson model is self-contained. Fix the scope, then lessons can import
+earlier lessons instead of repeating parts.
+
+## Qualified-name segment chains (ADR 0002) — status 2026-11-08
+
+Done: all reference kinds use `SysMLv2QualifiedName`; the system library is migrated; short names are
+kept by `SysMLv2QualifiedNameSegment.useShortName` (editor and textgen show the short name; text is never
+kept beside segments). `testLibraryTextFidelity` and `Tests in 'baselan'` are green (97/97).
+
+Open:
+
+- **Unresolved names in the library.** The library model check still warns about names with no target in
+  the SysML v2 model (about 1029; examples `MatesWith`, `Surface`, `Curve`,
+  `StructuredSpaceObject::StructuredCurve`). They come from KerML kernel elements. The two languages stay
+  disjoint, so these stay plain text. Optional: add SysML-side stubs for the kernel types if the warnings
+  are a problem.
+- **Short name in completion — DEFERRED (decision 2026-11-17).** Picking a short name from the completion
+  menu does not set `useShortName` (constraints and transformation menu are untouched). Decide later whether
+  completion should offer short names and set the flag. Short names written in text (importer, pasted
+  `A::<m>`) already work.
+- **Editor test for the flag.** No editor test shows a short-name segment (`SI::m`). Add one with a user
+  action, not a cell-exists check.
+- **Remove the old mechanism — DONE 2026-11-17.** The last users were the `about` targets of comments and
+  metadata usages. `SysMLv2Comment.about` and `SysMLv2MetadataUsage.about` now hold `SysMLv2QualifiedName`
+  (same link ids). `visibleOnlyForKind` admits comments, docs and reps as `about` targets
+  (`admitsAnnotations()`; sandbox `about comm1`). The importer creates qualified names, and textgen goes
+  through the new `SysMLv2QualifiedName_TextGen`. Migration `MoveAnnotationTargetsToQualifiedName` (v12 → v13,
+  `AnnotationTargetMigrationSupport`, meta-id based) is applied to all modules.
+  `SysMLv2AnnotationRef` and `ISysMLv2QualifiedRef` are deleted with their editor, constraints and behavior,
+  together with the `namespace` link and the string-splitting helpers. `ISysMLv2Ref.namespaceText()` stays
+  (it is a different, live API). `SysMLv2TypeReifier.reifyAnnotationRefs` now only delegates to
+  `reifyQualifiedNames` (kept for `TestUtils`).
+- **Accepted noise.** "Empty enumeration property: 'visibility'" in the library is accepted (nullable enum).
+
+## SysML v2 baselan: open gaps found while writing the tutorial (2026-11-15)
+
+Found by probing baselan before each tutorial lesson (rule: lessons follow systems-engineer use cases and
+report missing features instead of working around them). Numbers are the ones used in the tutorial
+discussion. Each item says which lesson is blocked or affected.
+
+- **Gap 1: expressions are uninterpreted text** (`SysMLv2PlainTextExpression`, `# m <= 2000 #`). Postponed
+  by decision; lessons use the plain-text form. Affects requirement constraints, guards, triggers,
+  calculations.
+- **Gap 4: feature chains through typed action usages do not resolve.** In `flow from pickUp.parcel to
+  fly.parcel` the second segment stays unresolved; the same chain through part usages works. Affects
+  Part D (interactions).
+- **Gap 5: the flow-direction check ignored port conjugation — FIXED 2026-11-15** (`01cfd26b`,
+  `effectiveEndDirection()`; test `_031_FlowEndsConjugatedPorts`). Port compatibility on `connect` itself
+  is checked (`dac75075`, `check_SysMLv2ConnectionUsage_portCompatibility`).
+- **Gap 10: interface usage not checked against its definition's ends — FIXED 2026-11-15.**
+  `check_SysMLv2InterfaceUsage_endsMatchDefinition` (helper `InterfaceUsageHelper.endProblem`) reports
+  `[interface-end-type]` and `[interface-end-conjugation]` on the source/target end; test
+  `_321_InterfaceEndsCheck`. Round trip of named flows inside an `interface def` (end ports, flow each way)
+  is covered by importer test `_220_InterfaceTest.testRoundtripInterfaceFlows` (2026-11-16).
+- **Gap 6: `AllocationUsage` cannot hold `allocate … to …` — FIXED 2026-11-17.** The constraint that
+  rejected `source`/`target` is deleted (the structure already had them via `ISysMLv2ConnectorAsUsage`).
+  Behavior `hasAllocationKeyword()` decides when `allocation` is shown/printed: `withKeyword`, no
+  `source`, or any declaration part (name, short name, multiplicity, types, subsets, redefines, value,
+  ordered, nonunique) — so `allocate a to b;` stays keyword-free and existing models need no migration.
+  Editor and textgen got an optional `allocate %source% to %target%` part. Importer: shared helper
+  `SysMLv2ImportConnections.applyConnectorPart` (binary ends + `withKeyword`); n-ary
+  `allocate (x, y, z)` is still rejected ("n-ary allocation usage", `_481.testNaryAllocateRejected`).
+  Round trip `_480.testAllocateForms` (mutation-checked: forcing `withKeyword` fails it). The obsolete
+  `_230.testUnsupportedAllocationEndpointsAreRejectedExplicitly` is removed. Unblocks Part E Lesson 1.
+  Not done: n-ary connector parts (also missing for `connect`).
+- **Gap 7: concepts not found.** Still open: the `for` action; `send` action and standalone `accept`;
+  `terminate`; `dependency`; `expose` and `filter` for views (Part G Lesson 3); variation and variants;
+  requirement derivation; individuals, snapshots and timeslices; time triggers `after`/`at`/`when` (not
+  verified).
+  **Control nodes and `if` — FIXED 2026-11-19.**
+  - Structure (virtual package `behavior`). The abstract `SysMLv2ControlNode` extends
+    `SysMLv2PlainActionUsage`, like `SysMLv2WhileLoopUsage`. Its subconcepts are `SysMLv2MergeNode`,
+    `SysMLv2DecisionNode`, `SysMLv2JoinNode` and `SysMLv2ForkNode`, and each concrete editor and textgen
+    holds the keyword as a constant.
+  - `SysMLv2IfActionUsage` (also a `PlainActionUsage`):
+    - `condition` (expression, stored as plain text like other non-literal expressions);
+    - the then-body in the inherited `content`;
+    - `elseBranch : ISysMLv2IfElseBranch 0..1`, which is either a `SysMLv2ElseBody` (`{ … }`) or another
+      `SysMLv2IfActionUsage` (`else if`).
+  - Importer: `SysMLv2ImportBehavior.importControlNode` / `importIfNode`, dispatched from
+    `importActionNodeMember`. Explicitly rejected:
+    - a control-node prefix (`individual`, portion kind, `#metadata`) and specialization on a control node;
+    - a named `action x { … }` then-body or else-body.
+  - Tests: `_550_ActionBodySequencingTest.testControlNodes` and `testIfActionUsage` (round trips). The
+    rejection case in `_130` is now `testTerminateNodeInActionDefinitionRejected`. Mutation-checked: the
+    `fork` keyword and the `else` text in textgen; the importer's rejection message.
+  - Target successions after control nodes (`fork f; then a;`) are supported since Gap 18, and the guarded
+    forms after `decide` (`if g then x;`, `else x;`) since Gap 19.
+  - No editor test: these editors have no hand-written logic.
+- **Gap 8: a transition `effect` accepts only a `DefinitionRef`.** An effect action cannot be written
+  inline. Affects the state-machine lessons.
+- **Gap 11: the importer rejects a bare end feature** (found 2026-11-18, Part E Lesson 1).
+  `allocation def X { end logical; end physical; }` fails with "Unsupported SysML v2 construct: end
+  feature usage form"; `end action logical;` / `end part physical;` import fine (the lesson uses them).
+  Only the importer was probed, not the editor.
+- **Gap 12: allocation usage ends are not checked against the allocation def's ends** (found
+  2026-11-18, Part E Lesson 1). `allocation a : FunctionToComponent allocate drone.gripper to
+  deliver.release;` (a part on the `end action function`, an action on the `end part component`) reports
+  nothing. Interface usages have this check (Gap 10, `check_SysMLv2InterfaceUsage_endsMatchDefinition`);
+  connection usages do not either (see "Not a gap (checked)" below). The lesson does not claim a check.
+- **Gap 13: the `include` editor hides the name** (found 2026-11-18, planning Part D Lesson 2).
+  `include use case approve : ApproveFlight;` imports with name `approve`, but the editor shows
+  `include : ApproveFlight ;` (no name, no `use case` keyword). Blocks the `include` root of Part D Lesson 2.
+  **Cause (2026-11-18):** systemic, nine editors. Grammar cells infer an `OptionalCell`'s show condition
+  from the first non-constant cell of its option (`OptionalCell.getFirstNonConst`). In
+  `optional[- use case optional[<short>] {name} -]` that is the nested short-name optional, so the outer
+  optional shows only when a short name is set; the name alone never shows.
+  **FIXED 2026-11-18:** mirror textgen.
+  - Seven reference-form editors (include, perform, exhibit, satisfy, require constraint, verify,
+    frame concern): `[keyword optional[<short>]]` is a plain collection gated on
+    `node.<reference child>.isNull`, and `{name}` follows it unconditionally (empty text when unset).
+  - Assign and While: `[action optional[<short>] {name}]` is a plain collection gated on
+    `name != null || declaredShortName != null`. An unnamed assign/while has no name cell, so the
+    Alt+Enter intentions `AddAssignActionName` / `AddWhileLoopName` ("Add Action Name", set name to
+    `name`) are the way in, as with `AddConnectorEndName`. Editor tests `_410_Actions_AddAssignName`,
+    `_420_Actions_AddWhileName` (green, mutation-checked: an `execute` setting `xname` fails both).
+  - Reachability of the other changes: the reference-form name is always shown, the short name opens
+    with `<`, and the calc usage `%result%` optional is offered by the generated side transform. No
+    intention needed there.
+  - Editor test `_400_UseCases_EditIncludeName` (type into the name of a named include): green. Not
+    mutation-checked: the mutation would be re-hiding `{name}`, an editor-model change whose
+    language MAKE times out (see gotchas).
+- **Gap 14: use case editors show an empty result and miss a space** (found 2026-11-18). A use case
+  usage without a result shows a `<no result>` placeholder before `}`; `use case def X{` and
+  `use case x : X{` have no space before `{`. Cosmetic, but visible in every use case lesson.
+  **Partly done (2026-11-18):** `%result%` in `SysMLv2CalculationUsage_Body` is wrapped in
+  an optional (as in the definition body), and `punctuation-left` is removed from `{` in both calc
+  bodies. Use case defs render `use case def X {` since the space fix of 2026-11-18 (by hand, in the
+  editor). Still open: use case usages render `use case x : X{` (seen in Part D Lesson 2,
+  `_050_use_cases_in_context`), so the usage takes its `{` from yet another cell.
+- **Gap 15: dotted target paths are stored as one text** (found 2026-11-18, planning Part D Lesson 3).
+  `perform drone.deliver;` kept `drone.deliver` as a single `SysMLv2UsageRef.usageName`; only the
+  last feature was bound, so the path was not navigable or renamable and the editor could not build
+  it segment by segment. Affects the seven target roles of ADR 0009 (perform, exhibit, include,
+  satisfy, require constraint, frame concern, verify).
+  **FIXED 2026-11-18:** structured chain (ADR 0009 amendment).
+  - The seven roles are `0..n` lists of `SysMLv2UsageRef`, one segment per feature. Segment i is
+    scoped by the nested scope of segment i-1's usage; only the last segment carries the role's
+    kind contract (`UsageReferencePolicy.requiredKind` gives `SysMLv2Usage` to non-final segments).
+  - Importer and textgen: `UsageReferencePolicy.appendChain` / `chainTexts` split on unquoted dots
+    (`::` stays inside a segment). Editor: RefNodeList with separator `.`, so typing `.` after a
+    segment adds the next one.
+  - Migration `SplitDottedTargetPaths` (language version 13 → 14, `UsageChainMigrationSupport.split`)
+    splits legacy dotted texts; the legacy node stays as the terminal segment (id and target kept).
+    Applied to all modules; the only real split was `exhibit Machine.running` in the sandbox
+    `_100_manually_written` (`_260_perform_exhibit_include_satisfy`), the rest are version stamps.
+  - Tests (all mutation-checked): importer `_630_UsageReferenceContracts`
+    `testStaticFeatureAndNamespacePaths`, `testWrongKindChainTerminal`, `testLegacyDottedPathMigration`
+    (collapses imported chains back into the legacy shape, migrates, compares targets and identity);
+    editor `_430_Actions_ExtendPerformChain` (type `.` after a segment).
+  - Known overlap: `chainTexts` and the importer's `splitReferenceText` both split references on
+    dots; merging them is cleanup, not a gap.
+- **Gap 17: `start` and `done` do not resolve — FIXED 2026-11-19** (found while planning Part D Lesson 4).
+  [ADR 0020](../adr/0020-implicit-library-specialization-for-actions.md): `NamespaceInheritance.directSupertypes`
+  falls back to `ImplicitLibrarySpecialization.implicitSupertype` when an owner has no explicit supertype.
+  An action def gets `Actions::Action`; an untyped action usage gets `Action::subactions` (when owned by an
+  action) or `Actions::actions`. New warning `check_SysMLv2SuccessionEnd_segment`
+  (`[succession-end-unresolved]`) on unbound succession-end segments. Test
+  `_330_SuccessionEndLibraryResolution`, mutation-checked. Still open:
+  - implicit specialization for other kinds (parts, items, states, calculations, …);
+  - the unbound-end warning for connector/flow ends. It waits for the KerML library stubs
+    (`Transfer::source`, `Occurrence::startShot`, …), which would otherwise be flagged.
+- **Gap 18: the importer rejects the succession shorthands — FIXED 2026-11-19.**
+  [ADR 0021](../adr/0021-succession-shorthands-in-action-bodies.md): new concepts
+  `SysMLv2InitialNodeMember` (`first start;`) and `SysMLv2TargetSuccession` (`then a;`), with editors
+  and textgen. The implicit source (the item before) is not modelled. The importer's
+  `importActionBodyItemsOf` returns one item per node plus one per following `then`. The
+  `[succession-end-unresolved]` warning also covers `first`. Tests: `_550…testInitialNodeAndTargetSuccessions`,
+  `_330_SuccessionEndLibraryResolution` (4 new items), `_130 testTargetSuccessionBodyInActionDefinitionRejected`.
+  Mutation-checked. Still rejected: prefixes, bodies, qualified `first` and source multiplicity. The
+  guarded/default forms were added later (Gap 19).
+- **Gap 19: the importer rejects guarded successions — FIXED 2026-11-19.**
+  [ADR 0022](../adr/0022-guarded-successions-in-action-bodies.md): new concepts `SysMLv2GuardedSuccession`
+  (`first a if g then b;`), `SysMLv2GuardedTargetSuccession` (`if g then x;`) and
+  `SysMLv2DefaultTargetSuccession` (`else x;`), with editors and textgen. Guards are kept as text
+  (`SysMLv2PlainTextExpression`). Tests: `_550…testGuardedSuccessions`, `_330_SuccessionEndLibraryResolution`
+  (4 new items), `_130 testGuardedSuccessionDeclarationInActionDefinitionRejected`. Mutation-checked. Still
+  rejected: prefixes, bodies, and the `succession s first … if … then …` declaration form.
+- **Gap 20: nodes declared after `then` cannot be referenced — FIXED 2026-11-19** (found while writing
+  Part D Lesson 4). [ADR 0023](../adr/0023-nodes-declared-after-then-are-owned-members.md):
+  `then merge retry;` wraps `retry` in a `SysMLv2ThenMember`, which `ownedMembers()` dropped. The new
+  `SysMLv2NamespaceMembers.namedOwnedMembers` unwraps the wrapper for lookup, inheritance and the
+  distinct-name check. Test `_330_SuccessionEndLibraryResolution` (`then merge again; then again;`),
+  mutation-checked.
+- **Gap 21: `ScalarValues::Boolean` does not resolve — FIXED 2026-11-19** (found while writing Part D
+  Lesson 4). [ADR 0024](../adr/0024-sysml-side-stub-of-kernel-scalarvalues.md): a SysML-side stub of the
+  kernel package `ScalarValues` (virtual package `Kernel Library` in `system_model_library`). Test
+  `_130_NameScopingTest.testKernelScalarValuesResolveForSysML`, mutation-checked. Still open: the other
+  kernel packages (`Base::DataValue`, `Occurrences`, `Transfers`, …).
+- **Lesson 7 gap 1: `alias` target — FIXED 2026-11-16.** The target is a `SysMLv2QualifiedName`
+  (`aliasedName`, migration `MoveAliasTargetToQualifiedName`, `bef606ce`); a namespace import through an
+  alias (`import Lib::SubAlias::*;`) expands the aliased package (`3ba3621e`, ADR 0016 amendment). Tests
+  `_325_AliasResolution`, importer `_700…testImportThroughAliasedNamespace`, editor
+  `_105_Alias_EditQualifiedTarget` (`ce7660df`, all mutation-checked). Tutorial Part C Lesson 7 teaches
+  aliases and short names in `_050_parts_catalog` / `_051_racing_drone`. Cleanup done 2026-11-16:
+  the deprecated `SysMLv2IdentifierNameConceptRef` is deleted (its migration now addresses the concept
+  by meta-id, so it survives the deletion) and `canonicalTarget` reuses the last-segment loop. The six
+  `has warning` checks in `_070_UsageTypingCardinality` lost by the migration (`NodeWarningCheck…482101`
+  to `…482116`, one per alias target; see the gotcha "A migration that replaces nodes…") are dropped,
+  not restored (2026-11-17): the six aliases now produce no problem at all (valid targets resolve,
+  `CyclicAliasA`/`B` are each other's valid targets), every problem the root reports is annotated, and
+  the cycle is still asserted at the use site (`cyclicAlias` → `UnresolvedAliasTarget`). Their exact
+  intent was not recoverable; most likely a warning on the old target concept itself.
+- **Lesson 7 gaps 2–4 — FIXED 2026-11-16, reviewed 2026-11-17.**
+  - Gap 2: short names `<FC>` have an editor cell (component `ISysMLv2IdentifierNameConcept_ShortName`) and
+    textgen in part, attribute, port, item, connection, interface, flow, reference and enumeration
+    editors. 2026-11-16: textgen added for actor, stakeholder, subject, return, transition, binding,
+    comment, rep, doc and metadata usages; assign and while actions have an inline short-name cell (a
+    component holding an optional cell cannot sit inside another optional cell). Importer:
+    `extractOptionalName`/`extractUsageName` no longer throw on `<…>`, and `applyShortName` is called for
+    part/port/item/ref usages, reference members, connections, bindings, flows, transitions, doc, comment,
+    rep and metadata. The eight older definition importers (part, port, item, attribute, enumeration,
+    connection, interface, flow def) threw "identification alias"; they now take the name via
+    `declaredNameOf(id)` and call `applyShortName` (the `initBodiedDefinition`/`initStructuralDefinition`
+    paths already did). Round-trip test `_310_ShortNameTest.testUsageAndAnnotationShortNames`
+    (mutation-checked on the importer and the textgen side). Not covered
+    by design: connector ends (no short name in the grammar), accept actions (no name yet; Gap 7). A short
+    name on a flow's `featureIdentification` (`flow <fl> fl of T from a to b;`) is imported by
+    `SysMLv2ImportFeatures.applyFeatureShortName` (2026-11-17; covered in the same test, mutation-checked).
+  - Gap 3: `check_SysMLv2QualifiedNameSegment_unambiguous` (`NameResolutionHelper.ambiguity`) reports
+    `[ambiguous-name]` when a segment's scope offers another element under the same (short) name.
+    Decided 2026-11-17: cross-file ambiguity stays reported as `[ambiguous-name]` (no change).
+    Precedence rule: a top-level element of the segment's own file takes precedence over top-level
+    elements of other files (strict KerML has one root namespace for all files; without this the
+    sandbox and the separate test files reported false ambiguities). Cost: the check enumerates the whole
+    scope per segment.
+    What the standard says (KerML 8.2.3.5.2 / 8.2.3.5.4): resolution searches the element's own root
+    namespace first, then the global namespace (all root namespaces of all models plus the libraries);
+    if several global members match, *which one is chosen is not specified* — the standard does not call
+    it an error. Our cross-file `[ambiguous-name]` is therefore a stricter diagnostic than the standard,
+    which is acceptable as a check (it flags what the standard leaves unspecified); keep it. The global
+    qualifier `$::` (KERML_-101, not in the 2024 grammar baseline) is not supported.
+  - Gap 4: `check_ISysMLv2Namespace_distinctMemberNames` (`MemberNamesHelper.duplicate`) reports
+    `[duplicate-name]`; names and short names share one pool. Does not look across files.
+  - Test `_324_NameResolutionChecks` (5 tests, mutation-checked). Cross-file precedence is not covered:
+    a NodesTestCase scope does not see sibling test roots.
+- **No multiplicity check on connector ends.** `connect motors to singlePort` (6 elements to a
+  single-valued port) is not flagged. The standard's route to one element of a multiple feature is a
+  named feature with a value, `ref part wheel2 : Wheel = axle.wheels#(2);`, then
+  `connect wheel2.hub to chassis.mount;`. The tutorial (Part C Lesson 3) teaches this form. `#(n)`
+  directly in a connector end is not in the standard grammar; an attempt to support it was reverted on
+  purpose (ADR 0001: base languages mirror the source spec, and changing the official grammar would leave
+  us maintaining the divergence on every upstream update). An extension language could add an indexed
+  connector-end form later.
+- **Not a gap (checked):** a named connection typed by a `connection def`. `SysMLv2ConnectionDefinitionRef`
+  is a subconcept of `SysMLv2ItemDefinitionRef`, so `connection c : TelemetryLink connect …` works. No
+  check validates the connection usage's ends against the connection def's end types.
+- **Hidden name without keyword.** `SysMLv2ConnectionUsage`, `SysMLv2SuccessionUsage` and
+  `SysMLv2BindingUsage` hide the name (editor and TextGen) when `withKeyword` is false, which matches the
+  grammar (the short form has no declaration part). Intentions `ToggleConnectionLongFormat`,
+  `ToggleSuccessionLongFormat`, `ToggleBindingLongFormat` (`8df721d1`) flip the flag. There is still no
+  check for a name set on a node without the keyword. Possible simplification: derive the keyword from
+  the declaration features instead of keeping the flag (loses only the redundant `connection connect a
+  to b;` spelling).
+- **Orphaned run configurations** `_195_IndexedConnectorEndTest` and `_330_ConnectIndexCheck` (tests were
+  deleted with the reverted index work) — removed 2026-11-16.
