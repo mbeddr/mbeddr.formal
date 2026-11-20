@@ -1951,6 +1951,11 @@
     <property role="R4oN_" value="SysML v2 OccurrenceUsage (8.3.9.3) written with the occurrence keyword: occurrence name : Type = value { body }" />
     <property role="3GE5qa" value="behavior" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="1TJgyi" id="44nD5HqNSlX" role="1TKVEl">
+      <property role="IQ2nx" value="4690398249202189693" />
+      <property role="TrG5h" value="isMultiplicityAfterTyping" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6jBzJlBLx4b">
     <property role="EcuMT" value="7270937308072120587" />
@@ -3391,6 +3396,34 @@
       <property role="20kJfa" value="terminated" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="44nD5HpkMsg">
+    <property role="EcuMT" value="4690398249177261840" />
+    <property role="TrG5h" value="SysMLv2PlainOccurrenceDefinition" />
+    <property role="34LRSv" value="occurrence def" />
+    <property role="R4oN_" value="SysML v2 OccurrenceDefinition (8.3.9.2) written with the occurrence def keywords" />
+    <property role="3GE5qa" value="part.item" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aH" resolve="SysMLv2OccurrenceDefinition" />
+    <node concept="1TJgyj" id="44nD5HpkMsh" role="1TKVEi">
+      <property role="IQ2ns" value="4690398249177261841" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="44nD5HpkMsi" role="1TKVEi">
+      <property role="IQ2ns" value="4690398249177261842" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="44nD5HpkMsj" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="44nD5HpkMsk" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
     </node>
   </node>
 </model>
