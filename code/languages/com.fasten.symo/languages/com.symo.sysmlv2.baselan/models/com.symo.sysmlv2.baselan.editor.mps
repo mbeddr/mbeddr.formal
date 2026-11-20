@@ -275,6 +275,7 @@
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="5304871968609388228" name="inverted" index="2UvnoQ" />
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
       </concept>
     </language>
@@ -4309,8 +4310,10 @@
         <node concept="PMmxH" id="6i6xKqx2xPR" role="3EZMnx">
           <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
         </node>
-        <node concept="3F0ifn" id="6i6xKqx2xPS" role="3EZMnx">
-          <property role="3F0ifm" value="ref" />
+        <node concept="1kHk_G" id="4K3gUKGfgWx" role="3EZMnx">
+          <property role="ZjSer" value="ref" />
+          <property role="2UvnoQ" value="true" />
+          <ref role="1NtTu8" to="5rf1:4K3gUKFdHdh" resolve="isImplicitRef" />
           <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
         </node>
         <node concept="PMmxH" id="6i6xKqx2xPT" role="3EZMnx">
@@ -8731,8 +8734,16 @@
     <property role="TrG5h" value="SysMLv2QualifiedDefinitionRef_Editor" />
     <property role="3GE5qa" value="references" />
     <ref role="1XX52x" to="5rf1:2Omrm_KyNP" resolve="SysMLv2QualifiedDefinitionRef" />
-    <node concept="3F1sOY" id="2Omrm_KDMF" role="2wV5jI">
-      <ref role="1NtTu8" to="5rf1:2Omrm_KyNQ" resolve="qualifiedName" />
+    <node concept="3EZMnI" id="4K3gUKFJQN5" role="2wV5jI">
+      <node concept="2iRfu4" id="4K3gUKFJQN6" role="2iSdaV" />
+      <node concept="1kHk_G" id="4K3gUKFJQN7" role="3EZMnx">
+        <property role="ZjSer" value="~" />
+        <ref role="1NtTu8" to="5rf1:4K3gUKEaAfx" resolve="conjugated" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="4K3gUKFJQN8" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:2Omrm_KyNQ" resolve="qualifiedName" />
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="2JnY6EKvy0n">

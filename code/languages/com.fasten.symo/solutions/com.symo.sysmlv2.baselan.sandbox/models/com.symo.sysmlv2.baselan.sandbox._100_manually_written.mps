@@ -121,6 +121,7 @@
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
       <concept id="50764132512836853" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedDefinitionRef" flags="ng" index="2_tBl0">
+        <property id="5477295978533512161" name="conjugated" index="1Aai1d" />
         <child id="50764132512836854" name="qualifiedName" index="2_tBl3" />
       </concept>
       <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
@@ -200,6 +201,7 @@
       <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
         <property id="7270937307953554935" name="isInitialValue" index="4kQG2" />
         <property id="7270937307953554929" name="isDefaultValue" index="4kQG4" />
+        <property id="5477295978551104337" name="isImplicitRef" index="1Bdp3X" />
         <child id="9028721269212000001" name="content" index="6al$D" />
         <child id="284754763120096648" name="value" index="34b1dU" />
         <child id="284754763101489703" name="types" index="35c6Nl" />
@@ -4378,6 +4380,55 @@
         <node concept="8EhVq" id="44nD5HrQ_JM" role="SPUDq">
           <property role="8EhVr" value="1" />
           <property role="8EhVk" value="1" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="4K3gUKGffR5">
+    <property role="TrG5h" value="_370_conjugated_typings" />
+    <node concept="3Z9vzX" id="4K3gUKGffR6" role="2h0jOs">
+      <property role="TrG5h" value="Ports" />
+      <node concept="3xZtmp" id="4K3gUKGffR7" role="3Z9vGx">
+        <property role="TrG5h" value="PortA" />
+      </node>
+      <node concept="3xZtmp" id="4K3gUKGffR8" role="3Z9vGx">
+        <property role="TrG5h" value="PortB" />
+      </node>
+      <node concept="3ZUotO" id="4K3gUKGffR9" role="3Z9vGx">
+        <property role="TrG5h" value="Ecu" />
+        <node concept="3xZtmn" id="4K3gUKGffRa" role="3w00ZY">
+          <property role="TrG5h" value="can01" />
+          <node concept="3xZtmm" id="4K3gUKGffRb" role="3xZtlF">
+            <node concept="AsIwX" id="4K3gUKGffRd" role="2_tBl3">
+              <node concept="AsIwU" id="4K3gUKGffRe" role="AsIwY">
+                <ref role="AsIwW" node="4K3gUKGffR7" resolve="PortA" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xZtmm" id="4K3gUKGffRf" role="3xZtlF">
+            <property role="1Aai1d" value="true" />
+            <node concept="AsIwX" id="4K3gUKGffRh" role="2_tBl3">
+              <node concept="AsIwU" id="4K3gUKGffRi" role="AsIwY">
+                <ref role="AsIwW" node="4K3gUKGffR8" resolve="PortB" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2gGTne" id="4K3gUKGffRj" role="3Z9vGx">
+        <property role="TrG5h" value="Link" />
+        <node concept="35c6Nh" id="4K3gUKGffRk" role="3w00ZY">
+          <property role="TrG5h" value="sensorPort" />
+          <property role="2uUgYw" value="true" />
+          <property role="1Bdp3X" value="true" />
+          <node concept="35c6Ng" id="4K3gUKGffRl" role="35c6Nl">
+            <property role="1Aai1d" value="true" />
+            <node concept="AsIwX" id="4K3gUKGffRn" role="2_tBl3">
+              <node concept="AsIwU" id="4K3gUKGffRo" role="AsIwY">
+                <ref role="AsIwW" node="4K3gUKGffR8" resolve="PortB" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

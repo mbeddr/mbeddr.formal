@@ -1531,6 +1531,11 @@
       <property role="TrG5h" value="isInitialValue" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="4K3gUKFdHdh" role="1TKVEl">
+      <property role="IQ2nx" value="5477295978551104337" />
+      <property role="TrG5h" value="isImplicitRef" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="fNDJb8FIGU">
     <property role="EcuMT" value="284754763133676346" />
@@ -2571,6 +2576,11 @@
     </node>
     <node concept="PrWs8" id="3Igz0sZP7lz" role="PzmwI">
       <ref role="PrY4T" node="3Igz0sZP0mV" resolve="ISysMLv2Ref" />
+    </node>
+    <node concept="1TJgyi" id="4K3gUKEaAfx" role="1TKVEl">
+      <property role="IQ2nx" value="5477295978533512161" />
+      <property role="TrG5h" value="conjugated" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="PlHQZ" id="34Y23q8cBCp">
