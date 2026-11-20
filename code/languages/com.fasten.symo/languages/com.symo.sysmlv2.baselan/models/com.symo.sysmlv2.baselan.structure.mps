@@ -1061,6 +1061,13 @@
       <ref role="20lvS9" node="BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
       <ref role="20ksaX" node="YcUunvVV59" resolve="types" />
     </node>
+    <node concept="1TJgyj" id="3$z5ynW8By8" role="1TKVEi">
+      <property role="IQ2ns" value="4117158836746483848" />
+      <property role="20kJfa" value="extraEnds" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeG2mDd">
     <property role="EcuMT" value="4376090928935955021" />
@@ -1220,6 +1227,11 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="1TJgyi" id="3$z5ynWcVwr" role="1TKVEl">
+      <property role="IQ2nx" value="4117158836747614235" />
+      <property role="TrG5h" value="isAll" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHM$aH">
@@ -1555,6 +1567,11 @@
     <property role="3GE5qa" value="part.attribute" />
     <property role="34LRSv" value="enum" />
     <ref role="1TJDcQ" node="7JKstLNmmXl" resolve="SysMLv2AttributeUsage" />
+    <node concept="1TJgyi" id="3$z5ynW8Byg" role="1TKVEl">
+      <property role="IQ2nx" value="4117158836746483856" />
+      <property role="TrG5h" value="omitKeyword" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxsPPNx">
     <property role="EcuMT" value="6353433212862553313" />
@@ -1989,6 +2006,24 @@
     <property role="R4oN_" value="SysML v2 message, declaration form without from/to" />
     <property role="34LRSv" value="message" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="1TJgyj" id="3$z5ynW8BxW" role="1TKVEi">
+      <property role="IQ2ns" value="4117158836746483836" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="1TJgyj" id="3$z5ynW8By0" role="1TKVEi">
+      <property role="IQ2ns" value="4117158836746483840" />
+      <property role="20kJfa" value="payload" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="3$z5ynW8By4" role="1TKVEi">
+      <property role="IQ2ns" value="4117158836746483844" />
+      <property role="20kJfa" value="source" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3WfSgMNgLR_">
     <property role="EcuMT" value="4544097993703497189" />

@@ -113,7 +113,9 @@
         <child id="717440187291777390" name="source" index="2uUmly" />
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
-      <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH" />
+      <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
+        <property id="4117158836747614235" name="isAll" index="354aSY" />
+      </concept>
       <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC" />
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
@@ -5202,6 +5204,58 @@
     <node concept="3clFbS" id="3$z5ynOkyeu" role="LjaKd">
       <node concept="2HxZob" id="3$z5ynOkyev" role="3cqZAp">
         <node concept="3iKlGA" id="3$z5ynOkyew" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3$z5ynXLudH">
+    <property role="TrG5h" value="_133_FlowUsage_DeleteAllFlag" />
+    <property role="3YCmrE" value="deleting the all flag unsets isAll on a flow usage" />
+    <node concept="1qefOq" id="3$z5ynXLudI" role="25YQCW">
+      <node concept="2h0jOr" id="3$z5ynXLudJ" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="3$z5ynXLudK" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <node concept="2hSLRH" id="3$z5ynXLudL" role="3w00ZY">
+            <property role="TrG5h" value="f" />
+            <property role="354aSY" value="true" />
+            <node concept="2uUmlD" id="3$z5ynXLudM" role="2uUmly">
+              <node concept="3wdj9f" id="3$z5ynXLudN" role="2uUmlA" />
+            </node>
+            <node concept="2uUmlD" id="3$z5ynXLudO" role="2uUmlz">
+              <node concept="3wdj9f" id="3$z5ynXLudP" role="2uUmlA" />
+            </node>
+            <node concept="LIFWc" id="3$z5ynXLudQ" role="lGtFl">
+              <property role="LIFWd" value="flag_isAll" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3$z5ynXLudR" role="25YQFr">
+      <node concept="2h0jOr" id="3$z5ynXLudS" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="3$z5ynXLudT" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <node concept="2hSLRH" id="3$z5ynXLudU" role="3w00ZY">
+            <property role="TrG5h" value="f" />
+            <node concept="2uUmlD" id="3$z5ynXLudV" role="2uUmly">
+              <node concept="3wdj9f" id="3$z5ynXLudW" role="2uUmlA" />
+            </node>
+            <node concept="2uUmlD" id="3$z5ynXLudX" role="2uUmlz">
+              <node concept="3wdj9f" id="3$z5ynXLudY" role="2uUmlA" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3$z5ynXLudZ" role="LjaKd">
+      <node concept="2HxZob" id="3$z5ynXLue0" role="3cqZAp">
+        <node concept="3iKlGA" id="3$z5ynXLue1" role="3iKnsn">
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
         </node>
       </node>

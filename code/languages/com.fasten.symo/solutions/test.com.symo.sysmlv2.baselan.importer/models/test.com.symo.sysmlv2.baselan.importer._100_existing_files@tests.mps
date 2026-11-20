@@ -6247,7 +6247,7 @@
               <ref role="3cqZAo" node="j1yGxNQDx_" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQDxU" role="37vLTx">
-              <property role="Xl_RC" value="    flow of Library::Payload from src.out to dst.inp;\n" />
+              <property role="Xl_RC" value="    flow of Library::Payload from src.outp to dst.inp;\n" />
             </node>
           </node>
         </node>
@@ -6373,7 +6373,7 @@
               <ref role="3cqZAo" node="j1yGxNQDyo" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQDyH" role="37vLTx">
-              <property role="Xl_RC" value="    flow all stream of Payload from src.out to dst.inp;\n" />
+              <property role="Xl_RC" value="    flow all src.outp to dst.inp;\n" />
             </node>
           </node>
         </node>
@@ -6499,7 +6499,7 @@
               <ref role="3cqZAo" node="j1yGxNQDzb" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQDzw" role="37vLTx">
-              <property role="Xl_RC" value="    connection link : Wire connect a to b = defaultWire;\n" />
+              <property role="Xl_RC" value="    connection link : Wire = defaultWire connect a to b;\n" />
             </node>
           </node>
         </node>
@@ -6731,7 +6731,7 @@
               <ref role="3cqZAo" node="j1yGxNQD$L" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQD$Y" role="37vLTx">
-              <property role="Xl_RC" value="    end left;\n" />
+              <property role="Xl_RC" value="    end port left;\n" />
             </node>
           </node>
         </node>
@@ -6741,7 +6741,7 @@
               <ref role="3cqZAo" node="j1yGxNQD$L" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQD_2" role="37vLTx">
-              <property role="Xl_RC" value="    end right;\n" />
+              <property role="Xl_RC" value="    end port right;\n" />
             </node>
           </node>
         </node>

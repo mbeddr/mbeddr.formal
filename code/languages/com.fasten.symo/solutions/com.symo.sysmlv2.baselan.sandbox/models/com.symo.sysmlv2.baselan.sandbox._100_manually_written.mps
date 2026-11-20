@@ -10,7 +10,9 @@
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
       <concept id="9028721269252997081" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumerationDefinition" flags="ng" index="0AGBL" />
-      <concept id="9028721269252997082" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumeratedValue" flags="ng" index="0AGBM" />
+      <concept id="9028721269252997082" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumeratedValue" flags="ng" index="0AGBM">
+        <property id="4117158836746483856" name="omitKeyword" index="350mUP" />
+      </concept>
       <concept id="7270937308072120589" name="com.symo.sysmlv2.baselan.structure.SysMLv2ObjectiveUsage" flags="ng" index="38pZS" />
       <concept id="7270937308072120588" name="com.symo.sysmlv2.baselan.structure.SysMLv2ActorUsage" flags="ng" index="38pZT" />
       <concept id="7270937308072120587" name="com.symo.sysmlv2.baselan.structure.SysMLv2SubjectUsage" flags="ng" index="38pZY" />
@@ -37,6 +39,9 @@
       <concept id="6353433212885159976" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseDefinition" flags="ng" index="66VRK" />
       <concept id="6353433212885159982" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseDefinition" flags="ng" index="66VRQ" />
       <concept id="6353433212885159970" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseDefinition" flags="ng" index="66VRU" />
+      <concept id="1962132711163231518" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureReferenceExpression" flags="ng" index="8d1xg">
+        <child id="1962132711163231520" name="feature" index="8d1xI" />
+      </concept>
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <property id="7270937307953554917" name="isDefaultValue" index="4kQGg" />
@@ -59,7 +64,11 @@
       <concept id="4292084407509826378" name="com.symo.sysmlv2.baselan.structure.ISysMLv2AssertConstraintUsage" flags="ngI" index="c3jtd">
         <property id="6353433212932081547" name="isNegated" index="SPUDj" />
       </concept>
-      <concept id="4544097993703497188" name="com.symo.sysmlv2.baselan.structure.SysMLv2MessageUsage" flags="ng" index="2cjfNC" />
+      <concept id="4544097993703497188" name="com.symo.sysmlv2.baselan.structure.SysMLv2MessageUsage" flags="ng" index="2cjfNC">
+        <child id="4117158836746483836" name="target" index="350mTp" />
+        <child id="4117158836746483844" name="source" index="350mUx" />
+        <child id="4117158836746483840" name="payload" index="350mU_" />
+      </concept>
       <concept id="4544097993703497189" name="com.symo.sysmlv2.baselan.structure.SysMLv2EventOccurrenceUsage" flags="ng" index="2cjfND" />
       <concept id="4544097993703497185" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewUsage" flags="ng" index="2cjfNH" />
       <concept id="4544097993703497186" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingUsage" flags="ng" index="2cjfNI" />
@@ -86,6 +95,7 @@
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
+        <property id="4117158836747614235" name="isAll" index="354aSY" />
         <child id="4376090928965378360" name="types" index="2hs9UV" />
         <child id="4376090928958005871" name="payload" index="2hSLRG" />
         <child id="6353433212932081536" name="multiplicity" index="SPUDp" />
@@ -102,6 +112,7 @@
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
+        <child id="4117158836746483848" name="extraEnds" index="350mUH" />
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
       <concept id="50764132512836853" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedDefinitionRef" flags="ng" index="2_tBl0">
@@ -4078,6 +4089,240 @@
         </node>
       </node>
       <node concept="31rvQr" id="3$z5ynURvxd" role="66U86" />
+    </node>
+  </node>
+  <node concept="2h0jOr" id="3$z5ynXinW_">
+    <property role="TrG5h" value="_350_connection_constructs" />
+    <node concept="0AGBL" id="3$z5ynXinWA" role="2h0jOs">
+      <property role="TrG5h" value="Level" />
+      <node concept="0AGBM" id="3$z5ynXinWB" role="8EhVZ">
+        <property role="TrG5h" value="low" />
+        <property role="350mUP" value="true" />
+        <node concept="1_WVX6" id="3$z5ynXinWC" role="2gbwqI">
+          <property role="1_WVXG" value="1" />
+        </node>
+      </node>
+      <node concept="0AGBM" id="3$z5ynXinWD" role="8EhVZ">
+        <property role="TrG5h" value="high" />
+        <node concept="1_WVX6" id="3$z5ynXinWE" role="2gbwqI">
+          <property role="1_WVXG" value="2" />
+        </node>
+      </node>
+    </node>
+    <node concept="3w00Z_" id="3$z5ynXinWF" role="2h0jOs">
+      <property role="TrG5h" value="Signal" />
+    </node>
+    <node concept="3xZtmp" id="3$z5ynXinWG" role="2h0jOs">
+      <property role="TrG5h" value="Pin" />
+    </node>
+    <node concept="3ZUotO" id="3$z5ynXinWH" role="2h0jOs">
+      <property role="TrG5h" value="Node" />
+      <node concept="3xZtmn" id="3$z5ynXinWI" role="3w00ZY">
+        <property role="TrG5h" value="inp" />
+        <node concept="3xZtmm" id="3$z5ynXinWJ" role="3xZtlF">
+          <node concept="AsIwX" id="3$z5ynXinWK" role="2_tBl3">
+            <property role="AsIwZ" value="Pin" />
+          </node>
+        </node>
+      </node>
+      <node concept="3xZtmn" id="3$z5ynXinWL" role="3w00ZY">
+        <property role="TrG5h" value="outp" />
+        <node concept="3xZtmm" id="3$z5ynXinWM" role="3xZtlF">
+          <node concept="AsIwX" id="3$z5ynXinWN" role="2_tBl3">
+            <property role="AsIwZ" value="Pin" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="8GF0z" id="3$z5ynXinWO" role="2h0jOs">
+      <property role="TrG5h" value="defaultWire" />
+      <node concept="8CKM2" id="3$z5ynXinWP" role="3w00ZT">
+        <node concept="AsIwX" id="3$z5ynXinWQ" role="1MHwYB">
+          <property role="AsIwZ" value="Node" />
+        </node>
+      </node>
+    </node>
+    <node concept="2uUmlJ" id="3$z5ynXinWR" role="2h0jOs">
+      <property role="TrG5h" value="Wire" />
+    </node>
+    <node concept="2gGTne" id="3$z5ynXinWS" role="2h0jOs">
+      <property role="TrG5h" value="Link" />
+      <node concept="3xZtmn" id="3$z5ynXinWT" role="3w00ZY">
+        <property role="TrG5h" value="left" />
+        <property role="2uUgYw" value="true" />
+      </node>
+      <node concept="3xZtmn" id="3$z5ynXinWU" role="3w00ZY">
+        <property role="TrG5h" value="right" />
+        <property role="2uUgYw" value="true" />
+      </node>
+      <node concept="1AcQlj" id="3$z5ynXinWV" role="3w00ZY">
+        <property role="TrG5h" value="other" />
+        <node concept="AsIwX" id="3$z5ynXinWW" role="2Z$kEI">
+          <property role="AsIwZ" value="right" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ZUotO" id="3$z5ynXinWX" role="2h0jOs">
+      <property role="TrG5h" value="Network" />
+      <node concept="8GF0z" id="3$z5ynXinWY" role="3w00ZY">
+        <property role="TrG5h" value="a" />
+        <node concept="8CKM2" id="3$z5ynXinWZ" role="3w00ZT">
+          <node concept="AsIwX" id="3$z5ynXinX0" role="1MHwYB">
+            <property role="AsIwZ" value="Node" />
+          </node>
+        </node>
+      </node>
+      <node concept="8GF0z" id="3$z5ynXinX1" role="3w00ZY">
+        <property role="TrG5h" value="b" />
+        <node concept="8CKM2" id="3$z5ynXinX2" role="3w00ZT">
+          <node concept="AsIwX" id="3$z5ynXinX3" role="1MHwYB">
+            <property role="AsIwZ" value="Node" />
+          </node>
+        </node>
+      </node>
+      <node concept="8GF0z" id="3$z5ynXinX4" role="3w00ZY">
+        <property role="TrG5h" value="c" />
+        <node concept="8CKM2" id="3$z5ynXinX5" role="3w00ZT">
+          <node concept="AsIwX" id="3$z5ynXinX6" role="1MHwYB">
+            <property role="AsIwZ" value="Node" />
+          </node>
+        </node>
+      </node>
+      <node concept="2uUmlE" id="3$z5ynXinXb" role="3w00ZY">
+        <property role="2uUmlw" value="true" />
+        <property role="TrG5h" value="link" />
+        <node concept="2uUmlC" id="3$z5ynXinXg" role="3w00ZT">
+          <node concept="AsIwX" id="3$z5ynXinXh" role="1MHwYB">
+            <property role="AsIwZ" value="Wire" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinX7" role="2uUmly">
+          <node concept="3wdj9f" id="3$z5ynXinX8" role="2uUmlA">
+            <property role="3wdj9b" value="a" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinX9" role="2uUmlz">
+          <node concept="3wdj9f" id="3$z5ynXinXa" role="2uUmlA">
+            <property role="3wdj9b" value="b" />
+          </node>
+        </node>
+        <node concept="8d1xg" id="3$z5ynXinXi" role="7Qp9p">
+          <node concept="3wdj9f" id="3$z5ynXinXj" role="8d1xI">
+            <property role="3wdj9b" value="defaultWire" />
+          </node>
+        </node>
+      </node>
+      <node concept="2uUmlE" id="3$z5ynXinXo" role="3w00ZY">
+        <property role="2uUmlw" value="true" />
+        <property role="TrG5h" value="bus" />
+        <node concept="2uUmlD" id="3$z5ynXinXk" role="2uUmly">
+          <node concept="3wdj9f" id="3$z5ynXinXl" role="2uUmlA">
+            <property role="3wdj9b" value="a" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXm" role="2uUmlz">
+          <node concept="3wdj9f" id="3$z5ynXinXn" role="2uUmlA">
+            <property role="3wdj9b" value="b" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXt" role="350mUH">
+          <node concept="3wdj9f" id="3$z5ynXinXu" role="2uUmlA">
+            <property role="3wdj9b" value="c" />
+          </node>
+        </node>
+      </node>
+      <node concept="2gGTnd" id="3$z5ynXinX_" role="3w00ZY">
+        <property role="TrG5h" value="hub" />
+        <node concept="2uUmlC" id="3$z5ynXinXE" role="3w00ZT">
+          <node concept="AsIwX" id="3$z5ynXinXF" role="1MHwYB">
+            <property role="AsIwZ" value="Link" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXv" role="2uUmly">
+          <node concept="3wdj9f" id="3$z5ynXinXw" role="2uUmlA">
+            <property role="3wdj9b" value="a" />
+          </node>
+          <node concept="3wdj9f" id="3$z5ynXinXx" role="2uUmlA">
+            <property role="3wdj9b" value="inp" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXy" role="2uUmlz">
+          <node concept="3wdj9f" id="3$z5ynXinXz" role="2uUmlA">
+            <property role="3wdj9b" value="b" />
+          </node>
+          <node concept="3wdj9f" id="3$z5ynXinX$" role="2uUmlA">
+            <property role="3wdj9b" value="inp" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXG" role="350mUH">
+          <node concept="3wdj9f" id="3$z5ynXinXH" role="2uUmlA">
+            <property role="3wdj9b" value="c" />
+          </node>
+          <node concept="3wdj9f" id="3$z5ynXinXI" role="2uUmlA">
+            <property role="3wdj9b" value="inp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2hSLRH" id="3$z5ynXinXP" role="3w00ZY">
+        <property role="354aSY" value="true" />
+        <node concept="2uUmlD" id="3$z5ynXinXJ" role="2uUmly">
+          <node concept="3wdj9f" id="3$z5ynXinXK" role="2uUmlA">
+            <property role="3wdj9b" value="a" />
+          </node>
+          <node concept="3wdj9f" id="3$z5ynXinXL" role="2uUmlA">
+            <property role="3wdj9b" value="outp" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXM" role="2uUmlz">
+          <node concept="3wdj9f" id="3$z5ynXinXN" role="2uUmlA">
+            <property role="3wdj9b" value="b" />
+          </node>
+          <node concept="3wdj9f" id="3$z5ynXinXO" role="2uUmlA">
+            <property role="3wdj9b" value="inp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2hSLRH" id="3$z5ynXinY0" role="3w00ZY">
+        <node concept="3w00Zy" id="3$z5ynXinY5" role="2hSLRG">
+          <node concept="AsIwX" id="3$z5ynXinY6" role="1MHwYB">
+            <property role="AsIwZ" value="Signal" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXU" role="2uUmly">
+          <node concept="3wdj9f" id="3$z5ynXinXV" role="2uUmlA">
+            <property role="3wdj9b" value="a" />
+          </node>
+          <node concept="3wdj9f" id="3$z5ynXinXW" role="2uUmlA">
+            <property role="3wdj9b" value="outp" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinXX" role="2uUmlz">
+          <node concept="3wdj9f" id="3$z5ynXinXY" role="2uUmlA">
+            <property role="3wdj9b" value="b" />
+          </node>
+          <node concept="3wdj9f" id="3$z5ynXinXZ" role="2uUmlA">
+            <property role="3wdj9b" value="inp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2cjfNC" id="3$z5ynXinY7" role="3w00ZY">
+        <property role="TrG5h" value="ping" />
+        <node concept="3w00Zy" id="3$z5ynXinYh" role="350mU_">
+          <node concept="AsIwX" id="3$z5ynXinYi" role="1MHwYB">
+            <property role="AsIwZ" value="Signal" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinY8" role="350mUx">
+          <node concept="3wdj9f" id="3$z5ynXinY9" role="2uUmlA">
+            <property role="3wdj9b" value="a" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="3$z5ynXinYa" role="350mTp">
+          <node concept="3wdj9f" id="3$z5ynXinYb" role="2uUmlA">
+            <property role="3wdj9b" value="b" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
