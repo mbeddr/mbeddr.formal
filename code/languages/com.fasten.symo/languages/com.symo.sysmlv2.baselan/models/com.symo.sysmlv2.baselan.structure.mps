@@ -1133,6 +1133,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
     </node>
+    <node concept="1TJgyj" id="3$z5ynQZkHU" role="1TKVEi">
+      <property role="IQ2ns" value="4117158836660161402" />
+      <property role="20kJfa" value="types" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHmu9H">
     <property role="EcuMT" value="4376090928958005869" />
@@ -2712,6 +2719,13 @@
       <property role="IQ2nx" value="4117158836588424511" />
       <property role="TrG5h" value="portionKind" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3$z5ynQZkHY" role="1TKVEi">
+      <property role="IQ2ns" value="4117158836660161406" />
+      <property role="20kJfa" value="references" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
   </node>
   <node concept="PlHQZ" id="3Igz0sRBrH8">

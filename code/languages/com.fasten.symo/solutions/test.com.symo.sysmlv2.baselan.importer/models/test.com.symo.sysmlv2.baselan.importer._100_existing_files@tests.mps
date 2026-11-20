@@ -4405,7 +4405,7 @@
               <ref role="3cqZAo" node="j1yGxNQCsR" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQCt4" role="37vLTx">
-              <property role="Xl_RC" value="    part wheel : Wheel [n];\n" />
+              <property role="Xl_RC" value="    part wheel [n] : Wheel;\n" />
             </node>
           </node>
         </node>
@@ -4415,7 +4415,7 @@
               <ref role="3cqZAo" node="j1yGxNQCsR" resolve="content" />
             </node>
             <node concept="Xl_RD" id="j1yGxNQCt8" role="37vLTx">
-              <property role="Xl_RC" value="    part bolt : Bolt [0..n];\n" />
+              <property role="Xl_RC" value="    part bolt [0..n] : Bolt;\n" />
             </node>
           </node>
         </node>
