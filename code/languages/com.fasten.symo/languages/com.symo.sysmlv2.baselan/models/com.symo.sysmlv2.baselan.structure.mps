@@ -2083,6 +2083,13 @@
     <property role="R4oN_" value="entry action x; the action performed on entering the state" />
     <property role="3GE5qa" value="state" />
     <ref role="1TJDcQ" node="7O9Ql6xWDXP" resolve="SysMLv2StateActionMember" />
+    <node concept="1TJgyj" id="4K3gUKIx8AK" role="1TKVEi">
+      <property role="IQ2ns" value="5477295978606528944" />
+      <property role="20kJfa" value="transitions" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4K3gUKIx8AL" resolve="SysMLv2EntryTransition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7O9Ql6xWDXR">
     <property role="EcuMT" value="9009971474163998583" />
@@ -2978,6 +2985,17 @@
     <node concept="PrWs8" id="3$z5ynTTrCk" role="PzmwI">
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
+    <node concept="1TJgyi" id="4K3gUKIx8cg" role="1TKVEl">
+      <property role="IQ2nx" value="5477295978606527248" />
+      <property role="TrG5h" value="triggerKind" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4K3gUKLHrt8" role="1TKVEi">
+      <property role="IQ2ns" value="5477295978660083528" />
+      <property role="20kJfa" value="triggerExpression" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6i6xKqwZdb5">
     <property role="EcuMT" value="7243625513212498629" />
@@ -3434,6 +3452,26 @@
     </node>
     <node concept="PrWs8" id="44nD5HpkMsk" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4K3gUKIx8AL">
+    <property role="EcuMT" value="5477295978606528945" />
+    <property role="TrG5h" value="SysMLv2EntryTransition" />
+    <property role="R4oN_" value="transition after an entry action: then &lt;target&gt;; or if &lt;guard&gt; then &lt;target&gt;;" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4K3gUKKAG5n" role="1TKVEi">
+      <property role="IQ2ns" value="5477295978641539415" />
+      <property role="20kJfa" value="guard" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="1TJgyj" id="4K3gUKKAG5r" role="1TKVEi">
+      <property role="IQ2ns" value="5477295978641539419" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
     </node>
   </node>
 </model>
